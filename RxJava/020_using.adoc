@@ -1,0 +1,23 @@
+== A first example for RxJava
+
+The following is a simple example of RxJava.
+
+[source, java]
+----
+import java.util.Arrays;
+import java.util.List;
+
+import rx.Observable;
+
+public class RxJavaExample {
+	public static void main(String[] args) {
+		List<String> list = Arrays.asList("Hello", "Streams", "Not");
+		Observable.from(list).
+				filter(s -> s.contains("e")).
+				map(s -> s.toUpperCase()).
+				reduce(new StringBuilder(), StringBuilder::append).
+				subscribe(System.out::print, e -> {}, 
+				() -> System.out.println("!"));
+	}
+}
+----
