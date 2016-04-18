@@ -1,5 +1,8 @@
 [[nullable_annotations]]
-== Defining the API contract
+== Defining the API contract via null annotations
+
+
+=== Eclipse IDE and null annotations
 
 Annotations can be used to provide additional meta information about your API. 
 Eclipse JDT provides the following annotations which can be used:
@@ -26,9 +29,9 @@ import org.eclipse.jdt.annotation.NonNullByDefault;
 
 
 [[customannotations_definition]]
-== Adding support for null annotations
+=== Adding support for null annotations
 
-=== Maven
+==== Maven
 
 [source, xml]
 ----
@@ -39,21 +42,21 @@ import org.eclipse.jdt.annotation.NonNullByDefault;
 </dependency>
 ----
 
-=== Gradle
+==== Gradle
 
 [source, xml]
 ----
 compile 'org.eclipse.jdt:org.eclipse.jdt.annotation:2.0.0'
 ----
-=== OSGi
+==== OSGi
 
 Add an optional dependency to `org.eclipse.jdt.annotation` in your MANIFEST.MF
 
-== Managing the classpath manually
+==== Managing the classpath manually
 
 Eclipse provides a quickfix for adding the required dependency. Simple use `@NonNull` in your code and use Ctrl+1 to add the required dependency.
 
-== Activating annotation based null pointer access analysis
+=== Activating annotation based null pointer access analysis
 
 Select menu:Windows[Java > Compiler > Errors/Warnings] and select _Enable annotation-based null analysis_.
 
