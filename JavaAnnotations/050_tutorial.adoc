@@ -1,0 +1,23 @@
+[[annotations_tutorial]]
+== Exercise: Define custom annotation and access via reflection
+
+Create a new Java project called `com.vogella.annotations`.
+Create the following two classes. The first class defines an annotation and the second class uses this to mark certain methods.
+
+[source, java]
+----
+include::examples/reflection/CanRun.java[]
+----
+
+[source, java]
+----
+include::examples/reflection/AnnotationRunner.java[]
+----
+
+Afterwards create the following test class.
+The main method of this class analyzes the annotations and calls the corresponding methods.
+
+[source, java]
+----
+include::examples/reflection/MyTest.java[]
+----
