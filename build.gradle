@@ -9,6 +9,12 @@ buildscript {
 	}
 }
 
+task createDocbook(type: com.vogella.gradle.plugin.AsciiDoc) {
+    description = 'Creates DocBook'
+    group = 'Documentation'
+    backends = ['docbook45']
+}
+
 subprojects {
 	apply plugin: 'com.vogella.gradle.plugin'
 }
