@@ -3,5 +3,6 @@ rootProject.name = 'com.vogella.tutorials.java'
 include 'RxJava'
 include 'JavaAnnotations'
 include 'AutoValue'
+include 'jsoup'
 
 
