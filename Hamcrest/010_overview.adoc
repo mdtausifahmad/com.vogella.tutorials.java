@@ -1,0 +1,46 @@
+[[hamcrestoverview]]
+== Purpose of the Hamcrest matcher framework 
+(((Hamcrest)))
+
+_Hamcrest_ is a framework for software tests. 
+Hamcrest allows checking for conditions in your code via existing matchers classes.
+It also allows you to define your custom matcher implementations.
+	
+	
+To use Hamcrest matchers in JUnit you use the `assertThat` statement followed by one or several matchers.
+	
+Hamcrest is typically viewed as a third generation matcher framework. 
+The first generation used `assert(logical statement)` but such tests were not easily readable. 
+The second generation introduced special methods for assertions, e.g., `assertEquals()`.
+This approach leads to lots of assert methods. 
+Hamcrest uses `assertThat` method with a matcher expression to determine if the test was succesful. 
+See <ulink url="http://en.wikipedia.org/wiki/Hamcrest">Wiki on Hamcrest</ulink> for more details.
+	
+
+Hamcrest has the target to make tests as readable as possible. 
+For example, the `is` method is a thin wrapper for `equalTo(value)` .
+	
+[source,java]
+----
+include::res/matcher/Is.java[]
+----
+	
+The following snippets compare pure JUnit 4 assert statements with Hamcrest matchers. 
+
+[source,java]
+----
+include::res/matcher/comparison.java[]
+----
+
+It is also possible to chain matchers, via the `anyOf` of `allOf` method.
+
+[source,java]
+----
+include::res/matcher/anyOf.java[]
+----
+	
+In general the Hamcrest error messages are also much easier to read.
+Using Hamcrest matchers also provides more type safety as these matchers uses generics.
+	
+
+

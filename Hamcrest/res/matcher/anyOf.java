@@ -1,0 +1,1 @@
+assertThat("test", anyOf(is("testing"), containsString("est")));

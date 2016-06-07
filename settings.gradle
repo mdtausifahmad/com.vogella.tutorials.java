@@ -4,5 +4,6 @@ include 'RxJava'
 include 'JavaAnnotations'
 include 'AutoValue'
 include 'jsoup'
+include 'Hamcrest'
 
 

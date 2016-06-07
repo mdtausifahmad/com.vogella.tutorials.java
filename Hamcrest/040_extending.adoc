@@ -1,0 +1,18 @@
+[[hamcrest_extending]]
+==	Writing your custom Hamcrest matcher
+
+It is possible to write your custom Hamcrest matcher by extending TypeSafeMatcher. 
+The following is an example for defining a matcher which allows testing if a String matches a regular expression.
+	
+[source,gradle]
+----
+include::res/regexmatcher/RegexMatcher.java[]
+----	
+	
+The following snippet gives an example how to use it. 
+
+[source,gradle]
+----
+include::res/regexmatcher/TestCustomMatcher.java[]
+----	
+	

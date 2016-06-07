@@ -1,0 +1,17 @@
+= Using Hamcrest for testing - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, (c) 2014, 2016 vogella GmbH
+Version 1.8, 29.05.2016
+
+[abstract]
+This tutorial explains testing with the Hamcrest matcher framework.
+
+				
+include::010_overview.adoc[]
+include::020_installation.adoc[]
+include::030_usage.adoc[]
+include::040_extending.adoc[]
