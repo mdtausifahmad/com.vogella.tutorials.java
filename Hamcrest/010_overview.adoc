@@ -14,7 +14,7 @@ The first generation used `assert(logical statement)` but such tests were not ea
 The second generation introduced special methods for assertions, e.g., `assertEquals()`.
 This approach leads to lots of assert methods. 
 Hamcrest uses `assertThat` method with a matcher expression to determine if the test was succesful. 
-See <ulink url="http://en.wikipedia.org/wiki/Hamcrest">Wiki on Hamcrest</ulink> for more details.
+See http://en.wikipedia.org/wiki/Hamcrest[Wiki on Hamcrest] for more details.
 	
 
 Hamcrest has the target to make tests as readable as possible. 

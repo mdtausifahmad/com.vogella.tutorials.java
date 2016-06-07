@@ -34,8 +34,8 @@ To use all available matchers, download the latest hamcrest-all-*.jar from https
 If you get the following exception "java.lang.SecurityException:
 class "org.hamcrest.Matchers"'s signer information
 does not match signer information of other classes in the same package", ensure that the hamcrest jar is before the Junit library in the build path. 
-You an configure the order in the project properties in the Eclipse IDE under <guilabel>Java Build Path</guilabel>
-on the <guilabel>Order and Export</guilabel> tab.
+You an configure the order in the project properties in the Eclipse IDE under _Java Build Path_
+on the _Order and Export_ tab.
 			
 			
 image::buildpatchissuehamcrest10.png[Changing the build patch order for Hamcrest]

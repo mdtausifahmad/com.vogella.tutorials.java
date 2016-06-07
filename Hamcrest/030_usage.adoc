@@ -5,7 +5,7 @@
 
 The usage of Hamcrest matches is demonstrates by the following code snippet.
 
-[source,gradle]
+[source, java]
 ----
 include::res/matcher/MatcherUsage.java[]
 ----	
@@ -13,7 +13,7 @@ include::res/matcher/MatcherUsage.java[]
 === Hamcrest matchers for lists
 The usage of the Hamcrest matchers for lists are demonstrated by the following example. 
 
-[source,gradle]
+[source, java]
 ----
 include::res/lists/ListTest.java[]
 ----			
