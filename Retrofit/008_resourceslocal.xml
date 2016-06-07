@@ -1,0 +1,9 @@
+<section id="resources_eclipse">
+	<title>Retrofit resources</title>
+	<para>
+		<ulink url="https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit">Consuming APIs with Retrofit tutorial</ulink>
+	</para>
+	<para>
+		<ulink url="http://inthecheesefactory.com/blog/retrofit-2.0/en">In dept blog series about Retrofit</ulink>
+	</para>
+</section>

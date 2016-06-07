@@ -1,0 +1,23 @@
+= Using Retrofit 2.0 as REST client - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, (c) 2012, 2016 vogella GmbH
+Version 1.8, 29.05.2016
+
+[abstract]
+This tutorial explains the usage of the Retrofit library as REST client.
+
+                
+include::010_overview.adoc[]
+008_resourceslocal.xml
+010_overview.xml
+
+
+include::030_exercise_stackoverflow.xml[]
+include::040_exercise_github.xml[]
+include::008_resourceslocal.adoc[]
+    
+

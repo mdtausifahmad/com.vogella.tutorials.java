@@ -1,0 +1,98 @@
+<section id="exercise_retrofitstackoverflow">
+	<title>Exercise: Using Retrofit to query Stackoverflow via an Android application</title>
+
+	<section id="exercise_retrofitstackoverflow_target">
+		<title>Target</title>
+		<para>
+			StackOverflow is a popular side for asking programming orientated questions. It also provides a REST API which is
+			well documented.
+			Queries
+			can be build their
+			<ulink url="https://api.stackexchange.com/docs/search">Stackexchange docs side</ulink>
+			. In this exercise you query for open questions based on tags with the Retrofit REST library.
+		</para>
+		<para>The use the following query URL and allow setting the query tags in our code.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/text.txt" />
+			</programlisting>
+		</para>
+
+
+	</section>
+
+	<section id="exercise_retrofitstackoverflow_project">
+		<title>Project creation and setup</title>
+		<para>
+			Create an Android application called
+			<wordasword>com.vogella.android.retrofitstackoverflow</wordasword>
+			with the
+			<code>com.vogella.android.retrofitstackoverflow</code>
+			top level package name.
+		</para>
+
+		<para>Add the following dependency to your build.gradle file</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/build.gradle" />
+			</programlisting>
+		</para>
+		<para>Add the permission to access the Internet to your manifest file.</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/AndroidManifest.xml" />
+			</programlisting>
+		</para>
+	</section>
+
+
+	<section id="exercise_retrofitstackoverflow_clss">
+		<title>Class creation</title>
+		<para>In the JSON reply from StackOverflow we are only interested in the title and the link. Therefore create the
+			following data classes.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stackoverflow/Question.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/stackoverflow/StackOverflowQuestions.java" />
+			</programlisting>
+		</para>
+
+		<para>Define the REST API for Retrofit via the following interface.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/stackoverflow/StackOverflowAPI.java" />
+			</programlisting>
+		</para>
+		<para>
+			Create a XML menu resource similar to the following called
+			<filename>main_menu.xml</filename>
+			.
+		</para>
+		
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stackoverflow/main_menu.xml" />
+			</programlisting>
+		</para>
+
+
+
+		<para>Change your activity code to allow querying for questions marked with the tag "android". </para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stackoverflow/MainActivity.java" />
+			</programlisting>
+		</para>
+	</section>
+
+
+</section>

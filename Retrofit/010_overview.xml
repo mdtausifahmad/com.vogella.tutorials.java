@@ -1,0 +1,75 @@
+<section id="retrofitoverview">
+	<title>Retrofit</title>
+	<indexterm>
+		<primary>Retrofit</primary>
+	</indexterm>
+	<para>Retrofit is a REST Client for Android and Java by Square making
+		it relatively easy to retrieve and upload JSON (or
+		other structured
+		data) to a REST based webservice. Retrofit can be configured with converter is used for its
+		data
+		serialization. Typically for JSON you use GSon but you can
+		add custom converters to process
+		XML
+		or
+		other protocols.
+		Retrofit uses the OkHttp library for
+		HTTP requests.
+	</para>
+	<para>
+		Retrofit allows to use the following converters:
+		<itemizedlist>
+			<listitem>
+				<para>Gson: com.squareup.retrofit:converter-gson
+				</para>
+			</listitem>
+			<listitem>
+				<para>Jackson: com.squareup.retrofit:converter-jackson</para>
+			</listitem>
+			<listitem>
+				<para>Moshi: com.squareup.retrofit:converter-moshi</para>
+			</listitem>
+			<listitem>
+				<para>Protobuf: com.squareup.retrofit:converter-protobuf</para>
+			</listitem>
+			<listitem>
+				<para>Wire: com.squareup.retrofit:converter-wire</para>
+			</listitem>
+			<listitem>
+				<para>Simple XML: com.squareup.retrofit:converter-simplexml</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+	<para>
+		To work with Retrofit you need basically three classes.
+		<itemizedlist>
+			<listitem>
+				<para>Model class which is used to map the JSON data to</para>
+			</listitem>
+			<listitem>
+				<para>Interfaces which defines the possible HTTP operations</para>
+			</listitem>
+			<listitem>
+				<para>
+					Retrofit.Builder class - Instance which uses the interface. Builder
+					API which allows defining the URL end point
+					for
+					the HTTP operation.
+				</para>
+			</listitem>
+		</itemizedlist>
+	</para>
+	<para>
+		<para>While Retrofit can be used in a standard Java application, its usage is demonstrated here via an Android
+			application.
+		</para>
+	</para>
+	<para>
+		You can generate Java objects based on JSON under the
+		<ulink url="http://www.jsonschema2pojo.org/">jsonschema2pojo website</ulink>
+		. This is sometimes useful
+		to create complex
+		Java data structures from existing JSON.
+	</para>
+
+</section>
