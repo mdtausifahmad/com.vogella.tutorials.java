@@ -1,7 +1,7 @@
 <section id="write">
-	<title>Write RSS Feeds with Stax</title>
+	<title>Write RSS Feeds with Stax
 	<section id="write_stax">
-		<title>Create writer</title>
+		<title>Create writer
 		<para>Create the following class to write the XML file.</para>
 		<para>
 			<programlisting>
@@ -12,7 +12,7 @@
 	</section>
 
 	<section id="write_test">
-		<title>Test the code</title>
+		<title>Test the code
 		<para>
 			The following uses a main method to test.
 		</para>
