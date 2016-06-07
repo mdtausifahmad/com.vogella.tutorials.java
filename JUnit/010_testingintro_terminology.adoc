@@ -10,10 +10,10 @@
 		</indexterm>
 		
 			The code which is tested is typically called the
-			<wordasword>code under test</wordasword>
+			_code under test_
 			. If you are testing an application, this is called
 			the
-			<wordasword>application under test</wordasword>
+			_application under test_
 			.
 		
 	</section>
@@ -24,7 +24,7 @@
 		</indexterm>
 		
 			A
-			<wordasword>test fixture</wordasword>
+			_test fixture_
 			is a fixed state in code which is tested used as input for
 			a test. Another way to describe this is a test
 			precondition.
@@ -42,7 +42,7 @@
 		</indexterm>
 		
 			A
-			<wordasword>unit test</wordasword>
+			_unit test_
 			is a piece of code written by a developer that
 			executes
 			a specific
@@ -55,7 +55,7 @@
 			which
 			is tested by unit tests is
 			typically called
-			<wordasword>test coverage</wordasword>
+			_test coverage_
 			.
 		
 		
@@ -81,11 +81,11 @@
 		</indexterm>
 		
 			An
-			<wordasword>integration test</wordasword>
+			_integration test_
 			has the target to test the behavior
 			of a component or the integration
 			between a set of components. The term
-			<wordasword>functional test</wordasword>
+			_functional test_
 			is sometimes used as synonym for integration test. Integration tests check that the whole system works as intended,
 			therefore they are reducing the need for intensive manual
 			tests.

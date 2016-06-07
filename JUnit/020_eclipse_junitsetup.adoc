@@ -68,7 +68,7 @@
 		and
 		`assertEquals`
 		methods directly available in the
-		<wordasword>Content Assists</wordasword>
+		_Content Assists_
 		.
 	
 
@@ -84,7 +84,7 @@
 	
 	
 		You can now use
-		<wordasword>Content Assists</wordasword>
+		_Content Assists_
 		(shortcut:
 		<keycombo>
 			<keycap>Ctrl</keycap>

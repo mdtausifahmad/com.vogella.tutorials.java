@@ -15,20 +15,22 @@ If you specify more than one value,	they are returned in the order of specificat
 Afterwards the last	specified value	is returned. 
 Mocks can also return different values depending on arguments passed into a method. 
 You also use methods like `anyString` or `anyInt` to define that independent of the input value a certain return value should be returned.
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/api/WhenThenReturn.java" />
-			</programlisting>
+
+[source,java]
+----
+include::res/api/WhenThenReturn.java[]
+----
+
 		
 The `doReturn(...).when(...).methodCall` call chain works similar but is useful for void methods. 
 The `doThrow` variant can be used for methods which return `void` to throw an exception. 
 This usage is demonstrated by the following code snippet.
 		
 
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/api/doReturnWhen.java" />
-			</programlisting>
+[source,java]
+----
+include::res/api/doReturnWhen.java[]
+----		
 
 [[mockito_verify]]
 ===	Verify the calls on the mock objects
@@ -39,11 +41,11 @@ For example, you can verify that a method has been called with certain parameter
 This kind of testing is sometimes called _behavior testing_. 
 Behavior testing does not check the result of a method call, but it checks that a method is called with the right parameters.
 		
-
+[source,java]
+----
+include::res/api/Verify.java[]
+----
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/api/Verify.java" />
-			</programlisting>
 
 [[mockito_spy]]
 === Wrapping Java objects with Spy
@@ -51,10 +53,10 @@ Behavior testing does not check the result of a method call, but it checks that 
 @Spy or the `spy()` 	method can be used to wrap a real object. 
 Every call, unless specified otherwise, is delegated to the object.
 		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Spy.txt" />
-			</programlisting>
+[source,java]
+----
+include::res/simple/Spy.txt[]
+----		
 		
 The `verifyNoMoreInteractions()` allows you to check that no other method was called.
 		
@@ -64,16 +66,15 @@ The `verifyNoMoreInteractions()` allows you to check that no other method was ca
 You also have the `@InjectMocks` annotation which tries to do constructor, method or field dependency injection based on the type. 
 The following code is a slightly modified example from the Javadoc.
 		
+[source,java]
+----
+include::res/snippet/ArticleManager.java[]
+----		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippet/ArticleManager.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippet/Example.java" />
-			</programlisting>
-		
+[source,java]
+----
+include::res/snippet/Example.java[]
+----		
 		
 For more information see  http://docs.mockito.googlecode.com/hg/1.9.5/org/mockito/InjectMocks.html.
 			.
@@ -85,10 +86,12 @@ Mockito also supports the creation of mock objects based on the `@Mock` annotati
 If you this annotation, you must initialize the mock objects. 
 The `MockitoRule` allows this, it invokes the static method `MockitoAnnotations.initMocks(this)` to populate the annotated fields. 
 Alternatively you can use `@RunWith(MockitoJUnitRunner.class)`.
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/TestSimple.txt" />
-			</programlisting>
+
+[source,java]
+----
+include::res/simple/TestSimple.txt[]
+----		
+
 [[mockito_limitations]]
 === Limitations
 		
@@ -98,3 +101,5 @@ It can not test the following constructs:
 * final classes
 * anonymous classes
 * primitive types
+
+

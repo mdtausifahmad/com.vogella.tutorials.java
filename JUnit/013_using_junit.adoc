@@ -156,14 +156,14 @@
 			`Assert`
 			class
 			to test for certain conditions. These
-			<wordasword>assert statements</wordasword>
+			_assert statements_
 			typically start
 			with
 			`assert`
 			and allow you to specify the error message, the expected and the
 			actual
 			result. An
-			<wordasword>assertion method</wordasword>
+			_assertion method_
 			compares the actual value returned
 			by
 			a test to the expected value, and

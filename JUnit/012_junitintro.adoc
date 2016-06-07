@@ -7,7 +7,7 @@
 		</indexterm>
 
 		
-			<wordasword>JUnit</wordasword>
+			_JUnit_
 			in version
 			4.x is a test framework
 			which uses annotations to identify
@@ -26,13 +26,13 @@
 		
 			A
 			JUnit
-			<wordasword>test</wordasword>
+			_test_
 			is a method
 			contained in a class which is only used for
 			testing. This
 			is
 			called a
-			<wordasword>Test class</wordasword>
+			_Test class_
 			.
 			To
 			write a test with the
@@ -49,7 +49,7 @@
 
 		
 			In this method you use an
-			<wordasword>assert</wordasword>
+			_assert_
 			method, typically provided by the JUnit or another assert framework,
 			to check the
 			expected
@@ -57,9 +57,9 @@
 			of the code execution
 			versus the actual
 			result. These method calls are typically called
-			<wordasword>asserts</wordasword>
+			_asserts_
 			or
-			<wordasword>assert statements</wordasword>
+			_assert statements_
 			.
 		
 		 You should provide meaningful messages in assert statements so that it
@@ -137,7 +137,7 @@
 		</indexterm>
 		
 			If you have several test classes, you can combine them into a
-			<wordasword>test suite</wordasword>
+			_test suite_
 			. Running a test suite will execute all
 			test classes in that suite in
 			the specified order.

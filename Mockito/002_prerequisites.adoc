@@ -1,14 +1,6 @@
-<section id="prerequisites">
-	Prerequisites
+== Prerequisites
 	
-		The following tutorial requires an understanding of unit
-		testing
-		with the
-		JUnit framework.
+The following tutorial requires an understanding of unit testing with the JUnit framework.
 	
-	
-		In case your are not familiar with JUnit, please check the following
-		<ulink url="http://www.vogella.com/tutorials/JUnit/article.html">JUnit Tutorial</ulink>
-		.
-	
-</section>
+In case your are not familiar with JUnit, please check the following JUnit tutorial: http://www.vogella.com/tutorials/JUnit/article.html.
+

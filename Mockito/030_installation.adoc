@@ -4,21 +4,22 @@
 [[mockito_installation_gradle]]
 === Using Grade
 If you use Gradle, add the following dependency to the Gradle build file.
+
+[source, gradle]
+----
+include::res/install/build.gradle[]
+----
 		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/install/build.gradle" />
-			</programlisting>
+			
 [[mockito_installation_maven]]
-== Using Maven
+=== Using Maven
 		
 Maven users can declare a dependency. 
 Search for g:"org.mockito", a:"mockito-core" via the http://search.maven.org website to	find the correct pom entry.
-
 		
 [[mockito_installation_eclipse]]
 === Using Eclipse
+
 The Eclipse IDE supports Gradle as well as Maven.
 Mockito does not provide a "all" download in its latest version, therefore you are advised to use either the Gradle or Maven tooling in Eclipes. 
 
@@ -31,10 +32,6 @@ The Orbit Repositories are a good source for third party libraries, which can be
 		
 		
 The Orbit Repositories can be found here http://download.eclipse.org/tools/orbit/downloads
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/orbit-p2-mockito.png" />
-				</imageobject>
-			</mediaobject>
-		
+
+image::orbit-p2-mockito.png[]
+

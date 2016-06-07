@@ -7,17 +7,19 @@
 Create an Android application with the package name `com.vogella.android.testing.mockito.contextmock`. 
 Add a static method	which allows to create an intent with certain parameters as in the following example.
 		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Method.java" />
-			</programlisting>
-		
+
+[source, gradle]
+----
+include::res/simple/Method.java[]
+----	
+
 [[mockito_android2]]
 === Add the Mockito dependency to the app/build.gradle file
-			
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/build.gradle" />
-			</programlisting>
+	
+[source, gradle]
+----
+include::res/simple/build.gradle[]
+----		
 			
 [[mockito_android_createtest]]
 === Create test
@@ -26,8 +28,7 @@ Create a new unit test using Mockito to check that the intent is triggered with 
 
 For this you mock the `Context`	object with Mockito as in the following example.
 		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Test.txt" />
-			</programlisting>
-		
+[source, gradle]
+----
+include::res/simple/Test.txt[]
+----		

@@ -5,7 +5,7 @@
 		<title>Project preparation</title>
 		
 			Create a new project called
-			<wordasword>com.vogella.junit.first</wordasword>
+			_com.vogella.junit.first_
 			.
 		
 		
