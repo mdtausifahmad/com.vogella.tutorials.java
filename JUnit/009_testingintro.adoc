@@ -1,5 +1,5 @@
 [[testintroduction]]
-== The purpose of software tests</title>
+== The purpose of software tests
 
 [[whataresoftwaretests]]
 === What are software tests?
@@ -15,5 +15,12 @@ Software unit tests help the developer to verify that the logic of a piece of th
 		
 Running tests automatically helps to identify software regressions introduced by changes in the source code.
 Having a high test coverage of your code allows you to continue developing features without having to perform lots of manual tests.
-		
+
+=== Testing frameworks for Java
+    
+There are several testing frameworks available for Java. 
+The most popular ones are JUnit and TestNG
+    
+This description focuses at JUnit.
+
 

@@ -1,8 +1,8 @@
 <section id="juniteclipse" role="wrapper">
-	<title>Exercise: Using JUnit</title>
+	<title>Exercise: Using JUnit
 
 	<section id="juniteclipse_prep">
-		<title>Project preparation</title>
+		<title>Project preparation
 		
 			Create a new project called
 			_com.vogella.junit.first_
@@ -72,7 +72,7 @@
 		</tip>
 	</section>
 	<section id="juniteclipse_class">
-		<title>Create a Java class</title>
+		<title>Create a Java class
 		
 			In the
 			<filename class="directory">src</filename>
@@ -90,7 +90,7 @@
 		
 	</section>
 	<section id="juniteclipse_test">
-		<title>Create a JUnit test</title>
+		<title>Create a JUnit test
 		
 			Right-click on your new class in the
 			<guilabel>Package Explorer</guilabel>
@@ -165,7 +165,7 @@
 		
 	</section>
 	<section id="juniteclipse_eclipse">
-		<title>Run your test in Eclipse</title>
+		<title>Run your test in Eclipse
 
 		
 			Right-click on your new test class and select

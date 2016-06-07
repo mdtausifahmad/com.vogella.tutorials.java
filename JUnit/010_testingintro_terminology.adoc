@@ -1,149 +1,71 @@
-<section id="testingterminology" role="wrapper">
-	<title>Testing terminology</title>
-	<section>
-		<title>Code (or application) under test</title>
-		<indexterm>
-			<primary>Application under test</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Code under test</primary>
-		</indexterm>
-		
-			The code which is tested is typically called the
-			_code under test_
-			. If you are testing an application, this is called
-			the
-			_application under test_
-			.
-		
-	</section>
-	<section id="junit_testfixture">
-		<title>Test fixture</title>
-		<indexterm>
-			<primary>Test fixture</primary>
-		</indexterm>
-		
-			A
-			_test fixture_
-			is a fixed state in code which is tested used as input for
-			a test. Another way to describe this is a test
-			precondition.
-		
-		
-			For example, a test fixture might be a a fixed string, which is used as input for a method. The test
-			would
-			validate if the method behaves correctly with this input.
-		
-	</section>
-	<section id="junit_intro">
-		<title>Unit tests and unit testing</title>
-		<indexterm>
-			<primary>Unit test</primary>
-		</indexterm>
-		
-			A
-			_unit test_
-			is a piece of code written by a developer that
-			executes
-			a specific
-			functionality in the code to be tested and asserts a
-			certain behavior
-			or state.
-		
-		
-			The percentage of code
-			which
-			is tested by unit tests is
-			typically called
-			_test coverage_
-			.
-		
-		
-			A unit test targets a small unit of code, e.g., a method or a
-			class,
-			(local
-			tests). External dependencies should be
-			removed from unit tests, e.g., by replacing the dependency with a test implementation or a (mock) object created by a
-			test framework.
-		
-		Unit tests are not suitable for testing complex user interface or component inteaction. For this you should
-			develop integration tests.
-		
-	</section>
+[[testingterminology]]
+== Testing terminology
 
-	<section id="junit_organization">
-		<title>Integration tests</title>
-		<indexterm>
-			<primary>Integration test</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Functional test</primary>
-		</indexterm>
+=== Code (or application) under test
+(((Application under test)))
+(((Code under test)))
 		
-			An
-			_integration test_
-			has the target to test the behavior
-			of a component or the integration
-			between a set of components. The term
-			_functional test_
-			is sometimes used as synonym for integration test. Integration tests check that the whole system works as intended,
-			therefore they are reducing the need for intensive manual
-			tests.
-		
-		
-			This kind of tests allow you to translate your user stories
-			into
-			a test suite, i.e., the test would resemble an
-			expected user
-			interaction with the application.
-		
-	</section>
-	<section id="junit_performancetests">
-		<title>Performance tests</title>
-		<indexterm>
-			<primary>Performance test</primary>
-		</indexterm>
-		
-			Performance tests are used to benchmark software
-			components repeatedly. Their purpose is to ensure that the code
-			under test runs fast enough even if it's
-			under high load.
-		
-	</section>
+The code which is tested is typically called the _code under test_. 
+If you are testing an application, this is called the _application under test_.
 
-	<section id="behaviorvsstatetesting">
-		<title>Behavior vs. state testing</title>
-		A test is a behavior test (also called interaction test) if it
-			does
-			not
-			validate the result of a method
-			call, but
-			checks
-			if certain
-			methods
-			were called with the correct input
-			parameters.
+[[junit_testfixture]]	
+=== Test fixture
+(((Test fixture)))
 		
-		State
-			testing is
-			about
-			validating the result, while
-			behavior testing
-			is about
-			testing the
-			behavior of the application
-			under test.
+A _test fixture_ is a fixed state in code which is tested used as input for a test. 
+Another way to describe this is a test precondition.
 		
-		If you are testing algorithms or system functionality, you
-			want to test
-			in most cases state and not interactions.
-			A typical test
-			setup
-			uses mocks or stubs of related classes to abstract the
-			interactions with these other classes away
-			and tests state in the
-			object which is tested.
+		
+For example, a test fixture might be a a fixed string, which is used as input for a method. 
+The test would validate if the method behaves correctly with this input.
+
+[[junit_intro]]
+=== Unit tests and unit testing
+
+(((Unit test)))
+		
+A _unit test_ is a piece of code written by a developer that executes a specific functionality in the code to be tested and asserts a certain behavior or state.
+		
+The percentage of code which is tested by unit tests is typically called _test coverage_.
+		
+A unit test targets a small unit of code, e.g., a method or a class. 
+External dependencies should be removed from unit tests, e.g., by replacing the dependency with a test implementation or a (mock) object created by a test framework.
+		
+Unit tests are not suitable for testing complex user interface or component interaction. 
+For this, you should develop integration tests.
+
+[[junit_organization]]
+=== Integration tests
+(((Integration test)))
+(((Functional test)))
+		
+An _integration test_ has the target to test the behavior of a component or the integration between a set of components. 
+The term _functional test_ is sometimes used as synonym for integration test. 
+Integration tests check that the whole system works as intended, therefore they are reducing the need for intensive manual tests.
+		
+		
+This kind of tests allow you to translate your user stories into a test suite.
+The test would resemble an expected user interaction with the application.
+
+[[junit_performancetests]]
+=== Performance tests
+(((Performance test)))
+		
+Performance tests are used to benchmark software components repeatedly. 
+Their purpose is to ensure that the code under test runs fast enough even if it's under high load.
 		
 
-	</section>
-</section>
+[[behaviorvsstatetesting]]
+=== Behavior vs. state testing
+
+A test is a behavior test (also called interaction test) if it  checks if certain methods were called with the correct input parameters.
+A behavior test does not validate the result of a method call.
+		
+State testing is about validating the result.
+Behavior testing is about testing the behavior of the application under test.
+		
+If you are testing algorithms or system functionality, you want to test in most cases state and not interactions.
+A typical test setup uses mocks or stubs of related classes to abstract the interactions with these other classes away
+Afterwards you test the state or the behavior depending on your need.
+		
+

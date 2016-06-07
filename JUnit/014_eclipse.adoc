@@ -1,12 +1,12 @@
 <section id="eclipse" role="wrapper">
-	<title>Eclipse support for JUnit</title>
+	<title>Eclipse support for JUnit
 
 	<section id="eclipse_creatingjunittest">
 		<indexterm>
 			<primary>JUnit</primary>
 			<secondary>Creating tests in Eclipse</secondary>
 		</indexterm>
-		<title>Creating JUnit tests</title>
+		<title>Creating JUnit tests
 		
 			You can write the JUnit tests manually, but Eclipse supports the
 			creation of JUnit tests via
@@ -44,7 +44,7 @@
 		
 	</section>
 	<section id="eclipse_runningjunittest">
-		<title>Running JUnit tests</title>
+		<title>Running JUnit tests
 
 		 The Eclipse IDE also provides support for executing your tests
 			interactively.
@@ -155,7 +155,7 @@
 		</note>
 	</section>
 	<section id="usingjunit_failedtests">
-		<title>Extracting the failed test and stacktraces</title>
+		<title>Extracting the failed test and stacktraces
 		
 			To get the list of failed test,	right click on the test result and select
 			<guilabel>Copy Failure List</guilabel>
@@ -174,7 +174,7 @@
 
 	</section>
 	<section id="usingjunit_staticimports">
-		<title>JUnit static imports</title>
+		<title>JUnit static imports
 		<indexterm>
 			<primary>JUnit</primary>
 			<secondary>Static imports in Eclipse</secondary>
@@ -210,7 +210,7 @@
 
 	</section>
 	<section id="usingjunit_testsuites">
-		<title>Wizard for creating test suites</title>
+		<title>Wizard for creating test suites
 		
 			To create a test suite in Eclipse, you select the test classes which
 			should be
@@ -238,7 +238,7 @@
 		
 	</section>
 	<section id="usingjunit_execption">
-		<title>Testing exception</title>
+		<title>Testing exception
 		<indexterm>
 			<primary>JUnit</primary>
 			<secondary>Exceptions</secondary>
@@ -257,7 +257,7 @@
 		
 	</section>
 	<section id="usingjunit_plugintest">
-		<title>JUnit Plug-in Test</title>
+		<title>JUnit Plug-in Test
 		<indexterm>
 			<primary>JUnit Plug-in Test</primary>
 		</indexterm>

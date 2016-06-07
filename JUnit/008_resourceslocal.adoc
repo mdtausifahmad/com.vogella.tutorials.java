@@ -1,6 +1,8 @@
 [[junit_links]]
-== JUnit Resources</title>
+== JUnit Resources
 
 http://www.junit.org/ - JUnit Homepage
+
+http://testng.org/- TestNG, alternative testing framework to JUnit
 	
 http://www.vogella.com/books/eclipseide.html- Eclipse IDE book from Lars Vogel

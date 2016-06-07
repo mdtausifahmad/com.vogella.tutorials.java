@@ -13,9 +13,15 @@ It explains the creation of JUnit tests.
 It also covers the usage of the Eclipse IDE for developing software tests.
 
 				
-include::002_prerequisites.adoc[]
-include::010_overview.adoc[]
-include::020_mockitointro.adoc[]
-include::030_installation.adoc[]
-include::100_mockito_androidsupport.adoc[]
-include::120_exercise_android_mockito.adoc[]
+include::009_testingintro.adoc[]
+include::010_testingintro_terminology.adoc[]
+include::011_testorganisation.adoc[]
+include::012_junitintro.adoc[]
+include::013_using_junit.adoc[]
+include::014_eclipse.adoc[]
+include::018_junitinstall.adoc[]
+include::020_eclipse_junitsetup.adoc[]
+include::030_juniteclipse.adoc[]
+include::100_advancedjunit.adoc[]
+include::200_mockframeworks.adoc[]
+include::008_resourceslocal.adoc[]

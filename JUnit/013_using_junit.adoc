@@ -1,311 +1,300 @@
-<section id="junitannoationsandassertstatements" role="wrapper">
-	<title>Basic JUnit code constructs</title>
-	<section id="usingjunit_annotations">
-		<title>Available JUnit annotations</title>
-		<indexterm>
-			<primary>JUnit</primary>
-			<secondary>Annotations</secondary>
-		</indexterm>
-		<indexterm>
-			<primary>Test annotations from JUnit</primary>
-		</indexterm>
-		JUnit 4.x uses annotations to mark methods as test methods and to configure them.
-			The following table gives an
-			overview of the most important
-			annotations in JUnit.
-		
-		
-			<table frame='all'>
-				<title>Annotations</title>
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Annotation</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>
-								
-									@Test
-									<sbr />
-									public void method()
-								
-							</entry>
-							<entry>
-								The
-								`@Test`
-								annotation identifies a method as a test
-								method.
-							</entry>
-						</row>
-						<row>
-							<entry> @Test (expected = Exception.class)</entry>
-							<entry>
-								Fails if the method does not throw the named
-								exception.
-							</entry>
-						</row>
-						<row>
-							<entry>@Test(timeout=100)</entry>
-							<entry>
-								Fails if the method takes longer than 100 milliseconds.
-							</entry>
-						</row>
-						<row>
-							<entry>
-								@Before
-								<sbr />
-								public void method()
-							</entry>
-							<entry>
-								This method is executed before each test. It is used to
-								prepare the test environment (e.g., read input
-								data,
-								initialize
-								the class).
-							</entry>
-						</row>
-						<row>
-							<entry>
-								@After
-								<sbr />
-								public void method()
-							</entry>
-							<entry>
-								This method is executed after each test. It is used to
-								cleanup the test environment (e.g., delete temporary
-								data,
-								restore defaults). It can also save memory by cleaning up
-								expensive memory structures.
-							</entry>
-						</row>
-						<row>
-							<entry>
-								@BeforeClass
-								<sbr />
-								public static void method()
-							</entry>
-							<entry>
-								This method is executed once, before the start of all
-								tests.
-								It is
-								used to perform time intensive activities, for
-								example, to
-								connect
-								to a database. Methods marked with this
-								annotation
-								need to
-								be
-								defined as
-								`static`
-								to work with JUnit.
-							</entry>
-						</row>
-						<row>
-							<entry>
-								@AfterClass
-								<sbr />
-								public static void method()
-							</entry>
-							<entry>
-								This method is executed once, after all tests have been
-								finished.
-								It is used to perform clean-up activities, for
-								example,
-								to
-								disconnect from a database. Methods annotated with
-								this
-								annotation
-								need to be defined as
-								`static`
-								to work with JUnit.
-							</entry>
-						</row>
-						<row>
-							<entry>@Ignore or @Ignore("Why disabled")</entry>
-							<entry>
-								Ignores the test method. This is useful when the
-								underlying code has been changed and the test case has not
-								yet
-								been
-								adapted. Or if the execution time of this test is too long
-								to be
-								included. It is best practice to provide
-								the optional
-								description, why the test is disabled.
-							</entry>
-						</row>
+[[junitannoationsandassertstatements]]
+== Basic JUnit code constructs
 
-					</tbody>
-				</tgroup>
-			</table>
-		
-	</section>
-	<section id="usingjunit_asserts">
-		<title>Assert statements</title>
-		<indexterm>
-			<primary>JUnit</primary>
-			<secondary>Assert statements</secondary>
-		</indexterm>
-		
-			JUnit provides static methods in the
-			`Assert`
-			class
-			to test for certain conditions. These
-			_assert statements_
-			typically start
-			with
-			`assert`
-			and allow you to specify the error message, the expected and the
-			actual
-			result. An
-			_assertion method_
-			compares the actual value returned
-			by
-			a test to the expected value, and
-			throws an
-			`AssertionException`
-			if
-			the
-			comparison test fails.
+[[usingjunit_annotations]]
+=== Available JUnit annotations
+(((JUnit,Annotations)))
+(((Test annotations from JUnit)))
+
+JUnit 4.x uses annotations to mark methods as test methods and to configure them.
+The following table gives an overview of the most important annotations in JUnit.
 		
 		
-			The
-			following
-			table gives an overview of
-			these
-			methods.
-			Parameters in
-			[]
-			brackets are
-			optional and of type String.
+<table frame='all'>
+	<title>Annotations
+	<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+		<colspec colname='c1' colwidth="1*" />
+		<colspec colname='c2' colwidth="2*" />
+		<thead>
+<row>
+	<entry>Annotation</entry>
+	<entry>Description</entry>
+</row>
+		</thead>
+		<tbody>
+<row>
+	<entry>
+		
+@Test
+<sbr />
+public void method()
+		
+	</entry>
+	<entry>
+		The
+		`@Test`
+		annotation identifies a method as a test
+		method.
+	</entry>
+</row>
+<row>
+	<entry> @Test (expected = Exception.class)</entry>
+	<entry>
+		Fails if the method does not throw the named
+		exception.
+	</entry>
+</row>
+<row>
+	<entry>@Test(timeout=100)</entry>
+	<entry>
+		Fails if the method takes longer than 100 milliseconds.
+	</entry>
+</row>
+<row>
+	<entry>
+		@Before
+		<sbr />
+		public void method()
+	</entry>
+	<entry>
+		This method is executed before each test. It is used to
+		prepare the test environment (e.g., read input
+		data,
+		initialize
+		the class).
+	</entry>
+</row>
+<row>
+	<entry>
+		@After
+		<sbr />
+		public void method()
+	</entry>
+	<entry>
+		This method is executed after each test. It is used to
+		cleanup the test environment (e.g., delete temporary
+		data,
+		restore defaults). It can also save memory by cleaning up
+		expensive memory structures.
+	</entry>
+</row>
+<row>
+	<entry>
+		@BeforeClass
+		<sbr />
+		public static void method()
+	</entry>
+	<entry>
+		This method is executed once, before the start of all
+		tests.
+		It is
+		used to perform time intensive activities, for
+		example, to
+		connect
+		to a database. Methods marked with this
+		annotation
+		need to
+		be
+		defined as
+		`static`
+		to work with JUnit.
+	</entry>
+</row>
+<row>
+	<entry>
+		@AfterClass
+		<sbr />
+		public static void method()
+	</entry>
+	<entry>
+		This method is executed once, after all tests have been
+		finished.
+		It is used to perform clean-up activities, for
+		example,
+		to
+		disconnect from a database. Methods annotated with
+		this
+		annotation
+		need to be defined as
+		`static`
+		to work with JUnit.
+	</entry>
+</row>
+<row>
+	<entry>@Ignore or @Ignore("Why disabled")</entry>
+	<entry>
+		Ignores the test method. This is useful when the
+		underlying code has been changed and the test case has not
+		yet
+		been
+		adapted. Or if the execution time of this test is too long
+		to be
+		included. It is best practice to provide
+		the optional
+		description, why the test is disabled.
+	</entry>
+</row>
+
+		</tbody>
+	</tgroup>
+</table>
+
+[[usingjunit_asserts]]
+=== Assert statements
+(((JUnit,Assert statements)))
+		
+JUnit provides static methods to test for certain conditions via the `Assert`class. 
+These
+_assert statements_
+typically start
+with
+`assert`
+and allow you to specify the error message, the expected and the
+actual
+result. An
+_assertion method_
+compares the actual value returned
+by
+a test to the expected value, and
+throws an
+`AssertionException`
+if
+the
+comparison test fails.
+		
+		
+The
+following
+table gives an overview of
+these
+methods.
+Parameters in
+[]
+brackets are
+optional and of type String.
 		
 
 		
-			<table frame='all'>
-				<title>Methods to assert test results</title>
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="2*" />
-					<colspec colname='c2' colwidth="2*" />
-					<thead>
-						<row>
-							<entry>Statement</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>fail(message)</entry>
-							<entry>
-								Let the method fail. Might be used to check that a
-								certain
-								part of the code is not reached or to have a
-								failing
-								test
-								before
-								the test code is implemented. The message parameter is
-								optional.
-							</entry>
-						</row>
-						<row>
-							<entry>assertTrue([message,] boolean condition)</entry>
-							<entry>Checks that the boolean condition is true.</entry>
-						</row>
-						<row>
-							<entry>assertFalse([message,] boolean condition)</entry>
-							<entry>Checks that the boolean condition is false.</entry>
-						</row>
-						<row>
-							<entry>assertEquals([message,] expected, actual)</entry>
-							<entry>
-								Tests that two values are the same. Note: for arrays the
-								reference is checked not the content of the
-								arrays.
-							</entry>
-						</row>
-						<row>
-							<entry>
-								assertEquals([message,] expected, actual,
-								tolerance)
-							</entry>
-							<entry>
-								Test that float or double values match. The tolerance is
-								the number
-								of decimals which must be the same.
-							</entry>
-						</row>
-						<row>
-							<entry>assertNull([message,] object)</entry>
-							<entry>Checks that the object is null.</entry>
-						</row>
-						<row>
-							<entry>assertNotNull([message,] object)</entry>
-							<entry>Checks that the object is not null.</entry>
-						</row>
-						<row>
-							<entry> assertSame([message,] expected, actual)</entry>
-							<entry>
-								Checks that both variables refer to the same object.
-							</entry>
-						</row>
-						<row>
-							<entry>assertNotSame([message,] expected, actual)</entry>
-							<entry>
-								Checks that both variables refer to different objects.
-							</entry>
-						</row>
+<table frame='all'>
+	<title>Methods to assert test results
+	<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+		<colspec colname='c1' colwidth="2*" />
+		<colspec colname='c2' colwidth="2*" />
+		<thead>
+<row>
+	<entry>Statement</entry>
+	<entry>Description</entry>
+</row>
+		</thead>
+		<tbody>
+<row>
+	<entry>fail(message)</entry>
+	<entry>
+		Let the method fail. Might be used to check that a
+		certain
+		part of the code is not reached or to have a
+		failing
+		test
+		before
+		the test code is implemented. The message parameter is
+		optional.
+	</entry>
+</row>
+<row>
+	<entry>assertTrue([message,] boolean condition)</entry>
+	<entry>Checks that the boolean condition is true.</entry>
+</row>
+<row>
+	<entry>assertFalse([message,] boolean condition)</entry>
+	<entry>Checks that the boolean condition is false.</entry>
+</row>
+<row>
+	<entry>assertEquals([message,] expected, actual)</entry>
+	<entry>
+		Tests that two values are the same. Note: for arrays the
+		reference is checked not the content of the
+		arrays.
+	</entry>
+</row>
+<row>
+	<entry>
+		assertEquals([message,] expected, actual,
+		tolerance)
+	</entry>
+	<entry>
+		Test that float or double values match. The tolerance is
+		the number
+		of decimals which must be the same.
+	</entry>
+</row>
+<row>
+	<entry>assertNull([message,] object)</entry>
+	<entry>Checks that the object is null.</entry>
+</row>
+<row>
+	<entry>assertNotNull([message,] object)</entry>
+	<entry>Checks that the object is not null.</entry>
+</row>
+<row>
+	<entry> assertSame([message,] expected, actual)</entry>
+	<entry>
+		Checks that both variables refer to the same object.
+	</entry>
+</row>
+<row>
+	<entry>assertNotSame([message,] expected, actual)</entry>
+	<entry>
+		Checks that both variables refer to different objects.
+	</entry>
+</row>
 
-					</tbody>
-				</tgroup>
-			</table>
+		</tbody>
+	</tgroup>
+</table>
 		
 	</section>
 
 	<section id="usingjunit_executionorder">
-		<title>Test execution order</title>
+		<title>Test execution order
 		<indexterm>
-			<primary>JUnit</primary>
-			<secondary>Test execution order</secondary>
+<primary>JUnit</primary>
+<secondary>Test execution order</secondary>
 		</indexterm>
 		
-			JUnit
-			assumes that all test methods
-			can
-			be executed
-			in
-			an
-			arbitrary
-			order. Well-written test code should not assume any
-			order, i.e.,
-			tests
-			should not depend on
-			other tests.
+JUnit
+assumes that all test methods
+can
+be executed
+in
+an
+arbitrary
+order. Well-written test code should not assume any
+order, i.e.,
+tests
+should not depend on
+other tests.
 		
-		As of JUnit 4.11 the default is to use a
-			deterministic, but not
-			predictable, order for the execution of the tests.
+As of JUnit 4.11 the default is to use a
+deterministic, but not
+predictable, order for the execution of the tests.
 		
 		
-			You can use an annotation to define that the
-			test methods are sorted
-			by method name, in
-			lexicographic order.
-			To activate
-			this feature, annotate your test class with the
-			`@FixMethodOrder(MethodSorters.NAME_ASCENDING)`
-			annotation. You can also explicitely set the default by using the
-			`MethodSorters.DEFAULT`
-			parameter in this annotation. You can also use
-			`MethodSorters.JVM`
-			which uses the JVM defaults, which may vary from run to run.
+You can use an annotation to define that the
+test methods are sorted
+by method name, in
+lexicographic order.
+To activate
+this feature, annotate your test class with the
+`@FixMethodOrder(MethodSorters.NAME_ASCENDING)`
+annotation. You can also explicitely set the default by using the
+`MethodSorters.DEFAULT`
+parameter in this annotation. You can also use
+`MethodSorters.JVM`
+which uses the JVM defaults, which may vary from run to run.
 		
 	</section>
 	<section id="junit_disablingtests">
-		<title>Disabling tests</title>
+		<title>Disabling tests
 		In addition to the @Ignore annotation on the test, you can use Assume.assumeFalse or Assume.assumeTrue to determine to define a
 		test condition. Assume.assumeFalse marks the test as invalid if its condition evaluates to true, Assume.assumeTrue evaluates the test as invalid if 
 		to true. For example the following disables a test on Linux:

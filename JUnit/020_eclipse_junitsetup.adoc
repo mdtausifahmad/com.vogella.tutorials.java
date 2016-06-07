@@ -1,5 +1,5 @@
 <section id="juniteclipse_staticimports">
-	<title>Setting Eclipse up for using JUnits static imports</title>
+	<title>Setting Eclipse up for using JUnits static imports
 	<indexterm>
 		<primary>JUnit
 		</primary>

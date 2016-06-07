@@ -1,7 +1,7 @@
 <section id="junitadvanced" role="wrapper">
-	<title>Advanced JUnit options</title>
+	<title>Advanced JUnit options
 	<section id="junitadvanced_parameterizedtests">
-		<title>Parameterized test</title>
+		<title>Parameterized test
 		<indexterm>
 			<primary>JUnit</primary>
 			<secondary>Parameterized test</secondary>
@@ -90,7 +90,7 @@
 	</section>
 
 	<section id="junitadvanced_rules">
-		<title>JUnit Rules</title>
+		<title>JUnit Rules
 		<indexterm>
 			<primary>JUnit</primary>
 			<secondary>Rules</secondary>
@@ -145,7 +145,7 @@
 	</section>
 
 	<section id="junitadvanced_rules_writingcustomrules">
-		<title>Writing custom JUnit Rules</title>
+		<title>Writing custom JUnit Rules
 		
 			To write your custom rule, you need to implement the
 			`TestRule`
@@ -178,7 +178,7 @@
 	</section>
 
 	<section id="junitadvanced_categories">
-		<title>Categories</title>
+		<title>Categories
 		<indexterm>
 			<primary>JUnit</primary>
 			<secondary>Categories</secondary>

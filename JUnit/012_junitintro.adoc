@@ -1,7 +1,7 @@
 <section id="junittesting" role="wrapper">
-	<title>Using JUnit</title>
+	<title>Using JUnit
 	<section id="unittesting_junit">
-		<title>The JUnit framework</title>
+		<title>The JUnit framework
 		<indexterm>
 			<primary>JUnit framework</primary>
 		</indexterm>
@@ -22,7 +22,7 @@
 	</section>
 
 	<section id="unittesting_junit_test">
-		<title>How to define a test in JUnit?</title>
+		<title>How to define a test in JUnit?
 		
 			A
 			JUnit
@@ -71,7 +71,7 @@
 		
 	</section>
 	<section id="unittesting_junitexample">
-		<title>Example JUnit test</title>
+		<title>Example JUnit test
 		<indexterm>
 			<primary>JUnit</primary>
 			<secondary>Example test method</secondary>
@@ -94,7 +94,7 @@
 	</section>
 
 	<section id="junit_namingconventions">
-		<title>JUnit naming conventions</title>
+		<title>JUnit naming conventions
 		<indexterm>
 			<primary>Naming conventions for test methods</primary>
 		</indexterm>
@@ -117,7 +117,7 @@
 	</section>
 
 	<section id="junit_namingconventions_maven">
-		<title>JUnit naming conventions for Maven</title>
+		<title>JUnit naming conventions for Maven
 
 		If you are using the Maven build system, you should prefer the "Test" suffix over "Tests" as the Maven
 			build
@@ -130,7 +130,7 @@
 
 
 	<section id="juniteclipse_testsuite">
-		<title>JUnit test suites</title>
+		<title>JUnit test suites
 		<indexterm>
 			<primary>JUnit</primary>
 			<secondary>Test suite</secondary>
@@ -163,7 +163,7 @@
 
 
 	<section id="juniteclipse_code">
-		<title>Run your test from the command line</title>
+		<title>Run your test from the command line
 		
 			You can also run your JUnit tests outside Eclipse via
 			standard

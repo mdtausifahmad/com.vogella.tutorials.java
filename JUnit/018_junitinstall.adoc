@@ -1,7 +1,7 @@
 <section id="installation" role="wrapper">
-	<title>Installation of JUnit</title>
+	<title>Installation of JUnit
 	<section id="installation_gradle">
-		<title>Using JUnit with Gradle</title>
+		<title>Using JUnit with Gradle
 		<indexterm>
 			<primary>JUnit installation</primary>
 			<secondary>Gradle</secondary>
@@ -16,7 +16,7 @@
 
 	</section>
 	<section id="installation_Maven">
-		<title>Using JUnit with Maven</title>
+		<title>Using JUnit with Maven
 		<indexterm>
 			<primary>JUnit installation</primary>
 			<secondary>Maven</secondary>
@@ -31,7 +31,7 @@
 
 	</section>
 	<section id="installation_eclipse">
-		<title>Using JUnit integrated into Eclipse</title>
+		<title>Using JUnit integrated into Eclipse
 		<indexterm>
 			<primary>JUnit installation</primary>
 			<secondary>Eclipse</secondary>
@@ -45,7 +45,7 @@
 
 	</section>
 	<section id="installation_junit">
-		<title>Downloading the JUnit library</title>
+		<title>Downloading the JUnit library
 		<indexterm>
 			<primary>JUnit installation</primary>
 			<secondary>JAR file</secondary>
