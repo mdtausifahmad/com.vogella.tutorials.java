@@ -1,0 +1,221 @@
+<section id="junittesting" role="wrapper">
+	<title>Using JUnit</title>
+	<section id="unittesting_junit">
+		<title>The JUnit framework</title>
+		<indexterm>
+			<primary>JUnit framework</primary>
+		</indexterm>
+
+		
+			<wordasword>JUnit</wordasword>
+			in version
+			4.x is a test framework
+			which uses annotations to identify
+			methods that
+			specify a test.
+			The main websites for JUnit are the
+			<ulink url="http://junit.org/">JUnit homepage</ulink>
+			and the
+			<ulink url="https://github.com/junit-team/junit">GitHub project page</ulink>
+			.
+		
+	</section>
+
+	<section id="unittesting_junit_test">
+		<title>How to define a test in JUnit?</title>
+		
+			A
+			JUnit
+			<wordasword>test</wordasword>
+			is a method
+			contained in a class which is only used for
+			testing. This
+			is
+			called a
+			<wordasword>Test class</wordasword>
+			.
+			To
+			write a test with the
+			JUnit 4.x framework you annotate a method with
+			the
+			`@org.junit.Test`
+			<indexterm>
+				<primary>JUnit</primary>
+				<secondary>@Test</secondary>
+			</indexterm>
+			annotation.
+		
+
+
+		
+			In this method you use an
+			<wordasword>assert</wordasword>
+			method, typically provided by the JUnit or another assert framework,
+			to check the
+			expected
+			result
+			of the code execution
+			versus the actual
+			result. These method calls are typically called
+			<wordasword>asserts</wordasword>
+			or
+			<wordasword>assert statements</wordasword>
+			.
+		
+		 You should provide meaningful messages in assert statements so that it
+			is easier for the developer to identify
+			the problem. This helps in
+			fixing the issue, especially if someone looks at the problem, who
+			did not write the code
+			under test or the test code.
+		
+	</section>
+	<section id="unittesting_junitexample">
+		<title>Example JUnit test</title>
+		<indexterm>
+			<primary>JUnit</primary>
+			<secondary>Example test method</secondary>
+		</indexterm>
+
+		
+			The following code shows a JUnit test. This test assumes that the
+			`MyClass`
+			class exists and has a
+			`multiply(int, init)`
+			method.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/example/test.java" />
+			</programlisting>
+		
+
+	</section>
+
+	<section id="junit_namingconventions">
+		<title>JUnit naming conventions</title>
+		<indexterm>
+			<primary>Naming conventions for test methods</primary>
+		</indexterm>
+		There are several potential naming conventions for JUnit tests.
+			In widespread use is to use the name of the class
+			under test and to
+			add the "Test" suffix to the test class.
+		
+		For the test method names it is frequently recommended to use the
+			word "should" in the test method name, as for
+			example
+			"ordersShouldBeCreated" or "menuShouldGetActive" as this gives a good
+			hint what should happen if the test
+			method is executed.
+		
+		As a general rule, a test name should explain what the test does
+			so that it can be avoided to read the actual
+			implementation.
+		
+	</section>
+
+	<section id="junit_namingconventions_maven">
+		<title>JUnit naming conventions for Maven</title>
+
+		If you are using the Maven build system, you should prefer the "Test" suffix over "Tests" as the Maven
+			build
+			system (via its surfire plug-in)
+			automatically includes such
+			classes in its test scope.
+		
+	</section>
+
+
+
+	<section id="juniteclipse_testsuite">
+		<title>JUnit test suites</title>
+		<indexterm>
+			<primary>JUnit</primary>
+			<secondary>Test suite</secondary>
+		</indexterm>
+		
+			If you have several test classes, you can combine them into a
+			<wordasword>test suite</wordasword>
+			. Running a test suite will execute all
+			test classes in that suite in
+			the specified order.
+		
+
+		
+			The following example code shows a test suite which defines that two
+			test classes (MyClassTest and MySecondClassTest)
+			should be executed.
+			If you want to add
+			another test class
+			you can add it to
+			`@Suite.SuiteClasses`
+			statement.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/AllTests.java" />
+			</programlisting>
+		
+		A test suite can also contain other test suites. 
+	</section>
+
+
+	<section id="juniteclipse_code">
+		<title>Run your test from the command line</title>
+		
+			You can also run your JUnit tests outside Eclipse via
+			standard
+			Java
+			code. Build
+			frameworks like Apache Maven or
+			Gradle in
+			combination
+			with a Continuous Integration Server (like Hudson or
+			Jenkins) are
+			typically used to execute tests
+			automatically on a regular
+			basis.
+		
+		
+
+			The
+			`org.junit.runner.JUnitCore`
+			class
+			provides the
+			`runClasses()`
+			method which
+			allows you to run one or
+			several tests classes. As a
+			return parameter
+			you receive an object of
+			the
+			type
+			`org.junit.runner.Result`
+			. This object
+			can be used to retrieve information about the tests.
+		
+		
+			The following class demonstrates how to run the MyClassTest.
+			This class will execute your test class and
+			write
+			potential failures to
+			the console.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/code/MyTestRunner.java" />
+			</programlisting>
+		
+
+		
+			This class can be executed like any other Java program on the
+			command line. You only need to add the
+			JUnit library
+			JAR file to the
+			classpath.
+		
+	</section>
+
+</section>

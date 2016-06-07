@@ -1,0 +1,203 @@
+<section id="junitadvanced" role="wrapper">
+	<title>Advanced JUnit options</title>
+	<section id="junitadvanced_parameterizedtests">
+		<title>Parameterized test</title>
+		<indexterm>
+			<primary>JUnit</primary>
+			<secondary>Parameterized test</secondary>
+		</indexterm>
+		
+			JUnit allows you to use parameters in a tests class. This class
+			can contain one test
+			method and this method is
+			executed with the
+			different
+			parameters provided.
+		
+		
+			You mark a test class as a parameterized test with the
+			`@RunWith(Parameterized.class)`
+			annotation.
+		
+		
+			Such a test class must contain a static method annotated with
+			`@Parameters`
+			that generates
+			and returns a collection of arrays. Each item in this
+			collection is
+			used as parameter for the test
+			method.
+		
+
+		
+			You can use the
+			`@Parameter`
+			annotation on public fields to get the test values injected in the test.
+		
+
+		
+			The following code shows an example for a parameterized test. It
+			tests the
+			`multiply()`
+			method of the
+			`MyClass`
+			class which is included as inner class for the purpose of this example.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/parameter/ParameterizedTestFields.java" />
+			</programlisting>
+		
+
+		
+			Alternatively to using the
+			`@Parameter`
+			annotation on public fields you can use a constructor in which you store the
+			values
+			for each test. The number of
+			elements in each array
+			provided by
+			the
+			method annotated with
+			`@Parameters`
+			must
+			correspond to the number of parameters in the
+			constructor of the
+			class.
+			The class is created for each parameter and
+			the test
+			values are
+			passed
+			via the constructor to the class.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/parameter/ParameterizedTestUsingConstructor.java" />
+			</programlisting>
+		
+		
+			If you run this test class, the test method is executed
+			with
+			each
+			defined
+			parameter. In the above example the test
+			method is executed
+			three times.
+		
+	</section>
+
+	<section id="junitadvanced_rules">
+		<title>JUnit Rules</title>
+		<indexterm>
+			<primary>JUnit</primary>
+			<secondary>Rules</secondary>
+		</indexterm>
+		
+		
+			Rules allow very flexible addition or redefinition of the behavior of each test method in a test class.
+			Via the
+			`@Rule`
+			annotation you can create objects which can be used and
+			configured in
+			your test methods. This adds more
+			flexibility to
+			your
+			tests. You could,
+			for example, specify which exception
+			message
+			you expect during
+			execution of your test code.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/rule/RuleExceptionTesterExample.java" />
+			</programlisting>
+		
+
+		
+			JUnit already provides several useful implementations of
+			rules. For
+			example, the
+			`TemporaryFolder`
+			class allows to setup files and folders which are automatically
+			removed after each test run.
+		
+		
+			The following code shows an example for the usage of the
+			`TemporaryFolder`
+			implementation.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/rule/RuleTester.java" />
+			</programlisting>
+		
+		
+			For more examples of existing rules see
+			<ulink url="https://github.com/junit-team/junit/wiki/Rules">JUnit Rules wiki</ulink>
+			.
+		
+	</section>
+
+	<section id="junitadvanced_rules_writingcustomrules">
+		<title>Writing custom JUnit Rules</title>
+		
+			To write your custom rule, you need to implement the
+			`TestRule`
+			interface. This interface defines the
+			`apply(Statement, Description)`
+			method which must return an instance of
+			`Statement`
+			. Statement represent the tests within the JUnit runtime and Statement#evaluate() run these. Description describes
+			the individual test. It allows to read information about the test via reflection.
+		
+		The following is a simple example for adding a log statement to an Android application before and after test
+			execution.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/rule/MyCustomRule.java" />
+			</programlisting>
+		
+		
+			To use this rule, simple add field annotated with
+			`@Rule`
+			to your test class.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/rule/UseCustomRule.java" />
+			</programlisting>
+		
+
+	</section>
+
+	<section id="junitadvanced_categories">
+		<title>Categories</title>
+		<indexterm>
+			<primary>JUnit</primary>
+			<secondary>Categories</secondary>
+		</indexterm>
+		
+			It is possible to define categories of tests and include or
+			exclude
+			them based on annotations. The following example is
+			based on the
+			<ulink url="https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.8.md">JUnit 4.8 release notes</ulink>
+			.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/categories/CategoriesExample.java" />
+			</programlisting>
+		
+
+
+	</section>
+</section>

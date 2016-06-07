@@ -1,0 +1,76 @@
+<section id="installation" role="wrapper">
+	<title>Installation of JUnit</title>
+	<section id="installation_gradle">
+		<title>Using JUnit with Gradle</title>
+		<indexterm>
+			<primary>JUnit installation</primary>
+			<secondary>Gradle</secondary>
+		</indexterm>
+		To use JUnit in your Gradle build, add a testCompile dependency to your build file.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/install/build.gradle" />
+			</programlisting>
+		
+
+
+	</section>
+	<section id="installation_Maven">
+		<title>Using JUnit with Maven</title>
+		<indexterm>
+			<primary>JUnit installation</primary>
+			<secondary>Maven</secondary>
+		</indexterm>
+		To use JUnit in your Maven build, add the following dependency to your pom file.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/install/pom.xml" />
+			</programlisting>
+		
+
+
+	</section>
+	<section id="installation_eclipse">
+		<title>Using JUnit integrated into Eclipse</title>
+		<indexterm>
+			<primary>JUnit installation</primary>
+			<secondary>Eclipse</secondary>
+		</indexterm>
+		
+			The Eclipse IDE ships with a version of JUnit. If you use Eclipse, no additional
+			download
+			is
+			required.
+		
+
+	</section>
+	<section id="installation_junit">
+		<title>Downloading the JUnit library</title>
+		<indexterm>
+			<primary>JUnit installation</primary>
+			<secondary>JAR file</secondary>
+		</indexterm>
+		
+			If you want to control the used JUnit library explicitly,
+			download
+			JUnit4.x.jar from the following JUnit website. The
+			download
+			contains
+			the
+			<filename>junit-4.*.jar</filename>
+			which is the JUnit
+			library.
+			Add this library
+			to your
+			Java project and add
+			it to the
+			classpath.
+		
+		
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/link/junit.txt" />
+			</programlisting>
+		
+
+	</section>
+</section>

@@ -1,0 +1,100 @@
+[[mockitousage]]
+== Using the Mockito API
+
+=== Creating and configuring mock objects with Mockito
+		
+Mockito supports the creation of mock objects with the static `mock()` method.
+If you add a static import for `org.mockito.Mockito.*;`, you can access Mockitos methods like `mock()` directly. 
+Static imports allows you to call static members, i.e., methods and fields of a class directly without specifying the class.
+		
+To configure which values are returned at a method call the Mockito framework defines a fluent API. 
+You can use the `verify()` method to ensure that a method was called.
+		
+The `when(....).thenReturn(....)` method chain is be used to specify a condition and a return value for this condition. 
+If you specify more than one value,	they are returned in the order of specification until the last one is used. 
+Afterwards the last	specified value	is returned. 
+Mocks can also return different values depending on arguments passed into a method. 
+You also use methods like `anyString` or `anyInt` to define that independent of the input value a certain return value should be returned.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/api/WhenThenReturn.java" />
+			</programlisting>
+		
+The `doReturn(...).when(...).methodCall` call chain works similar but is useful for void methods. 
+The `doThrow` variant can be used for methods which return `void` to throw an exception. 
+This usage is demonstrated by the following code snippet.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/api/doReturnWhen.java" />
+			</programlisting>
+
+[[mockito_verify]]
+===	Verify the calls on the mock objects
+		
+Mockito keeps track of all the method calls and their parameters to the mock object. 
+You can use the `verify()` method on the mock object to verify that the specified conditions are met
+For example, you can verify that a method has been called with certain parameters.
+This kind of testing is sometimes called _behavior testing_. 
+Behavior testing does not check the result of a method call, but it checks that a method is called with the right parameters.
+		
+
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/api/Verify.java" />
+			</programlisting>
+
+[[mockito_spy]]
+=== Wrapping Java objects with Spy
+		
+@Spy or the `spy()` 	method can be used to wrap a real object. 
+Every call, unless specified otherwise, is delegated to the object.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Spy.txt" />
+			</programlisting>
+		
+The `verifyNoMoreInteractions()` allows you to check that no other method was called.
+		
+[[mockito_dependencyinjection]]
+=== Using @InjectMocks for dependency injection via Mockito
+		
+You also have the `@InjectMocks` annotation which tries to do constructor, method or field dependency injection based on the type. 
+The following code is a slightly modified example from the Javadoc.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippet/ArticleManager.java" />
+			</programlisting>
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippet/Example.java" />
+			</programlisting>
+		
+		
+For more information see  http://docs.mockito.googlecode.com/hg/1.9.5/org/mockito/InjectMocks.html.
+			.
+[[mockito_annotations]]
+=== Creating mock objects based on annotations
+		
+Mockito also supports the creation of mock objects based on the `@Mock` annotation.
+		
+If you this annotation, you must initialize the mock objects. 
+The `MockitoRule` allows this, it invokes the static method `MockitoAnnotations.initMocks(this)` to populate the annotated fields. 
+Alternatively you can use `@RunWith(MockitoJUnitRunner.class)`.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/TestSimple.txt" />
+			</programlisting>
+[[mockito_limitations]]
+=== Limitations
+		
+Mockito has certain limitations. 
+It can not test the following constructs:
+
+* final classes
+* anonymous classes
+* primitive types

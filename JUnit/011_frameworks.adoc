@@ -1,0 +1,12 @@
+<section id="unittesting">
+	<title>Testing frameworks for Java</title>
+	
+		There are several testing frameworks available for Java. The most
+		popular ones are
+		<ulink url="http://junit.org/">JUnit</ulink>
+		and
+		<ulink url="http://testng.org/">TestNG</ulink>
+		.
+	
+	This description focuses at JUnit.
+</section>

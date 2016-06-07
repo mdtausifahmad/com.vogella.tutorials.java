@@ -1,0 +1,100 @@
+<section id="juniteclipse_staticimports">
+	<title>Setting Eclipse up for using JUnits static imports</title>
+	<indexterm>
+		<primary>JUnit
+		</primary>
+		<secondary>Static imports</secondary>
+	</indexterm>
+	<indexterm>
+		<primary>Static imports in Eclipse
+		</primary>
+	</indexterm>
+	
+		The Eclipse IDE cannot always
+		create the
+		corresponding
+		`static import`
+		statements automatically.
+	
+	
+		You can configure the Eclipse IDE to
+		use code completion to insert typical JUnit method calls and to add the static
+		import automatically.
+		For this
+		open the
+		Preferences via
+		<menuchoice>
+			<guimenu>Window</guimenu>
+			<guisubmenu>Preferences</guisubmenu>
+		</menuchoice>
+		and select
+		<menuchoice>
+			<guimenu>Java</guimenu>
+			<guisubmenu>Editor</guisubmenu>
+			<guisubmenu>Content Assist</guisubmenu>
+			<guisubmenu>Favorites</guisubmenu>
+		</menuchoice>
+		.
+	
+
+	
+		Use the
+		<guibutton>New Type</guibutton>
+		button to add the following entries to it:
+		<itemizedlist>
+			<listitem>
+				
+					`org.junit.Assert`
+				
+			</listitem>
+			<listitem>
+				
+					`org.hamcrest.CoreMatchers`
+				
+			</listitem>
+			<listitem>
+				
+					`org.hamcrest.Matchers`
+				
+			</listitem>
+		</itemizedlist>
+	
+
+	
+		This makes, for example, the
+		`assertTrue`
+		,
+		`assertFalse`
+		and
+		`assertEquals`
+		methods directly available in the
+		<wordasword>Content Assists</wordasword>
+		.
+	
+
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/staticimport10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Adding static imports to the preferences</phrase>
+			</textobject>
+		</mediaobject>
+	
+	
+		You can now use
+		<wordasword>Content Assists</wordasword>
+		(shortcut:
+		<keycombo>
+			<keycap>Ctrl</keycap>
+			<keycap>Space</keycap>
+		</keycombo>
+		) to
+		add
+		the
+		method and the
+		import.
+	
+
+</section>

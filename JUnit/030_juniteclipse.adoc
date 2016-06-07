@@ -1,0 +1,221 @@
+<section id="juniteclipse" role="wrapper">
+	<title>Exercise: Using JUnit</title>
+
+	<section id="juniteclipse_prep">
+		<title>Project preparation</title>
+		
+			Create a new project called
+			<wordasword>com.vogella.junit.first</wordasword>
+			.
+		
+		
+			Create a new source
+			folder
+			<filename class="directory">test</filename>
+			. For this
+			right-click on your
+			project,
+			select
+			<guilabel>Properties</guilabel>
+			and choose
+			<menuchoice>
+				<guimenu>Java</guimenu>
+				<guisubmenu>Build Path</guisubmenu>
+			</menuchoice>
+			. Select the
+			<guilabel>Source</guilabel>
+			tab.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/junit10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create new source folder for the tests</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			Press the
+			<guibutton>Add Folder</guibutton>
+			button. Afterwards, press the
+			<guibutton>Create New Folder</guibutton>
+			button. Enter
+			<filename class="directory">test</filename>
+			as
+			folder name.
+		
+		The result is depicted in the following screenshot.
+
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/junit20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Creating a new folder</phrase>
+				</textobject>
+			</mediaobject>
+		
+		<tip>
+			
+				You can also add a new source folder
+				by right-clicking on a
+				project and selecting
+				<menuchoice>
+					<guimenu>New </guimenu>
+					<guisubmenu>Source Folder</guisubmenu>
+				</menuchoice>
+				.
+			
+		</tip>
+	</section>
+	<section id="juniteclipse_class">
+		<title>Create a Java class</title>
+		
+			In the
+			<filename class="directory">src</filename>
+			folder, create the
+			`com.vogella.junit.first`
+			package
+			and the following
+			class.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/first/MyClass.java" />
+			</programlisting>
+		
+	</section>
+	<section id="juniteclipse_test">
+		<title>Create a JUnit test</title>
+		
+			Right-click on your new class in the
+			<guilabel>Package Explorer</guilabel>
+			view
+			and select
+			<menuchoice>
+				<guimenu>New</guimenu>
+				<guisubmenu>JUnit Test Case</guisubmenu>
+			</menuchoice>
+			.
+		
+		
+			In the following wizard
+			ensure that the
+			<guilabel>New JUnit 4 test</guilabel>
+			flag
+			is selected
+			and set the source folder to
+			<filename class="directory">test</filename>
+			,
+			so
+			that your test class gets created in this folder.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/junit30.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Create new test class</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			Press the
+			<guibutton>Next</guibutton>
+			button and select the methods that you want to test.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/junit40.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Selecting the methods to test</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			If the JUnit library is not part of the classpath of your
+			project, Eclipse
+			will
+			prompt you to add it. Use this to add JUnit to
+			your project.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/junit50.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Eclipse prompt for adding JUnit to the project classpath</phrase>
+				</textobject>
+			</mediaobject>
+		
+		Create a test with the following code.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/first/MyClassTest.java" />
+			</programlisting>
+		
+	</section>
+	<section id="juniteclipse_eclipse">
+		<title>Run your test in Eclipse</title>
+
+		
+			Right-click on your new test class and select
+			<menuchoice>
+				<guimenu> Run-As</guimenu>
+				<guisubmenu>JUnit Test</guisubmenu>
+			</menuchoice>
+			.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/junit60.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Run JUnit test in Eclipse</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			The result of the tests are displayed in the JUnit
+			view. In
+			our example one test should be successful and one test should
+			show an
+			error. This error is indicated by a red bar.
+		
+		
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/junit70.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Result of running a unit test</phrase>
+				</textobject>
+			</mediaobject>
+		
+		
+			The test is failing,
+			because our multiplier class is
+			currently not
+			working
+			correctly. It
+			does a
+			division instead of
+			multiplication. Fix the
+			bug
+			and re-run the
+			test to get
+			a green bar.
+		
+	</section>
+
+</section>

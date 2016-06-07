@@ -1,0 +1,6 @@
+[[junit_links]]
+== JUnit Resources</title>
+
+http://www.junit.org/ - JUnit Homepage
+	
+http://www.vogella.com/books/eclipseide.html- Eclipse IDE book from Lars Vogel

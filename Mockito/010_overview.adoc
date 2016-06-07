@@ -1,0 +1,169 @@
+<section id="testingwithmocks" role="wrapper">
+	Testing with test doubles
+
+	<section id="testingwithmocks_targets">
+		Target and challenge of unit testing
+		
+			A unit test should test a class in isolation. Side effects from
+			other
+			classes or the system should be eliminated
+			if possible.
+			The
+			achievement of this desired goal is typical complicated by the fact
+			that Java classes
+			usually depend on
+			other classes.
+		
+		
+			To solve this, you can use test doubles.
+		
+	</section>
+	<section id="stubsvsmockobject">
+		Classifications of different test classes
+		<indexterm>
+			<primary>Test doubles</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Mock objects</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Stub objects</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Fake objects</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Dummy objects</primary>
+		</indexterm>
+
+		
+			A
+			<wordasword>dummy object</wordasword>
+			is passed around but never used, i.e., its methods are never called.
+			Such an object can for example be used to fill
+			the parameter list of
+			a method.
+		
+		
+			<wordasword>Fake</wordasword>
+			objects have
+			working implementations, but are usually simplified, for
+			example they use an in
+			memory
+			database and not a
+			real database.
+		
+		
+			A
+			<wordasword>stub</wordasword>
+			class is an partial implementation for an interface or class with
+			the
+			purpose
+			of using an instance of this stub class
+			during testing. Stubs
+			usually do
+			responding at all to anything
+			outside what's
+			programmed in
+			for the
+			test.
+			Stubs may
+			also
+			record
+			information about
+			calls
+		
+		
+			A
+			<wordasword>mock object</wordasword>
+			is a
+			dummy implementation for an interface or a
+			class in which you
+			define
+			the
+			output of
+			certain method calls.
+		
+		Test doubles can be passed to other
+			objects which are
+			tested. Your
+			tests can validate
+			that the class reacts
+			correctly during
+			tests, i.e.,
+			you can validate
+			if certain methods on the mock
+			object
+			were called. This
+			helps to ensure that
+			you only test the class
+			while
+			running tests and
+			that your tests are not affected by any side
+			effects.
+		
+		Mock objects
+			are typically configured. Mock objects typically
+			require less code to
+			configure and should therefore
+			be preferred.
+		
+		
+			For a detailed discussion on this topic, see
+			<ulink url="http://martinfowler.com/articles/mocksArentStubs.html">Mocks Aren't Stubs from Martin Fowler</ulink>
+			.
+		
+	</section>
+
+	<section id="usingstubsandmocks">
+		Mock object generation
+
+		
+			You can create these mock objects manually (via code)
+			or use
+			a
+			mock
+			framework
+			to
+			simulate these classes. Mock
+			frameworks allow you to
+			create
+			mock
+			objects at runtime and define their behavior.
+		
+		 The classical example for a
+			mock object is
+			a data provider. In
+			production a real database is used,
+			but for testing
+			a
+			mock object
+			simulates the database and ensures that
+			the test conditions
+			are
+			always
+			the same.
+		
+		
+			These mock objects can be provided
+			to
+			the
+			class which
+			is tested.
+			Therefore,
+			the
+			class to be tested should
+			avoid any hard
+			dependency on
+			external
+			data.
+		
+		Mocking or mock frameworks allows testing the expected interaction with
+			the mock
+			object, e.g., you test which
+			methods have been called on the
+			mock
+			object.
+		
+	</section>
+</section>

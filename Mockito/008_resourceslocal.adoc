@@ -1,0 +1,8 @@
+[[resources_mockito]]
+== Mockito resources
+
+http://site.mockito.org - Mockito home page
+
+https://github.com/mockito/mockito- Mockito project hosting page
+
+https://github.com/mockito/mockito/blob/master/doc/release-notes/official.md - Mockito release notes
