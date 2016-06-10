@@ -1,0 +1,44 @@
+== Exercise: Creating mock objects using Mockito
+
+=== Target 
+
+Create an API, which can be mocked and use Mockito to do the job.
+
+=== Create a sample Twitter API
+
+Implement a `TwitterClient`, which works with `ITweet` instances.
+But imagine these `ITweet` instances are pretty cumbersome to get, e.g., by using a complex service, which would have to be started.
+
+[source, java]
+----
+include::res/twitter/ITweet.java[]
+----
+
+[source, java]
+----
+include::res/twitter/TwitterClient.java[]
+----
+
+=== Mocking ITweet instances
+
+In order to avoid starting up a complex service to get `ITweet` instances, they can also be mocked by Mockito.
+
+[source, java]
+----
+include::res/twitter/TwitterClientTest.java[]
+----
+
+Now the `TwitterClient` can make use of a mocked `ITweet` instance and will get "Using Mockito is great" as message when calling `getMessage()` on the mocked `ITweet`.
+
+=== Verify method invocation
+
+Ensure that getMessage() is at least called once.
+
+[source, java]
+----
+include::res/twitter/TwitterClientTestVerify.java[]
+----
+
+=== Validate
+
+Run the test and validate that it is successful.
