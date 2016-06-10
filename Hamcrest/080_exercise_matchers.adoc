@@ -1,0 +1,55 @@
+==	Exercise -  Using Hamcrest matchers
+
+=== Target
+
+The target of this exercise is to make use of Hamcrest matchers.
+
+=== Using Hamcrest Matchers
+
+Create the following tests using different Hamcrest matchers.
+
+. `List<Integer> list = Arrays.asList(5, 2, 4)`
+
+.. Has size of 3
+.. Contains the elements 2, 4, 5 in any order
+.. Every item is greater than 1
+
+. `Integer[] ints = new Integer[] {7, 5, 12, 16}`
+
+.. Has size of 4
+.. Contains 7, 5 , 12 , 16 in the given order
+
+=== Solutions
+
+==== Solution - Collection Exercises
+
+[source, java]
+----
+include::res/exercise-matcher/sizeOf3.java[]
+----
+
+[source, java]
+----
+include::res/exercise-matcher/ElementsInAnyOrder.java[]
+----
+
+[source, java]
+----
+include::res/exercise-matcher/EveryItemGreaterThan1.java[]
+----
+
+==== Solution - Array Exercises
+
+[source, java]
+----
+include::res/exercise-matcher/ArraySizeOf4.java[]
+----
+
+[source, java]
+----
+include::res/exercise-matcher/ArrayElementsInOrder.java[]
+----
+
+=== Validate
+
+Validate that the correct test fail accordings to the conditions, which have been specified in this exercise.
