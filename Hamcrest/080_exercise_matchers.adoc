@@ -69,7 +69,6 @@ include::res/exercise-matcher/ArraySizeOf4.java[]
 include::res/exercise-matcher/ArrayElementsInOrder.java[]
 ----
 
-
 === Using Hamcrest beans matchers
 
 ==== Target
@@ -150,7 +149,37 @@ public void objectHasSameProperties () {
 }  
 ----
 
+=== Using Hamcrest String matchers
 
+==== Target
 
+Write tests that ensure that:
 
+* "" is an empty string
+* a given string is either empty or null
+
+==== Solution
+[source,java]
+----
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+import static org.hamcrest.text.IsEmptyString.isEmptyString;
+import static org.hamcrest.text.IsEmptyString.isEmptyOrNullString;
+
+public class StringMatcherTest {
+    @Test
+    public void isStringEmpty() {
+        String stringToTest = "";
+        assertThat(stringToTest, isEmptyString());
+    }
+
+    @Test
+    public void isStringEmptyOfNull() {
+        String stringToTest = "";
+        assertThat(stringToTest, isEmptyOrNullString());
+    }
+
+}
+----
 
