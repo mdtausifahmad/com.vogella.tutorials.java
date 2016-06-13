@@ -4,24 +4,26 @@
 
 The target of this exercise is to make use of Hamcrest matchers.
 
-=== Using Hamcrest Matchers
+=== Using Hamcrest collection matchers for lists
 
-Create the following tests using different Hamcrest matchers.
+==== Target
 
-. `List<Integer> list = Arrays.asList(5, 2, 4)`
+Assume the following code:
 
-.. Has size of 3
-.. Contains the elements 2, 4, 5 in any order
-.. Every item is greater than 1
+[source,java]
+----
+List<Integer> list = Arrays.asList(5, 2, 4);
+----
 
-. `Integer[] ints = new Integer[] {7, 5, 12, 16}`
 
-.. Has size of 4
-.. Contains 7, 5 , 12 , 16 in the given order
+. Ensure via tests with Hamcrest matchers that `list`:
 
-=== Solutions
+* has a size of 3
+* contains the elements 2, 4, 5 in any order
+* every item is greater than 1
 
-==== Solution - Collection Exercises
+
+=== Solutions for collection matchers
 
 [source, java]
 ----
@@ -38,6 +40,23 @@ include::res/exercise-matcher/ElementsInAnyOrder.java[]
 include::res/exercise-matcher/EveryItemGreaterThan1.java[]
 ----
 
+=== Using Hamcrest collection matchers for arrays
+
+==== Target
+
+Assume the following code:
+
+[source,java]
+----
+Integer[] ints = new Integer[] {7, 5, 12, 16};
+----
+
+. Ensure via tests with Hamcrest matchers that the `ints` array
+
+* has a size of 4
+* contains 7, 5 , 12 , 16 in the given order
+
+
 ==== Solution - Array Exercises
 
 [source, java]
@@ -50,6 +69,88 @@ include::res/exercise-matcher/ArraySizeOf4.java[]
 include::res/exercise-matcher/ArrayElementsInOrder.java[]
 ----
 
-=== Validate
 
-Validate that the correct test fail accordings to the conditions, which have been specified in this exercise.
+=== Using Hamcrest beans matchers
+
+==== Target
+
+Assume the following code:
+
+[source,java]
+----
+class Todo {
+        
+    private final long id;
+    private String summary;
+    private String description;
+    private int year;
+
+    public Todo(long id, String summary, String description) {
+        this.id = id;
+        this.summary = summary;
+        this.description = description;
+    }
+
+    // getters/setters
+}
+----
+
+Write tests that ensure that:
+
+* Todo has a property called "summary"
+* If Todo is constructed with the summary "Learn Hamcrest" that the summary property has
+the correct value
+* Two objects created with the same values, have the same property values
+
+
+==== Solution
+
+[source,java]
+----
+@Test
+public void objectHasSummaryProperty () {
+    
+    Todo todo = new Todo(1, "Learn Hamcrest", "Important");
+    
+    assertThat(todo, hasProperty("summary"));
+}  
+----
+
+[source,java]
+----
+@Test
+public void objectHasSummaryProperty () {
+    
+    Todo todo = new Todo(1, "Learn Hamcrest", "Important");
+    
+    assertThat(todo, hasProperty("summary"));
+}  
+----
+
+[source,java]
+----
+@Test
+public void objectHasCorrectSummaryValue () {
+    
+    Todo todo = new Todo(1, "Learn Hamcrest", "Important");
+    
+    assertThat(todo, hasProperty("summary", equalTo("Learn Hamcrest")));
+}  
+----
+
+[source,java]
+----
+@Test
+public void objectHasSameProperties () {
+    
+    Todo todo1 = new Todo(1, "Learn Hamcrest", "Important");
+    Todo todo2 = new Todo(1, "Learn Hamcrest", "Important");
+    
+    assertThat(todo1, samePropertyValuesAs(todo2));
+}  
+----
+
+
+
+
+
