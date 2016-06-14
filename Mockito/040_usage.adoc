@@ -1,14 +1,40 @@
 [[mockitousage]]
 == Using the Mockito API
 
-=== Creating and configuring mock objects with Mockito
-		
-Mockito supports the creation of mock objects with the static `mock()` method.
+=== Static imports
+
 If you add a static import for `org.mockito.Mockito.*;`, you can access Mockitos methods like `mock()` directly. 
 Static imports allows you to call static members, i.e., methods and fields of a class directly without specifying the class.
 		
+=== Creating and configuring mock objects with Mockito
+
+Mockito supports the creation of mock objects. 
+For this you can use the static `mock()` method.
+
+Mockito also supports the creation of mock objects based on the `@Mock` annotation.
+        
+If you use this annotation, you must initialize the mock objects. 
+The `MockitoRule` allows this. 
+It invokes the static method `MockitoAnnotations.initMocks(this)` to populate the annotated fields. 
+Alternatively you can use `@RunWith(MockitoJUnitRunner.class)`.
+
+The usage of the `@Mock` annotation and the `MockitoRule` rule is demonstrated by the following example.
+
+[source,java]
+----
+include::res/simple/TestSimple.txt[]
+----   
+
+<1> Tells Mockito to most the databaseMock instance
+<2> Tells Mockito to create the mocks based on the @Mock annotation
+<3> Instantiates the class under test using the created mock
+<4> Executes some code of the class under test
+<5> Asserts that the method call returned true
+<6> Verify that the query method was called on the `MyDatabase` mock
+
+=== Configuring mocks
+
 To configure which values are returned at a method call the Mockito framework defines a fluent API. 
-You can use the `verify()` method to ensure that a method was called.
 		
 The `when(....).thenReturn(....)` method chain is be used to specify a condition and a return value for this condition. 
 If you specify more than one value,	they are returned in the order of specification until the last one is used. 
@@ -31,6 +57,9 @@ This usage is demonstrated by the following code snippet.
 ----
 include::res/api/doReturnWhen.java[]
 ----		
+
+
+
 
 [[mockito_verify]]
 ===	Verify the calls on the mock objects
@@ -64,34 +93,33 @@ The `verifyNoMoreInteractions()` allows you to check that no other method was ca
 === Using @InjectMocks for dependency injection via Mockito
 		
 You also have the `@InjectMocks` annotation which tries to do constructor, method or field dependency injection based on the type. 
-The following code is a slightly modified example from the Javadoc.
+For example, assume that you have the following class.
 		
 [source,java]
 ----
-include::res/snippet/ArticleManager.java[]
+public class ArticleManager {
+    private User user;
+    private ArticleDatabase database;
+    
+    ArticleManager(User user) {
+     this.user = user;
+    }
+
+    void setDatabase(ArticleDatabase database) { }
+}
+    
 ----		
-		
+
+This class can be constructed via Mockito and its dependencies can be fulfullied with mock objects as demonstrated by the following code snippet.		
 [source,java]
 ----
 include::res/snippet/Example.java[]
 ----		
+
+<1> creates an instance of ArticleManager and injects the mocks into it
 		
 For more information see  http://docs.mockito.googlecode.com/hg/1.9.5/org/mockito/InjectMocks.html.
-			.
-[[mockito_annotations]]
-=== Creating mock objects based on annotations
 		
-Mockito also supports the creation of mock objects based on the `@Mock` annotation.
-		
-If you this annotation, you must initialize the mock objects. 
-The `MockitoRule` allows this, it invokes the static method `MockitoAnnotations.initMocks(this)` to populate the annotated fields. 
-Alternatively you can use `@RunWith(MockitoJUnitRunner.class)`.
-
-[source,java]
-----
-include::res/simple/TestSimple.txt[]
-----		
-
 [[mockito_limitations]]
 === Limitations
 		

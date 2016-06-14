@@ -18,20 +18,20 @@ Maven users can declare a dependency.
 Search for g:"org.mockito", a:"mockito-core" via the http://search.maven.org website to	find the correct pom entry.
 		
 [[mockito_installation_eclipse]]
-=== Using Eclipse
+=== Using the Eclipse IDE
 
 The Eclipse IDE supports Gradle as well as Maven.
-Mockito does not provide a "all" download in its latest version, therefore you are advised to use either the Gradle or Maven tooling in Eclipes. 
+Mockito does not provide a "all" download in its latest version.
+Therefore you are advised to use either the Gradle or Maven tooling in Eclipes. 
 
 [[mockito_installation_p2]]
-=== Using the Orbit P2 Update Site
+=== OSGi or Eclipse plug-in development
 
 In Eclipse RCP applications dependencies are usually obtained from p2 update sites.
+The Orbit repositories are a good source for third party libraries, which can be used in Eclipse based applications or plug-ins.
 		
-The Orbit Repositories are a good source for third party libraries, which can be included in Eclipse RCP applications.
 		
-		
-The Orbit Repositories can be found here http://download.eclipse.org/tools/orbit/downloads
+The Orbit repositories can be found here http://download.eclipse.org/tools/orbit/downloads
 
 image::orbit-p2-mockito.png[]
 

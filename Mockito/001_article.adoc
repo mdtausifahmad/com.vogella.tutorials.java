@@ -13,7 +13,6 @@ This tutorial explains testing with the Mockito framework for writing software t
 				
 include::002_prerequisites.adoc[]
 include::010_overview.adoc[]
-include::020_mockitointro.adoc[]
 include::030_installation.adoc[]
 include::040_usage.adoc[]
 include::100_mockito_androidsupport.adoc[]

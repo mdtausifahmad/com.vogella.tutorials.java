@@ -38,7 +38,6 @@ Mock objects typically require less code to configure and should therefore be pr
 		
 
 === Mock object generation
-
 		
 You can create mock objects manually (via code) or use a mock framework to simulate these classes. 
 Mock frameworks allow you to create mock objects at runtime and define their behavior.
@@ -52,4 +51,18 @@ Therefore, the class to be tested should avoid any hard dependency on external d
 		
 Mocking or mock frameworks allows testing the expected interaction with the mock object. 
 You can, for example, validate that only certain methods have been called on the  mock object.
-		
+
+=== Using Mockito for mocking objects
+    
+_Mockito_ is a popular mock framework which can be used in conjunction with JUnit.
+Mockito allows you to create and configure mock objects. 
+Using Mockito simplifies the development of tests for classes with external dependencies significantly.
+
+If you use Mockito in tests you typically:
+
+* Mock away external dependencies and insert the mocks into the code under test
+* Execute the code under test
+* Validate that the code executed correctly
+
+image::mockitousagevisualization.png[]
+	

@@ -1,6 +1,0 @@
-== Introduction to Mockito for mocking objects
-	
-_Mockito_ is a popular mock framework which can be used in conjunction with JUnit.
-Mockito allows you to create and configure mock objects. 
-Using Mockito simplifies the development of tests for classes with external dependencies significantly.
-	

@@ -1,2 +1,2 @@
 repositories { jcenter() }
-dependencies { testCompile "org.mockito:mockito-core:1.+" }
+dependencies { testCompile "org.mockito:mockito-core:2.0.57-beta" }
