@@ -119,6 +119,37 @@ include::res/snippet/Example.java[]
 <1> creates an instance of ArticleManager and injects the mocks into it
 		
 For more information see  http://docs.mockito.googlecode.com/hg/1.9.5/org/mockito/InjectMocks.html.
+
+=== Capturing the arguments
+
+Via the `ArgumentCaptor class, Mockito can test against arguments of method calls.
+This allows to write tests that capture the parameters supplied to a method and test against them.
+
+[source,java]
+----
+
+import static org.mockito.Mockito.verify;
+
+//...more code
+
+@Mock
+private GithubClient.View viewContract;
+@Rule public MockitoRule mockitoRule = MockitoJUnit.rule();
+
+@Test
+    public void clickOnNote_ShowsDetailUi() {
+        // Given a stubbed note
+        GitRepository repository = new GitRepository(uri);
+
+        // When open note details is requested
+        githubPresenter.openRepositoryDetails(repository);
+
+        // Then note detail UI is shown
+        verify(viewContract).showGitRepositoryUi(any(String.class));
+    }
+----        
+
+      
 		
 [[mockito_limitations]]
 === Limitations
