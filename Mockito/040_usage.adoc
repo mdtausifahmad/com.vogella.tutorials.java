@@ -122,31 +122,46 @@ For more information see  http://docs.mockito.googlecode.com/hg/1.9.5/org/mockit
 
 === Capturing the arguments
 
-Via the `ArgumentCaptor class, Mockito can test against arguments of method calls.
-This allows to write tests that capture the parameters supplied to a method and test against them.
+The `ArgumentCaptor` class allows to access the arguments of method calls during the verification.
+This allows to capture these arguments of method calls and to use them for tests.
 
 [source,java]
 ----
-
+import static org.hamcrest.Matchers.hasItem;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-//...more code
+import java.util.Arrays;
+import java.util.List;
 
-@Mock
-private GithubClient.View viewContract;
-@Rule public MockitoRule mockitoRule = MockitoJUnit.rule();
+import org.junit.Rule;
+import org.junit.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
 
-@Test
-    public void clickOnNote_ShowsDetailUi() {
-        // Given a stubbed note
-        GitRepository repository = new GitRepository(uri);
 
-        // When open note details is requested
-        githubPresenter.openRepositoryDetails(repository);
+public class MockitoTests {
+    
+	@Rule public MockitoRule rule = MockitoJUnit.rule();
 
-        // Then note detail UI is shown
-        verify(viewContract).showGitRepositoryUi(any(String.class));
+	@Captor
+    private ArgumentCaptor<List<String>> captor;
+	
+			
+	@Test
+    public final void shouldContainCertainListItem() {
+		List<String> asList = Arrays.asList("someElement_test", "someElement");
+        final List<String> mockedList = mock(List.class);
+        mockedList.addAll(asList);
+        
+        verify(mockedList).addAll(captor.capture());
+        final List<String> capturedArgument = captor.<List<String>>getValue();
+        assertThat(capturedArgument, hasItem("someElement"));
     }
+}
 ----        
 
       
