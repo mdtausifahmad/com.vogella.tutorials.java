@@ -22,7 +22,7 @@
 			select this
 			class in
 			the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view, right-click on it
 			and select
 			<menuchoice>
@@ -78,7 +78,7 @@
 
 		
 			To see the result of an JUnit test, Eclipse uses the
-			<guilabel>JUnit</guilabel>
+			_JUnit_
 			view
 			which shows the results of the tests. You can also select
 			individual
@@ -86,7 +86,7 @@
 			view
 			, right-click on them
 			and select
-			<guilabel>Run</guilabel>
+			_Run_
 			to execute them again.
 		
 
@@ -158,7 +158,7 @@
 		<title>Extracting the failed test and stacktraces
 		
 			To get the list of failed test,	right click on the test result and select
-			<guilabel>Copy Failure List</guilabel>
+			_Copy Failure List_
 			. This copies the failed tests and there stack traces into the clipboard.
 		
 		
@@ -215,7 +215,7 @@
 			To create a test suite in Eclipse, you select the test classes which
 			should be
 			included into this in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view, right-click on them and
 			select
 			<menuchoice>

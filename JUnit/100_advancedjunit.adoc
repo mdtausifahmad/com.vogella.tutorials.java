@@ -49,13 +49,10 @@ via the constructor to the class.
 </programlisting>
 		
 		
-If you run this test class, the test method is executed
-with
-each
-defined
-parameter. In the above example the test
-method is executed
-three times.
+If you run this test class, the test method is executed with each defined parameter. 
+In the above example the test method is executed three times.
+
+A more flexible and easier to write approach is provided by the JUnitParams from https://github.com/Pragmatists/JUnitParams.
 
 [[junitadvanced_rules]]
 === JUnit Rules
@@ -63,7 +60,7 @@ three times.
 		
 Via JUnit rules you can add behavior to each tests in a test class.		
 You can annotate fields of type `TestRule` with the `@Rule` annotation.
- you can create objects which can be used and configured in your test methods. 
+You can create objects which can be used and configured in your test methods. 
 This adds more flexibility to your tests. 
 You could, for example, specify which exception message you expect during the execution of your test code.
 		

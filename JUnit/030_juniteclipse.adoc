@@ -11,19 +11,19 @@
 		
 			Create a new source
 			folder
-			<filename class="directory">test</filename>
+			<filename class="directory">test_
 			. For this
 			right-click on your
 			project,
 			select
-			<guilabel>Properties</guilabel>
+			_Properties_
 			and choose
 			<menuchoice>
 				<guimenu>Java</guimenu>
 				<guisubmenu>Build Path</guisubmenu>
 			</menuchoice>
 			. Select the
-			<guilabel>Source</guilabel>
+			_Source_
 			tab.
 		
 		
@@ -42,7 +42,7 @@
 			button. Afterwards, press the
 			<guibutton>Create New Folder</guibutton>
 			button. Enter
-			<filename class="directory">test</filename>
+			<filename class="directory">test_
 			as
 			folder name.
 		
@@ -75,7 +75,7 @@
 		<title>Create a Java class
 		
 			In the
-			<filename class="directory">src</filename>
+			<filename class="directory">src_
 			folder, create the
 			`com.vogella.junit.first`
 			package
@@ -93,7 +93,7 @@
 		<title>Create a JUnit test
 		
 			Right-click on your new class in the
-			<guilabel>Package Explorer</guilabel>
+			_Package Explorer_
 			view
 			and select
 			<menuchoice>
@@ -105,11 +105,11 @@
 		
 			In the following wizard
 			ensure that the
-			<guilabel>New JUnit 4 test</guilabel>
+			_New JUnit 4 test_
 			flag
 			is selected
 			and set the source folder to
-			<filename class="directory">test</filename>
+			<filename class="directory">test_
 			,
 			so
 			that your test class gets created in this folder.

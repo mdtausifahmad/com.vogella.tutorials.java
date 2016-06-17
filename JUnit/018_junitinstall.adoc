@@ -57,7 +57,7 @@
 			download
 			contains
 			the
-			<filename>junit-4.*.jar</filename>
+			_junit-4.*.jar_
 			which is the JUnit
 			library.
 			Add this library
