@@ -1,100 +1,100 @@
 <section id="juniteclipse_staticimports">
 	<title>Setting Eclipse up for using JUnits static imports
 	<indexterm>
-		<primary>JUnit
-		</primary>
-		<secondary>Static imports</secondary>
+<primary>JUnit
+</primary>
+<secondary>Static imports</secondary>
 	</indexterm>
 	<indexterm>
-		<primary>Static imports in Eclipse
-		</primary>
+<primary>Static imports in Eclipse
+</primary>
 	</indexterm>
 	
-		The Eclipse IDE cannot always
-		create the
-		corresponding
-		`static import`
-		statements automatically.
+The Eclipse IDE cannot always
+create the
+corresponding
+`static import`
+statements automatically.
 	
 	
-		You can configure the Eclipse IDE to
-		use code completion to insert typical JUnit method calls and to add the static
-		import automatically.
-		For this
-		open the
-		Preferences via
-		<menuchoice>
-			<guimenu>Window</guimenu>
-			<guisubmenu>Preferences</guisubmenu>
-		</menuchoice>
-		and select
-		<menuchoice>
-			<guimenu>Java</guimenu>
-			<guisubmenu>Editor</guisubmenu>
-			<guisubmenu>Content Assist</guisubmenu>
-			<guisubmenu>Favorites</guisubmenu>
-		</menuchoice>
-		.
-	
-
-	
-		Use the
-		<guibutton>New Type</guibutton>
-		button to add the following entries to it:
-		<itemizedlist>
-			<listitem>
-				
-					`org.junit.Assert`
-				
-			</listitem>
-			<listitem>
-				
-					`org.hamcrest.CoreMatchers`
-				
-			</listitem>
-			<listitem>
-				
-					`org.hamcrest.Matchers`
-				
-			</listitem>
-		</itemizedlist>
+You can configure the Eclipse IDE to
+use code completion to insert typical JUnit method calls and to add the static
+import automatically.
+For this
+open the
+Preferences via
+<menuchoice>
+	<guimenu>Window</guimenu>
+	<guisubmenu>Preferences</guisubmenu>
+</menuchoice>
+and select
+<menuchoice>
+	<guimenu>Java</guimenu>
+	<guisubmenu>Editor</guisubmenu>
+	<guisubmenu>Content Assist</guisubmenu>
+	<guisubmenu>Favorites</guisubmenu>
+</menuchoice>
+.
 	
 
 	
-		This makes, for example, the
-		`assertTrue`
-		,
-		`assertFalse`
-		and
-		`assertEquals`
-		methods directly available in the
-		_Content Assists_
-		.
+Use the
+<guibutton>New Type</guibutton>
+button to add the following entries to it:
+<itemizedlist>
+	<listitem>
+
+	`org.junit.Assert`
+
+	</listitem>
+	<listitem>
+
+	`org.hamcrest.CoreMatchers`
+
+	</listitem>
+	<listitem>
+
+	`org.hamcrest.Matchers`
+
+	</listitem>
+</itemizedlist>
 	
 
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/staticimport10.png"/>
-			</imageobject>
-			<textobject>
-				<phrase>Adding static imports to the preferences</phrase>
-			</textobject>
-		</mediaobject>
+This makes, for example, the
+`assertTrue`
+,
+`assertFalse`
+and
+`assertEquals`
+methods directly available in the
+_Content Assists_
+.
+	
+
+	
+<mediaobject>
+	<imageobject>
+<imagedata fileref="images/staticimport10.png"/>
+	</imageobject>
+	<textobject>
+<phrase>Adding static imports to the preferences</phrase>
+	</textobject>
+</mediaobject>
 	
 	
-		You can now use
-		_Content Assists_
-		(shortcut:
-		<keycombo>
-			<keycap>Ctrl</keycap>
-			<keycap>Space</keycap>
-		</keycombo>
-		) to
-		add
-		the
-		method and the
-		import.
+You can now use
+_Content Assists_
+(shortcut:
+<keycombo>
+	<keycap>Ctrl</keycap>
+	<keycap>Space</keycap>
+</keycombo>
+) to
+add
+the
+method and the
+import.
 	
 
 </section>

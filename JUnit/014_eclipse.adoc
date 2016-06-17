@@ -1,273 +1,163 @@
-<section id="eclipse" role="wrapper">
-	<title>Eclipse support for JUnit
+== Eclipse support for JUnit
 
-	<section id="eclipse_creatingjunittest">
-		<indexterm>
-			<primary>JUnit</primary>
-			<secondary>Creating tests in Eclipse</secondary>
-		</indexterm>
-		<title>Creating JUnit tests
-		
-			You can write the JUnit tests manually, but Eclipse supports the
-			creation of JUnit tests via
-			wizards.
-		
+[[eclipse_creatingjunittest]]
+=== Creating JUnit tests
+(((JUnit,Creating tests in Eclipse)))
 
+You can write the JUnit tests manually, but Eclipse supports the creation of JUnit tests via wizards.
 		
-			For example, to create
-			a JUnit test or a test class for an existing
-			class, right-click
-			on
-			your new class,
-			select this
-			class in
-			the
-			_Package Explorer_
-			view, right-click on it
-			and select
-			<menuchoice>
-				<guimenu>New</guimenu>
-				<guisubmenu>JUnit Test Case</guisubmenu>
-			</menuchoice>
-			.
+For example, to create a JUnit test or a test class for an existing class.
+Right-click on your new class, select this class in the Package Explorer_ view, right-click on it
+and select menu:New[JUnit Test Case].
 		
-		
-			Alternatively you can also use the JUnit wizards available under
-			<menuchoice>
-				<guimenu>File</guimenu>
-				<guisubmenu>New </guisubmenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>Java</guisubmenu>
-				<guisubmenu>JUnit</guisubmenu>
-			</menuchoice>
-			.
+Alternatively you can also use the JUnit wizards available under
+<menuchoice>
+	<guimenu>File</guimenu>
+	<guisubmenu>New </guisubmenu>
+	<guisubmenu>Other...</guisubmenu>
+	<guisubmenu>Java</guisubmenu>
+	<guisubmenu>JUnit</guisubmenu>
+</menuchoice>
+.
 		
 	</section>
 	<section id="eclipse_runningjunittest">
 		<title>Running JUnit tests
 
 		 The Eclipse IDE also provides support for executing your tests
-			interactively.
+interactively.
 		
 		
-			To run a test, select the class which contains the tests, right-click
-			on it and select
-			<menuchoice>
-				<guimenu>Run-as</guimenu>
-				<guisubmenu>JUnit Test</guisubmenu>
-			</menuchoice>
-			. This starts JUnit and executes all test methods in this class.
+To run a test, select the test class , right-click on it and select
+<menuchoice>
+	<guimenu>Run-as</guimenu>
+	<guisubmenu>JUnit Test</guisubmenu>
+</menuchoice>
+. 
+This starts JUnit and executes all test methods in this class.
 		
 		
-			Eclipse provides the
-			<keycombo>
-				<keycap>Alt</keycap>
-				<keycap>Shift</keycap>
-				<keycap>X,</keycap>
-			</keycombo>
-			<keycombo>
-				<keycap>,T</keycap>
-			</keycombo>
-			shortcut to run the test in the selected class. If you position the
-			cursor in the Java editor on one test method name,
-			this shortcut runs
-			only the selected test
-			method.
+Eclipse provides the
+<keycombo>
+	<keycap>Alt</keycap>
+	<keycap>Shift</keycap>
+	<keycap>X,</keycap>
+</keycombo>
+<keycombo>
+	<keycap>,T</keycap>
+</keycombo>
+shortcut to run the test in the selected class. 
+
+To run only the selected test, position the cursor on the test method name and use the shortcut.
 		
 
 
 		
-			To see the result of an JUnit test, Eclipse uses the
-			_JUnit_
-			view
-			which shows the results of the tests. You can also select
-			individual
-			unit tests in this
-			view
-			, right-click on them
-			and select
-			_Run_
-			to execute them again.
+To see the result of an JUnit test, Eclipse uses the
+_JUnit_
+view
+which shows the results of the tests. You can also select
+individual
+unit tests in this
+view
+, right-click on them
+and select
+_Run_
+to execute them again.
 		
 
+image::junitview10.png[JUnit view]]
+		
+		
+By default, this view shows all tests.
+You can also configure, that it only shows failing tests.
+		
+image::junit_showonerroronly.png[JUnit view]
+		
+You can also define that the view is only activated if you have a failing test.
 
+image::junit_showonerroronly2.png[JUnit view]
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/junitview10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>JUnit view</phrase>
-				</textobject>
-			</mediaobject>
-		
+[NOTE]
+====
+Eclipse creates run configurations for tests. You can see and modify
+	these via the
+	<menuchoice>
+		<guimenu>Run</guimenu>
+		<guisubmenu>Run Configurations...</guisubmenu>
+	</menuchoice>
+	menu.
+====
 
+[[usingjunit_failedtests]]
+=== Extracting the failed test and stacktraces
 		
-			By default this
-			view
-			shows all tests.
-			You
-			can also configure, that
-			it only
-			shows
-			failing
-			tests.
-		
+To get the list of failed test,	right click on the test result and select
+_Copy Failure List_
+. This copies the failed tests and there stack traces into the clipboard.
 
+image::junitcopyfailurelist10.png[Copy failed tests into clipboard]
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/junit_showonerroronly.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>JUnit view</phrase>
-				</textobject>
-			</mediaobject>
+[[usingjunit_staticimports]]
+=== JUnit static imports
+(((JUnit,Static imports in Eclipse)))
 		
-		
-			You can also define that the
-			view
-			is only activated if you have
-			a
-			failing test.
+Static import is a feature that allows fields and methods) defined in a class as `public static`
+to be used in Java code
+without specifying the class in which the field is defined.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/junit_showonerroronly2.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>JUnit view</phrase>
-				</textobject>
-			</mediaobject>
+JUnit assert statement are typically defined as `public static` to allow the developer to write short test statements. 
+The following snippet demonstrates an assert statement with and without static imports.
+		
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/static/Static.java" />
+</programlisting>
 		
 
-		<note>
-			
-				Eclipse creates run configurations for tests. You can see and modify
-				these via the
-				<menuchoice>
-					<guimenu>Run</guimenu>
-					<guisubmenu>Run Configurations...</guisubmenu>
-				</menuchoice>
-				menu.
-			
-		</note>
-	</section>
-	<section id="usingjunit_failedtests">
-		<title>Extracting the failed test and stacktraces
+[[usingjunit_testsuites]]
+=== Wizard for creating test suites
 		
-			To get the list of failed test,	right click on the test result and select
-			_Copy Failure List_
-			. This copies the failed tests and there stack traces into the clipboard.
+You can create a test suite via Eclipse.
+For this, select the test classes which should be included in suite in the _Package Explorer_
+view, right-click on them and
+select
+<menuchoice>
+	<guimenu>New </guimenu>
+	<guisubmenu>Other...</guisubmenu>
+	<guisubmenu>JUnit</guisubmenu>
+	<guisubmenu>JUnit Test Suite</guisubmenu>
+</menuchoice>
+.
 		
 		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/junitcopyfailurelist10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Copy failed tests into clipboard</phrase>
-				</textobject>
-			</mediaobject>
+<mediaobject>
+	<imageobject>
+		<imagedata fileref="images/junittestsuite10.png"/>
+	</imageobject>
+	<textobject>
+		<phrase>Create a test suite</phrase>
+	</textobject>
+</mediaobject>
 		
+[[usingjunit_execption]]
+=== Testing exception
+(((JUnit,Exceptions)))
+		
+The `@Test (expected = Exception.class)` annotation is limited as it can only test for one exception. 
+To testexceptions, you can use the following testpattern.
+		
+		
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/example/TestException.java" />
+</programlisting>
 
-	</section>
-	<section id="usingjunit_staticimports">
-		<title>JUnit static imports
-		<indexterm>
-			<primary>JUnit</primary>
-			<secondary>Static imports in Eclipse</secondary>
-		</indexterm>
-		
-			Static import is a feature that allows fields and
-			methods) defined in
-			a class
-			as
-			`public static`
-			to be used in Java code
-			without specifying the class
-			in which the field
-			is defined.
-		
-		
-			JUnit assert statement are typically defined as
-			`public static`
-			to allow the developer to write short test statements. The following
-			snippet demonstrates an assert statement with and
-			without static
-			imports.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/static/Static.java" />
-			</programlisting>
-		
+[[usingjunit_plugintest]]
+=== JUnit Plug-in Test
+(((JUnit Plug-in Test)))
+(((Plug-in Test)))
 
-
-
-
-
-	</section>
-	<section id="usingjunit_testsuites">
-		<title>Wizard for creating test suites
-		
-			To create a test suite in Eclipse, you select the test classes which
-			should be
-			included into this in the
-			_Package Explorer_
-			view, right-click on them and
-			select
-			<menuchoice>
-				<guimenu>New </guimenu>
-				<guisubmenu>Other...</guisubmenu>
-				<guisubmenu>JUnit</guisubmenu>
-				<guisubmenu>JUnit Test Suite</guisubmenu>
-			</menuchoice>
-			.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/junittestsuite10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Create a test suite</phrase>
-				</textobject>
-			</mediaobject>
-		
-	</section>
-	<section id="usingjunit_execption">
-		<title>Testing exception
-		<indexterm>
-			<primary>JUnit</primary>
-			<secondary>Exceptions</secondary>
-		</indexterm>
-		
-			The
-			`@Test (expected = Exception.class)`
-			annotation is limited as it can only test for one exception. To test
-			exceptions, you can use the following test
-			pattern.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/example/TestException.java" />
-			</programlisting>
-		
-	</section>
-	<section id="usingjunit_plugintest">
-		<title>JUnit Plug-in Test
-		<indexterm>
-			<primary>JUnit Plug-in Test</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Plug-in Test</primary>
-		</indexterm>
-
-		JUnit Plug-in tests are used to write unit tests for your plug-ins.These tests are executed by a special test
-			runner that launches
-			another Eclipse instance in a separate VM. The test methods are executed within that instance.
-		
-	</section>
-</section>
+JUnit Plug-in tests are used to write unit tests for your plug-ins.
+These tests are executed by a special test runner that launches another Eclipse instance in a separate VM. 
+The test methods are executed within that instance.

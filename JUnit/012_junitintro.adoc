@@ -79,7 +79,7 @@ include::res/example/AllTests.java[]
 === Run your test from the command line
 		
 You can also run your JUnit tests outside our IDE via standard Java code. 
-Build systems like Apache Maven or Gradle in combination with a Continuous Integration Server (like Jenkins) are typically used to execute tests automatically on a regular basis.
+Build systems like Apache Maven or Gradle in combination with a Continuous Integration Server (like Jenkins) can be used to execute tests automatically on a regular basis.
 		
 The `org.junit.runner.JUnitCore` class provides the `runClasses()` method. 
 This method allows you to run one or several tests classes. 
