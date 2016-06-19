@@ -27,7 +27,8 @@ public class MyCustomRule implements TestRule {
 
         @Override
         public void evaluate() throws Throwable {
-            Log.w("MyCustomRule",description.getMethodName() + "Started");
+        	System.
+            Log.w("MyCustomRule",description.getMethodName() + "Started" );
             try {
                 base.evaluate();
             } finally {

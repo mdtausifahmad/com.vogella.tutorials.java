@@ -6,13 +6,55 @@ The following is an example for defining a matcher which allows testing if a Str
 	
 [source, java]
 ----
-include::res/regexmatcher/RegexMatcher.java[]
+import org.hamcrest.Description;
+import org.hamcrest.TypeSafeMatcher;
+
+public class RegexMatcher extends TypeSafeMatcher<String> {
+
+	private final String regex;
+
+	public RegexMatcher(final String regex) {
+		this.regex = regex;
+	}
+
+	@Override
+	public void describeTo(final Description description) {
+		description.appendText("matches regular expression=`" + regex + "`");
+	}
+
+	@Override
+	public boolean matchesSafely(final String string) {
+		return string.matches(regex);
+	}
+	
+
+	 // matcher method you can call on this matcher class
+    public static RegexMatcher matchesRegex(final String regex) {
+        return new RegexMatcher(regex);
+    }
+}
 ----	
 	
 The following snippet gives an example how to use it. 
 
 [source, java]
 ----
-include::res/regexmatcher/TestCustomMatcher.java[]
+package com.vogella.android.testing.applicationtest;
+
+
+import org.junit.Test;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+
+public class TestCustomMatcher {
+
+    @Test
+    public void testRegularExpressionMatcher() throws Exception {
+        String s ="aaabbbaaaa";
+        assertThat(s, RegexMatcher.matchesRegex("a*b*a*"));
+    }
+
+}
 ----	
+
 	
