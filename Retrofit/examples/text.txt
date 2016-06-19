@@ -1,1 +1,0 @@
-https://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=android&site=stackoverflow

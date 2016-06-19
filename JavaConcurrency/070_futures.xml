@@ -1,0 +1,100 @@
+<section id="futures">
+	<title>Futures and Callables</title>
+	<section id="futures_introduction">
+		<title>Futures and Callables</title>
+		<para>
+			The executor framework presented in the last chapter works with
+			<code>Runnable</code>
+			objects. Unfortunately a
+			<code>Runnable</code>
+			cannot return a result to the caller.
+		</para>
+		<para>
+			In case you expect your threads to return a computed result you
+			can use
+			<code>java.util.concurrent.Callable</code>
+			. The
+			<code>Callable</code>
+			object
+			allows to return
+			values after completion.
+		</para>
+		<para>
+			The
+			<code>Callable</code>
+			object uses generics to define the type of object which
+			is
+			returned.
+		</para>
+		<para>
+			If you submit a
+			<code>Callable</code>
+			object
+			to an
+			<code>Executor</code>
+			the framework returns an object of type
+			<code>java.util.concurrent.Future</code>
+			.
+			<code>Future</code>
+			exposes methods allowing a client to monitor the progress of a task being executed by a different thread.
+			Therefore a
+			<code>Future</code>
+			object can be
+			used to check the
+			status of a
+			<code>Callable</code>
+			and to
+			retrieve the
+			result from
+			the
+			<code>Callable</code>
+			.
+		</para>
+		<para>
+			On the
+			<code>Executor</code>
+			you can use the method submit to submit a
+			<code>Callable</code>
+			and to get a future.
+			To retrieve the result of the future use
+			the
+			<code>get()</code>
+			method.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/futures/MyCallable.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/futures/CallableFutures.java" />
+			</programlisting>
+		</para>
+		<para>
+			The code examples for this section are created in a Java project
+			called
+			<wordasword>de.vogella.concurrency.callables</wordasword>
+			.
+		</para>
+	</section>
+	<section id="futures_drawbacks">
+		<title>Drawbacks with Futures and Callbacks</title>
+		<para>
+			The
+			<code>Future</code>
+			interface is limited as a model of asynchronously executed tasks. While
+			<code>Future</code>
+			allows a client to query a
+			<code>Callable</code>
+			task for
+			its result, it does not provide the option to register a callback method, which
+			would allow to notified once a
+			task is done. In Java 5 you could use
+			<code>ExecutorCompletionService</code>
+			for this purpose but as of Java 8 you can use the
+			<code>CompletableFuture</code>
+			interface which allows to provide a callback interface which is called once a task is completed.
+		</para>
+	</section>
+</section>

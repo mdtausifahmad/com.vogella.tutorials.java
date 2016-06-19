@@ -1,4 +1,4 @@
 == RxAndroid
 
-https://medium.com/@kurtisnusbaum/rxandroid-basics-part-1-c0d5edcf6850#.gk62vzmh4
-https://medium.com/@kurtisnusbaum/rxandroid-basics-part-2-6e877af352#.qv8u36597
+To be filled
+

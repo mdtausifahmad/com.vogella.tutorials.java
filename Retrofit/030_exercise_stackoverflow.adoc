@@ -1,0 +1,75 @@
+== Exercise: Using Retrofit to query Stackoverflow via an Android application
+
+=== Target
+
+StackOverflow is a popular side for asking programming orientated questions. 
+It also provides a REST API which is well documented.
+Queries can be build using this  API. 
+You find it documented via the following URL: https://api.stackexchange.com/docs/search
+In this exercise you query for open questions based on tags with the Retrofit REST library.
+	
+We use the following query URL in our example.
+The tags will be set via our code.
+
+
+[source]
+----
+https://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=android&site=stackoverflow
+----
+
+=== Project creation and setup
+
+Create an Android application called _com.vogella.android.retrofitstackoverflow_. 
+It should use the  _com.vogella.android.retrofitstackoverflow_ top level package name.
+
+Add the following dependency to your build.gradle file.
+
+[source,xml]
+----
+include::res/stackoverflow/build.gradle[]
+----
+
+Add the permission to access the Internet to your manifest file.
+
+[source,xml]
+----
+include::res/stackoverflow/AndroidManifest.xml[]
+----
+		
+= Define the API and the Retrofit adapter
+
+In the JSON reply from StackOverflow we are only interested in the title and the link. 
+Therefore create the following data classes.
+
+[source,java]
+----
+include::res/stackoverflow/Question.java[]
+----
+
+[source,java]
+----
+include::res/stackoverflow/StackOverflowQuestions.java[]
+----	
+			
+
+Define the REST API for Retrofit via the following interface.
+
+[source,java]
+----
+include::res/stackoverflow/StackOverflowAPI.java[]
+----	
+			
+Create a XML menu resource similar to the following called _main_menu.xml_.
+
+[source,xml]
+----
+include::res/stackoverflow/main_menu.xml[]
+----	
+		
+
+Change your activity code to allow querying for questions marked with the tag "android".
+
+[source,java]
+----
+include::res/stackoverflow/MainActivity.java[]
+----	

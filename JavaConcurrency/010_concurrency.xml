@@ -1,0 +1,81 @@
+<section id="concurrency">
+	<title>Concurrency</title>
+	<section id="concurrency_overview">
+		<title>What is concurrency?</title>
+		<indexterm>
+			<primary>Concurrency</primary>
+		</indexterm>
+		<para>Concurrency is the ability to run several programs or several
+			parts of a
+			program in parallel. If a time consuming
+			task can be
+			performed
+			asynchronously or in parallel, this improve the
+			throughput
+			and the interactivity of the program.
+		</para>
+		<para> A modern computer has several CPU's or several
+			cores within one
+			CPU. The ability to leverage these multi-cores
+			can
+			be the key for a
+			successful high-volume application.
+		</para>
+	</section>
+	<section id="concurrency_processthreads">
+		<title>Process vs. threads</title>
+		<indexterm>
+			<primary>Process</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Threads</primary>
+		</indexterm>
+		<para>
+			A
+			<wordasword>process</wordasword>
+			runs independently and isolated of
+			other processes. It
+			cannot
+			directly
+			access
+			shared data in other processes. The
+			resources of
+			the
+			process, e.g.
+			memory
+			and CPU time, are
+			allocated to it via the
+			operating
+			system.
+		</para>
+		<para>
+			A
+			<wordasword>thread</wordasword>
+			is a
+			so called lightweight process. It has its own
+			call stack, but
+			can
+			access shared data of other threads in the same
+			process. Every
+			thread
+			has its own
+			memory cache. If a
+			thread
+			reads shared data it
+			stores
+			this
+			data in
+			its own memory cache.
+			A
+			thread
+			can re-read the
+			shared
+			data.
+		</para>
+		<para> A Java application runs by default in one process. Within a
+			Java application you work with several threads to
+			achieve parallel
+			processing or asynchronous behavior.
+		</para>
+	</section>
+</section>

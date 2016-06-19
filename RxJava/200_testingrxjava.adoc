@@ -1,0 +1,25 @@
+== Testing RxJava Observables and Subscriptions
+
+
+
+=== Testing the observables
+
+You can test an observable via the `TestSubscriber` class provided by the RxJava library.
+
+[source,java]
+----
+Observable<String> obs = ...// assume creation code here
+TestSubscriber<String> testSubscriber = new TestSubscriber<>();
+obs.subscribe(testSubscriber);
+
+testSubscriber.assertNoErrors();
+List<String> chickens = testSubscriber.getOnNextEvents();
+
+// TODO assert your string integrity...
+----
+
+=== Testing the observables
+
+RxJava provides a way to override the schedulers exposed, so that observables are called synchronously. 
+See http://fedepaol.github.io/blog/2015/09/13/testing-rxjava-observables-subscriptions/ for an example.
+

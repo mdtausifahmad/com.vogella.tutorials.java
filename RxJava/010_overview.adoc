@@ -2,8 +2,10 @@
 
 === What is RxJava and reactive programming
 
-In reactive programming the consumer reacts to the data as it comes in, which is why asynchronous programming is also called reactive programming.
+In reactive programming the consumer reacts to the data as it comes in.
+This is the reason why asynchronous programming is also called reactive programming.
 Reactive programming allows to propagates event changes to registered observers.
+
 RxJava is a port from Netflix of the Reactive Extensions (Rx) to Java.
 RxJava was open sourced 2014 and is hosted at http://reactivex.io/.
 The Java version of this concept is called RxJava and is hosted under https://github.com/ReactiveX/RxJava.
@@ -18,7 +20,7 @@ Replace x.y.z with 1.1.3 or a later version.
 
 For Maven you can add a dependency with the following snippet
 
-[source, xml]
+[source,xml]
 ----
 <dependency>
     <groupId>io.reactivex</groupId>
@@ -27,24 +29,37 @@ For Maven you can add a dependency with the following snippet
 </dependency>
 ----
 
-For Gradle you can add it RxJava via the following dependency closure.
+For a Gradle build you can add RxJava via the following dependency statement.
 
-[source, xml]
+[source,xml]
 ----
 <dependency org="io.reactivex" name="rxjava" rev="x.y.z" />
 ----
 
-=== How does RxJava work?
+=== Observables, Observers and Subscriptions
 
-RxJava provides Observables and Observers.
+RxJava provides _Observables_ and _Observers_.
 Observables can send out values. 
 Observers, watch Observables by subscribing to them.
 Observers are notified when an Observable emits a value, when the Observable says an error has occurred. 
 They are also notified when the	Observable sends the information that it no longer has any values to emit. 
-The corresponding functions are `onNext`, `onError`, and `onCompleted()` encapsulated in the Observer interface.
+The corresponding functions are `onNext`, `onError`, and `onCompleted()` from the `Observer` interface.
+A instance of `Subscription` represents the connection between an observer and an observable. 
+In you call `unsubscribe()` on this instance to remove the connection. 
+This is for example useful to avoid updates to widgets after they have been disposed.
+ 
+=== Defining the execution thread and the thread for observing
 
-RxJava provides several methods to create an observable.
-`Observable.just()` creates an Observable such that when an Observer subscribes, the `onNext()` 
-of the Observer is immediately called with the argument provided to `Observable.just()`.
+You can specify the thread in with the observable is executed via the `subscribeOn()` method. 
+The thread in which the observers are executed can be defined via the `observeOn()` method.
 
+== Operators
+
+You can register operations on your observers which allows you to manipulate the emission of an observable before passing it to the  observer. 
+For example the `map` method allows to register a `Func1` which translates the input.
+
+
+== Using delays
+
+Via the `debounce(delay, TimeUnit.MILLISECONDS)` method on the observer, you can instruct it to only emit the changes if the value has not changed for a predefined delay. 
 
