@@ -4,9 +4,9 @@
 
 To use JUnit in your Gradle build, add a testCompile dependency to your build file.
 
-[source, gradle]
+[source, groovy]
 ----
-	include::res/install/build.gradle[]
+include::res/install/build.gradle[]
 ----
 
 === Using JUnit with Maven

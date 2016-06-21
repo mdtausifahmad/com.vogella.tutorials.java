@@ -77,7 +77,7 @@ Create a test with the following code.
 
 [source, java]
 ----
-include::first/MyClassTest.java[]
+include::res/first/MyClassTest.java[]
 ----
 
 === Run your test in Eclipse

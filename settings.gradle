@@ -4,6 +4,7 @@ include 'RxJava'
 include 'JavaAnnotations'
 include 'AutoValue'
 include 'jsoup'
+include 'JUnit'
 include 'Hamcrest'
 include 'Mockito'
 

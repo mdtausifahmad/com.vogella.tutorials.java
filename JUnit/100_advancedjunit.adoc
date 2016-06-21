@@ -40,9 +40,9 @@ passed
 via the constructor to the class.
 
 [source, java]
-----		
-include:res/parameter/ParameterizedTestUsingConstructor.java[]
-----		
+----
+include::res/parameter/ParameterizedTestUsingConstructor.java[]
+----
 
 If you run this test class, the test method is executed with each defined parameter. 
 In the above example the test method is executed three times.
