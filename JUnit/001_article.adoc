@@ -1,11 +1,11 @@
-= >Unit Testing with JUnit - Tutorial
+= Unit Testing with JUnit - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel, (c) 2007, 2016 vogella GmbH
-Version 4.2, 29.05.2016
+(c) 2007, 2016 vogella GmbH
+Version 4.3, 21.06.2016
 
 [abstract]
 This tutorial explains unit testing with JUnit 4.x. 

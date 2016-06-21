@@ -1,56 +1,32 @@
-<section id="installation" role="wrapper">
-	<title>Installation of JUnit
-	<section id="installation_gradle">
-		<title>Using JUnit with Gradle
-		<indexterm>
-<primary>JUnit installation</primary>
-<secondary>Gradle</secondary>
-		</indexterm>
-		To use JUnit in your Gradle build, add a testCompile dependency to your build file.
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/install/build.gradle" />
-</programlisting>
-		
+== Installation of JUnit
 
+=== Using JUnit with Gradle
 
-	</section>
-	<section id="installation_Maven">
-		<title>Using JUnit with Maven
-		<indexterm>
-<primary>JUnit installation</primary>
-<secondary>Maven</secondary>
-		</indexterm>
-		To use JUnit in your Maven build, add the following dependency to your pom file.
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/install/pom.xml" />
-</programlisting>
-		
+To use JUnit in your Gradle build, add a testCompile dependency to your build file.
 
+[source, gradle]
+----
+	include::res/install/build.gradle[]
+----
 
-	</section>
-	<section id="installation_eclipse">
-		<title>Using JUnit integrated into Eclipse
-		<indexterm>
-<primary>JUnit installation</primary>
-<secondary>Eclipse</secondary>
-		</indexterm>
-		
+=== Using JUnit with Maven
+
+To use JUnit in your Maven build, add the following dependency to your pom file.
+
+[source, xml]
+----
+include::res/install/pom.xml[]
+----
+
+=== Using JUnit integrated into Eclipse
+
 The Eclipse IDE ships with a version of JUnit. If you use Eclipse, no additional
 download
 is
 required.
-		
 
-	</section>
-	<section id="installation_junit">
-		<title>Downloading the JUnit library
-		<indexterm>
-<primary>JUnit installation</primary>
-<secondary>JAR file</secondary>
-		</indexterm>
-		
+=== Downloading the JUnit library
+
 If you want to control the used JUnit library explicitly,
 download
 JUnit4.x.jar from the following JUnit website. The
@@ -65,10 +41,9 @@ to your
 Java project and add
 it to the
 classpath.
-		
-		
-<programlisting language="text">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/link/junit.txt" />
-</programlisting>
-		
+
+[source, java]
+----
+include::res/link/junit.txt[]
+----
 

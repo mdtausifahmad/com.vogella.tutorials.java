@@ -7,7 +7,6 @@
 JUnit allows you to use parameters in a tests class. 
 This class can contain one test method and this method is executed with the different parameters provided.
 		
-		
 You mark a test class as a parameterized test with the `@RunWith(Parameterized.class)` annotation.
 		
 Such a test class must contain a static method annotated with the `@Parameters` annotation.
@@ -22,9 +21,8 @@ It tests the `multiply()` method of the `MyClass` class which is included as inn
 [source,java]
 ----
 include::res/parameter/ParameterizedTestFields.java[]
-----		
-		
-		
+----
+
 Alternatively to using the `@Parameter` annotation you can use a constructor in which you store the values for each test. 
 The number of elements in each array
 provided by
@@ -40,15 +38,12 @@ the test
 values are
 passed
 via the constructor to the class.
-		
 
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-		href="./examples/parameter/ParameterizedTestUsingConstructor.java" />
-</programlisting>
-		
-		
+[source, java]
+----		
+include:res/parameter/ParameterizedTestUsingConstructor.java[]
+----		
+
 If you run this test class, the test method is executed with each defined parameter. 
 In the above example the test method is executed three times.
 
@@ -85,11 +80,11 @@ public class RuleExceptionTesterExample {
     t.methodToBeTest(-1);
   }
 }
-----    
-		
+----
+
 JUnit already provides several useful rule implementations. 
 For example, the `TemporaryFolder` class allows to setup files and folders which are automatically removed after each test run.
-		
+
 The following code shows an example for the usage of the `TemporaryFolder` implementation.
 
 [source,java]
@@ -118,44 +113,41 @@ public class RuleTester {
   }
 }
 
----- 		
-		
+----
+
 For more examples of existing rules see https://github.com/junit-team/junit4/wiki/Rules
 .
 === Writing custom JUnit rules
-		
+
 To write your custom rule, you need to implement the `TestRule` interface. 
 This interface defines the `apply(Statement, Description)` method which must return an instance of `Statement`.
 Statement represent the tests within the JUnit runtime and Statement#evaluate() run these. 
 Description describes the individual test. 
 It allows to read information about the test via reflection.
-		
+
 The following is a simple example for adding a log statement to an Android application before and after test execution.
-		
+
 [source,java]
 ----
 include::res/rule/MyCustomRule.java[]
-----    
-		
-		
+----
+
 To use this rule, simple add a field annotated with `@Rule` to your test class.
-		
+
 [source,java]
 ----
 include::res/rule/UseCustomRule.java[]
----- 
+----
 
 [[junitadvanced_categories]]
 === Categories
 (((JUnit,Categories)))
 		
 It is possible to define categories of tests and include or exclude them based on annotations. 
-The following example is based on the
-<ulink url="https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.8.md">JUnit 4.8 release notes</ulink>
-.
+The following example is based on the https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.8.md[JUnit 4.8 release notes].
 
 [source,java]
 ----
 include::res/categories/CategoriesExample.java[]
----- 
-	
+----
+

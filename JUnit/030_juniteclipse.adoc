@@ -61,9 +61,7 @@ that your test class gets created in this folder.
 
 image::junit30.png[Create new test class]
 
-Press the
-<guibutton>Next</guibutton>
-button and select the methods that you want to test.
+Press the btn:[Next] button and select the methods that you want to test.
 
 image::junit40.png[Selecting the methods to test]
 
