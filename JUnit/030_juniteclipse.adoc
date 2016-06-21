@@ -1,208 +1,103 @@
-<section id="juniteclipse" role="wrapper">
-	<title>Exercise: Using JUnit
+== Exercise: Using JUnit
 
-	<section id="juniteclipse_prep">
-		<title>Project preparation
+=== Project preparation
 		
 Create a new project called
 _com.vogella.junit.first_
 .
-		
-		
 Create a new source
 folder
-<filename class="directory">test_
+_test_
 . For this
 right-click on your
 project,
 select
 _Properties_
 and choose
-<menuchoice>
-	<guimenu>Java</guimenu>
-	<guisubmenu>Build Path</guisubmenu>
-</menuchoice>
-. Select the
-_Source_
-tab.
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/junit10.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Create new source folder for the tests</phrase>
-	</textobject>
-</mediaobject>
-		
-		
-Press the
-<guibutton>Add Folder</guibutton>
-button. Afterwards, press the
-<guibutton>Create New Folder</guibutton>
-button. Enter
-<filename class="directory">test_
-as
-folder name.
-		
-		The result is depicted in the following screenshot.
+menu:Java[Build Path].
+Select the _Source_ tab.
+
+image::junit10.png[Create new source folder for the tests]
+
+Press the btn:[Add Folder] button.
+Afterwards, press the btn:[Create New Folder] button.
+Enter _test_ as folder name.
+
+The result is depicted in the following screenshot.
 
 		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/junit20.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Creating a new folder</phrase>
-	</textobject>
-</mediaobject>
-		
-		<tip>
+image::junit20.png[Creating a new folder]
 
-	You can also add a new source folder
-	by right-clicking on a
-	project and selecting
-	<menuchoice>
-		<guimenu>New </guimenu>
-		<guisubmenu>Source Folder</guisubmenu>
-	</menuchoice>
-	.
+NOTE:You can also add a new source folder by right-clicking on a project and selecting
+menu:New[Source Folder].
 
-		</tip>
-	</section>
-	<section id="juniteclipse_class">
-		<title>Create a Java class
+=== Create a Java class
 		
-In the
-<filename class="directory">src_
-folder, create the
-`com.vogella.junit.first`
-package
-and the following
-class.
-		
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-		parse="text" href="./examples/first/MyClass.java" />
-</programlisting>
-		
-	</section>
-	<section id="juniteclipse_test">
-		<title>Create a JUnit test
+In the _src_ folder, create the `com.vogella.junit.first` package and the following class.
+
+[source, java]
+----
+include::res/first/MyClass.java[]
+----
+
+=== Create a JUnit test
 		
 Right-click on your new class in the
 _Package Explorer_
 view
 and select
-<menuchoice>
-	<guimenu>New</guimenu>
-	<guisubmenu>JUnit Test Case</guisubmenu>
-</menuchoice>
-.
-		
-		
+menu:New[JUnit Test Case].
+
 In the following wizard
 ensure that the
 _New JUnit 4 test_
 flag
 is selected
 and set the source folder to
-<filename class="directory">test_
+_test_
 ,
 so
 that your test class gets created in this folder.
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/junit30.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Create new test class</phrase>
-	</textobject>
-</mediaobject>
-		
-		
+
+image::junit30.png[Create new test class]
+
 Press the
 <guibutton>Next</guibutton>
 button and select the methods that you want to test.
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/junit40.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Selecting the methods to test</phrase>
-	</textobject>
-</mediaobject>
-		
-		
+
+image::junit40.png[Selecting the methods to test]
+
 If the JUnit library is not part of the classpath of your
 project, Eclipse
 will
 prompt you to add it. Use this to add JUnit to
 your project.
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/junit50.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Eclipse prompt for adding JUnit to the project classpath</phrase>
-	</textobject>
-</mediaobject>
-		
-		Create a test with the following code.
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-		parse="text" href="./examples/first/MyClassTest.java" />
-</programlisting>
-		
-	</section>
-	<section id="juniteclipse_eclipse">
-		<title>Run your test in Eclipse
 
-		
+image::junit50.png[Eclipse prompt for adding JUnit to the project classpath
+
+Create a test with the following code.
+
+[source, java]
+----
+include::first/MyClassTest.java[]
+----
+
+=== Run your test in Eclipse
+
 Right-click on your new test class and select
-<menuchoice>
-	<guimenu> Run-As</guimenu>
-	<guisubmenu>JUnit Test</guisubmenu>
-</menuchoice>
+menu:Run-As[JUnit Test]
 .
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/junit60.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Run JUnit test in Eclipse</phrase>
-	</textobject>
-</mediaobject>
-		
-		
+
+images::junit60.png[Run JUnit test in Eclipse]
+
 The result of the tests are displayed in the JUnit
 view. In
 our example one test should be successful and one test should
 show an
 error. This error is indicated by a red bar.
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/junit70.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Result of running a unit test</phrase>
-	</textobject>
-</mediaobject>
-		
-		
+
+image::junit70.png[Result of running a unit test]
+
 The test is failing,
 because our multiplier class is
 currently not
@@ -215,7 +110,3 @@ bug
 and re-run the
 test to get
 a green bar.
-		
-	</section>
-
-</section>

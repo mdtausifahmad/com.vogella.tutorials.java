@@ -10,49 +10,20 @@ For example, to create a JUnit test or a test class for an existing class.
 Right-click on your new class, select this class in the Package Explorer_ view, right-click on it
 and select menu:New[JUnit Test Case].
 		
-Alternatively you can also use the JUnit wizards available under
-<menuchoice>
-	<guimenu>File</guimenu>
-	<guisubmenu>New </guisubmenu>
-	<guisubmenu>Other...</guisubmenu>
-	<guisubmenu>Java</guisubmenu>
-	<guisubmenu>JUnit</guisubmenu>
-</menuchoice>
-.
+Alternatively you can also use the JUnit wizards available under menu:File[New >Other... > Java >JUnit].
 		
-	</section>
-	<section id="eclipse_runningjunittest">
-		<title>Running JUnit tests
+=== Running JUnit tests
 
-		 The Eclipse IDE also provides support for executing your tests
-interactively.
-		
-		
-To run a test, select the test class , right-click on it and select
-<menuchoice>
-	<guimenu>Run-as</guimenu>
-	<guisubmenu>JUnit Test</guisubmenu>
-</menuchoice>
-. 
+The Eclipse IDE also provides support for executing your tests interactively.
+
+To run a test, select the test class , right-click on it and select menu:Run-as[JUnit Test]. 
+
 This starts JUnit and executes all test methods in this class.
-		
-		
-Eclipse provides the
-<keycombo>
-	<keycap>Alt</keycap>
-	<keycap>Shift</keycap>
-	<keycap>X,</keycap>
-</keycombo>
-<keycombo>
-	<keycap>,T</keycap>
-</keycombo>
-shortcut to run the test in the selected class. 
+
+Eclipse provides the kbd:[Alt + Shift X, T] shortcut to run the test in the selected class. 
 
 To run only the selected test, position the cursor on the test method name and use the shortcut.
-		
 
-
-		
 To see the result of an JUnit test, Eclipse uses the
 _JUnit_
 view
@@ -78,16 +49,8 @@ You can also define that the view is only activated if you have a failing test.
 
 image::junit_showonerroronly2.png[JUnit view]
 		
-[NOTE]
-====
-Eclipse creates run configurations for tests. You can see and modify
-	these via the
-	<menuchoice>
-		<guimenu>Run</guimenu>
-		<guisubmenu>Run Configurations...</guisubmenu>
-	</menuchoice>
-	menu.
-====
+NOTE:Eclipse creates run configurations for tests. You can see and modify these via the
+menu:Run[Run Configurations...] menu.
 
 [[usingjunit_failedtests]]
 === Extracting the failed test and stacktraces
@@ -109,49 +72,31 @@ without specifying the class in which the field is defined.
 		
 JUnit assert statement are typically defined as `public static` to allow the developer to write short test statements. 
 The following snippet demonstrates an assert statement with and without static imports.
-		
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/static/Static.java" />
-</programlisting>
-		
+
+[source, java]
+----
+include::res/static/Static.java[]
+----
 
 [[usingjunit_testsuites]]
 === Wizard for creating test suites
 		
 You can create a test suite via Eclipse.
-For this, select the test classes which should be included in suite in the _Package Explorer_
-view, right-click on them and
-select
-<menuchoice>
-	<guimenu>New </guimenu>
-	<guisubmenu>Other...</guisubmenu>
-	<guisubmenu>JUnit</guisubmenu>
-	<guisubmenu>JUnit Test Suite</guisubmenu>
-</menuchoice>
-.
-		
-		
-<mediaobject>
-	<imageobject>
-		<imagedata fileref="images/junittestsuite10.png"/>
-	</imageobject>
-	<textobject>
-		<phrase>Create a test suite</phrase>
-	</textobject>
-</mediaobject>
-		
+For this, select the test classes which should be included in suite in the _Package Explorer_ view, right-click on them and select menu:New[Other... > JUnit > JUnit Test Suite].
+
+image::junittestsuite10.png[Create a test suite]
+
 [[usingjunit_execption]]
 === Testing exception
 (((JUnit,Exceptions)))
 		
 The `@Test (expected = Exception.class)` annotation is limited as it can only test for one exception. 
 To testexceptions, you can use the following testpattern.
-		
-		
-<programlisting language="java">
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/example/TestException.java" />
-</programlisting>
+
+[source, java]
+----
+include::res/example/TestException.java[]
+----
 
 [[usingjunit_plugintest]]
 === JUnit Plug-in Test
