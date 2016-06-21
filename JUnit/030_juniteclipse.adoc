@@ -24,12 +24,10 @@ Afterwards, press the btn:[Create New Folder] button.
 Enter _test_ as folder name.
 
 The result is depicted in the following screenshot.
-
 		
 image::junit20.png[Creating a new folder]
 
-NOTE:You can also add a new source folder by right-clicking on a project and selecting
-menu:New[Source Folder].
+NOTE:You can also add a new source folder by right-clicking on a project and selecting menu:New[Source Folder].
 
 === Create a Java class
 		
@@ -41,6 +39,7 @@ include::res/first/MyClass.java[]
 ----
 
 === Create a JUnit test
+=======
 		
 Right-click on your new class in the
 _Package Explorer_
@@ -65,6 +64,9 @@ Press the btn:[Next] button and select the methods that you want to test.
 
 image::junit40.png[Selecting the methods to test]
 
+=======
+		
+		
 If the JUnit library is not part of the classpath of your
 project, Eclipse
 will
