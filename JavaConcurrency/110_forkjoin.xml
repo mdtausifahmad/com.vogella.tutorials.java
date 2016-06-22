@@ -1,55 +1,55 @@
 <section id="forkjoin">
-	<title>Fork-Join in Java 7</title>
-	<para> Java 7 introduce a new parallel mechanism for compute intensive
+	<title>Fork-Join in Java 7
+	 Java 7 introduce a new parallel mechanism for compute intensive
 		tasks, the fork-join framework. The fork-join framework allows you to
 		distribute a certain task on several workers and then wait for the
 		result.
-	</para>
-	<para>
+	
+	
 E		For Java 6.0 you can download the package (jsr166y) from
 		<ulink url="http://gee.cs.oswego.edu/dl/concurrency-interest/index.html">Download site</ulink>
-	</para>
-	<para>
+	
+	
 		For testing create the Java project
 		"de.vogella.performance.forkjoin".
 		If you are not using Java 7 you
 		also need to
-		<filename>jsr166y.jar</filename>
+		_jsr166y.jar_
 		to the classpath.
-	</para>
-	<para>
+	
+	
 		Create first a
-		<code>algorithm</code>
+		`algorithm`
 		package and then the following class.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/forkjoin/Problem.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Define now the
-		<code>Solver</code>
+		`Solver`
 		class as shown in the following example coding.
-	</para>
-	<para>
+	
+	
 		<tip> The API defines other top classes, e.g. RecursiveAction,
 			AsyncAction. Check the Javadoc for details.
 		</tip>
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/forkjoin/Solver.java" />
 		</programlisting>
-	</para>
-	<para>Now define a small test class for testing it efficiency.
-	</para>
-	<para>
+	
+	Now define a small test class for testing it efficiency.
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/forkjoin/Test.java" />
 		</programlisting>
-	</para>
+	
 </section>

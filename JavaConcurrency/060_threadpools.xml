@@ -1,18 +1,18 @@
 <section id="threadpools">
-	<title>Threads pools with the Executor Framework</title>
-	<para>
+	<title>Threads pools with the Executor Framework
+	
 		<tip>
 			You find this examples in the source section in Java project called
-			<wordasword>de.vogella.concurrency.threadpools</wordasword>
+			_de.vogella.concurrency.threadpools_
 			.
 		</tip>
-	</para>
-	<para> Thread pools manage a pool of worker threads. The thread pools
+	
+	 Thread pools manage a pool of worker threads. The thread pools
 		contains a work queue which holds tasks waiting to get executed.
-	</para>
-	<para>
+	
+	
 		A thread pool can be described as a collection of
-		<code>Runnable</code>
+		`Runnable`
 		objects
 
 		(work queue) and a connections of running threads. These
@@ -23,44 +23,44 @@
 		Thread
 		class itself provides a method, e.g. execute(Runnable r) to add
 		a new
-		<code>Runnable</code>
+		`Runnable`
 		object to the work queue.
-	</para>
-	<para> The Executor framework provides example implementation of the
+	
+	 The Executor framework provides example implementation of the
 		java.util.concurrent.Executor interface, e.g.
 		Executors.newFixedThreadPool(int n) which will create n worker
 		threads. The ExecutorService adds life cycle methods to the Executor,
 		which allows to shutdown the Executor and to wait for termination.
-	</para>
-	<para>
+	
+	
 		<tip>
 			If you want to use one thread pool with one thread which
 			executes
 			several runnables you can use
 			the
-			<code>Executors.newSingleThreadExecutor()</code>
+			`Executors.newSingleThreadExecutor()`
 			method.
 		</tip>
-	</para>
-	<para> Create again the Runnable.</para>
-	<para>
+	
+	 Create again the Runnable.
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/threadpools/MyRunnable.java" />
 		</programlisting>
-	</para>
-	<para>Now you run your runnables with the executor framework.</para>
-	<para>
+	
+	Now you run your runnables with the executor framework.
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/threadpools/Main.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		In case the threads should return some value (result-bearing
 		threads)
 		then you can use the
-		<code>java.util.concurrent.Callable</code>
+		`java.util.concurrent.Callable`
 		class.
-	</para>
+	
 </section>

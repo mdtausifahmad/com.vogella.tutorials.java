@@ -1,26 +1,26 @@
 
 <section id="setup_model">
 	<title>Project and Domain model
-	<para>
+	
 		Create the Java project called
 		_de.vogella.rss_
 		. Create the following
 		Java classes, which is used as
 		domain
 		model.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/model/FeedMessage.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="../examples/model/Feed.java" />
 		</programlisting>
-	</para>
+	
 </section>
 
 

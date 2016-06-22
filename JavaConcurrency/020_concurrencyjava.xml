@@ -1,69 +1,69 @@
 <section id="concurrencyjava">
-	<title>Concurrency in Java</title>
+	<title>Concurrency in Java
 	<section id="concurrencyjava_overview">
-		<title>Processes and Threads</title>
-		<para>
+		<title>Processes and Threads
+		
 			A Java program runs in its own process and by default in one
 			thread.
 			Java supports threads as part of the Java language via the
-			<code>Thread</code>
+			`Thread`
 			code.
 			The Java application can create new threads via this class.
-		</para>
-		<para>
+		
+		
 			Java 1.5
 			also
 			provides improved support for concurrency with the in the
-			<code>java.util.concurrent</code>
+			`java.util.concurrent`
 			package.
-		</para>
+		
 
 	</section>
 	<section id="concurrencyjava_synchronized">
-		<title>Locks and thread synchronization</title>
-		<para>
+		<title>Locks and thread synchronization
+		
 			Java provides
-			<wordasword>locks</wordasword>
+			_locks_
 			to protect certain parts of the code to be executed by
 			several
 			threads at the same time. The simplest way of
 			locking a certain method
 			or Java class is to define the method or class with the
-			<code>synchronized</code>
+			`synchronized`
 			keyword.
-		</para>
-		<para>
+		
+		
 			The
-			<wordasword>synchronized</wordasword>
+			_synchronized_
 			keyword in Java ensures:
 			<itemizedlist>
 				<listitem>
-					<para>that only a single thread can execute a block of code at
+					that only a single thread can execute a block of code at
 						the
 						same time
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>that each thread entering a synchronized block
+					that each thread entering a synchronized block
 						of code
 						sees the
 						effects of all previous modifications that were
 						guarded by
 						the same
 						lock
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-			<para>Synchronization is necessary for mutually
+			Synchronization is necessary for mutually
 				exclusive access to
 				blocks of and for reliable communication
 				between threads.
-			</para>
-		</para>
+			
+		
 
-		<para>
+		
 			You can use the
-			<wordasword>synchronized</wordasword>
+			_synchronized_
 			keyword for the definition of a
 			method. This would
 			ensure that only one
@@ -72,26 +72,26 @@
 			is
 			calling this method would wait until the first threads leaves this
 			method.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/synchronized/Method.java" />
 			</programlisting>
-		</para>
+		
 
 
-		<para>
+		
 			You can also use the
-			<code>synchronized</code>
+			`synchronized`
 			keyword to protect blocks of code within a method. This block is
 			guarded by a key,
 			which can be either a
 			string
 			or an object. This key is
 			called the
-			<wordasword>lock</wordasword>.
+			_lock_.
 
 			All code
 			which
@@ -101,51 +101,51 @@
 			be executed
 			by one
 			thread at the same time
-		</para>
+		
 
 
-		<para>
+		
 			For example the following datastructure will ensure that only
 			one
 			thread can access the inner block of the
-			<code>add()</code>
+			`add()`
 			and
-			<code>next()</code>
+			`next()`
 			methods.
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/synchronized/CrawledSites.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 	<section id="concurrency_volatile">
-		<title>Volatile</title>
-		<para>
+		<title>Volatile
+		
 			If a variable is declared with the
-			<wordasword>volatile</wordasword>
+			_volatile_
 			keyword then it is guaranteed that
 			any
 			thread that reads the field will
 			see the most recently written
 			value.
 			The
-			<wordasword>volatile</wordasword>
+			_volatile_
 			keyword will not perform any mutual exclusive
 			lock on the variable.
-		</para>
-		<para>
+		
+		
 			As of Java 5 write access to a
-			<wordasword>volatile</wordasword>
+			_volatile_
 			variable will also
 			update non-volatile variables which were modified
 			by the same thread.
 			This can also be used to update values within a
 			reference variable,
 			e.g. for a
-			<wordasword>volatile</wordasword>
+			_volatile_
 			variable person. In this case
 			you must use a
 			temporary variable person
@@ -159,6 +159,6 @@
 			variable
 			and the values visible to other
 			threads.
-		</para>
+		
 	</section>
 </section>

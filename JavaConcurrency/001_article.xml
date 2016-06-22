@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Java concurrency (multi-threading) - Tutorial</title>
+		<title>Java concurrency (multi-threading) - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -20,12 +20,12 @@
 		</copyright>
 		<pubdate>14.04.2016</pubdate>
 		<releaseinfo>
-			<para>Version 2.5</para>
+			Version 2.5
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Java concurrency (multi-threading)</title>
-			<para>This article describes how to do concurrent programming
+			<title>Java concurrency (multi-threading)
+			This article describes how to do concurrent programming
 				with
 				Java. It covers the concepts of parallel programming, immutability,
 				threads, the
@@ -33,7 +33,7 @@
 				futures, callables CompletableFuture and
 				the
 				fork-join framework.
-			</para>
+			
 
 		</abstract>
 	</articleinfo>

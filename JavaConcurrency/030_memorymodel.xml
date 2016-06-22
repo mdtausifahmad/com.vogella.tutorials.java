@@ -1,72 +1,72 @@
 <section id="memorymodel">
-	<title>The Java memory model</title>
+	<title>The Java memory model
 	<section id="memorymodel_overview">
-		<title>Overview</title>
-		<para>
+		<title>Overview
+		
 			The
-			<wordasword>Java memory model</wordasword>
+			_Java memory model_
 			describes the communication between the
 			memory of the threads and the
 			main memory of the application.
-		</para>
-		<para>
+		
+		
 			It
 			defines the rules how changes in the memory done by threads
 			are
 			propagated to other threads.
 
 			The
-			<wordasword>Java memory model</wordasword>
+			_Java memory model_
 			also defines the situations in
 			which a thread
 			re-fresh its own
 			memory
 			from the
 			main memory.
-		</para>
-		<para>It also describes which operations are atomic and the ordering
+		
+		It also describes which operations are atomic and the ordering
 			of the operations.
-		</para>
+		
 	</section>
 	<section id="memorymodel_atomic">
-		<title>Atomic operation</title>
-		<para> An atomic operation is an operation which is performed as a
+		<title>Atomic operation
+		 An atomic operation is an operation which is performed as a
 			single unit of work without the possibility of interference from
 			other operations.
-		</para>
-		<para>
+		
+		
 			The Java language specification guarantees that reading or
 			writing a
 			variable is an atomic operation(unless the variable is of
 			type
-			<code>long</code>
+			`long`
 			or
-			<code>double</code>
+			`double`
 			). Operations variables of type
-			<code>long</code>
+			`long`
 			or
-			<code>double</code>
+			`double`
 			are only atomic if they
 			declared with the
-			<code>volatile</code>
+			`volatile`
 			keyword. .
-		</para>
-		<para>
+		
+		
 			Assume
-			<code>i</code>
+			`i`
 			is defined as
-			<code>int</code>
+			`int`
 			.
 			The
-			<code>i++</code>
+			`i++`
 			(increment)
 			operation it not an atomic operation in Java. This also
 			applies for the other numeric types, e.g. long.
 			etc).
-		</para>
-		<para>
+		
+		
 			The
-			<code>i++</code>
+			`i++`
 			operation
 			first reads the value which is
 			currently stored
@@ -76,29 +76,29 @@
 			But between
 			the read and the write the value of i
 			might have changed.
-		</para>
-		<para>
+		
+		
 			Since Java 1.5 the java language provides atomic variables,
 			e.g.
 			AtomicInteger or AtomicLong which provide methods like
-			<code>getAndDecrement()</code>
+			`getAndDecrement()`
 			,
-			<code>getAndIncrement()</code>
+			`getAndIncrement()`
 			and
-			<code>getAndSet()</code>
+			`getAndSet()`
 			which are
 			atomic.
-		</para>
+		
 	</section>
 	<section id="memorymodel_synchronized">
-		<title>Memory updates in synchronized code</title>
-		<para>The Java memory model guarantees
+		<title>Memory updates in synchronized code
+		The Java memory model guarantees
 			that each thread entering
 			a
 			synchronized
 			block of code sees the effects of all previous
 			modifications that were
 			guarded by the same lock.
-		</para>
+		
 	</section>
 </section>

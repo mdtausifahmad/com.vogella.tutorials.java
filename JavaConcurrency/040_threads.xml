@@ -1,22 +1,22 @@
 <section id="threads">
-	<title>Threads in Java</title>
-	<para>
+	<title>Threads in Java
+	
 		The base means for concurrency are is the
-		<code>java.lang.Threads</code>
+		`java.lang.Threads`
 		class. A
-		<code>Thread</code>
+		`Thread`
 		executes an object of type
-		<code>java.lang.Runnable</code>
+		`java.lang.Runnable`
 		.
-	</para>
-	<para>
-		<code>Runnable</code>
+	
+	
+		`Runnable`
 		is an interface with defines the
-		<code>run()</code>
+		`run()`
 		method. This
 		method
 		is called by the
-		<code>Thread</code>
+		`Thread`
 		object and contains the work which
 		should
 		be done.
@@ -25,67 +25,67 @@
 		Thread is the
 		worker who is doing
 		this task.
-	</para>
-	<para>
+	
+	
 		The following demonstrates a task (Runnable) which counts the
 		sum
 		of a
 		given range of numbers. Create a new Java project called
-		<code>de.vogella.concurrency.threads</code>
+		`de.vogella.concurrency.threads`
 		for the
 		example code of this
 		section.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/threads/MyRunnable.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		The following example demonstrate the usage of the
-		<code>Thread</code>
+		`Thread`
 		and the
-		<code>Runnable</code>
+		`Runnable`
 		class.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 				parse="text" href="./examples/threads/Main.java" />
 		</programlisting>
-	</para>
-	<para>
+	
+	
 		Using the
-		<code>Thread</code>
+		`Thread`
 		class
 		directly has the following disadvantages.
 		<itemizedlist>
 			<listitem>
-				<para>Creating a new thread causes some performance overhead
-				</para>
+				Creating a new thread causes some performance overhead
+				
 			</listitem>
 			<listitem>
-				<para>Too many threads can lead to reduced performance, as the
+				Too many threads can lead to reduced performance, as the
 					CPU
 					needs to switch between these threads.
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>You cannot easily control the number of threads, therefore
+				You cannot easily control the number of threads, therefore
 					you
 					may run into out of memory errors due to too many threads.
-				</para>
+				
 			</listitem>
 		</itemizedlist>
-	</para>
-	<para>
+	
+	
 		The
-		<code>java.util.concurrent</code>
+		`java.util.concurrent`
 		package offers improved support for
 		concurrency compared to the direct
 		usage of
-		<code>Threads</code>
+		`Threads`
 		. This package is described in the next section. 
-	</para>
+	
 </section>
