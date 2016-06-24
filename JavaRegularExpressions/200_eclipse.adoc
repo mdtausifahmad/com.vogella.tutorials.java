@@ -1,0 +1,68 @@
+<section id="regularexpressionseclipse">
+	<title>Processing regular expressions in Eclipse
+	
+		The Eclipse IDE allows to perform search and replace across a set
+		of
+		files using regular expressions. In Eclipse use the
+		<keycombo>
+			<keycap>Ctrl</keycap>
+			<keycap>H</keycap>
+		</keycombo>
+		shortcut to open the
+		<guilabel>Search</guilabel>
+		dialog.
+	
+	
+		Select the
+		<guilabel>File Search</guilabel>
+		tab and
+		check the
+		<guilabel>Regular expression</guilabel>
+		flag before entering your regular expression. You can also specify the
+		file type and the scope for the search and replace operation.
+	
+
+	The
+		following screenshots demonstrate how to search for the <![CDATA[</ulink>]]>
+		XML tag with leading whitespace and how to remove the whitespace.
+	
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/regularexpressioneclipse10.png"
+					scale="40" />
+			</imageobject>
+			<textobject>
+				<phrase>Search and replace in Eclipse part 1</phrase>
+			</textobject>
+		</mediaobject>
+	
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/regularexpressioneclipse20.png"
+					scale="40" />
+			</imageobject>
+			<textobject>
+				<phrase>Search and replace in Eclipse part 2</phrase>
+			</textobject>
+		</mediaobject>
+	
+	
+		The resulting dialog allows you to review the changes and remove
+		elements which should not be replaced. If you press
+		the
+		<guibutton>OK</guibutton>
+		button, the changes are applied.
+	
+	
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/regularexpressioneclipse30.png"
+					scale="40" />
+			</imageobject>
+			<textobject>
+				<phrase>Search and replace in Eclipse part 3</phrase>
+			</textobject>
+		</mediaobject>
+	

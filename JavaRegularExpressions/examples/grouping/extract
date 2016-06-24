@@ -1,0 +1,4 @@
+
+// Extract the text between the two title elements
+pattern = "(?i)(<title.*?>)(.+?)()";
+String updated = EXAMPLE_TEST.replaceAll(pattern, "$2");
