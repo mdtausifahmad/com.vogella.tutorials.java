@@ -12,8 +12,7 @@ This tutorial explains the usage of the Retrofit library as REST client.
 
                 
 include::010_overview.adoc[]
-include::030_exercise_stackoverflow.xml[]
-include::040_exercise_github.xml[]
+include::030_exercise_stackoverflow.adoc[]
+include::040_exercise_github.adoc[]
 include::008_resourceslocal.adoc[]
     
-

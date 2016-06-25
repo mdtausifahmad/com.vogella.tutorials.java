@@ -1,28 +1,47 @@
-== Exercise: Using Retrofit to access Github API
+== Exercise: Using Retrofit to access Github API from an Android app
 
-
-=== Project setup_
+=== Project setup
 
 To test Retrofit create an application called _Retrofit Github_.
 Use the _com.vogella.android.retrofitgithub_ top level package name.
 
-To use Retrofit in your application, add the following dependency to your build.gradle file_
+To use Retrofit in your application, add the following dependency to your build.gradle file.
 
-[source,gradle]
+[source,xml]
 ----
-include::res/github/build.gradle[]
+include::res/stackoverflow/build.gradle[]
 ----
-
 		
-Add the permission to access the Internet to your manifest file._
+Add the permission to access the Internet to your manifest file.
 
 [source,xml]
 ----
 include::res/github/AndroidManifest.xml[]
 ----
 
+
+Access the following URL in your browser: https://api.github.com/users/vogella and build a data model and interface with the data you are interested in. 
+Use the following code as example.
+
+
 Create the following interface to the Retrofit API.
 
-		
-Access the following URL in your browser: https://api.github.com/users/vogella and build a data model and interface with the data you are interested in. 
-Read this data via Retrofit and show it in a list.
+[source,java]
+----
+include::res/github/GithubUser.java[]
+----
+
+Create the Retrofit interface.
+
+[source,java]
+----
+include::res/github/GithubUserAPI.java[]
+----
+
+Adjust your activity.
+
+[source,java]
+----
+include::res/github/MainActivity.java[]
+----
+

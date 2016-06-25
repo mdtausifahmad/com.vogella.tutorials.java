@@ -36,7 +36,7 @@ Add the permission to access the Internet to your manifest file.
 include::res/stackoverflow/AndroidManifest.xml[]
 ----
 		
-= Define the API and the Retrofit adapter
+=== Define the API and the Retrofit adapter
 
 In the JSON reply from StackOverflow we are only interested in the title and the link. 
 Therefore create the following data classes.
@@ -73,3 +73,4 @@ Change your activity code to allow querying for questions marked with the tag "a
 ----
 include::res/stackoverflow/MainActivity.java[]
 ----	
+
