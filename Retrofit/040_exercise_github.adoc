@@ -23,7 +23,6 @@ include::res/github/AndroidManifest.xml[]
 
 Create the following interface to the Retrofit API.
 
-
 		
 Access the following URL in your browser: https://api.github.com/users/vogella and build a data model and interface with the data you are interested in. 
 Read this data via Retrofit and show it in a list.

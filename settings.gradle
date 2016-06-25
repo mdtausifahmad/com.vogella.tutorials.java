@@ -7,5 +7,6 @@ include 'jsoup'
 include 'JUnit'
 include 'Hamcrest'
 include 'Mockito'
+include 'Retrofit'
 
 
