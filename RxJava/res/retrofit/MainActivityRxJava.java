@@ -12,9 +12,15 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+import rx.Observable;
+import rx.Scheduler;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
-public class MainActivity extends Activity implements Callback<GithubUser> {
+public class MainActivityRxJava extends Activity implements Callback<GithubUser> {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +33,39 @@ public class MainActivity extends Activity implements Callback<GithubUser> {
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
                 .create();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(GithubUserAPI.ENDPOINT)
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .baseUrl(GithubRxJavaUserAPI.ENDPOINT)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
         // prepare call in Retrofit 2.0
-        GithubUserAPI githubUserAPI = retrofit.create(GithubUserAPI.class);
+        GithubRxJavaUserAPI githubUserAPI = retrofit.create(GithubRxJavaUserAPI.class);
 
-        Call<GithubUser> call = githubUserAPI.getUser("vogella");
-        //asynchronous call
-        call.enqueue(this);
+
+
+        Observable<GithubUser> observable = githubUserAPI.getUser("vogella");
+
+        observable.observeOn(AndroidSchedulers.mainThread()).subscribeOn(Schedulers.io()).
+                subscribe(new Subscriber<GithubUser>(){
+
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(GithubUser githubUser) {
+
+                Toast.makeText(MainActivityRxJava.this, "Got the user: " + githubUser.name, Toast.LENGTH_LONG).show();
+
+            }
+        });
+
     }
 
     @Override

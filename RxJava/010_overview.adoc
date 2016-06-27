@@ -177,9 +177,9 @@ For example the observable might perform a network operation in this thread and 
 RxJava provides  several default schedulers, for example:
 
 * `Schedulers.io()` for blocking I/O operations
-* `Schedulers.computation()` for computational work 
-* `Schedulers.newThread()` which creates a ew thread for the work. 
-
+* `Schedulers.computation()` for computational work uses # CPU's as default
+* `Schedulers.newThread()` which creates a new thread for the work. 
+* `Schedulers.immediate()` current thread
 
 However, from an Android perspective, you might be wondering how to schedule code to execute on the main UI Thread. 
 We can achieve this using the RxAndroid library.
@@ -190,5 +190,17 @@ For Android you have an extension which allows to schedule code in the main thre
 This allows you to update the user interface, as in  Android only the main thread is allowed to update the user interface.
 ====
 
+=== Using Retrofit and RxJava
+
+Retrofit can be instructed to provide its call result as observable.
+
+[source,gradle]
+----
+compile 'com.squareup.retrofit2:retrofit:2.1.0'
+compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+compile 'io.reactivex:rxjava:1.0.14'
+compile 'io.reactivex:rxandroid:1.0.1'
+----
 
 

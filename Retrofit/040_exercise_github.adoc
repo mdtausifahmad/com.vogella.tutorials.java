@@ -19,6 +19,14 @@ Add the permission to access the Internet to your manifest file.
 include::res/github/AndroidManifest.xml[]
 ----
 
+Add a button to your layout with the `onClick` property pointing to an `onClick` method.
+
+[source,xml]
+----
+include::res/github/activity_main.xml[]
+----
+
+
 
 Access the following URL in your browser: https://api.github.com/users/vogella and build a data model and interface with the data you are interested in. 
 Use the following code as example.
