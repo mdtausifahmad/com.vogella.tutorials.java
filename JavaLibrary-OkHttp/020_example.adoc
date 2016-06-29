@@ -1,0 +1,27 @@
+== Exercise: Using OkHttp</title>
+
+This is an example for the usage of OkHttp in a standard Java
+program,
+but this library can also be used in Android applications.
+This example demonstrates the usage of the API.
+	</para>
+	<para>
+Create a new Java project called
+<code>com.vogella.java.library.okhttp</code>
+.
+	</para>
+	<para>Download the OkHttp JAR and its requirements and add them to the
+build path of your project.
+	</para>
+	<para>
+Afterwards create the following test class which is more or less taken
+for the
+<ulink url="http://square.github.io/okhttp/">OkHttp</ulink>
+	</para>
+	<para>
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+parse="text" href="./examples/TestMain.java" />
+</programlisting>
+	</para>
+

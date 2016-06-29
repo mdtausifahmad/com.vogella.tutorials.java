@@ -1,0 +1,16 @@
+== Using OkHttp for efficient network access
+(((OkHttp)))
+
+OkHTTP (http://square.github.io/okhttp/) is an Open Source project designed to be an efficient HTTP client. 
+It supports the SPDY protocol. 
+SPDY is the basis for HTTP 2.0 and allows multiple HTTP requests to be multiplexed over one socket connection.
+
+If you are using Maven or Gradle as build system you can simply add a
+dependency to group ID `com.squareup.okhttp`, artifactId, `okhttp` and the version 2.1.0 (current as of this writing).
+
+[source,gradle]
+----
+compile 'com.squareup.okhttp:okhttp:2.5.0'
+----
+
+NOTE: As of Android 5.0 OkHttp is part of the Android platform and is used for all HTTP calls.

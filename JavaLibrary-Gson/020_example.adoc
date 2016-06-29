@@ -1,0 +1,27 @@
+== Exercise: Using Gson</title>
+
+=== Target of this exercise</title>
+
+In this exercise you use Gson to convert a data model into JSON and the JSON back to Java objects.
+
+=== Create project and add library to it
+
+Create a Java project, download the Gson library from its homepage and add it to the projects classpath.
+
+=== Create the data model
+
+Create the following data model.
+
+[source,java]
+----
+include::res/Task.java[]
+----
+
+
+=== Write a converter main method
+Write the following class to test the conversion.
+
+[source,java]
+----
+include::res/MainTest.java[]
+----

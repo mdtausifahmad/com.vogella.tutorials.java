@@ -1,0 +1,5 @@
+=== Gson resources
+
+https://github.com/google/gson - GSon home page
+
+https://sites.google.com/site/gson/gson-user-guide - GSon user guide
