@@ -1,0 +1,34 @@
+= Scheduling tasks in Java
+
+To schedule a task in Java you can use the `TimerTask` class, as demonstrated by the following snippet.
+
+----
+package snippet;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+public class Snippet {
+	public static void main(String[] args) {
+		Timer timer = new Timer(true);
+		TimerTask timerTask = new TimerTask() {
+
+			@Override
+			public void run() {
+				doSomething();
+			}
+		};
+		
+		// do it once in 1 sec
+		timer.schedule(timerTask, 1000);
+		
+		// do it every 10 secs
+		timer.scheduleAtFixedRate(timerTask, 0, 10 * 1000); 
+	}
+
+	private static void doSomething() {
+		System.out.println("Doing something");
+	}
+}
+
+----
