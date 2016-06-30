@@ -1,6 +1,6 @@
-== Exercise: Using Gson</title>
+== Exercise: Using Gson
 
-=== Target of this exercise</title>
+=== Target of this exercise
 
 In this exercise you use Gson to convert a data model into JSON and the JSON back to Java objects.
 

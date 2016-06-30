@@ -1,4 +1,4 @@
-== Google Gson</title>
+== Google Gson
 (((Gson)))
 
 === What is Gson
@@ -31,14 +31,14 @@ or a later version
 as dependency to your _build.gradl_
 e build file
 
-=== Excluding fields from serialization and deserialization</title>
+=== Excluding fields from serialization and deserialization
 (((Gson, Exclude fields)))
 
 By default, Gson tries to map all fields in the Java object to the JSON file it creates and vice versa. But Gson
 allows
 to exclude certain fields for serialization and deserialization. GSon can for example not serialize Java Beans,
 as the
-<code>IPropertyChangeSupport</code>
+`IPropertyChangeSupport`
 field lead to an infinite loop. Therefore you must exclude such a field from the JSON conversion.
 
 To exclude fields you have four options:

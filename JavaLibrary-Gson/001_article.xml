@@ -2,7 +2,7 @@
 <article>
 	<articleinfo>
 		<title>Google Gson for converting Java objects to JSON and JSON to Java with - Tutorial
-		</title>
+		
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -21,7 +21,7 @@
 
 
 		<abstract id="abstract">
-			<title>Using Gson to convert Java objects to JSON and back</title>
+			<title>Using Gson to convert Java objects to JSON and back
 			<para> This tutorial explains how to use the Open Source framework Gson from Google to usage and purpose of Java JAR
 				files.
 			</para>

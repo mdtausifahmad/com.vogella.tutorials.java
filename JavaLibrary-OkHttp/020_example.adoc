@@ -1,4 +1,4 @@
-== Exercise: Using OkHttp</title>
+== Exercise: Using OkHttp
 
 This is an example for the usage of OkHttp in a standard Java
 program,
@@ -7,7 +7,7 @@ This example demonstrates the usage of the API.
 	</para>
 	<para>
 Create a new Java project called
-<code>com.vogella.java.library.okhttp</code>
+`com.vogella.java.library.okhttp`
 .
 	</para>
 	<para>Download the OkHttp JAR and its requirements and add them to the

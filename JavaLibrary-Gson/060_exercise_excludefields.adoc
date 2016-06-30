@@ -1,4 +1,4 @@
-== Exercise: Exclude a field from a Java object</title>
+== Exercise: Exclude a field from a Java object
 
 The following is your data model.
 		<programlisting language="java">
@@ -8,7 +8,7 @@ The following is your data model.
 		Via the following class you can deserialize and serialize this data model into JSON and back to Java. In this
 		example
 		we exclude the field for the
-		<code>IPropertyChangeSupport</code>
+		`IPropertyChangeSupport`
 		.
 
 		<programlisting language="java">

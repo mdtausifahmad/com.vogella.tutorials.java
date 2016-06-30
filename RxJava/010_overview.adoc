@@ -158,6 +158,33 @@ myIntergerObserable.map(new Func1() {
 <1> We receive a String now instead of an Integer
 
 
+=== Creating observables (Unfold operators)
+
+RxJava provides several _unfold operators_ which allows the creation of observables.
+
+
+.Table Creating observables 
+|===
+|Operator |Description
+
+|Observable.just(T value)
+|Wraps value(s) into an Observable
+
+|Observable.range(int from, int to)
+|Generates range sequence
+
+
+|Observable.timer()
+|Generates time-based sequence
+
+|Observable.interval() |Generates interval-based sequence
+|Observable.create(OnSubscribe<T>)| Creates observable with delegate (most powerful)
+|Observable.never() |Empty sequence that never completes either way
+|Observable.empty() |Empty sequence that completes right away
+|Observable.error(Throwable t) |Empty sequence that completes with error
+
+|===
+
 
 === Using delays
 

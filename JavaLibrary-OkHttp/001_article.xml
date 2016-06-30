@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Using the OkHttp library for HTTP requests - Tutorial</title>
+		<title>Using the OkHttp library for HTTP requests - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -19,7 +19,7 @@
 
 
 		<abstract id="abstract">
-			<title>Using OkHttp for network access</title>
+			<title>Using OkHttp for network access
 			<para> This tutorial explains the usage and purpose of the HTTP and HTTPS library OkHttp.
 			</para>
 		</abstract>
