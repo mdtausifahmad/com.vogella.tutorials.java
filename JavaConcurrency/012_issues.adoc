@@ -1,0 +1,53 @@
+== Improvements and issues with concurrency
+
+=== Limits of concurrency gains
+		
+Within a Java application you work with several threads to
+achieve parallel processing or asynchronous behavior.
+Concurrency promises to perform certain task faster as these
+tasks can
+be divided into subtasks and these subtasks can
+be executed
+in parallel. Of course the runtime is limited by parts of
+the task
+which can be performed in parallel.
+		
+The theoretical possible
+performance gain can be
+calculated by the following rule
+which is referred to as
+_Amdahl's Law_.
+		
+If F is the
+percentage of the program
+which can not run in
+parallel
+and N is the
+number of processes, then
+the maximum
+performance
+gain is 1/
+(F+
+((1-F)/n)).
+		
+=== Concurrency issues
+
+Threads have their own call stack, but can also access shared
+data. Therefore you have two basic problems,
+visibility and access
+problems.
+		
+A visibility problem occurs if thread A reads shared data which
+is later changed by thread B and thread A is
+unaware of this
+change.
+		
+An access problem can occur if several thread access and
+change
+the same shared data at the same time.
+		
+Visibility and access problem can lead to
+
+* Liveness failure: The program does not react anymore due to problems in the concurrent access of data, e.g. deadlocks.
+* Safety failure: The program creates incorrect data.
+		

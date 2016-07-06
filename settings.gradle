@@ -11,4 +11,6 @@ include 'Mockito'
 include 'Retrofit'
 include 'JavaLibrary-OkHttp'
 
+include 'JavaConcurrency'
+
 

@@ -1,0 +1,90 @@
+== Futures and Callables
+
+=== Futures and Callables
+		
+The executor framework presented in the last chapter works with
+`Runnable`
+objects. Unfortunately a
+`Runnable`
+cannot return a result to the caller.
+		
+In case you expect your threads to return a computed result you
+can use
+`java.util.concurrent.Callable`
+. The
+`Callable`
+object
+allows to return
+values after completion.
+		
+The
+`Callable`
+object uses generics to define the type of object which
+is
+returned.
+		
+If you submit a
+`Callable`
+object
+to an
+`Executor`
+the framework returns an object of type
+`java.util.concurrent.Future`
+.
+`Future`
+exposes methods allowing a client to monitor the progress of a task being executed by a different thread.
+Therefore a
+`Future`
+object can be
+used to check the
+status of a
+`Callable`
+and to
+retrieve the
+result from
+the
+`Callable`
+.
+		
+On the
+`Executor`
+you can use the method submit to submit a
+`Callable`
+and to get a future.
+To retrieve the result of the future use
+the
+`get()`
+method.
+		
+[source,java]
+----
+include::res/futures/MyCallable.java[]
+----		
+		
+[source,java]
+----
+include::res/futures/CallableFutures.java[]
+----		
+		
+The code examples for this section are created in a Java project
+called
+_de.vogella.concurrency.callables_
+.
+		
+=== Drawbacks with Futures and Callbacks
+		
+The
+`Future`
+interface is limited as a model of asynchronously executed tasks. While
+`Future`
+allows a client to query a
+`Callable`
+task for
+its result, it does not provide the option to register a callback method, which
+would allow to notified once a
+task is done. In Java 5 you could use
+`ExecutorCompletionService`
+for this purpose but as of Java 8 you can use the
+`CompletableFuture`
+interface which allows to provide a callback interface which is called once a task is completed.
+		

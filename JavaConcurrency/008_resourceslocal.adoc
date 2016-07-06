@@ -1,0 +1,20 @@
+== Links and Literature
+
+=== Concurrency Resources
+
+http://www.ibm.com/developerworks/java/library/j-jvmc2/index.html - JVM concurrency: Java 8 concurrency basics
+
+http://www.infoq.com/articles/Functional-Style-Callbacks-Using-CompletableFuture - Functional-Style Callbacks Using Java 8's CompletableFuture
+
+http://java.sun.com/docs/books/tutorial/essential/concurrency/index.html - Introduction to Concurrency
+
+http://www.briangoetz.com/pubs.html - Article series from Brian Goetz including lots about concurrency
+
+http://www.ibm.com/developerworks/library/j-jtp0730.html - Thread pools and work queues by Brian Goetz
+
+http://www.ibm.com/developerworks/java/library/j-jtp04186/index.html - Introduction to nonblocking algorithms by Brian Goetz
+
+http://www.ibm.com/developerworks/java/library/j-jtp11137.html - Java theory and practice: Stick a fork in it, Part 1 by Brian Goetz
+
+http://www.ibm.com/developerworks/java/library/j-jtp03048.html - Java theory and practice: Stick a fork in it, Part 2 by Brian Goetz
+

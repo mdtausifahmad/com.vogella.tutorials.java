@@ -30,17 +30,17 @@
 			
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	include::../web/advertisement/afterTableOfContent.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/012_prereqs.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	include::../web/advertisement/inBetween01.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_setup.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	include::../web/advertisement/inBetween02.adoc[]
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/030_read.xml" />
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_write.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
 	<?dbhtml-include href="../../web/vgwort/RSSFeed"?>
 </article>

@@ -1,0 +1,19 @@
+== Deadlock
+	
+A concurrent application has the risk of a
+_deadlock_
+. A set of processes are deadlocked if all processes are waiting for
+an
+event which another process in the same set has to cause.
+	
+For example if thread A waits for a lock on object Z which
+thread B holds and thread B wait for a look on object Y which is hold
+be process A then these two processes are locked and cannot continue
+in their processing.
+	
+This can be compared to a traffic jam, where cars(threads)
+require the access to a certain street(resource), which is
+currently blocked by another car(lock).
+	
+image::deadlock_cars.png[Deadlock,pdfwidth=60%]
+

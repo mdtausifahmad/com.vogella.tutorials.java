@@ -1,0 +1,46 @@
+== Fork-Join in Java 7
+	
+Java 7 introduce a new parallel mechanism for compute intensive
+tasks, the fork-join framework. The fork-join framework allows you to
+distribute a certain task on several workers and then wait for the
+result.
+	
+For Java 6.0 you can download the package (jsr166y) from
+http://gee.cs.oswego.edu/dl/concurrency-interest/index.html - Download site
+	
+For testing create the Java project
+"de.vogella.performance.forkjoin".
+If you are not using Java 7 you
+also need to
+_jsr166y.jar_
+to the classpath.
+	
+Create first a
+`algorithm`
+package and then the following class.
+	
+[source,java]
+----
+include::res/forkjoin/Problem.java[]
+----	
+	
+Define now the
+`Solver`
+class as shown in the following example coding.
+	
+	
+TIP: The API defines other top classes, e.g. RecursiveAction, AsyncAction. 
+Check the Javadoc for details.
+	
+[source,java]
+----
+include::res/forkjoin/Solver.java[]
+----
+	
+Now define a small test class for testing it efficiency.
+	
+[source,java]
+----
+include::res/forkjoin/Test.java[]
+----
+	

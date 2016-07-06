@@ -1,0 +1,52 @@
+== Immutability and Defensive Copies
+
+=== Immutability
+
+The simplest way to avoid problems with concurrency is to
+share
+only immutable data between threads. Immutable data is data
+which cannot changed.
+
+To make a class immutable make
+
+* all its fields final
+* the class declared as final
+* the this reference is not allowed to escape during construction
+* Any fields which refer to mutable data objects are
+* private
+* have no setter method
+* they are never directly returned of otherwise exposed to a caller
+* if they are changed internally in the class this change is not visible and has no effect outside of the class
+
+An immutable class may have some mutable data which is uses to
+manages its state but from the outside this class nor any attribute
+of
+this class can get changed.
+
+ For all mutable fields, e.g. Arrays, that are passed from the
+outside to the class during the construction phase, the class needs
+to
+make a defensive-copy of the elements to make sure that no other
+object from the outside still can change the data
+
+=== Defensive Copies
+
+You must protect your classes from calling code. Assume that
+calling code will do its best to
+change your data in a way you didn't
+expect it. While this is especially true in case of immutable data it
+is also true for non-immutable data which you still not expect that
+this data is changed outside your class.
+
+To protect your class against that you should copy data you
+receive and only return copies of data to calling code.
+
+The following example creates a copy of a list (ArrayList) and
+returns only the copy of the list. This way the client of this class
+cannot remove elements from the list.
+
+[source,java]
+----
+include::res/defensivecopy/MyDataStructure.java[]
+----
+
