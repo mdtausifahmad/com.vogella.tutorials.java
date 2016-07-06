@@ -49,3 +49,4 @@ You can configure Gson to consider this annotation.
 * You can register a custom exclusion strategy with the `GsonBuilder` and its `setExclusionStrategies` method. 
 For this you would implement the `ExclusionStrategy` and its `houldSkipField(FieldAttributes f)` and `shouldSkipClass(Class clazz)` methods.
 * You can define a custom annotation and tell GSon to ignore such fields.
+

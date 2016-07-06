@@ -1,18 +1,19 @@
 == Exercise: Exclude a field from a Java object
 
 The following is your data model.
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exclude/Todo.java" />
-		</programlisting>
 
-		Via the following class you can deserialize and serialize this data model into JSON and back to Java. In this
-		example
-		we exclude the field for the
-		`IPropertyChangeSupport`
-		.
+[source,java]
+----
+include::res/exclude/Todo.java[]
+----
 
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exclude/ExampleConvertor.java" />
-		</programlisting>
+Via the following class you can deserialize and serialize this data model into JSON and back to Java. In this
+example
+we exclude the field for the
+`IPropertyChangeSupport`.
 
+[source,java]
+----
+include::res/exclude/ExampleConvertor.java[]
+----
 

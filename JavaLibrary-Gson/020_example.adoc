@@ -17,11 +17,12 @@ Create the following data model.
 include::res/Task.java[]
 ----
 
-
 === Write a converter main method
+
 Write the following class to test the conversion.
 
 [source,java]
 ----
 include::res/MainTest.java[]
 ----
+

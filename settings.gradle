@@ -12,5 +12,5 @@ include 'Retrofit'
 include 'JavaLibrary-OkHttp'
 
 include 'JavaConcurrency'
-
+include 'JavaLibrary-Gson'
 
