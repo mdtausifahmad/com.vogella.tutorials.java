@@ -7,6 +7,7 @@
 Lars Vogel (c) 2014, 2016 vogella GmbH
 Version 2.6, 25.06.2016
 :docinfodir: ../
+:vgwort: JavaLibrary-OkHttp
 
 [abstract]
 This tutorial explains the usage and purpose of the HTTP and HTTPS library OkHttp.
@@ -17,6 +18,4 @@ include::020_example.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
-include::../web/vgwort/JavaLibrary-OkHttp.adoc[]
-
 
