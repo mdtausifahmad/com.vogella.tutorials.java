@@ -1,0 +1,21 @@
+
+== Project and Domain model
+	
+Create the Java project called
+_de.vogella.rss_
+. Create the following
+Java classes, which is used as
+domain
+model.
+	
+[source,java]
+----
+include::res/model/FeedMessage.java[]
+----	
+	
+[source,java]
+----
+include::res/model/Feed.java[]
+----
+
+	

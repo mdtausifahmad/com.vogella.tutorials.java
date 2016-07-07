@@ -1,0 +1,20 @@
+== Read RSS Feeds with Stax
+
+=== Create the XML Reader class
+
+Create the following class to read the XML file.
+
+[source,java]
+----
+include::res/read/RSSFeedParser.java[]
+----
+
+=== Test the code
+
+The following uses a main method to test. You could also use http://www.vogella.com/tutorials/JUnit/article.html - JUnit.
+
+[source,java]
+----
+include::res/read/ReadTest.java[]
+----
+

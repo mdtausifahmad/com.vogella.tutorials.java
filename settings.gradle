@@ -10,8 +10,8 @@ include 'Hamcrest'
 include 'Mockito'
 include 'Retrofit'
 include 'JavaLibrary-OkHttp'
-
 include 'JavaConcurrency'
 include 'JavaLibrary-Gson'
 include 'JavaRegularExpressions'
+include 'RSSFeed'
 
