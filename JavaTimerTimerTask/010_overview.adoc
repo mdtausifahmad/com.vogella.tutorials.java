@@ -1,4 +1,4 @@
-= Scheduling tasks in Java
+== Scheduling tasks in Java
 
 To schedule a task in Java you can use the `TimerTask` class, as demonstrated by the following snippet.
 

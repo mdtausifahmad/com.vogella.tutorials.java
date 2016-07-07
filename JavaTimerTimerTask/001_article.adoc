@@ -1,12 +1,22 @@
 = Scheduling work in Java with Timer and TimerTask - Tutorial
 :linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
 (c) 2016 vogella GmbH
 Version 0.1, 18.04.2016
+:docinfodir: ../
+:vgwort: JavaTimerTimerTask
+
 
 [abstract]
 This tutorial contains an example for the usage of the TimerTask class.
 				
+include::../web/advertisement/afterTableOfContent.adoc[]				
 include::010_overview.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 
 
