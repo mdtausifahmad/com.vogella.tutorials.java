@@ -1,30 +1,26 @@
-<section id="regexjava">
-	<title>Pattern and Matcher
+== Pattern and Matcher
 	
-		For advanced regular expressions the
-		`java.util.regex.Pattern`
-		and
-		`java.util.regex.Matcher`
-		classes
-		are used.
+For advanced regular expressions the
+`java.util.regex.Pattern`
+and
+`java.util.regex.Matcher`
+classes
+are used.
 	
-
+You first create a
+`Pattern`
+object which defines the regular expression. This
+`Pattern`
+object allows you to create a
+`Matcher`
+object for a given string. This
+`Matcher`
+object then allows you to do regex operations on a
+`String`
+.
 	
-		You first create a
-		`Pattern`
-		object which defines the regular expression. This
-		`Pattern`
-		object allows you to create a
-		`Matcher`
-		object for a given string. This
-		`Matcher`
-		object then allows you to do regex operations on a
-		`String`
-		.
-	
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/string/RegexTestPatternMatcher.java" />
-		</programlisting>
+[source,java]
+----
+include::res/string/RegexTestPatternMatcher.java[]
+----
 	

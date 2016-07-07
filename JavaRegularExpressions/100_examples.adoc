@@ -1,158 +1,125 @@
-<section id="examples">
-	<title>Java Regex Examples
-	The following lists typical examples for the usage of regular
-		expressions. I hope you find similarities to your real-world problems.
-	
+== Java Regex Examples
 
-	<section id="examples_or">
-		<title>Or
-		
-			Task: Write a regular expression which matches a text line
-			if
-			this
-			text line contains either the word "Joe" or the word
-			"Jim" or
-			both.
-		
-		
-			Create a project
-			`de.vogella.regex.eitheror`
-			and the following class.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/eitheror/EitherOrCheck.java" />
-			</programlisting>
-		
+The following lists typical examples for the usage of regular
+expressions. I hope you find similarities to your real-world problems.
 
-	
-	<section id="examples_phone">
-		<title>Phone number
-		Task: Write a regular expression which matches any phone
-			number.
-		
-		
-			A
-			phone number in this example consists either out of 7 numbers
-			in a
-			row or out of 3 number, a (white)space or a dash and then 4
-			numbers.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/phone/CheckPhone.java" />
-			</programlisting>
-		
-	
+=== Or
 
-	<section id="examples_number">
-		<title>Check for a certain number range
-		 The following example will check if a text contains a number
-			with 3 digits.
-		
-		
-			Create the Java project
-			`de.vogella.regex.numbermatch`
-			and
-			the
-			following class.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/number/CheckNumber.java" />
-			</programlisting>
-		
-	
+Task: Write a regular expression which matches a text line
+if
+this
+text line contains either the word "Joe" or the word
+"Jim" or
+both.
 
-	<section id="examples_linkchecker">
-		<title>Building a link checker
-		 The following example allows you to extract all valid
-			links from
-			a
-			webpage. It does not consider links which start with
-			"javascript:" or
-			"mailto:".
-		
-		
-			Create a Java project called
-			_de.vogella.regex.weblinks_
-			and the following class:
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/links/LinkGetter.java" />
-			</programlisting>
-		
-	
-	<section id="examples_duplicated words">
-		<title>Finding duplicated words
-		
-			The following regular expression
-			matches duplicated words.
-		
-		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/duplicates/find.txt" />
-			</programlisting>
-		
-		
-			`\b`
-			is a word boundary and
-			`\1`
-			references to the captured match
-			of
-			the
-			first group, i.e., the first
-			word.
-		
+Create a project
+`de.vogella.regex.eitheror`
+and the following class.
 
-		
-			The
-			`(?!-in)\b(\w+) \1\b`
-			finds duplicate words if they do not start with "-in".
-		
-		<tip>
-			
-				Add
-				`(?s)`
-				to search across multiple lines.
-			
-		</tip>
+[source,java]
+----
+include::res/eitheror/EitherOrCheck.java[]
+----
 
-	
-	<section id="examples_startwithemptyline">
-		<title>Finding elements which start in a new line
-		The following regular expression allows you to find the "title"
-			word, in case it starts in a new line, potentially with leading
-			spaces.
-		
-		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/duplicates/emptylines.txt" />
-			</programlisting>
-		
-	
-	<section id="examples_nonjavadoc">
-		<title>Finding (Non-Javadoc) statements
-		
-			Sometimes (Non-Javadoc) are used in Java source code to indicate that
-			the method overrides a super method. As of Java 1.6 this can be done
-			via the
-			`@Override`
-			annotation and it is possible to remove these statements from your
-			code. The following regular expression can be used to identify these
-			statements.
-		
-		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/javadoc/javadocmatcher.txt" />
-			</programlisting>
-		
-	
+=== Phone number
+
+Task: Write a regular expression which matches any phone
+number.
+
+A
+phone number in this example consists either out of 7 numbers
+in a
+row or out of 3 number, a (white)space or a dash and then 4
+numbers.
+
+[source,java]
+----
+include::res/phone/CheckPhone.java[]
+----
+
+=== Check for a certain number range
+
+The following example will check if a text contains a number
+with 3 digits.
+
+Create the Java project
+`de.vogella.regex.numbermatch`
+and
+the
+following class.
+
+[source,java]
+----
+include::res/number/CheckNumber.java[]
+----
+
+=== Building a link checker
+
+The following example allows you to extract all valid
+links from
+a
+webpage. It does not consider links which start with
+"javascript:" or
+"mailto:".
+
+Create a Java project called
+_de.vogella.regex.weblinks_
+and the following class:
+
+[source,java]
+----
+include::res/links/LinkGetter.java[]
+----
+
+=== Finding duplicated words
+
+The following regular expression
+matches duplicated words.
+
+
+[source,txt]
+----
+include::res/duplicates/find.txt[]
+----
+
+`\b`
+is a word boundary and
+`\1`
+references to the captured match
+of
+the
+first group, i.e., the first
+word.
+
+The
+`(?!-in)\b(\w+) \1\b`
+finds duplicate words if they do not start with "-in".
+
+TIP: Add `(?s)` to search across multiple lines.
+
+=== Finding elements which start in a new line
+
+The following regular expression allows you to find the "title"
+word, in case it starts in a new line, potentially with leading
+spaces.
+
+[source,txt]
+----
+include::res/duplicates/emptylines.txt[]
+----
+
+=== Finding (Non-Javadoc) statements
+
+Sometimes (Non-Javadoc) are used in Java source code to indicate that
+the method overrides a super method. As of Java 1.6 this can be done
+via the
+`@Override`
+annotation and it is possible to remove these statements from your
+code. The following regular expression can be used to identify these
+statements.
+
+[source,txt]
+----
+include::res/javadoc/javadocmatcher.txt[]
+----
+

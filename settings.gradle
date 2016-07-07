@@ -13,5 +13,5 @@ include 'JavaLibrary-OkHttp'
 
 include 'JavaConcurrency'
 include 'JavaLibrary-Gson'
-
+include 'JavaRegularExpressions'
 
