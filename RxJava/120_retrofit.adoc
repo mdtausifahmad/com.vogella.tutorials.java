@@ -30,6 +30,6 @@ This assumes that your layout has a button assigned which triggers the `onClick`
 
 [source,java]
 ----
-include::res/retrofit/MainActivityRxJava[]
+include::res/retrofit/MainActivityRxJava.java[]
 ----
 
