@@ -43,10 +43,9 @@ public void testSomething() {
     
     // now test the class which uses NetworkReader 
 }
-=== 
+----
 
-
-== Using a wrapper instead of Powermock
+=== Using a wrapper instead of Powermock
 
 Sometimes you can also use a wrapper around a static method, which can be mocked with Powermock.
 
@@ -58,3 +57,4 @@ class FooWraper {
    }
 }
 ----
+
