@@ -1,246 +1,489 @@
-== Rules of writing regular expressions
+<section id="regex">
+	<title>Rules of writing regular expressions
+	
+		The following description is an overview of available meta
+		characters
+		which can
+		be used in regular expressions. This
+		chapter is
+		supposed to
+		be
+		a
+		references for the different
+		regex
+		elements.
+	
+	<section id="regex_starter">
+		<title>Common matching symbols
+		
+			<table frame='all'>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					<thead>
+						<row>
+							<entry>Regular Expression</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								`.`
+							</entry>
+							<entry>Matches any character</entry>
+						</row>
+						<row>
+							<entry>
+								`^regex`
+							</entry>
+							<entry>Finds regex that must match at the beginning of the line.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`regex$`
+							</entry>
+							<entry>Finds regex that must match at the end of the line.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`[abc]`
+							</entry>
+							<entry>Set definition, can match the letter a or b or c.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`[abc][vz]`
+							</entry>
+							<entry>Set definition, can match a or b or c followed by
+								either v
+								or z.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`[^abc]`
+							</entry>
+							<entry>When a caret appears as the first character inside square
+								brackets,
+								it
+								negates the pattern. This pattern
+								matches any
+								character
+								except
+								a or b
+								or c.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`[a-d1-7]`
+							</entry>
+							<entry>Ranges: matches a letter between a and d and figures from
+								1
+								to 7,
+								but not d1.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`X|Z`
+							</entry>
+							<entry>Finds X or Z.</entry>
+						</row>
+						<row>
+							<entry>
+								`XZ`
+							</entry>
+							<entry>Finds X directly followed by Z.</entry>
+						</row>
+						<row>
+							<entry>
+								`$`
+							</entry>
+							<entry>Checks if a line end follows.</entry>
+						</row>
 
-The following description is an overview of available meta
-characters
-which can
-be used in regular expressions. This
-chapter is
-supposed to
-be
-a
-references for the different
-regex
-elements.
+					</tbody>
+				</tgroup>
+			</table>
+		
+	
+	<section id="regex_metacharacters">
+		<title>Meta characters
+		
+			The following meta characters have a pre-defined meaning and
+			make
+			certain common patterns easier to use, e.g.,
+			`\d`
+			instead of
+			`[0..9]`
+			.
+		
+		
+			<table frame='all'>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="5*" />
+					<thead>
+						<row>
+							<entry>Regular Expression</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								`\d`
+							</entry>
+							<entry>
+								Any digit, short for
+								`[0-9]`
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`\D`
+							</entry>
+							<entry>
+								A non-digit, short for
+								`[^0-9]`
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`\s`
+							</entry>
+							<entry>
+								A whitespace character, short for
+								`[ \t\n\x0b\r\f]`
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`\S`
+							</entry>
+							<entry>
+								A non-whitespace character, short for
+								`[^\s]`
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`\w`
+							</entry>
+							<entry>
+								A word character, short for
+								`[a-zA-Z_0-9]`
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`\W`
+							</entry>
+							<entry>
+								A non-word character
+								`[^\w]`
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`\S+`
+							</entry>
+							<entry>Several non-whitespace characters</entry>
+						</row>
+						<row>
+							<entry>
+								`\b`
+							</entry>
+							<entry>
+								Matches a word boundary where a word character is
+								`[a-zA-Z0-9_]`
+								.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		
+		<tip>
+			
+				These meta characters have the same first letter as
+				their
+				representation, e.g., digit,
+				space, word, and boundary.
+				Uppercase
+				symbols define the opposite.
+			
+		</tip>
+	
 
-=== Common matching symbols
 
-|===
-|Regular Expression |Description
+	<section id="regex_quantifier">
+		<title>Quantifier
+		A quantifier defines how often an element can occur. The symbols
+			?, *, + and {} define the quantity of the
+			regular
+			expressions
+		
+		
+			<table frame='all'>
+				<tgroup cols='3' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' colwidth="1*" />
+					<colspec colname='c2' colwidth="3*" />
+					<colspec colname='c3' colwidth="3*" />
+					<thead>
+						<row>
+							<entry>Regular Expression</entry>
+							<entry>Description</entry>
+							<entry>Examples</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								`*`
+							</entry>
+							<entry>
+								Occurs zero or more times, is short for
+								`{0,}`
+							</entry>
+							<entry>
+								`X*`
+								finds no or several letter X,
+								<sbr />
+								`.*`
+								finds any character
+								sequence
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`+`
+							</entry>
+							<entry>
+								Occurs one or more times, is short for
+								`{1,}`
+							</entry>
+							<entry>
+								`X+`
+								- Finds one or several letter X
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`?`
+							</entry>
+							<entry>
+								Occurs no or one times,
+								`?`
+								is short for
+								`{0,1}`
+								.
+							</entry>
+							<entry>
+								`X?`
+								finds no or exactly one letter X
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`{X}`
+							</entry>
+							<entry>
+								Occurs X number of times,
+								`{}`
+								describes the order of the
+								preceding liberal
+							</entry>
+							<entry>
+								`\d{3}`
+								searches for three digits,
+								`.{10}`
+								for any character sequence of
+								length 10.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`{X,Y}`
+							</entry>
+							<entry>Occurs between X and Y times,
+							</entry>
+							<entry>
+								`\d{1,4}`
+								means
+								`\d`
+								must occur at least once and at a
+								maximum of
+								four.
+							</entry>
+						</row>
 
-|`.`
-|Matches any character
+						<row>
+							<entry>
+								`*?`
+							</entry>
+							<entry>
+								`?`
+								after a quantifier makes it a
+								_reluctant quantifier_
+								.
+								It
+								tries to find the smallest match. This makes the regular
+								expression stop at the first match.
+							</entry>
+							<entry></entry>
+						</row>
 
-|`^regex`
-|Finds regex that must match at the beginning of the line.
+					</tbody>
+				</tgroup>
+			</table>
+		
+	
 
-|`regex$`
-|Finds regex that must match at the end of the line.
+	<section id="regex_grouping">
+		<title>Grouping and back reference
+		
+			You can group parts of your regular expression. In your pattern
+			you
+			group
+			elements with round brackets, e.g.,
+			`()`
+			.
+			This allows you to
+			assign a repetition operator to a complete group.
+		
 
-|`[abc]`
-|Set definition, can match the letter a or b or c.
-|`[abc][vz]`
-|Set definition, can match a or b or c followed by either v or z.
+		
+			In addition these groups also create a back reference to the part of
+			the regular expression. This captures the group.
+			A back reference
+			stores the part of the
+			`String`
+			which matched the group. This allows you to use this part
+			in the
+			replacement.
+		
 
-|`[^abc]`
-|When a caret appears as the first character inside square brackets, it negates the pattern. 
-This pattern matches any character except a or b or c.
+		
+			Via the
+			`$`
+			you can
+			refer to a
+			group.
+			`$1`
+			is the first
+			group,
+			`$2`
+			the
+			second,
+			etc.
+		
+		 Let's, for example, assume you want to replace all whitespace
+			between a letter followed by a point or a comma.
+			This would involve
+			that the
+			point or the comma is part of the pattern. Still it should be
+			included in the
+			result.
+		
 
-|`[a-d1-7]`
-|Ranges: matches a letter between a and d and figures from 1 to 7, but not d1.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/grouping/whitespace" />
+			</programlisting>
+		
+		This example extracts the text between a title tag.
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/grouping/extract" />
+			</programlisting>
+		
+	
+	<section id="regex_negative">
+		<title>Negative look ahead
+		Negative look ahead provides the possibility to exclude a
+			pattern.
+			With this you can say that a string should not
+			be followed by
+			another
+			string.
+		
+		
+			Negative look ahead are defined via
+			`(?!pattern)`
+			. For example, the following will match "a" if "a" is not followed by
+			"b".
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/negative/match.txt" />
+			</programlisting>
+		
 
-|`X\|Z`
-|Finds X or Z.
+	
 
-|`XZ`
-|Finds X directly followed by Z.
+	<section id="regex_modes">
+		<title>Specifying modes inside the regular expression
+		
+			You can add the mode modifiers to the start of the regex. To specify multiple modes, simply put them
+			together as
+			in
+			(?ismx).
+			<itemizedlist>
+				<listitem>
+					(?i) makes the regex case insensitive.
+				</listitem>
+				<listitem>
+					(?s) for "single line mode" makes the dot match all characters, including line breaks.
+				</listitem>
+				<listitem>
+					(?m) for "multi-line mode" makes the caret and dollar match at the start and end of each line in the subject
+						string. 
+				</listitem>
+			</itemizedlist>
+		
 
-|`$`
-|Checks if a line end follows.
-|===
+	
+	<section id="regex_backslashes">
+		<title>Backslashes in Java
+		
+			The backslash
+			`\`
+			is an escape character
+			in Java
+			Strings. That means
+			backslash has a
+			predefined meaning in Java. You have to use double
+			backslash
+			`\\`
+			to
+			define a single
+			backslash.
+			If you want to define
+			`\w`
+			, then you must
+			be
+			using
+			`\\w`
+			in
+			your regex.
+			If you want to use
+			backslash as a
+			literal,
+			you have to type
+			`\\\\`
+			as
+			`\`
+			is also an escape
+			character in
+			regular
+			expressions.
+		
+	
 
-=== Meta characters
-
-The following meta characters have a pre-defined meaning and
-make
-certain common patterns easier to use, e.g.,
-`\d`
-instead of
-`[0..9]`
-.
-
-|===
-|Regular Expression |Description
-
-|`\d`
-|Any digit, short for `[0-9]`
-
-|`\D`
-|A non-digit, short for `[^0-9]`
-
-|`\s`
-|A whitespace character, short for `[ \t\n\x0b\r\f]`
-
-|`\S`
-|A non-whitespace character, short for `[^\s]`
-
-|`\w`
-|A word character, short for `[a-zA-Z_0-9]`
-
-|`\W`
-|A non-word character `[^\w]`
-
-|`\S+`
-|Several non-whitespace characters
-
-|`\b`
-|Matches a word boundary where a word character is `[a-zA-Z0-9_]`
-|===
-
-TIP: These meta characters have the same first letter as
-their
-representation, e.g., digit,
-space, word, and boundary.
-Uppercase
-symbols define the opposite.
-
-=== Quantifier
-
-A quantifier defines how often an element can occur. The symbols
-?, *, + and {} define the quantity of the
-regular
-expressions
-
-|===
-|Regular Expression |Description |Examples
-
-|`*`
-|Occurs zero or more times, is short for `{0,}`
-|`X*` finds no or several letter X, <sbr /> `.*` finds any character sequence
-
-|`+`
-|Occurs one or more times, is short for `{1,}`
-|`X+` finds one or several letter X
-
-|`?`
-|Occurs no or one times, `?` is short for `{0,1}.
-|`X?` finds no or exactly one letter X
-
-|`{X}`
-|Occurs X number of times, `{}` describes the order of the preceding liberal
-|`\d{3}` searches for three digits, `.{10}` for any character sequence of length 10
-
-|`{X,Y}`
-|Occurs between X and Y times,
-|`\d{1,4}` means `\d` must occur at least once and at a maximum of four
-
-|`*?`
-|`?` after a quantifier makes it a _reluctant quantifier_. It tries to find the smallest match. This makes the regular expression stop at the first match.
-|
-|===
-
-=== Grouping and back reference
-
-You can group parts of your regular expression. In your pattern
-you
-group
-elements with round brackets, e.g.,
-`()`
-.
-This allows you to
-assign a repetition operator to a complete group.
-
-In addition these groups also create a back reference to the part of
-the regular expression. This captures the group.
-A back reference
-stores the part of the
-`String`
-which matched the group. This allows you to use this part
-in the
-replacement.
-
-Via the
-`$`
-you can
-refer to a
-group.
-`$1`
-is the first
-group,
-`$2`
-the
-second,
-etc.
-
-Let's, for example, assume you want to replace all whitespace
-between a letter followed by a point or a comma.
-This would involve
-that the
-point or the comma is part of the pattern. Still it should be
-included in the
-result.
-
-[source,java]
-----
-include::res/grouping/whitespace[]
-----
-
-This example extracts the text between a title tag.
-
-[source,java]
-----
-include::res/grouping/extract[]
-----
-
-=== Negative look ahead
-
-Negative look ahead provides the possibility to exclude a
-pattern.
-With this you can say that a string should not
-be followed by
-another
-string.
-
-Negative look ahead are defined via
-`(?!pattern)`
-. For example, the following will match "a" if "a" is not followed by
-"b".
-
-[source,java]
-----
-include::res/negative/match.txt[]
-----
-
-=== Specifying modes inside the regular expression
-
-You can add the mode modifiers to the start of the regex. To specify multiple modes, simply put them
-together as
-in (?ismx).
-
-* (?i) makes the regex case insensitive.
-* (?s) for "single line mode" makes the dot match all characters, including line breaks.
-* (?m) for "multi-line mode" makes the caret and dollar match at the start and end of each line in the subject string. 
-
-=== Backslashes in Java
-
-The backslash
-`\`
-is an escape character
-in Java
-Strings. That means
-backslash has a
-predefined meaning in Java. You have to use double
-backslash
-`\\`
-to
-define a single
-backslash.
-If you want to define
-`\w`
-, then you must
-be
-using
-`\\w`
-in
-your regex.
-If you want to use
-backslash as a
-literal,
-you have to type
-`\\\\`
-as
-`\`
-is also an escape
-character in
-regular
-expressions.
 

@@ -1,0 +1,92 @@
+<section id="introduction">
+	<title>Regular Expressions
+	<section id="introduction_regex">
+		<title>Overview
+		
+			A
+			_regular expression_
+			defines a search pattern
+			for strings. Regular expressions can be used
+			to search, edit and
+			manipulate
+			text.
+			The pattern defined by the
+			_regular expression_
+			may match one or several times or not at all for a given
+			string.
+		
+
+		
+
+			The
+			abbreviation for
+			_regular expression_
+			is
+			_regex_
+			.
+		
+
+		
+			The process of analyzing or modifying a text with a
+			_regex_
+			is called:
+			_The regular
+				expression is applied to the text (string)
+			_
+			.
+			The pattern defined by the
+			_regex_
+			is applied on the
+			text
+			from left to right. Once a source character
+			has
+			been used in a
+			match,
+			it cannot be reused. For example, the regex
+			`aba`
+			will match
+			_ababababa_
+			only two times (aba_aba__).
+		
+
+		
+			A simple example for a regular expression is a (literal)
+			string. For
+			example, the
+			_Hello World_
+			regex will match the
+			"Hello World" string.
+			<parameter>.</parameter>
+			(dot) is another example for a regular expression. A dot
+			matches any
+			single character; it would match, for example,
+			"a" or
+			"z"
+			or
+			"1".
+		
+	
+	<section id="introduction_languages">
+		<title>Support for regular expressions in programming languages
+		
+		
+		 Regular expressions are supported by most programming
+			languages,
+			e.g., Java, Perl, Groovy, etc.
+
+			Unfortunately
+			each language
+			supports
+			regular expressions slightly
+			different.
+		
+		
+			This description uses
+			_regular expression_
+			within the context of the Java programming language. The Eclipse IDE
+			is used to evaluate regular expressions.
+		
+
+	
+
+

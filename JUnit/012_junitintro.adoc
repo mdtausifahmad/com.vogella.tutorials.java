@@ -14,9 +14,9 @@ The main websites for JUnit are the JUnit homepage (http://junit.org/) and the G
 		
 A JUnit _test_ is a method contained in a class which is only used for testing. 
 This is called a _Test class_.
-To define a method as a unit test, you annotate it with the `@org.junit.Test` annotation.
+To write a JUnit 4 test with the you annotate a method with the `@org.junit.Test` annotation.
 		
-This method is responsible for providing the test code.
+This method executes the code under test.		
 You use an _assert_ method, provided by JUnit or another assert framework, to check an expected result versus the actual result. 
 These method calls are typically called _asserts_ or _assert statements_.
 		
@@ -57,7 +57,8 @@ If you are using the Maven build system, you should prefer the "Test" suffix ove
 The Maven build system (via its surfire plug-in) automatically includes such classes in its test scope.
 		
 [[juniteclipse_testsuite]]
-=== JUnit test suites
+
+JUnit test suites
 (((JUnit,Test suite)))
 		
 If you have several test classes, you can combine them into a _test suite_ . 

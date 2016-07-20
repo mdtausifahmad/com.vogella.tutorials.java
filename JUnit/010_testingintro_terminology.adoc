@@ -44,7 +44,7 @@ The term _functional test_ is sometimes used as synonym for integration test.
 Integration tests check that the whole system works as intended, therefore they are reducing the need for intensive manual tests.
 		
 		
-This kind of tests allow you to translate your user stories into a test suite.
+These kinds of tests allow you to translate your user stories into a test suite.
 The test would resemble an expected user interaction with the application.
 
 [[junit_performancetests]]

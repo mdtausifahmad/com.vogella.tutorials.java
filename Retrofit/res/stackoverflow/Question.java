@@ -1,4 +1,4 @@
-package com.vogella.android.retrofitstackoverflow;
+package android.vogella.com.retrofitstackoverflow;
 
 // This is used to map the JSON keys to the object by GSON
 public class Question {

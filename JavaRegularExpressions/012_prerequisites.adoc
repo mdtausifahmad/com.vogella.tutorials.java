@@ -1,5 +1,4 @@
 == Prerequisites
-
 The following tutorial assumes that you have basic knowledge of the Java programming language.
 	
 Some of the following examples use JUnit to validate the result. You
@@ -7,5 +6,5 @@ should be
 able to adjust them in case if you do not want to use JUnit.
 To learn
 about JUnit please see
-http://www.vogella.com/tutorials/JUnit/article.html - JUnit Tutorial.
+http://www.vogella.com/tutorials/JUnit/article.html[JUnit Tutorial].
 	

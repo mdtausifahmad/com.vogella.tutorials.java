@@ -38,196 +38,28 @@ For a Gradle build you can add RxJava via the following dependency statement.
 
 === Observables, Observers and Subscriptions
 
-RxJava provides _Observables_ and _Subscribers (Observers)_.
-
-* Observables  emits a stream of data or events
-* Subscriber (Observers), watch Observables by subscribing to them and acts upon the emitted data
-
-
-Subscribers are notified when an Observable emits a value.
-They are also notified  when an error occurred or if the observable sends the event that is has no more values to emit.
+RxJava provides _Observables_ and _Observers_.
+Observables can send out values. 
+Observers, watch Observables by subscribing to them.
+Observers are notified when an Observable emits a value, when the Observable says an error has occurred. 
+They are also notified when the	Observable sends the information that it no longer has any values to emit. 
 The corresponding functions are `onNext`, `onError`, and `onCompleted()` from the `Observer` interface.
-
 A instance of `Subscription` represents the connection between an observer and an observable. 
-You can use the  `unsubscribe()` method to remove this connection. 
-This is, for example, useful to avoid updates to widgets after they have been disposed.
+In you call `unsubscribe()` on this instance to remove the connection. 
+This is for example useful to avoid updates to widgets after they have been disposed.
  
-For example the following is an observable which sends out several integer values and afterwards completes.
+=== Defining the execution thread and the thread for observing
 
-[source,java]
-----
-Observable myIntergerObserable = Observable.create(new Observable.OnSubscribe() {
-   @Override
-   public void call(Subscriber subscriber) {
-       subscriber.onNext(1);
-       subscriber.onNext(2);
-       subscriber.onNext(3);
-       subscriber.onCompleted();
-   }
-});
-----
-
-The same can be archived with the `Observable.just` method.
-
-[source,java]
-----
-Observable myIntergerObserable = Observable.just(1, 2, 3); 
-----
-
-The next code example shows a subscriber.
-
-[source,java]
-----
-Subscriber mySubscriber = new Subscriber() {
-   @Override
-   public void onCompleted() {
-       System.out.println("Finished");
-   }
-
-   @Override
-   public void onError(Throwable e) {
-		// We ignore errors
-   }
-
-   @Override
-   public void onNext(Integer value) {
-       System.out.println("onNext called with: " + value);
-   }
-};
-----
-
-If the subscriber subscribes to the observable, the observable starts sending out its data and the subscribes receives it.
-
-[source,java]
-----
-myIntergerObserable.subscribe(mySubscriber);
-----
-
-[NOTE]
-====
-The above code can be simplified by using `Observable.just` and an anonymous inner class as subscriber. 
-====
+You can specify the thread in with the observable is executed via the `subscribeOn()` method. 
+The thread in which the observers are executed can be defined via the `observeOn()` method.
 
 == Operators
 
-An observable can have its output transformed by an _operator_ or multiple chained operators.
-The transformed output is passed to the subscriber.
+You can register operations on your observers which allows you to manipulate the emission of an observable before passing it to the  observer. 
+For example the `map` method allows to register a `Func1` which translates the input.
 
 
-For example, if in the above example we only want to subscribe to odd numbers, we can use the `filter` method.
-
-[source,java]
-----
-myIntergerObserable.filter(new Func1() {
-           @Override
-           public Boolean call(Integer value) {
-               return value % 2 == 1;
-           }
-       }).subscribe(mySubscriber);
-----
-
-Another example is the `map` function which allows to transform the emitted values.
-For example, in the following example we transfer the integer values to Strings.
-
-[source,java]
-----
-myIntergerObserable.map(new Func1() {
-           @Override
-           public String call(Integer value) {
-               return String.valueOf(value);
-           }
-       })
-       .subscribe(new Subscriber() { 
-           @Override
-           public void onCompleted() {
-               System.out.println("Finished");
-           }
-
-           @Override
-           public void onError(Throwable e) {
-           }
-
-           @Override
-           public void onNext(String value) {           #<1>
-               System.out.println("onNext called with: " + value);
-           }
-       });
-       
-----
-
-<1> We receive a String now instead of an Integer
-
-
-=== Creating observables (Unfold operators)
-
-RxJava provides several _unfold operators_ which allows the creation of observables.
-
-
-.Table Creating observables 
-|===
-|Operator |Description
-
-|Observable.just(T value)
-|Wraps value(s) into an Observable
-
-|Observable.range(int from, int to)
-|Generates range sequence
-
-
-|Observable.timer()
-|Generates time-based sequence
-
-|Observable.interval() |Generates interval-based sequence
-|Observable.create(OnSubscribe<T>)| Creates observable with delegate (most powerful)
-|Observable.never() |Empty sequence that never completes either way
-|Observable.empty() |Empty sequence that completes right away
-|Observable.error(Throwable t) |Empty sequence that completes with error
-
-|===
-
-
-=== Using delays
+== Using delays
 
 Via the `debounce(delay, TimeUnit.MILLISECONDS)` method on the observer, you can instruct it to only emit the changes if the value has not changed for a predefined delay. 
-
-=== Defining the execution thread and the thread for observing
-
-RxJava is single-threaded by default.
-You can use the RxJava schedulers to enable multi-threading. 
-The `observeOn()` and `subscribeOn()` methods can define the threads in which the observer and subscriber should be executed.
-
-The `Observable.observeOn()` method can define a thread that is used to monitor and check for emitted data from the observable.
-The subscribers `onNext`, `onCompleted` and `onError` methods are executed in this thread.
- 
-The `Observable.subscribeOn()` method can define the thread that is used to execute the observable code.
-For example the observable might perform a network operation in this thread and might therefore be a long running operation. 
-RxJava provides  several default schedulers, for example:
-
-* `Schedulers.io()` for blocking I/O operations
-* `Schedulers.computation()` for computational work uses # CPU's as default
-* `Schedulers.newThread()` which creates a new thread for the work. 
-* `Schedulers.immediate()` current thread
-
-However, from an Android perspective, you might be wondering how to schedule code to execute on the main UI Thread. 
-We can achieve this using the RxAndroid library.
-
-[NOTE]
-====
-For Android you have an extension which allows to schedule code in the main thread.
-This allows you to update the user interface, as in  Android only the main thread is allowed to update the user interface.
-====
-
-=== Using Retrofit and RxJava
-
-Retrofit can be instructed to provide its call result as observable.
-
-[source,gradle]
-----
-compile 'com.squareup.retrofit2:retrofit:2.1.0'
-compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
-compile 'io.reactivex:rxjava:1.0.14'
-compile 'io.reactivex:rxandroid:1.0.1'
-----
-
 

@@ -20,21 +20,12 @@ To run a test, select the test class , right-click on it and select menu:Run-as[
 
 This starts JUnit and executes all test methods in this class.
 
-Eclipse provides the kbd:[Alt + Shift X, T] shortcut to run the test in the selected class. 
+Eclipse provides the kbd:[Alt + Shift + X], kbd:[T] shortcut to run the test in the selected class. 
 
 To run only the selected test, position the cursor on the test method name and use the shortcut.
 
-To see the result of an JUnit test, Eclipse uses the
-_JUnit_
-view
-which shows the results of the tests. You can also select
-individual
-unit tests in this
-view
-, right-click on them
-and select
-_Run_
-to execute them again.
+To see the result of a JUnit test, Eclipse uses the _JUnit_ view which shows the results of the tests. 
+You can also select individual unit tests in this view, right-click on them and select _Run_ to execute them again.
 		
 
 image::junitview10.png[JUnit view]]
@@ -65,12 +56,10 @@ image::junitcopyfailurelist10.png[Copy failed tests into clipboard]
 === JUnit static imports
 (((JUnit,Static imports in Eclipse)))
 		
-Static import is a feature that allows fields and methods) defined in a class as `public static`
-to be used in Java code
-without specifying the class in which the field is defined.
+Static import is a feature that allows fields and methods defined in a class as `public static` to be used without specifying the class in which the field is defined.
 		
 		
-JUnit assert statement are typically defined as `public static` to allow the developer to write short test statements. 
+JUnit assert statements are typically defined as `public static` to allow the developer to write short test statements. 
 The following snippet demonstrates an assert statement with and without static imports.
 
 [source, java]

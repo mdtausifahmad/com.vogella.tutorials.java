@@ -1,4 +1,4 @@
-package com.vogella.android.retrofitstackoverflow;
+package android.vogella.com.retrofitstackoverflow;
 
 import java.util.List;
 

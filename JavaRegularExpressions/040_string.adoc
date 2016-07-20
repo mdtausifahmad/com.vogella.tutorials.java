@@ -1,69 +1,139 @@
-== Using regular expressions with String methods
+<section id="string">
+	<title>Using regular expressions with String methods
+	<section id="string_overview">
+		<title>Redefined methods on String for processing regular expressions
+		
+			`Strings`
+			in Java have built-in support for regular expressions.
+			`Strings`
+			have four built-in methods for regular expressions, i.e., the
+			`matches()`
+			,
+			`split())`
+			,
+			`replaceFirst()`
+			and
+			`replaceAll()`
+			methods. The
+			`replace()`
+			method does NOT support regular expressions.
+		
+		
+			These methods are not optimized for performance. We will later
+			use classes which are optimized for performance.
+		
 
-=== Redefined methods on String for processing regular expressions
 
-`Strings`
-in Java have built-in support for regular expressions.
-`Strings`
-have four built-in methods for regular expressions, i.e., the
-`matches()`
-,
-`split())`
-,
-`replaceFirst()`
-and
-`replaceAll()`
-methods. The
-`replace()`
-method does NOT support regular expressions.
+		
+			<table frame='all'>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>Method</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								`s.matches("regex")`
+							</entry>
+							<entry>
+								Evaluates if
+								`"regex"`
+								matches
+								`s`
+								. Returns only
+								`true`
+								if the
+								WHOLE
+								string can be matched.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`s.split("regex")`
+							</entry>
+							<entry>
+								Creates an array with substrings of
+								`s`
+								divided at
+								occurrence of
+								`"regex"`
+								.
+								`"regex"`
+								is not included in the result.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`s.replaceFirst("regex"), "replacement"`
+							</entry>
+							<entry>
+								Replaces first occurance of
+								`"regex"`
+								with
+								`"replacement`
+								.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`s.replaceAll("regex"), "replacement"`
+							</entry>
+							<entry>
+								Replaces all occurances of
+								`"regex"`
+								with
+								`"replacement`
+								.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		
+		
+			Create for the following example the Java project
+			`de.vogella.regex.test`
+			.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/string/RegexTestStrings.java" />
+			</programlisting>
+		
+	
 
-These methods are not optimized for performance. We will later
-use classes which are optimized for performance.
+	<section id="string_examples">
+		<title>Examples
+		 The following class gives several examples for the usage of
+			regular expressions with strings. See the comment for the purpose.
+		
+		
+			If you want to test these examples, create for
+			the Java project
+			`de.vogella.regex.string`
+			.
+		
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/string/StringMatcher.java" />
+			</programlisting>
+		
+		 And a small JUnit Test to validates the examples.
 
-|===
-|Method |Description
+		
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/string/StringMatcherTest.java" />
+			</programlisting>
+		
 
-|`s.matches("regex")`
-|Evaluates if `"regex"` matches `s`. 
-Returns only `true` if the WHOLE string can be matched.
 
-|`s.split("regex")`
-|Creates an array with substrings of `s` divided at occurrence of `"regex"`.
-`"regex"` is not included in the result.
-
-|`s.replaceFirst("regex"), "replacement"`
-|Replaces first occurance of `"regex"` with `"replacement"`.
-
-|`s.replaceAll("regex"), "replacement"`
-|Replaces all occurances of `"regex"` with `"replacement"`.
-|===
-
-Create for the following example the Java project
-`de.vogella.regex.test`.
-
-[source,java]
-----
-include::res/string/RegexTestStrings.java[]
-----
-
-=== Examples
-
-The following class gives several examples for the usage of
-regular expressions with strings. See the comment for the purpose.
-
-If you want to test these examples, create for
-the Java project
-`de.vogella.regex.string`.
-
-[source,java]
-----
-include::res/string/StringMatcher.java[]
-----
-
-And a small JUnit Test to validates the examples.
-
-[source,java]
-----
-include::res/string/StringMatcherTest.java[]
-----
+	
 

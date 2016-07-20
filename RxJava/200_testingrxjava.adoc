@@ -1,5 +1,7 @@
 == Testing RxJava Observables and Subscriptions
 
+
+
 === Testing the observables
 
 You can test an observable via the `TestSubscriber` class provided by the RxJava library.

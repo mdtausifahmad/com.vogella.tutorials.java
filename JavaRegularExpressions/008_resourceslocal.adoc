@@ -1,8 +1,11 @@
-== Links and Literature
+<section id="resources">
+    <title>Links and Literature
     
-http://www.regular-expressions.info/java.html - Regular-Expressions.info on Using Regular Expressions in Java
+        http://www.regular-expressions.info/java.html[Regular-Expressions.info on Using Regular Expressions in Java]
     
-http://www.regular-expressions.info/examples.html - Regulare xpressions examples
     
-http://docs.oracle.com/javase/tutorial/essential/regex/ - The Java Tutorials: Lesson: Regular Expressions
+        http://www.regular-expressions.info/examples.html[Regulare xpressions examples]
+    
+    
+        http://docs.oracle.com/javase/tutorial/essential/regex/[The Java Tutorials: Lesson: Regular Expressions]
     

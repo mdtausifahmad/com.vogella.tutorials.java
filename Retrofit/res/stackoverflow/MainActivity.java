@@ -9,16 +9,13 @@ import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import java.util.ArrayList;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit.Call;
+import retrofit.Callback;
+import retrofit.GsonConverterFactory;
+import retrofit.Response;
+import retrofit.Retrofit;
 
 public class MainActivity extends ListActivity implements Callback<StackOverflowQuestions> {
 
@@ -45,12 +42,9 @@ public class MainActivity extends ListActivity implements Callback<StackOverflow
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         setProgressBarIndeterminateVisibility(true);
-        Gson gson = new GsonBuilder()
-                .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
-                .create();
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.stackexchange.com")
-                .addConverterFactory(GsonConverterFactory.create(gson))
+                .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
         // prepare call in Retrofit 2.0
@@ -73,9 +67,8 @@ public class MainActivity extends ListActivity implements Callback<StackOverflow
         return true;
     }
 
-
     @Override
-    public void onResponse(Call<StackOverflowQuestions> call, Response<StackOverflowQuestions> response) {
+    public void onResponse(Response<StackOverflowQuestions> response, Retrofit retrofit) {
         setProgressBarIndeterminateVisibility(false);
         ArrayAdapter<Question> adapter = (ArrayAdapter<Question>) getListAdapter();
         adapter.clear();
@@ -83,7 +76,7 @@ public class MainActivity extends ListActivity implements Callback<StackOverflow
     }
 
     @Override
-    public void onFailure(Call<StackOverflowQuestions> call, Throwable t) {
+    public void onFailure(Throwable t) {
         Toast.makeText(MainActivity.this, t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
     }
 }
