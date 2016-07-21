@@ -58,7 +58,7 @@ The Maven build system (via its surfire plug-in) automatically includes such cla
 		
 [[juniteclipse_testsuite]]
 
-JUnit test suites
+=== JUnit test suites
 (((JUnit,Test suite)))
 		
 If you have several test classes, you can combine them into a _test suite_ . 
