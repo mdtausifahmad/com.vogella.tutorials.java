@@ -33,18 +33,18 @@ This test assumes that the `MyClass` class exists and has a `multiply(int, init)
 [source,java]
 ----
 include::res/example/test.java[]
-----		
+----
 
 [[junit_namingconventions]]
 === JUnit naming conventions
 (((Naming conventions for test methods)))
 
 There are several potential naming conventions for JUnit tests.
-In widespread use is to use the name of the class under test and to add the "Test" suffix to the test class.
+A widely-used solution is to add the suffix "-test" to the names of the test classes and create them in a new package "test".
 
         
 As a general rule, a test name should explain what the test does.
-If that is done correctly, it helps to avoid reading the actual implementation.
+If that is done correctly, reading the actual implementation can be avoided.
 	
 One possible convention is to use the word "should" in the test method name.
 For example, "ordersShouldBeCreated" or "menuShouldGetActive". 

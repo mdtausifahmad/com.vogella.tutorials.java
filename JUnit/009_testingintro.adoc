@@ -21,6 +21,6 @@ Having a high test coverage of your code allows you to continue developing featu
 There are several testing frameworks available for Java. 
 The most popular ones are JUnit and TestNG
     
-This description focuses at JUnit.
+This description focuses on JUnit.
 
 

@@ -39,7 +39,7 @@ For this, you should develop integration tests.
 (((Integration test)))
 (((Functional test)))
 		
-An _integration test_ has the target to test the behavior of a component or the integration between a set of components. 
+An _integration test_ aims to test the behavior of a component or the integration between a set of components. 
 The term _functional test_ is sometimes used as synonym for integration test. 
 Integration tests check that the whole system works as intended, therefore they are reducing the need for intensive manual tests.
 		
@@ -64,7 +64,7 @@ A behavior test does not validate the result of a method call.
 State testing is about validating the result.
 Behavior testing is about testing the behavior of the application under test.
 		
-If you are testing algorithms or system functionality, you want to test in most cases state and not interactions.
+If you are testing algorithms or system functionality, in most cases you may want to test state and not interactions.
 A typical test setup uses mocks or stubs of related classes to abstract the interactions with these other classes away
 Afterwards you test the state or the behavior depending on your need.
 		
