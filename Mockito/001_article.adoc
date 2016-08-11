@@ -20,6 +20,5 @@ include::120_exercise_android_mockito.adoc[]
 include::130_exercise_mockito.adoc[]
 include::200_powermock.adoc[]
 
-
 include::008_resourceslocal.adoc[]
-	
+

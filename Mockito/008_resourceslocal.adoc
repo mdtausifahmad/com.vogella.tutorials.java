@@ -10,3 +10,4 @@ https://github.com/mockito/mockito/blob/master/doc/release-notes/official.md - M
 http://martinfowler.com/articles/mocksArentStubs.html Martin Fowler about Mocks, Stubs etc.
 
 http://chiuki.github.io/advanced-android-espresso/ Chiu-Ki Chan Advanced Android Espresso presentation
+

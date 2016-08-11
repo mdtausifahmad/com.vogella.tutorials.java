@@ -43,8 +43,7 @@ public void testSomething() {
     
     // now test the class which uses NetworkReader 
 }
-=== 
-
+----
 
 == Using a wrapper instead of Powermock
 
@@ -58,3 +57,4 @@ class FooWraper {
    }
 }
 ----
+
