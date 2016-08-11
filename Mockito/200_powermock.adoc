@@ -47,7 +47,7 @@ public void testSomething() {
 
 == Using a wrapper instead of Powermock
 
-Sometimes you can also use a wrapper around a static method, which can be mocked with Powermock.
+Sometimes you can also use a wrapper around a static method, which can also be mocked with Mockito.
 
 [source,java]
 ----
