@@ -18,7 +18,7 @@
 		performance of a program.</para>
 	<para>
 		<tip> A average CPU can do approximately 1 billion (10^9) operations
-			per second.</tip>
+			per second.
 	</para>
 	<para>
 		This article does not cover concurrency. If you want to read about

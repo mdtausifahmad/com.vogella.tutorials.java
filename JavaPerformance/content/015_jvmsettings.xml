@@ -50,7 +50,7 @@
 		<tip> Increase the values in these parameters to avoid the following
 			error: "Exception in thread java.lang.OutOfMemoryError: Java heap
 			space". Note that you cannot allocate more memory then you have
-			physically available.</tip>
+			physically available.
 	</para>
 
 	<para> If you start your Java program from the command line use for

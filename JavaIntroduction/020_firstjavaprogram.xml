@@ -44,7 +44,7 @@
 				writing Java code. If in doubt, google for "Plain text editor for
 				[your_OS]".
 			</para>
-		</warning>
+		
 		<para>
 			<mediaobject>
 				<imageobject>
@@ -87,7 +87,7 @@
 				If you don't know how to do this, google for "How to open a
 				shell under [your_OS]".
 			</para>
-		</tip>
+		
 		<para>
 			Switch to the
 			<wordasword>javadir</wordasword>
@@ -139,7 +139,7 @@
 				directory as its source file. You can specify a separate destination
 				directory with the <parameter>-d</parameter> compiler flag.
 			</para>
-		</tip>
+		
 		<para>
 			You can now start your compiled Java program. Ensure that you are
 			still in the

@@ -64,7 +64,7 @@
 				Android application, even though it is possible to
 				use it in an standard Java application.
 			</para>
-		</note>
+		
 		<para>
 			To use Otto, create a singleton instance of the
 			<code>Bus</code>

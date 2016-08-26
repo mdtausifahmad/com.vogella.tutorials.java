@@ -34,5 +34,5 @@
 			called, you cannot use injected member variables in the
 			constructor.
 		</para>
-	</note>
+	
 </section>

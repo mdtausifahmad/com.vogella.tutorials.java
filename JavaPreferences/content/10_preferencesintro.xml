@@ -27,7 +27,7 @@
 			application
 			data, i.e. larger structured data. 
 		</para>
-	</note>
+	
 	<para>
 		The Java Preference API removes the burden from the
 		individual

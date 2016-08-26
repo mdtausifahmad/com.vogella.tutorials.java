@@ -19,7 +19,7 @@
 	<para>
 		<tip>@Autowired will tell Spring to search for a Spring bean
 			which implements the required interface and place it automatically
-			into the setter.</tip>
+			into the setter.
 	</para>
 	<para>
 		<programlisting>
@@ -52,7 +52,7 @@
 						parse="text" href="../examples/annotations/log4j.properties" />
 				</programlisting>
 			</para>
-		</tip>
+		
 	</para>
 	<para> Afer this setup you can wire the application together. Create a
 		main class which reads the configuration file and starts the

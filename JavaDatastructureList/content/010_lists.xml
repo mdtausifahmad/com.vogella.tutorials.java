@@ -55,7 +55,7 @@
 			shift all elements after
 			position i one position to the left and
 			decrease size.
-		</tip>
+		
 	</para>
 
 </section>
