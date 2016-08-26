@@ -1,0 +1,12 @@
+<section id="list">
+	<title>List</title>
+	<para>
+		See
+		<ulink
+			url="http://www.vogella.com/tutorials/JavaDatastructureList/article.html">
+			Implementing a List data structure in Java</ulink>
+		.
+
+	</para>
+
+</section>

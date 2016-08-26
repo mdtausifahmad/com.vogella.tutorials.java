@@ -1,0 +1,2 @@
+
+sudo aptitude install openjdk-6-jre

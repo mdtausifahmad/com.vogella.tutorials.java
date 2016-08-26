@@ -1,0 +1,1 @@
+LOGGER.setLevel(Level.INFO);

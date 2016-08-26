@@ -1,0 +1,4 @@
+
+System.setProperty("http.proxySet", "true");
+System.setProperty("http.proxyHost", "proxy");
+System.setProperty("http.proxyPort", "8080");

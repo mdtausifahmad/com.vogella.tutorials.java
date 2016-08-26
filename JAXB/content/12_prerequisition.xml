@@ -1,0 +1,10 @@
+<section id="prerequisitions">
+	<title>Prerequisitions</title>
+	<para>
+		The following will demonstrate the JAXB API. For an
+		introduction into
+		using XML with Java please see
+		<ulink url="http://www.vogella.com/tutorials/JavaXML/article.html">Java XML tutorial</ulink>
+		.
+	</para>
+</section>

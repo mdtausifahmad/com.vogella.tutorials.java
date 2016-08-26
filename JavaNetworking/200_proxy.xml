@@ -1,0 +1,24 @@
+<section id="proxy">
+	<title>Proxy</title>
+	<para> You can define a proxy at startup via a start parameter. </para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/proxy/commandline.txt" />
+		</programlisting>
+	</para>
+
+	<para> In your code you can set a proxy via System.setProperty. For
+		example if
+		your proxy is called <wordasword>proxy</wordasword> and runs on port "8080" the following
+		code will set the proxy. </para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/proxy/proxycode.txt" />
+		</programlisting>
+	</para>
+
+</section>

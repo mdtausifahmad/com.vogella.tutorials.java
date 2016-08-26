@@ -1,0 +1,30 @@
+<section id="formatdata">
+	<title>Parsing and formatting Dates and Times</title>
+	<para>
+		To Date and Time classes of Java 8 provide a
+		<code>parse</code>
+		method for parsing a String that contains date and time information.
+		They also provide the
+		<code>format</code>
+		method for formating Date and Time objects for output.
+
+	</para>
+	<para>
+		In both cases you create an instance of
+		<code>DateTimeFormatter</code>
+		which is passed to the
+		<code>parse</code>
+		or
+		<code>format</code>
+		method.
+	</para>
+
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/format/ExampleFormatter.java" />
+		</programlisting>
+	</para>
+
+
+</section>

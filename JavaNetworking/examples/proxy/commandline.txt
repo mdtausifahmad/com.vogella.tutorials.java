@@ -1,0 +1,2 @@
+
+java  -Dhttp.proxyHost=proxy  -Dhttp.proxyPort=8080 JavaProgram

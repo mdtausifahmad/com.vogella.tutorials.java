@@ -1,0 +1,14 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	
+	<section id="resources_eclipse">
+		<title>Java Excel Resources</title>
+		<para>
+			<ulink url="http://jexcelapi.sourceforge.net/">
+				http://jexcelapi.sourceforge.net/</ulink>
+			Java Excel API - Homepage
+		</para>
+
+	</section>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

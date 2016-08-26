@@ -1,0 +1,102 @@
+<section id="exercise_javacollections">
+	<title>Exercise: Use Java Collections</title>
+	<para>
+		Create a new Java project called
+		<code>com.vogella.java.collections</code>
+		. Also add a package with the same name.
+
+	</para>
+	<para>
+		Create a Java class called
+		<wordasword>Server</wordasword>
+		with one String attribute called
+		<property>url</property>
+		.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/example/Server.java" />
+		</programlisting>
+	</para>
+
+
+	<para>
+		Create getter and setter methods for this attribute using code
+		generation capabilities of Eclipse. For this select
+		<menuchoice>
+			<guimenu>Source</guimenu>
+			<guisubmenu>Generate Getters and Setters</guisubmenu>
+		</menuchoice>
+		from the Eclipse menu.
+	</para>
+	<para>
+		Create via Eclipse a constructor which gets a url as parameter. For
+		this select
+		<menuchoice>
+			<guimenu>Source</guimenu>
+			<guisubmenu>Generate Constructor using Fields...</guisubmenu>
+		</menuchoice>
+		from the Eclipse menu.
+	</para>
+	<para>
+		Type
+		<parameter>main</parameter>
+		in the class body and use code completion (
+		<keycombo>
+			<keycap>Ctrl</keycap>
+			<keycap>Space</keycap>
+		</keycombo>
+		) to generate a
+		<code>main</code>
+		method.
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/collectioncodecompletion10.png"
+					scale="40" />
+			</imageobject>
+			<textobject>
+				<phrase>Code completion</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+	<para>
+		In your
+		<code>main</code>
+		 method create a
+		<code>List</code>
+		of type
+		<code>ArrayList</code>
+		and add 3 objects of type
+		<code>Server</code>
+		objects to this list.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/example/Main.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		Use code completion to create a
+		<guilabel>foreach</guilabel>
+		loop and write the
+		<code>toString</code>
+		method to the console. Use code completion based on
+		<code>syso</code>
+		for that.
+	</para>
+	<para>Run your program.</para>
+	<para>
+		Use Eclipse to create a
+		<code>toString</code>
+		method based on the
+		<property>url</property>
+		parameter and re-run your program again.
+	</para>
+
+</section>

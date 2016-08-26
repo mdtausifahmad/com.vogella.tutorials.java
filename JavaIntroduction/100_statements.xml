@@ -1,0 +1,129 @@
+<section id="languageconstructs">
+	<title>Java statements</title>
+	<para>
+		The Java language defines certain statements with a predefined
+		meaning.
+		The following description lists some of them.
+	</para>
+	<section id="javalang_if">
+		<title>if-then and if-then-else</title>
+		<para>
+			The
+			<code>if-then</code>
+			statement is a control flow statement. A block of code is only
+			executed when the test specified by the <code>if</code> part evaluates to
+			<code>true</code>.
+			The optional
+			<code>else</code>
+			block is executed when the
+			<code>if</code>
+			part evaluates to
+			<code>false</code>.
+		</para>
+		<para>
+			The following example code shows a class with two methods. The first
+			method demonstrates the usage of
+			<code>if-then</code>
+			and the second method demonstrates the usage of
+			<code>if-then-else</code>.
+		</para>
+	</section>
+
+	<section id="languageconstructsss1as2b">
+		<title>Switch</title>
+		<para>
+			The switch statement can be used to handle several
+			alternatives
+			if they are based on the same constant value.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/switch.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="languageconstructs_comparison">
+		<title>Boolean Operations</title>
+		<para>
+			Use <code>==</code> to compare two primitives or to see if two references
+			refer to the same object. Use the <code>equals()</code> method to see if
+			two different objects are equal.
+		</para>
+		<para>
+			<![CDATA[ && ]]>and
+			|| are both <wordasword>Short Circuit Methods</wordasword>
+			which means that they
+			terminate once
+			the result of an evaluation is already clear.
+			<code>Example (true || ...)</code>
+			is always <code>true</code> while <code>(false
+			<![CDATA[ && ]]>
+			...)</code> always is always interpreted as <code>false</code>. Usage:
+		</para>
+		<para>
+			(<code>var !=null
+			<![CDATA[ && ]]>
+			var.method1() ...</code>) ensures that <code>var</code> is not
+			<code>null</code> before doing
+			the real
+			check.
+		</para>
+		<para>
+			<table frame='all'>
+				<title>Boolean</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>Operations</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry><code>==</code></entry>
+							<entry>
+								Is equal, in case of objects the system
+								checks if the
+								reference variable point
+								to the same object. It will not compare
+								the content of the objects!
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code><![CDATA[ && ]]></code>
+							</entry>
+							<entry>And</entry>
+						</row>
+						<row>
+							<entry><code>!=</code></entry>
+							<entry>
+								is not equal, similar to <code>==</code>.
+							</entry>
+						</row>
+						<row>
+							<entry><code>a.equals(b)</code></entry>
+							<entry>Checks if string a equals b.</entry>
+						</row>
+						<row>
+							<entry><code>a.equalsIgnoreCase(b)</code></entry>
+							<entry>
+								Checks if string a equals b while
+								ignoring lower cases.
+							</entry>
+						</row>
+						<row>
+							<entry><code>If (value ? false : true) {}</code></entry>
+							<entry>
+								Negotiation: return true if value is not true.
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</section>
+</section>

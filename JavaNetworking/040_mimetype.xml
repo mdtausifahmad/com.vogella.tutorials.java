@@ -1,0 +1,22 @@
+
+<section id="javanetwork_mime">
+	<title>Content Type / MIME Type</title>
+	<para> The Internet media type (short MIME) which is also called
+		Content-type define the type of the web resource. The MIME type is a
+		two-part
+		identifier for file formats on the Internet. For html
+		page the
+		content-type is "text/html".
+	</para>
+	<para>The
+		following code will check for the return code of a URL and
+		will get
+		the content-type (MIME-Typ) for the web resource.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ReadMimeType.java" />
+		</programlisting>
+	</para>
+</section>

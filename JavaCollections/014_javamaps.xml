@@ -1,0 +1,80 @@
+<section id="javacollections_maptypes">
+	<title>Maps implementations</title>
+	<section id="map_hashmap">
+		<title>Map and HashMap</title>
+		<indexterm>
+			<primary>HashMap</primary>
+		</indexterm>
+		<indexterm>
+			<primary>Map</primary>
+		</indexterm>
+		<para>
+			The
+			<code>Map</code>
+			interface defines an object that maps keys to values. A map cannot
+			contain
+			duplicate keys; each key can map to at most
+			one value. The
+			<code>HashMap</code>
+			class is an efficient implementation of the
+			<code>Map</code>
+			interface. The following code demonstrates its usage.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/map/MapTester.java" />
+			</programlisting>
+		</para>
+
+
+	</section>
+	<section id="map_convert">
+		<title>Convert keys in a Map to an array or a list</title>
+		<para>You can convert your keys or values to an array or list. The
+			following code demonstrates that.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/map/ConvertMapTester.java" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="map_processingmapselements">
+		<title>Processing every element in the map</title>
+		<para>
+			To process every element a map you can use the
+			<code>forEach</code>
+			method, which take a lambda as parameter.
+		</para>
+	</section>
+
+	<section id="map_getordefault">
+		<title>Getting the current value or a default for a map </title>
+
+		<para>
+			Java 8 introduces the
+			<code>getOrDefault()</code>
+			method, which allows to get the current value and if this is not
+			found in the map to return a default value.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/map/MapOrDefault.java" />
+			</programlisting>
+		</para>
+		<para>
+			If you want to add a new entry automatically to a map if it is not
+			present you can use the
+			<code>computeIfAbsent</code>
+			method to calculate a value and add it to the map.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/map/ComputeIfAbsent.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

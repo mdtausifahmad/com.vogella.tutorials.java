@@ -1,0 +1,10 @@
+<section id="usingassertj">
+	<title>Example for using AssertJ</title>
+	<para>The following example code is taken from the AssertJ homepage:
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/start/example.java" />
+		</programlisting>
+	</para>
+</section>

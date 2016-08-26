@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Java Performance - Memory and Runtime Analysis - Tutorial
+		</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<year>2014</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>
+			01.08.2014
+		</pubdate>
+		<releaseinfo>
+			<para>Version 1.1</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Abstract</title>
+			<para>This article will be a collection of Java performance
+				measurement pointer.
+			</para>
+			<para> It describes how memory works in general and how Java use the
+				heap and the stack. The article describes how to set the available
+				memory for Java. It discusses then how to get the runtime and the
+				memory consumption of a Java application.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/012_memory.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/014_garbagecollector.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/015_jvmsettings.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_runtimeinfo.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/070_lazyinitialization.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_jit.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/200_profiler.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/220_loadtest.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/JavaPerformance"?>
+</article>

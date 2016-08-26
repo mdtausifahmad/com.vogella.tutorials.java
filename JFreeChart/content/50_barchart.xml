@@ -1,0 +1,33 @@
+<section id="barchart">
+	<title>Creating Bar Charts with JFreeChart</title>
+	<para> This example is based on the previous example. Make sure you
+		have done the previous one.</para>
+	<section id="barchart_project">
+		<title>Create Project</title>
+		<para> Create a new Plugin project "de.vogella.jfreechart.barchart"
+			using "RCP application with a view" as a template.</para>
+		<para> Add "de.vogella.jfreechart.libs" as a dependency to project
+			"de.vogella.jfreechart.barchart".</para>
+	</section>
+	<section id="barchart_view">
+		<title>Create view with bar chart</title>
+		<para>Change the code of the view to the following:</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/bar/View.java" />
+			</programlisting>
+		</para>
+		<para> Run it and see that it is working.</para>
+		
+		<para>
+	<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/jfreechart40.gif"
+						/>
+				
+			</imageobject>
+		</mediaobject>
+</para>
+	</section>
+</section>

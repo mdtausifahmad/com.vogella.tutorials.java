@@ -1,0 +1,33 @@
+<section id="usagexml">
+	<title>Using dependency injection with XML</title>
+	<para> The following example will demonstrate the usage of the
+		dependency injection via xml. The example code demonstrates how to
+		injects a writer into
+		another class.
+	</para>
+	<para> Create a new Java project "de.vogella.spring.di.xml.first" and
+		include the minimal required spring jars into your classpath.
+	</para>
+	<para>Copy your model class from the de.vogella.spring.di.model
+		project
+		into this project.
+	</para>
+	<para> Under the src folder create a folder META-INF and create the
+		following file in this folder. This is the Spring configuration file.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/xml/beans.xml" />
+		</programlisting>
+	</para>
+	<para> Again, you can now wire the application together. Create a main
+		class which reads the configuration file and starts the application.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/xml/Main.java" />
+		</programlisting>
+	</para>
+</section>

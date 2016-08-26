@@ -1,0 +1,55 @@
+<section id="install">
+	<title>Install Mercurial and Extensions</title>
+	<para>
+		You first need to make sure Mercurial is installed on your
+		system. 
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/install/mercurial.txt" />
+		</programlisting>
+	</para>
+
+	<para>
+		In addition to standard Mercurial
+		you also need the Forest Extension.
+		These are
+		currently not packages for
+		Ubuntu, see
+		<ulink url="https://bugs.launchpad.net/ubuntu/+bug/174264"> Bug report</ulink>
+	</para>
+
+	<para> You can get the forest extension via the following command. This
+		will create the directory hgforest with the file "forest.py". 
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/install/cloneforestextension.txt" />
+		</programlisting>
+	</para>
+	<para>Edit the file "~/.hgrc" (i.e. the mercurial configuration file)
+		to include the lines.</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/install/includeextension.txt" />
+		</programlisting>
+	</para>
+	<para> After this change you should be able to use commands such
+		as
+		'fclone' and 'fpull' is you type in "hg" in the command line.</para>
+
+	<para> Install the build dependencies via the following commands:
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/install/build.txt" />
+		</programlisting>
+	</para>
+
+</section>

@@ -1,0 +1,43 @@
+<section id="database">
+	<title>Exercise: create example database</title>
+	<para>
+		In this exercise you create a new database, a new user and an
+		example
+		table. For this
+		connect to the MySQL server via the
+		<code>mysql</code>
+		command line client.
+	</para>
+	<para>
+		Create a new database called
+		<wordasword>feedback</wordasword>
+		and start using it with the following command.
+	</para>
+	<para>
+		<programlisting language="text">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/createDb.txt" />
+		</programlisting>
+	</para>
+	<para>
+		Create a user with the following command.
+	</para>
+	<para>
+		<programlisting language="text">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/createUser.txt" />
+		</programlisting>
+	</para>
+	<para>
+		Now create a sample
+		database table with example content via the
+		following
+		SQL statement.
+	</para>
+	<para>
+		<programlisting language="text">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/createTable.txt" />
+		</programlisting>
+	</para>
+</section>

@@ -1,0 +1,15 @@
+<section id="datastructures">
+	<title>Datastructures</title>
+	<para> Every programmer requires certain data structures for saving
+		several elements. Usually every programming languages provides Arrays.
+		These are fixed sized storage elements where every element can be
+		addressed via an index.  </para>
+	<para> The programmer usually requires a higher level of abstraction,
+		e.g. Lists,  Maps, Stacks, etc. </para>
+	<para> The Java programming language provides these elements very
+		efficiently implemented in libraries. This article tries to describe
+		how such elements could be implemented directly with Java constructs.
+		The implementations in this articles are for demonstration and education purpose.
+		They do not try to be as efficient as the standard libraries and they
+		are not intended to be an replacement for the standard libraries. </para>
+</section>

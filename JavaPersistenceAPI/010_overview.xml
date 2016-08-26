@@ -1,0 +1,306 @@
+<section id="jpaintro">
+	<title>Java Persistence API (JPA)</title>
+	<section id="jpaintro_overview">
+		<title>Overview</title>
+		<para> The process of mapping Java objects to
+			database tables and vice
+			versa is
+			called "Object-relational mapping"
+			(ORM).
+		</para>
+
+		<para>
+			The Java
+			Persistence API (JPA) is one possible approach to ORM.
+			JPA is a
+			specification and
+			several
+			implementations
+			are
+			available. Popular
+			implementations are Hibernate, EclipseLink and Apache OpenJPA. The
+			reference implementation of
+			JPA is EclipseLink.
+
+		</para>
+
+		<para>
+			Via JPA the
+			developer
+			can
+			map, store,
+			update and
+			retrieve data from
+			relational
+			databases to
+			Java
+			objects and vice versa.
+		</para>
+
+		<para>
+			JPA permits the developer to
+			work directly
+			with
+			objects rather
+			then
+			with
+			SQL
+			statements. The JPA implementation is
+			typically
+			called
+			persistence provider. JPA can be used in Java-EE and Java-SE
+			applications.
+		</para>
+
+		<para> The mapping between Java objects and database tables is
+			defined
+			via
+			persistence metadata.
+			The JPA provider will use
+			the persistence
+			metadata
+			information
+			to
+			perform
+			the correct database operations.
+		</para>
+
+		<para>
+			JPA typically
+			defines the
+			metadata via annotations in
+			the Java
+			class.
+			Alternatively
+			the metadata can be defined vian
+			XML or
+			a
+			combination of both. A XML
+			configuration
+			overwrites the
+			annotations.
+
+		</para>
+		<para>
+			The following description will be based on the usage of
+			annotations.
+
+		</para>
+		<para> JPA defines a SQL-like Query language for static
+			and
+			dynamic
+			queries.
+		</para>
+
+		<para> Most JPA persistence provider offer the option to create
+			automatically the database schema based on the
+			metadata.
+		</para>
+		<para>
+		</para>
+	</section>
+	<section id="jpaintro_entity">
+		<title>Entity</title>
+		<para>
+			A class which should be persisted in a database it must be
+			annotated
+			with
+			<code>javax.persistence.Entity</code>
+			. Such a class is called
+			<code>Entity</code>
+			. JPA will create a table for the entity in your database.
+			Instances
+			of the class will be a row in the table.
+		</para>
+		<para>
+			All entity classes must define a primary key, must have a
+			non-arg
+			constructor and or not allowed to be final. Keys
+			can be a
+			single
+			field
+			or a combination of fields.
+
+		</para>
+		<para>
+			JPA allows to auto-generate the primary key
+			in the database via the
+			<code>@GeneratedValue</code>
+			annotation.
+		</para>
+		<para>
+			By default, the table
+			name
+			corresponds to the class name. You can
+			change this with the
+			addition
+			to the annotation
+			@Table(name="NEWTABLENAME").
+		</para>
+	</section>
+	<section id="jpaintro_fields">
+		<title>Persistence of fields</title>
+		<para>
+			The fields of the Entity will be saved in the database. JPA can use
+			either your instance variables (fields) or the
+			corresponding getters
+			and setters to access the fields. You are not allowed to mix both
+			methods. If you want to use the
+			setter and getter methods the Java
+			class must follow the Java Bean naming conventions. JPA persists per
+			default all
+			fields of an Entity, if fields should not be saved they
+			must be marked with
+			<code>@Transient</code>
+			.
+		</para>
+		<para>
+			By default each field is mapped to a column with the name of
+			the
+			field. You can change the default name via
+			<code>@Column</code>
+			(name="newColumnName").
+		</para>
+		<para> The following annotations can be used.</para>
+		<para>
+			<table frame='all'>
+				<title>Annotations for fields / getter and setter</title>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<tbody>
+						<row>
+							<entry>@Id</entry>
+							<entry> Identifies the unique ID of the database entry</entry>
+						</row>
+						<row>
+							<entry>@GeneratedValue</entry>
+							<entry> Together with an ID this annotation defines that this value is generated
+								automatically.
+							</entry>
+						</row>
+						<row>
+							<entry>@Transient</entry>
+							<entry> Field will not be saved in database</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</section>
+	<section id="jpaintro_relationships">
+		<title>Relationship Mapping</title>
+		<para> JPA allows to define relationships between classes, e.g. it can
+			be defined that a class is part of another class
+			(containment).
+			Classes can
+			have one to one, one to many, many to one, and many to
+			many
+			relationships with other classes.
+		</para>
+		<para> A relationship can be bidirectional or unidirectional, e.g. in
+			a bidirectional relationship both classes store a
+			reference to each
+			other while in an unidirectional case only one class has a reference
+			to the other class. Within a
+			bidirectional relationship you need to
+			specify the
+			owning side of this relationship in the other class with
+			the
+			attribute "mappedBy", e.g.
+			@ManyToMany(mappedBy="attributeOfTheOwningClass".
+		</para>
+		<para>
+		</para>
+		<para>
+		</para>
+		<para>
+			<table frame='all'>
+				<title>Relationship annotations</title>
+				<tgroup cols='1' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<tbody>
+						<row>
+							<entry>@OneToOne</entry>
+						</row>
+						<row>
+							<entry>@OneToMany</entry>
+						</row>
+						<row>
+							<entry>@ManyToOne</entry>
+						</row>
+						<row>
+							<entry>@ManyToMany</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</section>
+
+	<section id="jpaintro_entitymanager">
+		<title>Entity Manager</title>
+		<para>
+			The entity manager
+			<code>javax.persistence.EntityManager</code>
+			provides the operations from and to the database, e.g.
+			find objects,
+			persists them, remove objects from the
+			database,
+			etc.
+
+			In a JavaEE
+			application the entity manager is automatically
+			inserted in the web
+			application. Outside JavaEE you need
+			to
+			manage the entity manager
+			yourself.
+		</para>
+		<para>
+			Entities which are managed by an Entity Manager will
+			automatically propagate these changes to the database (if
+			this
+			happens within a commit statement). If the Entity Manager is closed
+			(via close()) then the managed entities are in
+			a detached state. If
+			synchronize them again with the database a Entity Manager provides
+			the merge() method.
+		</para>
+		<para>
+			The
+			<emphasis>persistence context</emphasis>
+			describes all Entities of one Entity manager.
+		</para>
+
+	</section>
+	<section id="jpaintro_persistenceunits">
+		<title>Persistence units</title>
+		<para>
+			The
+			<code>EntityManager</code>
+			is created by the
+			<code>EntityManagerFactory</code>
+			which is configured by the persistence unit. The persistence unit is
+			described via the
+			<filename>persistence.xml</filename>
+			file in the
+			<filename>META-INF</filename>
+			directory of
+			the source folder. A set of entities
+			which are logical
+			connected will
+			be grouped via a persistence unit.
+			The
+			<filename>persistence.xml</filename>
+			file
+			defines the
+			connection data to the database, e.g.
+			the driver, the
+			user
+			and the
+			password,
+		</para>
+	</section>
+
+</section>

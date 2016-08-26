@@ -1,0 +1,12 @@
+<section id="project">
+	<title>Reading resources out of your project / jar</title>
+	<para>
+		You can read resources from your project or
+		your jar
+		file via the
+		<code>.getClass().getResourceAsStream()</code>
+		method chain
+		from any object.
+	</para>
+
+</section>

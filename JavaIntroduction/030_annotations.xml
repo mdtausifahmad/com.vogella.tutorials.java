@@ -1,0 +1,114 @@
+<section id="javaannotations">
+	<title>Annotations in Java</title>
+	<indexterm>
+		<primary>Annotations in Java</primary>
+	</indexterm>
+	<section id="annotations_definition">
+		<title>Annotations in Java</title>
+		<para>
+			Annotations provide data about a class that is not part of the
+			programming logic itself. They have no direct
+			effect on the
+			code they
+			annotate. Other components can use this information.
+		</para>
+		<para>
+			Annotations can
+			be preserved at runtime (
+			<code>RetentionPolicy.RUNTIME</code>
+			)
+			or are only available at development time (
+			<code>RetentionPolicy.SOURCE</code>
+			).
+		</para>
+
+	</section>
+
+
+
+
+	<section id="javadef">
+		<title>Override methods and the @Override annotation</title>
+		<para>
+			If a class extends another class, it inherits the methods from
+			its
+			superclass. If it wants to change these methods, it
+			can
+			<wordasword>override</wordasword>
+			these methods, i.e., redeclare the methods. This is necessary for an abstract method unless the class itself is
+			defined as abstract.
+		</para>
+		<para>
+			The
+			<code>@Override</code>
+			annotation can be added to such a method. It is used by the Java compiler
+			to check if the annotated
+			method really
+			overrides
+			a method of an
+			interface or the extended
+			class.
+		</para>
+		<para>
+			To override a method, you use the same method signature
+			in the source code of the subclass.
+		</para>
+		<para>
+			To indicate to the reader of the source code and the Java compiler
+			that you have the intention to override a method,
+			you can use the
+			<code>@Override</code>
+			annotation.
+		</para>
+		<para>
+			The following code demonstrates how you can override a method
+			from a superclass.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyBaseClass.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyExtensionClass2.java" />
+			</programlisting>
+		</para>
+		<para>
+			It is good practice to always use the
+			<code>@Override</code>
+			annotation. This way the Java compiler validates if you did override
+			all methods as intended and prevents errors.
+		</para>
+	</section>
+
+	<section id="annotation_deprecated">
+		<title>The @Deprecated annotations</title>
+		The
+		<code>@Deprecated</code>
+		annotation
+		can be used on a field, method, constructor or class and
+		indicates
+		that this element is outdated and should
+		not be used
+		anymore. Adding
+		<code>@Deprecated</code>
+		to the class does not deprecate automatically all its fields and
+		methods.
+
+	</section>
+	<section id="annotation_typeannotations">
+		<title>Type annotations</title>
+		<para>Java supports that annotations can be placed on any type. The
+			following gives several examples assuming the
+			annotations exists.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/typeannotations/Type.java" />
+			</programlisting>
+		</para>
+
+
+	</section>
+</section>

@@ -1,0 +1,211 @@
+<section id="firstjava" role="wrapper">
+	<title>Exercise: Write, compile and run a Java program</title>
+	<section id="firstjava_source">
+		<title>Write source code</title>
+		<para>
+			The following Java program is developed under Linux using a text
+			editor and the command line.
+			The
+			process on other operating system
+			should be similar, but
+			is not
+			covered
+			in this description.
+		</para>
+		<para>
+			Select or create a new directory which will be used for your Java
+			development. In this description the path
+			<filename class="directory">\home\vogella\javastarter</filename>
+			is used. On Microsoft Windows
+			you might want to use
+			<filename class="directory">c:\temp\javastarter</filename>.
+			This path is
+			called
+			<wordasword>javadir</wordasword>
+			in the following description.
+		</para>
+		<para>
+			Open a text editor which supports plain text, e.g.,
+			<wordasword>gedit</wordasword>
+			under Linux or
+			<wordasword>Notepad</wordasword>
+			under Windows
+			and write the following source code.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/helloworld/HelloWorld.java" />
+			</programlisting>
+		</para>
+		<warning>
+			<para>
+				Do not use a rich editor like Microsoft Word or LibreOffice for
+				writing Java code. If in doubt, google for "Plain text editor for
+				[your_OS]".
+			</para>
+		</warning>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstjava10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Writing Java programs in a text editor</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+		<para>
+			Save the source code in your
+			<wordasword>javadir</wordasword>
+			directory with the
+			<filename>HelloWorld.java</filename>
+			filename. The name of a Java source
+			file must always equal
+			the class
+			name (within the source code)
+			and end
+			with the
+			<filename>.java</filename>
+			extension. In this example
+			the
+			filename must be
+			<filename>HelloWorld.java</filename>,
+			because
+			the
+			class is called
+			<code>HelloWorld</code>.
+		</para>
+	</section>
+	<section id="firstjava_compile">
+		<title>Compile and run your Java program</title>
+		<para>
+			Open a shell for command line access.
+		</para>
+		<tip>
+			<para>
+				If you don't know how to do this, google for "How to open a
+				shell under [your_OS]".
+			</para>
+		</tip>
+		<para>
+			Switch to the
+			<wordasword>javadir</wordasword>
+			directory with the command
+			<code>cd javadir</code>,
+			for
+			example, in the above example
+			via the
+			<code>
+				cd \home\vogella\javastarter
+			</code>
+			command.
+			Use the
+			<code>ls</code>
+			command (<code>dir</code>
+			under Microsoft Windows) to verify
+			that
+			the source file is in the
+			directory.
+		</para>
+		<para>
+			Compile your Java source file into a class file with the
+			following command.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/helloworld/compile.sh" />
+			</programlisting>
+		</para>
+		<para>
+			Afterwards list again the content of the directory with the
+			<code>ls</code>
+			or
+			<code>dir</code>
+			command. The
+			directory contains now a file
+			<filename>HelloWorld.class</filename>. If you
+			see
+			this
+			file, you have successfully compiled your first Java source
+			code
+			into
+			bytecode.
+		</para>
+		<tip>
+			<para>
+				By default, the compiler puts each class file in the same
+				directory as its source file. You can specify a separate destination
+				directory with the <parameter>-d</parameter> compiler flag.
+			</para>
+		</tip>
+		<para>
+			You can now start your compiled Java program. Ensure that you are
+			still in the
+			<wordasword>jardir</wordasword>
+			directory and enter the following command to start your Java program.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/helloworld/run.sh" />
+			</programlisting>
+		</para>
+		<para>
+			The system should write "Hello World" on the command line.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/firstjava20.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Compiling and running Java programs on the command line</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	<section id="firstjava_classpath">
+		<title>Using the classpath</title>
+		<para>
+			You can use the classpath to run the program from another place
+			in your directory.
+		</para>
+		<para>
+			Switch to the command line, e.g., under
+			<menuchoice>
+				<guimenu>Windows Start</guimenu>
+				<guisubmenu>Run</guisubmenu>
+			</menuchoice>
+			<code>cmd</code>.
+			Switch to any directory you want. Type:
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/helloworld/run.sh" />
+			</programlisting>
+		</para>
+		<para>
+			If you are not in the directory in which the compiled class is stored,
+			then the system will show an error message:
+			<command>
+				Exception in thread "main" java.lang.NoClassDefFoundError:
+				test/TestClass
+			</command>
+		</para>
+		<para>
+			To use the class, type the following command. Replace
+			"mydirectory" with the directory which contains the test
+			directory.
+			You should again see the "HelloWorld" output.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/helloworld/classpath.sh" />
+			</programlisting>
+		</para>
+	</section>
+</section>

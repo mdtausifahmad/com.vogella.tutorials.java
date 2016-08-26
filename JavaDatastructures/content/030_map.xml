@@ -1,0 +1,40 @@
+<section id="map">
+	<title>Map - Associative array</title>
+	<para> The following example is contained in the project "de.vogella.datastructures.map".</para>
+	<para> A map represents a data structure in which collections of
+		unique key and collections of values are stored where each key is
+		associated with one value. The operation of finding the value is
+		called lookup.</para>
+	<para> A standard array is a special case of a map where the key are
+		the index number of the elements pointing to the object in the array.
+	</para>
+	<para> The standard Java interfaces for maps is import java.util.Map.
+		Standard implementations of Maps are for example java.util.HashMap or
+		import java.util.concurrent.ConcurrentHashMap</para>
+
+	<para> A simple map with the option to add, get, remove and get the
+		size of the Map could be implemented like the following. Please note
+		that this map is not very fast for large sets.</para>
+	<para> This would be an entry.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/map/MyEntry.java" />
+		</programlisting>
+	</para>
+	<para> This is the map implementation based on MyEntry.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/map/MyMap.java" />
+		</programlisting>
+	</para>
+	<para> And a small test. </para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/map/MyMapTest.java" />
+		</programlisting>
+	</para>
+</section>

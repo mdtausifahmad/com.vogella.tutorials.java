@@ -1,0 +1,112 @@
+<section id="javacollections_list">
+	<title>List implementations</title>
+	<section id="javacollections_lists">
+		<title>The List interface</title>
+		<indexterm>
+			<primary>List</primary>
+		</indexterm>
+
+		<para>
+			The
+			<code>List</code>
+			interface is the base
+			interface for collections which allows to store
+			objects in a resizable
+			container.
+		</para>
+	</section>
+	<section id="javacollections_arraylist">
+		<title>ArrayList and LinkedList as implementations</title>
+		<indexterm>
+			<primary>ArrayList</primary>
+		</indexterm>
+		<indexterm>
+			<primary>LinkedList</primary>
+		</indexterm>
+		<para>
+			<code>ArrayList</code>
+			is an implementation of this interface and allow that elements are
+			dynamically added and removed from the list. If more elements are
+			added to
+			ArrayList than its initial size, its size is increased
+			dynamically.
+			The elements in an
+			<code>ArrayList</code>
+			can be
+			accessed directly and efficiently by using the
+			<code>get()</code>
+			and
+			<code>set()</code>
+			methods, since
+			ArrayList
+			is implemented based on an array.
+			<code>ArrayList</code>
+			is typically used in implementations as implementation class for the
+			<code>List</code>
+			interface.
+		</para>
+		<para>
+			<code>LinkedList</code>
+			is implemented as a double linked list. Its
+			performance on
+			<code>add()</code>
+			and
+			<code>remove()</code>
+			is better than the performance of Arraylist. The
+			<code>get()</code>
+			and
+			<code>set()</code>
+			methods have worse performance than the ArrayList, as the
+			<code>LinkedList</code>
+			does not provide direct access to its members.
+		</para>
+		<para>
+			The following code demonstrates the usage of
+			<code>List</code>
+			and
+			<code>ArrayList</code>
+			.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/list/ListExample.java" />
+			</programlisting>
+		</para>
+	</section>
+
+
+	<section id="javacollections_sorting">
+		<title>Sorting lists</title>
+		<para>
+			You can sort lists using their natural order of via lambdas for
+			defining the
+			<code>Comparator.compare()</code>
+			. Typically in Java 8 you use a lambda expression or a method
+			reference for the definion of the
+			<code>compare</code>
+			method.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/list/SortingLists.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="javacollections_removinglistitems">
+		<title>Remove list members based on condition</title>
+		<para>
+			The
+			<code>removeIf</code>
+			method allows to remove list items based on a condition.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/list/RemoveIfList.java" />
+			</programlisting>
+		</para>
+	</section>
+</section>

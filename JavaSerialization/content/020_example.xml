@@ -1,0 +1,27 @@
+<section id="example">
+	<title>Example</title>
+	<para>Create a Java project called "de.vogella.java.serilization".
+		Create the
+		following Java object called <wordasword>Person</wordasword>.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/simple/Person.java" />
+		</programlisting>
+	</para>
+
+	<para>The following code example show you how you can serializable and
+		de-serializable this object.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/simple/Main.java" />
+		</programlisting>
+	</para>
+
+
+</section>

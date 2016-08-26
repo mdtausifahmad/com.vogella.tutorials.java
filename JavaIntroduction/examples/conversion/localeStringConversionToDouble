@@ -1,0 +1,20 @@
+
+private Double convertStringToDouble(String s) {
+
+		Locale l = new Locale("de", "DE");
+		Locale.setDefault(l);
+		NumberFormat nf = NumberFormat.getInstance();
+		Double result = 0.0;
+		try {
+			if (Class.forName("java.lang.Long").isInstance(nf.parse(s))) {
+				result = Double.parseDouble(String.valueOf(nf.parse(s)));
+			} else {
+				result = (Double) nf.parse(new String(s));
+			}
+		} catch (ClassNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (ParseException e1) {
+			e1.printStackTrace();
+		}
+		return result;
+	}

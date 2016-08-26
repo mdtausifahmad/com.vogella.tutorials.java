@@ -1,0 +1,5 @@
+
+#set a few environment variables for the build:
+export LANG=C ALT_BOOTDIR=/usr/lib/jvm/java-6-openjdk 
+make ALLOW_DOWNLOADS=true
+

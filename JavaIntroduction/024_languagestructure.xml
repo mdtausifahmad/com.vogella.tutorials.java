@@ -1,0 +1,283 @@
+<section id="java_types">
+	<title>Base Java language structure</title>
+
+	<section id="javadef_class">
+		<title>Class</title>
+		<para>
+			A class is a template that describes the data and behavior
+			associated with an instance of that class.
+		</para>
+		<para>
+			A class is
+			defined by the
+			<wordasword>class</wordasword>
+			keyword and must start with a capital letter. The body of a class is
+			surrounded by {}.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/statements/MyClass.java" />
+			</programlisting>
+		</para>
+		<para>
+			The data associated with a class is stored in
+			<wordasword>variables</wordasword>
+			;
+			the
+			behavior associated to a class or object is implemented
+			with
+			<wordasword>methods</wordasword>
+			.
+		</para>
+		<para>
+			A class is contained in a text file with the same name as
+			the
+			class plus the
+			<filename>.java</filename>
+			extension. It is also possible to define inner classes, these are classes defined within another class, in this case
+			you do not need a separate file for this class.
+		</para>
+	</section>
+
+	<section id="javadef_object">
+		<title>Object</title>
+		<para>An object is an instance of a class.</para>
+		<para>
+			The object is the real element which
+			has
+			data and can perform
+			actions. Each object is created based on the class
+			definition. The class can be seen as the blueprint of an object, i.e., it
+			describes how an object is created.
+		</para>
+	</section>
+
+
+	<section id="javadef_package">
+		<title>Package</title>
+		<para>
+			Java groups classes into functional
+			<wordasword>packages</wordasword>
+			.
+		</para>
+		<para>
+			Packages are typically used to group
+			classes into logical
+			units.
+			For
+			example, all graphical views of an application might
+			be placed in
+			the
+			same package called
+			<code>com.vogella.webapplication.views</code>
+			.
+		</para>
+		<para>
+			It is
+			common practice to use the
+			reverse
+			domain name of the company as
+			top
+			level package. For example,
+			the
+			company might own
+			the domain,
+			vogella.com and in this example
+			the
+			Java
+			packages of this company starts
+			with
+			<code>com.vogella</code>
+			.
+		</para>
+		<para>
+			Other main reason for the usage of packages is to avoid name
+			collisions of classes.
+			A
+			name collision occurs if two
+			programmers give
+			the same
+			<wordasword>fully qualified name</wordasword>
+			to a class. The
+			<wordasword>fully qualified name</wordasword>
+			of a class in Java consists of the package name followed by a
+			dot
+			(.)
+			and the class name.
+		</para>
+		<para>
+			Without packages, a programmer
+			may
+			create a Java class
+			called
+			<code>Test</code>
+			.
+			Another programmer may create
+			a class with the same name. With
+			the
+			usage of packages you can
+			tell the system which class
+			to call.
+			For
+			example, if the first programmer puts
+			the
+			<code>Test</code>
+			class into package
+			<code>report</code>
+			and the second programmer
+			puts his class into package
+			<code>xmlreader</code>
+			you can distinguish between these classes by using the
+			<wordasword>fully qualified name</wordasword>
+			,
+			e.g,
+			<code>xmlreader.Test</code>
+			or
+			<code>report.Test</code>
+			.
+		</para>
+	</section>
+
+
+	<section id="javadef_inheritance">
+		<title>Inheritance</title>
+		<para>
+			A class can be derived from another class. In this case this
+			class is
+			called a
+			<wordasword>subclass</wordasword>
+			.
+			Another common phrase is that
+			<wordasword>a class extends another class.</wordasword>
+		</para>
+		<para>
+			The class
+			from which the subclass is derived is called a
+			<wordasword>superclass</wordasword>
+			.
+		</para>
+		<para>
+			Inheritance allows a class to inherit the behavior and data
+			definitions of another class. 
+			
+		</para>
+		<para>
+			The following codes demonstrates how a class can extend another
+			class. In Java a class can only extend a maximum
+			of one class.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyBaseClass.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyExtensionClass.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="javadef_objectsuperclass">
+		<title>Object as superclass</title>
+		<para>
+			Every object in Java implicitly extends the
+			<code>Object</code>
+			class. The class defines the following methods for every Java
+			object:
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>equals(o1)</code>
+						allows checking if the current object is equal to o1
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>getClass()</code>
+						returns the class of the object
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>hashCode()</code>
+						returns an identifier of the current object
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>toString()</code>
+						gives a string representation of the current object
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+	<section>
+		<title>Exception handling in Java</title>
+		<para>In Java an exception is an event to indicate an error during
+			the
+			runtime of an application. So this disrupts the
+			usual flow of the
+			application's instructions.
+		</para>
+		<para>
+			In general exceptions are thrown up in the call hierarchy until
+			they get catched.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/exception_throw_callstack.png" scale="40" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		<section>
+			<title>Checked Exceptions</title>
+			<para>Checked Exceptions are explicitly thrown by methods,
+				which might
+				cause the exception or re-thrown by methods in
+				case
+				a thrown
+				Exception is not caught.
+			</para>
+			<para>So when calling methods, which throw checked Exceptions the
+				Exceptions have either to be caught or to be
+				re-thrown.
+			</para>
+			<para>
+				<programlisting language="java">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exceptions/CatchException.java" />
+				</programlisting>
+			</para>
+			<para>
+				Checked Exceptions are used when an error can be predicted
+				under certain circumstances, e.g., a file which
+				cannot be found.
+			</para>
+		</section>
+		<section>
+			<title>Runtime Exceptions</title>
+			<para>
+				Runtime Exceptions are Exceptions, which are not explicitly
+				mentioned in the method signature and therefore also
+				do not have to
+				be catched explicitly.
+			</para>
+			<para>
+				The most famous runtime exception is the NullPointerException, which
+				occurs during runtime, when a method is invoked
+				on an object, which
+				actually is
+				<code>null</code>
+				.
+			</para>
+			<para>
+				<programlisting language="java">
+					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+						href="./examples/exceptions/NullPointerException.java" />
+				</programlisting>
+			</para>
+		</section>
+	</section>
+</section>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Testing with EasyMock - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2011</year>
+			<year>2012</year>
+			<year>2013</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>22.10.2013</pubdate>
+		<releaseinfo>
+			<para>Version 1.4</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Testing with EasyMock</title>
+			<para> This tutorial explains testing with the EasyMock framework
+				within Eclipse. It is based on the EasyMock 3.1 release.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="002_prerequisites.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_easymock.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_installation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_example.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="005_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/EasyMock"?>
+</article>

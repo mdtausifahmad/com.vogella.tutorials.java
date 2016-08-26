@@ -1,0 +1,28 @@
+<section id="overview">
+	<title>Java Serialization</title>
+	<para>
+		Via Java Serialization you can stream your Java object to a
+		sequence of
+		byte and restore these objects from this stream of
+		bytes. To make a
+		Java object serializable you implement the
+		<code>java.io.Serializable</code>
+		interface. This is only a marker interface which tells the
+		Java platform
+		that the object is serializable.
+	</para>
+	<para>
+		Certain system-level classes such as
+		<code>Thread</code>
+		,
+		<code>OutputStream</code>
+		and its subclasses, and
+		<code>Socket</code>
+		are not serializable. If you serializable class contains such objects,
+		it must mark then as "transient".
+	</para>
+
+
+
+
+</section>

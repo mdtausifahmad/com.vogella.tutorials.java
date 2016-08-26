@@ -1,0 +1,3 @@
+
+[extensions]
+forest=/home/vogella/hgforest/forest.py

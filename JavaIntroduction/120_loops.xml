@@ -1,0 +1,79 @@
+<section id="loops">
+	<title>Loops in Java</title>
+	<section id="javalang_for">
+		<title>The for loop</title>
+		<para>
+			A for loop is a repetition control structure that allows you to
+			write a block of code which is executed a specific number of
+			times. The syntax is the following.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/loop/for.java" />
+			</programlisting>
+		</para>
+		<para>The following shows an example for a for loop.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/loop/ForTest.java" />
+			</programlisting>
+		</para>
+		<tip>
+			<para>
+				For arrays and collections there is also an enhanced for loop
+				available. This loop is covered in the Array description.
+			</para>
+		</tip>
+	</section>
+
+	<section id="javalang_while">
+		<title>The while loop</title>
+		<para>
+			A while loop is a repetition control structure that allows you
+			to
+			write a block of code which is executed until a specific condition
+			evaluates to false. The
+			syntax is the following.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/loop/while.java" />
+			</programlisting>
+		</para>
+		<para>The following shows an example for a while loop.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/loop/WhileTest.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="javalang_dowhile">
+		<title>The do while loop</title>
+		<para>
+			The do-while loop is similar to the while loop,
+			with the exception that the
+			condition is checked after the execution. The
+			syntax is the following.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/loop/dowhile.java" />
+			</programlisting>
+		</para>
+		<para>
+			The following shows an example for a do-while loop.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/loop/DoTest.java" />
+			</programlisting>
+		</para>
+	</section>
+</section>

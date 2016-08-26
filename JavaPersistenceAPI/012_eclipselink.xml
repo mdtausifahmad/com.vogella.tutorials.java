@@ -1,0 +1,27 @@
+<section id="eclipselink">
+	<title>EclipseLink</title>
+	<para>
+		This tutorial
+		will use
+		EclipseLink
+		as JPA
+		implementation. EclipseLink
+		supports several Java standards:
+
+		<itemizedlist>
+			<listitem>
+				<para>Java Persistence (JPA) 2.0 - JSR 317</para>
+			</listitem>
+			<listitem>
+				<para>Java Architecture for XML Binding (JAXB) 2.2 - JSR 222</para>
+			</listitem>
+			<listitem>
+				<para>Service Data Objects (SDO) 2.1.1 - JSR 235</para>
+			</listitem>
+		</itemizedlist>
+
+
+	</para>
+	<para> This tutorial covers the usage of the JPA functionality. </para>
+
+</section>

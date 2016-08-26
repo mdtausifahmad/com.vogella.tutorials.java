@@ -1,0 +1,43 @@
+<section id="jaxb">
+	<title>JAXB 2 - Java Architecture for XML Binding</title>
+	<para>
+		JAXB uses annotations to indicate the central elements.
+		<para>
+			<table frame='all'>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>Annotation</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>@XmlRootElement(namespace =
+								"namespace")
+							</entry>
+							<entry>Define the root element for an XML tree</entry>
+						</row>
+						<row>
+							<entry> @XmlType(propOrder = { "field2", "field1",.. })</entry>
+							<entry>Allows to define the order in which the fields are
+								written in the XML file
+							</entry>
+						</row>
+						<row>
+							<entry>@XmlElement(name = "neuName")</entry>
+							<entry>Define the XML element which will be used. Only
+								need to be
+								used if the neuNeu is different then the JavaBeans
+								Name
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</para>
+
+</section>

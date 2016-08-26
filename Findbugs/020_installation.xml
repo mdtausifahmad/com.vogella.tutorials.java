@@ -1,0 +1,23 @@
+<section id="findbugs_installation">
+	<title>Installation of the FindBugs tooling for Eclipse</title>
+	<para>
+		Use the
+		<menuchoice>
+			<guimenu>Help</guimenu>
+			<guisubmenu>Install New Software...</guisubmenu>
+		</menuchoice>
+		menu entry to install all the FindBugs components from the following
+		URL. Restart
+		your Eclipse IDE afterwards.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/links/install.txt" />
+		</programlisting>
+	</para>
+	<para>
+		The following webpage provides downloads for later versions,e.g., Eclipse 4.6.
+		https://github.com/findbugsproject/findbugs/releases/tag/3.0.2_preview2
+	</para>
+</section>
+	

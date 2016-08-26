@@ -1,0 +1,117 @@
+<section id="dependencyinjection">
+	<title>What is dependency injection?</title>
+	<indexterm>
+		<primary>Dependency injection</primary>
+		<secondary>Concept</secondary>
+	</indexterm>
+	<para>
+		Dependency injection is a concept which is not limited to
+		Java.
+		But we
+		will look
+		at dependency injection from a Java point
+		of view. The
+		general concept
+		behind dependency injection is called
+		<wordasword>Inversion of Control</wordasword>
+		. According to this concept a class should not configure its
+		dependencies statically but should
+		be
+		configured from the
+		outside.
+	</para>
+
+	<para>
+		A Java class has a dependency on another class if it uses an
+		instance
+		of this
+		class. We call this a
+		<wordasword>class dependency</wordasword>
+		. For example a class
+		which accesses a logger
+		service has a
+		dependency on
+		this service class.
+	</para>
+
+	<para>
+		Ideally Java classes should be as independent as possible
+		from
+		other
+		Java classes. This increases the possibility of
+		reusing these
+		classes and to be able
+		to test them
+		independently from other classes.
+	</para>
+
+	<para>
+		If the Java class creates an instance of another class via
+		the
+		<code>new</code>
+		operator, it cannot be used (and tested) independently from
+		this class
+		and this is called a hard dependency. The
+		following example shows a
+		class which has no hard dependencies.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="../examples/snippets/MyClass.java" />
+		</programlisting>
+	</para>
+	<note>
+		<para>Please note that this class is just a normal Java class, there
+			is nothing special about it, except that it avoids
+			direct object
+			creation.
+		</para>
+	</note>
+
+	<indexterm>
+		<primary>Dependency container</primary>
+	</indexterm>
+	<para>
+		A framework class, usually called the
+		<wordasword>dependency container</wordasword>
+		, could analyze
+		the dependencies of this class. With
+		this analysis it is able to create an instance of the class and
+		inject the objects into the defined dependencies, via
+		Java reflection.
+	</para>
+
+	<para>
+		This way the Java class has no hard dependencies, which means it does
+		not
+		rely on an instance of a certain class. This
+		allows you to test
+		your class in isolation, for example by using
+		<wordasword>mock</wordasword>
+		objects.
+	</para>
+
+	<para>
+		Mock objects (mocks) are objects which behave similar as the
+		real
+		object. But these mocks are not programmed; they
+		are configured to
+		behave in a certain predefined
+		way. Mock is an English word
+		which
+		means
+		to
+		mimic
+		or
+		imitate.
+	</para>
+
+	<para>
+		If dependency injection is used, a Java class can be tested in
+		isolation.
+	</para>
+
+
+
+</section>

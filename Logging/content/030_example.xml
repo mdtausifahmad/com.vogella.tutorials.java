@@ -1,0 +1,54 @@
+<section id="logexample" role="wrapper">
+	<title>Example</title>
+	<section id="logexample_createLogger">
+		<title>Create the logger</title>
+		<para>
+			This example is stored in the project called
+			<wordasword>com.vogella.logger</wordasword>.
+		</para>
+		<para>Create your own formatter class.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/MyHtmlFormatter.java" />
+			</programlisting>
+		</para>
+		<para>
+			Initialize the logger via the following code. This Logger class
+			uses the new HTML formatter you created.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/MyLogger.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="logexample_use">
+		<title>Use the logger</title>
+		<para>
+			The following example class demonstrates how you can use your
+			<code>MyLogger</code>
+			class to create log messages.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/UseLogger.java" />
+			</programlisting>
+		</para>
+
+		<tip>
+			<para>
+				After you ran your program you need to
+				<guilabel>Refresh</guilabel>
+				your project in Eclipse (or check the file system directly) to see
+				the files in the
+				<guilabel>Package Explorer</guilabel>
+				view.
+			</para>
+		</tip>
+
+	</section>
+</section>

@@ -1,0 +1,36 @@
+<section id="stack">
+	<title>Stack</title>
+	<para> The following example is contain in the project
+		"de.vogella.datastructures.stack".</para>
+	<para>The
+		stack offers to put new object on the stack ( method push())
+		and to
+		get objects from the stack (method pop()). A stack returns the
+		object
+		according to last-in-first-out (LIFO), e.g. the object which was
+		placed latest on the stack is returned first. Java provides a
+		standard
+		implementation of a stack in java.util.Stack.</para>
+	<para> The following are two implementations of stacks, one based on
+		arrays the other based on ArrayLists.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/stack/MyStackArray.java" />
+		</programlisting>
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/stack/MyStackList.java" />
+		</programlisting>
+	</para>
+	<para> This is a small JUnit test for the data structure.</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/stack/MyStackTest.java" />
+		</programlisting>
+	</para>
+
+</section>

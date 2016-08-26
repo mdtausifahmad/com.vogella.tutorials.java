@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Creating PDF with Java and iText - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2008 -2010</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>11.10.2010</pubdate>
+		<releaseinfo>
+			<para>Version 0.5</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Java and PDF with iText</title>
+			<para> This article demonstrate how to create PDF files with Java and
+				the iText library. In this tutorial iText version 5.0.x is used
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/02_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/10_installation.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/20_createpdf.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/30_formatting.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/40_readexisting.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/JavaPDF"?>
+</article>

@@ -1,0 +1,127 @@
+<section id="memory">
+	<title>Memory handling in Java</title>
+	<para>
+		Java handles its memory in two areas. The
+		<wordasword>heap</wordasword>
+		and the
+		<wordasword>stack</wordasword>
+		. We will start with a short overview of memory in general on a
+		computer. Then the Java heap and stack is explained.
+	</para>
+	<section id="memory_native">
+		<title>Native Memory</title>
+		<para> Native memory is the memory which is available to a process,
+			e.g. the Java process. Native memory is controlled by the operating
+			system (OS) and based on physical memory and other physical devices,
+			e.g. disks, flash memory, etc.
+		</para>
+		<para> The processor (CPU) of the computer computes the instructions
+			to execute and stores its computation results into registers. These
+			registers are fast memory elements which stores the result of the
+			CPU. The processor can access the normal memory over the memory bus.
+			A amount of memory a CPU can access is based on the size of the
+			physical address which the CPU uses to identify physical memory. A
+			16-bit address can access 2^16 (=65.536) memory locations. A 32-bit
+			address can access 2^32 (=4.294.967.296) memory locations. If each
+			memory area consists of 8 bytes then a 16-bit system can access 64KB
+			of memory and the 32-bit system can access 4GB of memory.
+		</para>
+		<para> An operating system (OS) normally uses virtual memory to map
+			the physical memory
+			to memory which each process can see. The OS
+			assigns then memory to
+			each process in a virtual memory space for this
+			process and maps
+			access to this virtual memory to the real physical
+			memory.
+		</para>
+		<para> Current 32-bit systems uses an extension (Physical Address
+			Extension (PAE)) which extends the physical space to 36-bits of the
+			operation system. This allows the OS to access 64GB. The OS uses then
+			virtual memory to allow the individual process 4 GB of memory. Even
+			with PAE enabled a process can not access more than 4 GB of memory.
+		</para>
+		<para> Of course with a 64-bit OS this 4GB limitation does not exist
+			anymore.
+		</para>
+	</section>
+	<section id="memory_overview">
+		<title>Memory in Java</title>
+		<para> Java manages the memory for use. New objects created and placed
+			in the heap. Once your application have no reference anymore to an
+			object the Java garbage collector is allowed to delete this object
+			and remove the memory so that your application can use this memory
+			again.
+		</para>
+	</section>
+	<section id="memory_heap">
+		<title>Java Heap</title>
+		<para> In the heap the Java Virtual Machine (JVM) stores all objects
+			created by the Java application, e.g. by using the "new" operator.
+			The Java garbage collector (gc) can logically separate the heap into
+			different areas, so that the gc can faster identify objects which can
+			get removed.
+		</para>
+		<para> The memory for new objects is allocated on the heap at run
+			time. Instance variables live inside the object in which they are
+			declared.
+		</para>
+	</section>
+	<section id="memory_stack">
+		<title>Java Stack</title>
+		<para>Stack is where the method invocations and the local
+			variables are
+			stored. If a method is called then its stack frame is
+			put onto the top
+			of the call stack. The stack frame holds the state
+			of the method
+			including which line of code is executing and the
+			values of all local
+			variables. The method at the top of the stack is
+			always the current
+			running method for that stack. Threads have their
+			own call stack.
+		</para>
+	</section>
+
+	<section id="Escape Analysis">
+		<title>Escape analysis</title>
+		<para>As stated earlier Java objects are created and stored in the
+			heap. The
+			programming language
+			does not offer the possibility to let
+			the
+			programmer decide if an
+			object should be generated in the stack.
+			But
+			in certain cases it would be desirable to allocate an object on
+			the
+			stack, as the memory allocation on the stack is cheaper than the
+			memory allocation
+			in the heap, deallocation on the stack is free and
+			the stack is efficiently
+			managed by the
+			runtime.
+		</para>
+		<para> The JVM uses therefore internally escape analysis to check if
+			an
+			object is used only with a thread or method. If the JVM identify
+			this
+			it may decide to create the object on the stack, increasing
+			performance of the Java program.
+		</para>
+	</section>
+	<section id="memoryleaks">
+		<title>Memory leaks</title>
+		<para>
+			The
+			garbage collector of the JVM
+			releases Java objects from memory
+			as long as no other object refers to
+			this
+			object. If other objects
+			still hold references to these objects, then the garbage collector of
+			the JVM cannot release them.
+		</para>
+	</section>
+</section>

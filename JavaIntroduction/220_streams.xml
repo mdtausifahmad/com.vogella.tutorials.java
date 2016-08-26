@@ -1,0 +1,98 @@
+<section id="streams">
+	<title>Streams</title>
+	<section id="streams_definition">
+		<title>What are streams?</title>
+		<para>
+			A stream from the
+			<code>java.util.stream</code>
+			package
+			is
+			a sequence of elements from a source that
+			supports
+			aggregate
+			operations.
+		</para>
+	</section>
+	<section id="stream_intstream">
+		<title>IntStream</title>
+		<para>Allow to create a stream of sequence of primitive int-valued
+			elements supporting sequential and parallel
+			aggregate operations.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/IntStreamExample.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="lambdas_reduction">
+		<title>Reduction operations with streams and lambdas</title>
+		<para>Allow to create a stream of sequence of primitive int-valued
+			elements supporting sequential and parallel
+			aggregate operations.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/Task.java" />
+			</programlisting>
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/StreamTester.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="lambdas_examples">
+		<title>Example for filtering and mapping the content of a list</title>
+		<para>
+			The following example demonstrates how to use streams to
+			filter a list, perform a mapping operation and to
+			create one
+			final result string from it with the
+			<code>reduce</code>
+			method.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/JavaStreamExample.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="streams_examples">
+		<title>Streams and lambda examples</title>
+		<para>
+			The following is a larger example for the usage of streams. The code is based on the slides from the
+			<ulink url="https://www.eclipsecon.org/europe2015/session/eclipse-collections-example">Goldmann Sachs Collection presentation at EclipseCOn 2015</ulink>
+		</para>
+		<para>Lets assume the following data model.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/PetType.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/Pet.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/Person.java" />
+			</programlisting>
+		</para>
+		<para>With this data model you can use streams and lambdas to filter and search the data as demonstrated in the
+			following example.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/Example.java" />
+			</programlisting>
+		</para>
+
+	</section>
+</section>

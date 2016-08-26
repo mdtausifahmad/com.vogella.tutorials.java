@@ -1,0 +1,31 @@
+<section id="java">
+	<title>Java and dependency injection frameworks</title>
+	<para>You can use dependency injection without any additional framework
+		by providing classes with sufficient constructors or getter and
+		setter
+		methods.
+	</para>
+
+	<para> A dependency injection framework simplifies the initialization
+		of the classes with the correct objects.
+	</para>
+	<para>
+		Two popular dependency injection frameworks are Spring and
+		<ulink url="http://code.google.com/p/google-guice/">
+			Google Guice</ulink>
+		.
+	</para>
+	<para>
+		The usage of the Spring framework for dependency injection is
+		described in
+		<ulink
+			url="http://www.vogella.com/tutorials/SpringDependencyInjection/article.html">Dependency Injection with the Spring Framework - Tutorial</ulink>
+		.
+	</para>
+
+	<para>
+		Also
+		<ulink url="http://www.vogella.com/tutorials/EclipseE4/article.html"> Eclipse 4</ulink>
+		is using dependency injection.
+	</para>
+</section>

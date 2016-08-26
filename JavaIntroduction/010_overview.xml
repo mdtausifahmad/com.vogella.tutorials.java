@@ -1,0 +1,300 @@
+<section id="javaintroduction" role="wrapper">
+	<title>Introduction to Java</title>
+	<section id="javahistory">
+		<title>A small history of Java</title>
+		<para>
+			Java is a programming language created by James Gosling from
+			Sun Microsystems (Sun) in 1991. The target of Java is to
+			write a program once and then run
+			this
+			program on multiple operating systems. The first publicly
+			available version
+			of
+			Java
+			(Java 1.0) was released in 1995. Sun Microsystems was
+			acquired by the Oracle
+			Corporation in
+			2010.
+			Oracle has now the
+			steermanship for Java. In 2006 Sun started to make Java available under the GNU General
+			Public License (GPL). Oracle
+			continues this project
+			called
+			<wordasword>OpenJDK</wordasword>
+			.
+		</para>
+		<para>
+			Over time new enhanced versions of Java have been
+			released.
+			The current
+			version of Java is Java 1.8 which is also known
+			as
+			<wordasword>Java 8</wordasword>
+			.
+		</para>
+		<para>
+			Java is defined by a specification and consists of a programming language, a compiler, core libraries and a runtime
+			(Java virtual machine)
+			The Java runtime allows
+			software
+			developers to write program
+			code in
+			other
+			languages than
+			the Java
+			programming
+			language
+			which still runs
+			on
+			the
+			Java
+			virtual
+			machine. The
+			<wordasword>Java platform</wordasword>
+			is usually associated with the
+			<wordasword>Java virtual machine</wordasword>
+			and the
+			<wordasword>Java core libraries</wordasword>
+			.
+		</para>
+		<para>
+			The Java language was designed with the following properties:
+			<itemizedlist>
+				<listitem>
+					<para>Platform independent: Java programs use the Java virtual
+						machine
+						as
+						abstraction and do not access the operating
+						system
+						directly. This makes Java programs highly portable. A Java
+						program
+						(which is standard-compliant and follows
+						certain rules) can
+						run
+						unmodified on all supported platforms, e.g., Windows or Linux.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Object-orientated programming language:
+						Except the primitive
+						data types, all elements in Java are objects.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Strongly-typed programming language: Java is
+						strongly-typed,
+						e.g., the types of the used variables must be
+						pre-defined and
+						conversion to
+						other objects is relatively strict, e.g., must be done
+						in most cases by the programmer.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Interpreted and compiled language: Java source
+						code is
+						transferred into the bytecode format which does not
+						depend on the
+						target
+						platform. These bytecode instructions will be interpreted by
+						the Java
+						Virtual
+						machine (JVM). The
+						JVM contains a so called
+						Hotspot-Compiler which
+						translates performance critical bytecode
+						instructions
+						into native
+						code
+						instructions.
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						Automatic memory management: Java manages the memory
+						allocation and de-allocation for creating new objects.
+						The
+						program
+						does not have direct access to the memory. The so-called garbage
+						collector automatically deletes objects
+						to which no active pointer
+						exists.
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+			The Java syntax is similar to C++. Java is case-sensitive,
+			e.g.,
+			variables called
+			<code>myValue</code>
+			and
+			<code>myvalue</code>
+			are treated as different
+			variables.
+		</para>
+	</section>
+
+	<section id="javaoverview_helloworld">
+		<title>Hello world Java program</title>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/helloworld/HelloWorld.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="javaoverview">
+		<title>Java virtual machine</title>
+		<para>
+			The Java
+			virtual
+			machine (JVM) is a software implementation of a
+			computer that
+			executes programs like a real
+			machine.
+		</para>
+		<para>
+			The Java virtual machine is written specifically for a
+			specific
+			operating system, e.g., for Linux a special
+			implementation is required
+			as well as for Windows.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/jvmintroduction10.png" />
+				</imageobject>
+				<textobject>
+					<phrase></phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+
+		<para>
+			Java programs are compiled by the Java compiler into
+			<wordasword>bytecode</wordasword>
+			.
+			The Java virtual machine interprets this
+			<wordasword>bytecode</wordasword>
+			and
+			executes
+			the Java program.
+		</para>
+
+	</section>
+
+	<section id="javaoverview_jrejdk">
+		<title>Java Runtime Environment vs. Java Development Kit</title>
+		<para>
+			A Java distribution typically comes in two flavors, the
+			<wordasword>Java Runtime Environment</wordasword>
+			(JRE)
+			and the
+			<wordasword>Java Development Kit</wordasword>
+			(JDK).
+		</para>
+		<para>
+			The JRE consists of the JVM and the
+			Java class libraries. Those contain the
+			necessary
+			functionality to start
+			Java
+			programs.
+		</para>
+		<para>
+			The JDK additionally contains
+			the development tools necessary to
+			create Java programs. The JDK therefore consists
+			of a
+			Java compiler,
+			the
+			Java
+			virtual machine and the Java class libraries.
+		</para>
+	</section>
+
+	<section id="javadevelopmend">
+		<title>Development Process with Java</title>
+		<para>
+			Java source files are written as plain text documents.
+			The programmer
+			typically writes Java source code in an
+			<wordasword>Integrated Development Environment</wordasword>
+			(IDE) for
+			programming. An IDE supports the programmer in the task of
+			writing code, e.g.,
+			it provides auto-formating of
+			the source code,
+			highlighting of the
+			important keywords, etc.
+		</para>
+		<para>
+			At some point the programmer (or the IDE) calls the Java
+			compiler
+			(
+			<filename>javac</filename>
+			).
+			The Java compiler creates the
+			<wordasword>bytecode</wordasword>
+			instructions.
+			These instructions are
+			stored in
+			<filename>.class</filename>
+			files and can be executed by the Java Virtual Machine.
+		</para>
+	</section>
+
+	<section id="java_garbagecollector">
+		<title>Garbage collector</title>
+		<para>
+			The JVM automatically re-collects the memory which is not
+			referred to
+			by other objects.
+			The Java
+			<wordasword>garbage collector</wordasword>
+			checks all object references and finds the objects which can be
+			automatically released.
+		</para>
+		<para>
+			While the garbage collector relieves the programmer from the
+			need to
+			explicitly manage memory, the programmer still
+			need to ensure
+			that he
+			does not keep unneeded object references, otherwise the
+			garbage
+			collector cannot release the
+			associated memory. Keeping unneeded
+			object references are typically called
+			<wordasword>memory leaks</wordasword>
+			.
+		</para>
+	</section>
+	<section id="java_classpath">
+		<title>Classpath</title>
+		<para>
+			The
+			<wordasword>classpath</wordasword>
+			defines where the Java compiler and Java runtime look
+			for
+			<filename>.class</filename>
+			files to
+			load. These instructions can be used in the Java program.
+		</para>
+		<para>
+			For
+			example, if you want to use an external Java
+			library
+			you have to
+			add
+			this
+			library to your classpath to use it in
+			your
+			program.
+		</para>
+	</section>
+</section>

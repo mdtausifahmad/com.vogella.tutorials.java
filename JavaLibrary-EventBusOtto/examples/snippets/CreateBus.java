@@ -1,0 +1,1 @@
+public static Bus bus = new Bus(ThreadEnforcer.MAIN);

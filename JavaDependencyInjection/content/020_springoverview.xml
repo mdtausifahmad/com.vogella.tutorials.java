@@ -1,0 +1,31 @@
+<section id="springoverview">
+	<title>Spring Overview</title>
+	<para> The Spring Framework is a very comprehensive framework.</para>
+	<para> The fundamental functionality provided by the Spring Container
+		is dependency injection. Spring provides a light-weight container,
+		e.g. the Spring core container, for dependency injection (DI).</para>
+	<para> This container allows to inject required objects into other
+		objects. This results in a design in which the Java class are not
+		hard-coupled. The injection in Spring is either done via setter
+		injection of via construction injection.</para>
+	<para>These classes which are managed by Spring must conform to
+		the JavaBean standard.</para>
+	<para>In the context of Spring classes are also referred to as beans
+		or as spring beans.</para>
+	<para>
+		The Spring core container:
+		<itemizedlist>
+			<listitem>
+				<para>handles the configuration, generally based on
+					annotations or on an XML file (XMLBeanFactory)</para>
+			</listitem>
+			<listitem>
+				<para>manages the selected Java classes via the BeanFactory
+				</para>
+			</listitem>
+		</itemizedlist>
+		<para> The core container uses the so-called bean factory to create
+			new objects. New objects are generally created as Singletons if not
+			specified differently.</para>
+	</para>
+</section>

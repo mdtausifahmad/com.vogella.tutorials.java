@@ -1,0 +1,28 @@
+<section id="createexcel">
+	<title>Create an Excel Spreadsheet</title>
+
+	<para>
+		Create a new Java project called
+		<wordasword>de.vogella.java.excel</wordasword>
+		.
+		Create the
+		<code>de.vogella.java.excel.writer</code> package
+		and the following
+		class.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/WriteExcel.java" />
+		</programlisting>
+	</para>
+	<para>
+		I assume that the code is pretty much self-explaining. I tried
+		to add lots of comments to make it easier to understand.For more
+		complex examples have a look at the excellent documentation of
+		the Java
+		Excel API which is also part of the distribution.
+	</para>
+
+</section>

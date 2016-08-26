@@ -1,0 +1,31 @@
+<section id="lazyinit">
+	<title>Lazy initialization</title>
+	<para> In case a variable is very expensive to create then sometimes it
+		is good to defer the creation of this variable until the variable is
+		needed. This is called lazy initialization.</para>
+	<para> In general lazy initialization should only be used if a analysis
+		has proven that this is really a very expensive operations. This is
+		based on the fact that lazy initialization makes it more difficult to
+		read the code.</para>
+	<para> I use the project "de.vogella.performance.lazyinitialization" for
+		the examples in this chapter. And a have a own field defined."</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/lazy/MyField.java" />
+		</programlisting>
+	</para>
+	<section id="lazyinit_synchronized">
+		<title>Concurrency - Overview</title>
+		<para> The simplest way is to use a synchronized block. As then field
+			access is always synchronized in case on read access this variant is
+			slow.</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="../examples/lazy/SynchronizedTest.java" />
+			</programlisting>
+		</para>
+	</section>
+
+</section>

@@ -1,0 +1,73 @@
+<section id="conversion">
+	<title>Type Conversion</title>
+	<para>If you use variables of different types Java requires for certain
+		types an explicit conversion. The following gives examples for this conversion.</para>
+	<section id="Conversion_tostring">
+		<title>Conversion to String</title>
+		<para>
+			Use the following to convert from other types to Strings
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/conversion/toStringConversion" />
+			</programlisting>
+		</para>
+
+	</section>
+
+	<section id="conversion_tonumber">
+		<title>Conversion from String to Number</title>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/conversion/fromStringToNumber" />
+			</programlisting>
+		</para>
+		<para>
+			The conversion from string to number is independent from the
+			locale settings, e.g., it is always using the English
+			notification for
+			number. In this notification a correct
+			number format is "8.20". Thed
+			German number "8,20" would
+			result in an error.
+		</para>
+		<para>
+			To convert from a German number, you have to use the
+			<code>NumberFormat</code>
+			class. The challenge is that when the value is,
+			for example, 98.00 then
+			the <code>NumberFormat</code> class would create a
+			<code>Long</code> which cannot be casted to
+			Double. Hence the following
+			complex conversion class.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/conversion/localeStringConversionToDouble" />
+			</programlisting>
+		</para>
+
+
+	</section>
+	<section id="conversion_toint">
+		<title>Double to int</title>
+		<para>int i = (int) double;</para>
+
+	</section>
+
+	<section id="conversion_sqldate">
+		<title>SQL Date conversions</title>
+		<para>Use the following to convert a Date to a SQL date</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/conversion/ConvertDateToSQLDate.java" />
+			</programlisting>
+		</para>
+
+
+	</section>
+</section>

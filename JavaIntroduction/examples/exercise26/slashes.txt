@@ -1,0 +1,4 @@
+
+MyFile file = new MyFile();
+file.readTextFile("c:/temp/person.txt");
+file.readTextFile("c:\\temp\\person.txt");

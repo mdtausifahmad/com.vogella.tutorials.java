@@ -1,0 +1,137 @@
+<section id="java_installation" role="wrapper">
+	<title>Installation of Java</title>
+	<section id="java_installation1">
+		<title>Check installation</title>
+		<para>
+			To run Java programs on your computer you must at least have the Java
+			runtime environment (JRE) installed. This might already be the case
+			on your machine.
+			You can test
+			is the JRE is installed and in your
+			current path by
+			opening a console
+			(if you are using
+			Windows: Win+R,
+			enter
+			<guilabel>cmd</guilabel>
+			and press Enter) and by typing in the
+			following command:
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/install/javaversion.sh" />
+			</programlisting>
+		</para>
+		<para>
+			If the JRE is installed and within your path, this commands
+			print
+			information about your Java installation. In this case you can skip
+			the Java installation description. You may want to note down if you
+			have a 32 bit or 64 bit version of Java, see
+			<xref linkend="java_installation_32or64" />
+			.
+			<para>
+			</para>
+			If the command line
+			returns
+			the
+			information that the program could not
+			be
+			found,
+			you
+			have to
+			install
+			Java.
+		</para>
+	</section>
+
+	<section id="java_installation_ubuntu">
+		<title>Install Java on Ubuntu</title>
+		<para>
+			On Ubuntu you can install Java 8 via the following command on
+			the
+			command line. These commands might change over time, if they do not work anymore please Google for the installation.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/install/ubuntu.sh" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="java_installation_windows">
+		<title>Install Java on MS Windows</title>
+
+		<para>
+			For Microsofts Windows, Oracle provides a native installer which
+			can be found on the Oracle website. The
+			central website for
+			installing
+			Java is located under the following URL and also contains
+			instructions how to install Java for other platforms: <ulink url="http://java.com"></ulink>.
+		</para>
+	</section>
+	<section id="java_installation_other">
+		<title>Installation problems and other operating systems</title>
+		<para>
+			If you have problems installing Java on your system,
+			search via Google
+			for
+			<guilabel>
+				How to install JDK on
+				<parameter>YOUR_OS</parameter>
+			</guilabel>
+			.
+			This
+			should result
+			in
+			helpful links. Replace
+			<parameter>YOUR_OS</parameter>
+			with your
+			operating
+			system, e.g.,
+			Windows,
+			Ubuntu, Mac OS X, etc.
+		</para>
+	</section>
+
+	<section id="java_installation3">
+		<title>Validate installation</title>
+		<para>
+			Switch again to the command line and run the following command.
+		</para>
+		<para>
+			<programlisting language="bourne">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/install/javaversion.sh" />
+			</programlisting>
+		</para>
+		<para>The output should be similar to the following output.</para>
+		<para>
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/install/javaversionresult.txt" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="java_installation_32or64">
+		<title>How can you tell you are using a 32 bit or 64 bit version of
+			Java?
+		</title>
+		<para>
+			You can run a 32 bit or a 64 bit version of Java on a 64 bit system.
+			If you use
+			<code>java -version</code>
+			and the output contains the "64-Bit" string you are using the 64 bit
+			version of Java otherwise your are using the 32 bit version. The
+			following is the output of a 64-bit version.
+		</para>
+		<para>
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/install/javaversionresult.txt" />
+			</programlisting>
+		</para>
+	</section>
+</section>

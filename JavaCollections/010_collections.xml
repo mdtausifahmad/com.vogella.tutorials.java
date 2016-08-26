@@ -1,0 +1,116 @@
+<section id="javacollections">
+	<title>Java Collections</title>
+	<section id="javacollections1">
+		<title>What are collections</title>
+		<indexterm>
+			<primary>Java Collections</primary>
+		</indexterm>
+		<para>
+			The Java language supports arrays to store several objects. An array is
+			initialized with an predefined size during
+			instantiation. To support more flexible data structures the core Java library provides the
+			<code>collection</code>
+			framework. A
+			collection
+			is a data structure which
+			contains and
+			processes a
+			set of data.
+			The
+			data
+			stored in the collection is
+			encapsulated and
+			the access to
+			the
+			data
+			is only
+			possible via predefined
+			methods. For example the developer can add elements to an collection via a method.
+			Collections use internally arrays for there storage but hide the complexity of managing the dynamic size from the developer.
+		</para>
+		<para>
+
+			For example if your application saves data in an
+			object of type
+			<code>People</code>
+			,
+			you can store several
+			<code>People</code>
+			objects in a
+			collection.
+		</para>
+
+
+	</section>
+	<section id="javacollections_typicaltypes1">
+		<title>Important default implementations</title>
+		<para>
+			Typical collections are: stacks, queues, deques, lists and
+			trees.
+		</para>
+		<para>
+			Java typically provides an interface, like
+			<code>List</code>
+			and one or several implementations for this interface, e.g.,
+			the
+			<code>ArrayList</code>
+			class and the
+			<code>LinkedList</code>
+			are implementations of the
+			<code>List</code>
+			interface.
+		</para>
+	</section>
+	<section id="javacollections_typicaltypes2">
+		<title>Type information with generics</title>
+		<para>
+			A class or interface whose declaration has one or more type parameters is a generic class or interface.
+			For example
+			<code>List</code>
+			defines one type parameter
+			<code><![CDATA[List<E>]]></code>
+			.
+		</para>
+		<para>
+			Java collections should get parameterized with an type
+			declaration. This enables the Java compiler to check if you try
+			to use your collection with the correct type of objects.
+			<wordasword>Generics</wordasword>
+			allow a type or method to operate on objects of
+			various
+			types while providing compile-time type safety. Before generics
+			you had to cast every object you read from a collection and if
+			you inserted an object of the wrong type into a collection you would create a runtime exception.
+		</para>
+
+	</section>
+	<section id="javacollections_lambdas">
+		<title>Collections and lambdas</title>
+		<para>The collection library support lambdas expressions. Operations on collections have been largely simplified with
+			this.
+		</para>
+		<para>
+			The following code shows an example how to create a Collection of
+			type
+			<code>List</code>
+			which is parameterized with <![CDATA[<String>]]>
+			to indicate to the Java compiler that only Strings are allowed in
+			this
+			list. Is uses a method reference and the
+			<code>foreach</code>
+			loop from Java 8.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+					href="./examples/javacollections/MyArrayList.java" />
+			</programlisting>
+		</para>
+
+		<para>If you try to put an object into this list which is not an object, you would
+			receive
+			a compiler error.
+		</para>
+	</section>
+</section>

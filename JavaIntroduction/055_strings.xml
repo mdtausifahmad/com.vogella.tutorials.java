@@ -1,0 +1,281 @@
+<section id="javastring">
+	<title>Strings</title>
+	<section id="javastringdefinition">
+		<title>Strings in Java</title>
+		<para>
+			The
+			<code>String</code>
+			class represents character strings. All string literals, for example,
+			"hello", are implemented as instances of this class. An instance of
+			this class is an object. Strings are immutable, e.g., an assignment
+			of
+			a new value to a
+			<code>String</code>
+			object creates a new object.
+		</para>
+	</section>
+
+	<section id="javastringpool">
+		<title>String pool in Java</title>
+		<para>
+			For memory efficiency Java uses a
+			<code>String</code>
+			pool. The string pool
+			allows string literals to be reused. This is
+			possible because
+			strings in Java are immutable.
+		</para>
+		<para>
+			If the same string literal is used in several places in the
+			Java
+			code, only one copy of that string is created.
+		</para>
+		<para>
+			Whenever a
+			<code>String</code>
+			object is created and gets a string literal
+			assigned, e.g., as in
+			<code>String s = "constant"</code>,
+			the string pool is used. However, the
+			<code>new</code>
+			operator forces a new
+			<code>String</code>
+			copy to be allocated, for example, in
+			<code>
+				String s = new String("constant");
+			</code>.
+		</para>
+	</section>
+
+	<section id="javastringcompare">
+		<title>Compare Strings in Java</title>
+		<para>
+			To compare the
+			<code>String</code>
+			objects
+			<code>s1</code>
+			and
+			<code>s2</code>,
+			use the
+			<code>s1.equals(s2)</code>
+			method.
+		</para>
+		<para>
+			A
+			<code>String</code>
+			comparison with
+			<code>==</code>
+			is incorrect, as
+			<code>==</code>
+			checks for object reference equality.
+			<code>==</code>
+			sometimes gives the correct result, as Java uses a
+			<code>String</code>
+			pool. The
+			following example would work with
+			<code>==</code>.
+		</para>
+		<para>This would work as expected.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/stringcompare/correct.java" />
+			</programlisting>
+		</para>
+		<para>This comparison would fail.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/stringcompare/wrong.java" />
+			</programlisting>
+		</para>
+		<warning>
+			<para>
+				Therefore, you should always use the
+				<code>equals()</code>
+				method when you compare strings.
+			</para>
+		</warning>
+	</section>
+
+	<section id="javastringhandling">
+		<title>Working with Strings</title>
+		<para>The following lists the most common string operations.</para>
+		<para>
+			<table frame='all'>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>Command</entry>
+							<entry>Description</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>
+								<code>"Testing".equals(text1);</code>
+							</entry>
+							<entry>
+								Return <code>true</code> if <code>text1</code>
+								is equal to <code>"Testing"</code>. The check is
+								case-sensitive.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>"Testing".equalsIgnoreCase(text1);</code>
+							</entry>
+							<entry>
+								Return <code>true</code> if <code>text1</code> is equal to
+								<code>"Testing"</code>. The check is not case-sensitive.
+								For example, it would also be true for <code>"testing"</code>.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>StringBuffer str1 = new StringBuffer();</code>
+							</entry>
+							<entry>
+								Define a new
+								<code>String</code>
+								with a variable length.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.charat(1);</code>
+							</entry>
+							<entry>
+								Return the character at position 1.
+								(Note: strings are
+								arrays of chars starting with 0)
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.substring(1);</code>
+							</entry>
+							<entry>Removes the first characters.</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.substring(1, 5);</code>
+							</entry>
+							<entry>
+								Gets the substring from the second to the fifth
+								character.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.indexOf("Test")</code>
+							</entry>
+							<entry>
+								Look for the
+								<code>String</code>
+								"Test" in String
+								<code>str</code>
+								.
+								Returns the index of the first
+								occurrence of the specified
+								string.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.lastIndexOf("ing")</code>
+							</entry>
+							<entry>
+								Returns the index of the last occurrence of the
+								specified
+								<code>String</code>
+								"ing" in the
+								<code>String</code>
+								str.
+								<code>StringBuffer</code>
+								does not support this method.
+								Hence first
+								convert the
+								<code>StringBuffer</code>
+								to
+								<code>String</code>
+								via method
+								<code>toString</code>.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.endsWith("ing")</code>
+							</entry>
+							<entry>
+								Returns <code>true</code> if <code>str</code>
+								ends with <code>String</code> <code>"ing"</code>
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.startsWith("Test")</code>
+							</entry>
+							<entry>
+								Returns <code>true</code> if
+								<code>String</code>
+								<code>str</code> starts with
+								<code>String</code>
+								<code>"Test"</code>.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.trim()</code>
+							</entry>
+							<entry>Removes leading and trailing spaces.</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.replace(str1, str2)</code>
+							</entry>
+							<entry>Replaces all occurrences of <code>str1</code> by <code>str2</code></entry>
+						</row>
+						<row>
+							<entry>
+								<code>str2.concat(str1);</code>
+							</entry>
+							<entry>Concatenates <code>str1</code> at the end of <code>str2</code>.</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str.toLowerCase()</code>
+								/
+								<code>str.toUpperCase()</code>
+							</entry>
+							<entry>Converts the string to lower- or uppercase</entry>
+						</row>
+						<row>
+							<entry>
+								<code>str1 + str2</code>
+							</entry>
+							<entry>Concatenate <code>str1</code> and <code>str2</code></entry>
+						</row>
+						<row>
+							<entry>
+								<code>String[] array = myString.split("-");</code>
+								<code>String[] array2 = myString.split("\\.");</code>
+							</entry>
+							<entry>
+								Splits the character separated <code>myString</code> into an array of strings.
+								<emphasis>
+									Attention: the split string is a regular expression,
+									so if you using special characters which have a meaning in
+									regular expressions, you need to quote them. In the second
+									example the . is used and must be quoted by two backslashes.
+								</emphasis>
+							</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</section>
+</section>

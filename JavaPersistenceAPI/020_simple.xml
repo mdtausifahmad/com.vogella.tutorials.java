@@ -1,0 +1,95 @@
+<section id="simple">
+	<title>Exercise: Usage of JPA in an Java application</title>
+	<section id="simple_model">
+		<title>Project and Entity</title>
+		<para>
+			Create a
+			<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html#firstjava"> Java project</ulink>
+			"de.vogella.jpa.simple". Create a
+			folder
+			"lib" and place the
+			required
+			JPA jars and derby.jar into this folder.
+			<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
+				Add the libs to the project classpath.
+			</ulink>
+		</para>
+		<para>Afterwards create the package "de.vogella.jpa.simple.model"
+			and
+			create
+			the following classes.
+		</para>
+
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Todo.java" />
+			</programlisting>
+		</para>
+	</section>
+	<section id="example_persistenceunit">
+		<title>Persistence Unit</title>
+		<para>
+			Create a
+			directory
+			"META-INF" in your "src" folder and create
+			the
+			file
+			"persistence.xml". This examples uses
+			EclipseLink specific flags
+			for
+			example via the
+			parameter "eclipselink.ddl-generation" you specify
+			that
+			the database
+			scheme
+			will be automatically dropped and created.
+
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/persistence.xml" />
+			</programlisting>
+		</para>
+		<para>
+			The database specified via "javax.persistence.jdbc.url" will be
+			automatically created by the
+			Derby Driver. You may
+			want to
+			adjust the
+			path, it currently is based on Linux notations and points to my home
+			directory on my Linux system.
+		</para>
+		<para>
+			To see the SQL generated for the databases set
+			eclipselink.ddl-generation.output-mode value from "database"
+			to
+			"sql-script" or "both". Two files will get generated
+			'createDDL.jdbc'
+			and
+			'dropDDL.jdbc'
+		</para>
+	</section>
+	<section id="simple_main">
+		<title>Test your installation</title>
+		<para>
+			Create the following Main class which will create a new entry
+			every
+			time it is called. After the first call you
+			need to remove the
+			property "eclipselink.ddl-generation" from persistence.xml otherwise
+			you will receive an error as
+			EclipseLink tries to create the database
+			scheme again. Alternative you could set the property to
+			"drop-and-create-tables" but this would drop your database schema at
+			every run.
+		</para>
+		<para>
+			<programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Main.java" />
+			</programlisting>
+		</para>
+		<para>Run you program several times to see that the database is
+			filled.
+		</para>
+	</section>
+</section>

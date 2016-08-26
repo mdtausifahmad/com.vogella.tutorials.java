@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Jacoco (Java Code Coverage) - Tutorial</title>
+		<author>
+			<firstname>Simon</firstname>
+			<surname>Scholz</surname>
+		</author>
+		<copyright>
+			<year>2016</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>24.03.2016</pubdate>
+		<releaseinfo>
+			<para>Version 1.0</para>
+		</releaseinfo>
+
+
+
+		<abstract id="abstract">
+			<title>Jacoco</title>
+			<para> This tutorial describes the usage of the Jacoco, which can be
+				used to check the code coverage of java projects.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_usage.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="070_gradle.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_maven.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="085_exercise_maven.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/Findbugs"?>
+</article>
+

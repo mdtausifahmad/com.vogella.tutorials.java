@@ -1,0 +1,189 @@
+<section id="javadef_variables">
+	<title>Variables and methods</title>
+	<section id="javadef_variable">
+		<title>Variable</title>
+		<para>
+			<wordasword>Variables</wordasword>
+			allow the Java program to store values during the
+			runtime of the
+			program.
+		</para>
+		<para>
+			A variable can either be a
+			<wordasword>primitive variable</wordasword>
+			or a
+			<wordasword>reference variable</wordasword>.
+			A
+			primitive variable contains the value while the
+			reference variable
+			contains a reference (pointer) to the object.
+			Hence, if you compare
+			two
+			reference variables, you compare if both
+			point to the same
+			object. To
+			compare objects, use the
+			<code>object1.equals(object2)</code>
+			method call.
+		</para>
+	</section>
+	<section id="javadef_instancevariable">
+		<title>Instance variable</title>
+		<para>
+			Instance variable is associated with an instance of
+			the class
+			(also called object). Access works over these objects.
+		</para>
+		<para>
+			Instance variables can have any access control and can be
+			marked <code>final</code> or <code>transient</code>.
+			Instance variables marked as final cannot
+			be changed after a value has been assigned to them.
+		</para>
+	</section>
+
+	<section id="javadef_localvariable">
+		<title>Local variable</title>
+		<para>
+			Local (stack) variable declarations cannot have access
+			modifiers.
+		</para>
+		<para>
+			<wordasword>final</wordasword>
+			is the only modifier available to local variables. This modifier
+			defines that the variable cannot be changed after the first assignment.
+		</para>
+		<para>
+			Local variables do not get default values, so they must be
+			initialized before use.
+		</para>
+	</section>
+
+	<section id="javadef_method">
+		<title>Methods</title>
+		<para>
+			A method is a block of code with parameters and a return value.
+			It can be called on the object.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/class/MyMethodExample.java" />
+			</programlisting>
+		</para>
+		<para>
+			Methods can be declared with var-args.
+			In this case the method
+			declares a
+			parameter which
+			accepts everything
+			from zero to many arguments (syntax:
+			type ... name;) A method
+			can only
+			have one var-args parameter and this
+			must be the
+			last parameter
+			in the
+			method.
+		</para>
+		<para>
+			Overwrite of a superclass method: A method must be of the
+			exact
+			same return parameter and the same arguments. Also the return
+			parameter must be the same. Overload methods: An overloaded method
+			is
+			a method with the same name, but different arguments. The return
+			type
+			can not be used to overload a method.
+		</para>
+	</section>
+	<section id="javadef_mainmethod">
+		<title>Main method</title>
+		<para>
+			A public static method with the following signature can be used
+			to
+			start a Java application. Such a method is typically called
+			<code>main</code>
+			method.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/class/main.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="javadef_constructor">
+		<title>Constructor</title>
+		<para>
+			A class contains
+			<wordasword>constructors</wordasword>
+			that are invoked to create objects
+			based on the class definition.
+		</para>
+		<para>
+			Constructor declarations look like method
+			declarations except
+			that
+			they use the name of the class and have no
+			return type.
+		</para>
+		<para>
+			A class can have several constructors with different parameters.
+			Each
+			class must define at least one constructor.
+		</para>
+		<para>
+			In the following example the constructor of the class expects a
+			parameter.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/class/MyConstructorExample2.java" />
+			</programlisting>
+		</para>
+		<para>
+			If
+			no
+			explicit
+			constructor is defined,
+			the compiler implicitly adds
+			a
+			constructor. If
+			the class is
+			sub-classed, then the constructor of the
+			super class is
+			always
+			called implicitly in this case.
+		</para>
+		<para>
+			In the following example the definition of the constructor without
+			parameters (also known as the
+			<wordasword>empty constructor</wordasword>)
+			is unnecessary. If not specified, the compiler would create one.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/class/MyConstructorExample.java" />
+			</programlisting>
+		</para>
+		<para>
+			The naming
+			convention for creating a constructor is
+			the following:
+			<code>classname
+				(Parameter p1, ...) { }
+			</code>.
+		</para>
+		<para>
+			Every object is created based on a constructor. This
+			constructor method is the first statement called before anything
+			else
+			can
+			be done with the object.
+		</para>
+	</section>
+</section>

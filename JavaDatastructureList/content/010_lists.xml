@@ -1,0 +1,61 @@
+<section id="list">
+	<title>List</title>
+	<para>
+		The following example is contained in the project
+		called
+		<wordasword>de.vogella.datastructures.list</wordasword>
+		.
+	</para>
+	<para>
+		A
+		<wordasword>List</wordasword>
+		represents a data structure which allows to dynamically
+		add, access and
+		remove objects of the same type. Adding objects to the
+		list is usually
+		done via
+		the
+		<code>add()</code>
+		method. The
+		<code>get(int i)</code>
+		method allows
+		to retrieve the
+		element
+		at
+		position i.
+	</para>
+
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/list/MyList.java" />
+		</programlisting>
+	</para>
+	<para> The following show contains a small JUnit test for the data
+		structure. I use in the
+		first test the MyList implementation and in the
+		second test the
+		standard Java List implementation.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/list/MyListTest.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		<tip>
+			You typically also have the
+			<code>remove(int i)</code>
+			method to remove the
+			element at position i but I leave this
+			implementation for the reader.
+			To delete elements in your list just
+			shift all elements after
+			position i one position to the left and
+			decrease size.
+		</tip>
+	</para>
+
+</section>

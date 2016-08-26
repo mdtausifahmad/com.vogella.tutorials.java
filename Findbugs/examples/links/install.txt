@@ -1,0 +1,3 @@
+# For an older Eclipse version use this update site
+http://findbugs.cs.umd.edu/eclipse
+

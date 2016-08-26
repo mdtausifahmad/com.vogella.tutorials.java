@@ -1,0 +1,5 @@
+
+# close the forest extensions
+# if the url below does not work you find alternative url via 
+# http://bitbucket.org/repo/all?name=hgforest
+hg clone https://vogella@bitbucket.org/vogella/hgforest-crew

@@ -1,0 +1,15 @@
+<section id="usingassertj">
+	<title>Using AssertJ Android</title>
+	<para>AssertJ Android allows you to write efficient assertions for
+		Android. The following examples are taken
+		from
+		their <ulink url="https://github.com/square/assertj-android">Github page for AssertJ Android</ulink>.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/start/Android.java" />
+		</programlisting>
+	</para>
+
+</section>

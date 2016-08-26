@@ -1,0 +1,257 @@
+<section id="java_interfaces">
+	<title>Java interfaces</title>
+	<section id="javadef_interface">
+		<title>What is an interface in Java?</title>
+		<para>
+			An
+			<wordasword>interfaces</wordasword>
+			is a type similar to a class and is defined via the
+			<code>interface</code>
+			keyword. Interfaces are used to define common behavior of implementing classes. If two classes implement the same
+			interface, other code which work on the interface level, can use objects of both classes.
+		</para>
+		<para>
+			Like a class an
+			interface defines
+			methods. Classes can
+			implement one or several interfaces. A class which
+			implements an
+			interface must provide
+			implementation for
+			all abstract methods defined in the interface.
+		</para>
+	</section>
+	<section id="javadef_interfacemethods">
+		<title>Abstract, default and static methods in Interfaces</title>
+		<para>
+			An interface can have abstract methods and
+			<wordasword>default</wordasword>
+			methods. A default method is defined via the
+			<code>default</code>
+			keyword at the beginning of the method signature. All other methods
+			defined in an interfaces are public
+			and
+			abstract –
+			explicit
+			declaration
+			of these modifiers is optional.
+		</para>
+		<para>
+			Interfaces can have constants which are always implicitly
+			public, static and final.
+		</para>
+		<para>
+			The following code shows an example implementation of an
+			interface.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyInterface.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="javadef_interfaceimplementing">
+		<title>Implementing Interfaces</title>
+		<para>
+			A class can implement an interface. In this case it must provide
+			concrete implementations of the abstract interface
+			methods.
+			If you
+			implement a method defined by an interface, you can use
+			<code>@Override</code>
+			annotation to indicate to the Java compiler that you actually want to
+			implement a method defined by this interface.
+			This way the compiler
+			can give you an error in you mis-typed the name of the method or in
+			the number of arguments. The
+			following class implements the
+			<code>MyInterface</code>
+			interface, its must therefore
+			implement the abstract method and can use the default
+			methods.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyClassImpl.java" />
+			</programlisting>
+		</para>
+
+	</section>
+	<section id="javadef_interfaceevolving">
+		<title>Evolving interfaces with default methods</title>
+		<para>Before Java 8 evolving interfaces, e.g., adding new methods to
+			an interface, was not possible because such a
+			change would break
+			existing implementations. Java 8 introduced default methods, now you
+			can extend an interface without
+			breaking clients by simply suppling a
+			default implementation with it. Adding such a default method is a
+			source an
+			binary compatible change.
+		</para>
+		<para>A class can always override a default method to supply a better
+			behavior.
+		</para>
+
+	</section>
+
+	<section id="javadef_interface_multiple">
+		<title>Multiple inheritance of methods</title>
+		<para>
+			If a class implements two interfaces and if these interfaces provide
+			the same
+			default
+			method, Java resolves the correct
+			method for the class
+			by the
+			following rules:
+
+			<orderedlist>
+				<listitem>
+					<para>Superclass wins always against the superinterface - If a
+						class can inherit a method from a superclass and a
+						superinterface,
+						the
+						class inherts
+						the superclass method. This is true for
+						concrete
+						and
+						abstract
+						superclass methods. This
+						rule implies that default
+						methods are
+						not
+						used if this method is also declared in the
+						superclass chain.
+					</para>
+				</listitem>
+				<listitem>
+					<para>Subtypes win over Supertypes - If a class can inherit a
+						method from two interfaces, and one is a subtype of
+						the other,
+						the
+						class inherts the method from the subtype
+					</para>
+				</listitem>
+				<listitem>
+					<para>In all other cases the class needs to implement the default
+						method
+					</para>
+				</listitem>
+			</orderedlist>
+		</para>
+		<para>The following listing demonstrates listing number 3. </para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/A.java" />
+			</programlisting>
+		</para>
+
+		<para>In your implementation you can also call the super method you
+			prefer.
+		</para>
+
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/A2.java" />
+			</programlisting>
+		</para>
+	</section>
+
+	<section id="javadef_functionalinterfaces">
+		<title>Functional interfaces</title>
+		<para>
+			All interfaces that have only one method are called
+			<wordasword>functional interfaces</wordasword>
+			.
+			Functional interfaces have the advantage that they can be used
+			together with
+			<wordasword>lambda expressions</wordasword>
+			. See
+			<xref linkend="lambdas_definition" />
+			to learn more about lambdas, e.g., the type of lambdas is a
+			functional interface.
+		</para>
+		<para>
+			The Java compiler automatically identifies functional
+			interfaces. The
+			only requirement is that they have only one
+			abstract method.
+			However,
+			is possible to capture the design
+			intent with a
+			<code>@FunctionalInterface</code>
+			annotation.
+		</para>
+		<para>
+			Several default Java interfaces are functional interfaces:
+			<itemizedlist>
+				<listitem>
+					<para>
+						<code>java.lang.Runnable</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>java.util.concurrent.Callable</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>java.io.FileFilter</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>java.util.Comparator</code>
+					</para>
+				</listitem>
+				<listitem>
+					<para>
+						<code>java.beans.PropertyChangeListener</code>
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		<para>
+			Java also contains the
+			<code>java.util.function</code>
+			package which contains functional interfaces which are frequently
+			used such as:
+			<itemizedlist>
+				<listitem>
+					<para><![CDATA[Predicate<T>]]>
+						- a boolean-valued property of an object
+					</para>
+				</listitem>
+				<listitem>
+					<para><![CDATA[Consumer<T>]]>
+						- an action to be performed on an object
+					</para>
+				</listitem>
+				<listitem>
+					<para><![CDATA[Function<T , R>]]>
+						- a function transforming a T to a R
+					</para>
+				</listitem>
+				<listitem>
+					<para><![CDATA[Supplier<T>]]>
+						- provides an instance of T (such as a factory)
+					</para>
+				</listitem>
+				<listitem>
+					<para><![CDATA[UnaryOperator<T>]]>
+						- a function from T to T
+					</para>
+				</listitem>
+				<listitem>
+					<para><![CDATA[BinaryOperator<T>]]>
+						- a function from (T, T) to T
+					</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+	</section>
+</section>

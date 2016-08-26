@@ -1,0 +1,92 @@
+<section id="findbugs">
+	<title>Using FindBugs in Eclipse</title>
+	<section id="findbug_config">
+		<title>Run FindBugs for a project</title>
+		<para>
+			To run the error analysis of FindBugs on a project, right-click
+			on it
+			and select the
+			<menuchoice>
+				<guimenu>Find Bugs...</guimenu>
+				<guisubmenu>Find Bugs</guisubmenu>
+			</menuchoice>
+			menu entry.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/runfindbugs10.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Run FindBugs on a project</phrase>
+				</textobject>
+			</mediaobject>
+		</para>
+	</section>
+	
+	<section id="findbug_using">
+        <title>View the errors reported by FindBugs</title>
+        <para>
+            FindBugs provides specialized views to see the reported error
+            messages. Select
+            <menuchoice>
+                <guimenu>Window</guimenu>
+                <guisubmenu>Show View</guisubmenu>
+                <guisubmenu>Other...</guisubmenu>
+            </menuchoice>
+            to access the views.
+        </para>
+        <para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/findbugs20.png" />
+
+                </imageobject>
+            </mediaobject>
+        </para>
+        <para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/findbugs30.png" />
+
+                </imageobject>
+            </mediaobject>
+        </para>
+        <para>
+            .
+            The FindBugs error messages are also displayed in the
+            <guilabel>Problems</guilabel>
+            view
+            or as decorators in the
+            <guilabel>Package Explorer</guilabel>
+            view.
+        </para>
+    </section>
+    
+	<section id="findbug_config_automatic">
+		<title>Configure automatic FindBugs run</title>
+		<para>
+			You can configure that FindBugs should run automatically for a
+			selected project. For this right-click
+			on a project and select
+			<guilabel>Properties</guilabel>
+			from the popup menu.
+			via the project properties.
+			Select
+			<menuchoice>
+				<guimenu>FindBugs</guimenu>
+				<guisubmenu>Run automatically
+				</guisubmenu>
+			</menuchoice>
+			.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/findbugsprojectproperties.png"/>
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+	
+</section>

@@ -1,0 +1,17 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	<para>
+		<ulink
+			url="http://www.onjava.com/pub/a/onjava/2002/06/19/log.html">
+			An introduction to the Java Logging API</ulink>, Brian Gilstrap
+		(OnJava.com, June 2002) talks about the use of the standard
+		logging API.
+	</para>
+
+	<para>
+		<ulink
+			url="http://www.fluffycat.com/Java/Logging/">
+			The Java Logging API</ulink>, Stuart Dabbs Halloway (JavaPro, June
+			2002) is another good introduction to the API.
+	</para>
+</section>

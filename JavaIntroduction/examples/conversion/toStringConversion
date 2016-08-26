@@ -1,0 +1,9 @@
+	
+// Convert from int to String
+String s1 = String.valueOf ( 10 ); // "10" 
+// Convert from double to String
+String s2 = String.valueOf ( Math.PI ); // "3.141592653589793"
+// Convert from boolean to String
+String s3 = String.valueOf ( 1 < 2 ); // "true" 
+// Convert from date to String
+String s4 = String.valueOf ( new Date() ); // "Tue Jun 03 14:40:38 CEST 2003"

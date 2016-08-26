@@ -1,0 +1,31 @@
+<section id="jaxb_tutorial">
+	<title>Tutorial: Using JAXB</title>
+	<para> Create a new Java project called "de.vogella.xml.jaxb".</para>
+	<para> Create the following domain model with the JAXB annotations.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/jaxb/Book.java" />
+		</programlisting>
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/jaxb/Bookstore.java" />
+		</programlisting>
+	</para>
+	<para> Create the following test program for writing and reading the
+		XML file.
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/jaxb/BookMain.java" />
+		</programlisting>
+	</para>
+	<para> If you run the BookMain an XML file will be created from the input
+		objects. Afterwards the file is read again and the objects are re-created
+		based on the XML file.
+	</para>
+</section>

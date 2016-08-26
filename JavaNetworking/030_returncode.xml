@@ -1,0 +1,56 @@
+
+<section id="javanetwork_returncode">
+	<title>Getting the return code from a webpage</title>
+	<para>HTML return codes are standardized codes which a web server
+		returns if a certain situation has occurred. For example the return
+		code "200" means the HTML request is ok and the server will perform
+		the require action, e.g. serving the webpage.
+	</para>
+	<para>The
+		following code will access web page and print the return
+		code
+		for the
+		HTML access.
+	</para>
+	<para>
+		The most important HTML return codes are:
+		<para>
+			<table frame='all'>
+				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
+					<colspec colname='c1' />
+					<colspec colname='c2' />
+					<thead>
+						<row>
+							<entry>Return Code</entry>
+							<entry>Explaination</entry>
+						</row>
+					</thead>
+					<tbody>
+						<row>
+							<entry>200</entry>
+							<entry>Ok</entry>
+						</row>
+						<row>
+							<entry> 301</entry>
+							<entry>Permanent redirect to another webpage</entry>
+						</row>
+						<row>
+							<entry> 400</entry>
+							<entry>Bad request</entry>
+						</row>
+						<row>
+							<entry> 404</entry>
+							<entry>Not found</entry>
+						</row>
+					</tbody>
+				</tgroup>
+			</table>
+		</para>
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/ReadReturnCode.java" />
+		</programlisting>
+	</para>
+</section>

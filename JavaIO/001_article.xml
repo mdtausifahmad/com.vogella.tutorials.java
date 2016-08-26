@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Reading and writing files in Java (Input/Output) - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2008 - 2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>06.08.2015</pubdate>
+		<releaseinfo>
+			<para>Version 1.2</para>
+		</releaseinfo>
+
+		<abstract id="abstract">
+			<title>Java Input Output</title>
+			<para> This tutorial explains how to read and write files via Java.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_simpleexample.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_readingprojectresources.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/JavaIO"?>
+</article>

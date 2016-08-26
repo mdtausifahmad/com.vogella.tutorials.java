@@ -1,0 +1,69 @@
+<section id="exercise_checkstyle_maven" role="wrapper">
+	<title>Exercise: Use the Checkstyle Maven plugin</title>
+	<section>
+		<title>Target</title>
+		<para>The target of this exercise is to check code being build with
+			maven and let the build fail in case rules are violated.
+		</para>
+	</section>
+	<section>
+		<title>Prerequisites</title>
+		<para>
+			For a introduction to maven please refer to the
+			<ulink url="http://www.vogella.com/tutorials/ApacheMaven/article.html">Apache Maven tutorial</ulink>
+			.
+		</para>
+	</section>
+	<section>
+		<title>Create a maven project</title>
+		<para>Create a quick start maven project in an IDE or by using the
+			command line like this:
+		</para>
+		<para>
+			<programlisting language="text">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/generate.txt" />
+			</programlisting>
+		</para>
+	</section>
+	<section>
+		<title>Apply the checkstyle plugin</title>
+		<para>
+			To activate the maven-checkstyle-plugin it has to be applied to the
+			generated
+			<filename>pom.xml</filename>
+			.
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="examples/checkstyle-plugin.xml" />
+			</programlisting>
+		</para>
+		<para>
+			This configuration uses the
+			<ulink
+				url="https://maven.apache.org/plugins-archives/maven-checkstyle-plugin-2.14/config/sun_checks.html">sun_checks.xml</ulink>
+			checkstyle rules by default. In order to specify custom checkstyle
+			rules a
+			<parameter>configLocation</parameter>
+			needs to be specified. See
+			<xref linkend="checkstyle_maven" />
+		</para>
+	</section>
+	<section>
+		<title>Validate</title>
+		<para>
+			Run
+			<code>mvn clean verify</code>
+			to see all checkstyle validation failures of the generated project.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/maven-checkstyle-execution.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

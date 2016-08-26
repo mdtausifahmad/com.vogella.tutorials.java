@@ -1,0 +1,2 @@
+
+hg fclone http://hg.openjdk.java.net/jdk6/jdk6

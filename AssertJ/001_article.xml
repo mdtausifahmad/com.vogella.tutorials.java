@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Testing with AssertJ assertions - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>29.05.2015</pubdate>
+		<releaseinfo>
+
+			<para>Version 0.3</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>AssertJ tutorial</title>
+			<para> This tutorial describes the usage of the AssertJ framework for
+				writing compact tests.
+			</para>
+		</abstract>
+	</articleinfo>
+	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_usuage.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/AssertJ"?>
+</article>

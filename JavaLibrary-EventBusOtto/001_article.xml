@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Using the Otto Event Bus library on Android - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+			and purpose of Java JAR
+			files.
+		</author>
+		<copyright>
+			<year>2014</year>
+			<year>2015</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>05.04.2015</pubdate>
+		<releaseinfo>
+			<para>Version 2.6</para>
+		</releaseinfo>
+
+
+
+		<abstract id="abstract">
+			<title>Using the Otto event bus in Android applications</title>
+			<para> This tutorial explains the usage of the Otto event bus library.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_example.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/JavaLibraries"?>
+</article>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Excel and Java - Read and Write Excel with Java - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2008</year>
+			<year>2009</year>
+			<year>2010</year>
+			<year>2011</year>
+			<year>2012</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>12.11.2012</pubdate>
+		<releaseinfo>
+			<para>Version 1.3</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>Abstract</title>
+			<para> This article demonstrate how to create and how to read Excel
+				files with the Java Excel API.
+			</para>
+		</abstract>
+	</articleinfo>
+	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/10_installation.xml" />
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/20_createexcel.xml" />
+	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/30_readexcel.xml" />
+	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
+	<?dbhtml-include href="../../web/vgwort/JavaExcel"?>
+</article>

@@ -1,0 +1,9 @@
+<section id="resources">
+	<title>Links and Literature</title>
+	<para>
+		<ulink url=" http://www.mysql.com">MySQL homepage</ulink>
+	</para>
+	<para>
+		<ulink url="http://dev.mysql.com/downloads/">Download link for MySQL</ulink>
+	</para>
+</section>

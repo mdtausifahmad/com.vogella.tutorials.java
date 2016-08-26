@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
+		<title>Testing with FEST Assertions - Tutorial</title>
+		<author>
+			<firstname>Lars</firstname>
+			<surname>Vogel</surname>
+		</author>
+		<copyright>
+			<year>2013</year>
+			<holder>vogella GmbH</holder>
+		</copyright>
+		<pubdate>20.06.2011</pubdate>
+		<releaseinfo>
+
+			<para>Version 0.1	</para>
+		</releaseinfo>
+		
+		<abstract id="abstract">
+			<title>FEST tutorial</title>
+			<para> This tutorial describes the usage of the FEST framework for
+				writing compact tests.
+			</para>
+		</abstract>
+	</articleinfo>
+	
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
+	<?dbhtml-include href="../../web/vgwort/FEST"?>
+</article>

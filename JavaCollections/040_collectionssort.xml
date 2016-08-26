@@ -1,0 +1,58 @@
+<section id="collectionssort">
+	<title>Using Collections.sort and Comparator in Java</title>
+	<indexterm>
+		<primary>Java Collections</primary>
+	</indexterm>
+	<para>
+		Sorting a collection in Java is easy, just use the
+		<code>Collections.sort(Collection)</code>
+		to sort your values. The following code shows an example for this.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/sort/Simple.java" />
+		</programlisting>
+	</para>
+
+
+	<para>
+		This is possible because Integer implements the
+		<code>Comparable</code>
+		interface. This interface defines the method compare which performs
+		pairwise comparison of the elements and returns -1
+		if the element is
+		smaller then the compared element, 0 if it is equal and 1 if it is
+		larger.
+	</para>
+	<para>
+		If what to sort differently you can define your custom implementation
+		based on the
+		<code>Comparator</code>
+		interface via a lambda expression.
+	</para>
+
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
+				href="./examples/sort/ListCustomSorterExample.java" />
+		</programlisting>
+	</para>
+	<para>
+		You can sort by any
+		any attribute or
+		even
+		a combination of attributes. For
+		example if you
+		have objects of
+		type
+		<code>Person</code>
+		with the attributes called
+		<code>income</code>
+		and
+		<code>dataOfBirth</code>
+		you could define different implementations of
+		<code>Comparator</code>
+		and sort the objects according to your needs.
+	</para>
+
+</section>

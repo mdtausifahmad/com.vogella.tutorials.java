@@ -1,0 +1,31 @@
+<section id="easymock_installation">
+	<title>Download Easy Mock</title>
+	<para>
+		Download
+		EasyMock
+		from the EasyMock Homepage
+		and add the
+		<code>easymock.jar</code>
+		library
+		to your classpath.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/links/easymock.txt" />
+		</programlisting>
+	</para>
+
+	<para>
+		You also
+		need to download the
+		<ulink url="http://objenesis.googlecode.com/svn/docs/download.html">Objenesis</ulink>
+		and
+		<ulink url="http://cglib.sourceforge.net/"> Cglib</ulink>
+		libraries
+		and add these
+		<filename>jars</filename>
+		to your classpath.
+	</para>
+
+</section>

@@ -1,0 +1,111 @@
+<section id="exercise_jacoco_usage_maven">
+	<title>Exercise: Run Jacoco during a Maven build</title>
+	<section>
+		<title>Target</title>
+		<para>The target of this exercise is to run Jacoco during a maven
+			build by using the jacoco-maven-plugin.
+		</para>
+	</section>
+	<section>
+		<title>Creating a sample Maven project</title>
+		<para>
+			Create a
+			<filename>com.example.jacoco</filename>
+			Maven project.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/maven-project-wizard-overview.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Press
+			<guibutton>Next</guibutton>
+			to get to the first Maven Project Wizard Page.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/maven-project-wizard-default-settings.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>
+			Here the defaults should be sufficient so that the
+			<guibutton>Next</guibutton>
+			button can be pressed directly. On the next page the
+			<parameter>maven-archetype-quickstart</parameter>
+			can be selected.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata
+						fileref="images/maven-project-wizard-quickstart-archetype.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>The following parameters can be used for the project
+			configuration:
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/maven-project-wizard-config.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		<para>When pressing finish a new maven project is created.</para>
+	</section>
+	<section>
+		<title>Applying the Jacoco plugin</title>
+		<para>
+			The complete contents of the
+			<filename>pom.xml</filename>
+			file should look like this:
+		</para>
+		<para>
+			<programlisting language="xml">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/maven/pom.xml" />
+			</programlisting>
+		</para>
+	</section>
+	<section>
+		<title>Validate</title>
+		<para>Run the following command in the command line or via the M2E
+			tooling:
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/maven/clean-verify.txt" />
+			</programlisting>
+		</para>
+		<para>
+			Besides the normal Maven build a
+			<filename>site</filename>
+			folder will be created.
+		</para>
+		<para>
+			Inside this folder will be a
+			<filename>jacoco-ut</filename>
+			folder, which contains the test coverage analysis files.
+		</para>
+		<para>
+			The
+			<filename>index.html</filename>
+			can be opened in a browser in order to visually see the test coverage
+			results.
+		</para>
+		<para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/jacoco-report-html.png" />
+				</imageobject>
+			</mediaobject>
+		</para>
+	</section>
+</section>

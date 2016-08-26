@@ -1,0 +1,15 @@
+<section id="resources">
+	<title>Links and Literature</title>
+
+	<section id="resources_jfreechart">
+		<title>JFreeChart Resources</title>
+		<para>
+			<ulink url="http://www.jfree.org/jfreechart/">
+				http://www.jfree.org/jfreechart/</ulink>
+			JFreeChart Homepage
+		</para>
+	</section>
+	
+
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
+</section>

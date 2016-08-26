@@ -1,0 +1,7 @@
+
+// Conversion from String to int
+int i = Integer.parseInt(String);
+// Conversion from float to int
+float f = Float.parseFloat(String);
+// Conversion from double to int
+double d = Double.parseDouble(String); 

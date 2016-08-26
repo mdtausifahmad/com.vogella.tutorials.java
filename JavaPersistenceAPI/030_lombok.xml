@@ -1,0 +1,31 @@
+<section id="lombok">
+	<title>Using lombok for entity classes</title>
+	<para>
+		In order to avoid writing too much boilerplate code for the
+		entity
+		classes you can use lombok, which automatically
+		generates appropriate getters, setters,
+		<code>toString()</code>
+		and
+		<code>hashCode()</code>
+		methods for the fields in a Java
+		class.
+	</para>
+	<para>
+		So the code of the
+		<code>Todo</code>
+		can be reduced to this:
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/LombokTodo.java" />
+		</programlisting>
+	</para>
+	<para>
+		See
+		<ulink url="http://www.vogella.com/tutorials/Lombok/article.html">http://www.vogella.com/tutorials/Lombok/article.html</ulink>
+		for further
+		information and more configuration possibilities of lombok.
+	</para>
+
+</section>

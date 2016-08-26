@@ -1,0 +1,13 @@
+<section id="jit">
+	<title>Just-in-time (JIT) compiler</title>
+	<para> The Java JIT compiler compiles Java bytecode to native
+		executable code during the runtime of your program. This increases the
+		runtime of your program significantly. The JIT compiler uses runtime
+		information to identify part in your application which are runtime
+		intensive. These so-called "hot spots" are then translated native
+		code. This is the reason why the JIT compiler is also called
+		"Hot-spot" compiler.</para>
+	<para> JIT is store the original bytecode and the native code in
+		memory because JIT can also decide that a certain compilation steps
+		must be revised.</para>
+</section>

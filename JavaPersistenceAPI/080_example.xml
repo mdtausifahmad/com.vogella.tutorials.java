@@ -1,0 +1,79 @@
+<section id="example">
+	<title>Relationship example</title>
+	<para>
+		Create a
+		Java project called
+		"de.vogella.jpa.eclipselink", create
+		again a
+		folder
+		"lib" and place the
+		required
+		JPA jars and derby.jar into
+		this folder.
+	</para>
+	<para>
+		Create the
+		<code>de.vogella.jpa.eclipselink.model</code>
+		package
+		and the following classes.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/datamodel/Family.java" />
+		</programlisting>
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/datamodel/Person.java" />
+		</programlisting>
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/datamodel/Job.java" />
+		</programlisting>
+	</para>
+	<para>
+		Create
+		the
+		file
+		"persistence.xml" in "src/META-INF". Remember to
+		change the path to the database.
+	</para>
+	<para>
+		<programlisting language="xml">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/eclipselink/persistence.xml" />
+		</programlisting>
+	</para>
+
+	<para>
+		The following check is implemented as a
+		<ulink url="http://www.vogella.com/tutorials/JUnit/article.html"> JUnit</ulink>
+		Test. For details please see 
+		<ulink url="http://www.vogella.com/tutorials/JUnit/article.html"> JUnit Tutorial</ulink>
+		. The setup() method will create a few test entries. After the
+		test
+		entries are created, they will be read and the one field of the
+		entries is changed and saved to the database.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/eclipselink/JpaTest.java" />
+		</programlisting>
+	</para>
+	<para> The project should now look like the following.</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/jpa10.gif" />
+
+			</imageobject>
+		</mediaobject>
+	</para>
+	<para> You should be able to run the JUnit tests successfully.
+	</para>
+</section>

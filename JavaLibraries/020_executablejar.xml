@@ -1,0 +1,64 @@
+
+<section id="jarfiles_executable">
+	<title>Executable JAR</title>
+	<indexterm>
+		<primary>Java libraries</primary>
+		<secondary>create</secondary>
+	</indexterm>
+	<para>
+		An executable
+		JAR
+		means the end-user can run the Java application
+		without explicitly
+		specifying the Java class which should be started.
+		This is done via a
+		<filename>MANIFEST.MF</filename>
+		file which tells the JVM among other things which class
+		contains the
+		<code>main()</code>
+		method and the classpath.
+	</para>
+	<para>
+		The following example shows one possible
+		<filename>MANIFEST.MF</filename>
+		file.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="./examples/manifest/MANIFEST.MF" />
+		</programlisting>
+	</para>
+
+	<para>
+		An empty line is required at the end of the
+		<filename>MANIFEST.MF</filename>
+		file.
+	</para>
+	<para>
+		You can create
+		an executable JAR file via the following command.
+		<programlisting> jar -cvmf MANIFEST.MF app1.jar *.class
+		</programlisting>
+	</para>
+	<para>
+		Eclipse provides an export wizard to create a JAR file which can be
+		started via
+		<menuchoice>
+			<guimenu>File</guimenu>
+			<guisubmenu>Export</guisubmenu>
+			<guisubmenu>Java</guisubmenu>
+			<guisubmenu>JAR file</guisubmenu>
+		</menuchoice>
+	</para>
+	<para>
+		<mediaobject>
+			<imageobject>
+				<imagedata fileref="images/eclipse_createjar10.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Create JAR file with the Eclipse export wizard</phrase>
+			</textobject>
+		</mediaobject>
+	</para>
+</section>

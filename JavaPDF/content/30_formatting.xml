@@ -1,0 +1,15 @@
+<section id="format">
+	<title>Formatting your output</title>
+	<para>
+		Paragraph allows to set the alignment and the indentation. For
+		this example create project "de.vogella.itext.position" similar to the
+		previously created ones.
+		Create the following class "PositionPdf.java".
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/format/PositionPdf.java" />
+		</programlisting>
+	</para>
+</section>

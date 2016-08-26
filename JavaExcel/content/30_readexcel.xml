@@ -1,0 +1,30 @@
+<section id="createexcel">
+	<title>Read an existing Excel Spreadsheet</title>
+
+	<para>Reuse the project "de.vogella.java.excel".
+		Create a package
+		"de.vogella.java.excelreader" and the following class
+		"ReadExcel".
+	</para>
+	<para>
+		<programlisting>
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+				parse="text" href="../examples/ReadExcel.java" />
+		</programlisting>
+	</para>
+	<para>Create an excel spreadsheet and save it somewhere,
+		e.g.
+		"c:/temp/lars.xls".
+	</para>
+
+	<para>
+		I assume that the code is pretty much self-explaining. I tried
+		to add lots of comments to make it easier to understand.For more
+		complex examples have a look at the excellent documentation of
+		the Java
+		Excel API which is also part of the distribution.
+	</para>
+
+
+
+</section>

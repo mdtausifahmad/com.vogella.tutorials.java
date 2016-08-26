@@ -1,0 +1,18 @@
+<section id="lombok">
+    <title>Introduction to lombok</title>
+    <para>Lombok is used to reduce boilerplate code for model/data objects, e.g., it can generate
+        getters and setters for those object automatically by using Lombok annotations.</para>
+    <para>The easiest way is to use the <code>@Data</code> annotation.</para>
+    <para>
+        <programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/LombokTodo.java"/>
+			</programlisting></para>
+    <para>By simply adding the <code>@data</code> annotation you get all this for free:</para>
+    <para>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="images/data-todo.png"/>
+            </imageobject>
+        </mediaobject>
+    </para>
+</section>

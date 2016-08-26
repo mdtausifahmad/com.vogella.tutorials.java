@@ -1,0 +1,115 @@
+<section id="java_additionaldefinition">
+	<title>More Java language constructs</title>
+	<section id="javadef_classmethod">
+		<title>Class methods and class variables</title>
+		<para>
+			Class methods and class variables are associated with the class
+			and not
+			an instance of the class, i.e., objects. To refer to these
+			elements, you can use the
+			classname and a dot (".") followed by the
+			class
+			method or class
+			variable name.
+		</para>
+		<para>
+			Class methods and class variables are declared with the
+			<code>static</code>
+			keyword. Class methods are also called
+			<wordasword>static methods</wordasword>
+			and class variables are also called
+			<wordasword>static variables</wordasword>
+			or
+			<wordasword>static fields</wordasword>.
+		</para>
+		<para>
+			An example for the usage of a static field is
+			<code>println</code>
+			of the following statement:
+			<code>System.out.println("Hello World")</code>.
+			Hereby
+			<code>out</code>
+			is a static field, an object of type
+			<code>PrintStream</code>
+			and you call the
+			<code>println()</code>
+			method on this object.
+		</para>
+		<para>
+			If you define a static variable, the Java runtime
+			environment
+			associates
+			one class
+			variable for a class no matter how
+			many
+			instances
+			(objects)
+			exist. The static variable can therefore be seen as a
+			global
+			variable.
+		</para>
+		<para>
+			The following code demonstrates the usage of
+			<code>static</code>
+			fields.
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/static/MyStaticExample.java" />
+			</programlisting>
+		</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/static/Tester.java" />
+			</programlisting>
+		</para>
+		<para>
+			If a variable should be defined as constant, you declare it with the
+			<code>static</code>
+			and the
+			<code>final</code>
+			keyword.
+		</para>
+		<para>
+			The static method runs without any instance of the class, it
+			cannot directly access
+			non-static variables or methods.
+		</para>
+	</section>
+
+	<section id="javadef_abstractclass">
+		<title>Abstract class and methods</title>
+		<para>
+			A class and method can be declared as
+			<code>abstract</code>.
+			An
+			<code>abstract</code>
+			class can not be directly instantiated.
+		</para>
+		<para>
+			If a class has at least one method, which only contains the declaration
+			of
+			the method, but not the implementation, then this class is
+			<code>abstract</code>
+			and
+			can not be instantiated. Sub-classes need then to define the
+			methods
+			except if they are also declared as abstract.
+		</para>
+		<para>
+			If a class contains an abstract method, it also needs to get
+			defined
+			with the keyword
+			<code>abstract</code>.
+		</para>
+		<para>The following example shows an abstract class.</para>
+		<para>
+			<programlisting language="java">
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+					parse="text" href="./examples/abstract/MyAbstractClass.java" />
+			</programlisting>
+		</para>
+	</section>
+</section>

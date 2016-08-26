@@ -1,0 +1,39 @@
+<section id="overview">
+	<title>Java 8 Date and Time API introduction</title>
+	<para> The Java language provides direct support for time-based
+		objects. While early versions of Java already had support for Date and Time,
+		the Java 8 release contained a new API based on immutable-value classes, which are thread-safe. These classes provide a fluent API for
+		construction.
+	</para>
+	<para>
+		The
+		<code>java.time.LocalDate</code>
+		and the
+		<code>java.time.LocalTime</code>
+		classes provide a representation of date and time without timezones. They represent date and time from
+		the context of an observer, such as
+		a calendar on a desk or a clock on your wall.
+	</para>
+	<para>
+		<code>java.time.LocalDateTime</code>
+		represents both a date and a time.
+	</para>
+	<para>The following code snippet demonstrates the usage these objects.</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/local/ExampleLocalDateandTimeCreation.java" />
+		</programlisting>
+	</para>
+
+	<para>
+		The
+		<code>java.time.Duration</code>
+		class can be used to describe durations.
+	</para>
+	<para>
+		<programlisting language="java">
+			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/local/ExampleDuration.java" />
+		</programlisting>
+	</para>
+
+</section>

@@ -1,0 +1,4 @@
+
+sudo aptitude build-dep openjdk-6
+
+sudo aptitude install openjdk-6-jdk 
