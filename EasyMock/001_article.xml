@@ -24,15 +24,17 @@
 			
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="002_prerequisites.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_easymock.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_installation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_example.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::002_prerequisites.adoc[]
+include::020_easymock.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::040_installation.adoc[]
+include::100_example.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
 	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="005_resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/EasyMock"?>
-</article>
+include::005_resources.adoc[]
+
+

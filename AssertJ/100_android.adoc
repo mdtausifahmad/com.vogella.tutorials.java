@@ -1,4 +1,3 @@
-
 == Using AssertJ Android
 
 AssertJ Android allows you to write efficient assertions for

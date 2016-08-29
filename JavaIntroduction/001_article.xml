@@ -38,36 +38,38 @@
 			
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_installation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_firstjavaprogram.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="024_languagestructure.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="026_interfaces.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_annotations.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="031_variables.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="032_modifier.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="034_imports.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="038_additional.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="040_cheatsheets.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="044_ide.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="050_exercises_starter.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="052_exercises_starter_solution.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="100_statements.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="120_loops.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="140_arrays.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="055_strings.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="200_lambdas.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="220_streams.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="230_optional.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_typeconversion.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="400_scheduletasks.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::012_installation.adoc[]
+include::020_firstjavaprogram.adoc[]
+include::024_languagestructure.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::026_interfaces.adoc[]
+include::030_annotations.adoc[]
+include::031_variables.adoc[]
+include::032_modifier.adoc[]
+include::034_imports.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::038_additional.adoc[]
+include::040_cheatsheets.adoc[]
+include::044_ide.adoc[]
+include::050_exercises_starter.adoc[]
+include::052_exercises_starter_solution.adoc[]
+include::100_statements.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::120_loops.adoc[]
+include::140_arrays.adoc[]
+include::055_strings.adoc[]
+include::200_lambdas.adoc[]
+include::220_streams.adoc[]
+include::230_optional.adoc[]
+include::080_typeconversion.adoc[]
+include::400_scheduletasks.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
 	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/JavaIntroduction"?>
-</article>
+
+
+

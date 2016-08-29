@@ -23,20 +23,21 @@
 				principle and then explains how to use dependency injection in Java application based javax.inject.
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_dependencyinjection.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_springoverview.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/040_installation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/050_datamodel.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/070_usageannotations.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/080_usagexml.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/200_summary.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::content/010_dependencyinjection.adoc[]
+include::content/020_springoverview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::content/040_installation.adoc[]
+include::content/050_datamodel.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::content/070_usageannotations.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::content/080_usagexml.adoc[]
+include::content/200_summary.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
 	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/JavaDependencyInjection"?>
-</article>
+
+

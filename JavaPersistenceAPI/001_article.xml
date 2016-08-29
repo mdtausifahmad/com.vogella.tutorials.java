@@ -38,18 +38,20 @@
 
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="012_eclipselink.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="015_installation.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_simple.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_lombok.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="080_example.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::012_eclipselink.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::015_installation.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::020_simple.adoc[]
+include::030_lombok.adoc[]
+include::080_example.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
 	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/JavaPersistenceAPI"?>
-</article>
+
+
+

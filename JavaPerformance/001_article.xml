@@ -36,22 +36,24 @@
 			
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/012_memory.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/014_garbagecollector.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/015_jvmsettings.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween02"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/020_runtimeinfo.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/070_lazyinitialization.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/100_jit.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween03"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/200_profiler.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/220_loadtest.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::content/010_overview.adoc[]
+include::content/012_memory.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::content/014_garbagecollector.adoc[]
+include::content/015_jvmsettings.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::content/020_runtimeinfo.adoc[]
+include::content/070_lazyinitialization.adoc[]
+include::content/100_jit.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
+include::content/200_profiler.adoc[]
+include::content/220_loadtest.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
 	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/JavaPerformance"?>
-</article>
+
+
+

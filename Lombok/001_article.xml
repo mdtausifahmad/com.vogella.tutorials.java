@@ -22,8 +22,8 @@
 			
 		</abstract>
 	</articleinfo>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml"/>
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml"/>
-	<?dbhtml-include href="../../web/vgwort/SWTCustomWidget"?>
-</article>
+include::010_overview.xml"/>
+include::../web/advertisement/inBetween01.adoc[]
+include::006_resources.xml"/>
+
+

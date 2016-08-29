@@ -29,15 +29,16 @@
 			
 		</abstract>
 	</articleinfo>
-	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/10_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/12_prerequisition.xml" />
-	<?dbhtml-include href="../../web/advertisement/inBetween01"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/30_jaxb.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="content/40_tutorial.xml" />
-	<?dbhtml-include href="../../web/advertisement/beforeSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::content/10_overview.adoc[]
+include::content/12_prerequisition.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::content/30_jaxb.adoc[]
+include::content/40_tutorial.adoc[]
+
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
 	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/JAXB"?>
-</article>
+
+
