@@ -47,12 +47,11 @@
 
 	<section id="exercise_retrolambda_use">
 === Validate setup by using a lambda expressions
-		Using the lambda configuration by using it with your button to show a Toast once the button is clicked. 
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/MainActivity.java" />
-			</programlisting>
+		Using the lambda configuration by using it with your button to show a Toast once the button is clicked.
+[source,java]
+-----
+include::res/MainActivity.java[]
+----
 		
 
 	</section>

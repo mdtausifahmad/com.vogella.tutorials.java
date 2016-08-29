@@ -9,37 +9,39 @@
 		The
 		`java.util.Collections`
 		class provides useful functionalities for working with collections.
-	
-	<table frame='all'>
+
+.Table Title
+|===
+
 === Collections
 		<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 			<colspec colname='c1' colwidth="1*" />
 			<colspec colname='c2' colwidth="2*" />
-			<thead>
-				<row>
-					<entry>Method</entry>
-					<entry>Description</entry>
-				</row>
-			</thead>
-			<tbody>
-				<row>
-					<entry>Collections.copy(list, list)</entry>
-					<entry>Copy a collection to another</entry>
-				</row>
-				<row>
-					<entry>Collections.reverse(list)</entry>
-					<entry>Reverse the order of the list</entry>
-				</row>
-				<row>
-					<entry>Collections.shuffle(list)</entry>
-					<entry>Shuffle the list</entry>
-				</row>
-				<row>
-					<entry>Collections.sort(list)</entry>
-					<entry>Sort the list</entry>
-				</row>
-			</tbody>
-		</tgroup>
-	</table>
+			
+				
+|Method
+|Description
+				
+			
+			
+				
+|Collections.copy(list, list)
+|Copy a collection to another
+				
+				
+|Collections.reverse(list)
+|Reverse the order of the list
+				
+				
+|Collections.shuffle(list)
+|Shuffle the list
+				
+				
+|Collections.sort(list)
+|Sort the list
+				
+			
+		
+	|===
 
 </section>

@@ -45,7 +45,10 @@
 		
 		
 			The following table describes the visibility:
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Access Level
 				<tgroup cols='5' align='left' colsep='1' rowsep='1'>
 					<colspec colname='Modifier' />
@@ -53,47 +56,47 @@
 					<colspec colname='Package' />
 					<colspec colname='Subclass' />
 					<colspec colname='World' />
-					<thead>
-						<row>
-							<entry>Modifier</entry>
-							<entry>Class</entry>
-							<entry>Package</entry>
-							<entry>Subclass</entry>
-							<entry>World</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>public</entry>
-							<entry>Y</entry>
-							<entry>Y</entry>
-							<entry>Y</entry>
-							<entry>Y</entry>
-						</row>
-						<row>
-							<entry>protected</entry>
-							<entry>Y</entry>
-							<entry>Y</entry>
-							<entry>Y</entry>
-							<entry>N</entry>
-						</row>
-						<row>
-							<entry>no modifier</entry>
-							<entry>Y</entry>
-							<entry>Y</entry>
-							<entry>N</entry>
-							<entry>N</entry>
-						</row>
-						<row>
-							<entry>private</entry>
-							<entry>Y</entry>
-							<entry>N</entry>
-							<entry>N</entry>
-							<entry>N</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+					
+						
+|Modifier
+|Class
+|Package
+|Subclass
+|World
+						
+					
+					
+						
+|public
+|Y
+|Y
+|Y
+|Y
+						
+						
+|protected
+|Y
+|Y
+|Y
+|N
+						
+						
+|no modifier
+|Y
+|Y
+|N
+|N
+						
+						
+|private
+|Y
+|N
+|N
+|N
+						
+					
+				
+			|===
 		
 	</section>
 

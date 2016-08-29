@@ -32,11 +32,10 @@
 			To read a text file you can use the
 			`Files.readAllBytes`
 			method. The usage of this method is demonstrated in the following listing.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/read/ReadFile.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/read/ReadFile.java[]
+----
 		
 
 		
@@ -47,13 +46,10 @@
 			structure you can use the
 			`Files.readAllLines`
 			method.
-		
-
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/read/ReadFileList.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/read/ReadFileList.java[]
+----
 		
 
 		
@@ -78,28 +74,26 @@
 		
 			In the following
 			example unnecessary whitespace at the end of each line is removed and empty lines are filterer.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/read/Files.lines.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/read/Files.lines.java[]
+----
 		
 		The next example demonstrates how to filter out lines based on a certain regular expression.
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/read/Files.linesRegex.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/read/Files.linesRegex.java[]
+----
 		
 	</section>
 	<section id="javaio_writefile">
 === Writing a file in Java
 		To write a file you can use the
 			following method:
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/write/WriteFile.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/write/WriteFile.java[]
+----
 		
 
 	</section>

@@ -63,16 +63,14 @@
 		
 			The following code demonstrates how you can override a method
 			from a superclass.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyBaseClass.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyExtensionClass2.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/class/MyBaseClass.java[]
+----
+[source,java]
+-----
+include::res/class/MyExtensionClass2.java[]
+----
 		
 		
 			It is good practice to always use the
@@ -102,11 +100,10 @@
 		Java supports that annotations can be placed on any type. The
 			following gives several examples assuming the
 			annotations exists.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/typeannotations/Type.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/typeannotations/Type.java[]
+----
 		
 
 

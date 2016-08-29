@@ -29,11 +29,10 @@
 			`toString`
 			method as described by the following codeing and solve the TODO. This method is used to convert the object to a
 			String representation.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise01/PersontoString.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/exercise01/PersontoString.java[]
+----
 		
 		
 			Create a new class called

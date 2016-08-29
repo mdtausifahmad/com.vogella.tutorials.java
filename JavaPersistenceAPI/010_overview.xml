@@ -162,30 +162,32 @@
 			(name="newColumnName").
 		
 		 The following annotations can be used.
-		
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Annotations for fields / getter and setter
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
-					<tbody>
-						<row>
-							<entry>@Id</entry>
-							<entry> Identifies the unique ID of the database entry</entry>
-						</row>
-						<row>
-							<entry>@GeneratedValue</entry>
-							<entry> Together with an ID this annotation defines that this value is generated
+					
+						
+|@Id
+| Identifies the unique ID of the database entry
+						
+						
+|@GeneratedValue
+| Together with an ID this annotation defines that this value is generated
 								automatically.
-							</entry>
-						</row>
-						<row>
-							<entry>@Transient</entry>
-							<entry> Field will not be saved in database</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+						
+|@Transient
+| Field will not be saved in database
+						
+					
+				
+			|===
 		
 	</section>
 	<section id="jpaintro_relationships">
@@ -209,32 +211,29 @@
 			the
 			attribute "mappedBy", e.g.
 			@ManyToMany(mappedBy="attributeOfTheOwningClass".
-		
-		
-		
-		
-		
-		
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Relationship annotations
 				<tgroup cols='1' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
-					<tbody>
-						<row>
-							<entry>@OneToOne</entry>
-						</row>
-						<row>
-							<entry>@OneToMany</entry>
-						</row>
-						<row>
-							<entry>@ManyToOne</entry>
-						</row>
-						<row>
-							<entry>@ManyToMany</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+					
+						
+|@OneToOne
+						
+						
+|@OneToMany
+						
+						
+|@ManyToOne
+						
+						
+|@ManyToMany
+						
+					
+				
+			|===
 		
 	</section>
 

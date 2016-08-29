@@ -14,37 +14,39 @@
 	
 	
 		The most important HTML return codes are:
-		
-			<table frame='all'>
+
+.Table Title
+|===
+
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
-					<thead>
-						<row>
-							<entry>Return Code</entry>
-							<entry>Explaination</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>200</entry>
-							<entry>Ok</entry>
-						</row>
-						<row>
-							<entry> 301</entry>
-							<entry>Permanent redirect to another webpage</entry>
-						</row>
-						<row>
-							<entry> 400</entry>
-							<entry>Bad request</entry>
-						</row>
-						<row>
-							<entry> 404</entry>
-							<entry>Not found</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+					
+						
+|Return Code
+|Explaination
+						
+					
+					
+						
+|200
+|Ok
+						
+						
+| 301
+|Permanent redirect to another webpage
+						
+						
+| 400
+|Bad request
+						
+						
+| 404
+|Not found
+						
+					
+				
+			|===
 		
 	
 	

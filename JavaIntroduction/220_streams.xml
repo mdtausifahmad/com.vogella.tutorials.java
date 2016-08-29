@@ -18,11 +18,10 @@
 		Allow to create a stream of sequence of primitive int-valued
 			elements supporting sequential and parallel
 			aggregate operations.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/IntStreamExample.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/stream/IntStreamExample.java[]
+----
 		
 	</section>
 	<section id="lambdas_reduction">
@@ -30,18 +29,14 @@
 		Allow to create a stream of sequence of primitive int-valued
 			elements supporting sequential and parallel
 			aggregate operations.
-		
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/Task.java" />
-			</programlisting>
-		
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/StreamTester.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/stream/Task.java[]
+----
+[source,java]
+-----
+include::res/stream/StreamTester.java[]
+----
 		
 	</section>
 
@@ -54,12 +49,10 @@
 			final result string from it with the
 			`reduce`
 			method.
-		
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/JavaStreamExample.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/stream/JavaStreamExample.java[]
+----
 		
 	</section>
 
@@ -70,28 +63,25 @@
 			https://www.eclipsecon.org/europe2015/session/eclipse-collections-example">Goldmann Sachs Collection presentation at EclipseCOn 2015</ulink>
 		
 		Lets assume the following data model.
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/PetType.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/Pet.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/Person.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/stream/PetType.java[]
+----
+[source,java]
+-----
+include::res/stream/Pet.java[]
+----
+[source,java]
+-----
+include::res/stream/Person.java[]
+----
 		
 		With this data model you can use streams and lambdas to filter and search the data as demonstrated in the
 			following example.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/stream/Example.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/stream/Example.java[]
+----
 		
 
 	</section>

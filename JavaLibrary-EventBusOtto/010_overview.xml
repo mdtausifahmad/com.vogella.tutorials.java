@@ -73,12 +73,10 @@
 			typically done in the
 			`Application`
 			object of your Android application.
-		
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/CreateBus.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/snippets/CreateBus.java[]
+----
 		
 		
 			In this example the
@@ -122,12 +120,10 @@
 			method of the
 			`Bus`
 			class.
-		
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/Register.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/snippets/Register.java[]
+----
 		
 
 		
@@ -146,11 +142,10 @@
 			method of the
 			`Bus`
 			class.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/Send.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/snippets/Send.java[]
+----
 		
 	</section>
 
@@ -178,12 +173,10 @@
 			method of the
 			`Bus`
 			class.
-		
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/snippets/Produce.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/snippets/Produce.java[]
+----
 		
 	</section>
 

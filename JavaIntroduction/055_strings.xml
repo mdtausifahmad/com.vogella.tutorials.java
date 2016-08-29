@@ -101,78 +101,80 @@
 	<section id="javastringhandling">
 === Working with Strings
 		The following lists the most common string operations.
-		
-			<table frame='all'>
+
+.Table Title
+|===
+
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
-					<thead>
-						<row>
-							<entry>Command</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>
+					
+						
+|Command
+|Description
+						
+					
+					
+						
+|
 								`"Testing".equals(text1);`
-							</entry>
-							<entry>
+							
+|
 								Return `true` if `text1`
 								is equal to `"Testing"`. The check is
 								case-sensitive.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`"Testing".equalsIgnoreCase(text1);`
-							</entry>
-							<entry>
+							
+|
 								Return `true` if `text1` is equal to
 								`"Testing"`. The check is not case-sensitive.
 								For example, it would also be true for `"testing"`.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`StringBuffer str1 = new StringBuffer();`
-							</entry>
-							<entry>
+							
+|
 								Define a new
 								`String`
 								with a variable length.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`str.charat(1);`
-							</entry>
-							<entry>
+							
+|
 								Return the character at position 1.
 								(Note: strings are
 								arrays of chars starting with 0)
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`str.substring(1);`
-							</entry>
-							<entry>Removes the first characters.</entry>
-						</row>
-						<row>
-							<entry>
+							
+|Removes the first characters.
+						
+						
+|
 								`str.substring(1, 5);`
-							</entry>
-							<entry>
+							
+|
 								Gets the substring from the second to the fifth
 								character.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`str.indexOf("Test")`
-							</entry>
-							<entry>
+							
+|
 								Look for the
 								`String`
 								"Test" in String
@@ -181,13 +183,13 @@
 								Returns the index of the first
 								occurrence of the specified
 								string.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`str.lastIndexOf("ing")`
-							</entry>
-							<entry>
+							
+|
 								Returns the index of the last occurrence of the
 								specified
 								`String`
@@ -203,67 +205,67 @@
 								`String`
 								via method
 								`toString`.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`str.endsWith("ing")`
-							</entry>
-							<entry>
+							
+|
 								Returns `true` if `str`
 								ends with `String` `"ing"`
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`str.startsWith("Test")`
-							</entry>
-							<entry>
+							
+|
 								Returns `true` if
 								`String`
 								`str` starts with
 								`String`
 								`"Test"`.
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`str.trim()`
-							</entry>
-							<entry>Removes leading and trailing spaces.</entry>
-						</row>
-						<row>
-							<entry>
+							
+|Removes leading and trailing spaces.
+						
+						
+|
 								`str.replace(str1, str2)`
-							</entry>
-							<entry>Replaces all occurrences of `str1` by `str2`</entry>
-						</row>
-						<row>
-							<entry>
+							
+|Replaces all occurrences of `str1` by `str2`
+						
+						
+|
 								`str2.concat(str1);`
-							</entry>
-							<entry>Concatenates `str1` at the end of `str2`.</entry>
-						</row>
-						<row>
-							<entry>
+							
+|Concatenates `str1` at the end of `str2`.
+						
+						
+|
 								`str.toLowerCase()`
 								/
 								`str.toUpperCase()`
-							</entry>
-							<entry>Converts the string to lower- or uppercase</entry>
-						</row>
-						<row>
-							<entry>
+							
+|Converts the string to lower- or uppercase
+						
+						
+|
 								`str1 + str2`
-							</entry>
-							<entry>Concatenate `str1` and `str2`</entry>
-						</row>
-						<row>
-							<entry>
+							
+|Concatenate `str1` and `str2`
+						
+						
+|
 								`String[] array = myString.split("-");`
 								`String[] array2 = myString.split("\\.");`
-							</entry>
-							<entry>
+							
+|
 								Splits the character separated `myString` into an array of strings.
 								<emphasis>
 									Attention: the split string is a regular expression,
@@ -271,11 +273,11 @@
 									regular expressions, you need to quote them. In the second
 									example the . is used and must be quoted by two backslashes.
 								</emphasis>
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 	</section>
 </section>

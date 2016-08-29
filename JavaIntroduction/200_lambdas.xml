@@ -28,11 +28,10 @@
 			has
 			`forEach`
 			method which accepts a lambda expression.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/lambda/LambdaTest.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/lambda/LambdaTest.java[]
+----
 		
 
 	</section>

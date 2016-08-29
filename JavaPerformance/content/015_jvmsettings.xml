@@ -12,39 +12,40 @@
 		settings.
 	
 	 To turn performance you can use certain parameters in the JVM.
-	
-	
-		<table frame='all'>
+
+.Table Title
+|===
+
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
 				<colspec colname='c2' />
-				<thead>
-					<row>
-						<entry> Parameter</entry>
-						<entry>Description</entry>
-					</row>
-				</thead>
-				<tbody>
-					<row>
-						<entry>
+				
+					
+| Parameter
+|Description
+					
+				
+				
+					
+|
 							
 								-Xms1024m
 							
-						</entry>
-						<entry>Set the minimum available memory for the JVM to 1024
-							Megabyte</entry>
-					</row>
-					<row>
-						<entry>
+						
+|Set the minimum available memory for the JVM to 1024
+							Megabyte
+					
+					
+|
 							-Xmx1800m
-						</entry>
-						<entry>Set the maximum available memory for the JVM to 1800
+						
+|Set the maximum available memory for the JVM to 1800
 							Megabyte. The Java application cannot use more heap memory then
-							defined via this parameter. </entry>
-					</row>
-				</tbody>
-			</tgroup>
-		</table>
+							defined via this parameter. 
+					
+				
+			
+		|===
 	
 	
 		<tip> Increase the values in these parameters to avoid the following

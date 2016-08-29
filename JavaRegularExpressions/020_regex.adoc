@@ -19,7 +19,7 @@ elements.
 |Regular Expression |Description
 
 |`.`
-|Matches any character</entry>
+|Matches any character
 
 |`^regex`
 |Finds regex that must match at the beginning of the line.
@@ -52,13 +52,13 @@ to 7,
 but not d1.
 
 |`X|Z`
-|Finds X or Z.</entry>
+|Finds X or Z.
 
 |`XZ`
-|Finds X directly followed by Z.</entry>
+|Finds X directly followed by Z.
 
 |`$`
-|Checks if a line end follows.</entry>
+|Checks if a line end follows.
 |===
 
 === Meta characters
@@ -93,7 +93,7 @@ instead of
 |A non-word character `[^\w]`
 
 |`\S+`
-|Several non-whitespace characters</entry>
+|Several non-whitespace characters
 
 |`\b`
 |Matches a word boundary where a word character is `[a-zA-Z0-9_]`

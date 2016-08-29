@@ -13,11 +13,10 @@
 			<wordasword>class</wordasword>
 			keyword and must start with a capital letter. The body of a class is
 			surrounded by {}.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/statements/MyClass.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/statements/MyClass.java[]
+----
 		
 		
 			The data associated with a class is stored in
@@ -165,16 +164,14 @@
 			The following codes demonstrates how a class can extend another
 			class. In Java a class can only extend a maximum
 			of one class.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyBaseClass.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyExtensionClass.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/class/MyBaseClass.java[]
+----
+[source,java]
+-----
+include::res/class/MyExtensionClass.java[]
+----
 		
 	</section>
 
@@ -242,11 +239,10 @@ image::exception_throw_callstack.png" scale="40" />
 			So when calling methods, which throw checked Exceptions the
 				Exceptions have either to be caught or to be
 				re-thrown.
-			
-			
-				<programlisting language="java">
-					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exceptions/CatchException.java" />
-				</programlisting>
+[source,java]
+-----
+include::res/exceptions/CatchException.java[]
+----
 			
 			
 				Checked Exceptions are used when an error can be predicted

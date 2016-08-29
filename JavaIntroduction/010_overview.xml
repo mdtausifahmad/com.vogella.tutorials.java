@@ -140,10 +140,10 @@
 
 	<section id="javaoverview_helloworld">
 === Hello world Java program
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/helloworld/HelloWorld.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/helloworld/HelloWorld.java[]
+----
 		
 	</section>
 	<section id="javaoverview">

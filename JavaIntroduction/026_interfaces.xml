@@ -43,11 +43,10 @@
 		
 			The following code shows an example implementation of an
 			interface.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyInterface.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/class/MyInterface.java[]
+----
 		
 
 	</section>
@@ -70,12 +69,10 @@
 			interface, its must therefore
 			implement the abstract method and can use the default
 			methods.
-		
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/MyClassImpl.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/class/MyClassImpl.java[]
+----
 		
 
 	</section>
@@ -142,21 +139,19 @@
 				</listitem>
 			</orderedlist>
 		
-		The following listing demonstrates listing number 3. 
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/A.java" />
-			</programlisting>
+		The following listing demonstrates listing number 3.
+[source,java]
+-----
+include::res/class/A.java[]
+----
 		
 
 		In your implementation you can also call the super method you
 			prefer.
-		
-
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/class/A2.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/class/A2.java[]
+----
 		
 	</section>
 

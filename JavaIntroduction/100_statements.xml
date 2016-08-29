@@ -68,62 +68,63 @@
 			`null` before doing
 			the real
 			check.
-		
-		
-			<table frame='all'>
+
+.Table Title
+|===
+
 		=== Boolean
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
 					<colspec colname='c2' />
-					<thead>
-						<row>
-							<entry>Operations</entry>
-							<entry>Description</entry>
-						</row>
-					</thead>
-					<tbody>
-						<row>
-							<entry>`==`</entry>
-							<entry>
+					
+						
+|Operations
+|Description
+						
+					
+					
+						
+|`==`
+|
 								Is equal, in case of objects the system
 								checks if the
 								reference variable point
 								to the same object. It will not compare
 								the content of the objects!
-							</entry>
-						</row>
-						<row>
-							<entry>
+							
+						
+						
+|
 								`<![CDATA[ && ]]>`
-							</entry>
-							<entry>And</entry>
-						</row>
-						<row>
-							<entry>`!=`</entry>
-							<entry>
+							
+|And
+						
+						
+|`!=`
+|
 								is not equal, similar to `==`.
-							</entry>
-						</row>
-						<row>
-							<entry>`a.equals(b)`</entry>
-							<entry>Checks if string a equals b.</entry>
-						</row>
-						<row>
-							<entry>`a.equalsIgnoreCase(b)`</entry>
-							<entry>
+							
+						
+						
+|`a.equals(b)`
+|Checks if string a equals b.
+						
+						
+|`a.equalsIgnoreCase(b)`
+|
 								Checks if string a equals b while
 								ignoring lower cases.
-							</entry>
-						</row>
-						<row>
-							<entry>`If (value ? false : true) {}`</entry>
-							<entry>
+							
+						
+						
+|`If (value ? false : true) {}`
+|
 								Negotiation: return true if value is not true.
-							</entry>
-						</row>
-					</tbody>
-				</tgroup>
-			</table>
+							
+						
+					
+				
+			|===
 		
 	</section>
 </section>

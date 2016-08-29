@@ -11,9 +11,10 @@
 		your Eclipse IDE afterwards.
 	</para>
 	<para>
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/links/install.txt" />
-		</programlisting>
+[source,java]
+-----
+include::res/links/install.txt[]
+----
 	</para>
 	<para>
 		The following webpage provides downloads for later versions,e.g., Eclipse 4.6.

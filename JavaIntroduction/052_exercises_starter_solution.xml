@@ -6,16 +6,14 @@
 			The following is the expected result after
 			<xref linkend="exercises_starter1" />
 			.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise04/Person.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise04/Main.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/exercise04/Person.java[]
+----
+[source,java]
+-----
+include::res/exercise04/Main.java[]
+----
 		
 	</section>
 
@@ -25,16 +23,14 @@
 			The following is the expected result after
 			<xref linkend="exercises_starter2" />
 			.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise06/Person.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise06/Main.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/exercise06/Person.java[]
+----
+[source,java]
+-----
+include::res/exercise06/Main.java[]
+----
 		
 	</section>
 
@@ -45,15 +41,14 @@
 			.
 		
 === Define getter and setter methods
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise10/Person.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise10/Main.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/exercise10/Person.java[]
+----
+[source,java]
+-----
+include::res/exercise10/Main.java[]
+----
 		
 	</section>
 
@@ -64,21 +59,18 @@
 			The following is the expected result after
 			<xref linkend="exercises_starter4" />
 			.
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise16/Address.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise16/Person.java" />
-			</programlisting>
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise16/Main.java" />
-			</programlisting>
+[source,java]
+-----
+include::res/exercise16/Address.java[]
+----
+[source,java]
+-----
+include::res/exercise16/Person.java[]
+----
+[source,java]
+-----
+include::res/exercise16/Main.java[]
+----
 		
 	</section>
 </section>

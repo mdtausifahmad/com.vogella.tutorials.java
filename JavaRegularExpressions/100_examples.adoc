@@ -132,9 +132,28 @@ Assume you want to find the following:
 
 [source,console]
 ----
-        <table frame='all'>
+
+.Table Title
+|===
+
             <title>Test methods on Solo</title>
 -----
 
-You can use the following pattern for that: `\s+<table frame='all'>(?s).*<title>(.*)</title>` and replace it with `.Table $1\R|===\R`.
+You can use the following pattern for that: `\s+
 
+.Table Title
+|===
+(?s).*<title>(.*)</title>` and replace it with `.Table $1\R|===\R`.
+
+
+You can also replace statements like the following:
+[source,console]
+----
+        <programlisting language="java">
+                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/statements/MyClass.java" />
+            </programlisting>
+----            
+
+
+Regex: `\s+<programlisting language="java">\R.\s+<xi:include xmlns:xi="http://www\.w3\.org/2001/XInclude" parse="text" href="\./examples/(.*).\s+/>\R.\s+</programlisting>`
+Target: `\R[source,java]\R-----\Rinclude::res/$1[]\R----
