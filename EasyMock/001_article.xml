@@ -34,7 +34,7 @@ include::100_example.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+
 include::005_resources.adoc[]
 
 

@@ -30,7 +30,7 @@ include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_example.adoc[]
 
-	<?dbhtml-include href="../../web/advertisement/afterSupport"?>
+
 include::006_resources.adoc[]
 
 
