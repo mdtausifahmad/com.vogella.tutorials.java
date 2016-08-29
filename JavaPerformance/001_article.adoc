@@ -1,14 +1,6 @@
-=  - Tutorial
-:linkcss:
-:sectnums:                                                          
-:experimental:
-:icons:
-:imagesdir: ./img
-Lars Vogel, (c) 2009, 2016 vogella GmbH
-Version 0.3, 06.07.2016
-:docinfodir: ../
-:vgwort: XXX
-
+<?xml version="1.0"?>
+<article>
+	<articleinfo>
 === Java Performance - Memory and Runtime Analysis - Tutorial
 		
 		<author>
@@ -42,8 +34,8 @@ Version 0.3, 06.07.2016
 				memory for Java. It discusses then how to get the runtime and the
 				memory consumption of a Java application.
 			
-  
-  
+		</abstract>
+	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::content/010_overview.adoc[]
 include::content/012_memory.adoc[]

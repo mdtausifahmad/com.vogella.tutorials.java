@@ -10,3 +10,4 @@
 	 JIT is store the original bytecode and the native code in
 		memory because JIT can also decide that a certain compilation steps
 		must be revised.
+</section>

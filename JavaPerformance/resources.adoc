@@ -3,20 +3,24 @@
 	<section id="resources_performance">
 === Performance
 		
-https://www.ibm.com/developerworks/java/library/j-jtp09196/"> 
+			<ulink
+				url="https://www.ibm.com/developerworks/java/library/j-jtp09196/"> 
 				https://www.ibm.com/developerworks/java/library/j-jtp09196/</ulink>
 			Java theory and practice: Instrumenting applications with JMX
 		
 		
-http://www.ibm.com/developerworks/java/library/j-jtp11137.html"> 
+			<ulink
+				url="http://www.ibm.com/developerworks/java/library/j-jtp11137.html"> 
 			http://www.ibm.com/developerworks/java/library/j-jtp11137.html</ulink>
 			Java theory and practice: Stick a fork in it, Part 1
 		
 		
-http://www.ibm.com/developerworks/java/library/j-jtp03048.html"> 
+			<ulink
+				url="http://www.ibm.com/developerworks/java/library/j-jtp03048.html"> 
 				http://www.ibm.com/developerworks/java/library/j-jtp03048.html</ulink>
 			Java theory and practice: Stick a fork in it, Part 2
 		
 		
+	</section>
 
-
+</section>
