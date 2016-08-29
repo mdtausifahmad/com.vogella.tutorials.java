@@ -77,16 +77,16 @@
 		
 		This would work as expected.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/stringcompare/correct.java[]
+[source,java]
+----
+include::res/stringcompare/correct.java[]
 ----
 		
 		This comparison would fail.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/stringcompare/wrong.java[]
+[source,java]
+----
+include::res/stringcompare/wrong.java[]
 ----
 		
 		<warning>

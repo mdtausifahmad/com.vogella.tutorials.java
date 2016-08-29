@@ -75,7 +75,7 @@
 			Java collections should get parameterized with an type
 			declaration. This enables the Java compiler to check if you try
 			to use your collection with the correct type of objects.
-			<wordasword>Generics</wordasword>
+			_Generics_
 			allow a type or method to operate on objects of
 			various
 			types while providing compile-time type safety. Before generics

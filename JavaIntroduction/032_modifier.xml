@@ -4,18 +4,18 @@
 === Access modifiers
 		
 			There are three access modifiers keywords available in Java:
-			<wordasword>public</wordasword>,
-			<wordasword>protected</wordasword>
+			_public_,
+			_protected_
 			and
-			<wordasword>private</wordasword>.
+			_private_.
 		
 		
 			There are four access levels:
-			<wordasword>public</wordasword>,
-			<wordasword>protected</wordasword>,
-			<wordasword>default</wordasword>
+			_public_,
+			_protected_,
+			_default_
 			and
-			<wordasword>private</wordasword>.
+			_private_.
 			They define how the corresponding
 			element is visible to
 			other
@@ -29,16 +29,16 @@
 		
 		
 			The access levels
-			<wordasword>protected</wordasword>
+			_protected_
 			and
-			<wordasword>default</wordasword>
+			_default_
 			are similar. A
-			<wordasword>protected</wordasword>
+			_protected_
 			class can be
 			accessed from the package and sub-classes
 			outside the
 			package, while a
-			<wordasword>default</wordasword>
+			_default_
 			class can get accessed only via
 			the
 			same package.

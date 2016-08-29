@@ -2,9 +2,9 @@
 == Memory handling in Java
 	
 		Java handles its memory in two areas. The
-		<wordasword>heap</wordasword>
+		_heap_
 		and the
-		<wordasword>stack</wordasword>
+		_stack_
 		. We will start with a short overview of memory in general on a
 		computer. Then the Java heap and stack is explained.
 	

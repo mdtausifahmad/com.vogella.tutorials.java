@@ -44,12 +44,7 @@
 	
 		Eclipse provides an export wizard to create a JAR file which can be
 		started via
-		<menuchoice>
-			<guimenu>File</guimenu>
-			<guisubmenu>Export</guisubmenu>
-			<guisubmenu>Java</guisubmenu>
-			<guisubmenu>JAR file</guisubmenu>
-		</menuchoice>
+		menu:File[Export > Java > JAR file]
 	
 	
 image::eclipse_createjar10.png[]

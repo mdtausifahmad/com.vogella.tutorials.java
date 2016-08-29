@@ -1,92 +1,72 @@
-<section id="exercise_jacoco_usage_maven">
 == Exercise: Run Jacoco during a Maven build
-	<section>
+
 === Target
-		The target of this exercise is to run Jacoco during a maven
-			build by using the jacoco-maven-plugin.
-		
 
-	<section>
+The target of this exercise is to run Jacoco during a maven
+build by using the jacoco-maven-plugin.
+
 === Creating a sample Maven project
-		
-			Create a
-			`com.example.jacoco`
-			Maven project.
-		
-		
+
+Create a
+`com.example.jacoco`
+Maven project.
+
 image::maven-project-wizard-overview.png[]
-		
-		
-			Press
-			<guibutton>Next</guibutton>
-			to get to the first Maven Project Wizard Page.
-		
-		
+
+Press
+btn:[Next]
+to get to the first Maven Project Wizard Page.
+
 image::maven-project-wizard-default-settings.png[]
-		
-		
-			Here the defaults should be sufficient so that the
-			<guibutton>Next</guibutton>
-			button can be pressed directly. On the next page the
-			`maven-archetype-quickstart`
-			can be selected.
-		
-		
-			<mediaobject>
-				<imageobject>
-					<imagedata
-						fileref="images/maven-project-wizard-quickstart-archetype.png[]
-		
-		The following parameters can be used for the project
-			configuration:
-		
-		
+
+Here the defaults should be sufficient so that the
+btn:[Next]
+button can be pressed directly. On the next page the
+`maven-archetype-quickstart`
+can be selected.
+
+image::maven-project-wizard-quickstart-archetype.png[]
+
+The following parameters can be used for the project
+configuration:
+
 image::maven-project-wizard-config.png[]
-		
-		When pressing finish a new maven project is created.
 
-	<section>
+When pressing finish a new maven project is created.
+
 === Applying the Jacoco plugin
-		
-			The complete contents of the
-			`pom.xml`
-			file should look like this:
-		
-		
-			<programlisting language="xml">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/maven/pom.xml[]
-----
-		
 
-	<section>
-=== Validate
-		Run the following command in the command line or via the M2E
-			tooling:
-		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/maven/clean-verify.txt[]
+The complete contents of the
+`pom.xml`
+file should look like this:
+
+[source,xml]
 ----
-		
-		
-			Besides the normal Maven build a
-			`site`
-			folder will be created.
-		
-		
-			Inside this folder will be a
-			`jacoco-ut`
-			folder, which contains the test coverage analysis files.
-		
-		
-			The
-			`index.html`
-			can be opened in a browser in order to visually see the test coverage
-			results.
-		
-		
+include::res/maven/pom.xml[]
+----
+
+=== Validate
+
+Run the following command in the command line or via the M2E
+tooling:
+
+[source,java]
+----
+include::res/maven/clean-verify.txt[]
+----
+
+Besides the normal Maven build a
+`site`
+folder will be created.
+
+Inside this folder will be a
+`jacoco-ut`
+folder, which contains the test coverage analysis files.
+
+The
+`index.html`
+can be opened in a browser in order to visually see the test coverage
+results.
+
 image::jacoco-report-html.png[]
-		
 

@@ -37,9 +37,9 @@
 			if they are based on the same constant value.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/switch.java[]
+[source,java]
+----
+include::res/switch.java[]
 ----
 		
 
@@ -52,7 +52,7 @@
 		
 		
 			<![CDATA[ && ]]>and
-			|| are both <wordasword>Short Circuit Methods</wordasword>
+			|| are both _Short Circuit Methods_
 			which means that they
 			terminate once
 			the result of an evaluation is already clear.

@@ -20,7 +20,7 @@
 			Public License (GPL). Oracle
 			continues this project
 			called
-			<wordasword>OpenJDK</wordasword>
+			_OpenJDK_
 			.
 		
 		
@@ -29,7 +29,7 @@
 			The current
 			version of Java is Java 1.8 which is also known
 			as
-			<wordasword>Java 8</wordasword>
+			_Java 8_
 			.
 		
 		
@@ -50,11 +50,11 @@
 			Java
 			virtual
 			machine. The
-			<wordasword>Java platform</wordasword>
+			_Java platform_
 			is usually associated with the
-			<wordasword>Java virtual machine</wordasword>
+			_Java virtual machine_
 			and the
-			<wordasword>Java core libraries</wordasword>
+			_Java core libraries_
 			.
 		
 		
@@ -174,10 +174,10 @@ image::jvmintroduction10.png[]
 
 		
 			Java programs are compiled by the Java compiler into
-			<wordasword>bytecode</wordasword>
+			_bytecode_
 			.
 			The Java virtual machine interprets this
-			<wordasword>bytecode</wordasword>
+			_bytecode_
 			and
 			executes
 			the Java program.
@@ -189,10 +189,10 @@ image::jvmintroduction10.png[]
 === Java Runtime Environment vs. Java Development Kit
 		
 			A Java distribution typically comes in two flavors, the
-			<wordasword>Java Runtime Environment</wordasword>
+			_Java Runtime Environment_
 			(JRE)
 			and the
-			<wordasword>Java Development Kit</wordasword>
+			_Java Development Kit_
 			(JDK).
 		
 		
@@ -221,7 +221,7 @@ image::jvmintroduction10.png[]
 			Java source files are written as plain text documents.
 			The programmer
 			typically writes Java source code in an
-			<wordasword>Integrated Development Environment</wordasword>
+			_Integrated Development Environment_
 			(IDE) for
 			programming. An IDE supports the programmer in the task of
 			writing code, e.g.,
@@ -237,7 +237,7 @@ image::jvmintroduction10.png[]
 			`javac`
 			).
 			The Java compiler creates the
-			<wordasword>bytecode</wordasword>
+			_bytecode_
 			instructions.
 			These instructions are
 			stored in
@@ -253,7 +253,7 @@ image::jvmintroduction10.png[]
 			referred to
 			by other objects.
 			The Java
-			<wordasword>garbage collector</wordasword>
+			_garbage collector_
 			checks all object references and finds the objects which can be
 			automatically released.
 		
@@ -268,7 +268,7 @@ image::jvmintroduction10.png[]
 			collector cannot release the
 			associated memory. Keeping unneeded
 			object references are typically called
-			<wordasword>memory leaks</wordasword>
+			_memory leaks_
 			.
 		
 
@@ -276,7 +276,7 @@ image::jvmintroduction10.png[]
 === Classpath
 		
 			The
-			<wordasword>classpath</wordasword>
+			_classpath_
 			defines where the Java compiler and Java runtime look
 			for
 			`.class`

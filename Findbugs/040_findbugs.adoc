@@ -50,10 +50,10 @@ image::runfindbugs10.png"/>
         
             .
             The FindBugs error messages are also displayed in the
-            <guilabel>Problems</guilabel>
+            _Problems_
             view
             or as decorators in the
-            <guilabel>Package Explorer</guilabel>
+            _Package Explorer_
             view.
         
     
@@ -64,7 +64,7 @@ image::runfindbugs10.png"/>
 			You can configure that FindBugs should run automatically for a
 			selected project. For this right-click
 			on a project and select
-			<guilabel>Properties</guilabel>
+			_Properties_
 			from the popup menu.
 			via the project properties.
 			Select

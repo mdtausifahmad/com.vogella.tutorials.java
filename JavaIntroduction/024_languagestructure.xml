@@ -10,7 +10,7 @@
 		
 			A class is
 			defined by the
-			<wordasword>class</wordasword>
+			_class_
 			keyword and must start with a capital letter. The body of a class is
 			surrounded by {}.
 [source,java]
@@ -20,12 +20,12 @@ include::res/statements/MyClass.java[]
 		
 		
 			The data associated with a class is stored in
-			<wordasword>variables</wordasword>
+			_variables_
 			;
 			the
 			behavior associated to a class or object is implemented
 			with
-			<wordasword>methods</wordasword>
+			_methods_
 			.
 		
 		
@@ -56,7 +56,7 @@ include::res/statements/MyClass.java[]
 === Package
 		
 			Java groups classes into functional
-			<wordasword>packages</wordasword>
+			_packages_
 			.
 		
 		
@@ -96,9 +96,9 @@ include::res/statements/MyClass.java[]
 			name collision occurs if two
 			programmers give
 			the same
-			<wordasword>fully qualified name</wordasword>
+			_fully qualified name_
 			to a class. The
-			<wordasword>fully qualified name</wordasword>
+			_fully qualified name_
 			of a class in Java consists of the package name followed by a
 			dot
 			(.)
@@ -127,7 +127,7 @@ include::res/statements/MyClass.java[]
 			puts his class into package
 			`xmlreader`
 			you can distinguish between these classes by using the
-			<wordasword>fully qualified name</wordasword>
+			_fully qualified name_
 			,
 			e.g,
 			`xmlreader.Test`
@@ -144,15 +144,15 @@ include::res/statements/MyClass.java[]
 			A class can be derived from another class. In this case this
 			class is
 			called a
-			<wordasword>subclass</wordasword>
+			_subclass_
 			.
 			Another common phrase is that
-			<wordasword>a class extends another class.</wordasword>
+			_a class extends another class._
 		
 		
 			The class
 			from which the subclass is derived is called a
-			<wordasword>superclass</wordasword>
+			_superclass_
 			.
 		
 		

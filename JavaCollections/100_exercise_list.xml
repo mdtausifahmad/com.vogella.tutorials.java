@@ -8,7 +8,7 @@
 	
 	
 		Create a Java class called
-		<wordasword>Server</wordasword>
+		_Server_
 		with one String attribute called
 		<property>url</property>
 		.
@@ -24,19 +24,13 @@
 	
 		Create getter and setter methods for this attribute using code
 		generation capabilities of Eclipse. For this select
-		<menuchoice>
-			<guimenu>Source</guimenu>
-			<guisubmenu>Generate Getters and Setters</guisubmenu>
-		</menuchoice>
+		menu:Source[Generate Getters and Setters]
 		from the Eclipse menu.
 	
 	
 		Create via Eclipse a constructor which gets a url as parameter. For
 		this select
-		<menuchoice>
-			<guimenu>Source</guimenu>
-			<guisubmenu>Generate Constructor using Fields...</guisubmenu>
-		</menuchoice>
+		menu:Source[Generate Constructor using Fields...]
 		from the Eclipse menu.
 	
 	
@@ -81,7 +75,7 @@ image::collectioncodecompletion10.png"
 
 	
 		Use code completion to create a
-		<guilabel>foreach</guilabel>
+		_foreach_
 		loop and write the
 		`toString`
 		method to the console. Use code completion based on

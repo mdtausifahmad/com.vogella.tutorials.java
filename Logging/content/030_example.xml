@@ -4,7 +4,7 @@
 === Create the logger
 		
 			This example is stored in the project called
-			<wordasword>com.vogella.logger</wordasword>.
+			_com.vogella.logger_.
 		
 		Create your own formatter class.
 		
@@ -42,10 +42,10 @@
 		<tip>
 			
 				After you ran your program you need to
-				<guilabel>Refresh</guilabel>
+				_Refresh_
 				your project in Eclipse (or check the file system directly) to see
 				the files in the
-				<guilabel>Package Explorer</guilabel>
+				_Package Explorer_
 				view.
 			
 		

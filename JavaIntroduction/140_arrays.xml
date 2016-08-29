@@ -9,9 +9,9 @@
 			array is addressed via the 0 index, the second via 1, etc.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/array/TestMain.java[]
+[source,java]
+----
+include::res/array/TestMain.java[]
 ----
 		
 
@@ -22,16 +22,16 @@
 			Arrays and collections can be processed with a simpler for loop.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/array/for.java[]
+[source,java]
+----
+include::res/array/for.java[]
 ----
 		
 		The following code demonstrates its usage.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/array/TestMain2.java[]
+[source,java]
+----
+include::res/array/TestMain2.java[]
 ----
 		
 

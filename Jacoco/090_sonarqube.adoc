@@ -1,2 +1,2 @@
-<section id="jacoco_usage_sonarqube">
 == Using Jacoco with SonarQube
+

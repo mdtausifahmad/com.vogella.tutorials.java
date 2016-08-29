@@ -10,4 +10,5 @@ include 'Mockito'
 include 'JavaRegularExpressions'
 include 'AssertJ'
 include 'Checkstyle'
+inlcude 'Jacoco'
 

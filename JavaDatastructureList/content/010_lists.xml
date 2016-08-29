@@ -3,12 +3,12 @@
 	
 		The following example is contained in the project
 		called
-		<wordasword>de.vogella.datastructures.list</wordasword>
+		_de.vogella.datastructures.list_
 		.
 	
 	
 		A
-		<wordasword>List</wordasword>
+		_List_
 		represents a data structure which allows to dynamically
 		add, access and
 		remove objects of the same type. Adding objects to the

@@ -68,9 +68,9 @@
 			.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/list/ListExample.java[]
+[source,java]
+----
+include::res/list/ListExample.java[]
 ----
 		
 
@@ -88,9 +88,9 @@
 			method.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/list/SortingLists.java[]
+[source,java]
+----
+include::res/list/SortingLists.java[]
 ----
 		
 
@@ -103,9 +103,9 @@
 			method allows to remove list items based on a condition.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/list/RemoveIfList.java[]
+[source,java]
+----
+include::res/list/RemoveIfList.java[]
 ----
 		
 

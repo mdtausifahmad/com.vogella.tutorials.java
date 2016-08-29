@@ -27,7 +27,7 @@
 						
 |
 								Create a new class called
-								<wordasword>MyNewClass</wordasword>.
+								_MyNewClass_.
 							
 |
 								
@@ -42,7 +42,7 @@
 						
 |
 								Create a new attribute (instance variable) called
-								<wordasword>var1</wordasword>
+								_var1_
 								of type `String`
 								in the
 								`MyNewClass`
@@ -83,7 +83,7 @@
 						
 |
 								Create a new method called
-								<wordasword>doSomeThing</wordasword>
+								_doSomeThing_
 								in your class which does not
 								return a value and has no parameters.
 							
@@ -100,7 +100,7 @@
 						
 |
 								Create a new method called
-								<wordasword>doSomeThing2</wordasword>
+								_doSomeThing2_
 								in your class which does
 								not
 								return a value and has two parameters,
@@ -120,7 +120,7 @@
 						
 |
 								Create a new method called
-								<wordasword>doSomeThing2</wordasword>
+								_doSomeThing2_
 								in your class which
 								returns an `int` value and has three parameters,
 								two `Strings` and a `Person`.
@@ -137,7 +137,7 @@
 
 						
 |
-								Create a class called <wordasword>MyOtherClass</wordasword> with two instance
+								Create a class called _MyOtherClass_ with two instance
 								variables.
 								One will store a `String`, the other will store a `Dog`.
 								Create

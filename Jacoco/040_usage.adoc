@@ -1,63 +1,33 @@
-<section id="jacoco_usage_eclipse">
 == Using Jacoco in Eclipse
 	
-		With EclEmma installed the context menu of a project also contains a
-		<guimenu>Coverage As</guimenu>
-		entry.
+With EclEmma installed the context menu of a project also contains a
+_Coverage As_
+entry.
 	
+image::coverage-as-menu.png[]
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/coverage-as-menu.png" />
-			</imageobject>
-		</mediaobject>
+And besides the debug button in the main toolbar will also be
+another button for running java code with code coverage analysis.
 	
+image::coverage-as-toolbar.png[]
 	
-		And besides the debug button in the main toolbar will also be
-		another button for running java code with code coverage analysis.
+Once a program is run with code coverage a Coverage View will
+show up in the Eclipse IDE.
 	
+image::coverage-view.png[]
 	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/coverage-as-toolbar.png" />
-			</imageobject>
-		</mediaobject>
+Usually the analysis shows up when the java application is shut
+down,
+but with the
+_Dump Execution Data_
+button in the Coverage View's toolbar a dump of execution data can be
+created.
 	
+image::execution-data-dump.png[]
 	
-		Once a program is run with code coverage a Coverage View will
-		show up in the Eclipse IDE.
+The tooling does not only show the coverage in the Coverage View,
+but also in the Java Editor itself. Tested code is highlighted in
+green and untested code is highlighted in red.
 	
-	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/coverage-view.png" />
-			</imageobject>
-		</mediaobject>
-	
-	
-		Usually the analysis shows up when the java application is shut
-		down,
-		but with the
-		<guilabel>Dump Execution Data</guilabel>
-		button in the Coverage View's toolbar a dump of execution data can be
-		created.
-	
-	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/execution-data-dump.png" />
-			</imageobject>
-		</mediaobject>
-	
-	
-		The tooling does not only show the coverage in the Coverage View,
-		but also in the Java Editor itself. Tested code is highlighted in
-		green and untested code is highlighted in red.
-	
-	
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/coverage-in-editor.png" />
-			</imageobject>
-		</mediaobject>
+image::coverage-in-editor.png[]
 	

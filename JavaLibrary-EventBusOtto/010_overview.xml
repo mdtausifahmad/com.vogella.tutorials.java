@@ -17,7 +17,7 @@
 		
 		
 			Otto has been a fork of the
-			<wordasword>Guava</wordasword>
+			_Guava_
 			event bus library from Google and been redesigned to support Android
 			as well as possible. Unlike the Guava event bus,
 			Otto does not

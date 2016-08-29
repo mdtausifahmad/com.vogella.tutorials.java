@@ -9,7 +9,7 @@
 		
 		
 			Create a class called
-			<wordasword>Person</wordasword>
+			_Person_
 			.
 		
 		
@@ -36,7 +36,7 @@ include::res/exercise01/PersontoString.java[]
 		
 		
 			Create a new class called
-			<wordasword>Main</wordasword>
+			_Main_
 			with a
 			`public static void main(String[] args)`
 			.
@@ -68,9 +68,9 @@ include::res/exercise01/PersontoString.java[]
 			Define methods which allow you to read the values of the
 			instance
 			variables and to set them. These methods are called
-			<wordasword>setter</wordasword>
+			_setter_
 			and
-			<wordasword>getter</wordasword>
+			_getter_
 			.
 		
 		
@@ -87,7 +87,7 @@ include::res/exercise01/PersontoString.java[]
 		
 		
 			For example, the variable called
-			<wordasword>firstName</wordasword>
+			_firstName_
 			would have the
 			`getFirstName()`
 			getter method and the
@@ -108,7 +108,7 @@ include::res/exercise01/PersontoString.java[]
 === Create an Address object
 		
 			Create a new object called
-			<wordasword>Address</wordasword>
+			_Address_
 			.
 			The
 			`Address`

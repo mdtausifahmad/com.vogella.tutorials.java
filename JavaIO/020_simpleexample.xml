@@ -2,7 +2,7 @@
 == Exercise: Reading and writing files
 	
 		Create a new Java project called
-		<wordasword>com.vogella.java.files</wordasword>
+		_com.vogella.java.files_
 		. Create the following
 		`FilesUtil.java`
 		class.

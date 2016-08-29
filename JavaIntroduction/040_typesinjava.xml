@@ -4,11 +4,11 @@
 === Primitives and references
 		
 			Java distinguishes between
-			<wordasword>primitive types</wordasword>
+			_primitive types_
 			(such as boolean,
 			short, int, double, float,
 			char and byte) and
-			<wordasword>reference types</wordasword>
+			_reference types_
 			(such as Object and String).
 		
 

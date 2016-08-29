@@ -34,7 +34,7 @@
 			its
 			superclass. If it wants to change these methods, it
 			can
-			<wordasword>override</wordasword>
+			_override_
 			these methods, i.e., redeclare the methods. This is necessary for an abstract method unless the class itself is
 			defined as abstract.
 		

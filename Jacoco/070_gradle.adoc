@@ -1,19 +1,15 @@
-<section id="jacoco_usage_gradle">
 == Using Jacoco with Gradle
 	
-		Using Jacoco in Gradle is straight forward. The
-		<code>jacoco</code>
-		plugin can be applied and by default places a report into
-		`$buildDir/reports/jacoco/test`
-		.
+Using Jacoco in Gradle is straight forward. The
+_jacoco_
+plugin can be applied and by default places a report into
+`$buildDir/reports/jacoco/test`.
 	
-	
-		<programlisting language="gradle">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/gradle/jacoco-default.gradle[]
+[source,gradle]
+----
+include::res/gradle/jacoco-default.gradle[]
 ----
 	
-	
-		Further options about the Jacoco plugin can be found here:
-		https://docs.gradle.org/current/userguide/jacoco_plugin.html">JaCoCo User Guide</ulink>
+Further options about the Jacoco plugin can be found here:
+https://docs.gradle.org/current/userguide/jacoco_plugin.html[JaCoCo User Guide]
 	

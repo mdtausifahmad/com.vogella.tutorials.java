@@ -3,16 +3,16 @@
 	<section id="javadef_variable">
 === Variable
 		
-			<wordasword>Variables</wordasword>
+			_Variables_
 			allow the Java program to store values during the
 			runtime of the
 			program.
 		
 		
 			A variable can either be a
-			<wordasword>primitive variable</wordasword>
+			_primitive variable_
 			or a
-			<wordasword>reference variable</wordasword>.
+			_reference variable_.
 			A
 			primitive variable contains the value while the
 			reference variable
@@ -49,7 +49,7 @@
 			modifiers.
 		
 		
-			<wordasword>final</wordasword>
+			_final_
 			is the only modifier available to local variables. This modifier
 			defines that the variable cannot be changed after the first assignment.
 		
@@ -66,9 +66,9 @@
 			It can be called on the object.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/class/MyMethodExample.java[]
+[source,java]
+----
+include::res/class/MyMethodExample.java[]
 ----
 		
 		
@@ -107,9 +107,9 @@
 			method.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/class/main.java[]
+[source,java]
+----
+include::res/class/main.java[]
 ----
 		
 
@@ -118,7 +118,7 @@
 === Constructor
 		
 			A class contains
-			<wordasword>constructors</wordasword>
+			_constructors_
 			that are invoked to create objects
 			based on the class definition.
 		
@@ -139,9 +139,9 @@
 			parameter.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/class/MyConstructorExample2.java[]
+[source,java]
+----
+include::res/class/MyConstructorExample2.java[]
 ----
 		
 		
@@ -161,13 +161,13 @@
 		
 			In the following example the definition of the constructor without
 			parameters (also known as the
-			<wordasword>empty constructor</wordasword>)
+			_empty constructor_)
 			is unnecessary. If not specified, the compiler would create one.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/class/MyConstructorExample.java[]
+[source,java]
+----
+include::res/class/MyConstructorExample.java[]
 ----
 		
 		

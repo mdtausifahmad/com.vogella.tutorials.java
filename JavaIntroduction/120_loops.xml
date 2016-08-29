@@ -8,16 +8,16 @@
 			times. The syntax is the following.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/for.java[]
+[source,java]
+----
+include::res/loop/for.java[]
 ----
 		
 		The following shows an example for a for loop.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/ForTest.java[]
+[source,java]
+----
+include::res/loop/ForTest.java[]
 ----
 		
 		<tip>
@@ -38,16 +38,16 @@
 			syntax is the following.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/while.java[]
+[source,java]
+----
+include::res/loop/while.java[]
 ----
 		
 		The following shows an example for a while loop.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/WhileTest.java[]
+[source,java]
+----
+include::res/loop/WhileTest.java[]
 ----
 		
 
@@ -61,18 +61,18 @@
 			syntax is the following.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/dowhile.java[]
+[source,java]
+----
+include::res/loop/dowhile.java[]
 ----
 		
 		
 			The following shows an example for a do-while loop.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/DoTest.java[]
+[source,java]
+----
+include::res/loop/DoTest.java[]
 ----
 		
 

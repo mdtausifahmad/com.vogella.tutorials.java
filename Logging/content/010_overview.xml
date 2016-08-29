@@ -3,7 +3,7 @@
 	<section id="overview_logger">
 === Logging
 		
-			<wordasword>Logging</wordasword>
+			_Logging_
 			is the process of writing log messages during the execution
 			of a
 			program to a central place. This logging allows you to
@@ -16,7 +16,7 @@
 		
 		
 			The object which performs the logging in applications
-			is typically just called <wordasword>Logger</wordasword>.
+			is typically just called _Logger_.
 		
 
 
@@ -24,7 +24,7 @@
 === Logging in Java
 		
 			Java contains the
-			<wordasword>Java Logging API</wordasword>.
+			_Java Logging API_.
 			This
 			logging API allows you to
 			configure which

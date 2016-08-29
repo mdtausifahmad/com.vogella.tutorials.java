@@ -13,7 +13,7 @@
 			(if you are using
 			Windows: Win+R,
 			enter
-			<guilabel>cmd</guilabel>
+			_cmd_
 			and press Enter) and by typing in the
 			following command:
 		
@@ -78,10 +78,10 @@
 			If you have problems installing Java on your system,
 			search via Google
 			for
-			<guilabel>
+			_
 				How to install JDK on
 				`YOUR_OS`
-			</guilabel>
+			_
 			.
 			This
 			should result

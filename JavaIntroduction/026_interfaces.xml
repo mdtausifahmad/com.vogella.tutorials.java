@@ -4,7 +4,7 @@
 === What is an interface in Java?
 		
 			An
-			<wordasword>interfaces</wordasword>
+			_interfaces_
 			is a type similar to a class and is defined via the
 			`interface`
 			keyword. Interfaces are used to define common behavior of implementing classes. If two classes implement the same
@@ -25,7 +25,7 @@
 === Abstract, default and static methods in Interfaces
 		
 			An interface can have abstract methods and
-			<wordasword>default</wordasword>
+			_default_
 			methods. A default method is defined via the
 			`default`
 			keyword at the beginning of the method signature. All other methods
@@ -159,11 +159,11 @@ include::res/class/A2.java[]
 === Functional interfaces
 		
 			All interfaces that have only one method are called
-			<wordasword>functional interfaces</wordasword>
+			_functional interfaces_
 			.
 			Functional interfaces have the advantage that they can be used
 			together with
-			<wordasword>lambda expressions</wordasword>
+			_lambda expressions_
 			. See
 			<xref linkend="lambdas_definition" />
 			to learn more about lambdas, e.g., the type of lambdas is a

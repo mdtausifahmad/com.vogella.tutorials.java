@@ -21,21 +21,21 @@
 			<filename class="directory">c:\temp\javastarter`.
 			This path is
 			called
-			<wordasword>javadir</wordasword>
+			_javadir_
 			in the following description.
 		
 		
 			Open a text editor which supports plain text, e.g.,
-			<wordasword>gedit</wordasword>
+			_gedit_
 			under Linux or
-			<wordasword>Notepad</wordasword>
+			_Notepad_
 			under Windows
 			and write the following source code.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/helloworld/HelloWorld.java[]
+[source,java]
+----
+include::res/helloworld/HelloWorld.java[]
 ----
 		
 		<warning>
@@ -55,7 +55,7 @@ image::firstjava10.png[]
 		
 		
 			Save the source code in your
-			<wordasword>javadir</wordasword>
+			_javadir_
 			directory with the
 			`HelloWorld.java`
 			filename. The name of a Java source
@@ -88,7 +88,7 @@ image::firstjava10.png[]
 		
 		
 			Switch to the
-			<wordasword>javadir</wordasword>
+			_javadir_
 			directory with the command
 			`cd javadir`,
 			for
@@ -141,7 +141,7 @@ image::firstjava10.png[]
 		
 			You can now start your compiled Java program. Ensure that you are
 			still in the
-			<wordasword>jardir</wordasword>
+			_jardir_
 			directory and enter the following command to start your Java program.
 		
 		

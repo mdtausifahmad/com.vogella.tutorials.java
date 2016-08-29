@@ -16,11 +16,11 @@
 			Class methods and class variables are declared with the
 			`static`
 			keyword. Class methods are also called
-			<wordasword>static methods</wordasword>
+			_static methods_
 			and class variables are also called
-			<wordasword>static variables</wordasword>
+			_static variables_
 			or
-			<wordasword>static fields</wordasword>.
+			_static fields_.
 		
 		
 			An example for the usage of a static field is
@@ -54,15 +54,15 @@
 			fields.
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/static/MyStaticExample.java[]
+[source,java]
+----
+include::res/static/MyStaticExample.java[]
 ----
 		
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/static/Tester.java[]
+[source,java]
+----
+include::res/static/Tester.java[]
 ----
 		
 		
@@ -106,9 +106,9 @@
 		
 		The following example shows an abstract class.
 		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/abstract/MyAbstractClass.java[]
+[source,java]
+----
+include::res/abstract/MyAbstractClass.java[]
 ----
 		
 

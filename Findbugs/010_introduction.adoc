@@ -1,7 +1,7 @@
 <section id="findbugs_overview">
 == What is FindBugs
 	
-		<wordasword>FindBugs</wordasword>
+		_FindBugs_
 		is an open source project for a static
 		analysis of the Java
 		bytecode to

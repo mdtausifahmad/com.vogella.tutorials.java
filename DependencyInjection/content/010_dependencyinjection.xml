@@ -13,7 +13,7 @@
 		of view. The
 		general concept
 		behind dependency injection is called
-		<wordasword>Inversion of Control</wordasword>
+		_Inversion of Control_
 		. According to this concept a class should not configure its
 		dependencies statically but should
 		be
@@ -26,7 +26,7 @@
 		instance
 		of this
 		class. We call this a
-		<wordasword>class dependency</wordasword>
+		_class dependency_
 		. For example a class
 		which accesses a logger
 		service has a
@@ -74,7 +74,7 @@
 	</indexterm>
 	
 		A framework class, usually called the
-		<wordasword>dependency container</wordasword>
+		_dependency container_
 		, could analyze
 		the dependencies of this class. With
 		this analysis it is able to create an instance of the class and
@@ -88,7 +88,7 @@
 		rely on an instance of a certain class. This
 		allows you to test
 		your class in isolation, for example by using
-		<wordasword>mock</wordasword>
+		_mock_
 		objects.
 	
 

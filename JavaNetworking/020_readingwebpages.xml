@@ -3,7 +3,7 @@
 == Example: Read web page via Java
 	
 		Create a Java project called
-		<wordasword>de.vogella.web.html</wordasword>
+		_de.vogella.web.html_
 		. The following code
 		will read an HTML page from a URL and write the
 		result to

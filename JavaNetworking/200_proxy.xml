@@ -11,7 +11,7 @@
 
 	 In your code you can set a proxy via System.setProperty. For
 		example if
-		your proxy is called <wordasword>proxy</wordasword> and runs on port "8080" the following
+		your proxy is called _proxy_ and runs on port "8080" the following
 		code will set the proxy. 
 
 	
