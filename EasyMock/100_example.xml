@@ -1,35 +1,35 @@
 <section id="tutorial_easymock" role="wrapper">
-	<title>Tutorial: Using Easy Mock and JUnit</title>
+== Tutorial: Using Easy Mock and JUnit
 	<section id="tutorial_easymockproject">
-		<title>Create project and classes</title>
-		<para>
+=== Create project and classes
+		
 			Create a new Java Project called
 			<wordasword>com.vogella.testing.easymock.first</wordasword>
 			. Create the
 			following
 			classes.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/easymock/Position.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/easymock/ICalcMethod.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/easymock/IncomeCalculator.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The
-			<code>IncomeCalculator</code>
+			`IncomeCalculator`
 			class should be
 			tested. The
 			class has the
@@ -42,34 +42,34 @@
 			test depends
 			on the
 			provided methods.
-		</para>
+		
 	</section>
 	<section id="tutorial_easymocktest">
-		<title>Create tests</title>
+=== Create tests
 
-		<para>
+		
 			Create a new
-			<filename>test</filename>
+			`test`
 			source folder in your project.
-		</para>
-		<para>
+		
+		
 			Create a new test for
-			<code>IncomeCalculator</code>
+			`IncomeCalculator`
 			and place the new test class in this
 			folder.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/easymock/IncomeCalculatorTest.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			After execution of the test you can call the
-			<code>verify</code>
+			`verify`
 			method to
 			check if the mock object was called as defined.
-		</para>
+		
 	</section>
 </section>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Java Networking - Using HttpURLConnection to download files from the Internet - Tutorial</title>
+=== Java Networking - Using HttpURLConnection to download files from the Internet - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -19,16 +19,16 @@
 		</copyright>
 		<pubdate>31.07.2015</pubdate>
 		<releaseinfo>
-			<para>Version 1.3</para>
+			Version 1.3
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Java Networking</title>
-			<para> This article describes how to use the java.net package to
+	=== Java Networking
+			 This article describes how to use the java.net package to
 				access the web resources. The setting of a proxy is
 				also
 				described.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

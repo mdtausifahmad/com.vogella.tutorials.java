@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>How to compile OpenJDK on Ubuntu - Tutorial</title>
+=== How to compile OpenJDK on Ubuntu - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -11,16 +11,16 @@
 			<holder>vogella GmbH</holder>
 		</copyright>
 		<releaseinfo>
-			<para>Version 0.3</para>
+			Version 0.3
 		</releaseinfo>
 		
 		<pubdate>30.11.2008</pubdate>
 		<abstract id="abstract">
-			<title>OpenJDK</title>
-			<para> This article describes how to download the source code of
+	=== OpenJDK
+			 This article describes how to download the source code of
 				OpenJDK and how to compile it. The platform which is used in
 				Ubuntu.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

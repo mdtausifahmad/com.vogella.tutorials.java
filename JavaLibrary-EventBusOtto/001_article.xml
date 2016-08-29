@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Using the Otto Event Bus library on Android - Tutorial</title>
+=== Using the Otto Event Bus library on Android - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -15,15 +15,15 @@
 		</copyright>
 		<pubdate>05.04.2015</pubdate>
 		<releaseinfo>
-			<para>Version 2.6</para>
+			Version 2.6
 		</releaseinfo>
 
 
 
 		<abstract id="abstract">
-			<title>Using the Otto event bus in Android applications</title>
-			<para> This tutorial explains the usage of the Otto event bus library.
-			</para>
+	=== Using the Otto event bus in Android applications
+			 This tutorial explains the usage of the Otto event bus library.
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

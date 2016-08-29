@@ -1,15 +1,15 @@
 <section id="installation">
-	<title>Installation</title>
-	<para>
+== Installation
+	
 		Download the Java Excel library from the webpage
-		<ulink url="http://jexcelapi.sourceforge.net/">
+		http://jexcelapi.sourceforge.net/">
 			http://jexcelapi.sourceforge.net/</ulink>
-	</para>
-	<para>
+	
+	
 		To use this library in your Java program add the lib jxl.jar to
 		your classpath in your project. See
-		<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
+		http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
 			Changing classpath in Eclipse</ulink>
 		.
-	</para>
+	
 </section>

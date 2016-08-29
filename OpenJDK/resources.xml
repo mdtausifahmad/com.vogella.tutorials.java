@@ -1,28 +1,28 @@
 <section id="resources">
-	<title>Links and Literature</title>
+== Links and Literature
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/sourcejava.xml" />
 	<section id="openjdk_links">
-		<title>General</title>
-		<para>
-			<ulink url="http://openjdk.java.net/">OpenJDK Homepage</ulink>
-		</para>
+=== General
+		
+			http://openjdk.java.net/">OpenJDK Homepage</ulink>
+		
 
-		<para>
-			<ulink url="http://openjdk.java.net/groups/build/"> How to build OpenJDK</ulink>
+		
+			http://openjdk.java.net/groups/build/"> How to build OpenJDK</ulink>
 
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://hg.openjdk.java.net/jdk7/build/raw-file/tip/README-builds.html"> Details on how to build OpenJDK7</ulink>
-		</para>
+		
 
-		<para>
-			<ulink url="http://blog.fuseyism.com/"> http://blog.fuseyism.com/</ulink>
+		
+			http://blog.fuseyism.com/"> http://blog.fuseyism.com/</ulink>
 			Blog about compiling OpenJDK
-		</para>
-		<para>
+		
+		
 			#openjdk on IRC on irc.oftc.net
-		</para>
+		
 	</section>
 
 </section>

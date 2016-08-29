@@ -1,107 +1,107 @@
 <section id="javastring">
-	<title>Strings</title>
+== Strings
 	<section id="javastringdefinition">
-		<title>Strings in Java</title>
-		<para>
+=== Strings in Java
+		
 			The
-			<code>String</code>
+			`String`
 			class represents character strings. All string literals, for example,
 			"hello", are implemented as instances of this class. An instance of
 			this class is an object. Strings are immutable, e.g., an assignment
 			of
 			a new value to a
-			<code>String</code>
+			`String`
 			object creates a new object.
-		</para>
+		
 	</section>
 
 	<section id="javastringpool">
-		<title>String pool in Java</title>
-		<para>
+=== String pool in Java
+		
 			For memory efficiency Java uses a
-			<code>String</code>
+			`String`
 			pool. The string pool
 			allows string literals to be reused. This is
 			possible because
 			strings in Java are immutable.
-		</para>
-		<para>
+		
+		
 			If the same string literal is used in several places in the
 			Java
 			code, only one copy of that string is created.
-		</para>
-		<para>
+		
+		
 			Whenever a
-			<code>String</code>
+			`String`
 			object is created and gets a string literal
 			assigned, e.g., as in
-			<code>String s = "constant"</code>,
+			`String s = "constant"`,
 			the string pool is used. However, the
-			<code>new</code>
+			`new`
 			operator forces a new
-			<code>String</code>
+			`String`
 			copy to be allocated, for example, in
-			<code>
+			`
 				String s = new String("constant");
-			</code>.
-		</para>
+			`.
+		
 	</section>
 
 	<section id="javastringcompare">
-		<title>Compare Strings in Java</title>
-		<para>
+=== Compare Strings in Java
+		
 			To compare the
-			<code>String</code>
+			`String`
 			objects
-			<code>s1</code>
+			`s1`
 			and
-			<code>s2</code>,
+			`s2`,
 			use the
-			<code>s1.equals(s2)</code>
+			`s1.equals(s2)`
 			method.
-		</para>
-		<para>
+		
+		
 			A
-			<code>String</code>
+			`String`
 			comparison with
-			<code>==</code>
+			`==`
 			is incorrect, as
-			<code>==</code>
+			`==`
 			checks for object reference equality.
-			<code>==</code>
+			`==`
 			sometimes gives the correct result, as Java uses a
-			<code>String</code>
+			`String`
 			pool. The
 			following example would work with
-			<code>==</code>.
-		</para>
-		<para>This would work as expected.</para>
-		<para>
+			`==`.
+		
+		This would work as expected.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/stringcompare/correct.java" />
 			</programlisting>
-		</para>
-		<para>This comparison would fail.</para>
-		<para>
+		
+		This comparison would fail.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/stringcompare/wrong.java" />
 			</programlisting>
-		</para>
+		
 		<warning>
-			<para>
+			
 				Therefore, you should always use the
-				<code>equals()</code>
+				`equals()`
 				method when you compare strings.
-			</para>
+			
 		
 	</section>
 
 	<section id="javastringhandling">
-		<title>Working with Strings</title>
-		<para>The following lists the most common string operations.</para>
-		<para>
+=== Working with Strings
+		The following lists the most common string operations.
+		
 			<table frame='all'>
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
@@ -115,37 +115,37 @@
 					<tbody>
 						<row>
 							<entry>
-								<code>"Testing".equals(text1);</code>
+								`"Testing".equals(text1);`
 							</entry>
 							<entry>
-								Return <code>true</code> if <code>text1</code>
-								is equal to <code>"Testing"</code>. The check is
+								Return `true` if `text1`
+								is equal to `"Testing"`. The check is
 								case-sensitive.
 							</entry>
 						</row>
 						<row>
 							<entry>
-								<code>"Testing".equalsIgnoreCase(text1);</code>
+								`"Testing".equalsIgnoreCase(text1);`
 							</entry>
 							<entry>
-								Return <code>true</code> if <code>text1</code> is equal to
-								<code>"Testing"</code>. The check is not case-sensitive.
-								For example, it would also be true for <code>"testing"</code>.
+								Return `true` if `text1` is equal to
+								`"Testing"`. The check is not case-sensitive.
+								For example, it would also be true for `"testing"`.
 							</entry>
 						</row>
 						<row>
 							<entry>
-								<code>StringBuffer str1 = new StringBuffer();</code>
+								`StringBuffer str1 = new StringBuffer();`
 							</entry>
 							<entry>
 								Define a new
-								<code>String</code>
+								`String`
 								with a variable length.
 							</entry>
 						</row>
 						<row>
 							<entry>
-								<code>str.charat(1);</code>
+								`str.charat(1);`
 							</entry>
 							<entry>
 								Return the character at position 1.
@@ -155,13 +155,13 @@
 						</row>
 						<row>
 							<entry>
-								<code>str.substring(1);</code>
+								`str.substring(1);`
 							</entry>
 							<entry>Removes the first characters.</entry>
 						</row>
 						<row>
 							<entry>
-								<code>str.substring(1, 5);</code>
+								`str.substring(1, 5);`
 							</entry>
 							<entry>
 								Gets the substring from the second to the fifth
@@ -170,13 +170,13 @@
 						</row>
 						<row>
 							<entry>
-								<code>str.indexOf("Test")</code>
+								`str.indexOf("Test")`
 							</entry>
 							<entry>
 								Look for the
-								<code>String</code>
+								`String`
 								"Test" in String
-								<code>str</code>
+								`str`
 								.
 								Returns the index of the first
 								occurrence of the specified
@@ -185,86 +185,86 @@
 						</row>
 						<row>
 							<entry>
-								<code>str.lastIndexOf("ing")</code>
+								`str.lastIndexOf("ing")`
 							</entry>
 							<entry>
 								Returns the index of the last occurrence of the
 								specified
-								<code>String</code>
+								`String`
 								"ing" in the
-								<code>String</code>
+								`String`
 								str.
-								<code>StringBuffer</code>
+								`StringBuffer`
 								does not support this method.
 								Hence first
 								convert the
-								<code>StringBuffer</code>
+								`StringBuffer`
 								to
-								<code>String</code>
+								`String`
 								via method
-								<code>toString</code>.
+								`toString`.
 							</entry>
 						</row>
 						<row>
 							<entry>
-								<code>str.endsWith("ing")</code>
+								`str.endsWith("ing")`
 							</entry>
 							<entry>
-								Returns <code>true</code> if <code>str</code>
-								ends with <code>String</code> <code>"ing"</code>
-							</entry>
-						</row>
-						<row>
-							<entry>
-								<code>str.startsWith("Test")</code>
-							</entry>
-							<entry>
-								Returns <code>true</code> if
-								<code>String</code>
-								<code>str</code> starts with
-								<code>String</code>
-								<code>"Test"</code>.
+								Returns `true` if `str`
+								ends with `String` `"ing"`
 							</entry>
 						</row>
 						<row>
 							<entry>
-								<code>str.trim()</code>
+								`str.startsWith("Test")`
+							</entry>
+							<entry>
+								Returns `true` if
+								`String`
+								`str` starts with
+								`String`
+								`"Test"`.
+							</entry>
+						</row>
+						<row>
+							<entry>
+								`str.trim()`
 							</entry>
 							<entry>Removes leading and trailing spaces.</entry>
 						</row>
 						<row>
 							<entry>
-								<code>str.replace(str1, str2)</code>
+								`str.replace(str1, str2)`
 							</entry>
-							<entry>Replaces all occurrences of <code>str1</code> by <code>str2</code></entry>
+							<entry>Replaces all occurrences of `str1` by `str2`</entry>
 						</row>
 						<row>
 							<entry>
-								<code>str2.concat(str1);</code>
+								`str2.concat(str1);`
 							</entry>
-							<entry>Concatenates <code>str1</code> at the end of <code>str2</code>.</entry>
+							<entry>Concatenates `str1` at the end of `str2`.</entry>
 						</row>
 						<row>
 							<entry>
-								<code>str.toLowerCase()</code>
+								`str.toLowerCase()`
 								/
-								<code>str.toUpperCase()</code>
+								`str.toUpperCase()`
 							</entry>
 							<entry>Converts the string to lower- or uppercase</entry>
 						</row>
 						<row>
 							<entry>
-								<code>str1 + str2</code>
+								`str1 + str2`
 							</entry>
-							<entry>Concatenate <code>str1</code> and <code>str2</code></entry>
+							<entry>Concatenate `str1` and `str2`</entry>
 						</row>
 						<row>
 							<entry>
-								<code>String[] array = myString.split("-");</code>
-								<code>String[] array2 = myString.split("\\.");</code>
+								`String[] array = myString.split("-");`
+								`String[] array2 = myString.split("\\.");`
 							</entry>
 							<entry>
-								Splits the character separated <code>myString</code> into an array of strings.
+								Splits the character separated `myString` into an array of strings.
 								<emphasis>
 									Attention: the split string is a regular expression,
 									so if you using special characters which have a meaning in
@@ -276,6 +276,6 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 	</section>
 </section>

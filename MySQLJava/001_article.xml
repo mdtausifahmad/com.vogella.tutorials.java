@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>MySQL and Java JDBC - Tutorial</title>
+=== MySQL and Java JDBC - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -18,16 +18,16 @@
 		</copyright>
 		<pubdate>29.01.2015</pubdate>
 		<releaseinfo>
-			<para>Version 1.3</para>
+			Version 1.3
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>MySQL and Java JDBC</title>
-			<para>
+	=== MySQL and Java JDBC
+			
 				This tutorial describes how to use Java JDBC to connect to
 				MySQL and
 				perform SQL queries, database inserts and deletes.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

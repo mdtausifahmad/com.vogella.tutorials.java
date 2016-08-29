@@ -1,19 +1,19 @@
 <section id="compile">
-	<title>Compile OpenJDK</title>
-	<para>
+== Compile OpenJDK
+	
 		Switch into you OpenJDK directory and compile it via:
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/compile/compile.txt" />
-		</programlisting>
-	</para>
-	<para> After a long time the compilation should be successful. The
+				parse="text" href="../examples/compile/compile.txt[]
+----
+	
+	 After a long time the compilation should be successful. The
 		default output directory is build/platform, where platform your
 		operating system. The build/platform/j2sdk-image/bin should contain
 		executables for the OpenJDK tools. The "demo" dirctory contains
 		several demos which you can use to validate your build. Try "./java
 		-version" in your "/build/platform/bin" and validate that you see the
-		version of OpenJDK which you compiled against. </para>
+		version of OpenJDK which you compiled against. 
 </section>

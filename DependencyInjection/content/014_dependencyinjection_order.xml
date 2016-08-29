@@ -1,38 +1,38 @@
 <section id="dependencyinjection_order">
-	<title>Order in which dependency injection is performed on a class
-	</title>
+== Order in which dependency injection is performed on a class
+	
 	<indexterm>
 		<primary>Dependency injection</primary>
 		<secondary>Order</secondary>
 	</indexterm>
-	<para>
+	
 		According to JSR330 the injection is done in the following order:
 		<itemizedlist>
 			<listitem>
-				<para>constructor injection</para>
+				constructor injection
 			</listitem>
 			<listitem>
-				<para>field injection</para>
+				field injection
 			</listitem>
 			<listitem>
-				<para>method injection</para>
+				method injection
 			</listitem>
 		</itemizedlist>
-	</para>
+	
 
-	<para>
+	
 		The order in which the methods or fields annotated with
-		<code>@Inject</code>
+		`@Inject`
 		are called is not defined by JSR330. You cannot assume that the
 		methods or fields
 		are called in the order of their declaration in the class.
-	</para>
+	
 	<note>
-		<para>
+		
 			As fields and method parameters are injected after the
 			constructor is
 			called, you cannot use injected member variables in the
 			constructor.
-		</para>
+		
 	
 </section>

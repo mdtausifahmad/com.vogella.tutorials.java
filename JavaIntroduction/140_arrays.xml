@@ -1,38 +1,38 @@
 <section id="arrays">
-	<title>Arrays</title>
+== Arrays
 	<section id="arrays_definition">
-		<title>Arrays in Java</title>
-		<para>
+=== Arrays in Java
+		
 			An array is a container object that holds a fixed number of
 			values of a single type. An item in an array is called an element.
 			Every element can be accessed via an index. The first element in an
 			array is addressed via the 0 index, the second via 1, etc.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/array/TestMain.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 
 	<section id="arrays_forloop">
-		<title>Enhanced for loop for Arrays and Collections</title>
-		<para>
+=== Enhanced for loop for Arrays and Collections
+		
 			Arrays and collections can be processed with a simpler for loop.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/array/for.java" />
 			</programlisting>
-		</para>
-		<para>The following code demonstrates its usage.</para>
-		<para>
+		
+		The following code demonstrates its usage.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="./examples/array/TestMain2.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 </section>

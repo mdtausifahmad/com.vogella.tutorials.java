@@ -1,6 +1,6 @@
 
 <section id="setup_model">
-	<title>Project and Domain model
+== Project and Domain model
 	
 		Create the Java project called
 		_de.vogella.rss_
@@ -12,14 +12,14 @@
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/model/FeedMessage.java" />
-		</programlisting>
+				parse="text" href="../examples/model/FeedMessage.java[]
+----
 	
 	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/model/Feed.java" />
-		</programlisting>
+				parse="text" href="../examples/model/Feed.java[]
+----
 	
 
 

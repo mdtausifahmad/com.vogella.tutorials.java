@@ -1,64 +1,41 @@
-<section id="assertjusage">
-	<title>Using AssertJ</title>
-	<section id="assertjusage_gradle">
-		<title>Gradle</title>
-		<para>
-			To use AssertJ in your Gradle build for unit tests add the following dependency to your Gradle build file.
-		</para>
-		<para>
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/gradle/build.gradle" />
-			</programlisting>
-		</para>
-	</section>
+== Using AssertJ
 
-	<section id="assertjusage_maven">
-		<title>Maven</title>
-		<para>To use the library for a Maven based project, the following dependency to your
-			pom file.
-		</para>
-		<para>
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/maven/dep.txt" />
-			</programlisting>
-		</para>
-	</section>
-	<section id="assertjusage_eclipse">
-		<title>Eclipse IDE configuration</title>
-		<para>
-			To use the AssertJ
-			<code>assertThat</code>
-			statement and not the one from Hamcrest go to
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Java</guisubmenu>
-				<guisubmenu>Editor</guisubmenu>
-				<guisubmenu>Content assist</guisubmenu>
-				<guisubmenu>Favorites</guisubmenu>
-				<guisubmenu>New Type</guisubmenu>
-			</menuchoice>
-			and enter
-			<code>org.assertj.core.api.Assertions</code>
-			.
-		</para>
-		<para>
-			You should
-			see
-			org.assertj.core.api.Assertions.* in the list.
-		</para>
+=== Gradle
 
-	</section>
-	<section id="assertjusage_intellij">
-		<title>IntelliJ Idea configuration </title>
-		<para>
-			No special configuration, just start
-			typing
-			<code>assertThat</code>
-			and then invoke completion (Ctrl-Space) twice.
-		</para>
-	</section>
+To use AssertJ in your Gradle build for unit tests add the following dependency to your Gradle build file.
+
+[source,java]
+----
+include::res/gradle/build.gradle[]
+----
+
+=== Maven
+
+To use the library for a Maven based project, the following dependency to your pom file.
+
+[source,java]
+----
+include::res/maven/dep.txt[]
+----
+
+=== Eclipse IDE configuration
+
+To use the AssertJ
+`assertThat`
+statement and not the one from Hamcrest go to
+menu:Window[Preferences>Java>Editor>Content assist>Favorites>New Type]
+and enter
+`org.assertj.core.api.Assertions`.
 
 
+You should
+see
+org.assertj.core.api.Assertions.* in the list.
 
-</section>
+=== IntelliJ Idea configuration 
+
+No special configuration, just start
+typing
+`assertThat`
+and then invoke completion (Ctrl-Space) twice.
+

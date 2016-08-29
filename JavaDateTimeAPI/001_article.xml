@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Java Data and Time API in Java 8 - Tutorial</title>
+=== Java Data and Time API in Java 8 - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -18,14 +18,14 @@
 		</copyright>
 		<pubdate>13.07.2015</pubdate>
 		<releaseinfo>
-			<para>Version 1.1</para>
+			Version 1.1
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Java Date and Time API</title>
-			<para> This article explains the Java 8 API for using the Date and Time API.
+	=== Java Date and Time API
+			 This article explains the Java 8 API for using the Date and Time API.
 
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

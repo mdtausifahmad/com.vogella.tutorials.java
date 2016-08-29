@@ -1,8 +1,8 @@
 <section id="javaintroduction" role="wrapper">
-	<title>Introduction to Java</title>
+== Introduction to Java
 	<section id="javahistory">
-		<title>A small history of Java</title>
-		<para>
+=== A small history of Java
+		
 			Java is a programming language created by James Gosling from
 			Sun Microsystems (Sun) in 1991. The target of Java is to
 			write a program once and then run
@@ -22,8 +22,8 @@
 			called
 			<wordasword>OpenJDK</wordasword>
 			.
-		</para>
-		<para>
+		
+		
 			Over time new enhanced versions of Java have been
 			released.
 			The current
@@ -31,8 +31,8 @@
 			as
 			<wordasword>Java 8</wordasword>
 			.
-		</para>
-		<para>
+		
+		
 			Java is defined by a specification and consists of a programming language, a compiler, core libraries and a runtime
 			(Java virtual machine)
 			The Java runtime allows
@@ -56,12 +56,12 @@
 			and the
 			<wordasword>Java core libraries</wordasword>
 			.
-		</para>
-		<para>
+		
+		
 			The Java language was designed with the following properties:
 			<itemizedlist>
 				<listitem>
-					<para>Platform independent: Java programs use the Java virtual
+					Platform independent: Java programs use the Java virtual
 						machine
 						as
 						abstraction and do not access the operating
@@ -72,17 +72,17 @@
 						certain rules) can
 						run
 						unmodified on all supported platforms, e.g., Windows or Linux.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Object-orientated programming language:
 						Except the primitive
 						data types, all elements in Java are objects.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Strongly-typed programming language: Java is
 						strongly-typed,
 						e.g., the types of the used variables must be
@@ -90,10 +90,10 @@
 						conversion to
 						other objects is relatively strict, e.g., must be done
 						in most cases by the programmer.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Interpreted and compiled language: Java source
 						code is
 						transferred into the bytecode format which does not
@@ -110,10 +110,10 @@
 						into native
 						code
 						instructions.
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						Automatic memory management: Java manages the memory
 						allocation and de-allocation for creating new objects.
 						The
@@ -122,59 +122,57 @@
 						collector automatically deletes objects
 						to which no active pointer
 						exists.
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			The Java syntax is similar to C++. Java is case-sensitive,
 			e.g.,
 			variables called
-			<code>myValue</code>
+			`myValue`
 			and
-			<code>myvalue</code>
+			`myvalue`
 			are treated as different
 			variables.
-		</para>
+		
 	</section>
 
 	<section id="javaoverview_helloworld">
-		<title>Hello world Java program</title>
-		<para>
+=== Hello world Java program
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/helloworld/HelloWorld.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 	<section id="javaoverview">
-		<title>Java virtual machine</title>
-		<para>
+=== Java virtual machine
+		
 			The Java
 			virtual
 			machine (JVM) is a software implementation of a
 			computer that
 			executes programs like a real
 			machine.
-		</para>
-		<para>
+		
+		
 			The Java virtual machine is written specifically for a
 			specific
 			operating system, e.g., for Linux a special
 			implementation is required
 			as well as for Windows.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jvmintroduction10.png" />
+		
+		
+image::jvmintroduction10.png[]
 				</imageobject>
 				<textobject>
 					<phrase></phrase>
 				</textobject>
 			</mediaobject>
-		</para>
+		
 
-		<para>
+		
 			Java programs are compiled by the Java compiler into
 			<wordasword>bytecode</wordasword>
 			.
@@ -183,29 +181,29 @@
 			and
 			executes
 			the Java program.
-		</para>
+		
 
 	</section>
 
 	<section id="javaoverview_jrejdk">
-		<title>Java Runtime Environment vs. Java Development Kit</title>
-		<para>
+=== Java Runtime Environment vs. Java Development Kit
+		
 			A Java distribution typically comes in two flavors, the
 			<wordasword>Java Runtime Environment</wordasword>
 			(JRE)
 			and the
 			<wordasword>Java Development Kit</wordasword>
 			(JDK).
-		</para>
-		<para>
+		
+		
 			The JRE consists of the JVM and the
 			Java class libraries. Those contain the
 			necessary
 			functionality to start
 			Java
 			programs.
-		</para>
-		<para>
+		
+		
 			The JDK additionally contains
 			the development tools necessary to
 			create Java programs. The JDK therefore consists
@@ -214,12 +212,12 @@
 			the
 			Java
 			virtual machine and the Java class libraries.
-		</para>
+		
 	</section>
 
 	<section id="javadevelopmend">
-		<title>Development Process with Java</title>
-		<para>
+=== Development Process with Java
+		
 			Java source files are written as plain text documents.
 			The programmer
 			typically writes Java source code in an
@@ -231,26 +229,26 @@
 			the source code,
 			highlighting of the
 			important keywords, etc.
-		</para>
-		<para>
+		
+		
 			At some point the programmer (or the IDE) calls the Java
 			compiler
 			(
-			<filename>javac</filename>
+			`javac`
 			).
 			The Java compiler creates the
 			<wordasword>bytecode</wordasword>
 			instructions.
 			These instructions are
 			stored in
-			<filename>.class</filename>
+			`.class`
 			files and can be executed by the Java Virtual Machine.
-		</para>
+		
 	</section>
 
 	<section id="java_garbagecollector">
-		<title>Garbage collector</title>
-		<para>
+=== Garbage collector
+		
 			The JVM automatically re-collects the memory which is not
 			referred to
 			by other objects.
@@ -258,8 +256,8 @@
 			<wordasword>garbage collector</wordasword>
 			checks all object references and finds the objects which can be
 			automatically released.
-		</para>
-		<para>
+		
+		
 			While the garbage collector relieves the programmer from the
 			need to
 			explicitly manage memory, the programmer still
@@ -272,20 +270,20 @@
 			object references are typically called
 			<wordasword>memory leaks</wordasword>
 			.
-		</para>
+		
 	</section>
 	<section id="java_classpath">
-		<title>Classpath</title>
-		<para>
+=== Classpath
+		
 			The
 			<wordasword>classpath</wordasword>
 			defines where the Java compiler and Java runtime look
 			for
-			<filename>.class</filename>
+			`.class`
 			files to
 			load. These instructions can be used in the Java program.
-		</para>
-		<para>
+		
+		
 			For
 			example, if you want to use an external Java
 			library
@@ -295,6 +293,6 @@
 			library to your classpath to use it in
 			your
 			program.
-		</para>
+		
 	</section>
 </section>

@@ -1,6 +1,6 @@
 <section id="summary">
-	<title>Summary</title>
-	<para> This tutorial gave you an applied approach for using dependency
+== Summary
+	 This tutorial gave you an applied approach for using dependency
 		injection with the Spring framework. Both possible way, with
-		annotations and with XML were discussed.</para>
+		annotations and with XML were discussed.
 </section>

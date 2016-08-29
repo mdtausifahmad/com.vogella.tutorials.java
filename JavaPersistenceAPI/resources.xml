@@ -1,24 +1,24 @@
 <section id="resources">
-	<title>Links and Literature</title>
+== Links and Literature
 	<section id="resources_s1s2a">
-		<title>Java Persistence API Resources</title>
-		<para>
-			<ulink url="http://www.eclipse.org/eclipselink/"> http://www.eclipse.org/eclipselink/</ulink>
+=== Java Persistence API Resources
+		
+			http://www.eclipse.org/eclipselink/"> http://www.eclipse.org/eclipselink/</ulink>
 			EclipseLink
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://java.sun.com/developer/technicalArticles/J2SE/Desktop/persistenceapi/">
 				http://java.sun.com/developer/technicalArticles/J2SE/Desktop/persistenceapi/</ulink>
 			Using the Java Persistence API in Desktop Applications
-		</para>
+		
 
-		<para>
+		
 			<ulink
 				url="http://www.ibm.com/developerworks/java/library/j-typesafejpa/index.html">
 				http://www.ibm.com/developerworks/java/library/j-typesafejpa/index.html</ulink>
 			Dynamic, typesafe queries in JPA 2.0 using the Criteria API
-		</para>
+		
 
 
 	</section>

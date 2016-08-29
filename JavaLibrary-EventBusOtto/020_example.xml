@@ -1,89 +1,89 @@
 <section id="exercise_okhttp">
-	<title>Exercise: Using Otto the event bus system</title>
+== Exercise: Using Otto the event bus system
 
-	<para>
+	
 		This is an example for the usage of Otto in an Android
 		application
 		but this library can also be used in standard Java
 		applications.
-	</para>
-	<para>
+	
+	
 		Create a new Android project called
-		<code>com.vogella.java.library.otto</code>
+		`com.vogella.java.library.otto`
 		based on the
-		<code>Blank Activity with Fragment</code>
+		`Blank Activity with Fragment`
 		template.
-	</para>
+	
 
-	<para>In case you are using the Eclipse IDE, download the Otto JAR and
+	In case you are using the Eclipse IDE, download the Otto JAR and
 		add them to the
 		build path of your
 		project.
-	</para>
-	<para>
+	
+	
 		For Gradle users simply add the dependency to the
-		<filename>build.gradle</filename>
+		`build.gradle`
 		file.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/build.gradle" />
-		</programlisting>
-	</para>
-	<para>
+				parse="text" href="./examples/build.gradle[]
+----
+	
+	
 		The
-		<code>activity_main.xml</code>
+		`activity_main.xml`
 		layout file of the activity should look like the following.
-	</para>
+	
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/activity_main.xml" />
-		</programlisting>
-	</para>
+				parse="text" href="./examples/activity_main.xml[]
+----
+	
 
-	<para>
+	
 		The
-		<code>fragment_main.xml</code>
+		`fragment_main.xml`
 		layout file of the fragment should look like the following.
-	</para>
+	
 
 
-	<para>
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/fragment_main.xml" />
-		</programlisting>
-	</para>
-	<para>
+				parse="text" href="./examples/fragment_main.xml[]
+----
+	
+	
 		Add an fragment and add it dynamically to your activity.
 		Send
 		an event
 		from the fragment to the activity and vice versa.
 		Display in
 		both case a
-		<code>Toast</code>
+		`Toast`
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/MainActivity.java" />
-		</programlisting>
-	</para>
+				parse="text" href="./examples/MainActivity.java[]
+----
+	
 	<note>
-		<para>
+		
 			The example is intentional simple. In a real Android application
 			you
 			would created the
-			<code>Bus</code>
+			`Bus`
 			singleton in the
-			<code>Application</code>
+			`Application`
 			class and the fragment would be in its own file.
-		</para>
+		
 	
 
 

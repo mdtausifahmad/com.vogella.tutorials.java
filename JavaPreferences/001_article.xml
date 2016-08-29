@@ -2,7 +2,7 @@
 
 <article>
 	<articleinfo>
-		<title>Java Preferences API - Tutorial</title>
+=== Java Preferences API - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -21,17 +21,17 @@
 		<pubdate>24.01.2014</pubdate>
 
 		<releaseinfo>
-			<para>Version 1.2</para>
+			Version 1.2
 		</releaseinfo>
 
 		
 		<abstract id="abstract">
-			<title>Using the preference API in Java</title>
-			<para>
+	=== Using the preference API in Java
+			
 				This tutorial gives a introduction into the Java
 				Preference API
 				to save key/value pairs for a Java application.
-			</para>
+			
 
 
 		</abstract>

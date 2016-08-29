@@ -1,7 +1,7 @@
 <section id="introduction">
-	<title>Regular Expressions
+== Regular Expressions
 	<section id="introduction_regex">
-		<title>Overview
+=== Overview
 		
 			A
 			_regular expression_
@@ -56,7 +56,7 @@
 			_Hello World_
 			regex will match the
 			"Hello World" string.
-			<parameter>.</parameter>
+			`.`
 			(dot) is another example for a regular expression. A dot
 			matches any
 			single character; it would match, for example,
@@ -67,7 +67,7 @@
 		
 	
 	<section id="introduction_languages">
-		<title>Support for regular expressions in programming languages
+=== Support for regular expressions in programming languages
 		
 		
 		 Regular expressions are supported by most programming

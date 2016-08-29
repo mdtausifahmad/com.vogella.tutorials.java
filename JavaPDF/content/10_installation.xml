@@ -1,11 +1,11 @@
 <section id="installation">
-	<title>Installation</title>
-	<para>
+== Installation
+	
 		Download the iText core binary from the webpage
-		<ulink url="http://sourceforge.net/projects/itext/">
+		http://sourceforge.net/projects/itext/">
 			http://sourceforge.net/projects/itext/</ulink>
 		. The download contains one jar which is required if you want to use
 		iText.
-	</para>
+	
 
 </section>

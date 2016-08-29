@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Defining and using Java libraries via JAR files - Tutorial</title>
+=== Defining and using Java libraries via JAR files - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -18,16 +18,16 @@
 		</copyright>
 		<pubdate>19.09.2014</pubdate>
 		<releaseinfo>
-			<para>Version 2.5</para>
+			Version 2.5
 		</releaseinfo>
 		
 
 
 		<abstract id="abstract">
-			<title>Using Java jar files</title>
-			<para> This tutorial explains the usage and purpose of Java JAR
+	=== Using Java jar files
+			 This tutorial explains the usage and purpose of Java JAR
 				files.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

@@ -1,15 +1,15 @@
 <section id="modifier">
-	<title>Modifiers</title>
+== Modifiers
 	<section id="javadef_accessmodifier">
-		<title>Access modifiers</title>
-		<para>
+=== Access modifiers
+		
 			There are three access modifiers keywords available in Java:
 			<wordasword>public</wordasword>,
 			<wordasword>protected</wordasword>
 			and
 			<wordasword>private</wordasword>.
-		</para>
-		<para>
+		
+		
 			There are four access levels:
 			<wordasword>public</wordasword>,
 			<wordasword>protected</wordasword>,
@@ -20,14 +20,14 @@
 			element is visible to
 			other
 			components.
-		</para>
-		<para>
+		
+		
 			If something is declared public, e.g., classes or methods can
 			be freely created or called by other Java objects. If something is
 			declared private, e.g., a method, it can only be accessed within the class
 			in which it is declared.
-		</para>
-		<para>
+		
+		
 			The access levels
 			<wordasword>protected</wordasword>
 			and
@@ -42,11 +42,11 @@
 			class can get accessed only via
 			the
 			same package.
-		</para>
-		<para>
+		
+		
 			The following table describes the visibility:
 			<table frame='all'>
-				<title>Access Level</title>
+		=== Access Level
 				<tgroup cols='5' align='left' colsep='1' rowsep='1'>
 					<colspec colname='Modifier' />
 					<colspec colname='Class' />
@@ -94,21 +94,21 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
+		
 	</section>
 
 	<section id="javadefinitions_othermodifiers">
-		<title>Other modifiers</title>
-		<para>final methods: cannot be overwritten in a subclass</para>
-		<para>abstract method: no method body</para>
-		<para>
+=== Other modifiers
+		final methods: cannot be overwritten in a subclass
+		abstract method: no method body
+		
 			synchronized method: thread safe, can be final and have any
 			access control
-		</para>
-		<para>
+		
+		
 			native methods: platform dependent code, apply only to methods
-		</para>
-		<para>strictfp: class or method</para>
+		
+		strictfp: class or method
 	</section>
 
 </section>

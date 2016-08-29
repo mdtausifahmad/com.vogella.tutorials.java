@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Testing with FEST Assertions - Tutorial</title>
+=== Testing with FEST Assertions - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -13,14 +13,14 @@
 		<pubdate>20.06.2011</pubdate>
 		<releaseinfo>
 
-			<para>Version 0.1	</para>
+			Version 0.1	
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>FEST tutorial</title>
-			<para> This tutorial describes the usage of the FEST framework for
+	=== FEST tutorial
+			 This tutorial describes the usage of the FEST framework for
 				writing compact tests.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	

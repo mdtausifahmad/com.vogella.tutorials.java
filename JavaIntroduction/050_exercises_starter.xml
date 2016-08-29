@@ -1,71 +1,71 @@
 <section id="exercises_starter">
-	<title>Exercises - Creating Java objects and methods</title>
+== Exercises - Creating Java objects and methods
 	<section id="exercises_starter1">
-		<title>Create a Person class and instantiate it</title>
-		<para>
+=== Create a Person class and instantiate it
+		
 			Create a new Java project called
-			<code>com.vogella.javastarter.exercises1</code>
+			`com.vogella.javastarter.exercises1`
 			and a package with the same name.
-		</para>
-		<para>
+		
+		
 			Create a class called
 			<wordasword>Person</wordasword>
 			.
-		</para>
-		<para>
+		
+		
 			Add three instance variables to it, one for storing the first
 			name of the person, one for storing the last name
 			and one for storing
 			the age of the Person.
-		</para>
-		<para>
+		
+		
 			Use the constructor of the
-			<code>Person</code>
+			`Person`
 			object
 			to set the values to some default value.
-		</para>
-		<para>
+		
+		
 			Add a
-			<code>toString</code>
+			`toString`
 			method as described by the following codeing and solve the TODO. This method is used to convert the object to a
 			String representation.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise01/PersontoString.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			Create a new class called
 			<wordasword>Main</wordasword>
 			with a
-			<code>public static void main(String[] args)</code>
+			`public static void main(String[] args)`
 			.
 			In this method create an instance of the
-			<code>Person</code>
+			`Person`
 			class.
-		</para>
+		
 	</section>
 	<section id="exercises_starter2">
-		<title>Use constructor</title>
-		<para>
+=== Use constructor
+		
 			Add a constructor to your
-			<code>Person</code>
+			`Person`
 			class which takes first name, last name and age as parameter.
 			Assign the values to your instance variables.
-		</para>
-		<para>
+		
+		
 			In your main method create at least one object of type
-			<code>Person</code>
+			`Person`
 			and use
-			<code>System.out.println()</code>
+			`System.out.println()`
 			with the object as parameter.
-		</para>
+		
 	</section>
 
 	<section id="exercises_starter3">
-		<title>Define getter and setter methods</title>
-		<para>
+=== Define getter and setter methods
+		
 			Define methods which allow you to read the values of the
 			instance
 			variables and to set them. These methods are called
@@ -73,58 +73,58 @@
 			and
 			<wordasword>getter</wordasword>
 			.
-		</para>
-		<para>
+		
+		
 			Getters should start with
-			<code>get</code>
+			`get`
 			followed by the variable name whereby the first letter of the
 			variable is capitalized.
-		</para>
-		<para>
+		
+		
 			Setter should start with
-			<code>set</code>
+			`set`
 			followed by the variable name whereby the first letter of the
 			variable is capitalized.
-		</para>
-		<para>
+		
+		
 			For example, the variable called
 			<wordasword>firstName</wordasword>
 			would have the
-			<code>getFirstName()</code>
+			`getFirstName()`
 			getter method and the
-			<code>setFirstName(String s)</code>
+			`setFirstName(String s)`
 			setter method.
-		</para>
-		<para>
+		
+		
 			Change your
-			<code>main</code>
+			`main`
 			method so that you create one
-			<code>Person</code>
+			`Person`
 			object
 			and use the setter method to change the last name.
-		</para>
+		
 	</section>
 
 	<section id="exercises_starter4">
-		<title>Create an Address object</title>
-		<para>
+=== Create an Address object
+		
 			Create a new object called
 			<wordasword>Address</wordasword>
 			.
 			The
-			<code>Address</code>
+			`Address`
 			should allow you to store the address of a person.
-		</para>
-		<para>
+		
+		
 			Add a new instance variable of this type in the
-			<code>Person</code>
+			`Person`
 			object.
 			Also,
 			create a getter and setter for the
-			<code>Address</code>
+			`Address`
 			object in the
-			<code>Person</code>
+			`Person`
 			object.
-		</para>
+		
 	</section>
 </section>

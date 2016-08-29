@@ -1,13 +1,13 @@
 <section id="readpdf">
-	<title>Read an existing pdf</title>
-	<para>
+== Read an existing pdf
+	
 		iText allows to read existing pdf's and include them into your
 		own
 		pdf. The following example will create page 2 of the previous
 		example
 		and create a new document with this page. 
-		</para>
-	<para>
+		
+	
 		Create a new Java project
 		"de.vogella.itext.readpdf" with the package
 		"de.vogella.itext.read".
@@ -16,16 +16,16 @@
 		(jar file) into
 		this
 		folder.
-		<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
+		http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
 			Add the jar to your classpath.</ulink>
 		Create the following class "ReadAndUsePdf.java" .
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/read/ReadAndUsePdf.java" />
-		</programlisting>
-	</para>
+				parse="text" href="../examples/read/ReadAndUsePdf.java[]
+----
+	
 
 
 </section>

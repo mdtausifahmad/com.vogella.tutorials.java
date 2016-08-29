@@ -1,34 +1,34 @@
 <section id="datamodel">
-	<title>Datamodel</title>
-	<para> We will later use the following datamodel for the example.
-	</para>
-	<para> Create a Java project "de.vogella.spring.di.model" and create
-		the following packages and classes.</para>
-	<para>
+== Datamodel
+	 We will later use the following datamodel for the example.
+	
+	 Create a Java project "de.vogella.spring.di.model" and create
+		the following packages and classes.
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/datamodel/IWriter.java" />
-		</programlisting>
-	</para>
-	<para>
+				parse="text" href="../examples/datamodel/IWriter.java[]
+----
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/datamodel/Writer.java" />
-		</programlisting>
-	</para>
-	<para>
+				parse="text" href="../examples/datamodel/Writer.java[]
+----
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/datamodel/NiceWriter.java" />
-		</programlisting>
-	</para>
-	<para>
+				parse="text" href="../examples/datamodel/NiceWriter.java[]
+----
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/datamodel/MySpringBeanWithDependency.java" />
-		</programlisting>
-	</para>
-	<para> The class "MySpringBeanWithDependency.java" contains a setter
+				parse="text" href="../examples/datamodel/MySpringBeanWithDependency.java[]
+----
+	
+	 The class "MySpringBeanWithDependency.java" contains a setter
 		for the actual writer. We will use the Spring Framework to inject the
-		correct writer into this class.</para>
+		correct writer into this class.
 </section>

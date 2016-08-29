@@ -1,8 +1,8 @@
 <section id="lambdas" role="wrapper">
-	<title>Lambdas</title>
+== Lambdas
 	<section id="lambdas_definition">
-		<title>What are lambdas?</title>
-		<para>
+=== What are lambdas?
+		
 			The Java programming language supports
 			<wordasword>lambdas</wordasword>
 			as of Java 8. A lambda expression is a block of code with parameters.
@@ -12,62 +12,62 @@
 			<wordasword>functional interface</wordasword>
 			as parameter it is
 			possible to pass in the lambda expression instead.
-		</para>
-		<para>The type of a lambda expression in Java is a functional
+		
+		The type of a lambda expression in Java is a functional
 			interface.
-		</para>
+		
 	</section>
 	<section id="lambdas_purpose">
-		<title>Purpose of lambda expressions</title>
-		<para>
+=== Purpose of lambda expressions
+		
 			Using lambdas allows to use a condensed syntax compared to other
 			Java
 			programming constructs. For example the
-			<code>Collection</code>
+			`Collection`
 			interfaces
 			has
-			<code>forEach</code>
+			`forEach`
 			method which accepts a lambda expression.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/lambda/LambdaTest.java" />
 			</programlisting>
-		</para>
+		
 
 	</section>
 	<section id="lambdas_methodreferences">
-		<title>Using method references</title>
-		<para>
+=== Using method references
+		
 			You can use method references in a lambda expression. Method
 			reference define the method to be called via
-			<code>CalledFrom::method</code>
+			`CalledFrom::method`
 			. CalledFrom can be
 			<itemizedlist>
 				<listitem>
-					<para>instance::instanceMethod</para>
+					instance::instanceMethod
 				</listitem>
 				<listitem>
-					<para>SomeClass::staticMethod</para>
+					SomeClass::staticMethod
 				</listitem>
 				<listitem>
-					<para>SomeClass::instanceMethod</para>
+					SomeClass::instanceMethod
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
 					href="./examples/lambda/LambdaTestMethodReferences.java" />
 			</programlisting>
-		</para>
+		
 
 	</section>
 
 	<section id="lambdas_closures">
-		<title>Difference between a lambda expression and a closure</title>
-		<para>
+=== Difference between a lambda expression and a closure
+		
 			The Java programming language supports lambdas but not closures. A lambda is an anonymous function, e.g., it can be
 			defined as
 			parameter. Closures are
@@ -81,10 +81,10 @@
 			parameter list
 			and that it can also be
 			assigned to a variable.
-		</para>
-		<para>
+		
+		
 
-		</para>
+		
 
 	</section>
 

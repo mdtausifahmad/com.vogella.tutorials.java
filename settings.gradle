@@ -8,5 +8,6 @@ include 'JUnit'
 include 'Hamcrest'
 include 'Mockito'
 include 'JavaRegularExpressions'
+include 'AssertJ'
 
 

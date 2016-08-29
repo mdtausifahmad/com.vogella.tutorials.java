@@ -1,67 +1,67 @@
 <section id="piechart">
-	<title>Creating Pie Charts with JFreeChart</title>
+== Creating Pie Charts with JFreeChart
 	<section id="piechart_project">
-		<title>Create Project</title>
-		<para>
+=== Create Project
+		
 			Create a new Java project "de.vogella.jfreechart.swing.pie".
 			Create also a package "de.vogella.jfreechart.swing.pie".
-		</para>
+		
 	</section>
 	<section id="piechart_jars">
-		<title>Add jars to build path of your project</title>
-		<para> In your project create a folder "lib", and paste the JFreeChart
-			jars into this folder. </para>
-		<para>
+=== Add jars to build path of your project
+		 In your project create a folder "lib", and paste the JFreeChart
+			jars into this folder. 
+		
 			You only need the following libraries. Please replace the version
 			numbers with the
 			version you are using.
 
 			<itemizedlist>
 				<listitem>
-					<para>jcommon-1.0.16.jar</para>
+					jcommon-1.0.16.jar
 				</listitem>
 				<listitem>
-					<para>jfreechart-1.0.13.jar</para>
+					jfreechart-1.0.13.jar
 				</listitem>
 			</itemizedlist>
 
-		</para>
-		<para>
+		
+		
 			Add these libraries to your classpath. See
 			<ulink
 				url="http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
 				Eclipse Java IDE - Classpath</ulink>
 			for details).
-		</para>
+		
 
 	</section>
 
 	<section id="piechart_code">
-		<title>Code</title>
-		<para>Create the following two classes. </para>
+=== Code
+		Create the following two classes. 
 
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/pie/PieChart.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/pie/Main.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			I assume that the code is pretty much self-explaining. I tried
 			to add lots of comments to make it easier to understand. For more
 			complex examples have a look at the JFreeChart homepage. 
-		</para>
+		
 
-		<para>
+		
 			<tip> David
 				Gilbert is
 				also selling an excellent developer guide on the
@@ -71,21 +71,19 @@
 				developer guide from David to support him and to get
 				excellent
 				information access.
-		</para>
+		
 	</section>
 	<section id="piechart_run">
-		<title>Run</title>
-		<para>
-			Run Main.java. The result should look like the following.
-			</para>
+=== Run
 		
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jfreechartpie10.gif" />
+			Run Main.java. The result should look like the following.
+			
+		
+		
+image::jfreechartpie10.gif" />
 					
 				</imageobject>
 			</mediaobject>
-		</para>
+		
 	</section>
 </section>

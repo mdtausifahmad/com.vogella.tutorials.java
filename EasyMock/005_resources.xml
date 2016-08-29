@@ -1,11 +1,11 @@
 <section id="resources">
-	<title>Links and Literature</title>
+== Links and Literature
 	<section id="resources_easymock">
-		<title>EasyMock</title>
-		<para>
-			<ulink url="http://easymock.org/">
+=== EasyMock
+		
+			http://easymock.org/">
 				EasyMock Homepage</ulink>
-		</para>
+		
 
 
 	</section>

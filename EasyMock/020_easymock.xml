@@ -1,9 +1,9 @@
 <section id="easymock_overview">
-	<title>EasyMock</title>
+== EasyMock
 	<indexterm>
 		<primary>EasyMock</primary>
 	</indexterm>
-	<para>
+	
 		<wordasword>EasyMock</wordasword>
 		is a mock framework which can be easily used
 		in
@@ -12,53 +12,53 @@
 		The following description demonstrates the
 		usage of
 		EasyMock.
-	</para>
-	<para>EasyMock instantiates an object based on an interface or class.
-	</para>
-	<para>
+	
+	EasyMock instantiates an object based on an interface or class.
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/first/create.java" />
-		</programlisting>
-	</para>
-	<para>
+				parse="text" href="./examples/first/create.java[]
+----
+	
+	
 		The
-		<code>createNiceMock()</code>
+		`createNiceMock()`
 		method creates a mock which returns default values for methods which
 		are not overiden. A mock created with the
-		<code>Mock()</code>
+		`Mock()`
 		method will fails in such a case.
-	</para>
+	
 
 
-	<para>
+	
 		EasyMock has several methods which are used to configure the Mock
 		object.
 		The
-		<code>expect()</code>
+		`expect()`
 		method tells EasyMock to simulate a method
 		with certain
 		arguments. The
-		<code>andReturn()</code>
+		`andReturn()`
 		method
 		defines the return value of this
 		method for the specified method
 		parameters. The
-		<code>times()</code>
+		`times()`
 		method defines how often the Mock object will be
 		called.
-	</para>
-	<para>
+	
+	
 		The
-		<code>replay()</code>
+		`replay()`
 		method is called to make the Mock object
 		available.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/first/configure.java" />
-		</programlisting>
-	</para>
+				parse="text" href="./examples/first/configure.java[]
+----
+	
 
 </section>

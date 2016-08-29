@@ -1,5 +1,5 @@
 <section id="dependencyinjection_places">
-	<title>Where can objects be injected into a class according to JSR330?</title>
+== Where can objects be injected into a class according to JSR330?
 	<indexterm>
 		<primary>Constructor injection</primary>
 	</indexterm>
@@ -9,30 +9,30 @@
 	<indexterm>
 		<primary>Method injection</primary>
 	</indexterm>
-	<para>
+	
 		Dependency injection can be performed on:
 
 		<itemizedlist>
 			<listitem>
-				<para>
+				
 					the constructor of the class (construction injection)
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					a field (field injection)
-				</para>
+				
 			</listitem>
 
 			<listitem>
-				<para>
+				
 					the parameters of a method (method injection)
-				</para>
+				
 			</listitem>
 		</itemizedlist>
-	</para>
+	
 
-	<para>
+	
 		It is possible to use dependency injection on static and on
 		non-static
 		fields
@@ -42,25 +42,25 @@
 		restrictions and can be hard to debug.
 		<itemizedlist>
 			<listitem>
-				<para>Static fields will be injected after the first object of the
+				Static fields will be injected after the first object of the
 					class was created via DI, which means no access to
 					the static
 					field in the constructor
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>Static fields can not be marked as final, otherwise the
+				Static fields can not be marked as final, otherwise the
 					compiler or the application complains at runtime about
 					them
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>Static methods are called only once after the first instance of
+				Static methods are called only once after the first instance of
 					the
 					class was created
-				</para>
+				
 			</listitem>
 		</itemizedlist>
-	</para>
+	
 </section>
 

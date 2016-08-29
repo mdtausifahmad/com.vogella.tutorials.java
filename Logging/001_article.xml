@@ -2,7 +2,7 @@
 
 <article>
 	<articleinfo>
-		<title>Java Logging API - Tutorial</title>
+=== Java Logging API - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -23,17 +23,17 @@
 		<pubdate>15.05.2015</pubdate>
 
 		<releaseinfo>
-			<para>Version 1.7</para>
+			Version 1.7
 		</releaseinfo>
 		
 
 		<abstract id="abstract">
-			<title>Java Logging</title>
-			<para>
+	=== Java Logging
+			
 				This article describes how to use the Logging API in
 				Java
 				programs. It includes an example for creating an HTML logger.
-			</para>
+			
 
 		</abstract>
 	</articleinfo>

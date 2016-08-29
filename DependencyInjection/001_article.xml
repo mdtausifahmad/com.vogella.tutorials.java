@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Using dependency injection in Java - Introduction - Tutorial</title>
+=== Using dependency injection in Java - Introduction - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -14,15 +14,15 @@
 		</copyright>
 		<pubdate>17.05.2012</pubdate>
 		<releaseinfo>
-			<para>Version 2.2</para>
+			Version 2.2
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Dependency injection (DI)</title>
-			<para> This article describes the concept of dependency
+	=== Dependency injection (DI)
+			 This article describes the concept of dependency
 				injection from
 				a Java perspective.
-			</para>
+			
 
 		</abstract>
 	</articleinfo>

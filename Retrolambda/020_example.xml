@@ -1,59 +1,59 @@
 <section id="exercise_retrolambda">
-	<title>Exercise: Using Retrolambda in your Android project</title>
+== Exercise: Using Retrolambda in your Android project
 	<section id="exercise_retrolambda_project">
-		<title>Create project</title>
-		<para>
+=== Create project
+		
 			Create a new Android project with the top level project name
-			<code>com.vogella.android.retrolambda</code>
+			`com.vogella.android.retrolambda`
 			. Add a button to the existing layout with the
-			<code>@+id/button"</code>
+			`@+id/button"`
 			ID.
-		</para>
+		
 	</section>
 
 	<section id="exercise_retrolambda_gradle">
-		<title>Add Retrolambda to your Gradle build configuratoin</title>
+=== Add Retrolambda to your Gradle build configuratoin
 
-		<para>
+		
 			Add the
-			<code>me.tatarka:gradle-retrolambda</code>
+			`me.tatarka:gradle-retrolambda`
 			plug-in as dependency to your
-			<code>build.gradle</code>
+			`build.gradle`
 			file.
-		</para>
-		<para>
+		
+		
 			<programlisting language="groovy">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/appbuild.gradle" />
 			</programlisting>
-		</para>
+		
 
 
 
-		<para>
+		
 			Add the source and target compatibility to Java 8 and apply the new plug-in in your
-			<code>app/build.gradle</code>
+			`app/build.gradle`
 			file.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="groovy">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/build.gradle" />
 			</programlisting>
-		</para>
+		
 
 
 	</section>
 
 
 	<section id="exercise_retrolambda_use">
-		<title>Validate setup by using a lambda expressions</title>
-		<para>Using the lambda configuration by using it with your button to show a Toast once the button is clicked. </para>
+=== Validate setup by using a lambda expressions
+		Using the lambda configuration by using it with your button to show a Toast once the button is clicked. 
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/MainActivity.java" />
 			</programlisting>
-		</para>
+		
 
 	</section>
 

@@ -1,18 +1,18 @@
 <section id="jdbcdriver">
-	<title>MySQL JDBC driver</title>
-	<para>
+== MySQL JDBC driver
+	
 		To connect to MySQL from Java, you have to use the JDBC driver
 		from
 		MySQL. The MySQL JDBC driver is called
 		<wordasword>MySQL Connector/J</wordasword>
 		. You find the latest MySQL JDBC driver under the following URL:
-		<ulink url="http://dev.mysql.com/downloads/connector/j">http://dev.mysql.com/downloads/connector/j</ulink>
+		http://dev.mysql.com/downloads/connector/j">http://dev.mysql.com/downloads/connector/j</ulink>
 		.
-	</para>
+	
 
-	<para>
+	
 		The download contains a
-		<filename>JAR</filename>
+		`JAR`
 		file which we require later.
-	</para>
+	
 </section>

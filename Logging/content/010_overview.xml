@@ -1,8 +1,8 @@
 <section id="overview" role="wrapper">
-	<title>Overview</title>
+== Overview
 	<section id="overview_logger">
-		<title>Logging</title>
-		<para>
+=== Logging
+		
 			<wordasword>Logging</wordasword>
 			is the process of writing log messages during the execution
 			of a
@@ -13,16 +13,16 @@
 			runtime statistics) so that the messages can
 			later be retrieved and
 			analyzed.
-		</para>
-		<para>
+		
+		
 			The object which performs the logging in applications
 			is typically just called <wordasword>Logger</wordasword>.
-		</para>
+		
 	</section>
 
 	<section id="overview_loggerjava">
-		<title>Logging in Java</title>
-		<para>
+=== Logging in Java
+		
 			Java contains the
 			<wordasword>Java Logging API</wordasword>.
 			This
@@ -31,229 +31,229 @@
 			message types are
 			written. Individual classes can use this logger to write messages to
 			the configured log files.
-		</para>
-		<para>
+		
+		
 			The
-			<code>java.util.logging</code>
+			`java.util.logging`
 			package provides the logging
 			capabilities
 			via the
-			<code>Logger</code>
+			`Logger`
 			class.
-		</para>
+		
 	</section>
 
 	<section id="overview_create">
-		<title>Create a logger</title>
-		<para>
+=== Create a logger
+		
 			To create a logger in your Java code,
 			you can use the
 			following
 			snippet.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/createLogger.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			The
-			<code>Logger</code>
-			you create is actually a hierarchy of Loggers, and a <code>.</code> (dot) in the
+			`Logger`
+			you create is actually a hierarchy of Loggers, and a `.` (dot) in the
 			hierarchy indicates a level in the hierarchy. So if you get a Logger
 			for the
-			<code>com.example</code>
+			`com.example`
 			key, this Logger is a child of the
-			<code>com</code>
+			`com`
 			Logger and the
-			<code>com</code>
-			Logger is child of the Logger for the empty <code>String</code>. You can
+			`com`
+			Logger is child of the Logger for the empty `String`. You can
 			configure
 			the main logger and this affects all its children.
-		</para>
+		
 	</section>
 
 	<section id="overview_level">
-		<title>Level</title>
-		<para>
+=== Level
+		
 			The log levels define the severity of a message. The
-			<code>Level</code>
+			`Level`
 			class
 			is used to define which messages should be written to
 			the log.
-		</para>
-		<para>
+		
+		
 			The following lists the Log Levels in descending order:
-			<para>
+			
 				<itemizedlist>
 					<listitem>
-						<para>SEVERE (highest)</para>
+						SEVERE (highest)
 					</listitem>
 					<listitem>
-						<para>WARNING</para>
+						WARNING
 					</listitem>
 					<listitem>
-						<para>INFO</para>
+						INFO
 					</listitem>
 					<listitem>
-						<para>CONFIG</para>
+						CONFIG
 					</listitem>
 					<listitem>
-						<para>FINE</para>
+						FINE
 					</listitem>
 					<listitem>
-						<para>FINER</para>
+						FINER
 					</listitem>
 					<listitem>
-						<para>FINEST</para>
+						FINEST
 					</listitem>
 				</itemizedlist>
-			</para>
-		</para>
+			
+		
 
-		<para>
+		
 			In addition to that you also have the levels
 			<command>OFF</command>
 			and
 			<command>ALL</command>
 			to turn the logging off or to log everything.
-		</para>
-		<para>
+		
+		
 			For example, the following code sets the logger to the
-			<code>info</code>
+			`info`
 			level,
 			which means all messages with severe, warning and info will
 			be
 			logged.
-		</para>
+		
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/setLogLevel.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 
 	<section id="general_handler">
-		<title>Handler</title>
-		<para>Each logger can have access to several handlers.</para>
-		<para>
+=== Handler
+		Each logger can have access to several handlers.
+		
 			The handler receives the log message from the logger and
 			exports
 			it to a certain target.
-		</para>
-		<para>
+		
+		
 			A handler can be turned off with the
-			<code>setLevel(Level.OFF)</code>
+			`setLevel(Level.OFF)`
 			method
 			and
 			turned on
 			with
-			<code>setLevel()</code>
+			`setLevel()`
 			method.
-		</para>
-		<para>
+		
+		
 			You have several standard handlers.
 			The following list gives
 			some
 			examples.
-		</para>
-		<para>
+		
+		
 			<itemizedlist>
 				<listitem>
-					<para>
+					
 						ConsoleHandler: Write the log message to console
-					</para>
+					
 				</listitem>
 				<listitem>
-					<para>
+					
 						FileHandler: Writes the log message to file
-					</para>
+					
 				</listitem>
 			</itemizedlist>
-		</para>
-		<para>
+		
+		
 			Log levels
 			<command>INFO</command>
 			and higher will be automatically written to the console.
-		</para>
+		
 	</section>
 
 	<section id="general_formatter">
-		<title>Formatter</title>
-		<para>
+=== Formatter
+		
 			Each handler's output can be configured with a formatter
-		</para>
-		<para>Available formatter</para>
+		
+		Available formatter
 		<itemizedlist>
 			<listitem>
-				<para>
+				
 					SimpleFormatter: Generate all messages as text
-				</para>
+				
 			</listitem>
 			<listitem>
-				<para>
+				
 					XMLFormatter: Generates XML output for the log
 					messages
-				</para>
+				
 			</listitem>
 		</itemizedlist>
-		<para>
+		
 			You can also build your own formatter. The following is an
 			example of a formatter which will create HTML output.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/MyHtmlFormatter.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 
 	<section id="general_manager">
-		<title>Log Manager</title>
-		<para>
+=== Log Manager
+		
 			The log manager is responsible for creating and managing the
 			logger and the maintenance of the configuration.
-		</para>
-		<para>
+		
+		
 			We could set the logging level for a package, or even a set
 			of
 			packages, by calling the
-			<code>LogManager.setLevel(String name,
+			`LogManager.setLevel(String name,
 				Level level)
-			</code>
+			`
 			method. So, for example, we could set the
 			logging level of all loggers
-			to <code>Level.FINE</code> by
+			to `Level.FINE` by
 			making this call:
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../examples/setLogLevel2.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 
 	<section id="chapter20s1a">
-		<title>Best Practices</title>
-		<para>
+=== Best Practices
+		
 			It is common practice to use the fully qualified name of
 			each
 			class whose activity is being logged as a message
 			category, because
 			this allows developers to fine-tune log
 			settings for each class.
-		</para>
-		<para>
+		
+		
 			Using the fully qualified class name of your class as the
 			name of
 			your Logger is the approach recommended by the
 			Logging API
 			documentation.
-		</para>
+		
 	</section>
 </section>

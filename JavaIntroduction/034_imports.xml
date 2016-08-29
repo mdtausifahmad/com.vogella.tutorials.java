@@ -1,36 +1,36 @@
 <section id="javaimports">
-	<title>Import statements</title>
+== Import statements
 	<section id="javaimports_definition">
-		<title>Usage of import statements</title>
-		<para>
+=== Usage of import statements
+		
 			In Java you have to access a class always via its
 			full-qualified name, i.e., the package name and the class name.
-		</para>
-		<para>
+		
+		
 			You can add
-			<code>import</code>
+			`import`
 			statements for classes or packages into your class file, which allow
 			you to use the related classes in your code without the package
 			qualifier.
-		</para>
+		
 	</section>
 
 	<section id="javaimport_staticimports">
-		<title>Static imports</title>
-		<para>
+=== Static imports
+		
 			Static import is a feature that allows members (fields and
 			methods)
 			which are defined in a class
 			with the
-			<code>public static</code>
+			`public static`
 			access modifier
 			to be used in Java code
 			without specifying the class
 			in
 			which the member
 			is defined.
-		</para>
-		<para>
+		
+		
 			The feature
 			provides a typesafe mechanism to
 			include constants
@@ -40,6 +40,6 @@
 			originally defined
 			the
 			field.
-		</para>
+		
 	</section>
 </section>

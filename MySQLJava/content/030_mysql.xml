@@ -1,14 +1,14 @@
 <section id="overview">
-	<title>Introduction to MySQL</title>
-	<para>
+== Introduction to MySQL
+	
 		To learn to install and use MySQL please
 		see
-		<ulink url="http://www.vogella.com/tutorials/MySQL/article.html">MySQL - Tutorial</ulink>
+		http://www.vogella.com/tutorials/MySQL/article.html">MySQL - Tutorial</ulink>
 		.
-	</para>
+	
 
-	<para>
+	
 		The following description will assume that you have successfully installed
 		MySQL and know how to access MySQL via the command line.
-	</para>
+	
 </section>

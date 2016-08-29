@@ -1,5 +1,5 @@
 <section id="dependencyinjection_annotations">
-	<title>Using annotations to describe class dependencies</title>
+== Using annotations to describe class dependencies
 	<indexterm>
 		<primary>Dependency injection</primary>
 		<secondary>annotations</secondary>
@@ -16,44 +16,44 @@
 	<indexterm>
 		<primary>@Named</primary>
 	</indexterm>
-	<para>Different approaches exist to describe the
+	Different approaches exist to describe the
 		dependencies of a
 		class. The most common approach is to use Java
 		annotations to describe
 		the dependencies directly in the class.
-	</para>
-	<para>
+	
+	
 		The standard Java annotations for describing the dependencies of a class are
 		defined
 		in the Java
 		Specification Request 330 (JSR330). This specification
 		describes the
-		<code>@Inject</code>
+		`@Inject`
 		and
-		<code>@Named</code>
+		`@Named`
 		annotations.
-	</para>
-	<para>
+	
+	
 		The following listing shows a class which uses annotations to
 		describe its dependencies.
-	</para>
+	
 
-	<para>
+	
 
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				href="../examples/snippets/Example.java" parse="text" />
-		</programlisting>
-	</para>
+				href="../examples/snippets/Example.java" parse="text[]
+----
+	
 	<note>
-		<para>
+		
 			Please note that this class uses the
-			<code>new</code>
+			`new`
 			operator for the user interface components. This implies that this
 			part of the code is nothing you plan to replace via your tests and
 			that you
 			made the decision to have a hard coupling to the
 			corresponding user interface toolkit.
-		</para>
+		
 	
 </section>

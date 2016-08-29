@@ -1,18 +1,18 @@
 <section id="overview">
-	<title>Overview</title>
-	<para> Java Architecture for XML Binding (JAXB) is a Java standard that
+== Overview
+	 Java Architecture for XML Binding (JAXB) is a Java standard that
 		defines how Java objects are
 		converted from and to XML. It uses a
 		standard set of mappings.
-	</para>
-	<para>
+	
+	
 		JAXB defines an API for reading and
 		writing Java objects to
 		and
 		from
 		XML documents.
-	</para>
-	<para>As JAXB is defined via a specification, it is possible to use
+	
+	As JAXB is defined via a specification, it is possible to use
 		different implementations for this standard. JAXB
 		defines a
 		service
@@ -21,8 +21,8 @@
 		allows the
 		selection of the JAXB
 		implementation.
-	</para>
-	<para>
+	
+	
 		It applies
 		a lot of
 		defaults thus
@@ -32,5 +32,5 @@
 		via
 		Java
 		relatively easy.
-	</para>
+	
 </section>

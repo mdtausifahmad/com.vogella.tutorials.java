@@ -1,84 +1,84 @@
 <section id="exercises_starter_solution" role="wrapper">
-	<title>Solution - Creating Java objects and methods</title>
+== Solution - Creating Java objects and methods
 	<section id="exercises_starter1_solution">
-		<title>Create a Person class and instantiate it</title>
-		<para>
+=== Create a Person class and instantiate it
+		
 			The following is the expected result after
 			<xref linkend="exercises_starter1" />
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise04/Person.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise04/Main.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 
 	<section id="exercises_starter2_solution">
-		<title>Use constructor</title>
-		<para>
+=== Use constructor
+		
 			The following is the expected result after
 			<xref linkend="exercises_starter2" />
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise06/Person.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise06/Main.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 
 	<section id="exercises_starter3solution">
-		<para>
+		
 			The following is the expected result after
 			<xref linkend="exercises_starter3" />
 			.
-		</para>
-		<title>Define getter and setter methods</title>
-		<para>
+		
+=== Define getter and setter methods
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise10/Person.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise10/Main.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 
 	<section id="exercises_starter4solution">
 
-		<title>Solution - Create an Address object</title>
-		<para>
+=== Solution - Create an Address object
+		
 			The following is the expected result after
 			<xref linkend="exercises_starter4" />
 			.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise16/Address.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise16/Person.java" />
 			</programlisting>
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/exercise16/Main.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 </section>

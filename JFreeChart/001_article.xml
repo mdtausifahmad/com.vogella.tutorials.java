@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>JFreeChart - Tutorial</title>
+=== JFreeChart - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,14 +16,14 @@
 		</copyright>
 		<pubdate>01.05.2012</pubdate>
 		<releaseinfo>
-			<para>Version 1.4</para>
+			Version 1.4
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Abstract</title>
-			<para> This article describes the usage of the Java library
+	=== Abstract
+			 This article describes the usage of the Java library
 				JFreeChart. As example we create a pie chart.
-			</para>
+			
 
 		</abstract>
 	</articleinfo>

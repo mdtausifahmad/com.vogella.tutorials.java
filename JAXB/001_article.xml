@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>JAXB - Tutorial</title>
+=== JAXB - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -16,17 +16,17 @@
 		</copyright>
 		<pubdate>23.11.2012</pubdate>
 		<releaseinfo>
-			<para>Version 1.6</para>
+			Version 1.6
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>JAXB Tutorial</title>
-			<para>
+	=== JAXB Tutorial
+			
 				This tutorial give an
 				introduction to Java Architecture for XML
 				Binding (JAXB). This
 				tutorial is based on Java 6.0.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

@@ -1,24 +1,24 @@
 <section id="clone">
-	<title>Clone the OpenJDK repositories</title>
+== Clone the OpenJDK repositories
 
-	<para> Clone the OpenJDK7 respositories via the following command.
-	</para>
+	 Clone the OpenJDK7 respositories via the following command.
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/clone/openJDK7.txt" />
-		</programlisting>
-	</para>
+				parse="text" href="../examples/clone/openJDK7.txt[]
+----
+	
 
-	<para>Alternatively you can clone OpenJDK6 via the following command.
-	</para>
+	Alternatively you can clone OpenJDK6 via the following command.
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/clone/openJDK6.txt" />
-		</programlisting>
-	</para>
+				parse="text" href="../examples/clone/openJDK6.txt[]
+----
+	
 
 </section>

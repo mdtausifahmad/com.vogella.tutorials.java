@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Creating PDF with Java and iText - Tutorial</title>
+=== Creating PDF with Java and iText - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -12,14 +12,14 @@
 		</copyright>
 		<pubdate>11.10.2010</pubdate>
 		<releaseinfo>
-			<para>Version 0.5</para>
+			Version 0.5
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Java and PDF with iText</title>
-			<para> This article demonstrate how to create PDF files with Java and
+	=== Java and PDF with iText
+			 This article demonstrate how to create PDF files with Java and
 				the iText library. In this tutorial iText version 5.0.x is used
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

@@ -1,18 +1,18 @@
 
 <section id="javanetwork_example_readpage">
-	<title>Example: Read web page via Java</title>
-	<para>
+== Example: Read web page via Java
+	
 		Create a Java project called
 		<wordasword>de.vogella.web.html</wordasword>
 		. The following code
 		will read an HTML page from a URL and write the
 		result to
 		the console.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/ReadWebPage.java" />
-		</programlisting>
-	</para>
+				parse="text" href="./examples/ReadWebPage.java[]
+----
+	
 </section>

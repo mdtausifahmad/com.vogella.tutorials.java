@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Using Retrolambda - Tutorial</title>
+=== Using Retrolambda - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -12,15 +12,15 @@
 		</copyright>
 		<pubdate>19.07.2015</pubdate>
 		<releaseinfo>
-			<para>Version 0.1</para>
+			Version 0.1
 		</releaseinfo>
 		
 
 
 		<abstract id="abstract">
-			<title>Using the Retrolambda library</title>
-			<para> This tutorial explains the usage of the Retrolambda library.
-			</para>
+	=== Using the Retrolambda library
+			 This tutorial explains the usage of the Retrolambda library.
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

@@ -1,9 +1,9 @@
 <section id="festoverview">
-	<title>FEST has been superseded by AssertJ</title>
-	<para>
+== FEST has been superseded by AssertJ
+	
 		FEST is currently not been actively maintained, AssertJ is a fork of FEST and can been seen as its successor. See
-		<ulink url="http://www.vogella.com/tutorials/AssertJ/article.html">AssertJ tutorial</ulink>
+		http://www.vogella.com/tutorials/AssertJ/article.html">AssertJ tutorial</ulink>
 
-	</para>
+	
 
 </section>

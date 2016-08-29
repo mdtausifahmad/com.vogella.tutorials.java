@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Java Performance - Memory and Runtime Analysis - Tutorial
-		</title>
+=== Java Performance - Memory and Runtime Analysis - Tutorial
+		
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -21,19 +21,19 @@
 			01.08.2014
 		</pubdate>
 		<releaseinfo>
-			<para>Version 1.1</para>
+			Version 1.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Abstract</title>
-			<para>This article will be a collection of Java performance
+	=== Abstract
+			This article will be a collection of Java performance
 				measurement pointer.
-			</para>
-			<para> It describes how memory works in general and how Java use the
+			
+			 It describes how memory works in general and how Java use the
 				heap and the stack. The article describes how to set the available
 				memory for Java. It discusses then how to get the runtime and the
 				memory consumption of a Java application.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

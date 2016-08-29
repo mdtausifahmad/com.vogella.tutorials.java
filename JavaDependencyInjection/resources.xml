@@ -1,17 +1,17 @@
 <section id="resources">
-	<title>Links and Literature</title>
+== Links and Literature
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/sourcejava.xml" />
 	<section id="springlinks">
-		<title>Spring Links</title>
-		<para>
-			<ulink url="http://www.springframework.org/"> http://www.springframework.org/</ulink>
+=== Spring Links
+		
+			http://www.springframework.org/"> http://www.springframework.org/</ulink>
 			Homepage of the Spring Framework
-		</para>
-		<para>
-			<ulink url="http://www.vogella.com/tutorials/SpringJDBC/article.html">
+		
+		
+			http://www.vogella.com/tutorials/SpringJDBC/article.html">
 				http://www.vogella.com/tutorials/SpringJDBC/article.html</ulink>
 			Using the Spring Jdbc Template for Database Access
-		</para>
+		
 	</section>
 	
 </section>

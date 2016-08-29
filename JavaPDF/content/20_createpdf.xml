@@ -1,6 +1,6 @@
 <section id="createpdf">
-	<title>Create a PDF</title>
-	<para>
+== Create a PDF
+	
 		Create a new Java project "de.vogella.itext.write" with the package
 		"de.vogella.itext.write".
 		Create a folder
@@ -8,10 +8,10 @@
 		(jar file) into
 		this
 		folder.
-		<ulink url="http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
+		http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
 			Add the jar to your classpath.</ulink>
-	</para>
-	<para>
+	
+	
 		Create the following class "FirstPdf.java" .
 		I assume that the
 		code is
@@ -21,25 +21,23 @@
 		easier to understand. For more
 		complex examples have a look
 		at the
-		<ulink url="http://www.lowagie.com/iText/">
+		http://www.lowagie.com/iText/">
 			iText Homepage</ulink>
 		.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/write/FirstPdf.java" />
-		</programlisting>
-	</para>
+				parse="text" href="../examples/write/FirstPdf.java[]
+----
+	
 
-	<para> The resulting pdf should look like the following.</para>
-	<para>
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/pdfwrite10.gif" />
+	 The resulting pdf should look like the following.
+	
+image::pdfwrite10.gif" />
 				
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 
 </section>

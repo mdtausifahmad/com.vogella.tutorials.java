@@ -1,33 +1,25 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
-		<title>Testing with AssertJ assertions - Tutorial</title>
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2015</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>29.05.2015</pubdate>
-		<releaseinfo>
+= Testing with AssertJ assertions - Tutorial
+:linkcss:
+:sectnums:
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2009 - 2016 vogella GmbH
+Version 0.4, 29.08.2016
+:docinfodir: ../
+:vgwort: AssertJ
 
-			<para>Version 0.3</para>
-		</releaseinfo>
-		
-		<abstract id="abstract">
-			<title>AssertJ tutorial</title>
-			<para> This tutorial describes the usage of the AssertJ framework for
-				writing compact tests.
-			</para>
-		</abstract>
-	</articleinfo>
-	
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="010_overview.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="020_installation.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="030_usuage.xml" />
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/support.xml" />	
-	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="006_resources.xml" />
-	<?dbhtml-include href="../../web/vgwort/AssertJ"?>
-</article>
+[abstract]
+AssertJ tutorial.
+This tutorial describes the usage of the AssertJ framework for
+writing compact tests.
+
+include::../web/advertisement/afterTableOfContent.adoc[]		
+include::010_overview.adoc[]
+include::020_installation.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::030_usuage.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

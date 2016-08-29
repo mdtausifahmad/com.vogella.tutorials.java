@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Introduction to Java programming - Tutorial</title>
+=== Introduction to Java programming - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -24,18 +24,18 @@
 		</copyright>
 		<pubdate>21.07.2016</pubdate>
 		<releaseinfo>
-			<para>Version 2.7</para>
+			Version 2.7
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Introduction to Java programming</title>
-			<para>
+	=== Introduction to Java programming
+			
 				This tutorial explains the installation and usage of the Java
 				programming language. It also
 				contains examples
 				for standard
 				programming tasks.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

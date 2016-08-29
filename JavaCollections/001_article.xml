@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Java Collections - Tutorial</title>
+=== Java Collections - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -19,14 +19,14 @@
 		</copyright>
 		<pubdate>25.08.2015</pubdate>
 		<releaseinfo>
-			<para>Version 2.7</para>
+			Version 2.7
 		</releaseinfo>
 
 		<abstract id="abstract">
-			<title>Introduction to the Java Collections framework</title>
-			<para> This tutorial explains the usage of the Java collections, e.g.
+	=== Introduction to the Java Collections framework
+			 This tutorial explains the usage of the Java collections, e.g.
 				Lists, ArrayLists and Maps with Java 8.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

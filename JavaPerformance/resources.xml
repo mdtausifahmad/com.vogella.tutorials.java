@@ -1,25 +1,25 @@
 <section id="resources">
-	<title>Links and Literature</title>
+== Links and Literature
 	<section id="resources_performance">
-		<title>Performance</title>
-		<para>
+=== Performance
+		
 			<ulink
 				url="https://www.ibm.com/developerworks/java/library/j-jtp09196/"> 
 				https://www.ibm.com/developerworks/java/library/j-jtp09196/</ulink>
 			Java theory and practice: Instrumenting applications with JMX
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://www.ibm.com/developerworks/java/library/j-jtp11137.html"> 
 			http://www.ibm.com/developerworks/java/library/j-jtp11137.html</ulink>
 			Java theory and practice: Stick a fork in it, Part 1
-		</para>
-		<para>
+		
+		
 			<ulink
 				url="http://www.ibm.com/developerworks/java/library/j-jtp03048.html"> 
 				http://www.ibm.com/developerworks/java/library/j-jtp03048.html</ulink>
 			Java theory and practice: Stick a fork in it, Part 2
-		</para>
+		
 		
 	</section>
 

@@ -1,38 +1,38 @@
 <section id="installation">
-	<title>Installation</title>
+== Installation
 	<section id="installation_jpa">
-		<title>EclipseLink</title>
-		<para>
+=== EclipseLink
+		
 			Download the "EclipseLink Installer Zip" implementation from the
-			<ulink url="http://www.eclipse.org/eclipselink/downloads/"> EclipseLink Download Site</ulink>
+			http://www.eclipse.org/eclipselink/downloads/"> EclipseLink Download Site</ulink>
 			.
-		</para>
-		<para>
+		
+		
 			The download contains several jars. We need the following jars:
 			<itemizedlist>
 				<listitem>
-					<para>eclipselink.jar</para>
+					eclipselink.jar
 				</listitem>
 				<listitem>
-					<para>javax.persistence_*.jar</para>
+					javax.persistence_*.jar
 				</listitem>
 			</itemizedlist>
-		</para>
+		
 	</section>
 	<section id="installation_database">
-		<title>Derby Database</title>
-		<para>
+=== Derby Database
+		
 			The example later will be using
-			<ulink url="http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby</ulink>
+			http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby</ulink>
 			as a database. Download Derby
 			from
-			<ulink url="http://db.apache.org/derby/"> http://db.apache.org/derby/</ulink>
+			http://db.apache.org/derby/"> http://db.apache.org/derby/</ulink>
 			From this tutorial we will need the "derby.jar".
 			For details on Derby
 			(which is not required for this tutorial)
 			please see
-			<ulink url="http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby</ulink>
+			http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby</ulink>
 			.
-		</para>
+		
 	</section>
 </section>

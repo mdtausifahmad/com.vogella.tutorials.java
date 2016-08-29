@@ -1,6 +1,6 @@
 <section id="eclipselink">
-	<title>EclipseLink</title>
-	<para>
+== EclipseLink
+	
 		This tutorial
 		will use
 		EclipseLink
@@ -10,18 +10,18 @@
 
 		<itemizedlist>
 			<listitem>
-				<para>Java Persistence (JPA) 2.0 - JSR 317</para>
+				Java Persistence (JPA) 2.0 - JSR 317
 			</listitem>
 			<listitem>
-				<para>Java Architecture for XML Binding (JAXB) 2.2 - JSR 222</para>
+				Java Architecture for XML Binding (JAXB) 2.2 - JSR 222
 			</listitem>
 			<listitem>
-				<para>Service Data Objects (SDO) 2.1.1 - JSR 235</para>
+				Service Data Objects (SDO) 2.1.1 - JSR 235
 			</listitem>
 		</itemizedlist>
 
 
-	</para>
-	<para> This tutorial covers the usage of the JPA functionality. </para>
+	
+	 This tutorial covers the usage of the JPA functionality. 
 
 </section>

@@ -1,8 +1,8 @@
 <section id="javadef_types">
-	<title>The type system of Java</title>
+== The type system of Java
 	<section id="javadef_types1">
-		<title>Primitives and references</title>
-		<para>
+=== Primitives and references
+		
 			Java distinguishes between
 			<wordasword>primitive types</wordasword>
 			(such as boolean,
@@ -10,12 +10,12 @@
 			char and byte) and
 			<wordasword>reference types</wordasword>
 			(such as Object and String).
-		</para>
+		
 	</section>
 	<section id="javadef_types_primitives">
-		<title>Primitives </title>
+=== Primitives 
 
-		<para>
+		
 			Primitive types variables represents the number, true/false or
 			character. You cannot call
 			methods
@@ -23,18 +23,18 @@
 			a
 			primitive
 			types.
-		</para>
-		<para>Operators such
+		
+		Operators such
 			as *, -, + or / are only supported for
 			primitive
 			types. Only + can also used for the reference type String to
 			concatenate strings.
-		</para>
+		
 	</section>
 
 	<section id="javadef_types_references">
-		<title>Reference types </title>
-		<para>
+=== Reference types 
+		
 			Reference types variables represents a reference to an
 			object, e.g.,
 			a
@@ -45,7 +45,7 @@
 			reference type variable, the variable points to a
 			different object or
 			to
-			<code>null</code>
+			`null`
 			which represents the non-existing object reference.
 			Changing the
 			value
@@ -61,11 +61,11 @@
 			variable
 			referring to that
 			object.
-		</para>
+		
 	</section>
 	<section id="javadef_types_autoboxing">
-		<title>Autoboxing and wrapper types</title>
-		<para>
+=== Autoboxing and wrapper types
+		
 			Every
 			primitive type has in
 			Java
@@ -79,10 +79,10 @@
 			type in an
 			object. For
 			example you have
-			<code>java.lang.Integer</code>
+			`java.lang.Integer`
 			for int.
-		</para>
-		<para>
+		
+		
 			Converting a
 			primitive value into
 			an instance
@@ -103,7 +103,7 @@
 			known
 			as
 			autoboxing.
-		</para>
+		
 	</section>
 
 </section>

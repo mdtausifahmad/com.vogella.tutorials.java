@@ -1,27 +1,27 @@
 <section id="resources">
-	<title>Links and Literature</title>
+== Links and Literature
 	
 	<section id="resources_xml">
-		<title>Links and Literature</title>
-		<para>
-			<ulink url="http://www.vogella.com/tutorials/RSSFeed/article.html">
+=== Links and Literature
+		
+			http://www.vogella.com/tutorials/RSSFeed/article.html">
 				http://www.vogella.com/tutorials/RSSFeed/article.html</ulink>
 			Read and write RSS feeds via Java (Stax)
-		</para>
+		
 
-		<para>
+		
 			<ulink
 				url="http://java.sun.com/developer/technicalArticles/WebServices/jaxb/">
 				http://java.sun.com/developer/technicalArticles/WebServices/jaxb/</ulink>
 			JAXB Overview
-		</para>
+		
 
-		<para>
+		
 			<ulink
 				url="http://www.ibm.com/developerworks/library/x-javaxpathapi.html">
 				http://www.ibm.com/developerworks/library/x-javaxpathapi.html</ulink>
 			The Java XPath API (by Elliotte Rusty Harold)
-		</para>
+		
 	</section>
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
 </section>

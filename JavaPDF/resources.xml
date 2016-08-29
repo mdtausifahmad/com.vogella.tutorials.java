@@ -1,18 +1,18 @@
 <section id="resources">
-	<title>Links and Literature</title>
+== Links and Literature
 	
 	<section id="resources_pdf">
-		<title>iText Resources</title>
-		<para>
-			<ulink url="http://www.lowagie.com/iText/">
+=== iText Resources
+		
+			http://www.lowagie.com/iText/">
 				iText Homepage</ulink>
-		</para>
+		
 
-		<para>
-			<ulink url="http://itextdocs.lowagie.com/tutorial/">
+		
+			http://itextdocs.lowagie.com/tutorial/">
 				http://itextdocs.lowagie.com/tutorial/</ulink>
 			Tutorial from iText homepage, lots of specific examples
-		</para>
+		
 
 	</section>
 

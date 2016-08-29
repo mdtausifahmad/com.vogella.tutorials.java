@@ -1,14 +1,8 @@
-<section id="resources_apachemaven">
-	<title>AssertJ resources</title>
+== AssertJ resources
 
-	<para>
-		<ulink url="http://joel-costigliola.github.io/assertj/index.html"> AssertJ homepage</ulink>
-	</para>
-	<para>
-		<ulink url="https://github.com/joel-costigliola/assertj-core"> AssertJ Github hosting page</ulink>
-	</para>
-	<para>
-		<ulink url="https://github.com/square/assertj-android"> AssertJ Android</ulink>
-	</para>
+http://joel-costigliola.github.io/assertj/index.html[AssertJ homepage]
 
-</section>
+https://github.com/joel-costigliola/assertj-core[AssertJ Github hosting page]
+
+https://github.com/square/assertj-android[AssertJ Android]
+

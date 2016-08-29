@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>How to implement an ArrayList structure in Java - Tutorial</title>
+=== How to implement an ArrayList structure in Java - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -18,23 +18,23 @@
 		</copyright>
 		<pubdate>09.10.2012</pubdate>
 		<releaseinfo>
-			<para>Version 1.1</para>
+			Version 1.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>List implementations in Java</title>
-			<para> This article describes how to implement
+	=== List implementations in Java
+			 This article describes how to implement
 				a list data structure
 				in
 				Java.
-			</para>
-			<para> The implementations in this articles are for demonstration and
+			
+			 The implementations in this articles are for demonstration and
 				education purpose.
 				They do not try to be as efficient as the standard
 				libraries and they
 				are not intended to be an replacement for the
 				standard Java libraries structures.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

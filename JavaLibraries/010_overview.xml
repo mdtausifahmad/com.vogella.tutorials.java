@@ -1,24 +1,24 @@
 <section id="jarfiles" role="wrapper">
-	<title>Defining and using Java libraries</title>
+== Defining and using Java libraries
 	<indexterm>
 		<primary>Java libraries</primary>
 	</indexterm>
 	<section id="javalibrary">
-		<title>What is a Java library?</title>
+=== What is a Java library?
 		<indexterm>
 			<primary>Java libary</primary>
 		</indexterm>
-		<para>
+		
 			A Java library contains code which you can access and use in your Java project. The deployment format of a Java
 			library is a JAR file.
-		</para>
+		
 	</section>
 	<section id="jarfiles_definition">
-		<title>What is a JAR file?</title>
+=== What is a JAR file?
 		<indexterm>
 			<primary>JAR files</primary>
 		</indexterm>
-		<para>
+		
 			A
 			JAR
 			file is a Java archive based on the pkzip file format. JAR
@@ -30,25 +30,25 @@
 			and
 			can be
 			executable.
-		</para>
-		<para> You can
+		
+		 You can
 			distribute your program in a jar file or you can use
 			existing java
 			code via jars by putting them into your
 			classpath.
-		</para>
+		
 	</section>
 
 	<section id="jarfiles_library">
-		<title>Using Java libraries</title>
-		<para>
+=== Using Java libraries
+		
 			If you add a
 			JAR
 			file to your classpath, you can use its classes
 			in
 			your Java
 			application.
-		</para>
+		
 	</section>
 
 </section>

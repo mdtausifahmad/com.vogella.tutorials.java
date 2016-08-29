@@ -1,32 +1,32 @@
 <section id="example">
-	<title>Exercise: Reading and writing files</title>
-	<para>
+== Exercise: Reading and writing files
+	
 		Create a new Java project called
 		<wordasword>com.vogella.java.files</wordasword>
 		. Create the following
-		<code>FilesUtil.java</code>
+		`FilesUtil.java`
 		class.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/file/FilesUtil.java" />
-		</programlisting>
-	</para>
-	<para>
+				parse="text" href="./examples/file/FilesUtil.java[]
+----
+	
+	
 		To test these methods, create a text file called
-		<filename>file.txt</filename>
+		`file.txt`
 		with some
 		content in your project folder. Create the following
-		<code>Main</code>
+		`Main`
 		class and run it.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/file/Main.java" />
-		</programlisting>
-	</para>
+				parse="text" href="./examples/file/Main.java[]
+----
+	
 
 
 </section>

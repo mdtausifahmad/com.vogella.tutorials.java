@@ -1,78 +1,78 @@
 <section id="javanetwork_overview">
-	<title>Java and HTTP access</title>
+== Java and HTTP access
 	<indexterm>
 		<primary>HTTP access with Java</primary>
 	</indexterm>
-	<para>
+	
 		Java provides a general-purpose,
         lightweight HTTP client API to access resources via the HTTP or HTTPS protocol. The main
 		classes to access the Internet are the
-		<code>java.net.URL</code>
+		`java.net.URL`
 		class and the
-		<code>java.net.HttpURLConnection</code>
+		`java.net.HttpURLConnection`
 		class.
 
-	</para>
-	<para>
+	
+	
 		The
-		<code>URL</code>
+		`URL`
 		class
 		can be
 		used to define a pointer to
 		a web resource
 		while the
-		<code>HttpURLConnection</code>
+		`HttpURLConnection`
 		class
 		can be used to
 		access a web
 		resource.
-	</para>
-	<para>
-		<code>HttpURLConnection</code>
-		allows you to create an
-		<code>InputStream</code>
-		.
-	</para>
-	<para>
-		Once you have accessed an
-		<code>InputStream</code>
-		you can read it similarly to an
-		<code>InputStream</code>
-		from a local file.
-	</para>
 	
-	 <para>
+	
+		`HttpURLConnection`
+		allows you to create an
+		`InputStream`
+		.
+	
+	
+		Once you have accessed an
+		`InputStream`
+		you can read it similarly to an
+		`InputStream`
+		from a local file.
+	
+	
+	 
         In the latest version
-        <code>HttpURLConnection</code>
+        `HttpURLConnection`
         supports the transparent response compression (via the header
-        <code>Accept-Encoding: gzip</code>
+        `Accept-Encoding: gzip`
         , Server Name Indication (extension of SSL and TLS) and a response
         cache.
-    </para>
+    
 
 
    
-    <para> The API is relatively straight forward. For example to retrieve
+     The API is relatively straight forward. For example to retrieve
         the webpage www.vogella.com you can use the following example.
-    </para>
+    
 
-    <para>
+    
         <programlisting>
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                 parse="text" href="./examples/http/get.txt" />
         </programlisting>
-    </para>
-    <para>
+    
+    
         The Javadoc of
-        <code>HttpURLConnection</code>
+        `HttpURLConnection`
         suggest to not reuse on
-        <code>HttpURLConnection</code>
+        `HttpURLConnection`
         . If you use it this way,
-        <code>HttpURLConnection</code>
+        `HttpURLConnection`
         has no threading issues, as it will not be shared between different
-        <code>Threads</code>
+        `Threads`
         .
-    </para>
+    
 
 </section>
     

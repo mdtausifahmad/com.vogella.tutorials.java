@@ -1,111 +1,111 @@
 <section id="javaio" role="wrapper">
-	<title>Java I/O (Input / Output) for files</title>
+== Java I/O (Input / Output) for files
 
 	<section id="javaio_overview">
-		<title>Overview</title>
+=== Overview
 		<indexterm>
 			<primary>Java I/O</primary>
 			<secondary>files</secondary>
 		</indexterm>
-		<para>
+		
 			Java provides a standard way of reading from and writing to files.
 			Traditionally the
-			<code>java.io</code>
+			`java.io`
 			package was used, but in modern Java applications you use the
-			<code>java.nio.file</code>
+			`java.nio.file`
 			API.
-		</para>
-		<para>
+		
+		
 			Java will read all input as a stream of bytes.
 			The
-			<code>InputStream</code>
+			`InputStream`
 			class
 			is the superclass of all classes representing an
 			input stream of
 			bytes.
-		</para>
+		
 	</section>
 
 	<section id="javaio_readfile">
-		<title>Reading a file in Java</title>
-		<para>
+=== Reading a file in Java
+		
 			To read a text file you can use the
-			<code>Files.readAllBytes</code>
+			`Files.readAllBytes`
 			method. The usage of this method is demonstrated in the following listing.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/read/ReadFile.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
+		
 			To read a text file line by line into a
-			<code>List</code>
+			`List`
 			of type
-			<code>String</code>
+			`String`
 			structure you can use the
-			<code>Files.readAllLines</code>
+			`Files.readAllLines`
 			method.
-		</para>
+		
 
 
-		<para>
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/read/ReadFileList.java" />
 			</programlisting>
-		</para>
+		
 
-		<para>
-			<code>Files.readAllLines</code>
+		
+			`Files.readAllLines`
 			uses UTF-8 character encoding. It also ensures that file is closed after all bytes are read or in case an
 			exception
 			occurred.
-		</para>
+		
 
 	</section>
 	<section id="javaio_streams">
-		<title>Reading and filtering line by line</title>
-		<para>
+=== Reading and filtering line by line
+		
 			The
-			<code>Files.lines</code>
+			`Files.lines`
 			method allows read a file line by line, offering a stream. This stream can be filtered and mapped.
-			<code>Files.lines</code>
+			`Files.lines`
 			does not close the file once its content is read, therefore it should be wrapped inside a try-with-resource
 			statement.
 
-		</para>
-		<para>
+		
+		
 			In the following
 			example unnecessary whitespace at the end of each line is removed and empty lines are filterer.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/read/Files.lines.java" />
 			</programlisting>
-		</para>
-		<para>The next example demonstrates how to filter out lines based on a certain regular expression.</para>
-		<para>
+		
+		The next example demonstrates how to filter out lines based on a certain regular expression.
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/read/Files.linesRegex.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 	<section id="javaio_writefile">
-		<title>Writing a file in Java</title>
-		<para>To write a file you can use the
+=== Writing a file in Java
+		To write a file you can use the
 			following method:
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/write/WriteFile.java" />
 			</programlisting>
-		</para>
+		
 
 	</section>
 	<section id="javaio_currentdirectory">
-		<title>How to identify the current directory</title>
-		<para>You can access files relative to the current execution
+=== How to identify the current directory
+		You can access files relative to the current execution
 			directory
 			of your Java program. To print the
 			current
@@ -114,12 +114,12 @@
 			your Java
 			program is
 			running, you can use the following statement.
-		</para>
-		<para>
+		
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/dir/print.txt" />
 			</programlisting>
-		</para>
+		
 
 	</section>
 

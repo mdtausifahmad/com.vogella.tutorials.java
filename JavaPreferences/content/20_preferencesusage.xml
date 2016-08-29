@@ -1,9 +1,9 @@
 <section id="preferenceusage">
-	<title>Exercise: Using the API</title>
+== Exercise: Using the API
 	<section id="preferenceusage1">
-		<title>Create program</title>
-		<para>
-			<code>java.util.prefs.Preferences</code>
+=== Create program
+		
+			`java.util.prefs.Preferences`
 			can be easily used. You have to define a node in which the data
 			is
 			stored. Then you can call the getter and setter methods. The
@@ -11,18 +11,18 @@
 			value is the default value, e.g. if the preference value
 			is not set
 			yet, then this value will be used.
-		</para>
-		<para>Create the following program.</para>
-		<para>
+		
+		Create the following program.
+		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../example/PreferenceTest.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 	<section id="preferenceusage2">
-		<title>Validating</title>
-		<para>
+=== Validating
+		
 			Run the program twice. The value of "ID1" should be written with
 			its default value (true) to the command line, as the preference value
 			was deleted at the end of the method.
@@ -30,7 +30,7 @@
 			of "ID2" and "ID3"
 			should have
 			changed after the first call.
-		</para>
+		
 
 	</section>
 

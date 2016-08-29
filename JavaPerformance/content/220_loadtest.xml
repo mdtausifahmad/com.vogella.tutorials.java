@@ -1,24 +1,24 @@
 <section id="loadtest">
-	<title>Load Test</title>
-	<para> A load test tool is a tool which emulates user and system
+== Load Test
+	 A load test tool is a tool which emulates user and system
 		actions on an application to measure the reaction and behavior of this
 		system. A load test tool is commonly used for a web application to
-		measure its behavior.</para>
-	<para>
+		measure its behavior.
+	
 		Popular tools for load testing are:
 		<itemizedlist>
-			<listitem><para>Apache JMeter - See
-					<ulink url="http://jakarta.apache.org/jmeter/"> http://jakarta.apache.org/jmeter/</ulink>
-				</para>
+			<listitem>Apache JMeter - See
+					http://jakarta.apache.org/jmeter/"> http://jakarta.apache.org/jmeter/</ulink>
+				
 			</listitem>
 			<listitem>
-				<para>Eclipse TPTP testing tool - See
-					<ulink url="http://www.eclipse.org/tptp/"> http://www.eclipse.org/tptp/</ulink> </para>
+				Eclipse TPTP testing tool - See
+					http://www.eclipse.org/tptp/"> http://www.eclipse.org/tptp/</ulink> 
 			</listitem>
-			<listitem><para>Grinder - See
-					<ulink url="http://grinder.sourceforge.net/"> http://grinder.sourceforge.net/</ulink>
-				</para>
+			<listitem>Grinder - See
+					http://grinder.sourceforge.net/"> http://grinder.sourceforge.net/</ulink>
+				
 			</listitem>
 		</itemizedlist>
-	</para>
+	
 </section>

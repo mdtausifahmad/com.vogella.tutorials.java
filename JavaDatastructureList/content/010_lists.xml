@@ -1,12 +1,12 @@
 <section id="list">
-	<title>List</title>
-	<para>
+== List
+	
 		The following example is contained in the project
 		called
 		<wordasword>de.vogella.datastructures.list</wordasword>
 		.
-	</para>
-	<para>
+	
+	
 		A
 		<wordasword>List</wordasword>
 		represents a data structure which allows to dynamically
@@ -15,39 +15,39 @@
 		list is usually
 		done via
 		the
-		<code>add()</code>
+		`add()`
 		method. The
-		<code>get(int i)</code>
+		`get(int i)`
 		method allows
 		to retrieve the
 		element
 		at
 		position i.
-	</para>
+	
 
-	<para>
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/list/MyList.java" />
-		</programlisting>
-	</para>
-	<para> The following show contains a small JUnit test for the data
+				parse="text" href="../examples/list/MyList.java[]
+----
+	
+	 The following show contains a small JUnit test for the data
 		structure. I use in the
 		first test the MyList implementation and in the
 		second test the
 		standard Java List implementation.
-	</para>
-	<para>
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/list/MyListTest.java" />
-		</programlisting>
-	</para>
+				parse="text" href="../examples/list/MyListTest.java[]
+----
+	
 
-	<para>
+	
 		<tip>
 			You typically also have the
-			<code>remove(int i)</code>
+			`remove(int i)`
 			method to remove the
 			element at position i but I leave this
 			implementation for the reader.
@@ -56,6 +56,6 @@
 			position i one position to the left and
 			decrease size.
 		
-	</para>
+	
 
 </section>

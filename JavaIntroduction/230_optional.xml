@@ -1,88 +1,91 @@
 <section id="optional">
-	<title>Optional</title>
-	<para>
+== Optional
+	
 		If you call a method or access a field on an object which is not
 		initialized (null) you receive a
 		NullPointerException
 		(NPE). The
-		<code>java.util.Optional</code>
+		`java.util.Optional`
 		class can be used to avoid these NPEs.
-	</para>
-	<para>
-		<code>java.util.Optional</code>
+	
+	
+		`java.util.Optional`
 		is a good tool to indicate that a return value may be absent, which
 		can be seen directly in the method signature rather
 		than just
 		mentioning that
-		<code>null</code>
+		`null`
 		may be returned in the JavaDoc.
-	</para>
-	<para>
+	
+	
 		If you want to call a method on an Optional object and check some
 		property you can use the
-		<code>filter</code>
+		`filter`
 		method. The filter method takes a predicate as an argument. If a value
 		is present in the Optional object and it
 		matches
 		the predicate, the
 		filter method returns that value; otherwise, it returns an empty
 		Optional object.
-	</para>
-	<para>
+	
+	
 		You can create an
-		<code>Optional</code>
+		`Optional`
 		in different ways:
-	</para>
-	<para>
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/optional/CreateOptional.java" />
-		</programlisting>
-	</para>
+	
+	
+[source,java]
+----
+include::res/optional/CreateOptional.java[]
+----
+	
 
-	<para>
+	
 		The
-		<code>ifPresent</code>
+		`ifPresent`
 		method can be used to execute some code on an object if it is present.
 		Assume you have a
-		<code>Todo</code>
+		`Todo`
 		object and want to call the
-		<code>getId()</code>
+		`getId()`
 		method on it. You can do this via the following code.
-	</para>
-	<para>
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/optional/UseOptional.java" />
-		</programlisting>
-	</para>
+	
+	
+[source,java]
+----
+include::res/optional/UseOptional.java[]
+----
+	
 
-	<para>
+	
 		Via the
-		<code>map</code>
+		`map`
 		method you can transform the object if it is present and via the
-		<code>filter</code>
+		`filter`
 		method you can filter for certain values.
-	</para>
-	<para>
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-				href="./examples/optional/UseOptionalMapFilter.java" />
-		</programlisting>
-	</para>
+				href="./examples/optional/UseOptionalMapFilter.java[]
+----
+	
 
-	<para>
+	
 		To get the real value of an Optional the get() method can be used. But
 		in case the Optional is empty this will throw a
 		NoSuchElementException. To avoid this NoSuchElementException the
-		<code>orElse</code>
+		`orElse`
 		or the
-		<code>orElseGet</code>
+		`orElseGet`
 		can be used to provide a default in case of absence.
-	</para>
-	<para>
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/optional/GetValueOrDefault.java" />
-		</programlisting>
-	</para>
+	
+	
+[source,java]
+----
+include::res/optional/GetValueOrDefault.java[]
+----
+	
 
 
 </section>

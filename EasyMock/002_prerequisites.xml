@@ -1,14 +1,14 @@
 <section id="prerequisites">
-	<title>Prerequisites</title>
-	<para>
+== Prerequisites
+	
 		The following tutorial is based on an understanding of unit
 		testing
 		with the
 		JUnit framework.
-	</para>
-	<para>
+	
+	
 		In case your are not familiar with JUnit please check the following
-		<ulink url="http://www.vogella.com/tutorials/JUnit/article.html"> JUnit Tutorial</ulink>
+		http://www.vogella.com/tutorials/JUnit/article.html"> JUnit Tutorial</ulink>
 		.
-	</para>
+	
 </section>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Java object serialization - Tutorial</title>
+=== Java object serialization - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -18,16 +18,16 @@
 		</copyright>
 		<pubdate>04.02.2014</pubdate>
 		<releaseinfo>
-			<para>Version 2.2</para>
+			Version 2.2
 		</releaseinfo>
 		
 
 
 		<abstract id="abstract">
-			<title>Java object serialization</title>
-			<para> This tutorial explains how to use Java serialization and
+	=== Java object serialization
+			 This tutorial explains how to use Java serialization and
 				de-serialization
-			</para>
+			
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

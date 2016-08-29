@@ -1,17 +1,17 @@
 <section id="jdbc">
-	<title>Connection to database with Java</title>
-	<para>
+== Connection to database with Java
+	
 		The interface for accessing relational databases from Java is
 		<wordasword>Java Database Connectivity (JDBC)</wordasword>
 		. Via JDBC you create a connection to the database, issue database
 		queries and update as well as receive the results.
-	</para>
+	
 
-	<para>
+	
 		JDBC provides an interface which allows you to perform SQL
 		operations independently of the instance of the used database. To use
 		JDBC, you require the database specific implementation of the
 		JDBC
 		driver.
-	</para>
+	
 </section>

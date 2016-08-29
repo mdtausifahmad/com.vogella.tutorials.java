@@ -1,28 +1,28 @@
 <section id="overview">
-	<title>Performance factors</title>
+== Performance factors
 	
-	<para>
+	
 		Important influence factors to the performance of a Java program can
 		be separated into two main parts:
 		<itemizedlist>
 			<listitem>
-				<para>Memory Consumption of the Java program</para>
+				Memory Consumption of the Java program
 			</listitem>
 			<listitem>
-				<para>Total runtime of a program</para>
+				Total runtime of a program
 			</listitem>
 		</itemizedlist>
-	</para>
-	<para> In case the program is to some case a program which interacts
+	
+	 In case the program is to some case a program which interacts
 		with others also the response time is a very important fact of the
-		performance of a program.</para>
-	<para>
+		performance of a program.
+	
 		<tip> A average CPU can do approximately 1 billion (10^9) operations
 			per second.
-	</para>
-	<para>
+	
+	
 		This article does not cover concurrency. If you want to read about
 		concurrency / multithreading please see
-		<ulink url="http://www.vogella.com/tutorials/JavaConcurrency/article.html"> Concurrency / Multithreading in Java</ulink>
-	</para>
+		http://www.vogella.com/tutorials/JavaConcurrency/article.html"> Concurrency / Multithreading in Java</ulink>
+	
 </section>

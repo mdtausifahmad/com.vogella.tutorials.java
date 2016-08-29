@@ -1,8 +1,8 @@
 <section id="95_exampless1">
-	<title>Examples</title>
+== Examples
 	<section id="95_exampless1s2a">
-		<title>Clipboard Access</title>
-		<para>
+=== Clipboard Access
+		
 			The following small program accesses the clipboard and removes
 			any format on the string which is in the clipboard. Helpful
 			to avoid the
@@ -11,13 +11,13 @@
 				<guisubmenu>Paste Special</guisubmenu>
 				<guisubmenu>Unformated Text</guisubmenu>
 			</menuchoice>.
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
 					parse="text" href="../../src/de/vogella/clipboard/MyClipboard.java" />
 			</programlisting>
-		</para>
+		
 	</section>
 </section>
 

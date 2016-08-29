@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section id="lombokonline" role="wrapper">
-	<title>Lombok online resources</title>
-	<para><ulink url="https://projectlombok.org/">
+== Lombok online resources
+	https://projectlombok.org/">
 		Lombok project page
-	</ulink></para>
-	<para><ulink url="https://github.com/peichhorn/lombok-pg">
+	</ulink>
+	https://github.com/peichhorn/lombok-pg">
 		Lombok pg extension
-	</ulink></para>
+	</ulink>
 </section>

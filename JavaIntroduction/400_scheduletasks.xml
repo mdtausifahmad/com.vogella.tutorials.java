@@ -1,39 +1,39 @@
 <section id="scheduletasks">
-	<title>Schedule tasks</title>
-	<para>
+== Schedule tasks
+	
 		Java allows you to schedule tasks. A scheduled tasks can perform
 		once
 		or several times.
-	</para>
-	<para>
-		<code>java.util.Timer</code> and <code>java.util.TimerTask</code>
+	
+	
+		`java.util.Timer` and `java.util.TimerTask`
 		can be used to schedule
-		tasks. The object which implements <code>TimeTask</code>
+		tasks. The object which implements `TimeTask`
 		will then be performed by
-		the <code>Timer</code> based on the given interval. 
-	</para>
-	<para>
+		the `Timer` based on the given interval. 
+	
+	
 		<programlisting language="java">
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/schedule/MyTask.java" />
-		</programlisting>
-	</para>
-	<para>
+				parse="text" href="./examples/schedule/MyTask.java[]
+----
+	
+	
 		<programlisting>
 			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/schedule/ScheduleTest.java" />
-		</programlisting>
-	</para>
-	<para>
+				parse="text" href="./examples/schedule/ScheduleTest.java[]
+----
+	
+	
 		<tip>
 			Improved job scheduling is available via the open source framework
 			<wordasword>quartz</wordasword>. See
-			<ulink url="http://www.onjava.com/lpt/a/4637">
+			http://www.onjava.com/lpt/a/4637">
 				http://www.onjava.com/lpt/a/4637</ulink>
 			or
-			<ulink url="http://www.quartz-scheduler.org/">
+			http://www.quartz-scheduler.org/">
 				http://www.quartz-scheduler.org/</ulink>
 			for an explanation.
 		
-	</para>
+	
 </section>

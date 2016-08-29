@@ -1,14 +1,14 @@
 <section id="openjdk_overview">
-	<title>OpenJDK Overview</title>
-	<para>
+== OpenJDK Overview
+	
 		OpenJDK is the open source implementation of Java. OpenJDK is under
 		version control by a
 		distributed version control system called
-		<ulink url="http://www.vogella.com/tutorials/Mercurial/article.html"> Mercurial</ulink>
+		http://www.vogella.com/tutorials/Mercurial/article.html"> Mercurial</ulink>
 		. This guide
 		will
 		describe how to install Mercurial, download the source
 		code of OpenJDK and how to compile OpenJDK.
-	</para>
+	
 
 </section>

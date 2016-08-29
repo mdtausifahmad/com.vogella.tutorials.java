@@ -1,13 +1,13 @@
 <section id="resources">
-	<title>Links and Literature</title>
+== Links and Literature
 
 	<section id="resources_jfreechart">
-		<title>JFreeChart Resources</title>
-		<para>
-			<ulink url="http://www.jfree.org/jfreechart/">
+=== JFreeChart Resources
+		
+			http://www.jfree.org/jfreechart/">
 				http://www.jfree.org/jfreechart/</ulink>
 			JFreeChart Homepage
-		</para>
+		
 	</section>
 	
 

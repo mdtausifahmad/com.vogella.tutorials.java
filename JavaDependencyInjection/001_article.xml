@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Dependency Injection with Java and JSR-330 - Tutorial</title>
+=== Dependency Injection with Java and JSR-330 - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -12,15 +12,15 @@
 		</copyright>
 		<pubdate>14.01.2010</pubdate>
 		<releaseinfo>
-			<para>Version 0.1</para>
+			Version 0.1
 		</releaseinfo>
 		
 		<abstract id="abstract">
-			<title>Dependency injection (DI) in Java with javax.inject</title>
-			<para> This article describes how to use dependency injection with
-				Java and the JSR-330.</para>
-			<para> It first describes dependency injection as a general
-				principle and then explains how to use dependency injection in Java application based javax.inject.</para>
+	=== Dependency injection (DI) in Java with javax.inject
+			 This article describes how to use dependency injection with
+				Java and the JSR-330.
+			 It first describes dependency injection as a general
+				principle and then explains how to use dependency injection in Java application based javax.inject.
 		</abstract>
 	</articleinfo>
 	<?dbhtml-include href="../../web/advertisement/afterTableOfContent"?>

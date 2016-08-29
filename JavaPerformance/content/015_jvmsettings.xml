@@ -1,6 +1,6 @@
 <section id="jvmsettings">
-	<title>Memory settings for Java virtual machine</title>
-	<para>
+== Memory settings for Java virtual machine
+	
 		The JVM runs with fixed available memory. Once this memory is
 		exceeded
 		you will receive "java.lang.OutOfMemoryError". The JVM tries to
@@ -10,10 +10,10 @@
 			url="http://java.sun.com/javase/6/docs/technotes/tools/windows/java.html"> Java settings</ulink>
 		for details) but you can overwrite the default with the following
 		settings.
-	</para>
-	<para> To turn performance you can use certain parameters in the JVM.
-	</para>
-	<para>
+	
+	 To turn performance you can use certain parameters in the JVM.
+	
+	
 		<table frame='all'>
 			<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 				<colspec colname='c1' />
@@ -27,16 +27,16 @@
 				<tbody>
 					<row>
 						<entry>
-							<para>
+							
 								-Xms1024m
-							</para>
+							
 						</entry>
 						<entry>Set the minimum available memory for the JVM to 1024
 							Megabyte</entry>
 					</row>
 					<row>
 						<entry>
-							<para>-Xmx1800m</para>
+							-Xmx1800m
 						</entry>
 						<entry>Set the maximum available memory for the JVM to 1800
 							Megabyte. The Java application cannot use more heap memory then
@@ -45,25 +45,23 @@
 				</tbody>
 			</tgroup>
 		</table>
-	</para>
-	<para>
+	
+	
 		<tip> Increase the values in these parameters to avoid the following
 			error: "Exception in thread java.lang.OutOfMemoryError: Java heap
 			space". Note that you cannot allocate more memory then you have
 			physically available.
-	</para>
+	
 
-	<para> If you start your Java program from the command line use for
-		example the following setting: java -Xmx1024m YourProgram. </para>
-	<para>In Eclipse
+	 If you start your Java program from the command line use for
+		example the following setting: java -Xmx1024m YourProgram. 
+	In Eclipse
 		your can use the VM arguments in the run configuration.
-	</para>
+	
 
-	<para>
-		<mediaobject>
-			<imageobject>
-				<imagedata fileref="images/vmsettings10.gif" />
+	
+image::vmsettings10.gif" />
 			</imageobject>
 		</mediaobject>
-	</para>
+	
 </section>

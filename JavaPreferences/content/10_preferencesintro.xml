@@ -1,14 +1,14 @@
 <section id="preferencesintro">
-	<title>Java Preferences API</title>
-	<para>
+== Java Preferences API
+	
 		The
 		<wordasword>Java Preferences API</wordasword>
 		provides a systematic way to handle
 		program preference configurations,
 		e.g. to save user
 		settings, remember the last value of a field etc.
-	</para>
-	<para>
+	
+	
 		Preferences are key / values pairs where the key is an
 		arbitrary
 		name for the preference. The value can be a
@@ -19,16 +19,16 @@
 		methods also supply a default value in case
 		the preferences
 		is not yet set.
-	</para>
+	
 	<note>
 
-		<para>
+		
 			This Java Preferences API is not indented to save
 			application
 			data, i.e. larger structured data. 
-		</para>
+		
 	
-	<para>
+	
 		The Java Preference API removes the burden from the
 		individual
 		programmer to write code to save
@@ -36,9 +36,9 @@
 		different
 		platforms his
 		program may be running.
-	</para>
-	<para>
+	
+	
 		The actual storage of the data is dependent on the platform.
-	</para>
+	
 
 </section>

@@ -1,8 +1,8 @@
 <section id="jaxb">
-	<title>JAXB 2 - Java Architecture for XML Binding</title>
-	<para>
+== JAXB 2 - Java Architecture for XML Binding
+	
 		JAXB uses annotations to indicate the central elements.
-		<para>
+		
 			<table frame='all'>
 				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
 					<colspec colname='c1' />
@@ -37,7 +37,7 @@
 					</tbody>
 				</tgroup>
 			</table>
-		</para>
-	</para>
+		
+	
 
 </section>
