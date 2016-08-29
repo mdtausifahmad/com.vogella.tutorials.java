@@ -215,46 +215,18 @@ include::res/negative/match.txt[]
 
 === Specifying modes inside the regular expression
 
-You can add the mode modifiers to the start of the regex. To specify multiple modes, simply put them
-together as
-in
-(?ismx).
-<itemizedlist>
+You can add the mode modifiers to the start of the regex. 
+To specify multiple modes, simply put them together as in (?ismx).
+
 * (?i) makes the regex case insensitive.
 * (?s) for "single line mode" makes the dot match all characters, including line breaks.
 * (?m) for "multi-line mode" makes the caret and dollar match at the start and end of each line in the subject string. 
 
 === Backslashes in Java
 
-The backslash
-`\`
-is an escape character
-in Java
-Strings. That means
-backslash has a
-predefined meaning in Java. You have to use double
-backslash
-`\\`
-to
-define a single
-backslash.
-If you want to define
-`\w`
-, then you must
-be
-using
-`\\w`
-in
-your regex.
-If you want to use
-backslash as a
-literal,
-you have to type
-`\\\\`
-as
-`\`
-is also an escape
-character in
-regular
-expressions.
+The backslash `\` is an escape character in Java Strings. 
+That means backslash has a predefined meaning in Java. 
+You have to use double backslash `\\` to define a single backslash.
+If you want to define `\w`, then you must be using `\\w` in your regex.
+If you want to use backslash as a literal, you have to type `\\\\` as `\` is also an escape character in regular expressions.
 
