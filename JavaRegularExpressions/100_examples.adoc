@@ -125,3 +125,16 @@ statements.
 include::res/javadoc/javadocmatcher.txt[]
 ----
 
+
+==== Replacing the DocBook table statement with Asciidoc
+
+Assume you want to find the following:
+
+[source,console]
+----
+        <table frame='all'>
+            <title>Test methods on Solo</title>
+-----
+
+You can use the following pattern for that: `\s+<table frame='all'>(?s).*<title>(.*)</title>` and replace it with `.Table $1\R|===\R`.
+
