@@ -11,4 +11,5 @@ include 'JavaRegularExpressions'
 include 'AssertJ'
 include 'Checkstyle'
 include 'Jacoco'
+include 'Findbugs'
 

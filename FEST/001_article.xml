@@ -29,8 +29,8 @@ Version 0.3, 06.07.2016
 			 This tutorial describes the usage of the FEST framework for
 				writing compact tests.
 			
-		</abstract>
-	</articleinfo>
+  
+  
 	
 include::010_overview.adoc[]
 

@@ -27,8 +27,8 @@ Version 0.3, 06.07.2016
 	=== Java Input Output
 			 This tutorial explains how to read and write files via Java.
 			
-		</abstract>
-	</articleinfo>
+  
+  
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]

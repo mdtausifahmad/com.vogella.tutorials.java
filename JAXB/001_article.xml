@@ -35,8 +35,8 @@ Version 0.3, 06.07.2016
 				Binding (JAXB). This
 				tutorial is based on Java 6.0.
 			
-		</abstract>
-	</articleinfo>
+  
+  
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::content/10_overview.adoc[]
 include::content/12_prerequisition.adoc[]

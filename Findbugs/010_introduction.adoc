@@ -1,20 +1,18 @@
-<section id="findbugs_overview">
 == What is FindBugs
 	
-		_FindBugs_
-		is an open source project for a static
-		analysis of the Java
-		bytecode to
-		identify potential software bugs. Findbugs provides
-        early feedback about
-        potential errors in the
-        code. This
-        helps
-        the developer to access these problems early in the development
-        phase. 
+_FindBugs_
+is an open source project for a static
+analysis of the Java
+bytecode to
+identify potential software bugs. Findbugs provides
+early feedback about
+potential errors in the
+code. This
+helps
+the developer to access these problems early in the development
+phase. 
 	
-	
-		The
-        analysis of Findbugs can be
-        integrated into existing IDEs like the Eclipse IDE of IntelliJ.
+The
+analysis of Findbugs can be
+integrated into existing IDEs like the Eclipse IDE of IntelliJ.
 	

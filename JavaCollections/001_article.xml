@@ -35,8 +35,8 @@ Version 0.3, 06.07.2016
 			 This tutorial explains the usage of the Java collections, e.g.
 				Lists, ArrayLists and Maps with Java 8.
 			
-		</abstract>
-	</articleinfo>
+  
+  
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_collections.adoc[]
 include::012_javalists.adoc[]

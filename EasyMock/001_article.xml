@@ -30,8 +30,8 @@ Version 0.3, 06.07.2016
 			 This tutorial explains testing with the EasyMock framework
 				within Eclipse. It is based on the EasyMock 3.1 release.
 			
-		</abstract>
-	</articleinfo>
+  
+  
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::002_prerequisites.adoc[]
 include::020_easymock.adoc[]

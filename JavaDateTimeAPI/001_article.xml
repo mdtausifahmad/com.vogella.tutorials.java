@@ -1,6 +1,16 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
+=  - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, (c) 2009, 2016 vogella GmbH
+Version 0.3, 29.08.2016
+:docinfodir: ../
+:vgwort: XXX
+
+[abstract]
+
 === Java Data and Time API in Java 8 - Tutorial
 		<author>
 			<firstname>Lars</firstname>
@@ -26,8 +36,8 @@
 			 This article explains the Java 8 API for using the Date and Time API.
 
 			
-		</abstract>
-	</articleinfo>
+  
+  
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]

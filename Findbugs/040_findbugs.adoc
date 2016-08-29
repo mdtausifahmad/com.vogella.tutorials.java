@@ -1,81 +1,44 @@
-<section id="findbugs">
 == Using FindBugs in Eclipse
-	<section id="findbug_config">
+
 === Run FindBugs for a project
 		
-			To run the error analysis of FindBugs on a project, right-click
-			on it
-			and select the
+To run the error analysis of FindBugs on a project, right-click
+on it
+and select the
 menu:Find Bugs...[Find Bugs]
-			menu entry.
+menu entry.
 		
-		
-image::runfindbugs10.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Run FindBugs on a project</phrase>
-				</textobject>
-			</mediaobject>
-		
+image::runfindbugs10.png[Run FindBugs on a project]
 
-	
-	<section id="findbug_using">
-        <title>View the errors reported by FindBugs
+=== View the errors reported by FindBugs
         
-            FindBugs provides specialized views to see the reported error
-            messages. Select
-            <menuchoice>
-                <guimenu>Window</guimenu>
-                <guisubmenu>Show View</guisubmenu>
-                <guisubmenu>Other...</guisubmenu>
-            </menuchoice>
-            to access the views.
+FindBugs provides specialized views to see the reported error
+messages. Select
+menu:View[Zoom > Reset]
+menu:Window[Show View > Other...]
+to access the views.
         
+image::findbugs20.png[]
         
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/findbugs20.png" />
-
-                </imageobject>
-            </mediaobject>
+image::findbugs30.png[]
         
+The FindBugs error messages are also displayed in the
+_Problems_
+view
+or as decorators in the
+_Package Explorer_
+view.
         
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="images/findbugs30.png" />
-
-                </imageobject>
-            </mediaobject>
-        
-        
-            .
-            The FindBugs error messages are also displayed in the
-            _Problems_
-            view
-            or as decorators in the
-            _Package Explorer_
-            view.
-        
-    
-    
-	<section id="findbug_config_automatic">
 === Configure automatic FindBugs run
 		
-			You can configure that FindBugs should run automatically for a
-			selected project. For this right-click
-			on a project and select
-			_Properties_
-			from the popup menu.
-			via the project properties.
-			Select
-menu:FindBugs[Run automatically
-				]
-			.
+You can configure that FindBugs should run automatically for a
+selected project. For this right-click
+on a project and select
+_Properties_
+from the popup menu.
+via the project properties.
+Select
+menu:FindBugs[Run automatically].
 		
-		
-image::findbugsprojectproperties.png"/>
-				</imageobject>
-			</mediaobject>
-		
-
+image::findbugsprojectproperties.png[]
 	

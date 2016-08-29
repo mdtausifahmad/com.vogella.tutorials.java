@@ -20,8 +20,8 @@
 			
 				This article describes how to use Lombok for the creation of data/model objects.
 			
-		</abstract>
-	</articleinfo>
+  
+  
 include::010_overview.xml"/>
 include::../web/advertisement/inBetween01.adoc[]
 include::006_resources.xml"/>

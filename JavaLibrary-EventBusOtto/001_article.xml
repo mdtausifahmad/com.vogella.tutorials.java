@@ -32,8 +32,8 @@ Version 0.3, 06.07.2016
 	=== Using the Otto event bus in Android applications
 			 This tutorial explains the usage of the Otto event bus library.
 			
-		</abstract>
-	</articleinfo>
+  
+  
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_example.adoc[]

@@ -35,8 +35,8 @@
 				programs. It includes an example for creating an HTML logger.
 			
 
-		</abstract>
-	</articleinfo>
+  
+  
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::content/010_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]

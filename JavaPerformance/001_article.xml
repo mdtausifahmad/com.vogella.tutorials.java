@@ -42,8 +42,8 @@ Version 0.3, 06.07.2016
 				memory for Java. It discusses then how to get the runtime and the
 				memory consumption of a Java application.
 			
-		</abstract>
-	</articleinfo>
+  
+  
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::content/010_overview.adoc[]
 include::content/012_memory.adoc[]
