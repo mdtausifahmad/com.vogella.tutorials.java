@@ -1,125 +1,70 @@
-<section id="checkstyle" role="wrapper">
-	<title>Checkstyle</title>
-	<section id="checkstyle_overview">
-		<title>Overview</title>
-		<para> Checkstyle is a tool to help ensuring that your Java code
-			adheres to a set of coding standards
-		</para>
-	</section>
-	<section id="checkstyle_setup">
-		<title>Installation</title>
+== Checkstyle
 
-		<para>
-			<ulink url="http://eclipse-cs.sourceforge.net/update"> http://eclipse-cs.sourceforge.net/update</ulink>
-			Update site for the Eclipse Checkstyle Plugin.
-		</para>
-		<para>
-			Please see
-			<ulink
-				url="http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager">
-				Eclipse Update Manager
-			</ulink>
-			for more information on how to use the update manager.
-		</para>
-		<para>
-			If you developing with Eclipse, make sure to select the Sun
-			Conventions (Eclipse) under
-			<menuchoice>
-				<guimenu>Window</guimenu>
-				<guisubmenu>Preferences</guisubmenu>
-				<guisubmenu>Checkstyle</guisubmenu>
-			</menuchoice>
-			.
-			Press the "Set as Default" after selecting the right entry.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/checkstyle10.gif" />
+=== Overview
 
-				</imageobject>
-			</mediaobject>
-		</para>
-	</section>
-	<section id="checkstyle_config">
-		<title>Configuration</title>
-		<para> You can turn of certain checks. If you change settings from the
-			standard profile you should always make a copy
-			of the existing
-			profile.
-		</para>
-		<para>To customizine your check, first make a copy of the checks
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/checkstyle20.gif" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		<para> Select your new configuration and press Configure. De-activate
-			for example the checks for Javadoc Comments.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/checkstyle30.gif" />
+Checkstyle is a tool to help ensuring that your Java code adheres to a set of coding standards
 
-				</imageobject>
-			</mediaobject>
-		</para>
-		<para> Make this new setting your default one.</para>
-	</section>
-	<section id="checkstyle_remoteaccess">
-		<title>Using common Checkstyle rules for teams</title>
-		<para> For teams it is good to follow the same coding style rules.
-		</para>
-		<para>The Eclipse checkstyle plug-in allows this by proving a
-			remote
-			site for the checkstyle settings.
-		</para>
-		<para> Press new in the settings. Select "Remote Configuration". Give
-			the rule set a description and then type in the
-			URL you want to use
-			for the settings.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/checkstyle50.gif" />
+=== Installation
+		
+http://eclipse-cs.sourceforge.net/update[http://eclipse-cs.sourceforge.net/update]
+Update site for the Eclipse Checkstyle Plugin.
+		
+		
+Please see
+http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager[Eclipse Update Manager]
+for more information on how to use the update manager.
+		
+		
+If you developing with Eclipse, make sure to select the Sun
+Conventions (Eclipse) under
 
-				</imageobject>
-			</mediaobject>
-		</para>
-		<para> Make this new setting your default one.</para>
-	</section>
-	<section id="checkstyle_using">
-		<title>Using Checkstyle in your projects</title>
-		<para> Make your new profile the default one.</para>
-		<para> You need to activate the Eclipse Checkstyle Plugin for your
-			project. Right-click on your project and search for
-			Checkstyle.
-			Select
-			the checkbox "Checkstyle active for this project".
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/checkstyle100.gif" />
+menu:Window[Preferences > Checkstyle].
+Press the "Set as Default" after selecting the right entry.
+		
+image::checkstyle10.gif[]
 
-				</imageobject>
-			</mediaobject>
-		</para>
-		<para> You can use the checkstyle browser view to display the
-			violations.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/checkstyle110.gif" />
+=== Configuration
 
-				</imageobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+You can turn of certain checks. If you change settings from the
+standard profile you should always make a copy
+of the existing profile.
+		
+To customizine your check, first make a copy of the checks
+		
+image::checkstyle20.gif[]
+		
+Select your new configuration and press Configure. De-activatefor example the checks for Javadoc Comments.
+		
+image::checkstyle30.gif[]
+		
+Make this new setting your default one.
+
+=== Using common Checkstyle rules for teams
+
+For teams it is good to follow the same coding style rules.		
+The Eclipse checkstyle plug-in allows this by proving a remote site for the checkstyle settings.
+		
+Press new in the settings. Select "Remote Configuration". Give
+the rule set a description and then type in the
+URL you want to use
+for the settings.
+		
+image::checkstyle50.gif[]
+		
+Make this new setting your default one.
+
+=== Using Checkstyle in your projects
+
+Make your new profile the default one.
+You need to activate the Eclipse Checkstyle Plugin for your
+project. Right-click on your project and search for
+Checkstyle.
+Select
+the checkbox "Checkstyle active for this project".
+		
+image::checkstyle100.gif[]
+		
+You can use the checkstyle browser view to display the violations.
+		
+image::checkstyle110.gif[]
+		

@@ -1,9 +1,6 @@
-<section id="download">
-	<title>Download</title>
-	<para>
-		<ulink
-			url="http://www.vogella.com/tutorials/EclipseCodeAnalysis/download/checkstyletemplate.xml">
-			http://www.vogella.com/tutorials/EclipseCodeAnalysis/download/checkstyletemplate.xml</ulink>
-		Example Checkstyle settings for Eclipse
-	</para>
-</section>
+== Download
+
+http://www.vogella.com/tutorials/EclipseCodeAnalysis/download/checkstyletemplate.xml[http://www.vogella.com/tutorials/EclipseCodeAnalysis/download/checkstyletemplate.xml]
+
+Example Checkstyle settings for Eclipse.
+

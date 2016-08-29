@@ -24,7 +24,7 @@
 			input stream of
 			bytes.
 		
-	</section>
+
 
 	<section id="javaio_readfile">
 === Reading a file in Java
@@ -59,7 +59,7 @@ include::res/read/ReadFileList.java[]
 			occurred.
 		
 
-	</section>
+
 	<section id="javaio_streams">
 === Reading and filtering line by line
 		
@@ -85,7 +85,7 @@ include::res/read/Files.lines.java[]
 include::res/read/Files.linesRegex.java[]
 ----
 		
-	</section>
+
 	<section id="javaio_writefile">
 === Writing a file in Java
 		To write a file you can use the
@@ -96,7 +96,7 @@ include::res/write/WriteFile.java[]
 ----
 		
 
-	</section>
+
 	<section id="javaio_currentdirectory">
 === How to identify the current directory
 		You can access files relative to the current execution
@@ -111,10 +111,10 @@ include::res/write/WriteFile.java[]
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/dir/print.txt" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/dir/print.txt[]
+----
 		
 
-	</section>
 
-</section>
+
+

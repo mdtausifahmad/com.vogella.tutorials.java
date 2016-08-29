@@ -1,64 +1,63 @@
 <section id="jacoco_usage_eclipse">
-	<title>Using Jacoco in Eclipse</title>
-	<para>
+== Using Jacoco in Eclipse
+	
 		With EclEmma installed the context menu of a project also contains a
 		<guimenu>Coverage As</guimenu>
 		entry.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/coverage-as-menu.png" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		And besides the debug button in the main toolbar will also be
 		another button for running java code with code coverage analysis.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/coverage-as-toolbar.png" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Once a program is run with code coverage a Coverage View will
 		show up in the Eclipse IDE.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/coverage-view.png" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Usually the analysis shows up when the java application is shut
 		down,
 		but with the
 		<guilabel>Dump Execution Data</guilabel>
 		button in the Coverage View's toolbar a dump of execution data can be
 		created.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/execution-data-dump.png" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		The tooling does not only show the coverage in the Coverage View,
 		but also in the Java Editor itself. Tested code is highlighted in
 		green and untested code is highlighted in red.
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/coverage-in-editor.png" />
 			</imageobject>
 		</mediaobject>
-	</para>
-</section>
+	

@@ -136,7 +136,7 @@
 			are treated as different
 			variables.
 		
-	</section>
+
 
 	<section id="javaoverview_helloworld">
 === Hello world Java program
@@ -145,7 +145,7 @@
 include::res/helloworld/HelloWorld.java[]
 ----
 		
-	</section>
+
 	<section id="javaoverview">
 === Java virtual machine
 		
@@ -183,7 +183,7 @@ image::jvmintroduction10.png[]
 			the Java program.
 		
 
-	</section>
+
 
 	<section id="javaoverview_jrejdk">
 === Java Runtime Environment vs. Java Development Kit
@@ -213,7 +213,7 @@ image::jvmintroduction10.png[]
 			Java
 			virtual machine and the Java class libraries.
 		
-	</section>
+
 
 	<section id="javadevelopmend">
 === Development Process with Java
@@ -244,7 +244,7 @@ image::jvmintroduction10.png[]
 			`.class`
 			files and can be executed by the Java Virtual Machine.
 		
-	</section>
+
 
 	<section id="java_garbagecollector">
 === Garbage collector
@@ -271,7 +271,7 @@ image::jvmintroduction10.png[]
 			<wordasword>memory leaks</wordasword>
 			.
 		
-	</section>
+
 	<section id="java_classpath">
 === Classpath
 		
@@ -294,5 +294,4 @@ image::jvmintroduction10.png[]
 			your
 			program.
 		
-	</section>
-</section>
+

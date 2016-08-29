@@ -36,7 +36,7 @@ include::res/statements/MyClass.java[]
 			extension. It is also possible to define inner classes, these are classes defined within another class, in this case
 			you do not need a separate file for this class.
 		
-	</section>
+
 
 	<section id="javadef_object">
 === Object
@@ -49,7 +49,7 @@ include::res/statements/MyClass.java[]
 			definition. The class can be seen as the blueprint of an object, i.e., it
 			describes how an object is created.
 		
-	</section>
+
 
 
 	<section id="javadef_package">
@@ -135,7 +135,7 @@ include::res/statements/MyClass.java[]
 			`report.Test`
 			.
 		
-	</section>
+
 
 
 	<section id="javadef_inheritance">
@@ -173,7 +173,7 @@ include::res/class/MyBaseClass.java[]
 include::res/class/MyExtensionClass.java[]
 ----
 		
-	</section>
+
 
 	<section id="javadef_objectsuperclass">
 === Object as superclass
@@ -209,7 +209,7 @@ include::res/class/MyExtensionClass.java[]
 				</listitem>
 			</itemizedlist>
 		
-	</section>
+
 	<section>
 === Exception handling in Java
 		In Java an exception is an event to indicate an error during
@@ -223,9 +223,7 @@ include::res/class/MyExtensionClass.java[]
 			they get catched.
 		
 		
-image::exception_throw_callstack.png" scale="40" />
-				</imageobject>
-			</mediaobject>
+image::exception_throw_callstack.png" scale="40[]
 		
 		<section>
 	=== Checked Exceptions
@@ -249,7 +247,7 @@ include::res/exceptions/CatchException.java[]
 				under certain circumstances, e.g., a file which
 				cannot be found.
 			
-		</section>
+	
 		<section>
 	=== Runtime Exceptions
 			
@@ -272,6 +270,6 @@ include::res/exceptions/CatchException.java[]
 						href="./examples/exceptions/NullPointerException.java" />
 				</programlisting>
 			
-		</section>
-	</section>
-</section>
+	
+
+

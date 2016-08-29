@@ -10,15 +10,15 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/for.java" />
-			</programlisting>
+					parse="text" href="./examples/loop/for.java[]
+----
 		
 		The following shows an example for a for loop.
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/ForTest.java" />
-			</programlisting>
+					parse="text" href="./examples/loop/ForTest.java[]
+----
 		
 		<tip>
 			
@@ -26,7 +26,7 @@
 				available. This loop is covered in the Array description.
 			
 		
-	</section>
+
 
 	<section id="javalang_while">
 === The while loop
@@ -40,17 +40,17 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/while.java" />
-			</programlisting>
+					parse="text" href="./examples/loop/while.java[]
+----
 		
 		The following shows an example for a while loop.
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/WhileTest.java" />
-			</programlisting>
+					parse="text" href="./examples/loop/WhileTest.java[]
+----
 		
-	</section>
+
 
 	<section id="javalang_dowhile">
 === The do while loop
@@ -63,8 +63,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/dowhile.java" />
-			</programlisting>
+					parse="text" href="./examples/loop/dowhile.java[]
+----
 		
 		
 			The following shows an example for a do-while loop.
@@ -72,8 +72,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/loop/DoTest.java" />
-			</programlisting>
+					parse="text" href="./examples/loop/DoTest.java[]
+----
 		
-	</section>
-</section>
+
+

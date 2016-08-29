@@ -12,20 +12,20 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/easymock/Position.java" />
-			</programlisting>
+					parse="text" href="./examples/easymock/Position.java[]
+----
 		
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/easymock/ICalcMethod.java" />
-			</programlisting>
+					parse="text" href="./examples/easymock/ICalcMethod.java[]
+----
 		
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/easymock/IncomeCalculator.java" />
-			</programlisting>
+					parse="text" href="./examples/easymock/IncomeCalculator.java[]
+----
 		
 		
 			The
@@ -43,7 +43,7 @@
 			on the
 			provided methods.
 		
-	</section>
+
 	<section id="tutorial_easymocktest">
 === Create tests
 
@@ -61,8 +61,8 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/easymock/IncomeCalculatorTest.java" />
-			</programlisting>
+					parse="text" href="./examples/easymock/IncomeCalculatorTest.java[]
+----
 		
 
 		
@@ -71,5 +71,4 @@
 			method to
 			check if the mock object was called as defined.
 		
-	</section>
-</section>
+

@@ -44,7 +44,7 @@ include::res/exercise01/PersontoString.java[]
 			`Person`
 			class.
 		
-	</section>
+
 	<section id="exercises_starter2">
 === Use constructor
 		
@@ -60,7 +60,7 @@ include::res/exercise01/PersontoString.java[]
 			`System.out.println()`
 			with the object as parameter.
 		
-	</section>
+
 
 	<section id="exercises_starter3">
 === Define getter and setter methods
@@ -102,7 +102,7 @@ include::res/exercise01/PersontoString.java[]
 			object
 			and use the setter method to change the last name.
 		
-	</section>
+
 
 	<section id="exercises_starter4">
 === Create an Address object
@@ -125,5 +125,5 @@ include::res/exercise01/PersontoString.java[]
 			`Person`
 			object.
 		
-	</section>
-</section>
+
+

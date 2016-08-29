@@ -12,7 +12,7 @@
 			A Java library contains code which you can access and use in your Java project. The deployment format of a Java
 			library is a JAR file.
 		
-	</section>
+
 	<section id="jarfiles_definition">
 === What is a JAR file?
 		<indexterm>
@@ -37,7 +37,7 @@
 			code via jars by putting them into your
 			classpath.
 		
-	</section>
+
 
 	<section id="jarfiles_library">
 === Using Java libraries
@@ -49,6 +49,6 @@
 			your Java
 			application.
 		
-	</section>
 
-</section>
+
+

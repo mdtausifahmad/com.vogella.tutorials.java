@@ -22,7 +22,7 @@
 			).
 		
 
-	</section>
+
 
 
 
@@ -78,7 +78,7 @@ include::res/class/MyExtensionClass2.java[]
 			annotation. This way the Java compiler validates if you did override
 			all methods as intended and prevents errors.
 		
-	</section>
+
 
 	<section id="annotation_deprecated">
 === The @Deprecated annotations
@@ -94,7 +94,7 @@ include::res/class/MyExtensionClass2.java[]
 		to the class does not deprecate automatically all its fields and
 		methods.
 
-	</section>
+
 	<section id="annotation_typeannotations">
 === Type annotations
 		Java supports that annotations can be placed on any type. The
@@ -107,5 +107,4 @@ include::res/typeannotations/Type.java[]
 		
 
 
-	</section>
-</section>
+

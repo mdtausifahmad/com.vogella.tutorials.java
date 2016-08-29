@@ -9,7 +9,7 @@
 			`@+id/button"`
 			ID.
 		
-	</section>
+
 
 	<section id="exercise_retrolambda_gradle">
 === Add Retrolambda to your Gradle build configuratoin
@@ -23,8 +23,8 @@
 		
 		
 			<programlisting language="groovy">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/appbuild.gradle" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/appbuild.gradle[]
+----
 		
 
 
@@ -37,12 +37,12 @@
 
 		
 			<programlisting language="groovy">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/build.gradle" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/build.gradle[]
+----
 		
 
 
-	</section>
+
 
 
 	<section id="exercise_retrolambda_use">
@@ -54,7 +54,6 @@ include::res/MainActivity.java[]
 ----
 		
 
-	</section>
 
 
-</section>
+

@@ -20,4 +20,4 @@
 		margins. The class "Anchor" is a subclass of "Paragraph" and serves as
 		the basis for hyperlinks in the generated PDF.
 	
-</section>
+

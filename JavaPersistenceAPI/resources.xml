@@ -7,20 +7,17 @@
 			EclipseLink
 		
 		
-			<ulink
-				url="http://java.sun.com/developer/technicalArticles/J2SE/Desktop/persistenceapi/">
+http://java.sun.com/developer/technicalArticles/J2SE/Desktop/persistenceapi/">
 				http://java.sun.com/developer/technicalArticles/J2SE/Desktop/persistenceapi/</ulink>
 			Using the Java Persistence API in Desktop Applications
 		
 
 		
-			<ulink
-				url="http://www.ibm.com/developerworks/java/library/j-typesafejpa/index.html">
+http://www.ibm.com/developerworks/java/library/j-typesafejpa/index.html">
 				http://www.ibm.com/developerworks/java/library/j-typesafejpa/index.html</ulink>
 			Dynamic, typesafe queries in JPA 2.0 using the Criteria API
 		
 
 
-	</section>
+
 		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
-</section>

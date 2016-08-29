@@ -69,4 +69,3 @@
 		sophisticated writer.
 	 As a result the class Test does not depend on the concrete
 		Writer class, is extensible and can be easily tested.
-</section>

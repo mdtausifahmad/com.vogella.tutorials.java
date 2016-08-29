@@ -35,8 +35,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/helloworld/HelloWorld.java" />
-			</programlisting>
+					parse="text" href="./examples/helloworld/HelloWorld.java[]
+----
 		
 		<warning>
 			
@@ -74,7 +74,7 @@ image::firstjava10.png[]
 			class is called
 			`HelloWorld`.
 		
-	</section>
+
 	<section id="firstjava_compile">
 === Compile and run your Java program
 		
@@ -113,8 +113,8 @@ image::firstjava10.png[]
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/helloworld/compile.sh" />
-			</programlisting>
+					parse="text" href="./examples/helloworld/compile.sh[]
+----
 		
 		
 			Afterwards list again the content of the directory with the
@@ -147,8 +147,8 @@ image::firstjava10.png[]
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/helloworld/run.sh" />
-			</programlisting>
+					parse="text" href="./examples/helloworld/run.sh[]
+----
 		
 		
 			The system should write "Hello World" on the command line.
@@ -161,7 +161,7 @@ image::firstjava20.png[]
 				</textobject>
 			</mediaobject>
 		
-	</section>
+
 	<section id="firstjava_classpath">
 === Using the classpath
 		
@@ -170,18 +170,15 @@ image::firstjava20.png[]
 		
 		
 			Switch to the command line, e.g., under
-			<menuchoice>
-				<guimenu>Windows Start</guimenu>
-				<guisubmenu>Run</guisubmenu>
-			</menuchoice>
+menu:Windows Start[Run]
 			`cmd`.
 			Switch to any directory you want. Type:
 		
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/helloworld/run.sh" />
-			</programlisting>
+					parse="text" href="./examples/helloworld/run.sh[]
+----
 		
 		
 			If you are not in the directory in which the compiled class is stored,
@@ -200,8 +197,7 @@ image::firstjava20.png[]
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/helloworld/classpath.sh" />
-			</programlisting>
+					parse="text" href="./examples/helloworld/classpath.sh[]
+----
 		
-	</section>
-</section>
+

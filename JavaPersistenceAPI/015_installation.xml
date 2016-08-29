@@ -18,7 +18,7 @@
 				</listitem>
 			</itemizedlist>
 		
-	</section>
+
 	<section id="installation_database">
 === Derby Database
 		
@@ -34,5 +34,4 @@
 			http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby</ulink>
 			.
 		
-	</section>
-</section>
+

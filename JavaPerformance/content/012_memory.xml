@@ -44,7 +44,7 @@
 		 Of course with a 64-bit OS this 4GB limitation does not exist
 			anymore.
 		
-	</section>
+
 	<section id="memory_overview">
 === Memory in Java
 		 Java manages the memory for use. New objects created and placed
@@ -53,7 +53,7 @@
 			and remove the memory so that your application can use this memory
 			again.
 		
-	</section>
+
 	<section id="memory_heap">
 === Java Heap
 		 In the heap the Java Virtual Machine (JVM) stores all objects
@@ -66,7 +66,7 @@
 			time. Instance variables live inside the object in which they are
 			declared.
 		
-	</section>
+
 	<section id="memory_stack">
 === Java Stack
 		Stack is where the method invocations and the local
@@ -82,7 +82,7 @@
 			running method for that stack. Threads have their
 			own call stack.
 		
-	</section>
+
 
 	<section id="Escape Analysis">
 === Escape analysis
@@ -110,7 +110,7 @@
 			it may decide to create the object on the stack, increasing
 			performance of the Java program.
 		
-	</section>
+
 	<section id="memoryleaks">
 === Memory leaks
 		
@@ -123,5 +123,4 @@
 			still hold references to these objects, then the garbage collector of
 			the JVM cannot release them.
 		
-	</section>
-</section>
+

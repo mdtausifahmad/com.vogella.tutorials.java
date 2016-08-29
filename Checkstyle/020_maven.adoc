@@ -1,22 +1,18 @@
-<section id="checkstyle_maven">
-	<title>Checkstyle Maven Plugin</title>
-	<para>
-		Checkstyle can also be run during a Maven build. The
-		<ulink url="https://maven.apache.org/plugins/maven-checkstyle-plugin/">maven-checkstyle-plugin</ulink>
-		can generate reports about checkstyle violations or can also be a part
-		of the build and cause a build failure when the rules defined in the
-		<filename>checkstyle.xml</filename>
-		are violated.
-	</para>
-	<para>
-		<programlisting language="xml">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="examples/checkstyle-plugin-configLocation.xml" />
-		</programlisting>
-	</para>
-	<para>
-		More information about the usage can be found here:
-		<ulink
-			url="https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html">Maven Checkstyle plugin usage</ulink>
-	</para>
-</section>
+[[checkstyle_maven]]
+== Checkstyle Maven Plugin
+	
+Checkstyle can also be run during a Maven build. The
+https://maven.apache.org/plugins/maven-checkstyle-plugin/[maven-checkstyle-plugin]
+can generate reports about checkstyle violations or can also be a part
+of the build and cause a build failure when the rules defined in the
+`checkstyle.xml`
+are violated.
+	
+[source,xml]
+----
+include::res/checkstyle-plugin-configLocation.xml[]
+----
+	
+More information about the usage can be found here:
+https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html[Maven Checkstyle plugin usage]
+	

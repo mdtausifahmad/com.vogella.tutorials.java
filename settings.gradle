@@ -9,5 +9,5 @@ include 'Hamcrest'
 include 'Mockito'
 include 'JavaRegularExpressions'
 include 'AssertJ'
-
+include 'Checkstyle'
 

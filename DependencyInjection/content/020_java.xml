@@ -18,8 +18,7 @@
 	
 		The usage of the Spring framework for dependency injection is
 		described in
-		<ulink
-			url="http://www.vogella.com/tutorials/SpringDependencyInjection/article.html">Dependency Injection with the Spring Framework - Tutorial</ulink>
+http://www.vogella.com/tutorials/SpringDependencyInjection/article.html">Dependency Injection with the Spring Framework - Tutorial</ulink>
 		.
 	
 
@@ -28,4 +27,3 @@
 		http://www.vogella.com/tutorials/EclipseE4/article.html"> Eclipse 4</ulink>
 		is using dependency injection.
 	
-</section>

@@ -10,18 +10,15 @@
 		
 
 		
-			<ulink
-				url="http://java.sun.com/developer/technicalArticles/WebServices/jaxb/">
+http://java.sun.com/developer/technicalArticles/WebServices/jaxb/">
 				http://java.sun.com/developer/technicalArticles/WebServices/jaxb/</ulink>
 			JAXB Overview
 		
 
 		
-			<ulink
-				url="http://www.ibm.com/developerworks/library/x-javaxpathapi.html">
+http://www.ibm.com/developerworks/library/x-javaxpathapi.html">
 				http://www.ibm.com/developerworks/library/x-javaxpathapi.html</ulink>
 			The Java XPath API (by Elliotte Rusty Harold)
 		
-	</section>
+
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
-</section>

@@ -6,7 +6,7 @@
 			Create a new Java project "de.vogella.jfreechart.swing.pie".
 			Create also a package "de.vogella.jfreechart.swing.pie".
 		
-	</section>
+
 	<section id="piechart_jars">
 === Add jars to build path of your project
 		 In your project create a folder "lib", and paste the JFreeChart
@@ -28,13 +28,12 @@
 		
 		
 			Add these libraries to your classpath. See
-			<ulink
-				url="http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
+http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
 				Eclipse Java IDE - Classpath</ulink>
 			for details).
 		
 
-	</section>
+
 
 	<section id="piechart_code">
 === Code
@@ -44,15 +43,15 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/pie/PieChart.java" />
-			</programlisting>
+					parse="text" href="../examples/pie/PieChart.java[]
+----
 		
 
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/pie/Main.java" />
-			</programlisting>
+					parse="text" href="../examples/pie/Main.java[]
+----
 		
 
 		
@@ -72,7 +71,7 @@
 				excellent
 				information access.
 		
-	</section>
+
 	<section id="piechart_run">
 === Run
 		
@@ -85,5 +84,4 @@ image::jfreechartpie10.gif" />
 				</imageobject>
 			</mediaobject>
 		
-	</section>
-</section>
+

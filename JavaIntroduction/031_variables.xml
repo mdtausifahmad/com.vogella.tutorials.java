@@ -26,7 +26,7 @@
 			`object1.equals(object2)`
 			method call.
 		
-	</section>
+
 	<section id="javadef_instancevariable">
 === Instance variable
 		
@@ -40,7 +40,7 @@
 			Instance variables marked as final cannot
 			be changed after a value has been assigned to them.
 		
-	</section>
+
 
 	<section id="javadef_localvariable">
 === Local variable
@@ -57,7 +57,7 @@
 			Local variables do not get default values, so they must be
 			initialized before use.
 		
-	</section>
+
 
 	<section id="javadef_method">
 === Methods
@@ -68,8 +68,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/class/MyMethodExample.java" />
-			</programlisting>
+					parse="text" href="./examples/class/MyMethodExample.java[]
+----
 		
 		
 			Methods can be declared with var-args.
@@ -96,7 +96,7 @@
 			type
 			can not be used to overload a method.
 		
-	</section>
+
 	<section id="javadef_mainmethod">
 === Main method
 		
@@ -109,10 +109,10 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/class/main.java" />
-			</programlisting>
+					parse="text" href="./examples/class/main.java[]
+----
 		
-	</section>
+
 
 	<section id="javadef_constructor">
 === Constructor
@@ -141,8 +141,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/class/MyConstructorExample2.java" />
-			</programlisting>
+					parse="text" href="./examples/class/MyConstructorExample2.java[]
+----
 		
 		
 			If
@@ -167,8 +167,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/class/MyConstructorExample.java" />
-			</programlisting>
+					parse="text" href="./examples/class/MyConstructorExample.java[]
+----
 		
 		
 			The naming
@@ -185,5 +185,5 @@
 			can
 			be done with the object.
 		
-	</section>
-</section>
+
+

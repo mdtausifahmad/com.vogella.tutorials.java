@@ -8,15 +8,15 @@
 			using "RCP application with a view" as a template.
 		 Add "de.vogella.jfreechart.libs" as a dependency to project
 			"de.vogella.jfreechart.barchart".
-	</section>
+
 	<section id="barchart_view">
 === Create view with bar chart
 		Change the code of the view to the following:
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/bar/View.java" />
-			</programlisting>
+					parse="text" href="../examples/bar/View.java[]
+----
 		
 		 Run it and see that it is working.
 		
@@ -29,5 +29,4 @@
 			</imageobject>
 		</mediaobject>
 
-	</section>
-</section>
+

@@ -22,10 +22,10 @@
 
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Todo.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Todo.java[]
+----
 		
-	</section>
+
 	<section id="example_persistenceunit">
 === Persistence Unit
 		
@@ -47,8 +47,8 @@
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/persistence.xml" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/persistence.xml[]
+----
 		
 		
 			The database specified via "javax.persistence.jdbc.url" will be
@@ -68,7 +68,7 @@
 			and
 			'dropDDL.jdbc'
 		
-	</section>
+
 	<section id="simple_main">
 === Test your installation
 		
@@ -85,11 +85,10 @@
 		
 		
 			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Main.java" />
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Main.java[]
+----
 		
 		Run you program several times to see that the database is
 			filled.
 		
-	</section>
-</section>
+

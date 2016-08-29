@@ -1,19 +1,17 @@
 <section id="jacoco_usage_maven">
-	<title>Using Jacoco with Maven</title>
-	<para>
+== Using Jacoco with Maven
+	
 		Jacoco can also be run during a Maven build. The results of the
 		code
 		coverage analysis can for example be reviewed as an HTML report, which
 		usually can be found in the
-		<filename>target/report</filename>
+		`target/report`
 		folder of a built Maven project.
-	</para>
-	<para>
+	
+	
 		The current version of the
 		<code>jacoco-maven-plugin</code>
 		can be found here:
-		<ulink
-			url="http://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin">jacoco-maven-plugin</ulink>
+http://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin">jacoco-maven-plugin</ulink>
 		on MavenCentral.
-	</para>
-</section>
+	

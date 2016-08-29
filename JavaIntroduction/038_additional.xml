@@ -56,14 +56,14 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/static/MyStaticExample.java" />
-			</programlisting>
+					parse="text" href="./examples/static/MyStaticExample.java[]
+----
 		
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/static/Tester.java" />
-			</programlisting>
+					parse="text" href="./examples/static/Tester.java[]
+----
 		
 		
 			If a variable should be defined as constant, you declare it with the
@@ -77,7 +77,7 @@
 			cannot directly access
 			non-static variables or methods.
 		
-	</section>
+
 
 	<section id="javadef_abstractclass">
 === Abstract class and methods
@@ -108,8 +108,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/abstract/MyAbstractClass.java" />
-			</programlisting>
+					parse="text" href="./examples/abstract/MyAbstractClass.java[]
+----
 		
-	</section>
-</section>
+
+

@@ -16,4 +16,3 @@
 		several demos which you can use to validate your build. Try "./java
 		-version" in your "/build/platform/bin" and validate that you see the
 		version of OpenJDK which you compiled against. 
-</section>

@@ -14,7 +14,7 @@
 			objects in a resizable
 			container.
 		
-	</section>
+
 	<section id="javacollections_arraylist">
 === ArrayList and LinkedList as implementations
 		<indexterm>
@@ -70,10 +70,10 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/list/ListExample.java" />
-			</programlisting>
+					parse="text" href="./examples/list/ListExample.java[]
+----
 		
-	</section>
+
 
 
 	<section id="javacollections_sorting">
@@ -90,10 +90,10 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/list/SortingLists.java" />
-			</programlisting>
+					parse="text" href="./examples/list/SortingLists.java[]
+----
 		
-	</section>
+
 
 	<section id="javacollections_removinglistitems">
 === Remove list members based on condition
@@ -105,8 +105,7 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/list/RemoveIfList.java" />
-			</programlisting>
+					parse="text" href="./examples/list/RemoveIfList.java[]
+----
 		
-	</section>
-</section>
+

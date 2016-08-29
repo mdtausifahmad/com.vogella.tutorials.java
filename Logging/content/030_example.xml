@@ -10,8 +10,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/MyHtmlFormatter.java" />
-			</programlisting>
+					parse="text" href="../examples/MyHtmlFormatter.java[]
+----
 		
 		
 			Initialize the logger via the following code. This Logger class
@@ -20,10 +20,10 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/MyLogger.java" />
-			</programlisting>
+					parse="text" href="../examples/MyLogger.java[]
+----
 		
-	</section>
+
 
 	<section id="logexample_use">
 === Use the logger
@@ -35,8 +35,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/UseLogger.java" />
-			</programlisting>
+					parse="text" href="../examples/UseLogger.java[]
+----
 		
 
 		<tip>
@@ -50,5 +50,4 @@
 			
 		
 
-	</section>
-</section>
+

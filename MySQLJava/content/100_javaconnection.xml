@@ -12,8 +12,7 @@
 		Add
 		the JDBC driver to
 		your classpath. See
-		<ulink
-			url="http://www.vogella.com/tutorials/Eclipse/article.html#classpath">Adding jars to the classpath</ulink>
+http://www.vogella.com/tutorials/Eclipse/article.html#classpath">Adding jars to the classpath</ulink>
 		for details.
 	
 	
@@ -38,4 +37,3 @@
 ----
 	
 
-</section>

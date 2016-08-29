@@ -12,7 +12,7 @@
 			aggregate
 			operations.
 		
-	</section>
+
 	<section id="stream_intstream">
 === IntStream
 		Allow to create a stream of sequence of primitive int-valued
@@ -23,7 +23,7 @@
 include::res/stream/IntStreamExample.java[]
 ----
 		
-	</section>
+
 	<section id="lambdas_reduction">
 === Reduction operations with streams and lambdas
 		Allow to create a stream of sequence of primitive int-valued
@@ -38,7 +38,7 @@ include::res/stream/Task.java[]
 include::res/stream/StreamTester.java[]
 ----
 		
-	</section>
+
 
 	<section id="lambdas_examples">
 === Example for filtering and mapping the content of a list
@@ -54,7 +54,7 @@ include::res/stream/StreamTester.java[]
 include::res/stream/JavaStreamExample.java[]
 ----
 		
-	</section>
+
 
 	<section id="streams_examples">
 === Streams and lambda examples
@@ -84,5 +84,4 @@ include::res/stream/Example.java[]
 ----
 		
 
-	</section>
-</section>
+

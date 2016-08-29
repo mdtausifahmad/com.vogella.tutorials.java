@@ -16,7 +16,7 @@
 		The type of a lambda expression in Java is a functional
 			interface.
 		
-	</section>
+
 	<section id="lambdas_purpose">
 === Purpose of lambda expressions
 		
@@ -34,7 +34,7 @@ include::res/lambda/LambdaTest.java[]
 ----
 		
 
-	</section>
+
 	<section id="lambdas_methodreferences">
 === Using method references
 		
@@ -58,11 +58,11 @@ include::res/lambda/LambdaTest.java[]
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/lambda/LambdaTestMethodReferences.java" />
-			</programlisting>
+					href="./examples/lambda/LambdaTestMethodReferences.java[]
+----
 		
 
-	</section>
+
 
 	<section id="lambdas_closures">
 === Difference between a lambda expression and a closure
@@ -85,7 +85,7 @@ include::res/lambda/LambdaTest.java[]
 
 		
 
-	</section>
 
 
-</section>
+
+

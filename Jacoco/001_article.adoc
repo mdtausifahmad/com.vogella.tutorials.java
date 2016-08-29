@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>Jacoco (Java Code Coverage) - Tutorial</title>
+=== Jacoco (Java Code Coverage) - Tutorial
 		<author>
 			<firstname>Simon</firstname>
 			<surname>Scholz</surname>
@@ -12,16 +12,16 @@
 		</copyright>
 		<pubdate>24.03.2016</pubdate>
 		<releaseinfo>
-			<para>Version 1.0</para>
+			Version 1.0
 		</releaseinfo>
 
 
 
 		<abstract id="abstract">
-			<title>Jacoco</title>
-			<para> This tutorial describes the usage of the Jacoco, which can be
+	=== Jacoco
+			 This tutorial describes the usage of the Jacoco, which can be
 				used to check the code coverage of java projects.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

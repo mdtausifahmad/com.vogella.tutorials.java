@@ -20,8 +20,8 @@
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/install/javaversion.sh" />
-			</programlisting>
+					parse="text" href="./examples/install/javaversion.sh[]
+----
 		
 		
 			If the JRE is installed and within your path, this commands
@@ -44,7 +44,7 @@
 			install
 			Java.
 		
-	</section>
+
 
 	<section id="java_installation_ubuntu">
 === Install Java on Ubuntu
@@ -56,10 +56,10 @@
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/install/ubuntu.sh" />
-			</programlisting>
+					parse="text" href="./examples/install/ubuntu.sh[]
+----
 		
-	</section>
+
 	<section id="java_installation_windows">
 === Install Java on MS Windows
 
@@ -71,7 +71,7 @@
 			Java is located under the following URL and also contains
 			instructions how to install Java for other platforms: http://java.com"></ulink>.
 		
-	</section>
+
 	<section id="java_installation_other">
 === Installation problems and other operating systems
 		
@@ -94,7 +94,7 @@
 			Windows,
 			Ubuntu, Mac OS X, etc.
 		
-	</section>
+
 
 	<section id="java_installation3">
 === Validate installation
@@ -104,17 +104,17 @@
 		
 			<programlisting language="bourne">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/install/javaversion.sh" />
-			</programlisting>
+					parse="text" href="./examples/install/javaversion.sh[]
+----
 		
 		The output should be similar to the following output.
 		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/install/javaversionresult.txt" />
-			</programlisting>
+[source,text]
+----
+include::res/install/javaversionresult.txt[]
+----
 		
-	</section>
+
 	<section id="java_installation_32or64">
 === How can you tell you are using a 32 bit or 64 bit version of
 			Java?
@@ -128,10 +128,10 @@
 			following is the output of a 64-bit version.
 		
 		
-			<programlisting language="text">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/install/javaversionresult.txt" />
-			</programlisting>
+[source,text]
+----
+include::res/install/javaversionresult.txt[]
+----
 		
-	</section>
-</section>
+
+

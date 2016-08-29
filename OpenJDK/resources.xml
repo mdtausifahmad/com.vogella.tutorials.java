@@ -12,8 +12,7 @@
 
 		
 		
-			<ulink
-				url="http://hg.openjdk.java.net/jdk7/build/raw-file/tip/README-builds.html"> Details on how to build OpenJDK7</ulink>
+http://hg.openjdk.java.net/jdk7/build/raw-file/tip/README-builds.html"> Details on how to build OpenJDK7</ulink>
 		
 
 		
@@ -23,6 +22,5 @@
 		
 			#openjdk on IRC on irc.oftc.net
 		
-	</section>
 
-</section>
+

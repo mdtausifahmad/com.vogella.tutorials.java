@@ -41,7 +41,7 @@
 		
 
 
-	</section>
+
 	<section id="javacollections_typicaltypes1">
 === Important default implementations
 		
@@ -60,7 +60,7 @@
 			`List`
 			interface.
 		
-	</section>
+
 	<section id="javacollections_typicaltypes2">
 === Type information with generics
 		
@@ -83,7 +83,7 @@
 			you inserted an object of the wrong type into a collection you would create a runtime exception.
 		
 
-	</section>
+
 	<section id="javacollections_lambdas">
 === Collections and lambdas
 		The collection library support lambdas expressions. Operations on collections have been largely simplified with
@@ -104,13 +104,12 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/javacollections/MyArrayList.java" />
-			</programlisting>
+					href="./examples/javacollections/MyArrayList.java[]
+----
 		
 
 		If you try to put an object into this list which is not an object, you would
 			receive
 			a compiler error.
 		
-	</section>
-</section>
+

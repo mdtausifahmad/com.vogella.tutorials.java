@@ -136,14 +136,14 @@ Assume you want to find the following:
 .Table Title
 |===
 
-            <title>Test methods on Solo</title>
+            <title>Test methods on Solo
 -----
 
 You can use the following pattern for that: `\s+
 
 .Table Title
 |===
-(?s).*<title>(.*)</title>` and replace it with `.Table $1\R|===\R`.
+(?s).*<title>(.*)` and replace it with `.Table $1\R|===\R`.
 
 
 You can also replace statements like the following:

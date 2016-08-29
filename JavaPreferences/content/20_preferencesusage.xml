@@ -16,10 +16,10 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../example/PreferenceTest.java" />
-			</programlisting>
+					parse="text" href="../example/PreferenceTest.java[]
+----
 		
-	</section>
+
 	<section id="preferenceusage2">
 === Validating
 		
@@ -32,6 +32,6 @@
 			changed after the first call.
 		
 
-	</section>
 
-</section>
+
+

@@ -1,14 +1,13 @@
 <section id="overview_jacoco">
-	<title>Jacoco</title>
-	<para>
+== Jacoco
+	
 		<wordasword>Jacoco</wordasword>
 		is an open source project, which can be used to check production code
 		for code coverage. It is available under EPL-1.0.
-	</para>
-	<para>
+	
+	
 		It can be used within Eclipse, but also in a Continuous
 		Integration context. So there are also Gradle, SonarQube and Jenkins
 		plugins to make these code coverage checks outside the IDE and
 		therefore globally available to the development team.
-	</para>
-</section>
+	

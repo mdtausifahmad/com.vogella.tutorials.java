@@ -1,11 +1,10 @@
 <section id="resources_findbugs">
-	<title>Links and Literature</title>
+== Links and Literature
 	<section id="resources_p2">
-		<title>Code Analysis resources</title>
-		<para>
-			<ulink url="http://findbugs.sourceforge.net"> http://findbugs.sourceforge.net</ulink>
+=== Code Analysis resources
+		
+http://findbugs.sourceforge.net"> http://findbugs.sourceforge.net</ulink>
 			FindBugs Homepage
-		</para>
-	</section>
+		
+
 	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../10_Include/resources.xml" />
-</section>

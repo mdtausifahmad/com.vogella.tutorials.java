@@ -1,111 +1,92 @@
 <section id="exercise_jacoco_usage_maven">
-	<title>Exercise: Run Jacoco during a Maven build</title>
+== Exercise: Run Jacoco during a Maven build
 	<section>
-		<title>Target</title>
-		<para>The target of this exercise is to run Jacoco during a maven
+=== Target
+		The target of this exercise is to run Jacoco during a maven
 			build by using the jacoco-maven-plugin.
-		</para>
-	</section>
+		
+
 	<section>
-		<title>Creating a sample Maven project</title>
-		<para>
+=== Creating a sample Maven project
+		
 			Create a
-			<filename>com.example.jacoco</filename>
+			`com.example.jacoco`
 			Maven project.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/maven-project-wizard-overview.png" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::maven-project-wizard-overview.png[]
+		
+		
 			Press
 			<guibutton>Next</guibutton>
 			to get to the first Maven Project Wizard Page.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/maven-project-wizard-default-settings.png" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		<para>
+		
+		
+image::maven-project-wizard-default-settings.png[]
+		
+		
 			Here the defaults should be sufficient so that the
 			<guibutton>Next</guibutton>
 			button can be pressed directly. On the next page the
-			<parameter>maven-archetype-quickstart</parameter>
+			`maven-archetype-quickstart`
 			can be selected.
-		</para>
-		<para>
+		
+		
 			<mediaobject>
 				<imageobject>
 					<imagedata
-						fileref="images/maven-project-wizard-quickstart-archetype.png" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		<para>The following parameters can be used for the project
+						fileref="images/maven-project-wizard-quickstart-archetype.png[]
+		
+		The following parameters can be used for the project
 			configuration:
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/maven-project-wizard-config.png" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		<para>When pressing finish a new maven project is created.</para>
-	</section>
+		
+		
+image::maven-project-wizard-config.png[]
+		
+		When pressing finish a new maven project is created.
+
 	<section>
-		<title>Applying the Jacoco plugin</title>
-		<para>
+=== Applying the Jacoco plugin
+		
 			The complete contents of the
-			<filename>pom.xml</filename>
+			`pom.xml`
 			file should look like this:
-		</para>
-		<para>
+		
+		
 			<programlisting language="xml">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/maven/pom.xml" />
-			</programlisting>
-		</para>
-	</section>
+					parse="text" href="./examples/maven/pom.xml[]
+----
+		
+
 	<section>
-		<title>Validate</title>
-		<para>Run the following command in the command line or via the M2E
+=== Validate
+		Run the following command in the command line or via the M2E
 			tooling:
-		</para>
-		<para>
+		
+		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/maven/clean-verify.txt" />
-			</programlisting>
-		</para>
-		<para>
+					parse="text" href="./examples/maven/clean-verify.txt[]
+----
+		
+		
 			Besides the normal Maven build a
-			<filename>site</filename>
+			`site`
 			folder will be created.
-		</para>
-		<para>
+		
+		
 			Inside this folder will be a
-			<filename>jacoco-ut</filename>
+			`jacoco-ut`
 			folder, which contains the test coverage analysis files.
-		</para>
-		<para>
+		
+		
 			The
-			<filename>index.html</filename>
+			`index.html`
 			can be opened in a browser in order to visually see the test coverage
 			results.
-		</para>
-		<para>
-			<mediaobject>
-				<imageobject>
-					<imagedata fileref="images/jacoco-report-html.png" />
-				</imageobject>
-			</mediaobject>
-		</para>
-	</section>
-</section>
+		
+		
+image::jacoco-report-html.png[]
+		
+

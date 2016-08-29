@@ -1,6 +1,6 @@
 <section id="findbugs_overview">
-	<title>What is FindBugs</title>
-	<para>
+== What is FindBugs
+	
 		<wordasword>FindBugs</wordasword>
 		is an open source project for a static
 		analysis of the Java
@@ -12,10 +12,9 @@
         helps
         the developer to access these problems early in the development
         phase. 
-	</para>
-	<para>
+	
+	
 		The
         analysis of Findbugs can be
         integrated into existing IDEs like the Eclipse IDE of IntelliJ.
-	</para>
-</section>
+	

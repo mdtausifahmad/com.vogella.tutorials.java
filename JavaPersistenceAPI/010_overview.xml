@@ -98,7 +98,7 @@
 		
 		
 		
-	</section>
+
 	<section id="jpaintro_entity">
 === Entity
 		
@@ -137,7 +137,7 @@
 			to the annotation
 			@Table(name="NEWTABLENAME").
 		
-	</section>
+
 	<section id="jpaintro_fields">
 === Persistence of fields
 		
@@ -189,7 +189,7 @@
 				
 			|===
 		
-	</section>
+
 	<section id="jpaintro_relationships">
 === Relationship Mapping
 		 JPA allows to define relationships between classes, e.g. it can
@@ -235,7 +235,7 @@
 				
 			|===
 		
-	</section>
+
 
 	<section id="jpaintro_entitymanager">
 === Entity Manager
@@ -272,7 +272,7 @@
 			describes all Entities of one Entity manager.
 		
 
-	</section>
+
 	<section id="jpaintro_persistenceunits">
 === Persistence units
 		
@@ -300,6 +300,6 @@
 			and the
 			password,
 		
-	</section>
 
-</section>
+
+

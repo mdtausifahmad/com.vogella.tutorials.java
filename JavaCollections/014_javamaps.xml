@@ -26,7 +26,7 @@ include::res/map/MapTester.java[]
 		
 
 
-	</section>
+
 	<section id="map_convert">
 === Convert keys in a Map to an array or a list
 		You can convert your keys or values to an array or list. The
@@ -37,7 +37,7 @@ include::res/map/ConvertMapTester.java[]
 ----
 		
 
-	</section>
+
 
 	<section id="map_processingmapselements">
 === Processing every element in the map
@@ -46,7 +46,7 @@ include::res/map/ConvertMapTester.java[]
 			`forEach`
 			method, which take a lambda as parameter.
 		
-	</section>
+
 
 	<section id="map_getordefault">
 === Getting the current value or a default for a map 
@@ -71,6 +71,5 @@ include::res/map/MapOrDefault.java[]
 include::res/map/ComputeIfAbsent.java[]
 ----
 		
-	</section>
 
-</section>
+

@@ -20,7 +20,7 @@
 			implementation for
 			all abstract methods defined in the interface.
 		
-	</section>
+
 	<section id="javadef_interfacemethods">
 === Abstract, default and static methods in Interfaces
 		
@@ -49,7 +49,7 @@ include::res/class/MyInterface.java[]
 ----
 		
 
-	</section>
+
 	<section id="javadef_interfaceimplementing">
 === Implementing Interfaces
 		
@@ -75,7 +75,7 @@ include::res/class/MyClassImpl.java[]
 ----
 		
 
-	</section>
+
 	<section id="javadef_interfaceevolving">
 === Evolving interfaces with default methods
 		Before Java 8 evolving interfaces, e.g., adding new methods to
@@ -92,7 +92,7 @@ include::res/class/MyClassImpl.java[]
 			behavior.
 		
 
-	</section>
+
 
 	<section id="javadef_interface_multiple">
 === Multiple inheritance of methods
@@ -153,7 +153,7 @@ include::res/class/A.java[]
 include::res/class/A2.java[]
 ----
 		
-	</section>
+
 
 	<section id="javadef_functionalinterfaces">
 === Functional interfaces
@@ -248,5 +248,5 @@ include::res/class/A2.java[]
 				</listitem>
 			</itemizedlist>
 		
-	</section>
-</section>
+
+

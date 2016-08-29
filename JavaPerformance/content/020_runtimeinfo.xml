@@ -12,10 +12,10 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/runtimeinfo/PerformanceTest.java" />
-			</programlisting>
+					parse="text" href="../examples/runtimeinfo/PerformanceTest.java[]
+----
 		
-	</section>
+
 	<section id="runtimeinfo_runtime">
 === Runtime of a Java program
 		 Use System.currentTimeMillis() to get the start time and the
@@ -23,8 +23,7 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/runtimeinfo/TimeTest1.java" />
-			</programlisting>
+					parse="text" href="../examples/runtimeinfo/TimeTest1.java[]
+----
 		
-	</section>
-</section>
+

@@ -35,4 +35,3 @@
 	 Spring just add some simplifications in using dependency
 		injection by providing a standard way of providing the configuration
 		and by managing the reference to the created objects.
-</section>

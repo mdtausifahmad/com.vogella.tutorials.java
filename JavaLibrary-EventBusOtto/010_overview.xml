@@ -26,7 +26,7 @@
 			keep the application code
 			simple and unambiguous.
 		
-	</section>
+
 	<section id="ottoeventbus_installation">
 === Installation
 
@@ -47,7 +47,7 @@
 		
 
 
-	</section>
+
 
 	<section id="ottoeventbus_whenouse">
 === When to use Otto?
@@ -55,7 +55,7 @@
 			fragments or to communicate between an activity and
 			a service.
 		
-	</section>
+
 
 	<section id="ottoeventbus_howtosetup">
 === How to setup Otto?
@@ -91,7 +91,7 @@ include::res/snippets/CreateBus.java[]
 		
 
 
-	</section>
+
 	<section id="ottoeventbus_register events">
 === How to register and unregister for events?
 		<indexterm>
@@ -131,7 +131,7 @@ include::res/snippets/Register.java[]
 			`unregister()`
 			method.
 		
-	</section>
+
 
 	<section id="ottoeventbus_send events">
 === How to send events
@@ -147,7 +147,7 @@ include::res/snippets/Register.java[]
 include::res/snippets/Send.java[]
 ----
 		
-	</section>
+
 
 	<section id="ottoeventbus_newcomponent">
 === How can new components receive the last event?
@@ -178,6 +178,6 @@ include::res/snippets/Send.java[]
 include::res/snippets/Produce.java[]
 ----
 		
-	</section>
 
-</section>
+
+

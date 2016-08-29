@@ -31,4 +31,3 @@
 	 The class "MySpringBeanWithDependency.java" contains a setter
 		for the actual writer. We will use the Spring Framework to inject the
 		correct writer into this class.
-</section>

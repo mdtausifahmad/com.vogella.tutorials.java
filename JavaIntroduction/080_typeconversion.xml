@@ -10,19 +10,19 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/conversion/toStringConversion" />
-			</programlisting>
+					parse="text" href="./examples/conversion/toStringConversion[]
+----
 		
 
-	</section>
+
 
 	<section id="conversion_tonumber">
 === Conversion from String to Number
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/conversion/fromStringToNumber" />
-			</programlisting>
+					parse="text" href="./examples/conversion/fromStringToNumber[]
+----
 		
 		
 			The conversion from string to number is independent from the
@@ -46,17 +46,17 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/conversion/localeStringConversionToDouble" />
-			</programlisting>
+					parse="text" href="./examples/conversion/localeStringConversionToDouble[]
+----
 		
 
 
-	</section>
+
 	<section id="conversion_toint">
 === Double to int
 		int i = (int) double;
 
-	</section>
+
 
 	<section id="conversion_sqldate">
 === SQL Date conversions
@@ -64,10 +64,10 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/conversion/ConvertDateToSQLDate.java" />
-			</programlisting>
+					parse="text" href="./examples/conversion/ConvertDateToSQLDate.java[]
+----
 		
 
 
-	</section>
-</section>
+
+

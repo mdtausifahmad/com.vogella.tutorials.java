@@ -18,7 +18,7 @@
 			The object which performs the logging in applications
 			is typically just called <wordasword>Logger</wordasword>.
 		
-	</section>
+
 
 	<section id="overview_loggerjava">
 === Logging in Java
@@ -41,7 +41,7 @@
 			`Logger`
 			class.
 		
-	</section>
+
 
 	<section id="overview_create">
 === Create a logger
@@ -54,8 +54,8 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/createLogger.java" />
-			</programlisting>
+					parse="text" href="../examples/createLogger.java[]
+----
 		
 		
 			The
@@ -72,7 +72,7 @@
 			configure
 			the main logger and this affects all its children.
 		
-	</section>
+
 
 	<section id="overview_level">
 === Level
@@ -131,10 +131,10 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/setLogLevel.java" />
-			</programlisting>
+					parse="text" href="../examples/setLogLevel.java[]
+----
 		
-	</section>
+
 
 	<section id="general_handler">
 === Handler
@@ -179,7 +179,7 @@
 			<command>INFO</command>
 			and higher will be automatically written to the console.
 		
-	</section>
+
 
 	<section id="general_formatter">
 === Formatter
@@ -207,10 +207,10 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/MyHtmlFormatter.java" />
-			</programlisting>
+					parse="text" href="../examples/MyHtmlFormatter.java[]
+----
 		
-	</section>
+
 
 	<section id="general_manager">
 === Log Manager
@@ -233,10 +233,10 @@
 		
 			<programlisting>
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/setLogLevel2.java" />
-			</programlisting>
+					parse="text" href="../examples/setLogLevel2.java[]
+----
 		
-	</section>
+
 
 	<section id="chapter20s1a">
 === Best Practices
@@ -255,5 +255,5 @@
 			Logging API
 			documentation.
 		
-	</section>
-</section>
+
+

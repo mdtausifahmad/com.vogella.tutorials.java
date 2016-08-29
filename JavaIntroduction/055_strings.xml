@@ -13,7 +13,7 @@
 			`String`
 			object creates a new object.
 		
-	</section>
+
 
 	<section id="javastringpool">
 === String pool in Java
@@ -45,7 +45,7 @@
 				String s = new String("constant");
 			`.
 		
-	</section>
+
 
 	<section id="javastringcompare">
 === Compare Strings in Java
@@ -79,15 +79,15 @@
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/stringcompare/correct.java" />
-			</programlisting>
+					parse="text" href="./examples/stringcompare/correct.java[]
+----
 		
 		This comparison would fail.
 		
 			<programlisting language="java">
 				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/stringcompare/wrong.java" />
-			</programlisting>
+					parse="text" href="./examples/stringcompare/wrong.java[]
+----
 		
 		<warning>
 			
@@ -96,7 +96,7 @@
 				method when you compare strings.
 			
 		
-	</section>
+
 
 	<section id="javastringhandling">
 === Working with Strings
@@ -279,5 +279,5 @@
 				
 			|===
 		
-	</section>
-</section>
+
+

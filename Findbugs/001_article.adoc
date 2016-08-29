@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <article>
 	<articleinfo>
-		<title>FindBugs in Eclipse - Tutorial</title>
+=== FindBugs in Eclipse - Tutorial
 		<author>
 			<firstname>Lars</firstname>
 			<surname>Vogel</surname>
@@ -20,17 +20,17 @@
 		</copyright>
 		<pubdate>24.03.2016</pubdate>
 		<releaseinfo>
-			<para>Version 1.5</para>
+			Version 1.5
 		</releaseinfo>
 
 		
 
 		<abstract id="abstract">
-			<title>FindBugs</title>
-			<para> This tutorial describes the usage of the FindBugs plug-in
+	=== FindBugs
+			 This tutorial describes the usage of the FindBugs plug-in
 				for
 				Eclipse. It is based on Eclipse 4.6.
-			</para>
+			
 		</abstract>
 	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]

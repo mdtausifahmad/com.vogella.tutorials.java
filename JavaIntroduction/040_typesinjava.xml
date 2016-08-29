@@ -11,7 +11,7 @@
 			<wordasword>reference types</wordasword>
 			(such as Object and String).
 		
-	</section>
+
 	<section id="javadef_types_primitives">
 === Primitives 
 
@@ -30,7 +30,7 @@
 			types. Only + can also used for the reference type String to
 			concatenate strings.
 		
-	</section>
+
 
 	<section id="javadef_types_references">
 === Reference types 
@@ -62,7 +62,7 @@
 			referring to that
 			object.
 		
-	</section>
+
 	<section id="javadef_types_autoboxing">
 === Autoboxing and wrapper types
 		
@@ -104,6 +104,5 @@
 			as
 			autoboxing.
 		
-	</section>
 
-</section>
+

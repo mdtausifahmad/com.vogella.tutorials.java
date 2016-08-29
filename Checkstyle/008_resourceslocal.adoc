@@ -1,0 +1,8 @@
+== Links and Literature
+
+=== Code Analysis resources
+
+http://eclipse-cs.sourceforge.net/[Checkstyle Plugin for Eclipse Homepage]
+
+http://pmd.sourceforge.net/[PMD Homepage]
+

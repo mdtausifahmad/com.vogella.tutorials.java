@@ -1,18 +1,18 @@
 <section id="jacoco_installation">
-	<title>Installation</title>
-	<para>
+== Installation
+	
 		The easiest way to install Jacoco in the Eclipse IDE is to use the
 		Eclipse Marketplace and search for
 		<wordasword>EclEmma</wordasword>
-	</para>
-	<para>
+	
+	
 		<mediaobject>
 			<imageobject>
 				<imagedata fileref="images/eclipse-marketplace.png" />
 			</imageobject>
 		</mediaobject>
-	</para>
-	<para>
+	
+	
 		Alternatively the
 		<menuchoice>
 			<guimenu>Help</guimenu>
@@ -21,11 +21,11 @@
 		menu entry can be used to install the EclEmma Jacoco plug-in from the
 		following
 		URL:
-	</para>
-	<para>
-		<ulink url="http://update.eclemma.org/">http://update.eclemma.org/</ulink>
-	</para>
-	<para>Install all software components from this update site and restart
+	
+	
+		http://update.eclemma.org/">http://update.eclemma.org/</ulink>
+	
+	Install all software components from this update site and restart
 		your Eclipse IDE afterwards.
-	</para>
-</section>
+	
+

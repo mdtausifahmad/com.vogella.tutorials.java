@@ -13,7 +13,7 @@
 			you to use the related classes in your code without the package
 			qualifier.
 		
-	</section>
+
 
 	<section id="javaimport_staticimports">
 === Static imports
@@ -41,5 +41,4 @@
 			the
 			field.
 		
-	</section>
-</section>
+

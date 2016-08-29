@@ -1,26 +1,25 @@
 <section id="resources_jacoco">
-	<title>Jacoco Code Analysis Resources</title>
-	<para>
-		<ulink url="https://github.com/jacoco/jacoco">Jacoco on GitHub</ulink>
-	</para>
-	<para>
-		<ulink url="http://eclemma.org/jacoco/">EclEmma for Eclipse</ulink>
-	</para>
-	<para>
-		<ulink url="https://docs.gradle.org/current/userguide/jacoco_plugin.html">Jacoco Gradle Plugin
+== Jacoco Code Analysis Resources
+	
+		https://github.com/jacoco/jacoco">Jacoco on GitHub</ulink>
+	
+	
+		http://eclemma.org/jacoco/">EclEmma for Eclipse</ulink>
+	
+	
+		https://docs.gradle.org/current/userguide/jacoco_plugin.html">Jacoco Gradle Plugin
 		</ulink>
-	</para>
-	<para>
-		<ulink url="http://eclemma.org/jacoco/trunk/doc/maven.html">Jacoco Maven Plugin
+	
+	
+		http://eclemma.org/jacoco/trunk/doc/maven.html">Jacoco Maven Plugin
 		</ulink>
-	</para>
-	<para>
-		<ulink
-			url="http://docs.sonarqube.org/display/PLUG/Usage+of+JaCoCo+with+Java+Plugin">Jacoco Sonarqube Plugin
+	
+	
+http://docs.sonarqube.org/display/PLUG/Usage+of+JaCoCo+with+Java+Plugin">Jacoco Sonarqube Plugin
 		</ulink>
-	</para>
-	<para>
-		<ulink url="https://wiki.jenkins-ci.org/display/JENKINS/JaCoCo+Plugin">Jacoco Jenkins Plugin
+	
+	
+		https://wiki.jenkins-ci.org/display/JENKINS/JaCoCo+Plugin">Jacoco Jenkins Plugin
 		</ulink>
-	</para>
-</section>
+	
+

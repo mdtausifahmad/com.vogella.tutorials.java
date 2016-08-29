@@ -98,7 +98,7 @@
 				
 			|===
 		
-	</section>
+
 
 	<section id="javadefinitions_othermodifiers">
 === Other modifiers
@@ -112,6 +112,5 @@
 			native methods: platform dependent code, apply only to methods
 		
 		strictfp: class or method
-	</section>
 
-</section>
+
