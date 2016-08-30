@@ -61,7 +61,7 @@
 	
 
 	
-image::vmsettings10.gif" />
+image::vmsettings10.gif[]
 			</imageobject>
 		</mediaobject>
 	
