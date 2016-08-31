@@ -1,19 +1,15 @@
-[[95_exampless1">
+[[95_exampless1]]
 == Examples
-[[95_exampless1s2a">
+[[95_exampless1s2a]]
 === Clipboard Access
 		
-			The following small program accesses the clipboard and removes
-			any format on the string which is in the clipboard. Helpful
-			to avoid the
+The following small program accesses the clipboard and removes
+any format on the string which is in the clipboard. Helpful
+to avoid the
 menu:Edit[Paste Special > Unformated Text].
 		
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../../src/de/vogella/clipboard/MyClipboard.java[]
+[source,java]
 ----
-		
-
-
+include::res../../src/de/vogella/clipboard/MyClipboard.java[]
+----
 

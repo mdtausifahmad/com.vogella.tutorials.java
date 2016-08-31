@@ -1,79 +1,65 @@
-[[loops">
+[[loops]]
 == Loops in Java
-[[javalang_for">
+[[javalang_for]]
 === The for loop
 		
-			A for loop is a repetition control structure that allows you to
-			write a block of code which is executed a specific number of
-			times. The syntax is the following.
-		
+A for loop is a repetition control structure that allows you to
+write a block of code which is executed a specific number of
+times. The syntax is the following.
 		
 [source,java]
 ----
 include::res/loop/for.java[]
 ----
 		
-		The following shows an example for a for loop.
+The following shows an example for a for loop.
 		
 [source,java]
 ----
 include::res/loop/ForTest.java[]
 ----
 		
-		<tip>
-			
-				For arrays and collections there is also an enhanced for loop
-				available. This loop is covered in the Array description.
-			
-		
+TIP:For arrays and collections there is also an enhanced for loop available. 
+This loop is covered in the Array description.
 
-
-[[javalang_while">
+[[javalang_while]]
 === The while loop
 		
-			A while loop is a repetition control structure that allows you
-			to
-			write a block of code which is executed until a specific condition
-			evaluates to false. The
-			syntax is the following.
-		
+A while loop is a repetition control structure that allows you
+to
+write a block of code which is executed until a specific condition
+evaluates to false. The
+syntax is the following.
 		
 [source,java]
 ----
 include::res/loop/while.java[]
 ----
 		
-		The following shows an example for a while loop.
+The following shows an example for a while loop.
 		
 [source,java]
 ----
 include::res/loop/WhileTest.java[]
 ----
-		
 
-
-[[javalang_dowhile">
+[[javalang_dowhile]]
 === The do while loop
 		
-			The do-while loop is similar to the while loop,
-			with the exception that the
-			condition is checked after the execution. The
-			syntax is the following.
-		
+The do-while loop is similar to the while loop,
+with the exception that the
+condition is checked after the execution. The
+syntax is the following.
 		
 [source,java]
 ----
 include::res/loop/dowhile.java[]
 ----
 		
-		
-			The following shows an example for a do-while loop.
-		
+The following shows an example for a do-while loop.
 		
 [source,java]
 ----
 include::res/loop/DoTest.java[]
 ----
-		
-
 

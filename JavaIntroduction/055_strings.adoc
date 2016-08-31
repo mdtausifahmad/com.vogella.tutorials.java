@@ -1,283 +1,181 @@
-[[javastring">
+[[javastring]]
 == Strings
-[[javastringdefinition">
+[[javastringdefinition]]
 === Strings in Java
-		
-			The
-			`String`
-			class represents character strings. All string literals, for example,
-			"hello", are implemented as instances of this class. An instance of
-			this class is an object. Strings are immutable, e.g., an assignment
-			of
-			a new value to a
-			`String`
-			object creates a new object.
-		
 
+The
+`String`
+class represents character strings. All string literals, for example,
+"hello", are implemented as instances of this class. An instance of
+this class is an object. Strings are immutable, e.g., an assignment
+of
+a new value to a
+`String`
+object creates a new object.
 
-[[javastringpool">
+[[javastringpool]]
 === String pool in Java
-		
-			For memory efficiency Java uses a
-			`String`
-			pool. The string pool
-			allows string literals to be reused. This is
-			possible because
-			strings in Java are immutable.
-		
-		
-			If the same string literal is used in several places in the
-			Java
-			code, only one copy of that string is created.
-		
-		
-			Whenever a
-			`String`
-			object is created and gets a string literal
-			assigned, e.g., as in
-			`String s = "constant"`,
-			the string pool is used. However, the
-			`new`
-			operator forces a new
-			`String`
-			copy to be allocated, for example, in
-			`
-				String s = new String("constant");
-			`.
-		
 
+For memory efficiency Java uses a
+`String`
+pool. The string pool
+allows string literals to be reused. This is
+possible because
+strings in Java are immutable.
 
-[[javastringcompare">
+If the same string literal is used in several places in the
+Java
+code, only one copy of that string is created.
+
+Whenever a
+`String`
+object is created and gets a string literal
+assigned, e.g., as in
+`String s = "constant"`,
+the string pool is used. However, the
+`new`
+operator forces a new
+`String`
+copy to be allocated, for example, in
+`String s = new String("constant");`.
+
+[[javastringcompare]]
 === Compare Strings in Java
-		
-			To compare the
-			`String`
-			objects
-			`s1`
-			and
-			`s2`,
-			use the
-			`s1.equals(s2)`
-			method.
-		
-		
-			A
-			`String`
-			comparison with
-			`==`
-			is incorrect, as
-			`==`
-			checks for object reference equality.
-			`==`
-			sometimes gives the correct result, as Java uses a
-			`String`
-			pool. The
-			following example would work with
-			`==`.
-		
-		This would work as expected.
-		
+
+To compare the
+`String`
+objects
+`s1`
+and
+`s2`,
+use the
+`s1.equals(s2)`
+method.
+
+A
+`String`
+comparison with
+`==`
+is incorrect, as
+`==`
+checks for object reference equality.
+`==`
+sometimes gives the correct result, as Java uses a
+`String`
+pool. The
+following example would work with
+`==`.
+
+This would work as expected.
+
 [source,java]
 ----
 include::res/stringcompare/correct.java[]
 ----
-		
-		This comparison would fail.
-		
+
+This comparison would fail.
+
 [source,java]
 ----
 include::res/stringcompare/wrong.java[]
 ----
-		
-		<warning>
-			
-				Therefore, you should always use the
-				`equals()`
-				method when you compare strings.
-			
-		
 
+WARNING:Therefore, you should always use the `equals()` method when you compare strings.
 
-[[javastringhandling">
+[[javastringhandling]]
 === Working with Strings
-		The following lists the most common string operations.
+The following lists the most common string operations.
 
 .Table Title
 |===
+|Command |Description
 
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' />
-					<colspec colname='c2' />
-					
-						
-|Command
-|Description
-						
-					
-					
-						
-|
-								`"Testing".equals(text1);`
-							
-|
-								Return `true` if `text1`
-								is equal to `"Testing"`. The check is
-								case-sensitive.
-							
-						
-						
-|
-								`"Testing".equalsIgnoreCase(text1);`
-							
-|
-								Return `true` if `text1` is equal to
-								`"Testing"`. The check is not case-sensitive.
-								For example, it would also be true for `"testing"`.
-							
-						
-						
-|
-								`StringBuffer str1 = new StringBuffer();`
-							
-|
-								Define a new
-								`String`
-								with a variable length.
-							
-						
-						
-|
-								`str.charat(1);`
-							
-|
-								Return the character at position 1.
-								(Note: strings are
-								arrays of chars starting with 0)
-							
-						
-						
-|
-								`str.substring(1);`
-							
+|`"Testing".equals(text1);`
+|Return `true` if `text1`
+is equal to `"Testing"`. The check is
+case-sensitive.
+
+|`"Testing".equalsIgnoreCase(text1);`
+|Return `true` if `text1` is equal to
+`"Testing"`. The check is not case-sensitive.
+For example, it would also be true for `"testing"`.
+
+|`StringBuffer str1 = new StringBuffer();`
+|Define a new
+`String`
+with a variable length.
+
+|`str.charat(1);`
+|Return the character at position 1.
+(Note: strings are
+arrays of chars starting with 0)
+
+|`str.substring(1);`
 |Removes the first characters.
-						
-						
-|
-								`str.substring(1, 5);`
-							
-|
-								Gets the substring from the second to the fifth
-								character.
-							
-						
-						
-|
-								`str.indexOf("Test")`
-							
-|
-								Look for the
-								`String`
-								"Test" in String
-								`str`
-								.
-								Returns the index of the first
-								occurrence of the specified
-								string.
-							
-						
-						
-|
-								`str.lastIndexOf("ing")`
-							
-|
-								Returns the index of the last occurrence of the
-								specified
-								`String`
-								"ing" in the
-								`String`
-								str.
-								`StringBuffer`
-								does not support this method.
-								Hence first
-								convert the
-								`StringBuffer`
-								to
-								`String`
-								via method
-								`toString`.
-							
-						
-						
-|
-								`str.endsWith("ing")`
-							
-|
-								Returns `true` if `str`
-								ends with `String` `"ing"`
-							
-						
-						
-|
-								`str.startsWith("Test")`
-							
-|
-								Returns `true` if
-								`String`
-								`str` starts with
-								`String`
-								`"Test"`.
-							
-						
-						
-|
-								`str.trim()`
-							
-|Removes leading and trailing spaces.
-						
-						
-|
-								`str.replace(str1, str2)`
-							
-|Replaces all occurrences of `str1` by `str2`
-						
-						
-|
-								`str2.concat(str1);`
-							
-|Concatenates `str1` at the end of `str2`.
-						
-						
-|
-								`str.toLowerCase()`
-								/
-								`str.toUpperCase()`
-							
-|Converts the string to lower- or uppercase
-						
-						
-|
-								`str1 + str2`
-							
-|Concatenate `str1` and `str2`
-						
-						
-|
-								`String[] array = myString.split("-");`
-								`String[] array2 = myString.split("\\.");`
-							
-|
-								Splits the character separated `myString` into an array of strings.
-								<emphasis>
-									Attention: the split string is a regular expression,
-									so if you using special characters which have a meaning in
-									regular expressions, you need to quote them. In the second
-									example the . is used and must be quoted by two backslashes.
-								</emphasis>
-							
-						
-					
-				
-			|===
-		
 
+|`str.substring(1, 5);`
+|Gets the substring from the second to the fifth
+character.
+
+|`str.indexOf("Test")`
+|Look for the
+`String`
+"Test" in String
+`str`
+.
+Returns the index of the first
+occurrence of the specified
+string.
+
+|`str.lastIndexOf("ing")`
+|Returns the index of the last occurrence of the
+specified
+`String`
+"ing" in the
+`String`
+str.
+`StringBuffer`
+does not support this method.
+Hence first
+convert the
+`StringBuffer`
+to
+`String`
+via method
+`toString`.
+
+|`str.endsWith("ing")`
+|Returns `true` if `str`
+ends with `String` `"ing"`
+
+|`str.startsWith("Test")`
+|Returns `true` if
+`String`
+`str` starts with
+`String`
+`"Test"`.
+
+|`str.trim()`
+|Removes leading and trailing spaces.
+
+|`str.replace(str1, str2)`
+|Replaces all occurrences of `str1` by `str2`
+
+|`str2.concat(str1);`
+|Concatenates `str1` at the end of `str2`.
+
+|`str.toLowerCase()` / `str.toUpperCase()`
+|Converts the string to lower- or uppercase
+
+|`str1 + str2`
+|Concatenate `str1` and `str2`
+
+|`String[] array = myString.split("-");` `String[] array2 = myString.split("\\.");`
+|Splits the character separated `myString` into an array of strings.
+_Attention: the split string is a regular expression,
+so if you using special characters which have a meaning in
+regular expressions, you need to quote them. In the second
+example the . is used and must be quoted by two backslashes._
+	
+|===
 

@@ -1,91 +1,75 @@
-[[optional">
+[[optional]]
 == Optional
 	
-		If you call a method or access a field on an object which is not
-		initialized (null) you receive a
-		NullPointerException
-		(NPE). The
-		`java.util.Optional`
-		class can be used to avoid these NPEs.
+If you call a method or access a field on an object which is not
+initialized (null) you receive a
+NullPointerException
+(NPE). The
+`java.util.Optional`
+class can be used to avoid these NPEs.
 	
+`java.util.Optional`
+is a good tool to indicate that a return value may be absent, which
+can be seen directly in the method signature rather
+than just
+mentioning that
+`null`
+may be returned in the JavaDoc.
 	
-		`java.util.Optional`
-		is a good tool to indicate that a return value may be absent, which
-		can be seen directly in the method signature rather
-		than just
-		mentioning that
-		`null`
-		may be returned in the JavaDoc.
+If you want to call a method on an Optional object and check some
+property you can use the
+`filter`
+method. The filter method takes a predicate as an argument. If a value
+is present in the Optional object and it
+matches
+the predicate, the
+filter method returns that value; otherwise, it returns an empty
+Optional object.
 	
-	
-		If you want to call a method on an Optional object and check some
-		property you can use the
-		`filter`
-		method. The filter method takes a predicate as an argument. If a value
-		is present in the Optional object and it
-		matches
-		the predicate, the
-		filter method returns that value; otherwise, it returns an empty
-		Optional object.
-	
-	
-		You can create an
-		`Optional`
-		in different ways:
-	
+You can create an
+`Optional`
+in different ways:
 	
 [source,java]
 ----
 include::res/optional/CreateOptional.java[]
 ----
 	
-
-	
-		The
-		`ifPresent`
-		method can be used to execute some code on an object if it is present.
-		Assume you have a
-		`Todo`
-		object and want to call the
-		`getId()`
-		method on it. You can do this via the following code.
-	
+The
+`ifPresent`
+method can be used to execute some code on an object if it is present.
+Assume you have a
+`Todo`
+object and want to call the
+`getId()`
+method on it. You can do this via the following code.
 	
 [source,java]
 ----
 include::res/optional/UseOptional.java[]
 ----
 	
-
+Via the
+`map`
+method you can transform the object if it is present and via the
+`filter`
+method you can filter for certain values.
 	
-		Via the
-		`map`
-		method you can transform the object if it is present and via the
-		`filter`
-		method you can filter for certain values.
-	
-	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-				href="./examples/optional/UseOptionalMapFilter.java[]
+[source,java]
+----
+include::res/optional/UseOptionalMapFilter.java[]
 ----
 	
-
-	
-		To get the real value of an Optional the get() method can be used. But
-		in case the Optional is empty this will throw a
-		NoSuchElementException. To avoid this NoSuchElementException the
-		`orElse`
-		or the
-		`orElseGet`
-		can be used to provide a default in case of absence.
-	
+To get the real value of an Optional the get() method can be used. But
+in case the Optional is empty this will throw a
+NoSuchElementException. To avoid this NoSuchElementException the
+`orElse`
+or the
+`orElseGet`
+can be used to provide a default in case of absence.
 	
 [source,java]
 ----
 include::res/optional/GetValueOrDefault.java[]
 ----
-	
-
-
 

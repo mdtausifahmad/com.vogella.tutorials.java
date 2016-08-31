@@ -47,12 +47,12 @@ The following code demonstrates how you can override a method
 from a superclass.
 
 [source,java]
------
+----
 include::res/class/MyBaseClass.java[]
 ----
 
 [source,java]
------
+----
 include::res/class/MyExtensionClass2.java[]
 ----
 
@@ -75,7 +75,6 @@ anymore. Adding
 to the class does not deprecate automatically all its fields and
 methods.
 
-
 [[annotation_typeannotations]]
 === Type annotations
 Java supports that annotations can be placed on any type. The
@@ -83,10 +82,7 @@ following gives several examples assuming the
 annotations exists.
 
 [source,java]
------
+----
 include::res/typeannotations/Type.java[]
 ----
-
-
-
 

@@ -1,116 +1,87 @@
-[[modifier">
+[[modifier]]
 == Modifiers
-[[javadef_accessmodifier">
+[[javadef_accessmodifier]]
 === Access modifiers
-		
-			There are three access modifiers keywords available in Java:
-			_public_,
-			_protected_
-			and
-			_private_.
-		
-		
-			There are four access levels:
-			_public_,
-			_protected_,
-			_default_
-			and
-			_private_.
-			They define how the corresponding
-			element is visible to
-			other
-			components.
-		
-		
-			If something is declared public, e.g., classes or methods can
-			be freely created or called by other Java objects. If something is
-			declared private, e.g., a method, it can only be accessed within the class
-			in which it is declared.
-		
-		
-			The access levels
-			_protected_
-			and
-			_default_
-			are similar. A
-			_protected_
-			class can be
-			accessed from the package and sub-classes
-			outside the
-			package, while a
-			_default_
-			class can get accessed only via
-			the
-			same package.
-		
-		
-			The following table describes the visibility:
 
-.Table Title
+There are three access modifiers keywords available in Java:
+_public_,
+_protected_
+and
+_private_.
+
+There are four access levels:
+_public_,
+_protected_,
+_default_
+and
+_private_.
+They define how the corresponding
+element is visible to
+other
+components.
+
+If something is declared public, e.g., classes or methods can
+be freely created or called by other Java objects. If something is
+declared private, e.g., a method, it can only be accessed within the class
+in which it is declared.
+
+The access levels
+_protected_
+and
+_default_
+are similar. A
+_protected_
+class can be
+accessed from the package and sub-classes
+outside the
+package, while a
+_default_
+class can get accessed only via
+the
+same package.
+
+The following table describes the visibility:
+
+.Access Level
 |===
+|Modifier |Class |Package |Subclass |World
 
-		=== Access Level
-				<tgroup cols='5' align='left' colsep='1' rowsep='1'>
-					<colspec colname='Modifier' />
-					<colspec colname='Class' />
-					<colspec colname='Package' />
-					<colspec colname='Subclass' />
-					<colspec colname='World' />
-					
-						
-|Modifier
-|Class
-|Package
-|Subclass
-|World
-						
-					
-					
-						
 |public
 |Y
 |Y
 |Y
 |Y
-						
-						
+
 |protected
 |Y
 |Y
 |Y
 |N
-						
-						
+
 |no modifier
 |Y
 |Y
 |N
 |N
-						
-						
+
 |private
 |Y
 |N
 |N
 |N
-						
-					
-				
-			|===
-		
+	
+|===
 
-
-[[javadefinitions_othermodifiers">
+[[javadefinitions_othermodifiers]]
 === Other modifiers
-		final methods: cannot be overwritten in a subclass
-		abstract method: no method body
-		
-			synchronized method: thread safe, can be final and have any
-			access control
-		
-		
-			native methods: platform dependent code, apply only to methods
-		
-		strictfp: class or method
 
+final methods: cannot be overwritten in a subclass
+abstract method: no method body
+
+synchronized method: thread safe, can be final and have any
+access control
+
+native methods: platform dependent code, apply only to methods
+
+strictfp: class or method
 

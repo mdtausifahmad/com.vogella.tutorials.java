@@ -1,115 +1,101 @@
-[[java_additionaldefinition">
+[[java_additionaldefinition]]
 == More Java language constructs
-[[javadef_classmethod">
+[[javadef_classmethod]]
 === Class methods and class variables
-		
-			Class methods and class variables are associated with the class
-			and not
-			an instance of the class, i.e., objects. To refer to these
-			elements, you can use the
-			classname and a dot (".") followed by the
-			class
-			method or class
-			variable name.
-		
-		
-			Class methods and class variables are declared with the
-			`static`
-			keyword. Class methods are also called
-			_static methods_
-			and class variables are also called
-			_static variables_
-			or
-			_static fields_.
-		
-		
-			An example for the usage of a static field is
-			`println`
-			of the following statement:
-			`System.out.println("Hello World")`.
-			Hereby
-			`out`
-			is a static field, an object of type
-			`PrintStream`
-			and you call the
-			`println()`
-			method on this object.
-		
-		
-			If you define a static variable, the Java runtime
-			environment
-			associates
-			one class
-			variable for a class no matter how
-			many
-			instances
-			(objects)
-			exist. The static variable can therefore be seen as a
-			global
-			variable.
-		
-		
-			The following code demonstrates the usage of
-			`static`
-			fields.
-		
-		
+
+Class methods and class variables are associated with the class
+and not
+an instance of the class, i.e., objects. To refer to these
+elements, you can use the
+classname and a dot (".") followed by the
+class
+method or class
+variable name.
+
+Class methods and class variables are declared with the
+`static`
+keyword. Class methods are also called
+_static methods_
+and class variables are also called
+_static variables_
+or
+_static fields_.
+
+An example for the usage of a static field is
+`println`
+of the following statement:
+`System.out.println("Hello World")`.
+Hereby
+`out`
+is a static field, an object of type
+`PrintStream`
+and you call the
+`println()`
+method on this object.
+
+If you define a static variable, the Java runtime
+environment
+associates
+one class
+variable for a class no matter how
+many
+instances
+(objects)
+exist. The static variable can therefore be seen as a
+global
+variable.
+
+The following code demonstrates the usage of
+`static`
+fields.
+
 [source,java]
 ----
 include::res/static/MyStaticExample.java[]
 ----
-		
-		
+
 [source,java]
 ----
 include::res/static/Tester.java[]
 ----
-		
-		
-			If a variable should be defined as constant, you declare it with the
-			`static`
-			and the
-			`final`
-			keyword.
-		
-		
-			The static method runs without any instance of the class, it
-			cannot directly access
-			non-static variables or methods.
-		
 
+If a variable should be defined as constant, you declare it with the
+`static`
+and the
+`final`
+keyword.
 
-[[javadef_abstractclass">
+The static method runs without any instance of the class, it
+cannot directly access
+non-static variables or methods.
+
+[[javadef_abstractclass]]
 === Abstract class and methods
-		
-			A class and method can be declared as
-			`abstract`.
-			An
-			`abstract`
-			class can not be directly instantiated.
-		
-		
-			If a class has at least one method, which only contains the declaration
-			of
-			the method, but not the implementation, then this class is
-			`abstract`
-			and
-			can not be instantiated. Sub-classes need then to define the
-			methods
-			except if they are also declared as abstract.
-		
-		
-			If a class contains an abstract method, it also needs to get
-			defined
-			with the keyword
-			`abstract`.
-		
-		The following example shows an abstract class.
-		
+
+A class and method can be declared as
+`abstract`.
+An
+`abstract`
+class can not be directly instantiated.
+
+If a class has at least one method, which only contains the declaration
+of
+the method, but not the implementation, then this class is
+`abstract`
+and
+can not be instantiated. Sub-classes need then to define the
+methods
+except if they are also declared as abstract.
+
+If a class contains an abstract method, it also needs to get
+defined
+with the keyword
+`abstract`.
+
+The following example shows an abstract class.
+
 [source,java]
 ----
 include::res/abstract/MyAbstractClass.java[]
 ----
-		
-
 

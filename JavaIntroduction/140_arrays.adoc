@@ -1,38 +1,32 @@
-[[arrays">
+[[arrays]]
 == Arrays
-[[arrays_definition">
+[[arrays_definition]]
 === Arrays in Java
 		
-			An array is a container object that holds a fixed number of
-			values of a single type. An item in an array is called an element.
-			Every element can be accessed via an index. The first element in an
-			array is addressed via the 0 index, the second via 1, etc.
-		
+An array is a container object that holds a fixed number of
+values of a single type. An item in an array is called an element.
+Every element can be accessed via an index. The first element in an
+array is addressed via the 0 index, the second via 1, etc.
 		
 [source,java]
 ----
 include::res/array/TestMain.java[]
 ----
-		
 
-
-[[arrays_forloop">
+[[arrays_forloop]]
 === Enhanced for loop for Arrays and Collections
 		
-			Arrays and collections can be processed with a simpler for loop.
-		
-		
+Arrays and collections can be processed with a simpler for loop.
+
 [source,java]
 ----
 include::res/array/for.java[]
 ----
 		
-		The following code demonstrates its usage.
+The following code demonstrates its usage.
 		
 [source,java]
 ----
 include::res/array/TestMain2.java[]
 ----
-		
-
 

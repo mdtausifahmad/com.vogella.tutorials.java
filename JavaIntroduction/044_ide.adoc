@@ -1,22 +1,20 @@
-[[ide">
+[[ide]]
 == Integrated Development Environment
 	
-		The previous chapter explained how to create and compile a Java
-		program on the command line. A Java Integrated Development Environment
-		(IDE) provides lots of ease of use functionality for creating Java
-		programs. There are other very powerful IDEs available, for example,
-		the
-		Eclipse IDE.
+The previous chapter explained how to create and compile a Java
+program on the command line. A Java Integrated Development Environment
+(IDE) provides lots of ease of use functionality for creating Java
+programs. There are other very powerful IDEs available, for example,
+the
+Eclipse IDE.
 	
+For an introduction on how to use the Eclipse IDE please see
+http://www.vogella.com/tutorials/Eclipse/article.html[Eclipse IDE Tutorial].
 	
-		For an introduction on how to use the Eclipse IDE please see
-		http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse IDE Tutorial].
-	
-	
-		The remaining description uses the phrase:
-		_"Create a Java project called..."._
-		This refers to creating a Java project in Eclipse. If you are
-		using
-		a
-		different IDE, please follow the required steps in that IDE.
+The remaining description uses the phrase:
+_"Create a Java project called..."._
+This refers to creating a Java project in Eclipse. If you are
+using
+a
+different IDE, please follow the required steps in that IDE.
 	

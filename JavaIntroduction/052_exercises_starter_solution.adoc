@@ -1,76 +1,76 @@
-[[exercises_starter_solution" role="wrapper">
+[[exercises_starter_solution]]
 == Solution - Creating Java objects and methods
-[[exercises_starter1_solution">
+[[exercises_starter1_solution]]
 === Create a Person class and instantiate it
 		
-			The following is the expected result after
-			<xref linkend="exercises_starter1" />
-			.
+The following is the expected result after
+<<exercises_starter1>>
+.
 [source,java]
------
+----
 include::res/exercise04/Person.java[]
 ----
 [source,java]
------
+----
 include::res/exercise04/Main.java[]
 ----
 		
 
 
-[[exercises_starter2_solution">
+[[exercises_starter2_solution]]
 === Use constructor
 		
-			The following is the expected result after
-			<xref linkend="exercises_starter2" />
-			.
+The following is the expected result after
+<<exercises_starter2>>
+.
 [source,java]
------
+----
 include::res/exercise06/Person.java[]
 ----
 [source,java]
------
+----
 include::res/exercise06/Main.java[]
 ----
 		
 
 
-[[exercises_starter3solution">
+[[exercises_starter3solution]]
 		
-			The following is the expected result after
-			<xref linkend="exercises_starter3" />
-			.
+The following is the expected result after
+<<exercises_starter3>>
+.
 		
 === Define getter and setter methods
 [source,java]
------
+----
 include::res/exercise10/Person.java[]
 ----
 [source,java]
------
+----
 include::res/exercise10/Main.java[]
 ----
 		
 
 
-[[exercises_starter4solution">
+[[exercises_starter4solution]]
 
 === Solution - Create an Address object
 		
-			The following is the expected result after
-			<xref linkend="exercises_starter4" />
-			.
+The following is the expected result after
+<<exercises_starter4>>.
+
 [source,java]
------
+----
 include::res/exercise16/Address.java[]
 ----
+
 [source,java]
------
+----
 include::res/exercise16/Person.java[]
 ----
+
 [source,java]
------
+----
 include::res/exercise16/Main.java[]
 ----
-		
-
 

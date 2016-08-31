@@ -1,129 +1,112 @@
-[[exercises_starter">
+[[exercises_starter]]
 == Exercises - Creating Java objects and methods
-[[exercises_starter1">
+[[exercises_starter1]]
 === Create a Person class and instantiate it
 		
-			Create a new Java project called
-			`com.vogella.javastarter.exercises1`
-			and a package with the same name.
+Create a new Java project called
+`com.vogella.javastarter.exercises1`
+and a package with the same name.
 		
+Create a class called
+_Person_
+.
 		
-			Create a class called
-			_Person_
-			.
+Add three instance variables to it, one for storing the first
+name of the person, one for storing the last name
+and one for storing
+the age of the Person.
 		
+Use the constructor of the
+`Person`
+object
+to set the values to some default value.
 		
-			Add three instance variables to it, one for storing the first
-			name of the person, one for storing the last name
-			and one for storing
-			the age of the Person.
-		
-		
-			Use the constructor of the
-			`Person`
-			object
-			to set the values to some default value.
-		
-		
-			Add a
-			`toString`
-			method as described by the following codeing and solve the TODO. This method is used to convert the object to a
-			String representation.
+Add a
+`toString`
+method as described by the following codeing and solve the TODO. This method is used to convert the object to a
+String representation.
+
 [source,java]
------
+----
 include::res/exercise01/PersontoString.java[]
 ----
 		
-		
-			Create a new class called
-			_Main_
-			with a
-			`public static void main(String[] args)`
-			.
-			In this method create an instance of the
-			`Person`
-			class.
-		
+Create a new class called
+_Main_
+with a
+`public static void main(String[] args)`
+.
+In this method create an instance of the
+`Person`
+class.
 
-[[exercises_starter2">
+[[exercises_starter2]]
 === Use constructor
 		
-			Add a constructor to your
-			`Person`
-			class which takes first name, last name and age as parameter.
-			Assign the values to your instance variables.
+Add a constructor to your
+`Person`
+class which takes first name, last name and age as parameter.
+Assign the values to your instance variables.
 		
-		
-			In your main method create at least one object of type
-			`Person`
-			and use
-			`System.out.println()`
-			with the object as parameter.
-		
+In your main method create at least one object of type
+`Person`
+and use
+`System.out.println()`
+with the object as parameter.
 
-
-[[exercises_starter3">
+[[exercises_starter3]]
 === Define getter and setter methods
 		
-			Define methods which allow you to read the values of the
-			instance
-			variables and to set them. These methods are called
-			_setter_
-			and
-			_getter_
-			.
+Define methods which allow you to read the values of the
+instance
+variables and to set them. These methods are called
+_setter_
+and
+_getter_
+.
 		
+Getters should start with
+`get`
+followed by the variable name whereby the first letter of the
+variable is capitalized.
 		
-			Getters should start with
-			`get`
-			followed by the variable name whereby the first letter of the
-			variable is capitalized.
+Setter should start with
+`set`
+followed by the variable name whereby the first letter of the
+variable is capitalized.
 		
+For example, the variable called
+_firstName_
+would have the
+`getFirstName()`
+getter method and the
+`setFirstName(String s)`
+setter method.
 		
-			Setter should start with
-			`set`
-			followed by the variable name whereby the first letter of the
-			variable is capitalized.
-		
-		
-			For example, the variable called
-			_firstName_
-			would have the
-			`getFirstName()`
-			getter method and the
-			`setFirstName(String s)`
-			setter method.
-		
-		
-			Change your
-			`main`
-			method so that you create one
-			`Person`
-			object
-			and use the setter method to change the last name.
-		
+Change your
+`main`
+method so that you create one
+`Person`
+object
+and use the setter method to change the last name.
 
-
-[[exercises_starter4">
+[[exercises_starter4]]
 === Create an Address object
 		
-			Create a new object called
-			_Address_
-			.
-			The
-			`Address`
-			should allow you to store the address of a person.
+Create a new object called
+_Address_
+.
+The
+`Address`
+should allow you to store the address of a person.
 		
+Add a new instance variable of this type in the
+`Person`
+object.
+Also,
+create a getter and setter for the
+`Address`
+object in the
+`Person`
+object.
 		
-			Add a new instance variable of this type in the
-			`Person`
-			object.
-			Also,
-			create a getter and setter for the
-			`Address`
-			object in the
-			`Person`
-			object.
-		
-
-

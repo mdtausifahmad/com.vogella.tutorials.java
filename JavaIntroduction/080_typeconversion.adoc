@@ -1,73 +1,57 @@
-[[conversion">
+[[conversion]]
 == Type Conversion
-	If you use variables of different types Java requires for certain
-		types an explicit conversion. The following gives examples for this conversion.
-[[Conversion_tostring">
+If you use variables of different types Java requires for certain
+types an explicit conversion. The following gives examples for this conversion.
+[[Conversion_tostring]]
 === Conversion to String
-		
-			Use the following to convert from other types to Strings
-		
-		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/conversion/toStringConversion[]
+
+Use the following to convert from other types to Strings
+
+[source,text]
 ----
-		
+include::res/conversion/toStringConversion[]
+----
 
-
-
-[[conversion_tonumber">
+[[conversion_tonumber]]
 === Conversion from String to Number
-		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/conversion/fromStringToNumber[]
+
+[source,text]
 ----
-		
-		
-			The conversion from string to number is independent from the
-			locale settings, e.g., it is always using the English
-			notification for
-			number. In this notification a correct
-			number format is "8.20". Thed
-			German number "8,20" would
-			result in an error.
-		
-		
-			To convert from a German number, you have to use the
-			`NumberFormat`
-			class. The challenge is that when the value is,
-			for example, 98.00 then
-			the `NumberFormat` class would create a
-			`Long` which cannot be casted to
-			Double. Hence the following
-			complex conversion class.
-		
-		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/conversion/localeStringConversionToDouble[]
+include::res/conversion/fromStringToNumber[]
 ----
-		
 
+The conversion from string to number is independent from the
+locale settings, e.g., it is always using the English
+notification for
+number. In this notification a correct
+number format is "8.20". Thed
+German number "8,20" would
+result in an error.
 
+To convert from a German number, you have to use the
+`NumberFormat`
+class. The challenge is that when the value is,
+for example, 98.00 then
+the `NumberFormat` class would create a
+`Long` which cannot be casted to
+Double. Hence the following
+complex conversion class.
 
-[[conversion_toint">
+[source,text]
+----
+include::res/conversion/localeStringConversionToDouble[]
+----
+
+[[conversion_toint]]
 === Double to int
-		int i = (int) double;
+int i = (int) double;
 
-
-
-[[conversion_sqldate">
+[[conversion_sqldate]]
 === SQL Date conversions
-		Use the following to convert a Date to a SQL date
-		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="./examples/conversion/ConvertDateToSQLDate.java[]
+Use the following to convert a Date to a SQL date
+
+[source,java]
 ----
-		
-
-
-
+include::res/conversion/ConvertDateToSQLDate.java[]
+----
 

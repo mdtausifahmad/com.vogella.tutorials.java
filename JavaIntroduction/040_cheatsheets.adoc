@@ -1,265 +1,158 @@
-[[cheatsheets" role="wrapper">
+[[cheatsheets]]
 == Cheat Sheets
-	
-		The following can be used as a reference for certain task which
-		you have to do.
-	
-[[cheatsheets_class">
+
+The following can be used as a reference for certain task which
+you have to do.
+
+[[cheatsheets_class]]
 === Working with classes
-		
-			While programming Java you have to create several classes,
-			methods, instance variables. The following uses the package test.
+
+While programming Java you have to create several classes,
+methods, instance variables. The following uses the package test.
 
 .Table Title
 |===
 
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*" />
-					<colspec colname='c2' colwidth="3*" />
-					
-						
-|What to do
-|How to do it
-						
-					
+|What to do |How to do it
 
-					
-						
-|
-								Create a new class called
-								_MyNewClass_.
-							
-|
-								
-									<programlisting language="java">
-										<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-											parse="text" href="./examples/cheatsheets/MyNewClass1.java" />
-									</programlisting>
-								
-							
-						
+|Create a new class called _MyNewClass_.
+a|[source,java]
+----
+include::res/cheatsheets/MyNewClass1.java[]
+----
 
-						
-|
-								Create a new attribute (instance variable) called
-								_var1_
-								of type `String`
-								in the
-								`MyNewClass`
-								class
-							
-|
-								
-									<programlisting language="java">
-										<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-											parse="text" href="./examples/cheatsheets/MyNewClass2.java" />
-									</programlisting>
-								
-							
-						
+|Create a new attribute (instance variable) called
+_var1_
+of type `String`
+in the
+`MyNewClass`
+class
 
-						
-|
-								Create a Constructor for your
-								`MyNewClass`
-								class which has a
-								`String`
-								parameter and assigns the value of it to
-								the
-								`var1`
-								instance
-								variable.
-							
-|
-								
-									<programlisting language="java">
-										<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-											parse="text" href="./examples/cheatsheets/MyNewClass3.java" />
-									</programlisting>
-								
-							
-						
+a|[source,java]
+----
+include::res/cheatsheets/MyNewClass2.java[]
+----
 
-						
-|
-								Create a new method called
-								_doSomeThing_
-								in your class which does not
-								return a value and has no parameters.
-							
-|
-								
-									<programlisting language="java">
-										<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-											parse="text" href="./examples/cheatsheets/MyNewClass3a.java" />
-									</programlisting>
-								
-							
-						
+|Create a Constructor for your
+`MyNewClass`
+class which has a
+`String`
+parameter and assigns the value of it to
+the
+`var1`
+instance
+variable.
+a|[source,java]
+----
+include::res/cheatsheets/MyNewClass3.java[]
+----
 
-						
-|
-								Create a new method called
-								_doSomeThing2_
-								in your class which does
-								not
-								return a value and has two parameters,
-								an `int`
-								and a `Person`
-							
-|
-								
-									<programlisting language="java">
-										<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-											parse="text" href="./examples/cheatsheets/MyNewClass4.java" />
-									</programlisting>
-								
-							
-						
+|Create a new method called
+_doSomeThing_
+in your class which does not
+return a value and has no parameters.
 
-						
-|
-								Create a new method called
-								_doSomeThing2_
-								in your class which
-								returns an `int` value and has three parameters,
-								two `Strings` and a `Person`.
-							
-|
-								
-									<programlisting language="java">
-										<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-											parse="text" href="./examples/cheatsheets/MyNewClass5.java" />
-									</programlisting>
-								
-							
-						
+a|[source,java]
+----
+include::res/cheatsheets/MyNewClass3a.java[]
+----
 
-						
-|
-								Create a class called _MyOtherClass_ with two instance
-								variables.
-								One will store a `String`, the other will store a `Dog`.
-								Create
-								getter and setter for these variables.
-							
-|
-								
-									<programlisting language="java">
-										<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-											parse="text" href="./examples/cheatsheets/MyOtherClass.java" />
-									</programlisting>
-								
-							
-						
+|Create a new method called
+_doSomeThing2_
+in your class which does
+not
+return a value and has two parameters,
+an `int`
+and a `Person`
 
-					
-				
-			|===
-		
+a|[source,java]
+----
+include::res/cheatsheets/MyNewClass4.java[]
+----
+
+|Create a new method called
+_doSomeThing2_
+in your class which
+returns an `int` value and has three parameters,
+two `Strings` and a `Person`.
+
+a|[source,java]
+----
+include::res/cheatsheets/MyNewClass5.java[]
+----
+
+|Create a class called _MyOtherClass_ with two instance
+variables.
+One will store a `String`, the other will store a `Dog`.
+Create
+getter and setter for these variables.
+
+a|[source,java]
+----
+include::res/cheatsheets/MyOtherClass.java[]
+----
+
+|===
 
 
-[[cheatsheets_localvariable">
+
+[[cheatsheets_localvariable]]
 === Working with local variable
-		A local variable must always be declared in a method.
+
+A local variable must always be declared in a method.
 
 .Table Title
 |===
+|What to do |How to do it
 
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' colwidth="1*"/>
-					<colspec colname='c2' colwidth="2*"/>
-					
-						
-|What to do 
-|How to do it
-						
-					
-					
-						
 |Declare a (local) variable of type `String`.
 |`String variable1;`
-						
-						
-|
-								Declare a (local) variable of type `String` and
-								assign
-								`"Test"`
-								to it.
-							
+
+|Declare a (local) variable of type `String` and
+assign
+`"Test"`
+to it.
 |`String variable2 = "Test";`
-						
-						
+
 |Declare a (local) variable of type `Person`
 |`Person person;`
-						
-						
+
 |Declare a (local) variable of type `Person`,
-								create a new Object and assign the variable to this object.
-							
+create a new Object and assign the variable to this object.
 |`Person person = new Person();`
-						
-						
+
 |Declare an array of type `String`
 |`String array[];`
-						
-						
-|
-								Declare an array of type `Person` and create an array
-								for this
-								variable which can hold 5 persons.
-							
-|`Person array[]= new Person[5];`
-						
-						
-|
-								Assign 5 to the `int` variable `var1`
-								(which was already declared);
-							
-|`var1 = 5;`
-						
-						
-|
-								Assign the existing variable `pers2` to the existing
-								variable
-								`pers1`;
-							
-|`pers1 = pers2;`
-						
-						
-|
-								Declare an `ArrayList` variable which can hold objects
-								of type
-								`Person`
-							
-|
-								<![CDATA[ ArrayList<Person> persons;]]>
-							
-						
-						
-|
-								Create a new `ArrayList`
-								with objects of type `Person`
-								and
-								assign it to the existing variable `persons`.
-							
-|
-								<![CDATA[ persons = new ArrayList<Person>();]]>
-							
-						
-						
-|
-								Declare an `ArrayList` variable which can hold objects
-								of type `Person`
-								and create a new `Object` for it.
-							
-|
-								<![CDATA[ ArrayList<Person> persons = new ArrayList<Person>();]]>
-							
-						
-					
-				
-			|===
-		
 
+|Declare an array of type `Person` and create an array
+for this
+variable which can hold 5 persons.
+|`Person array[]= new Person[5];`
+
+|Assign 5 to the `int` variable `var1`
+(which was already declared);
+|`var1 = 5;`
+
+|Assign the existing variable `pers2` to the existing
+variable
+`pers1`;
+|`pers1 = pers2;`
+
+|Declare an `ArrayList` variable which can hold objects
+of type
+`Person`
+|_ArrayList<Person> persons;_>
+
+|Create a new `ArrayList`
+with objects of type `Person`
+and
+assign it to the existing variable `persons`.
+|<_persons = new ArrayList<Person>();_>
+
+|Declare an `ArrayList` variable which can hold objects
+of type `Person`
+and create a new `Object` for it.
+|_ArrayList<Person> persons = new ArrayList<Person>();_>
+
+|===
 

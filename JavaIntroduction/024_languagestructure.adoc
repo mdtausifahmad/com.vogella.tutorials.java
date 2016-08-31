@@ -12,7 +12,7 @@ keyword and must start with a capital letter. The body of a class is
 surrounded by {}.
 
 [source,java]
------
+----
 include::res/statements/MyClass.java[]
 ----
 
@@ -145,12 +145,12 @@ class. In Java a class can only extend a maximum
 of one class.
 
 [source,java]
------
+----
 include::res/class/MyBaseClass.java[]
 ----
 
 [source,java]
------
+----
 include::res/class/MyExtensionClass.java[]
 ----
 
@@ -196,7 +196,7 @@ Exceptions have either to be caught or to be
 re-thrown.
 
 [source,java]
------
+----
 include::res/exceptions/CatchException.java[]
 ----
 

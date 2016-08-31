@@ -1,91 +1,68 @@
-[[lambdas" role="wrapper">
+[[lambdas]]
 == Lambdas
-[[lambdas_definition">
+[[lambdas_definition]]
 === What are lambdas?
-		
-			The Java programming language supports
-			_lambdas_
-			as of Java 8. A lambda expression is a block of code with parameters.
-			Lambdas allows to specify a block of code which
-			should be executed
-			later. If a method expects a
-			_functional interface_
-			as parameter it is
-			possible to pass in the lambda expression instead.
-		
-		The type of a lambda expression in Java is a functional
-			interface.
-		
 
-[[lambdas_purpose">
+The Java programming language supports
+_lambdas_
+as of Java 8. A lambda expression is a block of code with parameters.
+Lambdas allows to specify a block of code which
+should be executed
+later. If a method expects a
+_functional interface_
+as parameter it is
+possible to pass in the lambda expression instead.
+
+The type of a lambda expression in Java is a functional
+interface.
+
+[[lambdas_purpose]]
 === Purpose of lambda expressions
-		
-			Using lambdas allows to use a condensed syntax compared to other
-			Java
-			programming constructs. For example the
-			`Collection`
-			interfaces
-			has
-			`forEach`
-			method which accepts a lambda expression.
+
+Using lambdas allows to use a condensed syntax compared to other
+Java
+programming constructs. For example the
+`Collection`
+interfaces
+has
+`forEach`
+method which accepts a lambda expression.
+
 [source,java]
------
+----
 include::res/lambda/LambdaTest.java[]
 ----
-		
 
-
-[[lambdas_methodreferences">
+[[lambdas_methodreferences]]
 === Using method references
-		
-			You can use method references in a lambda expression. Method
-			reference define the method to be called via
-			`CalledFrom::method`
-			. CalledFrom can be
-			<itemizedlist>
-				<listitem>
-					instance::instanceMethod
-				</listitem>
-				<listitem>
-					SomeClass::staticMethod
-				</listitem>
-				<listitem>
-					SomeClass::instanceMethod
-				</listitem>
-			</itemizedlist>
-		
 
-		
-			<programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text"
-					href="./examples/lambda/LambdaTestMethodReferences.java[]
+You can use method references in a lambda expression. Method
+reference define the method to be called via
+`CalledFrom::method`
+. CalledFrom can be
+* instance::instanceMethod
+* SomeClass::staticMethod
+* SomeClass::instanceMethod
+
+[source,java]
 ----
-		
+include::res/lambda/LambdaTestMethodReferences.java[]
+----
 
-
-
-[[lambdas_closures">
+[[lambdas_closures]]
 === Difference between a lambda expression and a closure
-		
-			The Java programming language supports lambdas but not closures. A lambda is an anonymous function, e.g., it can be
-			defined as
-			parameter. Closures are
-			_code fragments_
-			or
-			_code blocks_
-			which can be used without
-			being a
-			method or a class. This means that a closure can access
-			variables not defined in its
-			parameter list
-			and that it can also be
-			assigned to a variable.
-		
-		
 
-		
-
-
-
-
+The Java programming language supports lambdas but not closures. A lambda is an anonymous function, e.g., it can be
+defined as
+parameter. Closures are
+_code fragments_
+or
+_code blocks_
+which can be used without
+being a
+method or a class. This means that a closure can access
+variables not defined in its
+parameter list
+and that it can also be
+assigned to a variable.
 

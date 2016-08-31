@@ -110,7 +110,7 @@ variables.
 === Hello world Java program
 
 [source,java]
------
+----
 include::res/helloworld/HelloWorld.java[]
 ----
 

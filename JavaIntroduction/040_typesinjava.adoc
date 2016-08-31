@@ -1,108 +1,100 @@
-[[javadef_types">
+[[javadef_types]]
 == The type system of Java
-[[javadef_types1">
+[[javadef_types1]]
 === Primitives and references
 		
-			Java distinguishes between
-			_primitive types_
-			(such as boolean,
-			short, int, double, float,
-			char and byte) and
-			_reference types_
-			(such as Object and String).
-		
+Java distinguishes between
+_primitive types_
+(such as boolean,
+short, int, double, float,
+char and byte) and
+_reference types_
+(such as Object and String).
 
-[[javadef_types_primitives">
+[[javadef_types_primitives]]
 === Primitives 
-
 		
-			Primitive types variables represents the number, true/false or
-			character. You cannot call
-			methods
-			on variables which have
-			a
-			primitive
-			types.
+Primitive types variables represents the number, true/false or
+character. You cannot call
+methods
+on variables which have
+a
+primitive
+types.
 		
-		Operators such
-			as *, -, + or / are only supported for
-			primitive
-			types. Only + can also used for the reference type String to
-			concatenate strings.
-		
+Operators such
+as *, -, + or / are only supported for
+primitive
+types. Only + can also used for the reference type String to
+concatenate strings.
 
-
-[[javadef_types_references">
+[[javadef_types_references]]
 === Reference types 
 		
-			Reference types variables represents a reference to an
-			object, e.g.,
-			a
-			variable is a pointer to the real object.
-			If you
-			change
-			the value of a
-			reference type variable, the variable points to a
-			different object or
-			to
-			`null`
-			which represents the non-existing object reference.
-			Changing the
-			value
-			of a reference type variable does not change the attributes
-			of
-			the
-			object is was pointing to.
-			Also changing the contents of an object
-			does
-			not affect
-			the value
-			of a
-			variable
-			referring to that
-			object.
-		
+Reference types variables represents a reference to an
+object, e.g.,
+a
+variable is a pointer to the real object.
+If you
+change
+the value of a
+reference type variable, the variable points to a
+different object or
+to
+`null`
+which represents the non-existing object reference.
+Changing the
+value
+of a reference type variable does not change the attributes
+of
+the
+object is was pointing to.
+Also changing the contents of an object
+does
+not affect
+the value
+of a
+variable
+referring to that
+object.
 
-[[javadef_types_autoboxing">
+[[javadef_types_autoboxing]]
 === Autoboxing and wrapper types
 		
-			Every
-			primitive type has in
-			Java
-			a fitting
-			reference type. This
-			reference
-			type allows to store the
-			value
-			of the
-			primitive
-			type in an
-			object. For
-			example you have
-			`java.lang.Integer`
-			for int.
+Every
+primitive type has in
+Java
+a fitting
+reference type. This
+reference
+type allows to store the
+value
+of the
+primitive
+type in an
+object. For
+example you have
+`java.lang.Integer`
+for int.
 		
-		
-			Converting a
-			primitive value into
-			an instance
-			of a wrapper
-			type and
-			vice versa is
-			called
-			boxing / unboxing.
-			Java
-			performs these
-			operations
-			automatically of necessary. This allows you to use a primitive as
-			parameter in a method which expects an object of the wrapper type.
-			This
-			automatic
-			boxing and unboxing
-			is
-			known
-			as
-			autoboxing.
-		
-
+Converting a
+primitive value into
+an instance
+of a wrapper
+type and
+vice versa is
+called
+boxing / unboxing.
+Java
+performs these
+operations
+automatically of necessary. This allows you to use a primitive as
+parameter in a method which expects an object of the wrapper type.
+This
+automatic
+boxing and unboxing
+is
+known
+as
+autoboxing.
 

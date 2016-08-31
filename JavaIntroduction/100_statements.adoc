@@ -1,130 +1,92 @@
-[[languageconstructs">
+[[languageconstructs]]
 == Java statements
-	
-		The Java language defines certain statements with a predefined
-		meaning.
-		The following description lists some of them.
-	
-[[javalang_if">
+
+The Java language defines certain statements with a predefined
+meaning.
+The following description lists some of them.
+
+[[javalang_if]]
 === if-then and if-then-else
-		
-			The
-			`if-then`
-			statement is a control flow statement. A block of code is only
-			executed when the test specified by the `if` part evaluates to
-			`true`.
-			The optional
-			`else`
-			block is executed when the
-			`if`
-			part evaluates to
-			`false`.
-		
-		
-			The following example code shows a class with two methods. The first
-			method demonstrates the usage of
-			`if-then`
-			and the second method demonstrates the usage of
-			`if-then-else`.
-		
 
+The
+`if-then`
+statement is a control flow statement. A block of code is only
+executed when the test specified by the `if` part evaluates to
+`true`.
+The optional
+`else`
+block is executed when the
+`if`
+part evaluates to
+`false`.
 
-[[languageconstructsss1as2b">
+The following example code shows a class with two methods. The first
+method demonstrates the usage of
+`if-then`
+and the second method demonstrates the usage of
+`if-then-else`.
+
+[[languageconstructsss1as2b]]
 === Switch
-		
-			The switch statement can be used to handle several
-			alternatives
-			if they are based on the same constant value.
-		
-		
+
+The switch statement can be used to handle several
+alternatives
+if they are based on the same constant value.
+
 [source,java]
 ----
 include::res/switch.java[]
 ----
-		
 
-[[languageconstructs_comparison">
+[[languageconstructs_comparison]]
 === Boolean Operations
-		
-			Use `==` to compare two primitives or to see if two references
-			refer to the same object. Use the `equals()` method to see if
-			two different objects are equal.
-		
-		
-			<![CDATA[ && ]]>and
-			|| are both _Short Circuit Methods_
-			which means that they
-			terminate once
-			the result of an evaluation is already clear.
-			`Example (true || ...)`
-			is always `true` while `(false
-			<![CDATA[ && ]]>
-			...)` always is always interpreted as `false`. Usage:
-		
-		
-			(`var !=null
-			<![CDATA[ && ]]>
-			var.method1() ...`) ensures that `var` is not
-			`null` before doing
-			the real
-			check.
 
-.Table Title
+Use `==` to compare two primitives or to see if two references
+refer to the same object. Use the `equals()` method to see if
+two different objects are equal.
+
+&& and || are both _Short Circuit Methods_
+which means that they
+terminate once
+the result of an evaluation is already clear.
+`Example (true || ...)`
+is always `true` while `(false
+&& ...)` always is always interpreted as `false`. Usage:
+
+
+(`var !=null
+&&
+var.method1() ...`) ensures that `var` is not
+`null` before doing
+the real
+check.
+
+.Boolean
 |===
+|Operations |Description
 
-		=== Boolean
-				<tgroup cols='2' align='left' colsep='1' rowsep='1'>
-					<colspec colname='c1' />
-					<colspec colname='c2' />
-					
-						
-|Operations
-|Description
-						
-					
-					
-						
 |`==`
-|
-								Is equal, in case of objects the system
-								checks if the
-								reference variable point
-								to the same object. It will not compare
-								the content of the objects!
-							
-						
-						
-|
-								`<![CDATA[ && ]]>`
-							
+|Is equal, in case of objects the system
+checks if the
+reference variable point
+to the same object. It will not compare
+the content of the objects!
+
+|`&&`
 |And
-						
-						
+
 |`!=`
-|
-								is not equal, similar to `==`.
-							
-						
-						
+|is not equal, similar to `==`.
+
 |`a.equals(b)`
 |Checks if string a equals b.
-						
-						
-|`a.equalsIgnoreCase(b)`
-|
-								Checks if string a equals b while
-								ignoring lower cases.
-							
-						
-						
-|`If (value ? false : true) {}`
-|
-								Negotiation: return true if value is not true.
-							
-						
-					
-				
-			|===
-		
 
+|`a.equalsIgnoreCase(b)`
+|Checks if string a equals b while
+ignoring lower cases.
+
+|`If (value ? false : true) {}`
+|Negotiation: return true if value is not true.
+
+|===
 

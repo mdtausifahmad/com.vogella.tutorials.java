@@ -65,13 +65,12 @@ instructions how to install Java for other platforms: http://java.com.
 		
 If you have problems installing Java on your system,
 search via Google
-for
-_How to install JDK on `YOUR_OS`_.
+for _How to install JDK on YOUR OS_.
 This
 should result
 in
 helpful links. Replace
-`YOUR_OS`
+`YOUR OS`
 with your
 operating
 system, e.g.,

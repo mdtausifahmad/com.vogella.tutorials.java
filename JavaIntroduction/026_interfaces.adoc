@@ -41,7 +41,7 @@ The following code shows an example implementation of an
 interface.
 
 [source,java]
------
+----
 include::res/class/MyInterface.java[]
 ----
 
@@ -66,7 +66,7 @@ implement the abstract method and can use the default
 methods.
 
 [source,java]
------
+----
 include::res/class/MyClassImpl.java[]
 ----
 
@@ -125,7 +125,7 @@ method
 The following listing demonstrates listing number 3.
 
 [source,java]
------
+----
 include::res/class/A.java[]
 ----
 		
@@ -133,7 +133,7 @@ In your implementation you can also call the super method you
 prefer.
 
 [source,java]
------
+----
 include::res/class/A2.java[]
 ----
 
@@ -178,21 +178,15 @@ Java also contains the
 package which contains functional interfaces which are frequently
 used such as:
 
-* <![CDATA[Predicate<T>]]>
-- a boolean-valued property of an object
+* Predicate<T> - a boolean-valued property of an object
 		
-* <![CDATA[Consumer<T>]]>
-- an action to be performed on an object
+* Consumer<T> - an action to be performed on an object
 		
-* <![CDATA[Function<T , R>]]>
-- a function transforming a T to a R
+* Function<T , R> - a function transforming a T to a R
 		
-* <![CDATA[Supplier<T>]]>
-- provides an instance of T (such as a factory)
+* Supplier<T> - provides an instance of T (such as a factory)
 		
-* <![CDATA[UnaryOperator<T>]]>
-- a function from T to T
+* UnaryOperator<T> - a function from T to T
 		
-* <![CDATA[BinaryOperator<T>]]>
-- a function from (T, T) to T
+* BinaryOperator<T> - a function from (T, T) to T
 		
