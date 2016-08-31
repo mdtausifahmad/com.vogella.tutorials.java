@@ -1,6 +1,6 @@
-<section id="javaimports">
+[[javaimports">
 == Import statements
-	<section id="javaimports_definition">
+[[javaimports_definition">
 === Usage of import statements
 		
 			In Java you have to access a class always via its
@@ -15,7 +15,7 @@
 		
 
 
-	<section id="javaimport_staticimports">
+[[javaimport_staticimports">
 === Static imports
 		
 			Static import is a feature that allows members (fields and

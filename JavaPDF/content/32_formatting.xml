@@ -1,4 +1,4 @@
-<section id="readpdf">
+[[readpdf">
 == Read an existing pdf
 	
 		iText allows to read existing pdf's and include them into your
@@ -17,7 +17,7 @@
 		this
 		folder.
 		http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
-			Add the jar to your classpath.</ulink>
+			Add the jar to your classpath.]
 		Create the following class "ReadAndUsePdf.java" .
 	
 	

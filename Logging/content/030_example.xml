@@ -1,6 +1,6 @@
-<section id="logexample" role="wrapper">
+[[logexample" role="wrapper">
 == Example
-	<section id="logexample_createLogger">
+[[logexample_createLogger">
 === Create the logger
 		
 			This example is stored in the project called
@@ -25,7 +25,7 @@
 		
 
 
-	<section id="logexample_use">
+[[logexample_use">
 === Use the logger
 		
 			The following example class demonstrates how you can use your

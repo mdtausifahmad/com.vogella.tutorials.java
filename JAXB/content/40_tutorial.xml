@@ -1,4 +1,4 @@
-<section id="jaxb_tutorial">
+[[jaxb_tutorial">
 == Tutorial: Using JAXB
 	 Create a new Java project called "de.vogella.xml.jaxb".
 	 Create the following domain model with the JAXB annotations.

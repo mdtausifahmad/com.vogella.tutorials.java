@@ -1,6 +1,6 @@
-<section id="loops">
+[[loops">
 == Loops in Java
-	<section id="javalang_for">
+[[javalang_for">
 === The for loop
 		
 			A for loop is a repetition control structure that allows you to
@@ -28,7 +28,7 @@ include::res/loop/ForTest.java[]
 		
 
 
-	<section id="javalang_while">
+[[javalang_while">
 === The while loop
 		
 			A while loop is a repetition control structure that allows you
@@ -52,7 +52,7 @@ include::res/loop/WhileTest.java[]
 		
 
 
-	<section id="javalang_dowhile">
+[[javalang_dowhile">
 === The do while loop
 		
 			The do-while loop is similar to the while loop,

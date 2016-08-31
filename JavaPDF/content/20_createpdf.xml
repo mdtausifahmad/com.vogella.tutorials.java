@@ -1,4 +1,4 @@
-<section id="createpdf">
+[[createpdf">
 == Create a PDF
 	
 		Create a new Java project "de.vogella.itext.write" with the package
@@ -9,7 +9,7 @@
 		this
 		folder.
 		http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
-			Add the jar to your classpath.</ulink>
+			Add the jar to your classpath.]
 	
 	
 		Create the following class "FirstPdf.java" .
@@ -22,7 +22,7 @@
 		complex examples have a look
 		at the
 		http://www.lowagie.com/iText/">
-			iText Homepage</ulink>
+			iText Homepage]
 		.
 	
 	

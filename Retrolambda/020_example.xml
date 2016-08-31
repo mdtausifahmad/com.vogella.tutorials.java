@@ -1,6 +1,6 @@
-<section id="exercise_retrolambda">
+[[exercise_retrolambda">
 == Exercise: Using Retrolambda in your Android project
-	<section id="exercise_retrolambda_project">
+[[exercise_retrolambda_project">
 === Create project
 		
 			Create a new Android project with the top level project name
@@ -11,7 +11,7 @@
 		
 
 
-	<section id="exercise_retrolambda_gradle">
+[[exercise_retrolambda_gradle">
 === Add Retrolambda to your Gradle build configuratoin
 
 		
@@ -45,7 +45,7 @@
 
 
 
-	<section id="exercise_retrolambda_use">
+[[exercise_retrolambda_use">
 === Validate setup by using a lambda expressions
 		Using the lambda configuration by using it with your button to show a Toast once the button is clicked.
 [source,java]

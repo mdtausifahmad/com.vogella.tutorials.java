@@ -1,6 +1,6 @@
-<section id="lambdas" role="wrapper">
+[[lambdas" role="wrapper">
 == Lambdas
-	<section id="lambdas_definition">
+[[lambdas_definition">
 === What are lambdas?
 		
 			The Java programming language supports
@@ -17,7 +17,7 @@
 			interface.
 		
 
-	<section id="lambdas_purpose">
+[[lambdas_purpose">
 === Purpose of lambda expressions
 		
 			Using lambdas allows to use a condensed syntax compared to other
@@ -35,7 +35,7 @@ include::res/lambda/LambdaTest.java[]
 		
 
 
-	<section id="lambdas_methodreferences">
+[[lambdas_methodreferences">
 === Using method references
 		
 			You can use method references in a lambda expression. Method
@@ -64,7 +64,7 @@ include::res/lambda/LambdaTest.java[]
 
 
 
-	<section id="lambdas_closures">
+[[lambdas_closures">
 === Difference between a lambda expression and a closure
 		
 			The Java programming language supports lambdas but not closures. A lambda is an anonymous function, e.g., it can be

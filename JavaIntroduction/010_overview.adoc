@@ -1,0 +1,237 @@
+== Introduction to Java
+
+=== A small history of Java
+		
+Java is a programming language created by James Gosling from
+Sun Microsystems (Sun) in 1991. The target of Java is to
+write a program once and then run
+this
+program on multiple operating systems. The first publicly
+available version
+of
+Java
+(Java 1.0) was released in 1995. Sun Microsystems was
+acquired by the Oracle
+Corporation in
+2010.
+Oracle has now the
+steermanship for Java. In 2006 Sun started to make Java available under the GNU General
+Public License (GPL). Oracle
+continues this project
+called
+_OpenJDK_
+.
+		
+Over time new enhanced versions of Java have been
+released.
+The current
+version of Java is Java 1.8 which is also known
+as
+_Java 8_
+.
+		
+Java is defined by a specification and consists of a programming language, a compiler, core libraries and a runtime
+(Java virtual machine)
+The Java runtime allows
+software
+developers to write program
+code in
+other
+languages than
+the Java
+programming
+language
+which still runs
+on
+the
+Java
+virtual
+machine. The
+_Java platform_
+is usually associated with the
+_Java virtual machine_
+and the
+_Java core libraries_
+.
+		
+The Java language was designed with the following properties:
+
+* Platform independent: Java programs use the Java virtual machine as abstraction and do not access the operating system directly. 
+This makes Java programs highly portable. 
+A Java program (which is standard-compliant and follows certain rules) can run unmodified on all supported platforms, e.g., Windows or Linux.
+		
+* Object-orientated programming language:
+Except the primitive
+data types, all elements in Java are objects.
+		
+* Strongly-typed programming language: Java is
+strongly-typed,
+e.g., the types of the used variables must be
+pre-defined and
+conversion to
+other objects is relatively strict, e.g., must be done
+in most cases by the programmer.
+		
+* Interpreted and compiled language: Java source
+code is
+transferred into the bytecode format which does not
+depend on the
+target
+platform. These bytecode instructions will be interpreted by
+the Java
+Virtual
+machine (JVM). The
+JVM contains a so called
+Hotspot-Compiler which
+translates performance critical bytecode
+instructions
+into native
+code
+instructions.
+		
+* Automatic memory management: Java manages the memory
+allocation and de-allocation for creating new objects.
+The
+program
+does not have direct access to the memory. The so-called garbage
+collector automatically deletes objects
+to which no active pointer
+exists.
+		
+The Java syntax is similar to C++. Java is case-sensitive,
+e.g.,
+variables called
+`myValue`
+and
+`myvalue`
+are treated as different
+variables.
+		
+=== Hello world Java program
+
+[source,java]
+-----
+include::res/helloworld/HelloWorld.java[]
+----
+
+=== Java virtual machine
+		
+The Java
+virtual
+machine (JVM) is a software implementation of a
+computer that
+executes programs like a real
+machine.
+		
+The Java virtual machine is written specifically for a
+specific
+operating system, e.g., for Linux a special
+implementation is required
+as well as for Windows.
+		
+image::jvmintroduction10.png[]
+		
+Java programs are compiled by the Java compiler into
+_bytecode_
+.
+The Java virtual machine interprets this
+_bytecode_
+and
+executes
+the Java program.
+		
+=== Java Runtime Environment vs. Java Development Kit
+		
+A Java distribution typically comes in two flavors, the
+_Java Runtime Environment_
+(JRE)
+and the
+_Java Development Kit_
+(JDK).
+		
+The JRE consists of the JVM and the
+Java class libraries. Those contain the
+necessary
+functionality to start
+Java
+programs.
+		
+The JDK additionally contains
+the development tools necessary to
+create Java programs. The JDK therefore consists
+of a
+Java compiler,
+the
+Java
+virtual machine and the Java class libraries.
+		
+=== Development Process with Java
+		
+Java source files are written as plain text documents.
+The programmer
+typically writes Java source code in an
+_Integrated Development Environment_
+(IDE) for
+programming. An IDE supports the programmer in the task of
+writing code, e.g.,
+it provides auto-formating of
+the source code,
+highlighting of the
+important keywords, etc.
+		
+At some point the programmer (or the IDE) calls the Java
+compiler
+(
+`javac`
+).
+The Java compiler creates the
+_bytecode_
+instructions.
+These instructions are
+stored in
+`.class`
+files and can be executed by the Java Virtual Machine.
+		
+=== Garbage collector
+		
+The JVM automatically re-collects the memory which is not
+referred to
+by other objects.
+The Java
+_garbage collector_
+checks all object references and finds the objects which can be
+automatically released.
+		
+While the garbage collector relieves the programmer from the
+need to
+explicitly manage memory, the programmer still
+need to ensure
+that he
+does not keep unneeded object references, otherwise the
+garbage
+collector cannot release the
+associated memory. Keeping unneeded
+object references are typically called
+_memory leaks_
+.
+		
+=== Classpath
+		
+The
+_classpath_
+defines where the Java compiler and Java runtime look
+for
+`.class`
+files to
+load. These instructions can be used in the Java program.
+		
+For
+example, if you want to use an external Java
+library
+you have to
+add
+this
+library to your classpath to use it in
+your
+program.
+

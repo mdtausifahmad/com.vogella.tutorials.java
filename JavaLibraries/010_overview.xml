@@ -1,9 +1,9 @@
-<section id="jarfiles" role="wrapper">
+[[jarfiles" role="wrapper">
 == Defining and using Java libraries
 	<indexterm>
 		<primary>Java libraries</primary>
 	</indexterm>
-	<section id="javalibrary">
+[[javalibrary">
 === What is a Java library?
 		<indexterm>
 			<primary>Java libary</primary>
@@ -13,7 +13,7 @@
 			library is a JAR file.
 		
 
-	<section id="jarfiles_definition">
+[[jarfiles_definition">
 === What is a JAR file?
 		<indexterm>
 			<primary>JAR files</primary>
@@ -39,7 +39,7 @@
 		
 
 
-	<section id="jarfiles_library">
+[[jarfiles_library">
 === Using Java libraries
 		
 			If you add a

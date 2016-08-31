@@ -1,11 +1,11 @@
-<section id="languageconstructs">
+[[languageconstructs">
 == Java statements
 	
 		The Java language defines certain statements with a predefined
 		meaning.
 		The following description lists some of them.
 	
-	<section id="javalang_if">
+[[javalang_if">
 === if-then and if-then-else
 		
 			The
@@ -29,7 +29,7 @@
 		
 
 
-	<section id="languageconstructsss1as2b">
+[[languageconstructsss1as2b">
 === Switch
 		
 			The switch statement can be used to handle several
@@ -43,7 +43,7 @@ include::res/switch.java[]
 ----
 		
 
-	<section id="languageconstructs_comparison">
+[[languageconstructs_comparison">
 === Boolean Operations
 		
 			Use `==` to compare two primitives or to see if two references

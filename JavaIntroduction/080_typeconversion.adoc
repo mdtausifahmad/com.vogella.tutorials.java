@@ -1,8 +1,8 @@
-<section id="conversion">
+[[conversion">
 == Type Conversion
 	If you use variables of different types Java requires for certain
 		types an explicit conversion. The following gives examples for this conversion.
-	<section id="Conversion_tostring">
+[[Conversion_tostring">
 === Conversion to String
 		
 			Use the following to convert from other types to Strings
@@ -16,7 +16,7 @@
 
 
 
-	<section id="conversion_tonumber">
+[[conversion_tonumber">
 === Conversion from String to Number
 		
 			<programlisting>
@@ -52,13 +52,13 @@
 
 
 
-	<section id="conversion_toint">
+[[conversion_toint">
 === Double to int
 		int i = (int) double;
 
 
 
-	<section id="conversion_sqldate">
+[[conversion_sqldate">
 === SQL Date conversions
 		Use the following to convert a Date to a SQL date
 		

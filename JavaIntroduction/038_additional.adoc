@@ -1,6 +1,6 @@
-<section id="java_additionaldefinition">
+[[java_additionaldefinition">
 == More Java language constructs
-	<section id="javadef_classmethod">
+[[javadef_classmethod">
 === Class methods and class variables
 		
 			Class methods and class variables are associated with the class
@@ -79,7 +79,7 @@ include::res/static/Tester.java[]
 		
 
 
-	<section id="javadef_abstractclass">
+[[javadef_abstractclass">
 === Abstract class and methods
 		
 			A class and method can be declared as

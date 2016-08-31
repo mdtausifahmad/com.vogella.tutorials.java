@@ -1,15 +1,15 @@
-<section id="barchart">
+[[barchart">
 == Creating Bar Charts with JFreeChart
 	 This example is based on the previous example. Make sure you
 		have done the previous one.
-	<section id="barchart_project">
+[[barchart_project">
 === Create Project
 		 Create a new Plugin project "de.vogella.jfreechart.barchart"
 			using "RCP application with a view" as a template.
 		 Add "de.vogella.jfreechart.libs" as a dependency to project
 			"de.vogella.jfreechart.barchart".
 
-	<section id="barchart_view">
+[[barchart_view">
 === Create view with bar chart
 		Change the code of the view to the following:
 		

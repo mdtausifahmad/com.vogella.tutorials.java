@@ -1,6 +1,6 @@
-<section id="jpaintro">
+[[jpaintro">
 == Java Persistence API (JPA)
-	<section id="jpaintro_overview">
+[[jpaintro_overview">
 === Overview
 		 The process of mapping Java objects to
 			database tables and vice
@@ -99,7 +99,7 @@
 		
 		
 
-	<section id="jpaintro_entity">
+[[jpaintro_entity">
 === Entity
 		
 			A class which should be persisted in a database it must be
@@ -138,7 +138,7 @@
 			@Table(name="NEWTABLENAME").
 		
 
-	<section id="jpaintro_fields">
+[[jpaintro_fields">
 === Persistence of fields
 		
 			The fields of the Entity will be saved in the database. JPA can use
@@ -190,7 +190,7 @@
 			|===
 		
 
-	<section id="jpaintro_relationships">
+[[jpaintro_relationships">
 === Relationship Mapping
 		 JPA allows to define relationships between classes, e.g. it can
 			be defined that a class is part of another class
@@ -237,7 +237,7 @@
 		
 
 
-	<section id="jpaintro_entitymanager">
+[[jpaintro_entitymanager">
 === Entity Manager
 		
 			The entity manager
@@ -273,7 +273,7 @@
 		
 
 
-	<section id="jpaintro_persistenceunits">
+[[jpaintro_persistenceunits">
 === Persistence units
 		
 			The

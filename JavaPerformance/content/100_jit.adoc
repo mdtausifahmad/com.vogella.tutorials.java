@@ -1,4 +1,4 @@
-<section id="jit">
+[[jit">
 == Just-in-time (JIT) compiler
 	 The Java JIT compiler compiles Java bytecode to native
 		executable code during the runtime of your program. This increases the

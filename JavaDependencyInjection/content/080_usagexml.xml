@@ -1,4 +1,4 @@
-<section id="usagexml">
+[[usagexml">
 == Using dependency injection with XML
 	 The following example will demonstrate the usage of the
 		dependency injection via xml. The example code demonstrates how to

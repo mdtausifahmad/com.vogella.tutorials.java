@@ -1,6 +1,6 @@
-<section id="streams">
+[[streams">
 == Streams
-	<section id="streams_definition">
+[[streams_definition">
 === What are streams?
 		
 			A stream from the
@@ -13,7 +13,7 @@
 			operations.
 		
 
-	<section id="stream_intstream">
+[[stream_intstream">
 === IntStream
 		Allow to create a stream of sequence of primitive int-valued
 			elements supporting sequential and parallel
@@ -24,7 +24,7 @@ include::res/stream/IntStreamExample.java[]
 ----
 		
 
-	<section id="lambdas_reduction">
+[[lambdas_reduction">
 === Reduction operations with streams and lambdas
 		Allow to create a stream of sequence of primitive int-valued
 			elements supporting sequential and parallel
@@ -40,7 +40,7 @@ include::res/stream/StreamTester.java[]
 		
 
 
-	<section id="lambdas_examples">
+[[lambdas_examples">
 === Example for filtering and mapping the content of a list
 		
 			The following example demonstrates how to use streams to
@@ -56,11 +56,11 @@ include::res/stream/JavaStreamExample.java[]
 		
 
 
-	<section id="streams_examples">
+[[streams_examples">
 === Streams and lambda examples
 		
 			The following is a larger example for the usage of streams. The code is based on the slides from the
-			https://www.eclipsecon.org/europe2015/session/eclipse-collections-example">Goldmann Sachs Collection presentation at EclipseCOn 2015</ulink>
+			https://www.eclipsecon.org/europe2015/session/eclipse-collections-example">Goldmann Sachs Collection presentation at EclipseCOn 2015]
 		
 		Lets assume the following data model.
 [source,java]

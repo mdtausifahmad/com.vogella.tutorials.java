@@ -1,6 +1,6 @@
-<section id="modifier">
+[[modifier">
 == Modifiers
-	<section id="javadef_accessmodifier">
+[[javadef_accessmodifier">
 === Access modifiers
 		
 			There are three access modifiers keywords available in Java:
@@ -100,7 +100,7 @@
 		
 
 
-	<section id="javadefinitions_othermodifiers">
+[[javadefinitions_othermodifiers">
 === Other modifiers
 		final methods: cannot be overwritten in a subclass
 		abstract method: no method body

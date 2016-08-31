@@ -1,4 +1,4 @@
-<section id="lombok">
+[[lombok">
 == Using lombok for entity classes
 	
 		In order to avoid writing too much boilerplate code for the
@@ -24,7 +24,7 @@ include::res/simple/LombokTodo.java[]
 	
 	
 		See
-		http://www.vogella.com/tutorials/Lombok/article.html">http://www.vogella.com/tutorials/Lombok/article.html</ulink>
+		http://www.vogella.com/tutorials/Lombok/article.html">http://www.vogella.com/tutorials/Lombok/article.html]
 		for further
 		information and more configuration possibilities of lombok.
 	

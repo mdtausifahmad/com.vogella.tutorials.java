@@ -1,6 +1,6 @@
-<section id="read">
+[[read">
 == Read RSS Feeds with Stax
-	<section id="read_stax">
+[[read_stax">
 === Create the XML Reader class
 		Create the following
 			class to read the XML file.
@@ -13,7 +13,7 @@
 		
 	
 
-	<section id="read_test">
+[[read_test">
 === Test the code
 		
 			The following uses a main method to test. You could also use

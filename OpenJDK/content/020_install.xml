@@ -1,4 +1,4 @@
-<section id="install">
+[[install">
 == Install Mercurial and Extensions
 	
 		You first need to make sure Mercurial is installed on your
@@ -17,7 +17,7 @@
 		These are
 		currently not packages for
 		Ubuntu, see
-		https://bugs.launchpad.net/ubuntu/+bug/174264"> Bug report</ulink>
+		https://bugs.launchpad.net/ubuntu/+bug/174264"> Bug report]
 	
 
 	 You can get the forest extension via the following command. This

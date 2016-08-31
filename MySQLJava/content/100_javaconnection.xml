@@ -1,4 +1,4 @@
-<section id="javaconnection">
+[[javaconnection">
 == Java JDBC
 	
 		Create a Java project and a package called
@@ -12,7 +12,7 @@
 		Add
 		the JDBC driver to
 		your classpath. See
-http://www.vogella.com/tutorials/Eclipse/article.html#classpath">Adding jars to the classpath</ulink>
+http://www.vogella.com/tutorials/Eclipse/article.html#classpath">Adding jars to the classpath]
 		for details.
 	
 	

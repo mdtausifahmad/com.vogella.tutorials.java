@@ -1,6 +1,6 @@
-<section id="overview" role="wrapper">
+[[overview" role="wrapper">
 == Overview
-	<section id="overview_logger">
+[[overview_logger">
 === Logging
 		
 			_Logging_
@@ -20,7 +20,7 @@
 		
 
 
-	<section id="overview_loggerjava">
+[[overview_loggerjava">
 === Logging in Java
 		
 			Java contains the
@@ -43,7 +43,7 @@
 		
 
 
-	<section id="overview_create">
+[[overview_create">
 === Create a logger
 		
 			To create a logger in your Java code,
@@ -74,7 +74,7 @@
 		
 
 
-	<section id="overview_level">
+[[overview_level">
 === Level
 		
 			The log levels define the severity of a message. The
@@ -136,7 +136,7 @@
 		
 
 
-	<section id="general_handler">
+[[general_handler">
 === Handler
 		Each logger can have access to several handlers.
 		
@@ -181,7 +181,7 @@
 		
 
 
-	<section id="general_formatter">
+[[general_formatter">
 === Formatter
 		
 			Each handler's output can be configured with a formatter
@@ -212,7 +212,7 @@
 		
 
 
-	<section id="general_manager">
+[[general_manager">
 === Log Manager
 		
 			The log manager is responsible for creating and managing the
@@ -238,7 +238,7 @@
 		
 
 
-	<section id="chapter20s1a">
+[[chapter20s1a">
 === Best Practices
 		
 			It is common practice to use the fully qualified name of

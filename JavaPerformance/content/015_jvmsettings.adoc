@@ -1,4 +1,4 @@
-<section id="jvmsettings">
+[[jvmsettings">
 == Memory settings for Java virtual machine
 	
 		The JVM runs with fixed available memory. Once this memory is
@@ -7,7 +7,7 @@
 		make an
 		intelligent choice about the available memory at startup (see
 		<ulink
-			url="http://java.sun.com/javase/6/docs/technotes/tools/windows/java.html"> Java settings</ulink>
+			url="http://java.sun.com/javase/6/docs/technotes/tools/windows/java.html"> Java settings]
 		for details) but you can overwrite the default with the following
 		settings.
 	

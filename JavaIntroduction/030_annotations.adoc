@@ -1,0 +1,92 @@
+[[javaannotations]]
+== Annotations in Java
+[[annotations_definition]]
+=== Annotations in Java
+
+Annotations provide data about a class that is not part of the
+programming logic itself. They have no direct
+effect on the
+code they
+annotate. Other components can use this information.
+
+Annotations can
+be preserved at runtime (`RetentionPolicy.RUNTIME`)
+or are only available at development time (`RetentionPolicy.SOURCE`).
+
+[[javadef]]
+=== Override methods and the @Override annotation
+
+If a class extends another class, it inherits the methods from
+its
+superclass. If it wants to change these methods, it
+can
+_override_
+these methods, i.e., redeclare the methods. This is necessary for an abstract method unless the class itself is
+defined as abstract.
+
+The
+`@Override`
+annotation can be added to such a method. It is used by the Java compiler
+to check if the annotated
+method really
+overrides
+a method of an
+interface or the extended
+class.
+
+To override a method, you use the same method signature
+in the source code of the subclass.
+
+To indicate to the reader of the source code and the Java compiler
+that you have the intention to override a method,
+you can use the
+`@Override`
+annotation.
+
+The following code demonstrates how you can override a method
+from a superclass.
+
+[source,java]
+-----
+include::res/class/MyBaseClass.java[]
+----
+
+[source,java]
+-----
+include::res/class/MyExtensionClass2.java[]
+----
+
+It is good practice to always use the
+`@Override`
+annotation. This way the Java compiler validates if you did override
+all methods as intended and prevents errors.
+
+[[annotation_deprecated]]
+=== The @Deprecated annotations
+
+The `@Deprecated`
+annotation
+can be used on a field, method, constructor or class and
+indicates
+that this element is outdated and should
+not be used
+anymore. Adding
+`@Deprecated`
+to the class does not deprecate automatically all its fields and
+methods.
+
+
+[[annotation_typeannotations]]
+=== Type annotations
+Java supports that annotations can be placed on any type. The
+following gives several examples assuming the
+annotations exists.
+
+[source,java]
+-----
+include::res/typeannotations/Type.java[]
+----
+
+
+
+

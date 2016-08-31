@@ -1,6 +1,6 @@
-<section id="exercises_starter_solution" role="wrapper">
+[[exercises_starter_solution" role="wrapper">
 == Solution - Creating Java objects and methods
-	<section id="exercises_starter1_solution">
+[[exercises_starter1_solution">
 === Create a Person class and instantiate it
 		
 			The following is the expected result after
@@ -17,7 +17,7 @@ include::res/exercise04/Main.java[]
 		
 
 
-	<section id="exercises_starter2_solution">
+[[exercises_starter2_solution">
 === Use constructor
 		
 			The following is the expected result after
@@ -34,7 +34,7 @@ include::res/exercise06/Main.java[]
 		
 
 
-	<section id="exercises_starter3solution">
+[[exercises_starter3solution">
 		
 			The following is the expected result after
 			<xref linkend="exercises_starter3" />
@@ -52,7 +52,7 @@ include::res/exercise10/Main.java[]
 		
 
 
-	<section id="exercises_starter4solution">
+[[exercises_starter4solution">
 
 === Solution - Create an Address object
 		

@@ -1,6 +1,6 @@
-<section id="javadef_types">
+[[javadef_types">
 == The type system of Java
-	<section id="javadef_types1">
+[[javadef_types1">
 === Primitives and references
 		
 			Java distinguishes between
@@ -12,7 +12,7 @@
 			(such as Object and String).
 		
 
-	<section id="javadef_types_primitives">
+[[javadef_types_primitives">
 === Primitives 
 
 		
@@ -32,7 +32,7 @@
 		
 
 
-	<section id="javadef_types_references">
+[[javadef_types_references">
 === Reference types 
 		
 			Reference types variables represents a reference to an
@@ -63,7 +63,7 @@
 			object.
 		
 
-	<section id="javadef_types_autoboxing">
+[[javadef_types_autoboxing">
 === Autoboxing and wrapper types
 		
 			Every

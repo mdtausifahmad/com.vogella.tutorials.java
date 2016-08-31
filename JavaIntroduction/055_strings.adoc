@@ -1,6 +1,6 @@
-<section id="javastring">
+[[javastring">
 == Strings
-	<section id="javastringdefinition">
+[[javastringdefinition">
 === Strings in Java
 		
 			The
@@ -15,7 +15,7 @@
 		
 
 
-	<section id="javastringpool">
+[[javastringpool">
 === String pool in Java
 		
 			For memory efficiency Java uses a
@@ -47,7 +47,7 @@
 		
 
 
-	<section id="javastringcompare">
+[[javastringcompare">
 === Compare Strings in Java
 		
 			To compare the
@@ -98,7 +98,7 @@ include::res/stringcompare/wrong.java[]
 		
 
 
-	<section id="javastringhandling">
+[[javastringhandling">
 === Working with Strings
 		The following lists the most common string operations.
 

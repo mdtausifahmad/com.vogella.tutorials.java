@@ -1,5 +1,5 @@
 
-<section id="javanetwork_returncode">
+[[javanetwork_returncode">
 == Getting the return code from a webpage
 	HTML return codes are standardized codes which a web server
 		returns if a certain situation has occurred. For example the return

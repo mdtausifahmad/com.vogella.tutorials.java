@@ -1,4 +1,4 @@
-<section id="dependencyinjection_places">
+[[dependencyinjection_places">
 == Where can objects be injected into a class according to JSR330?
 	<indexterm>
 		<primary>Constructor injection</primary>

@@ -1,4 +1,4 @@
-<section id="usageannotations">
+[[usageannotations">
 == Using dependency injection with annotations
 	 As of Spring 2.5 it is possible to configure the dependency
 		injection via annotations. I recommend to use this way of configuring
@@ -49,8 +49,8 @@
 			
 				<programlisting>
 					<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-						parse="text" href="../examples/annotations/log4j.properties" />
-				</programlisting>
+						parse="text" href="../examples/annotations/log4j.properties[]
+----
 			
 		
 	

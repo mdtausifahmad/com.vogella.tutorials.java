@@ -1,6 +1,6 @@
-<section id="exercises_starter">
+[[exercises_starter">
 == Exercises - Creating Java objects and methods
-	<section id="exercises_starter1">
+[[exercises_starter1">
 === Create a Person class and instantiate it
 		
 			Create a new Java project called
@@ -45,7 +45,7 @@ include::res/exercise01/PersontoString.java[]
 			class.
 		
 
-	<section id="exercises_starter2">
+[[exercises_starter2">
 === Use constructor
 		
 			Add a constructor to your
@@ -62,7 +62,7 @@ include::res/exercise01/PersontoString.java[]
 		
 
 
-	<section id="exercises_starter3">
+[[exercises_starter3">
 === Define getter and setter methods
 		
 			Define methods which allow you to read the values of the
@@ -104,7 +104,7 @@ include::res/exercise01/PersontoString.java[]
 		
 
 
-	<section id="exercises_starter4">
+[[exercises_starter4">
 === Create an Address object
 		
 			Create a new object called

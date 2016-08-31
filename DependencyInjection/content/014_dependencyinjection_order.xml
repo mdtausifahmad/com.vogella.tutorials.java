@@ -1,4 +1,4 @@
-<section id="dependencyinjection_order">
+[[dependencyinjection_order">
 == Order in which dependency injection is performed on a class
 	
 	<indexterm>

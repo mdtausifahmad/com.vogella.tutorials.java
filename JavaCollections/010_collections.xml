@@ -1,6 +1,6 @@
-<section id="javacollections">
+[[javacollections">
 == Java Collections
-	<section id="javacollections1">
+[[javacollections1">
 === What are collections
 		<indexterm>
 			<primary>Java Collections</primary>
@@ -42,7 +42,7 @@
 
 
 
-	<section id="javacollections_typicaltypes1">
+[[javacollections_typicaltypes1">
 === Important default implementations
 		
 			Typical collections are: stacks, queues, deques, lists and
@@ -61,7 +61,7 @@
 			interface.
 		
 
-	<section id="javacollections_typicaltypes2">
+[[javacollections_typicaltypes2">
 === Type information with generics
 		
 			A class or interface whose declaration has one or more type parameters is a generic class or interface.
@@ -84,7 +84,7 @@
 		
 
 
-	<section id="javacollections_lambdas">
+[[javacollections_lambdas">
 === Collections and lambdas
 		The collection library support lambdas expressions. Operations on collections have been largely simplified with
 			this.

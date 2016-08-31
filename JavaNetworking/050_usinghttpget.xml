@@ -1,4 +1,4 @@
-<section id="usinghttpget">
+[[usinghttpget">
 == Using Http get services
 	 Several websites offer services via Http get calls. For example
 		your can send a get request to "http://tinyurl" or http://tr.im" and

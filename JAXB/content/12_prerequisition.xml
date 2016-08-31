@@ -1,10 +1,10 @@
-<section id="prerequisitions">
+[[prerequisitions">
 == Prerequisitions
 	
 		The following will demonstrate the JAXB API. For an
 		introduction into
 		using XML with Java please see
-		http://www.vogella.com/tutorials/JavaXML/article.html">Java XML tutorial</ulink>
+		http://www.vogella.com/tutorials/JavaXML/article.html">Java XML tutorial]
 		.
 	
 

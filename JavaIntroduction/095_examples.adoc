@@ -1,6 +1,6 @@
-<section id="95_exampless1">
+[[95_exampless1">
 == Examples
-	<section id="95_exampless1s2a">
+[[95_exampless1s2a">
 === Clipboard Access
 		
 			The following small program accesses the clipboard and removes

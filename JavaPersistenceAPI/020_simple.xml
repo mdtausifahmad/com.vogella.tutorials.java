@@ -1,10 +1,10 @@
-<section id="simple">
+[[simple">
 == Exercise: Usage of JPA in an Java application
-	<section id="simple_model">
+[[simple_model">
 === Project and Entity
 		
 			Create a
-			http://www.vogella.com/tutorials/Eclipse/article.html#firstjava"> Java project</ulink>
+			http://www.vogella.com/tutorials/Eclipse/article.html#firstjava"> Java project]
 			"de.vogella.jpa.simple". Create a
 			folder
 			"lib" and place the
@@ -12,7 +12,7 @@
 			JPA jars and derby.jar into this folder.
 			http://www.vogella.com/tutorials/Eclipse/article.html#classpath">
 				Add the libs to the project classpath.
-			</ulink>
+			]
 		
 		Afterwards create the package "de.vogella.jpa.simple.model"
 			and
@@ -26,7 +26,7 @@
 ----
 		
 
-	<section id="example_persistenceunit">
+[[example_persistenceunit">
 === Persistence Unit
 		
 			Create a
@@ -69,7 +69,7 @@
 			'dropDDL.jdbc'
 		
 
-	<section id="simple_main">
+[[simple_main">
 === Test your installation
 		
 			Create the following Main class which will create a new entry

@@ -1,10 +1,10 @@
-<section id="cheatsheets" role="wrapper">
+[[cheatsheets" role="wrapper">
 == Cheat Sheets
 	
 		The following can be used as a reference for certain task which
 		you have to do.
 	
-	<section id="cheatsheets_class">
+[[cheatsheets_class">
 === Working with classes
 		
 			While programming Java you have to create several classes,
@@ -159,7 +159,7 @@
 		
 
 
-	<section id="cheatsheets_localvariable">
+[[cheatsheets_localvariable">
 === Working with local variable
 		A local variable must always be declared in a method.
 

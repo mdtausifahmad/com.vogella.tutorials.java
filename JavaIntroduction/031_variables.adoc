@@ -1,6 +1,6 @@
-<section id="javadef_variables">
+[[javadef_variables">
 == Variables and methods
-	<section id="javadef_variable">
+[[javadef_variable">
 === Variable
 		
 			_Variables_
@@ -27,7 +27,7 @@
 			method call.
 		
 
-	<section id="javadef_instancevariable">
+[[javadef_instancevariable">
 === Instance variable
 		
 			Instance variable is associated with an instance of
@@ -42,7 +42,7 @@
 		
 
 
-	<section id="javadef_localvariable">
+[[javadef_localvariable">
 === Local variable
 		
 			Local (stack) variable declarations cannot have access
@@ -59,7 +59,7 @@
 		
 
 
-	<section id="javadef_method">
+[[javadef_method">
 === Methods
 		
 			A method is a block of code with parameters and a return value.
@@ -97,7 +97,7 @@ include::res/class/MyMethodExample.java[]
 			can not be used to overload a method.
 		
 
-	<section id="javadef_mainmethod">
+[[javadef_mainmethod">
 === Main method
 		
 			A public static method with the following signature can be used
@@ -114,7 +114,7 @@ include::res/class/main.java[]
 		
 
 
-	<section id="javadef_constructor">
+[[javadef_constructor">
 === Constructor
 		
 			A class contains

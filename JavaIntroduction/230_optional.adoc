@@ -1,4 +1,4 @@
-<section id="optional">
+[[optional">
 == Optional
 	
 		If you call a method or access a field on an object which is not

@@ -1,6 +1,6 @@
-<section id="arrays">
+[[arrays">
 == Arrays
-	<section id="arrays_definition">
+[[arrays_definition">
 === Arrays in Java
 		
 			An array is a container object that holds a fixed number of
@@ -16,7 +16,7 @@ include::res/array/TestMain.java[]
 		
 
 
-	<section id="arrays_forloop">
+[[arrays_forloop">
 === Enhanced for loop for Arrays and Collections
 		
 			Arrays and collections can be processed with a simpler for loop.

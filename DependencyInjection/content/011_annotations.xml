@@ -1,4 +1,4 @@
-<section id="dependencyinjection_annotations">
+[[dependencyinjection_annotations">
 == Using annotations to describe class dependencies
 	<indexterm>
 		<primary>Dependency injection</primary>

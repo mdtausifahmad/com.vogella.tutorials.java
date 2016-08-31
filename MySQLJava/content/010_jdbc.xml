@@ -1,4 +1,4 @@
-<section id="jdbc">
+[[jdbc">
 == Connection to database with Java
 	
 		The interface for accessing relational databases from Java is

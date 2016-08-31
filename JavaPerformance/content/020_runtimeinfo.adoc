@@ -1,9 +1,9 @@
 
-<section id="runtimeinfo">
+[[runtimeinfo">
 == Memory Consumption and Runtime
 	In general a operation is considered as extensive if this
 		operation has a long runtime or a high memory consumption.
-	<section id="runtimeinfo_memory">
+[[runtimeinfo_memory">
 === Memory Consumption
 		 The total used / free memory of an program can be obtained in
 			the program via java.lang.Runtime.getRuntime();
@@ -16,7 +16,7 @@
 			</programlisting>
 		
 	</section>
-	<section id="runtimeinfo_runtime">
+[[runtimeinfo_runtime">
 === Runtime of a Java program
 		 Use System.currentTimeMillis() to get the start time and the
 			end time and calculate the difference.

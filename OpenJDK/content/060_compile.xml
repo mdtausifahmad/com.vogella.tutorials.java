@@ -1,4 +1,4 @@
-<section id="compile">
+[[compile">
 == Compile OpenJDK
 	
 		Switch into you OpenJDK directory and compile it via:

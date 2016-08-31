@@ -1,4 +1,4 @@
-<section id="memory">
+[[memory">
 == Memory handling in Java
 	
 		Java handles its memory in two areas. The
@@ -8,7 +8,7 @@
 		. We will start with a short overview of memory in general on a
 		computer. Then the Java heap and stack is explained.
 	
-	<section id="memory_native">
+[[memory_native">
 === Native Memory
 		 Native memory is the memory which is available to a process,
 			e.g. the Java process. Native memory is controlled by the operating
@@ -45,7 +45,7 @@
 			anymore.
 		
 	</section>
-	<section id="memory_overview">
+[[memory_overview">
 === Memory in Java
 		 Java manages the memory for use. New objects created and placed
 			in the heap. Once your application have no reference anymore to an
@@ -54,7 +54,7 @@
 			again.
 		
 	</section>
-	<section id="memory_heap">
+[[memory_heap">
 === Java Heap
 		 In the heap the Java Virtual Machine (JVM) stores all objects
 			created by the Java application, e.g. by using the "new" operator.
@@ -67,7 +67,7 @@
 			declared.
 		
 	</section>
-	<section id="memory_stack">
+[[memory_stack">
 === Java Stack
 		Stack is where the method invocations and the local
 			variables are
@@ -84,7 +84,7 @@
 		
 	</section>
 
-	<section id="Escape Analysis">
+[[Escape Analysis">
 === Escape analysis
 		As stated earlier Java objects are created and stored in the
 			heap. The
@@ -111,7 +111,7 @@
 			performance of the Java program.
 		
 	</section>
-	<section id="memoryleaks">
+[[memoryleaks">
 === Memory leaks
 		
 			The

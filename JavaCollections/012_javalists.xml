@@ -1,6 +1,6 @@
-<section id="javacollections_list">
+[[javacollections_list">
 == List implementations
-	<section id="javacollections_lists">
+[[javacollections_lists">
 === The List interface
 		<indexterm>
 			<primary>List</primary>
@@ -15,7 +15,7 @@
 			container.
 		
 
-	<section id="javacollections_arraylist">
+[[javacollections_arraylist">
 === ArrayList and LinkedList as implementations
 		<indexterm>
 			<primary>ArrayList</primary>
@@ -76,7 +76,7 @@ include::res/list/ListExample.java[]
 
 
 
-	<section id="javacollections_sorting">
+[[javacollections_sorting">
 === Sorting lists
 		
 			You can sort lists using their natural order of via lambdas for
@@ -95,7 +95,7 @@ include::res/list/SortingLists.java[]
 		
 
 
-	<section id="javacollections_removinglistitems">
+[[javacollections_removinglistitems">
 === Remove list members based on condition
 		
 			The

@@ -1,4 +1,4 @@
-<section id="loadtest">
+[[loadtest">
 == Load Test
 	 A load test tool is a tool which emulates user and system
 		actions on an application to measure the reaction and behavior of this
@@ -8,15 +8,15 @@
 		Popular tools for load testing are:
 		<itemizedlist>
 			<listitem>Apache JMeter - See
-					http://jakarta.apache.org/jmeter/"> http://jakarta.apache.org/jmeter/</ulink>
+					http://jakarta.apache.org/jmeter/"> http://jakarta.apache.org/jmeter/]
 				
 			</listitem>
 			<listitem>
 				Eclipse TPTP testing tool - See
-					http://www.eclipse.org/tptp/"> http://www.eclipse.org/tptp/</ulink> 
+					http://www.eclipse.org/tptp/"> http://www.eclipse.org/tptp/] 
 			</listitem>
 			<listitem>Grinder - See
-					http://grinder.sourceforge.net/"> http://grinder.sourceforge.net/</ulink>
+					http://grinder.sourceforge.net/"> http://grinder.sourceforge.net/]
 				
 			</listitem>
 		</itemizedlist>

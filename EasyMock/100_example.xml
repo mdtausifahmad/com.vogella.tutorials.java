@@ -1,6 +1,6 @@
-<section id="tutorial_easymock" role="wrapper">
+[[tutorial_easymock" role="wrapper">
 == Tutorial: Using Easy Mock and JUnit
-	<section id="tutorial_easymockproject">
+[[tutorial_easymockproject">
 === Create project and classes
 		
 			Create a new Java Project called
@@ -44,7 +44,7 @@
 			provided methods.
 		
 
-	<section id="tutorial_easymocktest">
+[[tutorial_easymocktest">
 === Create tests
 
 		

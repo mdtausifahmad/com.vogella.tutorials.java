@@ -1,4 +1,4 @@
-<section id="dependencyinjection">
+[[dependencyinjection">
 == Dependency Injection
 	 Java components / classes should be as independent as possible
 		of other Java classes. This increases the possibility to reuse these

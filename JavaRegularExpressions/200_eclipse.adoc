@@ -17,7 +17,7 @@ flag before entering your regular expression. You can also specify the
 file type and the scope for the search and replace operation.
 	
 The
-following screenshots demonstrate how to search for the <![CDATA[</ulink>]]>
+following screenshots demonstrate how to search for the <![CDATA[]]]>
 XML tag with leading whitespace and how to remove the whitespace.
 	
 image::regularexpressioneclipse10.png[Search and replace in Eclipse part 1,pdfwidth=40%}

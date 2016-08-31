@@ -1,16 +1,16 @@
-<section id="retrolambdaverview">
+[[retrolambdaverview">
 == Retrolambda
 	<indexterm>
 		<primary>Retrolambda</primary>
 	</indexterm>
 	
-		https://github.com/orfjackal/retrolambda">Retrolambda</ulink>
+		https://github.com/orfjackal/retrolambda">Retrolambda]
 		is a library which allows to use Java 8 lambda expressions, method references and try-with-resources statements on Java
 		7, 6 or
 		5.
 
 		The
-		https://github.com/evant/gradle-retrolambda">Gradle Retrolambda Plug-in</ulink>
+		https://github.com/evant/gradle-retrolambda">Gradle Retrolambda Plug-in]
 		allows to integrate Retrolambda into a Gradle based build.
 		This allows for example to use these constructs in an Android application,
 		as

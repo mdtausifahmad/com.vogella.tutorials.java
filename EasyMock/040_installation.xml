@@ -1,4 +1,4 @@
-<section id="easymock_installation">
+[[easymock_installation">
 == Download Easy Mock
 	
 		Download
@@ -19,9 +19,9 @@
 	
 		You also
 		need to download the
-		http://objenesis.googlecode.com/svn/docs/download.html">Objenesis</ulink>
+		http://objenesis.googlecode.com/svn/docs/download.html">Objenesis]
 		and
-		http://cglib.sourceforge.net/"> Cglib</ulink>
+		http://cglib.sourceforge.net/"> Cglib]
 		libraries
 		and add these
 		`jars`

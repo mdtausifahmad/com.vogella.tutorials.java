@@ -1,4 +1,4 @@
-<section id="ottoeventbus">
+[[ottoeventbus">
 == Otto as event bus system 
 	<indexterm>
 		<primary>Otto</primary>
@@ -6,10 +6,10 @@
 	<indexterm>
 		<primary>Event bus</primary>
 	</indexterm>
-	<section id="ottoeventbus_intro">
+[[ottoeventbus_intro">
 === Otto as event bus system 
 		
-			http://square.github.io/otto/">Otto</ulink>
+			http://square.github.io/otto/">Otto]
 			is an Open Source project designed to provide an event bus
 			implementation so that components can publish and subscribe
 			to
@@ -27,14 +27,14 @@
 			simple and unambiguous.
 		
 
-	<section id="ottoeventbus_installation">
+[[ottoeventbus_installation">
 === Installation
 
 		
 			The usage of this library in Java or Android is very simple, download
 			the JAR and its one
 			requirement from
-			http://square.github.io/otto/">Download Otto</ulink>
+			http://square.github.io/otto/">Download Otto]
 			and add it to the classpath of your application.
 		
 		
@@ -49,7 +49,7 @@
 
 
 
-	<section id="ottoeventbus_whenouse">
+[[ottoeventbus_whenouse">
 === When to use Otto?
 		Otto is a great way to communicate between your activity and
 			fragments or to communicate between an activity and
@@ -57,7 +57,7 @@
 		
 
 
-	<section id="ottoeventbus_howtosetup">
+[[ottoeventbus_howtosetup">
 === How to setup Otto?
 		<note>
 			The following description assumes your are using Otto in an
@@ -92,7 +92,7 @@ include::res/snippets/CreateBus.java[]
 
 
 
-	<section id="ottoeventbus_register events">
+[[ottoeventbus_register events">
 === How to register and unregister for events?
 		<indexterm>
 			<primary>@Subcribe</primary>
@@ -133,7 +133,7 @@ include::res/snippets/Register.java[]
 		
 
 
-	<section id="ottoeventbus_send events">
+[[ottoeventbus_send events">
 === How to send events
 		
 			For sending events it is not necessary to register with the event
@@ -149,7 +149,7 @@ include::res/snippets/Send.java[]
 		
 
 
-	<section id="ottoeventbus_newcomponent">
+[[ottoeventbus_newcomponent">
 === How can new components receive the last event?
 		<indexterm>
 			<primary>@Produce</primary>

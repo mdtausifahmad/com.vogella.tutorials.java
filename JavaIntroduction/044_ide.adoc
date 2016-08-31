@@ -1,4 +1,4 @@
-<section id="ide">
+[[ide">
 == Integrated Development Environment
 	
 		The previous chapter explained how to create and compile a Java
@@ -10,7 +10,7 @@
 	
 	
 		For an introduction on how to use the Eclipse IDE please see
-		http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse IDE Tutorial</ulink>.
+		http://www.vogella.com/tutorials/Eclipse/article.html">Eclipse IDE Tutorial].
 	
 	
 		The remaining description uses the phrase:

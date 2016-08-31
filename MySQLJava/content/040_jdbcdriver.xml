@@ -1,4 +1,4 @@
-<section id="jdbcdriver">
+[[jdbcdriver">
 == MySQL JDBC driver
 	
 		To connect to MySQL from Java, you have to use the JDBC driver
@@ -6,7 +6,7 @@
 		MySQL. The MySQL JDBC driver is called
 		_MySQL Connector/J_
 		. You find the latest MySQL JDBC driver under the following URL:
-		http://dev.mysql.com/downloads/connector/j">http://dev.mysql.com/downloads/connector/j</ulink>
+		http://dev.mysql.com/downloads/connector/j">http://dev.mysql.com/downloads/connector/j]
 		.
 	
 

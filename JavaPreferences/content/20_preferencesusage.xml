@@ -1,6 +1,6 @@
-<section id="preferenceusage">
+[[preferenceusage">
 == Exercise: Using the API
-	<section id="preferenceusage1">
+[[preferenceusage1">
 === Create program
 		
 			`java.util.prefs.Preferences`
@@ -20,7 +20,7 @@
 ----
 		
 
-	<section id="preferenceusage2">
+[[preferenceusage2">
 === Validating
 		
 			Run the program twice. The value of "ID1" should be written with

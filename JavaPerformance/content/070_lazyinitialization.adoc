@@ -1,4 +1,4 @@
-<section id="lazyinit">
+[[lazyinit">
 == Lazy initialization
 	 In case a variable is very expensive to create then sometimes it
 		is good to defer the creation of this variable until the variable is
@@ -15,7 +15,7 @@
 				parse="text" href="../examples/lazy/MyField.java[]
 ----
 	
-	<section id="lazyinit_synchronized">
+[[lazyinit_synchronized">
 === Concurrency - Overview
 		 The simplest way is to use a synchronized block. As then field
 			access is always synchronized in case on read access this variant is

@@ -1,6 +1,6 @@
-<section id="javacollections_maptypes">
+[[javacollections_maptypes">
 == Maps implementations
-	<section id="map_hashmap">
+[[map_hashmap">
 === Map and HashMap
 		<indexterm>
 			<primary>HashMap</primary>
@@ -27,7 +27,7 @@ include::res/map/MapTester.java[]
 
 
 
-	<section id="map_convert">
+[[map_convert">
 === Convert keys in a Map to an array or a list
 		You can convert your keys or values to an array or list. The
 			following code demonstrates that.
@@ -39,7 +39,7 @@ include::res/map/ConvertMapTester.java[]
 
 
 
-	<section id="map_processingmapselements">
+[[map_processingmapselements">
 === Processing every element in the map
 		
 			To process every element a map you can use the
@@ -48,7 +48,7 @@ include::res/map/ConvertMapTester.java[]
 		
 
 
-	<section id="map_getordefault">
+[[map_getordefault">
 === Getting the current value or a default for a map 
 
 		

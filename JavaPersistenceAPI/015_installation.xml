@@ -1,10 +1,10 @@
-<section id="installation">
+[[installation">
 == Installation
-	<section id="installation_jpa">
+[[installation_jpa">
 === EclipseLink
 		
 			Download the "EclipseLink Installer Zip" implementation from the
-			http://www.eclipse.org/eclipselink/downloads/"> EclipseLink Download Site</ulink>
+			http://www.eclipse.org/eclipselink/downloads/"> EclipseLink Download Site]
 			.
 		
 		
@@ -19,19 +19,19 @@
 			</itemizedlist>
 		
 
-	<section id="installation_database">
+[[installation_database">
 === Derby Database
 		
 			The example later will be using
-			http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby</ulink>
+			http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby]
 			as a database. Download Derby
 			from
-			http://db.apache.org/derby/"> http://db.apache.org/derby/</ulink>
+			http://db.apache.org/derby/"> http://db.apache.org/derby/]
 			From this tutorial we will need the "derby.jar".
 			For details on Derby
 			(which is not required for this tutorial)
 			please see
-			http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby</ulink>
+			http://www.vogella.com/tutorials/ApacheDerby/article.html">Apache Derby]
 			.
 		
 
