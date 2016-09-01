@@ -1,0 +1,25 @@
+= Testing with EasyMock - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, (c) 2011, 2016 vogella GmbH
+Version 1.5, 01.09.2016
+:docinfodir: ../
+:vgwort: EasyMock
+
+[abstract]
+Testing with EasyMock.
+This tutorial explains testing with the EasyMock framework within Eclipse. It is based on the EasyMock 3.1 release.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::002_prerequisites.adoc[]
+include::020_easymock.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::040_installation.adoc[]
+include::100_example.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

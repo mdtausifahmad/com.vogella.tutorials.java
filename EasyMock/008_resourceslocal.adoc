@@ -1,0 +1,7 @@
+[[resources]]
+== Links and Literature
+[[resources_easymock]]
+=== EasyMock
+		
+http://easymock.org/[EasyMock Homepage]
+

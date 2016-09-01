@@ -1,0 +1,63 @@
+[[tutorial_easymock]]
+== Tutorial: Using Easy Mock and JUnit
+[[tutorial_easymockproject]]
+=== Create project and classes
+		
+Create a new Java Project called
+_com.vogella.testing.easymock.first_
+. Create the
+following
+classes.
+		
+[source,java]
+----
+include::res/easymock/Position.java[]
+----
+		
+[source,java]
+----
+include::res/easymock/ICalcMethod.java[]
+----
+		
+[source,java]
+----
+include::res/easymock/IncomeCalculator.java[]
+----
+		
+The
+`IncomeCalculator`
+class should be
+tested. The
+class has the
+purpose to calculate the
+salary of a person based on
+the provided
+method and
+position. Obviously
+the
+test depends
+on the
+provided methods.
+
+[[tutorial_easymocktest]]
+=== Create tests
+		
+Create a new
+`test`
+source folder in your project.
+		
+Create a new test for
+`IncomeCalculator`
+and place the new test class in this
+folder.
+		
+[source,java]
+----
+include::res/easymock/IncomeCalculatorTest.java[]
+----
+		
+After execution of the test you can call the
+`verify`
+method to
+check if the mock object was called as defined.
+		
