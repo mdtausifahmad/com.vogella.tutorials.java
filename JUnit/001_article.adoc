@@ -6,22 +6,29 @@
 :imagesdir: ./img
 (c) 2007, 2016 vogella GmbH
 Version 4.3, 21.06.2016
+:docinfodir: ../
+:vgwort: JUnit
 
 [abstract]
 This tutorial explains unit testing with JUnit 4.x. 
 It explains the creation of JUnit tests. 
 It also covers the usage of the Eclipse IDE for developing software tests.
 
-				
+include::../web/advertisement/afterTableOfContent.adoc[]				
 include::009_testingintro.adoc[]
 include::010_testingintro_terminology.adoc[]
 include::011_testorganisation.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::012_junitintro.adoc[]
 include::013_using_junit.adoc[]
 include::014_eclipse.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
 include::018_junitinstall.adoc[]
 include::020_eclipse_junitsetup.adoc[]
 include::030_juniteclipse.adoc[]
+include::../web/advertisement/inBetween03.adoc[]
 include::100_advancedjunit.adoc[]
 include::200_mockframeworks.adoc[]
+include::../support.adoc[]
 include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
