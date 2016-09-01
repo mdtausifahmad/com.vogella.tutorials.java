@@ -11,15 +11,13 @@
 	
 		If dependency injection is used then the class B is given to class A
 		via
-		<itemizedlist>
-			<listitem>
-				the constructor of the class A - this is then called
+
+			* the constructor of the class A - this is then called
 					construction injection
-			</listitem>
-			<listitem>
-				a setter - this is then called setter injection
-			</listitem>
-		</itemizedlist>
+
+			* a setter - this is then called setter injection
+
+
 	
 	 The general concept between dependency injection is called
 		Inversion of Control. A class should not configure itself but should

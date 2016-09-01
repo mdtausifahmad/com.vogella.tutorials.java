@@ -1,0 +1,33 @@
+[[dependencyinjection_places]]
+== Where can objects be injected into a class according to JSR330?
+(((Constructor injection)))
+(((Field injection)))
+(((Method injection)))
+
+Dependency injection can be performed on:
+
+* the constructor of the class (construction injection)
+* a field (field injection)
+* the parameters of a method (method injection)
+
+It is possible to use dependency injection on static and on
+non-static
+fields
+and
+methods. Avoiding dependency injection
+on static fields and methods is a good practice, as it has the following
+restrictions and can be hard to debug.
+
+* Static fields will be injected after the first object of the
+class was created via DI, which means no access to
+the static
+field in the constructor
+
+* Static fields can not be marked as final, otherwise the
+compiler or the application complains at runtime about
+them
+
+* Static methods are called only once after the first instance of
+the
+class was created
+

@@ -1,0 +1,12 @@
+[[resources]]
+== Links and Literature
+
+http://www.vogella.com/code/codejava.html[Source Code of Examples]
+
+[[springlinks]]
+=== Spring Links
+		
+http://www.springframework.org/[Homepage of the Spring Framework]
+		
+http://www.vogella.com/tutorials/SpringJDBC/article.html[Using the Spring Jdbc Template for Database Access]
+	

@@ -13,4 +13,5 @@ include 'Checkstyle'
 include 'Jacoco'
 include 'Findbugs'
 include 'JavaIntroduction'
+include 'DependencyInjection'
 

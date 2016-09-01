@@ -15,5 +15,5 @@ This can be compared to a traffic jam, where cars(threads)
 require the access to a certain street(resource), which is
 currently blocked by another car(lock).
 	
-image::deadlock_cars.png[Deadlock,pdfwidth=60%]
+image::deadlock_cars.png[Deadlock,]
 

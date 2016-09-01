@@ -1,8 +1,6 @@
 [[javanetwork_overview">
 == Java and HTTP access
-	<indexterm>
-		<primary>HTTP access with Java</primary>
-	</indexterm>
+(((HTTP access with Java)))
 	
 		Java provides a general-purpose,
         lightweight HTTP client API to access resources via the HTTP or HTTPS protocol. The main

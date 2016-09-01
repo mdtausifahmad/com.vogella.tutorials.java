@@ -10,15 +10,14 @@
 			<listitem>Apache JMeter - See
 					http://jakarta.apache.org/jmeter/"> http://jakarta.apache.org/jmeter/]
 				
-			</listitem>
-			<listitem>
-				Eclipse TPTP testing tool - See
+
+			*Eclipse TPTP testing tool - See
 					http://www.eclipse.org/tptp/"> http://www.eclipse.org/tptp/] 
-			</listitem>
+
 			<listitem>Grinder - See
 					http://grinder.sourceforge.net/"> http://grinder.sourceforge.net/]
 				
-			</listitem>
+
 		</itemizedlist>
 	
 </section>

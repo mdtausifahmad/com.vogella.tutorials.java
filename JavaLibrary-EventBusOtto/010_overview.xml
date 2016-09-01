@@ -1,11 +1,7 @@
 [[ottoeventbus">
 == Otto as event bus system 
-	<indexterm>
-		<primary>Otto</primary>
-	</indexterm>
-	<indexterm>
-		<primary>Event bus</primary>
-	</indexterm>
+(((Otto)))
+(((Event bus)))
 [[ottoeventbus_intro">
 === Otto as event bus system 
 		
@@ -59,7 +55,7 @@
 
 [[ottoeventbus_howtosetup">
 === How to setup Otto?
-		<note>
+	NOTE:
 			The following description assumes your are using Otto in an
 				Android application, even though it is possible to
 				use it in an standard Java application.

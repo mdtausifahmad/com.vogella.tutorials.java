@@ -1,0 +1,40 @@
+[[dependencyinjection_annotations]]
+== Using annotations to describe class dependencies
+(((Dependency injection,annotations)))
+(((Annotations)))
+(((JSR 330)))
+(((@Inject)))
+(((@Named)))
+
+Different approaches exist to describe the
+dependencies of a
+class. The most common approach is to use Java
+annotations to describe
+the dependencies directly in the class.
+
+The standard Java annotations for describing the dependencies of a class are
+defined
+in the Java
+Specification Request 330 (JSR330). This specification
+describes the
+`@Inject`
+and
+`@Named`
+annotations.
+
+The following listing shows a class which uses annotations to
+describe its dependencies.
+
+[source,java]
+----
+include::res/snippets/Example.java[]
+----
+
+NOTE: Please note that this class uses the
+`new`
+operator for the user interface components. This implies that this
+part of the code is nothing you plan to replace via your tests and
+that you
+made the decision to have a hard coupling to the
+corresponding user interface toolkit.
+

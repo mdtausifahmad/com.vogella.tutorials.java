@@ -1,8 +1,6 @@
 [[jarfiles" role="wrapper">
 == Defining and using Java libraries
-	<indexterm>
-		<primary>Java libraries</primary>
-	</indexterm>
+(((Java libraries)))
 [[javalibrary">
 === What is a Java library?
 		<indexterm>

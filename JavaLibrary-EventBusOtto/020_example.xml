@@ -74,7 +74,7 @@ include::res/fragment_main.xml[]
 include::res/MainActivity.java[]
 ----
 	
-	<note>
+NOTE:
 		
 			The example is intentional simple. In a real Android application
 			you

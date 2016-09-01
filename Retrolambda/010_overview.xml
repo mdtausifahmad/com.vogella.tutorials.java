@@ -1,8 +1,6 @@
 [[retrolambdaverview">
 == Retrolambda
-	<indexterm>
-		<primary>Retrolambda</primary>
-	</indexterm>
+(((Retrolambda)))
 	
 		https://github.com/orfjackal/retrolambda">Retrolambda]
 		is a library which allows to use Java 8 lambda expressions, method references and try-with-resources statements on Java

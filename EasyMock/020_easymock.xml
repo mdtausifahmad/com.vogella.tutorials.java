@@ -1,8 +1,6 @@
 [[easymock_overview">
 == EasyMock
-	<indexterm>
-		<primary>EasyMock</primary>
-	</indexterm>
+(((EasyMock)))
 	
 		_EasyMock_
 		is a mock framework which can be easily used

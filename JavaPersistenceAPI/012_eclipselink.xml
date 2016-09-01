@@ -9,15 +9,12 @@
 		supports several Java standards:
 
 		<itemizedlist>
-			<listitem>
-				Java Persistence (JPA) 2.0 - JSR 317
-			</listitem>
-			<listitem>
-				Java Architecture for XML Binding (JAXB) 2.2 - JSR 222
-			</listitem>
-			<listitem>
-				Service Data Objects (SDO) 2.1.1 - JSR 235
-			</listitem>
+			*Java Persistence (JPA) 2.0 - JSR 317
+
+			*Java Architecture for XML Binding (JAXB) 2.2 - JSR 222
+
+			*Service Data Objects (SDO) 2.1.1 - JSR 235
+
 		</itemizedlist>
 
 

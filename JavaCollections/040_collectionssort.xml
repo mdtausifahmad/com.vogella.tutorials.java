@@ -1,8 +1,6 @@
 [[collectionssort">
 == Using Collections.sort and Comparator in Java
-	<indexterm>
-		<primary>Java Collections</primary>
-	</indexterm>
+(((Java Collections)))
 	
 		Sorting a collection in Java is easy, just use the
 		`Collections.sort(Collection)`

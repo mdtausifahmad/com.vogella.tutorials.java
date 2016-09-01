@@ -1,0 +1,27 @@
+= Using dependency injection in Java - Introduction - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, (c) 2010, 2016 vogella GmbH
+Version 2.3, 01.09.2016
+:docinfodir: ../
+:vgwort: DependencyInjection
+
+[abstract]
+Dependency injection (DI).
+This article describes the concept of dependency injection from a Java perspective.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_dependencyinjection.adoc[]
+include::011_annotations.adoc[]
+include::012_dependencyinjection_types.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::014_dependencyinjection_order.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::020_java.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

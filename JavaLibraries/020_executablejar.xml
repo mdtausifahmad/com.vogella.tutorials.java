@@ -1,10 +1,7 @@
 
 [[jarfiles_executable">
 == Executable JAR
-	<indexterm>
-		<primary>Java libraries</primary>
-		<secondary>create</secondary>
-	</indexterm>
+(((Java libraries,create)))
 	
 		An executable
 		JAR

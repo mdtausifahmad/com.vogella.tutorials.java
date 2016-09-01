@@ -87,27 +87,20 @@
 			The following lists the Log Levels in descending order:
 			
 				<itemizedlist>
-					<listitem>
-						SEVERE (highest)
-					</listitem>
-					<listitem>
-						WARNING
-					</listitem>
-					<listitem>
-						INFO
-					</listitem>
-					<listitem>
-						CONFIG
-					</listitem>
-					<listitem>
-						FINE
-					</listitem>
-					<listitem>
-						FINER
-					</listitem>
-					<listitem>
-						FINEST
-					</listitem>
+					*		SEVERE (highest)
+		
+					*		WARNING
+		
+					*		INFO
+		
+					*		CONFIG
+		
+					*		FINE
+		
+					*		FINER
+		
+					*		FINEST
+		
 				</itemizedlist>
 			
 		
@@ -162,16 +155,14 @@
 		
 		
 			<itemizedlist>
-				<listitem>
-					
+				*	
 						ConsoleHandler: Write the log message to console
 					
-				</listitem>
-				<listitem>
-					
+	
+				*	
 						FileHandler: Writes the log message to file
 					
-				</listitem>
+	
 			</itemizedlist>
 		
 		
@@ -188,17 +179,15 @@
 		
 		Available formatter
 		<itemizedlist>
-			<listitem>
-				
+			*
 					SimpleFormatter: Generate all messages as text
 				
-			</listitem>
-			<listitem>
-				
+
+			*
 					XMLFormatter: Generates XML output for the log
 					messages
 				
-			</listitem>
+
 		</itemizedlist>
 		
 			You can also build your own formatter. The following is an

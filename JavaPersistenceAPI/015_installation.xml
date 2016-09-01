@@ -10,12 +10,10 @@
 		
 			The download contains several jars. We need the following jars:
 			<itemizedlist>
-				<listitem>
-					eclipselink.jar
-				</listitem>
-				<listitem>
-					javax.persistence_*.jar
-				</listitem>
+				*	eclipselink.jar
+	
+				*	javax.persistence_*.jar
+	
 			</itemizedlist>
 		
 
