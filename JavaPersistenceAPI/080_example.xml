@@ -18,21 +18,21 @@
 		and the following classes.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/datamodel/Family.java[]
+[source,java]
+----
+include::res/datamodel/Family.java[]
 ----
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/datamodel/Person.java[]
+[source,java]
+----
+include::res/datamodel/Person.java[]
 ----
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/datamodel/Job.java[]
+[source,java]
+----
+include::res/datamodel/Job.java[]
 ----
 	
 	
@@ -60,9 +60,9 @@
 		entries is changed and saved to the database.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/eclipselink/JpaTest.java[]
+[source,java]
+----
+include::res/eclipselink/JpaTest.java[]
 ----
 	
 	 The project should now look like the following.

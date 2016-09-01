@@ -27,9 +27,9 @@
 	
 
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/build.gradle[]
+[source,java]
+----
+include::res/build.gradle[]
 ----
 	
 	
@@ -39,9 +39,9 @@
 	
 
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/activity_main.xml[]
+[source,java]
+----
+include::res/activity_main.xml[]
 ----
 	
 
@@ -53,9 +53,9 @@
 
 
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/fragment_main.xml[]
+[source,java]
+----
+include::res/fragment_main.xml[]
 ----
 	
 	
@@ -69,9 +69,9 @@
 		.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/MainActivity.java[]
+[source,java]
+----
+include::res/MainActivity.java[]
 ----
 	
 	<note>

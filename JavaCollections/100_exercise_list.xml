@@ -14,9 +14,9 @@
 		.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/example/Server.java[]
+[source,java]
+----
+include::res/example/Server.java[]
 ----
 	
 
@@ -67,9 +67,9 @@ image::collectioncodecompletion10.png"
 	
 
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/example/Main.java[]
+[source,java]
+----
+include::res/example/Main.java[]
 ----
 	
 

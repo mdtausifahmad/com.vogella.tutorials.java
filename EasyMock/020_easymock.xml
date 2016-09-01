@@ -16,9 +16,9 @@
 	EasyMock instantiates an object based on an interface or class.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/first/create.java[]
+[source,java]
+----
+include::res/first/create.java[]
 ----
 	
 	
@@ -55,9 +55,9 @@
 		available.
 	
 	
-		<programlisting language="java">
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="./examples/first/configure.java[]
+[source,java]
+----
+include::res/first/configure.java[]
 ----
 	
 
