@@ -45,7 +45,7 @@
 					
 				
 			
-		|===
+|===
 	
 	
 		<tip> Increase the values in these parameters to avoid the following
