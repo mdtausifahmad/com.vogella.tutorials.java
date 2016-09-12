@@ -7,9 +7,9 @@
 		Create the following class "PositionPdf.java".
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/format/PositionPdf.java[]
+[source,java]
+----
+include::res/format/PositionPdf.java[]
 ----
 	
 

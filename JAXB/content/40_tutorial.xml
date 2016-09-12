@@ -4,24 +4,24 @@
 	 Create the following domain model with the JAXB annotations.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/jaxb/Book.java[]
+[source,java]
+----
+include::res/jaxb/Book.java[]
 ----
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/jaxb/Bookstore.java[]
+[source,java]
+----
+include::res/jaxb/Bookstore.java[]
 ----
 	
 	 Create the following test program for writing and reading the
 		XML file.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/jaxb/BookMain.java[]
+[source,java]
+----
+include::res/jaxb/BookMain.java[]
 ----
 	
 	 If you run the BookMain an XML file will be created from the input

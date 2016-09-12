@@ -37,10 +37,7 @@ include::res/example/Server.java[]
 		Type
 		`main`
 		in the class body and use code completion (
-		<keycombo>
-			<keycap>Ctrl</keycap>
-			<keycap>Space</keycap>
-		</keycombo>
+kbd:[Ctrl+Space]
 		) to generate a
 		`main`
 		method.

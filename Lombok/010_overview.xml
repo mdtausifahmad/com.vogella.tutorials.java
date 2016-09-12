@@ -5,8 +5,8 @@
     The easiest way is to use the `@Data` annotation.
     
         <programlisting language="java">
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/LombokTodo.java"/>
-			</programlisting>
+				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/LombokTodo.java[]
+----
     By simply adding the `@data` annotation you get all this for free:
     
         <mediaobject>

@@ -22,24 +22,24 @@
 			into the setter.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/annotations/MySpringBeanWithDependency.java[]
+[source,java]
+----
+include::res/annotations/MySpringBeanWithDependency.java[]
 ----
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/annotations/NiceWriter.java[]
+[source,java]
+----
+include::res/annotations/NiceWriter.java[]
 ----
 	
 	 Under the src folder create a folder META-INF and create the
 		following file in this folder. This is the Spring configuration file.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/annotations/beans.xml[]
+[source,xml]
+----
+include::res/annotations/beans.xml[]
 ----
 	
 	
@@ -58,9 +58,9 @@
 		main class which reads the configuration file and starts the
 		application.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/annotations/Main.java[]
+[source,java]
+----
+include::res/annotations/Main.java[]
 ----
 	
 	 If you run the application then the class for the

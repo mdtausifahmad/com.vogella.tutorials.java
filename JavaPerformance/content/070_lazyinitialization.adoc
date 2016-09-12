@@ -10,9 +10,9 @@
 	 I use the project "de.vogella.performance.lazyinitialization" for
 		the examples in this chapter. And a have a own field defined."
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/lazy/MyField.java[]
+[source,java]
+----
+include::res/lazy/MyField.java[]
 ----
 	
 [[lazyinit_synchronized">

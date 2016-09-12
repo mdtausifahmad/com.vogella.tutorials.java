@@ -16,17 +16,17 @@
 		following file in this folder. This is the Spring configuration file.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/xml/beans.xml[]
+[source,xml]
+----
+include::res/xml/beans.xml[]
 ----
 	
 	 Again, you can now wire the application together. Create a main
 		class which reads the configuration file and starts the application.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/xml/Main.java[]
+[source,java]
+----
+include::res/xml/Main.java[]
 ----
 	

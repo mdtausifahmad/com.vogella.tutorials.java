@@ -4,9 +4,9 @@
 		Switch into you OpenJDK directory and compile it via:
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/compile/compile.txt[]
+[source,text]
+----
+include::res/compile/compile.txt[]
 ----
 	
 	 After a long time the compilation should be successful. The

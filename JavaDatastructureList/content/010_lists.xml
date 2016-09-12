@@ -26,9 +26,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/list/MyList.java[]
+[source,java]
+----
+include::res/list/MyList.java[]
 ----
 	
 	 The following show contains a small JUnit test for the data
@@ -38,9 +38,9 @@
 		standard Java List implementation.
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/list/MyListTest.java[]
+[source,java]
+----
+include::res/list/MyListTest.java[]
 ----
 	
 

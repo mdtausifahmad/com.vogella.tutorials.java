@@ -5,9 +5,9 @@
 		system. 
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/install/mercurial.txt[]
+[source,text]
+----
+include::res/install/mercurial.txt[]
 ----
 	
 
@@ -24,18 +24,18 @@
 		will create the directory hgforest with the file "forest.py". 
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/install/cloneforestextension.txt[]
+[source,text]
+----
+include::res/install/cloneforestextension.txt[]
 ----
 	
 	Edit the file "~/.hgrc" (i.e. the mercurial configuration file)
 		to include the lines.
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/install/includeextension.txt[]
+[source,text]
+----
+include::res/install/includeextension.txt[]
 ----
 	
 	 After this change you should be able to use commands such
@@ -46,9 +46,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/install/build.txt[]
+[source,text]
+----
+include::res/install/build.txt[]
 ----
 	
 

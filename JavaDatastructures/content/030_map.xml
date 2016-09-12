@@ -17,23 +17,23 @@
 		that this map is not very fast for large sets.
 	 This would be an entry.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/map/MyEntry.java[]
+[source,java]
+----
+include::res/map/MyEntry.java[]
 ----
 	
 	 This is the map implementation based on MyEntry.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/map/MyMap.java[]
+[source,java]
+----
+include::res/map/MyMap.java[]
 ----
 	
 	 And a small test. 
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/map/MyMapTest.java[]
+[source,java]
+----
+include::res/map/MyMapTest.java[]
 ----
 	

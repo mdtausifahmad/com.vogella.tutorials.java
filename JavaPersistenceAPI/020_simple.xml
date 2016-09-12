@@ -1,4 +1,4 @@
-[[simple">
+[[simple]]
 == Exercise: Usage of JPA in an Java application
 [[simple_model">
 === Project and Entity
@@ -21,8 +21,9 @@
 		
 
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Todo.java[]
+[source,java]
+----
+include::res/simple/Todo.java[]
 ----
 		
 
@@ -46,8 +47,9 @@
 
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/persistence.xml[]
+[source,xml]
+----
+include::res/simple/persistence.xml[]
 ----
 		
 		
@@ -69,7 +71,7 @@
 			'dropDDL.jdbc'
 		
 
-[[simple_main">
+[[simple_main]]
 === Test your installation
 		
 			Create the following Main class which will create a new entry
@@ -84,8 +86,9 @@
 			every run.
 		
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/simple/Main.java[]
+[source,text]
+----
+include::res/simple/Main.java[]
 ----
 		
 		Run you program several times to see that the database is

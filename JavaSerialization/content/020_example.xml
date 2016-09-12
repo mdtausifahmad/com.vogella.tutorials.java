@@ -6,9 +6,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/simple/Person.java[]
+[source,java]
+----
+include::res/simple/Person.java[]
 ----
 	
 
@@ -17,9 +17,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/simple/Main.java[]
+[source,java]
+----
+include::res/simple/Main.java[]
 ----
 	
 

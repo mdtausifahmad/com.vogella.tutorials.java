@@ -14,22 +14,22 @@
 	 The following are two implementations of stacks, one based on
 		arrays the other based on ArrayLists.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/stack/MyStackArray.java[]
+[source,java]
+----
+include::res/stack/MyStackArray.java[]
 ----
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/stack/MyStackList.java[]
+[source,java]
+----
+include::res/stack/MyStackList.java[]
 ----
 	
 	 This is a small JUnit test for the data structure.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/stack/MyStackTest.java[]
+[source,java]
+----
+include::res/stack/MyStackTest.java[]
 ----
 	
 

@@ -5,9 +5,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/clone/openJDK7.txt[]
+[source,text]
+----
+include::res/clone/openJDK7.txt[]
 ----
 	
 
@@ -15,9 +15,9 @@
 	
 
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/clone/openJDK6.txt[]
+[source,text]
+----
+include::res/clone/openJDK6.txt[]
 ----
 	
 

@@ -5,27 +5,27 @@
 	 Create a Java project "de.vogella.spring.di.model" and create
 		the following packages and classes.
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/datamodel/IWriter.java[]
+[source,java]
+----
+include::res/datamodel/IWriter.java[]
 ----
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/datamodel/Writer.java[]
+[source,java]
+----
+include::res/datamodel/Writer.java[]
 ----
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/datamodel/NiceWriter.java[]
+[source,java]
+----
+include::res/datamodel/NiceWriter.java[]
 ----
 	
 	
-		<programlisting>
-			<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-				parse="text" href="../examples/datamodel/MySpringBeanWithDependency.java[]
+[source,java]
+----
+include::res/datamodel/MySpringBeanWithDependency.java[]
 ----
 	
 	 The class "MySpringBeanWithDependency.java" contains a setter
