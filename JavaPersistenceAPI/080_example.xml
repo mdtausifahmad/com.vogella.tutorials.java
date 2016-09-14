@@ -51,9 +51,9 @@ include::res/datamodel/Job.java[]
 
 	
 		The following check is implemented as a
-		http://www.vogella.com/tutorials/JUnit/article.html"> JUnit]
+		http://www.vogella.com/tutorials/JUnit/article.html[JUnit]
 		Test. For details please see 
-		http://www.vogella.com/tutorials/JUnit/article.html"> JUnit Tutorial]
+		http://www.vogella.com/tutorials/JUnit/article.html[JUnit Tutorial]
 		. The setup() method will create a few test entries. After the
 		test
 		entries are created, they will be read and the one field of the

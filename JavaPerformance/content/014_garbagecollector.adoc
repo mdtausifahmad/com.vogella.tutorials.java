@@ -7,7 +7,7 @@
 		command line argument "-verbose:gc" to your virtual machine.
 	
 		An in-depth article about the garbage collector can be found here:
-		http://java.sun.com/docs/hotspot/gc5.0/gc_tuning_5.html"> Tuning Garbage Collection with the 5.0 Java Virtual
+		http://java.sun.com/docs/hotspot/gc5.0/gc_tuning_5.html[Tuning Garbage Collection with the 5.0 Java Virtual
 			Machine]
 	
 </section>

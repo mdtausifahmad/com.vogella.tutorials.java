@@ -24,7 +24,7 @@ include::res/simple/LombokTodo.java[]
 	
 	
 		See
-		http://www.vogella.com/tutorials/Lombok/article.html">http://www.vogella.com/tutorials/Lombok/article.html]
+		http://www.vogella.com/tutorials/Lombok/article.html[http://www.vogella.com/tutorials/Lombok/article.html]
 		for further
 		information and more configuration possibilities of lombok.
 	

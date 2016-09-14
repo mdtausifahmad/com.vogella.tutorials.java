@@ -30,7 +30,7 @@ include::res/checkstyle-plugin.xml[]
 ----
 
 This configuration uses the
-https://maven.apache.org/plugins-archives/maven-checkstyle-plugin-2.14/config/sun_checks.html">sun_checks.xml]
+https://maven.apache.org/plugins-archives/maven-checkstyle-plugin-2.14/config/sun_checks.html[sun_checks.xml]
 checkstyle rules by default. In order to specify custom checkstyle
 rules a
 `configLocation`
