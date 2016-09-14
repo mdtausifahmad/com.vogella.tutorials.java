@@ -13,9 +13,9 @@
 === Create view with bar chart
 		Change the code of the view to the following:
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/bar/View.java[]
+[source,text]
+----
+include::res/bar/View.java[]
 ----
 		
 		 Run it and see that it is working.

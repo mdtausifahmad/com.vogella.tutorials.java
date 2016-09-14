@@ -10,9 +10,9 @@
 		 The runtime has several method which relates to the memory. The
 			following code example demonstrate its usage.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/runtimeinfo/PerformanceTest.java" />
+[source,text]
+----
+include::res/runtimeinfo/PerformanceTest.java" />
 			</programlisting>
 		
 	</section>
@@ -21,9 +21,9 @@
 		 Use System.currentTimeMillis() to get the start time and the
 			end time and calculate the difference.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/runtimeinfo/TimeTest1.java" />
+[source,text]
+----
+include::res/runtimeinfo/TimeTest1.java" />
 			</programlisting>
 		
 	</section>

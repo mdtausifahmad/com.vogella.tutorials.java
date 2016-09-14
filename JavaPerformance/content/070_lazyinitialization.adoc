@@ -21,9 +21,9 @@ include::res/lazy/MyField.java[]
 			access is always synchronized in case on read access this variant is
 			slow.
 		
-			<programlisting>
-				<xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-					parse="text" href="../examples/lazy/SynchronizedTest.java" />
+[source,text]
+----
+include::res/lazy/SynchronizedTest.java" />
 			</programlisting>
 		
 	</section>

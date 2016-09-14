@@ -10,7 +10,7 @@
 		Create a Java class called
 		_Server_
 		with one String attribute called
-		<property>url</property>
+		`url`
 		.
 	
 	
@@ -84,7 +84,7 @@ include::res/example/Main.java[]
 		Use Eclipse to create a
 		`toString`
 		method based on the
-		<property>url</property>
+		`url`
 		parameter and re-run your program again.
 	
 
