@@ -47,8 +47,7 @@ include::res/manifest/MANIFEST.MF[]
 image::eclipse_createjar10.png[]
 			</imageobject>
 			<textobject>
-				<phrase>Create JAR file with the Eclipse export wizard</phrase>
-			</textobject>
+				<phrase>Create JAR file with the Eclipse export wizard]
 		</mediaobject>
 	
 

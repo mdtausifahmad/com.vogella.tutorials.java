@@ -86,7 +86,7 @@
 		
 			The following lists the Log Levels in descending order:
 			
-				<itemizedlist>
+				
 					*		SEVERE (highest)
 		
 					*		WARNING
@@ -154,7 +154,7 @@
 			examples.
 		
 		
-			<itemizedlist>
+			
 				*	
 						ConsoleHandler: Write the log message to console
 					
@@ -178,7 +178,7 @@
 			Each handler's output can be configured with a formatter
 		
 		Available formatter
-		<itemizedlist>
+		
 			*
 					SimpleFormatter: Generate all messages as text
 				

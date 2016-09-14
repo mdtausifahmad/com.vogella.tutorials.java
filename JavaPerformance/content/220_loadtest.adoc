@@ -6,7 +6,7 @@
 		measure its behavior.
 	
 		Popular tools for load testing are:
-		<itemizedlist>
+		
 			<listitem>Apache JMeter - See
 					http://jakarta.apache.org/jmeter/"> http://jakarta.apache.org/jmeter/]
 				

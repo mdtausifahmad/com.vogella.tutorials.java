@@ -14,7 +14,7 @@
 		or as spring beans.
 	
 		The Spring core container:
-		<itemizedlist>
+		
 			*handles the configuration, generally based on
 					annotations or on an XML file (XMLBeanFactory)
 
