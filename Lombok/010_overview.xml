@@ -9,10 +9,5 @@
 ----
     By simply adding the `@data` annotation you get all this for free:
     
-        <mediaobject>
-            <imageobject>
-                <imagedata fileref="images/data-todo.png[]
-            </imageobject>
-        </mediaobject>
-    
+image::data-todo.png[]    
 
