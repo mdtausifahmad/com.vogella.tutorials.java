@@ -1,13 +1,13 @@
 [[resources_mockito]]
 == Mockito resources
 
-http://site.mockito.org - Mockito home page
+http://site.mockito.org[Mockito home page]
 
-https://github.com/mockito/mockito- Mockito project hosting page
+https://github.com/mockito/mockito[Mockito project hosting page]
 
-https://github.com/mockito/mockito/blob/master/doc/release-notes/official.md - Mockito release notes
+https://github.com/mockito/mockito/blob/master/doc/release-notes/official.md[Mockito release notes]
 
-http://martinfowler.com/articles/mocksArentStubs.html Martin Fowler about Mocks, Stubs etc.
+http://martinfowler.com/articles/mocksArentStubs.html[Martin Fowler about Mocks, Stubs etc.]
 
-http://chiuki.github.io/advanced-android-espresso/ Chiu-Ki Chan Advanced Android Espresso presentation
+http://chiuki.github.io/advanced-android-espresso/[Chiu-Ki Chan Advanced Android Espresso presentation]
 
