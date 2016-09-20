@@ -3,9 +3,7 @@
 (((Java libraries)))
 [[javalibrary">
 === What is a Java library?
-		<indexterm>
-			<primary>Java libary</primary>
-		</indexterm>
+(((Java libary)))
 		
 			A Java library contains code which you can access and use in your Java project. The deployment format of a Java
 			library is a JAR file.
@@ -13,9 +11,7 @@
 
 [[jarfiles_definition">
 === What is a JAR file?
-		<indexterm>
-			<primary>JAR files</primary>
-		</indexterm>
+(((JAR files)))
 		
 			A
 			JAR

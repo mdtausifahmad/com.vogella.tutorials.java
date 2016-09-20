@@ -2,9 +2,7 @@
 == Java Collections
 [[javacollections1">
 === What are collections
-		<indexterm>
-			<primary>Java Collections</primary>
-		</indexterm>
+(((Java Collections)))
 		
 			The Java language supports arrays to store several objects. An array is
 			initialized with an predefined size during

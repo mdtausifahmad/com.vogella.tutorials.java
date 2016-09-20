@@ -2,9 +2,7 @@
 == List implementations
 [[javacollections_lists">
 === The List interface
-		<indexterm>
-			<primary>List</primary>
-		</indexterm>
+(((List)))
 
 		
 			The
@@ -17,12 +15,8 @@
 
 [[javacollections_arraylist">
 === ArrayList and LinkedList as implementations
-		<indexterm>
-			<primary>ArrayList</primary>
-		</indexterm>
-		<indexterm>
-			<primary>LinkedList</primary>
-		</indexterm>
+(((ArrayList)))
+(((LinkedList)))
 		
 			`ArrayList`
 			is an implementation of this interface and allow that elements are

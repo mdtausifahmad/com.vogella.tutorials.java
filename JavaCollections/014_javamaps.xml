@@ -2,12 +2,8 @@
 == Maps implementations
 [[map_hashmap">
 === Map and HashMap
-		<indexterm>
-			<primary>HashMap</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Map</primary>
-		</indexterm>
+(((HashMap)))
+(((Map)))
 		
 			The
 			`Map`

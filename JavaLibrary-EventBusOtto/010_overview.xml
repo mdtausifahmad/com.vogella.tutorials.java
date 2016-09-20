@@ -90,11 +90,8 @@ include::res/snippets/CreateBus.java[]
 
 [[ottoeventbus_register events">
 === How to register and unregister for events?
-		<indexterm>
-			<primary>@Subcribe</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Otto</primary>
+(((@Subcribe)))
+(((Otto</primary>
 			<secondary>@Subcribe</secondary>
 		</indexterm>
 
@@ -147,11 +144,8 @@ include::res/snippets/Send.java[]
 
 [[ottoeventbus_newcomponent">
 === How can new components receive the last event?
-		<indexterm>
-			<primary>@Produce</primary>
-		</indexterm>
-		<indexterm>
-			<primary>Otto</primary>
+(((@Produce)))
+(((Otto</primary>
 			<secondary>@Produce</secondary>
 		</indexterm>
 
