@@ -1,11 +1,6 @@
 == Pattern and Matcher
 	
-For advanced regular expressions the
-`java.util.regex.Pattern`
-and
-`java.util.regex.Matcher`
-classes
-are used.
+For advanced regular expressions the `java.util.regex.Pattern` and `java.util.regex.Matcher` classes are used.
 	
 You first create a
 `Pattern`

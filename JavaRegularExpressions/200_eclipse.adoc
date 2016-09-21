@@ -8,27 +8,17 @@ shortcut to open the
 _Search_
 dialog.
 	
-Select the
-_File Search_
-tab and
-check the
-_Regular expression_
-flag before entering your regular expression. You can also specify the
-file type and the scope for the search and replace operation.
+Select the _File Search_ tab and check the _Regular expression_ flag before entering your regular expression.
+You can also specify the file type and the scope for the search and replace operation.
 	
-The
-following screenshots demonstrate how to search for the <![CDATA[]]]>
-XML tag with leading whitespace and how to remove the whitespace.
+The following screenshots demonstrate how to search for the <![CDATA[]]]> XML tag with leading whitespace and how to remove the whitespace.
 	
 image::regularexpressioneclipse10.png[Search and replace in Eclipse part 1,pdfwidth=40%}
 	
 image::regularexpressioneclipse20.png[Search and replace in Eclipse part 2,pdfwidth=40%]
 	
-The resulting dialog allows you to review the changes and remove
-elements which should not be replaced. If you press
-the
-`OK`
-button, the changes are applied.
+The resulting dialog allows you to review the changes and remove elements which should not be replaced. 
+If you press the `OK` button, the changes are applied.
 	
 image::regularexpressioneclipse30.png[Search and replace in Eclipse part 3,pdfwidth=40%]
 	

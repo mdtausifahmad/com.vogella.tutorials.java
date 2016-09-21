@@ -5,12 +5,7 @@ expressions. I hope you find similarities to your real-world problems.
 
 === Or
 
-Task: Write a regular expression which matches a text line
-if
-this
-text line contains either the word "Joe" or the word
-"Jim" or
-both.
+Task: Write a regular expression which matches a text line if this text line contains either the word "Joe" or the word "Jim" or both.
 
 Create a project
 `de.vogella.regex.eitheror`
@@ -128,25 +123,8 @@ include::res/javadoc/javadocmatcher.txt[]
 
 ==== Replacing the DocBook table statement with Asciidoc
 
-Assume you want to find the following:
+You can replace statements like the following:
 
-[source,console]
-----
-
-.Table Title
-|===
-
-            <title>Test methods on Solo
------
-
-You can use the following pattern for that: `\s+
-
-.Table Title
-|===
-(?s).*<title>(.*)` and replace it with `.Table $1\R|===\R`.
-
-
-You can also replace statements like the following:
 [source,console]
 ----
         <programlisting language="java">
@@ -155,5 +133,16 @@ You can also replace statements like the following:
 ----            
 
 
-Regex: `\s+<programlisting language="java">\R.\s+<xi:include xmlns:xi="http://www\.w3\.org/2001/XInclude" parse="text" href="\./examples/(.*).\s+/>\R.\s+</programlisting>`
-Target: `\R[source,java]\R-----\Rinclude::res/$1[]\R----
+Corresponding regex: 
+[source,console]
+----
+`\s+<programlisting language="java">\R.\s+<xi:include xmlns:xi="http://www\.w3\.org/2001/XInclude" parse="text" href="\./examples/(.*).\s+/>\R.\s+</programlisting>`
+----
+
+
+Target could your example be:
+[source,console]
+----
+`\R[source,java]\R-----\Rinclude::res/$1[]\R----
+----
+
