@@ -19,11 +19,7 @@ The following listing shows a class which uses annotations to describe its depen
 include::res/snippets/Example.java[]
 ----
 
-NOTE: Please note that this class uses the
-`new`
-operator for the user interface components. This implies that this
-part of the code is nothing you plan to replace via your tests and
-that you
-made the decision to have a hard coupling to the
-corresponding user interface toolkit.
+NOTE: Please note that this class uses the `new` operator for the user interface components. 
+This implies that this part of the code is nothing you plan to replace via your tests.
+In this case you made the decision to have a hard coupling to the corresponding user interface toolkit.
 

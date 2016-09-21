@@ -1,7 +1,6 @@
 [[hamcrestoverview]]
 == Purpose of the Hamcrest matcher framework 
 (((Hamcrest)))
-
 _Hamcrest_ is a framework for software tests. 
 Hamcrest allows checking for conditions in your code via existing matchers classes.
 It also allows you to define your custom matcher implementations.

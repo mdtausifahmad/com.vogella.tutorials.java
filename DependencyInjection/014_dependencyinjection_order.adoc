@@ -1,0 +1,14 @@
+[[dependencyinjection_order]]
+== Order in which dependency injection is performed on a class
+
+(((Dependency injection,Order)))
+According to JSR330 the injection is done in the following order:
+
+* constructor injection
+* field injection (no order in which such fields are filled)
+* method injection (no order in which such methods are called)
+
+You cannot assume that the methods or fields are called in the order of their declaration in the class.
+
+As fields and method parameters are injected after the constructor is called, you cannot use injected member variables in the constructor.
+

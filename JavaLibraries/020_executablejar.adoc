@@ -1,20 +1,11 @@
 [[jarfiles_executable]]
 == Executable JAR
+
 (((Java libraries,create)))
-An executable
-JAR
-means the end-user can run the Java application
-without explicitly
-specifying the Java class which should be started.
-This is done via a
-`MANIFEST.MF`
-file which tells the JVM among other things which class
-contains the
-`main()`
-method and the classpath.
+An executable JAR means the end-user can run the Java application without explicitly specifying the Java class which should be started.
+This is done via a `MANIFEST.MF` file which tells the JVM among other things which class contains the `main()` method and the classpath.
 	
-The following example shows one possible
-`MANIFEST.MF`
+The following example shows one possible `MANIFEST.MF`
 file.
 	
 [source,java]
@@ -29,9 +20,7 @@ an executable JAR file via the following command.
 
 `jar -cvmf MANIFEST.MF app1.jar *.class`
 	
-Eclipse provides an export wizard to create a JAR file which can be
-started via
-menu:File[Export > Java > JAR file]
+Eclipse provides an export wizard to create a JAR file which can be started via menu:File[Export > Java > JAR file].
 	
 image::eclipse_createjar10.png[Create JAR file with the Eclipse export wizard]
 

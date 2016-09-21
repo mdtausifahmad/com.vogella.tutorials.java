@@ -5,7 +5,6 @@
 === Available JUnit annotations
 (((JUnit,Annotations)))
 (((Test annotations from JUnit)))
-
 JUnit 4.x uses annotations to mark methods as test methods and to configure them.
 The following table gives an overview of the most important annotations in JUnit.
 
@@ -60,7 +59,6 @@ description, why the test is disabled.
 [[usingjunit_asserts]]
 === Assert statements
 (((JUnit,Assert statements)))
-		
 JUnit provides static methods to test for certain conditions via the `Assert`class. 
 These _assert statements_ typically start with `assert`.
 They allow you to specify the error message, the expected and the actual result.
@@ -106,7 +104,6 @@ The message parameter is optional.
 [[usingjunit_executionorder]]
 === Test execution order
 (((JUnit,Test execution order)))
-		
 JUnit assumes that all test methods can be executed in an arbitrary order. 
 Well-written test code should not assume any order, i.e., tests should not depend on other tests.
 		

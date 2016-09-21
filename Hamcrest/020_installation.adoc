@@ -1,8 +1,6 @@
 [[hamcrest_installation]]
 == Using Hamcrest matchers
 (((Hamcrest installation)))
-
-
 [[hamcrest_gradle]]
 === Defining a Hamcrest dependency for Gradle
 

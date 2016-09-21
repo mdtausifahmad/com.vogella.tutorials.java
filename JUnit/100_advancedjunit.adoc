@@ -3,7 +3,6 @@
 
 === Parameterized test
 (((JUnit,Parameterized test)))
-		
 JUnit allows you to use parameters in a tests class. 
 This class can contain one test method and this method is executed with the different parameters provided.
 		
@@ -52,7 +51,6 @@ A more flexible and easier to write approach is provided by the JUnitParams from
 [[junitadvanced_rules]]
 === JUnit Rules
 (((JUnit,Rules)))
-		
 Via JUnit rules you can add behavior to each tests in a test class.		
 You can annotate fields of type `TestRule` with the `@Rule` annotation.
 You can create objects which can be used and configured in your test methods. 
@@ -142,7 +140,6 @@ include::res/rule/UseCustomRule.java[]
 [[junitadvanced_categories]]
 === Categories
 (((JUnit,Categories)))
-		
 It is possible to define categories of tests and include or exclude them based on annotations. 
 The following example is based on the https://github.com/junit-team/junit/blob/master/doc/ReleaseNotes4.8.md[JUnit 4.8 release notes].
 

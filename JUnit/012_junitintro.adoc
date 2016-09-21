@@ -3,9 +3,9 @@
 
 [[unittesting_junit]]
 === The JUnit framework
+
 (((JUnit framework)))
 (((JUnit,@Test)))
-
 _JUnit_ in version 4.x is a test framework which uses annotations to identify methods that specify a test.
 The main websites for JUnit are the JUnit homepage (http://junit.org/) and the Github project page (https://github.com/junit-team/junit).
 
@@ -38,7 +38,6 @@ include::res/example/test.java[]
 [[junit_namingconventions]]
 === JUnit naming conventions
 (((Naming conventions for test methods)))
-
 There are several potential naming conventions for JUnit tests.
 A widely-used solution is to add the suffix "-test" to the names of the test classes and create them in a new package "test".
 
@@ -61,7 +60,7 @@ The Maven build system (via its surfire plug-in) automatically includes such cla
 === JUnit test suites
 (((JUnit,Test suite)))
 		
-If you have several test classes, you can combine them into a _test suite_. 
+If you have several test classes, you can combine them into a test suite.
 Running a test suite executes all test classes in that suite in the specified order.
 A test suite can also contain other test suites. 
 		

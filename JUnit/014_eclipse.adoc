@@ -51,7 +51,6 @@ image::junitcopyfailurelist10.png[Copy failed tests into clipboard]
 [[usingjunit_staticimports]]
 === JUnit static imports
 (((JUnit,Static imports in Eclipse)))
-		
 Static import is a feature that allows fields and methods defined in a class as `public static` to be used without specifying the class in which the field is defined.
 		
 		
@@ -74,7 +73,6 @@ image::junittestsuite10.png[Create a test suite]
 [[usingjunit_execption]]
 === Testing exception
 (((JUnit,Exceptions)))
-		
 The `@Test (expected = Exception.class)` annotation is limited as it can only test for one exception. 
 To testexceptions, you can use the following testpattern.
 
@@ -87,7 +85,6 @@ include::res/example/TestException.java[]
 === JUnit Plug-in Test
 (((JUnit Plug-in Test)))
 (((Plug-in Test)))
-
 JUnit Plug-in tests are used to write unit tests for your plug-ins.
 These tests are executed by a special test runner that launches another Eclipse instance in a separate VM. 
 The test methods are executed within that instance.

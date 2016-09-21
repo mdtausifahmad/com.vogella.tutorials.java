@@ -1,32 +1,25 @@
 [[jarfiles]]
 == Defining and using Java libraries
-(((Java libraries)))
+
+
 [[javalibrary]]
 === What is a Java library?
-(((Java libary)))
-A Java library contains code which you can access and use in your Java project. The deployment format of a Java
-library is a JAR file.
+
+(((Java libraries)))
+(((Java library)))
+A Java library contains code which you can access and use in your Java project. 
+The deployment format of a Java library is a JAR file.
+		
 
 [[jarfiles_definition]]
 === What is a JAR file?
+
 (((JAR files)))
 A JAR file is a Java archive based on the pkzip file format. 
 JAR files are the deployment format for Java. 
 A JAR can contain Java classes and other resources (icons, property files, etc.) and can be executable.
 		
-You can
-distribute your program in a jar file or you can use
-existing java
-code via jars by putting them into your
-classpath.
+You can distribute your program in a jar file or you can use existing java code via jars by putting them into your classpath.
 
-[[jarfiles_library]]
-=== Using Java libraries
-		
-If you add a
-JAR
-file to your classpath, you can use its classes
-in
-your Java
-application.
+If you add a JAR file to your classpath, you can use its classes in  your Java application.
 

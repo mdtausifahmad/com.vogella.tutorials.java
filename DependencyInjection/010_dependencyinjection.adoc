@@ -5,12 +5,12 @@
 
 (((Dependency injection,Concept)))
 Dependency injection is a concept valid for any programming language.
-The general concept behind dependency injection is called _Inversion of Control_. 
+The general concept behind dependency injection is called Inversion of Control. 
 According to this concept a class should not configure its dependencies statically but should be configured from the outside.
 	
-A Java class has a dependency on another class if it uses an instance of this class. 
-We call this a _class dependency_. 
-For example. a class which accesses a logger service has a dependency on this service class.
+A Java class has a dependency on another class, if it uses an instance of this class. 
+We call this a _class dependency. 
+For example, a class which accesses a logger service has a dependency on this service class.
 	
 Ideally Java classes should be as independent as possible from other Java classes. 
 This increases the possibility of reusing these classes and to be able to test them independently from other classes.
@@ -25,6 +25,7 @@ include::res/snippets/MyClass.java[]
 	
 NOTE: Please note that this class is just a normal Java class, there is nothing special about it, except that it avoids
 direct object creation.
+
 (((Dependency container)))
 A framework class, usually called the _dependency container_, could analyze the dependencies of this class. 
 With this analysis it is able to create an instance of the class and inject the objects into the defined dependencies, via Java reflection.
