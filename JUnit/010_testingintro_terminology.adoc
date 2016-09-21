@@ -21,7 +21,6 @@ The test would validate if the method behaves correctly with this input.
 
 [[junit_intro]]
 === Unit tests and unit testing
-
 (((Unit test)))
 		
 A _unit test_ is a piece of code written by a developer that executes a specific functionality in the code to be tested and asserts a certain behavior or state.
