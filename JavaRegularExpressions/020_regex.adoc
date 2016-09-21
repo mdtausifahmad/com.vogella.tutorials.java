@@ -1,20 +1,11 @@
 == Rules of writing regular expressions
 
-The following description is an overview of available meta
-characters
-which can
-be used in regular expressions. This
-chapter is
-supposed to
-be
-a
-references for the different
-regex
-elements.
+The following description is an overview of available meta characters which can be used in regular expressions. 
+This chapter is supposed to be a references for the different regex elements.
 
 
 === Common matching symbols
-
+[cols="1,3"]
 |===
 |Regular Expression |Description
 
@@ -36,22 +27,14 @@ either v
 or z.
 
 |`[^abc]`
-|When a caret appears as the first character inside square
-brackets,
-it
-negates the pattern. This pattern
-matches any
-character
-except
-a or b
-or c.
+|
+When a caret appears as the first character inside square brackets, it negates the pattern. 
+This pattern matches any character except a or b or c.
 
 |`[a-d1-7]`
-|Ranges: matches a letter between a and d and figures from 1
-to 7,
-but not d1.
+|Ranges: matches a letter between a and d and figures from 1 to 7, but not d1.
 
-|`X|Z`
+|`X\|Z`
 |Finds X or Z.
 
 |`XZ`
