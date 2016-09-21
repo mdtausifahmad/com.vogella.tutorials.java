@@ -38,8 +38,7 @@ include::res/lambda/LambdaTest.java[]
 
 You can use method references in a lambda expression. Method
 reference define the method to be called via
-`CalledFrom::method`
-. CalledFrom can be
+`CalledFrom::method`. CalledFrom can be
 * instance::instanceMethod
 * SomeClass::staticMethod
 * SomeClass::instanceMethod

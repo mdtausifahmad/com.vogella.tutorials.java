@@ -59,8 +59,7 @@ regular expressions with strings. See the comment for the purpose.
 
 If you want to test these examples, create for
 the Java project
-`de.vogella.regex.string`
-.
+`de.vogella.regex.string`.
 
 [source,java]
 ----

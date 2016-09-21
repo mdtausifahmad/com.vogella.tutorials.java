@@ -121,8 +121,7 @@ character.
 |Look for the
 `String`
 "Test" in String
-`str`
-.
+`str`.
 Returns the index of the first
 occurrence of the specified
 string.

@@ -55,8 +55,7 @@ example, all graphical views of an application might
 be placed in
 the
 same package called
-`com.vogella.webapplication.views`
-.
+`com.vogella.webapplication.views`.
 
 It is
 common practice to use the
@@ -72,8 +71,7 @@ the
 Java
 packages of this company starts
 with
-`com.vogella`
-.
+`com.vogella`.
 
 Other main reason for the usage of packages is to avoid name
 collisions of classes.
@@ -93,8 +91,7 @@ Without packages, a programmer
 may
 create a Java class
 called
-`Test`
-.
+`Test`.
 Another programmer may create
 a class with the same name. With
 the
@@ -116,8 +113,7 @@ _fully qualified name_
 e.g,
 `xmlreader.Test`
 or
-`report.Test`
-.
+`report.Test`.
 
 [[javadef_inheritance]]
 === Inheritance
@@ -211,8 +207,7 @@ The most famous runtime exception is the NullPointerException, which
 occurs during runtime, when a method is invoked
 on an object, which
 actually is
-`null`
-.
+`null`.
 
 [source,java]
 ----

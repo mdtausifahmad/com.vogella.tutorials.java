@@ -62,6 +62,5 @@ The
 package offers improved support for
 concurrency compared to the direct
 usage of
-`Threads`
-. This package is described in the next section. 
+`Threads`. This package is described in the next section. 
 

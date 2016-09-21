@@ -10,8 +10,7 @@ cannot return a result to the caller.
 		
 In case you expect your threads to return a computed result you
 can use
-`java.util.concurrent.Callable`
-. The
+`java.util.concurrent.Callable`. The
 `Callable`
 object
 allows to return
@@ -29,8 +28,7 @@ object
 to an
 `Executor`
 the framework returns an object of type
-`java.util.concurrent.Future`
-.
+`java.util.concurrent.Future`.
 `Future`
 exposes methods allowing a client to monitor the progress of a task being executed by a different thread.
 Therefore a
@@ -43,8 +41,7 @@ and to
 retrieve the
 result from
 the
-`Callable`
-.
+`Callable`.
 		
 On the
 `Executor`

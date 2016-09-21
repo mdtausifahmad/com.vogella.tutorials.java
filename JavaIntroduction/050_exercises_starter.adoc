@@ -33,8 +33,7 @@ include::res/exercise01/PersontoString.java[]
 Create a new class called
 _Main_
 with a
-`public static void main(String[] args)`
-.
+`public static void main(String[] args)`.
 In this method create an instance of the
 `Person`
 class.

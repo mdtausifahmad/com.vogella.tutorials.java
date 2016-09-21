@@ -32,8 +32,7 @@ The following example demonstrates how to create a basic CompletableFuture.
 runs the task asynchronously on the default thread pool of Java.
 It has the option to supply your custom executor to
 define the
-`ThreadPool`
-.
+`ThreadPool`.
 	
 [source,java]
 ----

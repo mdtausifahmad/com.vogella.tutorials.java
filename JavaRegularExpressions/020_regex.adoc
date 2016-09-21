@@ -131,8 +131,7 @@ You can group parts of your regular expression. In your pattern
 you
 group
 elements with round brackets, e.g.,
-`()`
-.
+`()`.
 This allows you to
 assign a repetition operator to a complete group.
 
@@ -187,8 +186,7 @@ another
 string.
 
 Negative look ahead are defined via
-`(?!pattern)`
-. For example, the following will match "a" if "a" is not followed by
+`(?!pattern)`. For example, the following will match "a" if "a" is not followed by
 "b".
 
 [source,java]

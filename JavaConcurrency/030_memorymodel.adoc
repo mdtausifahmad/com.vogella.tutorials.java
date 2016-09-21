@@ -50,8 +50,7 @@ keyword. .
 Assume
 `i`
 is defined as
-`int`
-.
+`int`.
 The
 `i++`
 (increment)
