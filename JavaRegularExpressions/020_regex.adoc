@@ -5,7 +5,7 @@ This chapter is supposed to be a references for the different regex elements.
 
 
 === Common matching symbols
-[cols="1,3"]
+[cols="1,3",options="header"]
 |===
 |Regular Expression |Description
 

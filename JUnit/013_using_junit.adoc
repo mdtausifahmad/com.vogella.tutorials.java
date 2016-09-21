@@ -10,7 +10,7 @@ JUnit 4.x uses annotations to mark methods as test methods and to configure them
 The following table gives an overview of the most important annotations in JUnit.
 
 .Annotations
-[cols="1, 2"]
+[cols="1,2",options="header"]
 |===
 |Annotation |Description
 
