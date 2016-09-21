@@ -19,8 +19,7 @@ image::coverage-view.png[]
 Usually the analysis shows up when the java application is shut
 down,
 but with the
-_Dump Execution Data_
-button in the Coverage View's toolbar a dump of execution data can be
+btn:[Dump Execution Data] button in the Coverage View's toolbar a dump of execution data can be
 created.
 	
 image::execution-data-dump.png[]
