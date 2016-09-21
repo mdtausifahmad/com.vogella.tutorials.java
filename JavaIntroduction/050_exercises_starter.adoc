@@ -8,8 +8,7 @@ Create a new Java project called
 and a package with the same name.
 		
 Create a class called
-_Person_
-.
+_Person_.
 		
 Add three instance variables to it, one for storing the first
 name of the person, one for storing the last name
@@ -62,8 +61,7 @@ instance
 variables and to set them. These methods are called
 _setter_
 and
-_getter_
-.
+_getter_.
 		
 Getters should start with
 `get`
@@ -94,8 +92,7 @@ and use the setter method to change the last name.
 === Create an Address object
 		
 Create a new object called
-_Address_
-.
+_Address_.
 The
 `Address`
 should allow you to store the address of a person.

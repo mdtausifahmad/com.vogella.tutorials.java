@@ -10,8 +10,7 @@ at dependency injection from a Java point
 of view. The
 general concept
 behind dependency injection is called
-_Inversion of Control_
-. According to this concept a class should not configure its
+_Inversion of Control_. According to this concept a class should not configure its
 dependencies statically but should
 be
 configured from the
@@ -21,8 +20,7 @@ A Java class has a dependency on another class if it uses an
 instance
 of this
 class. We call this a
-_class dependency_
-. For example a class
+_class dependency_. For example a class
 which accesses a logger
 service has a
 dependency on

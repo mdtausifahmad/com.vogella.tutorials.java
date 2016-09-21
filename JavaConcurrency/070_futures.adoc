@@ -68,8 +68,7 @@ include::res/futures/CallableFutures.java[]
 		
 The code examples for this section are created in a Java project
 called
-_de.vogella.concurrency.callables_
-.
+_de.vogella.concurrency.callables_.
 		
 === Drawbacks with Futures and Callbacks
 		

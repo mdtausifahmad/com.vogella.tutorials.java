@@ -1,8 +1,7 @@
 == Deadlock
 	
 A concurrent application has the risk of a
-_deadlock_
-. A set of processes are deadlocked if all processes are waiting for
+_deadlock_. A set of processes are deadlocked if all processes are waiting for
 an
 event which another process in the same set has to cause.
 	

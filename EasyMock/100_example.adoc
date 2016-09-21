@@ -4,8 +4,7 @@
 === Create project and classes
 		
 Create a new Java Project called
-_com.vogella.testing.easymock.first_
-. Create the
+_com.vogella.testing.easymock.first_. Create the
 following
 classes.
 		

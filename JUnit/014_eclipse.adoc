@@ -47,8 +47,7 @@ menu:Run[Run Configurations...] menu.
 === Extracting the failed test and stacktraces
 		
 To get the list of failed test,	right click on the test result and select
-_Copy Failure List_
-. This copies the failed tests and there stack traces into the clipboard.
+_Copy Failure List_. This copies the failed tests and there stack traces into the clipboard.
 
 image::junitcopyfailurelist10.png[Copy failed tests into clipboard]
 		

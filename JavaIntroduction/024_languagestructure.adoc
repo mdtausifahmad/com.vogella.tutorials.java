@@ -22,8 +22,7 @@ _variables_
 the
 behavior associated to a class or object is implemented
 with
-_methods_
-.
+_methods_.
 
 A class is contained in a text file with the same name as
 the
@@ -46,8 +45,7 @@ describes how an object is created.
 === Package
 
 Java groups classes into functional
-_packages_
-.
+_packages_.
 
 Packages are typically used to group
 classes into logical
@@ -127,15 +125,13 @@ or
 A class can be derived from another class. In this case this
 class is
 called a
-_subclass_
-.
+_subclass_.
 Another common phrase is that
 _a class extends another class._
 
 The class
 from which the subclass is derived is called a
-_superclass_
-.
+_superclass_.
 
 Inheritance allows a class to inherit the behavior and data
 definitions of another class. 

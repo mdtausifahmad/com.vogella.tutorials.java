@@ -3,12 +3,10 @@
 === Project preparation
 		
 Create a new project called
-_com.vogella.junit.first_
-.
+_com.vogella.junit.first_.
 Create a new source
 folder
-_test_
-. For this
+_test_. For this
 right-click on your
 project,
 select

@@ -19,16 +19,14 @@ steermanship for Java. In 2006 Sun started to make Java available under the GNU 
 Public License (GPL). Oracle
 continues this project
 called
-_OpenJDK_
-.
+_OpenJDK_.
 		
 Over time new enhanced versions of Java have been
 released.
 The current
 version of Java is Java 1.8 which is also known
 as
-_Java 8_
-.
+_Java 8_.
 		
 Java is defined by a specification and consists of a programming language, a compiler, core libraries and a runtime
 (Java virtual machine)
@@ -51,8 +49,7 @@ _Java platform_
 is usually associated with the
 _Java virtual machine_
 and the
-_Java core libraries_
-.
+_Java core libraries_.
 		
 The Java language was designed with the following properties:
 
@@ -132,8 +129,7 @@ as well as for Windows.
 image::jvmintroduction10.png[]
 		
 Java programs are compiled by the Java compiler into
-_bytecode_
-.
+_bytecode_.
 The Java virtual machine interprets this
 _bytecode_
 and
@@ -212,8 +208,7 @@ garbage
 collector cannot release the
 associated memory. Keeping unneeded
 object references are typically called
-_memory leaks_
-.
+_memory leaks_.
 		
 === Classpath
 		

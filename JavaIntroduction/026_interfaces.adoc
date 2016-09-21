@@ -141,12 +141,10 @@ include::res/class/A2.java[]
 === Functional interfaces
 		
 All interfaces that have only one method are called
-_functional interfaces_
-.
+_functional interfaces_.
 Functional interfaces have the advantage that they can be used
 together with
-_lambda expressions_
-. See
+_lambda expressions_. See
 <<lambdas_definition>>
 to learn more about lambdas, e.g., the type of lambdas is a
 functional interface.

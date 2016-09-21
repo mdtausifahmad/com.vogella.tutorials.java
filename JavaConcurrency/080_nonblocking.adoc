@@ -18,8 +18,7 @@ level (hardware).
 	
 For example this created a non-blocking counter which always
 increases. This example is contained in the project called
-_de.vogella.concurrency.nonblocking.counter_
-.
+_de.vogella.concurrency.nonblocking.counter_.
 	
 [source,java]
 ----
