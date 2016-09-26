@@ -1,0 +1,25 @@
+[[javacollections_methods]]
+== Useful collection methods
+(((Java Collections, methods)))
+The
+`java.util.Collections`
+class provides useful functionalities for working with collections.
+
+.Collections
+|===
+|Method |Description
+
+|Collections.copy(list, list)
+|Copy a collection to another
+
+|Collections.reverse(list)
+|Reverse the order of the list
+
+|Collections.shuffle(list)
+|Shuffle the list
+
+|Collections.sort(list)
+|Sort the list
+
+|===
+

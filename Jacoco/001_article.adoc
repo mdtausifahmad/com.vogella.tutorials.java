@@ -4,7 +4,7 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Simon Scholz, (c) 2009, 2016 vogella GmbH
+Simon Scholz (c) 2009, 2016 vogella GmbH
 Version 1.1, 29.08.2016
 :docinfodir: ../
 :vgwort: Jacoco

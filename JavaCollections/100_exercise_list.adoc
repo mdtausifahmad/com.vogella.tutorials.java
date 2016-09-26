@@ -1,0 +1,68 @@
+[[exercise_javacollections]]
+== Exercise: Use Java Collections
+	
+Create a new Java project called
+`com.vogella.java.collections`. 
+Also add a package with the same name.
+	
+Create a Java class called
+_Server_
+with one String attribute called
+`url`.
+	
+[source,java]
+----
+include::res/example/Server.java[]
+----
+	
+Create getter and setter methods for this attribute using code
+generation capabilities of Eclipse. For this select
+menu:Source[Generate Getters and Setters]
+from the Eclipse menu.
+	
+Create via Eclipse a constructor which gets a url as parameter. For
+this select
+menu:Source[Generate Constructor using Fields...]
+from the Eclipse menu.
+	
+Type
+`main`
+in the class body and use code completion (
+kbd:[Ctrl+Space]
+) to generate a
+`main`
+method.
+	
+image::collectioncodecompletion10.png[Code completion]
+	
+In your
+`main`
+ method create a
+`List`
+of type
+`ArrayList`
+and add 3 objects of type
+`Server`
+objects to this list.
+	
+[source,java]
+----
+include::res/example/Main.java[]
+----
+	
+Use code completion to create a
+_foreach_
+loop and write the
+`toString`
+method to the console. Use code completion based on
+`syso`
+for that.
+	
+Run your program.
+	
+Use Eclipse to create a
+`toString`
+method based on the
+`url`
+parameter and re-run your program again.
+

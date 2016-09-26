@@ -16,4 +16,5 @@ include 'Findbugs'
 include 'JavaIntroduction'
 include 'DependencyInjection'
 include 'EasyMock'
+include 'JavaCollections'
 

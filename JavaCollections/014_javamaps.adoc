@@ -1,0 +1,62 @@
+[[javacollections_maptypes]]
+== Maps implementations
+[[map_hashmap]]
+=== Map and HashMap
+(((HashMap)))
+(((Map)))
+The `Map`
+interface defines an object that maps keys to values. A map cannot
+contain
+duplicate keys; each key can map to at most
+one value. The
+`HashMap`
+class is an efficient implementation of the
+`Map`
+interface. The following code demonstrates its usage.
+
+[source,java]
+----
+include::res/map/MapTester.java[]
+----
+
+[[map_convert]]
+=== Convert keys in a Map to an array or a list
+
+You can convert your keys or values to an array or list. The
+following code demonstrates that.
+
+[source,java]
+----
+include::res/map/ConvertMapTester.java[]
+----
+
+[[map_processingmapselements]]
+=== Processing every element in the map
+		
+To process every element a map you can use the
+`forEach`
+method, which take a lambda as parameter.
+
+[[map_getordefault]]
+=== Getting the current value or a default for a map 
+		
+Java 8 introduces the
+`getOrDefault()`
+method, which allows to get the current value and if this is not
+found in the map to return a default value.
+
+[source,java]
+----
+include::res/map/MapOrDefault.java[]
+----
+		
+If you want to add a new entry automatically to a map if it is not
+present you can use the
+`computeIfAbsent`
+method to calculate a value and add it to the map.
+
+[source,java]
+----
+include::res/map/ComputeIfAbsent.java[]
+----
+
