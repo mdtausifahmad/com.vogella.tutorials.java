@@ -1,0 +1,23 @@
+= How to implement an ArrayList structure in Java - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2008, 2016 vogella GmbH
+Version 1.2, 29.09.2016
+:docinfodir: ../
+:vgwort: JavaDatastructureList
+
+[abstract]
+List implementations in Java.
+This article describes how to implement a list data structure in Java.
+The implementations in this articles are for demonstration and education purpose.
+They do not try to be as efficient as the standard libraries and they are not intended to be an replacement for the standard Java libraries structures.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_lists.adoc[]	
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

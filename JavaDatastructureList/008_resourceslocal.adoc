@@ -1,0 +1,5 @@
+[[resources]]
+== Links and Literature
+		
+http://www.cs.princeton.edu/introcs/home/[Java Book about Algorithms and Data Structures]
+		
