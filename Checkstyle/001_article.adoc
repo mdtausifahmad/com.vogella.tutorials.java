@@ -18,9 +18,9 @@ for Eclipse.
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::020_maven.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
 include::025_exercise_maven.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
-	
 	

@@ -1,21 +1,21 @@
-= AutoValue - Tutorial
+= Testing with FEST Assertions - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2009, 2016 vogella GmbH
+Lars Vogel, (c) 2013, 2016 vogella GmbH
 Version 0.2, 23.09.2016
 :docinfodir: ../
-:vgwort: AutoValue
+:vgwort: FEST
 
 [abstract]
-This tutorial contains notes about AutoValue.
-		
-include::../web/advertisement/afterTableOfContent.adoc[]					
+FEST tutorial.
+This tutorial describes the usage of the FEST framework for writing compact tests.
+
+include::../web/advertisement/afterTableOfContent.adoc[]	
 include::010_overview.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
-
 

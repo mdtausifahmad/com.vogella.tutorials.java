@@ -1,0 +1,6 @@
+[[festoverview]]
+== FEST has been superseded by AssertJ
+	
+FEST is currently not been actively maintained, AssertJ is a fork of FEST and can been seen as its successor. 
+See http://www.vogella.com/tutorials/AssertJ/article.html[AssertJ tutorial].
+

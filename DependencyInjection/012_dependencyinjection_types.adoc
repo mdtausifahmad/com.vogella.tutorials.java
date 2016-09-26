@@ -3,7 +3,6 @@
 (((Constructor injection)))
 (((Field injection)))
 (((Method injection)))
-
 Dependency injection can be performed on:
 
 * the constructor of the class (construction injection)

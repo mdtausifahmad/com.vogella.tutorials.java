@@ -1,7 +1,6 @@
 [[easymock_overview]]
 == EasyMock
 (((EasyMock)))
-	
 _EasyMock_
 is a mock framework which can be easily used
 in

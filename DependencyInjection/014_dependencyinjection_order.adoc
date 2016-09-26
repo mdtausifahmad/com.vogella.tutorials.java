@@ -1,7 +1,6 @@
 [[dependencyinjection_order]]
 == Order in which dependency injection is performed on a class
 (((Dependency injection,Order)))
-
 According to JSR330 the injection is done in the following order:
 
 * constructor injection

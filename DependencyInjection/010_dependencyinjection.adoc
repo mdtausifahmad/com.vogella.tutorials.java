@@ -1,7 +1,6 @@
 [[dependencyinjection]]
 == What is dependency injection?
 (((Dependency injection,Concept)))
-	
 Dependency injection is a concept which is not limited to
 Java.
 But we
@@ -52,7 +51,6 @@ include::res/snippets/MyClass.java[]
 NOTE: Please note that this class is just a normal Java class, there is nothing special about it, except that it avoids
 direct object creation.
 (((Dependency container)))
-	
 A framework class, usually called the
 _dependency container_
 , could analyze

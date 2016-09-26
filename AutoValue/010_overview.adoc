@@ -1,3 +1,4 @@
-= AutoValue
+== AutoValue
 
-See http://ryanharter.com/blog/2016/03/22/autovalue/
+See http://ryanharter.com/blog/2016/03/22/autovalue/.
+

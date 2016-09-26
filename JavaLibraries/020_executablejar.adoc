@@ -2,7 +2,6 @@
 [[jarfiles_executable">
 == Executable JAR
 (((Java libraries,create)))
-	
 		An executable
 		JAR
 		means the end-user can run the Java application

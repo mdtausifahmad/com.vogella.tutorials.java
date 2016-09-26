@@ -14,7 +14,7 @@ The main websites for JUnit are the JUnit homepage (http://junit.org/) and the G
 		
 A JUnit _test_ is a method contained in a class which is only used for testing. 
 This is called a _Test class_.
-To write a JUnit 4 test with the you annotate a method with the `@org.junit.Test` annotation.
+To write a JUnit 4 test you annotate a method with the `@org.junit.Test` annotation.
 		
 This method executes the code under test.		
 You use an _assert_ method, provided by JUnit or another assert framework, to check an expected result versus the actual result. 

@@ -4,7 +4,7 @@
 [[whataresoftwaretests]]
 === What are software tests?
 
-A software test is a piece of software, which executes another pierce of software. 
+A software test is a piece of software, which executes another piece of software. 
 It  validates if that code results in the expected state (state testing) or executes the expected sequence of events (behavior testing).
 		
 [[whytesting]]

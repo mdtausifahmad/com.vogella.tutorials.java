@@ -9,11 +9,9 @@ Checkstyle is a tool to help ensuring that your Java code adheres to a set of co
 http://eclipse-cs.sourceforge.net/update[http://eclipse-cs.sourceforge.net/update]
 Update site for the Eclipse Checkstyle Plugin.
 		
-		
 Please see
 http://www.vogella.com/tutorials/Eclipse/article.html#updatemanager[Eclipse Update Manager]
 for more information on how to use the update manager.
-		
 		
 If you developing with Eclipse, make sure to select the Sun
 Conventions (Eclipse) under

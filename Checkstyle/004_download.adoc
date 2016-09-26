@@ -1,6 +1,4 @@
 == Download
 
-http://www.vogella.com/tutorials/EclipseCodeAnalysis/download/checkstyletemplate.xml[http://www.vogella.com/tutorials/EclipseCodeAnalysis/download/checkstyletemplate.xml]
-
-Example Checkstyle settings for Eclipse.
+http://www.vogella.com/tutorials/EclipseCodeAnalysis/download/checkstyletemplate.xml[Example Checkstyle settings for Eclipse]
 

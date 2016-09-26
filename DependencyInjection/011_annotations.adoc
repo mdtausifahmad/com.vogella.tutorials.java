@@ -5,7 +5,6 @@
 (((JSR 330)))
 (((@Inject)))
 (((@Named)))
-
 Different approaches exist to describe the
 dependencies of a
 class. The most common approach is to use Java
