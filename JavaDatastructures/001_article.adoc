@@ -1,0 +1,27 @@
+= How to implement common datastructures (List, Stack, Map) in plain Java - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2008, 2016 vogella GmbH
+Version 1.3, 26.09.2016
+:docinfodir: ../
+:vgwort: JavaDatastructures
+
+[abstract]
+List, Map and Stack implementations in Java. 
+This article describes how to implement data structures (List Stack, Map) in Java.
+The implementations in this articles are for demonstration and education purpose.
+They do not try to be as efficient as the standard libraries and they are not intended to be an replacement for the standard libraries.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::020_list.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::030_map.adoc[]
+include::040_stack.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

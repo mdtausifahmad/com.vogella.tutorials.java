@@ -31,14 +31,14 @@ Version 0.3, 06.07.2016
   
   
 include::../web/advertisement/afterTableOfContent.adoc[]
-include::content/02_overview.adoc[]
-include::content/10_installation.adoc[]
+include::02_overview.adoc[]
+include::10_installation.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-include::content/20_createpdf.adoc[]
+include::20_createpdf.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
-include::content/30_formatting.adoc[]
+include::30_formatting.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
-include::content/40_readexisting.adoc[]
+include::40_readexisting.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

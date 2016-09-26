@@ -1,0 +1,34 @@
+[[stack]]
+== Stack
+
+The following example is contain in the project
+"de.vogella.datastructures.stack".
+The
+stack offers to put new object on the stack ( method push())
+and to
+get objects from the stack (method pop()). A stack returns the
+object
+according to last-in-first-out (LIFO), e.g. the object which was
+placed latest on the stack is returned first. Java provides a
+standard
+implementation of a stack in java.util.Stack.
+The following are two implementations of stacks, one based on
+arrays the other based on ArrayLists.
+
+[source,java]
+----
+include::res/stack/MyStackArray.java[]
+----
+
+[source,java]
+----
+include::res/stack/MyStackList.java[]
+----
+
+This is a small JUnit test for the data structure.
+
+[source,java]
+----
+include::res/stack/MyStackTest.java[]
+----
+

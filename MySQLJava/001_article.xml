@@ -41,13 +41,13 @@ Version 0.3, 29.08.2016
   
   
 include::../web/advertisement/afterTableOfContent.adoc[]
-include::content/010_jdbc.adoc[]
-include::content/030_mysql.adoc[]
+include::010_jdbc.adoc[]
+include::030_mysql.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-include::content/040_jdbcdriver.adoc[]
+include::040_jdbcdriver.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
-include::content/060_database.adoc[]
-include::content/100_javaconnection.adoc[]
+include::060_database.adoc[]
+include::100_javaconnection.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

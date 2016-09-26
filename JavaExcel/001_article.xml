@@ -37,10 +37,10 @@ Version 0.3, 29.08.2016
   
   
 include::../web/advertisement/afterTableOfContent.adoc[]
-include::content/10_installation.adoc[]
-include::content/20_createexcel.adoc[]
+include::10_installation.adoc[]
+include::20_createexcel.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-include::content/30_readexcel.adoc[]
+include::30_readexcel.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

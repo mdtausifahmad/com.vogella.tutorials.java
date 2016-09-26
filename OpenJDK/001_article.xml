@@ -34,11 +34,11 @@ Version 0.3, 29.08.2016
   
   
 include::../web/advertisement/afterTableOfContent.adoc[]
-include::content/010_overview.adoc[]
-include::content/020_install.adoc[]
+include::010_overview.adoc[]
+include::020_install.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-include::content/040_clone.adoc[]
-include::content/060_compile.adoc[]
+include::040_clone.adoc[]
+include::060_compile.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

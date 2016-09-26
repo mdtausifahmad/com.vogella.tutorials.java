@@ -39,9 +39,9 @@
 
 
 include::../web/advertisement/afterTableOfContent.adoc[]
-include::content/10_preferencesintro.adoc[]
+include::10_preferencesintro.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-include::content/20_preferencesusage.adoc[]
+include::20_preferencesusage.adoc[]
 
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

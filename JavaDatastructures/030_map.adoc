@@ -1,0 +1,39 @@
+[[map]]
+== Map - Associative array
+
+The following example is contained in the project "de.vogella.datastructures.map".
+A map represents a data structure in which collections of
+unique key and collections of values are stored where each key is
+associated with one value. The operation of finding the value is
+called lookup.
+A standard array is a special case of a map where the key are
+the index number of the elements pointing to the object in the array.
+	
+The standard Java interfaces for maps is import java.util.Map.
+Standard implementations of Maps are for example java.util.HashMap or
+import java.util.concurrent.ConcurrentHashMap
+
+A simple map with the option to add, get, remove and get the
+size of the Map could be implemented like the following. Please note
+that this map is not very fast for large sets.
+This would be an entry.
+	
+[source,java]
+----
+include::res/map/MyEntry.java[]
+----
+	
+This is the map implementation based on MyEntry.
+	
+[source,java]
+----
+include::res/map/MyMap.java[]
+----
+	
+And a small test. 
+	
+[source,java]
+----
+include::res/map/MyMapTest.java[]
+----
+	
