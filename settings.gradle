@@ -17,4 +17,4 @@ include 'JavaIntroduction'
 include 'DependencyInjection'
 include 'EasyMock'
 include 'JavaCollections'
-
+include 'JavaConcurrency'

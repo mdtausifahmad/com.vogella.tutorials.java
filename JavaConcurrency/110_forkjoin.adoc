@@ -5,8 +5,8 @@ tasks, the fork-join framework. The fork-join framework allows you to
 distribute a certain task on several workers and then wait for the
 result.
 	
-For Java 6.0 you can download the package (jsr166y) from
-http://gee.cs.oswego.edu/dl/concurrency-interest/index.html - Download site
+For Java 6.0 you can download the package (jsr166y) from the
+http://gee.cs.oswego.edu/dl/concurrency-interest/index.html[Download site].
 	
 For testing create the Java project
 "de.vogella.performance.forkjoin".

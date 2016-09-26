@@ -23,7 +23,7 @@ manages its state but from the outside this class nor any attribute
 of
 this class can get changed.
 
- For all mutable fields, e.g. Arrays, that are passed from the
+For all mutable fields, e.g. Arrays, that are passed from the
 outside to the class during the construction phase, the class needs
 to
 make a defensive-copy of the elements to make sure that no other
