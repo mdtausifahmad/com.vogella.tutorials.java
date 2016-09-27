@@ -1,0 +1,20 @@
+[[proxy]]
+== Proxy
+
+You can define a proxy at startup via a start parameter. 
+	
+[source,text]
+----
+include::res/proxy/commandline.txt[]
+----
+
+In your code you can set a proxy via System.setProperty. For
+example if
+your proxy is called _proxy_ and runs on port "8080" the following
+code will set the proxy. 
+	
+[source,text]
+----
+include::res/proxy/proxycode.txt[]
+----
+

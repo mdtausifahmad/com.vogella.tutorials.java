@@ -23,7 +23,7 @@ Version 0.3, 06.07.2016
 			Version 0.5
 		</releaseinfo>
 		
-		<abstract id="abstract">
+[abstract]
 	=== Java and PDF with iText
 			 This article demonstrate how to create PDF files with Java and
 				the iText library. In this tutorial iText version 5.0.x is used

@@ -1,0 +1,29 @@
+= Java Networking - Using HttpURLConnection to download files from the Internet - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2008, 2016 vogella GmbH
+Version 1.4, 27.09.2016
+:docinfodir: ../
+:vgwort: JavaNetworking
+
+[abstract]
+Java Networking.
+This article describes how to use the java.net package to access the web resources. 
+The setting of a proxy is also described.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::020_readingwebpages.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::030_returncode.adoc[]
+include::040_mimetype.adoc[]
+include::050_usinghttpget.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::200_proxy.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

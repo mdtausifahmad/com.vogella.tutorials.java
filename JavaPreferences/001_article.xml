@@ -25,7 +25,7 @@
 		</releaseinfo>
 
 		
-		<abstract id="abstract">
+[abstract]
 	=== Using the preference API in Java
 			
 				This tutorial gives a introduction into the Java

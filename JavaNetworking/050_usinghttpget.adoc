@@ -1,0 +1,28 @@
+[[usinghttpget]]
+== Using Http get services
+
+Several websites offer services via Http get calls. For example
+your can send a get request to "http://tinyurl" or http://tr.im" and
+receive a short version of the Url you pass as parameter. 
+The following will demonstrate how to call the get service from
+"http://TinyUrl" or "http://tr.im" via Java.
+Create the Java project "de.vogella.web.get" and create the
+following classes which will call a getService and return the result.
+	
+[source,java]
+----
+include::res/get/TinyURL.java[]
+----
+	
+[source,java]
+----
+include::res/get/Trim.java[]
+----
+
+And a little test.
+	
+[source,java]
+----
+include::res/get/Test.java[]
+----
+

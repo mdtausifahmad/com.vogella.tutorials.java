@@ -34,7 +34,7 @@ Version 0.3, 06.07.2016
 			Version 2.3
 		</releaseinfo>
 		
-		<abstract id="abstract">
+[abstract]
 	=== JPA with Eclipselink
 			 This tutorial explains how to use EclipseLink, the reference
 				implementation for the Java Persistence API (JPA). The usage of

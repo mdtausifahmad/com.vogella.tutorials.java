@@ -15,7 +15,7 @@
 			<emphasis>Version 0.1</emphasis>
 		</releaseinfo>
 		
-		<abstract id="abstract">
+[abstract]
 	=== Lombok
 			
 				This article describes how to use Lombok for the creation of data/model objects.

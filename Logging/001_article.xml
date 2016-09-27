@@ -27,7 +27,7 @@
 		</releaseinfo>
 		
 
-		<abstract id="abstract">
+[abstract]
 	=== Java Logging
 			
 				This article describes how to use the Logging API in

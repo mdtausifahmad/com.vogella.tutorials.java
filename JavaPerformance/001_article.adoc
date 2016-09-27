@@ -24,7 +24,7 @@
 			Version 1.1
 		</releaseinfo>
 		
-		<abstract id="abstract">
+[abstract]
 	=== Abstract
 			This article will be a collection of Java performance
 				measurement pointer.

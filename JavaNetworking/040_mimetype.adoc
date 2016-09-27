@@ -1,0 +1,20 @@
+[[javanetwork_mime]]
+== Content Type / MIME Type
+
+The Internet media type (short MIME) which is also called
+Content-type define the type of the web resource. The MIME type is a
+two-part
+identifier for file formats on the Internet. For html
+page the
+content-type is "text/html".
+
+The
+following code will check for the return code of a URL and
+will get
+the content-type (MIME-Typ) for the web resource.
+
+[source,java]
+----
+include::res/ReadMimeType.java[]
+----
+
