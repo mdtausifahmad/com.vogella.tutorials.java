@@ -1,0 +1,12 @@
+[[introduction]]
+== Overview
+	
+JFreeChart is a free 100% Java chart library created by David Gilbert.
+JFreeChart makes it easy
+for developers to display professional quality
+charts in their
+applications. For details on JFreeChart please check
+the
+following link:
+http://www.jfree.org/jfreechart/.
+

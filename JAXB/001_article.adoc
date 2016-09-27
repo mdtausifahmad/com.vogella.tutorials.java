@@ -1,0 +1,26 @@
+= JAXB - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2008, 2016 vogella GmbH
+Version 1.7, 26.09.2016
+:docinfodir: ../
+:vgwort: JAXB
+
+[abstract]
+JAXB Tutorial.
+This tutorial give an introduction to Java Architecture for XML Binding (JAXB). 
+This tutorial is based on Java 6.0.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::10_overview.adoc[]
+include::12_prerequisition.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::30_jaxb.adoc[]
+include::40_tutorial.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

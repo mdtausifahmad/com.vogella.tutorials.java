@@ -1,0 +1,24 @@
+= JFreeChart - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2009, 2016 vogella GmbH
+Version 1.5, 26.09.2016
+:docinfodir: ../
+:vgwort: JFreeChart
+		
+[abstract]
+This article describes the usage of the Java library JFreeChart. 
+As example we create a pie chart.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::20_introduction.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::30_download.adoc[]
+include::40_piechart.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

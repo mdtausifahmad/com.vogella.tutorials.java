@@ -1,0 +1,8 @@
+[[resources]]
+== Links and Literature
+
+[[resources_jfreechart]]
+=== JFreeChart Resources
+		
+http://www.jfree.org/jfreechart/[JFreeChart Homepage]
+

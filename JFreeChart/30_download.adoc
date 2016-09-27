@@ -1,0 +1,5 @@
+[[download]]
+== Download JFreeChart
+	
+Download the JFreeChart distribution from the website http://www.jfree.org/jfreechart/.	
+

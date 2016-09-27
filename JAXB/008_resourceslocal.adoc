@@ -1,0 +1,12 @@
+[[resources]]
+== Links and Literature
+	
+[[resources_xml]]
+=== Links and Literature
+		
+http://www.vogella.com/tutorials/RSSFeed/article.html[Read and write RSS feeds via Java (Stax)]
+		
+http://java.sun.com/developer/technicalArticles/WebServices/jaxb/[JAXB Overview]
+		
+http://www.ibm.com/developerworks/library/x-javaxpathapi.html[The Java XPath API (by Elliotte Rusty Harold)]
+
