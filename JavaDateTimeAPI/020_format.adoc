@@ -1,0 +1,23 @@
+[[formatdata]]
+== Parsing and formatting Dates and Times
+	
+To Date and Time classes of Java 8 provide a
+`parse`
+method for parsing a String that contains date and time information.
+They also provide the
+`format`
+method for formating Date and Time objects for output.
+	
+In both cases you create an instance of
+`DateTimeFormatter`
+which is passed to the
+`parse`
+or
+`format`
+method.
+	
+[source,java]
+----
+include::res/format/ExampleFormatter.java[]
+----
+
