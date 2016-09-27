@@ -1,0 +1,40 @@
+[[jvmsettings]]
+== Memory settings for Java virtual machine
+
+The JVM runs with fixed available memory. Once this memory is
+exceeded
+you will receive "java.lang.OutOfMemoryError". The JVM tries to
+make an
+intelligent choice about the available memory at startup (see
+http://java.sun.com/javase/6/docs/technotes/tools/windows/java.html[Java settings]
+for details) but you can overwrite the default with the following
+settings.
+
+To turn performance you can use certain parameters in the JVM.
+
+.JVM parameters
+|===
+
+|Parameter |Description
+
+|-Xms1024m
+|Set the minimum available memory for the JVM to 1024 Megabyte
+
+|-Xmx1800m
+|Set the maximum available memory for the JVM to 1800 Megabyte. 
+The Java application cannot use more heap memory then defined via this parameter. 
+
+|===
+
+TIP: Increase the values in these parameters to avoid the following
+error: "Exception in thread java.lang.OutOfMemoryError: Java heap
+space". Note that you cannot allocate more memory then you have
+physically available.
+
+If you start your Java program from the command line use for
+example the following setting: java -Xmx1024m YourProgram. 
+In Eclipse
+your can use the VM arguments in the run configuration.
+
+image::vmsettings10.gif[]
+

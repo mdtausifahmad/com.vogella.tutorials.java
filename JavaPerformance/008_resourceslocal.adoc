@@ -1,0 +1,12 @@
+[[resources]]
+== Links and Literature
+
+[[resources_performance]]
+=== Performance
+		
+https://www.ibm.com/developerworks/java/library/j-jtp09196/[Java theory and practice: Instrumenting applications with JMX]
+		
+http://www.ibm.com/developerworks/java/library/j-jtp11137.html[Java theory and practice: Stick a fork in it, Part 1]
+		
+http://www.ibm.com/developerworks/java/library/j-jtp03048.html[Java theory and practice: Stick a fork in it, Part 2]
+

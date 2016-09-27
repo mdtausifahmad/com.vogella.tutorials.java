@@ -1,0 +1,30 @@
+[[lazyinit]]
+== Lazy initialization
+
+In case a variable is very expensive to create then sometimes it
+is good to defer the creation of this variable until the variable is
+needed. This is called lazy initialization.
+In general lazy initialization should only be used if a analysis
+has proven that this is really a very expensive operations. This is
+based on the fact that lazy initialization makes it more difficult to
+read the code.
+I use the project "de.vogella.performance.lazyinitialization" for
+the examples in this chapter. And a have a own field defined."
+
+[source,java]
+----
+include::res/lazy/MyField.java[]
+----
+
+[[lazyinit_synchronized]]
+=== Concurrency - Overview
+
+The simplest way is to use a synchronized block. As then field
+access is always synchronized in case on read access this variant is
+slow.
+
+[source,java]
+----
+include::res/lazy/SynchronizedTest.java[]
+----
+

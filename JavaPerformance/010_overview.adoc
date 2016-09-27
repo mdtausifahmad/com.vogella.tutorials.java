@@ -12,3 +12,4 @@ TIP: A average CPU can do approximately 1 billion (10^9) operations per second.
 	
 This article does not cover concurrency. 
 If you want to read about concurrency / multithreading please see http://www.vogella.com/tutorials/JavaConcurrency/article.html[Concurrency / Multithreading in Java]
+

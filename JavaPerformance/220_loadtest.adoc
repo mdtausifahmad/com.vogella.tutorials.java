@@ -1,0 +1,14 @@
+[[loadtest]]
+== Load Test
+
+A load test tool is a tool which emulates user and system
+actions on an application to measure the reaction and behavior of this
+system. A load test tool is commonly used for a web application to
+measure its behavior.
+
+Popular tools for load testing are:
+
+* Apache JMeter - See http://jakarta.apache.org/jmeter/
+* Eclipse TPTP testing tool - Seehttp://www.eclipse.org/tptp/
+* Grinder - See http://grinder.sourceforge.net/
+

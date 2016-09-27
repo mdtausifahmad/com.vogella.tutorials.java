@@ -1,0 +1,12 @@
+[[garbagecollector]]
+== Garbage Collector
+
+The JVM automatically re-collects the memory which is not used
+any more. The memory for objects which are not referred any more will
+be automatically released by the garbage collector.
+To see then the garbage collector starts working add the
+command line argument "-verbose:gc" to your virtual machine.
+
+An in-depth article about the garbage collector can be found here:
+http://java.sun.com/docs/hotspot/gc5.0/gc_tuning_5.html[Tuning Garbage Collection with the 5.0 Java Virtual Machine]
+

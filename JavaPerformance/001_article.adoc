@@ -1,41 +1,21 @@
-<?xml version="1.0"?>
-<article>
-	<articleinfo>
-=== Java Performance - Memory and Runtime Analysis - Tutorial
-		
-		<author>
-			<firstname>Lars</firstname>
-			<surname>Vogel</surname>
-		</author>
-		<copyright>
-			<year>2008</year>
-			<year>2009</year>
-			<year>2010</year>
-			<year>2011</year>
-			<year>2012</year>
-			<year>2013</year>
-			<year>2014</year>
-			<holder>vogella GmbH</holder>
-		</copyright>
-		<pubdate>
-			01.08.2014
-		</pubdate>
-		<releaseinfo>
-			Version 1.1
-		</releaseinfo>
+= Java Performance - Memory and Runtime Analysis - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2008, 2016 vogella GmbH
+Version 1.2, 26.079.2016
+:docinfodir: ../
+:vgwort: JavaPerformance
 		
 [abstract]
-	=== Abstract
-			This article will be a collection of Java performance
-				measurement pointer.
+This article will be a collection of Java performance measurement pointer.
+It describes how memory works in general and how Java use the
+heap and the stack. The article describes how to set the available
+memory for Java. It discusses then how to get the runtime and the
+memory consumption of a Java application.
 			
-			 It describes how memory works in general and how Java use the
-				heap and the stack. The article describes how to set the available
-				memory for Java. It discusses then how to get the runtime and the
-				memory consumption of a Java application.
-			
-		</abstract>
-	</articleinfo>
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::012_memory.adoc[]
@@ -49,11 +29,7 @@ include::100_jit.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 include::200_profiler.adoc[]
 include::220_loadtest.adoc[]
-
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
-
-
-
 
