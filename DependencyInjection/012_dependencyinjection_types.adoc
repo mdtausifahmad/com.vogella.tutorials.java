@@ -1,5 +1,6 @@
 [[dependencyinjection_places]]
-== Where can objects be injected into a class according to JSR330?
+=== Where can objects be injected into a class according to JSR330?
+
 (((Constructor injection)))
 (((Field injection)))
 (((Method injection)))
@@ -26,7 +27,26 @@ field in the constructor
 compiler or the application complains at runtime about
 them
 
-* Static methods are called only once after the first instance of
-the
-class was created
+* Static methods are called only once after the first instance of the class was created
+
+
+[[dependencyinjection_order]]
+=== Order in which dependency injection is performed on a class
+(((Dependency injection,Order)))
+According to JSR330 the injection is done in the following order:
+
+* constructor injection
+* field injection
+* method injection
+
+The order in which the methods or fields annotated with
+`@Inject`
+are called is not defined by JSR330. You cannot assume that the
+methods or fields
+are called in the order of their declaration in the class.
+
+NOTE: As fields and method parameters are injected after the
+constructor is
+called, you cannot use injected member variables in the
+constructor.
 
