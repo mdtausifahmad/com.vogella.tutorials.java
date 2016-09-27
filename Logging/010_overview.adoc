@@ -1,0 +1,188 @@
+[[overview]]
+== Overview
+
+[[overview_logger]]
+=== Logging
+
+_Logging_
+is the process of writing log messages during the execution
+of a
+program to a central place. This logging allows you to
+report and
+persist error and warning messages as well as info
+messages (e.g.,
+runtime statistics) so that the messages can
+later be retrieved and
+analyzed.
+
+The object which performs the logging in applications
+is typically just called _Logger_.
+
+[[overview_loggerjava]]
+=== Logging in Java
+
+Java contains the
+_Java Logging API_.
+This
+logging API allows you to
+configure which
+message types are
+written. Individual classes can use this logger to write messages to
+the configured log files.
+
+The
+`java.util.logging`
+package provides the logging
+capabilities
+via the
+`Logger`
+class.
+
+[[overview_create]]
+=== Create a logger
+
+To create a logger in your Java code,
+you can use the
+following
+snippet.
+
+[source,java]
+----
+include::res/createLogger.java[]
+----
+
+The
+`Logger`
+you create is actually a hierarchy of Loggers, and a `.` (dot) in the
+hierarchy indicates a level in the hierarchy. So if you get a Logger
+for the
+`com.example`
+key, this Logger is a child of the
+`com`
+Logger and the
+`com`
+Logger is child of the Logger for the empty `String`. You can
+configure
+the main logger and this affects all its children.
+
+[[overview_level]]
+=== Level
+
+The log levels define the severity of a message. The
+`Level`
+class
+is used to define which messages should be written to
+the log.
+
+The following lists the Log Levels in descending order:
+
+* SEVERE (highest)
+* WARNING
+* INFO
+* CONFIG
+* FINE
+* FINER
+* FINEST
+
+In addition to that you also have the levels
+`OFF`
+and
+`ALL`
+to turn the logging off or to log everything.
+
+For example, the following code sets the logger to the
+`info`
+level,
+which means all messages with severe, warning and info will
+be
+logged.
+
+[source,java]
+----
+include::res/setLogLevel.java[]
+----
+
+[[general_handler]]
+=== Handler
+
+Each logger can have access to several handlers.
+
+The handler receives the log message from the logger and
+exports
+it to a certain target.
+
+A handler can be turned off with the
+`setLevel(Level.OFF)`
+method
+and
+turned on
+with
+`setLevel()`
+method.
+
+You have several standard handlers.
+The following list gives
+some
+examples.
+
+* ConsoleHandler: Write the log message to console
+* FileHandler: Writes the log message to file
+
+Log levels
+`INFO`
+and higher will be automatically written to the console.
+
+[[general_formatter]]
+=== Formatter
+
+Each handler's output can be configured with a formatter
+
+Available formatter
+
+* SimpleFormatter: Generate all messages as text
+* XMLFormatter: Generates XML output for the log messages
+
+You can also build your own formatter. The following is an
+example of a formatter which will create HTML output.
+
+[source,java]
+----
+include::res/MyHtmlFormatter.java[]
+----
+
+[[general_manager]]
+=== Log Manager
+
+The log manager is responsible for creating and managing the
+logger and the maintenance of the configuration.
+
+We could set the logging level for a package, or even a set
+of
+packages, by calling the
+`LogManager.setLevel(String name, Level level)`
+method. So, for example, we could set the
+logging level of all loggers
+to `Level.FINE` by
+making this call:
+
+[source,java]
+----
+include::res/setLogLevel2.java[]
+----
+
+[[chapter20s1a]]
+=== Best Practices
+
+It is common practice to use the fully qualified name of
+each
+class whose activity is being logged as a message
+category, because
+this allows developers to fine-tune log
+settings for each class.
+
+Using the fully qualified class name of your class as the
+name of
+your Logger is the approach recommended by the
+Logging API
+documentation.
+

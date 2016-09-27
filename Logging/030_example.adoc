@@ -1,0 +1,38 @@
+[[logexample]]
+== Example
+
+[[logexample_createLogger]]
+=== Create the logger
+
+This example is stored in the project called _com.vogella.logger_.
+
+Create your own formatter class.
+
+[source,java]
+----
+include::res/MyHtmlFormatter.java[]
+----
+
+Initialize the logger via the following code. 
+This Logger class uses the new HTML formatter you created.
+
+[source,java]
+----
+include::res/MyLogger.java[]
+----
+
+[[logexample_use]]
+=== Use the logger
+
+The following example class demonstrates how you can use your
+`MyLogger`
+class to create log messages.
+
+[source,java]
+----
+include::res/UseLogger.java[]
+----
+
+TIP: After you ran your program you need to _Refresh_ your project in Eclipse (or check the file system directly) to see
+the files in the _Package Explorer_ view.
+

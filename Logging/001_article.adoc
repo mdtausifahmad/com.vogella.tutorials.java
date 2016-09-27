@@ -1,0 +1,24 @@
+= Java Logging API - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2007, 2016 vogella GmbH
+Version 1.8, 26.09.2016
+:docinfodir: ../
+:vgwort: Logging
+
+[abstract]
+Java Logging.
+This article describes how to use the Logging API in Java programs. 
+It includes an example for creating an HTML logger.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::030_example.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
