@@ -1,0 +1,6 @@
+[[installation]]
+== Installation
+	
+Download the iText core binary from the webpage http://sourceforge.net/projects/itext/. 
+The download contains one jar which is required if you want to use iText.
+

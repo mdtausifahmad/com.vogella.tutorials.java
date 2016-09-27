@@ -1,0 +1,10 @@
+[[resources]]
+== Links and Literature
+	
+[[resources_pdf]]
+=== iText Resources
+		
+http://www.lowagie.com/iText[iText Homepage]
+		
+http://itextdocs.lowagie.com/tutorial/ Tutorial from iText homepage, lots of specific examples
+

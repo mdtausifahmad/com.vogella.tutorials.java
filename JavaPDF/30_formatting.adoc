@@ -1,0 +1,13 @@
+[[format]]
+== Formatting your output
+	
+Paragraph allows to set the alignment and the indentation. For
+this example create project "de.vogella.itext.position" similar to the
+previously created ones.
+Create the following class "PositionPdf.java".
+	
+[source,java]
+----
+include::res/format/PositionPdf.java[]
+----
+

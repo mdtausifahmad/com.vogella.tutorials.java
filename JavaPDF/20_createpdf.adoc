@@ -1,0 +1,32 @@
+[[createpdf]]
+== Create a PDF
+	
+Create a new Java project "de.vogella.itext.write" with the package
+"de.vogella.itext.write".
+Create a folder
+"lib" and put the iText library
+(jar file) into
+this
+folder.
+http://www.vogella.com/tutorials/Eclipse/article.html#classpath[Add the jar to your classpath].
+	
+Create the following class "FirstPdf.java" .
+I assume that the
+code is
+pretty much self-explaining. I tried
+to add lots of comments
+to make it
+easier to understand. For more
+complex examples have a look
+at the
+http://www.lowagie.com/iText/[iText Homepage].
+	
+[source,java]
+----
+include::res/write/FirstPdf.java[]
+----
+
+The resulting pdf should look like the following.
+	
+image::pdfwrite10.gif[]
+
