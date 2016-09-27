@@ -1,0 +1,30 @@
+= JPA 2.0 with EclipseLink - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel, Simon Scholz (c) 2008, 2016 vogella GmbH
+Version 2.4, 26.09.2016
+:docinfodir: ../
+:vgwort: JavaPersistenceAPI
+
+[abstract]
+JPA with Eclipselink.
+This tutorial explains how to use EclipseLink, the reference implementation for the Java Persistence API (JPA). 
+The usage of EclipseLink is demonstrated for stand-alone Java applications (outside the Java EE environment). 
+The EclipseLink 2.3.X implementation is used for this tutorial.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::012_eclipselink.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::015_installation.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::020_simple.adoc[]
+include::030_lombok.adoc[]
+include::080_example.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]	
+

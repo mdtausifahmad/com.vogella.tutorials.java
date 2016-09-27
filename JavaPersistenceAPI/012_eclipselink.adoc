@@ -1,0 +1,16 @@
+[[eclipselink]]
+== EclipseLink
+
+This tutorial
+will use
+EclipseLink
+as JPA
+implementation. EclipseLink
+supports several Java standards:
+
+* Java Persistence (JPA) 2.0 - JSR 317
+* Java Architecture for XML Binding (JAXB) 2.2 - JSR 222
+* Service Data Objects (SDO) 2.1.1 - JSR 235
+
+This tutorial covers the usage of the JPA functionality. 
+

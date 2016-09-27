@@ -101,7 +101,7 @@
 		
 					*		FINEST
 		
-				</itemizedlist>
+				
 			
 		
 
@@ -163,7 +163,7 @@
 						FileHandler: Writes the log message to file
 					
 	
-			</itemizedlist>
+			
 		
 		
 			Log levels
@@ -188,7 +188,7 @@
 					messages
 				
 
-		</itemizedlist>
+		
 		
 			You can also build your own formatter. The following is an
 			example of a formatter which will create HTML output.

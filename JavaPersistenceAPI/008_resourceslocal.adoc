@@ -1,0 +1,12 @@
+[[resources]]
+== Links and Literature
+
+[[resources_s1s2a]]
+=== Java Persistence API Resources
+		
+http://www.eclipse.org/eclipselink/[EclipseLink]
+		
+http://java.sun.com/developer/technicalArticles/J2SE/Desktop/persistenceapi/[Using the Java Persistence API in Desktop Applications]
+		
+http://www.ibm.com/developerworks/java/library/j-typesafejpa/index.html[Dynamic, typesafe queries in JPA 2.0 using the Criteria API]
+

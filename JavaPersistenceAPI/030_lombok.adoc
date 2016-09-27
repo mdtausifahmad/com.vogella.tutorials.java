@@ -1,0 +1,22 @@
+[[lombok]]
+== Using lombok for entity classes
+	
+In order to avoid writing too much boilerplate code for the
+entity
+classes you can use lombok, which automatically
+generates appropriate getters, setters,
+`toString()`
+and
+`hashCode()`
+methods for the fields in a Java
+class.
+	
+So the code of the `Todo` can be reduced to this:
+	
+[source,java]
+----
+include::res/simple/LombokTodo.java[]
+----
+	
+See http://www.vogella.com/tutorials/Lombok/article.html for further information and more configuration possibilities of lombok.
+

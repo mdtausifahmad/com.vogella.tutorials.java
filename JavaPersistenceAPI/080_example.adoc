@@ -1,0 +1,50 @@
+[[example]]
+== Relationship example
+	
+Create a Java project called "de.vogella.jpa.eclipselink", create again a folder "lib" and place the required JPA jars and derby.jar into this folder.
+	
+Create the `de.vogella.jpa.eclipselink.model` package and the following classes.
+	
+[source,java]
+----
+include::res/datamodel/Family.java[]
+----
+	
+[source,java]
+----
+include::res/datamodel/Person.java[]
+----
+	
+[source,java]
+----
+include::res/datamodel/Job.java[]
+----
+	
+Create the file "persistence.xml" in "src/META-INF". 
+Remember to change the path to the database.
+	
+[source,xml]
+----
+include::res/eclipselink/persistence.xml[]
+----
+	
+The following check is implemented as a
+http://www.vogella.com/tutorials/JUnit/article.html[JUnit]
+Test. For details please see 
+http://www.vogella.com/tutorials/JUnit/article.html[JUnit Tutorial]. 
+The setup() method will create a few test entries. After the
+test
+entries are created, they will be read and the one field of the
+entries is changed and saved to the database.
+	
+[source,java]
+----
+include::res/eclipselink/JpaTest.java[]
+----
+	
+The project should now look like the following.
+	
+image::jpa10.gif[]
+	
+You should be able to run the JUnit tests successfully.
+	
