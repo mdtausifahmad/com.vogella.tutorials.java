@@ -1,0 +1,23 @@
+= Java Preferences API - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2007, 2016 vogella GmbH
+Version 1.3, 26.09.2016
+:docinfodir: ../
+:vgwort: JavaPreferences
+		
+[abstract]
+Using the preference API in Java.
+This tutorial gives a introduction into the Java Preference API to save key/value pairs for a Java application.
+
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::10_preferencesintro.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::20_preferencesusage.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+

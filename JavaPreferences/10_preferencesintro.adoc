@@ -1,0 +1,35 @@
+[[preferencesintro]]
+== Java Preferences API
+
+The
+_Java Preferences API_
+provides a systematic way to handle
+program preference configurations,
+e.g. to save user
+settings, remember the last value of a field etc.
+
+Preferences are key / values pairs where the key is an
+arbitrary
+name for the preference. The value can be a
+boolean, string, int of
+another primitive type. Preferences
+are received and saved by get and
+put methods while the get
+methods also supply a default value in case
+the preferences
+is not yet set.
+
+NOTE: This Java Preferences API is not indented to save
+application
+data, i.e. larger structured data. 
+
+The Java Preference API removes the burden from the
+individual
+programmer to write code to save
+configuration values on the
+different
+platforms his
+program may be running.
+
+The actual storage of the data is dependent on the platform.
+

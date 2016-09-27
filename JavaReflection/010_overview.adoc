@@ -6,3 +6,4 @@ Class<?> c = Class.forName("class name");
 Method  method = c.getDeclaredMethod ("method name", parameterTypes)
 method.invoke (objectToInvokeOn, params)
 ----
+

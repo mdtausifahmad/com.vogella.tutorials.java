@@ -1,0 +1,29 @@
+[[preferenceusage]]
+== Exercise: Using the API
+
+[[preferenceusage1]]
+=== Create program
+		
+`java.util.prefs.Preferences` can be easily used. 
+You have to define a node in which the data is stored. 
+Then you can call the getter and setter methods. 
+The second value is the default value, e.g. if the preference value is not set yet, then this value will be used.
+		
+Create the following program.
+		
+[source,java]
+----
+include::res/PreferenceTest.java[]
+----
+
+[[preferenceusage2]]
+=== Validating
+		
+Run the program twice. The value of "ID1" should be written with
+its default value (true) to the command line, as the preference value
+was deleted at the end of the method.
+The value
+of "ID2" and "ID3"
+should have
+changed after the first call.
+
