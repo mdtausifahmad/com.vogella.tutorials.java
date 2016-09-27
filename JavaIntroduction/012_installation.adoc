@@ -21,24 +21,26 @@ following command:
 include::res/install/javaversion.sh[]
 ----
 		
-If the JRE is installed and within your path, this commands
-print
-information about your Java installation. In this case you can skip
-the Java installation description. You may want to note down if you
-have a 32 bit or 64 bit version of Java, see
-<<java_installation_32or64>>
-.
+If the JRE is installed and within your path, this commands prints information about your Java installation. 
+In this case you can skip the Java installation description. 
 
-If the command line
-returns
-the
-information that the program could not
-be
-found,
-you
-have to
-install
-Java.
+If the command line returns the information that the program could not be found, you have to install Java.
+
+.How can you tell you are using a 32 bit or 64 bit version of Java?     
+[[java_installation_32or64]]
+[TIP]
+====
+You can run a 32 bit or a 64 bit version of Java on a 64 bit system.
+If you use `java -version` and the output contains the "64-Bit" string you are using the 64 bit
+version of Java otherwise your are using the 32 bit version. The
+following is the output of a 64-bit version.
+        
+[source,text]
+----
+include::res/install/javaversionresult.txt[]
+----
+====
+
 		
 === Install Java on Ubuntu
 		
@@ -92,20 +94,4 @@ The output should be similar to the following output.
 ----
 include::res/install/javaversionresult.txt[]
 ----
-		
-
-[[java_installation_32or64]]
-=== How can you tell you are using a 32 bit or 64 bit version of Java?
-		
-You can run a 32 bit or a 64 bit version of Java on a 64 bit system.
-If you use
-`java -version`
-and the output contains the "64-Bit" string you are using the 64 bit
-version of Java otherwise your are using the 32 bit version. The
-following is the output of a 64-bit version.
-		
-[source,text]
-----
-include::res/install/javaversionresult.txt[]
-----
-
+	
