@@ -1,0 +1,23 @@
+[[example]]
+== Exercise: Reading and writing files
+	
+Create a new Java project called _com.vogella.java.files_. 
+Create the following `FilesUtil.java` class.
+	
+[source,java]
+----
+include::res/file/FilesUtil.java[]
+----
+	
+To test these methods, create a text file called
+`file.txt`
+with some
+content in your project folder. Create the following
+`Main`
+class and run it.
+	
+[source,java]
+----
+include::res/file/Main.java[]
+----
+

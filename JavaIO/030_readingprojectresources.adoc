@@ -1,0 +1,5 @@
+[[project]]
+== Reading resources out of your project / jar
+	
+You can read resources from your project or your jar file via the `.getClass().getResourceAsStream()` method chain from any object.
+

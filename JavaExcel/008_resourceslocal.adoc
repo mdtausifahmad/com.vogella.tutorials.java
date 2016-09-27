@@ -1,0 +1,8 @@
+[[resources]]
+== Links and Literature
+	
+[[resources_eclipse]]
+=== Java Excel Resources
+		
+http://jexcelapi.sourceforge.net[Java Excel API - Homepage]
+

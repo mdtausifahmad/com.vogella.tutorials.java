@@ -1,0 +1,64 @@
+[[usageannotations]]
+== Using dependency injection with annotations
+
+As of Spring 2.5 it is possible to configure the dependency
+injection via annotations. I recommend to use this way of configuring
+your Spring beans. The next chapter will also describe the way to
+configure this via XML.
+Create a new Java project
+"de.vogella.spring.di.annotations.first" and include the minimal
+required spring jars into your classpath.
+Copy your model class from the de.vogella.spring.di.model
+project into this project.
+You need now to add annotations to your model to tell Spring
+which beans should be managed by Spring and how they should be
+connected.
+Add the @Service annotation the
+MySpringBeanWithDependency.java and NiceWriter.java. Also define with
+@Autowired on the setWriter method that the property "writer" will be
+autowired by Spring.
+
+TIP: @Autowired will tell Spring to search for a Spring bean which implements the required interface and place it automatically into the setter.
+
+[source,java]
+----
+include::res/annotations/MySpringBeanWithDependency.java[]
+----
+
+[source,java]
+----
+include::res/annotations/NiceWriter.java[]
+----
+
+Under the src folder create a folder META-INF and create the following file in this folder. 
+This is the Spring configuration file.
+
+[source,xml]
+----
+include::res/annotations/beans.xml[]
+----
+
+TIP: You can also configure the log4j logger (this is optional) by copying
+the following file into the source folder.
+
+[source,text]
+----
+include::res/annotations/log4j.properties[]
+----
+
+Afer this setup you can wire the application together. Create a
+main class which reads the configuration file and starts the
+application.
+
+[source,java]
+----
+include::res/annotations/Main.java[]
+----
+
+If you run the application then the class for the
+IWriterInterface will be inserted into the Test class. By applying the
+dependency injecting I can later replace this writer with a more
+sophisticated writer.
+As a result the class Test does not depend on the concrete
+Writer class, is extensible and can be easily tested.
+

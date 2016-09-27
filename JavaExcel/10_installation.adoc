@@ -1,0 +1,9 @@
+[[installation]]
+== Installation
+	
+Download the http://jexcelapi.sourceforge.net/[Java Excel library] from the webpage
+	
+To use this library in your Java program add the lib jxl.jar to
+your classpath in your project. See
+http://www.vogella.com/tutorials/Eclipse/article.html#classpath[Changing classpath in Eclipse].
+
