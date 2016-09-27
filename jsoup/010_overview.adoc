@@ -2,7 +2,8 @@
 
 === What is jsoup?
 
-jsoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods.
+jsoup is a Java library for working with real-world HTML. 
+It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods.
 
 === Using jsoup
 
@@ -32,3 +33,4 @@ The following code demonstrates how to read a webpage and how to extract its lin
 ----
 include::examples/ParseLinksExample.java[]
 ----
+
