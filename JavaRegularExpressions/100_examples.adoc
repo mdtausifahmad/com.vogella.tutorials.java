@@ -143,6 +143,6 @@ Corresponding regex:
 Target could your example be:
 [source,console]
 ----
-`\R[source,java]\R-----\Rinclude::res/$1[]\R----
+`\R[source,java]\R----\Rinclude::res/$1[]\R----
 ----
 

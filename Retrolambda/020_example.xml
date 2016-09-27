@@ -49,7 +49,7 @@
 === Validate setup by using a lambda expressions
 		Using the lambda configuration by using it with your button to show a Toast once the button is clicked.
 [source,java]
------
+----
 include::res/MainActivity.java[]
 ----
 		

@@ -1,0 +1,65 @@
+[[exercise_okhttp]]
+== Exercise: Using Otto the event bus system
+
+This is an example for the usage of Otto in an Android
+application
+but this library can also be used in standard Java
+applications.
+
+Create a new Android project called
+`com.vogella.java.library.otto`
+based on the
+`Blank Activity with Fragment`
+template.
+
+In case you are using the Eclipse IDE, download the Otto JAR and
+add them to the
+build path of your
+project.
+
+For Gradle users simply add the dependency to the
+`build.gradle`
+file.
+
+[source,java]
+----
+include::res/build.gradle[]
+----
+
+The
+`activity_main.xml`
+layout file of the activity should look like the following.
+
+[source,xml]
+----
+include::res/activity_main.xml[]
+----
+
+The `fragment_main.xml` layout file of the fragment should look like the following.
+
+[source,xml]
+----
+include::res/fragment_main.xml[]
+----
+
+Add an fragment and add it dynamically to your activity.
+Send
+an event
+from the fragment to the activity and vice versa.
+Display in
+both case a
+`Toast`.
+
+[source,java]
+----
+include::res/MainActivity.java[]
+----
+
+NOTE: The example is intentional simple. In a real Android application
+you
+would created the
+`Bus`
+singleton in the
+`Application`
+class and the fragment would be in its own file.
+

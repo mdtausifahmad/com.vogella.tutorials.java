@@ -1,0 +1,22 @@
+= Using the Otto Event Bus library on Android - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2014, 2016 vogella GmbH
+Version 2.7, 27.09.2016
+:docinfodir: ../
+:vgwort: JavaLibrary-EventBusOtto
+
+[abstract]
+Using the Otto event bus in Android applications.
+This tutorial explains the usage of the Otto event bus library.
+  
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::020_example.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
