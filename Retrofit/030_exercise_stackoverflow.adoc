@@ -11,7 +11,6 @@ In this exercise you query for open questions based on tags with the Retrofit RE
 We use the following query URL in our example.
 The tags will be set via our code.
 
-
 [source]
 ----
 https://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=android&site=stackoverflow
@@ -30,13 +29,8 @@ include::res/stackoverflow/build.gradle[]
 ----
 
 Add the permission to access the Internet to your manifest file.
-
-[source,xml]
-----
-include::res/stackoverflow/AndroidManifest.xml[]
-----
 		
-= Define the API and the Retrofit adapter
+=== Define the API and the Retrofit adapter
 
 In the JSON reply from StackOverflow we are only interested in the title and the link. 
 Therefore create the following data classes.
@@ -50,7 +44,6 @@ include::res/stackoverflow/Question.java[]
 ----
 include::res/stackoverflow/StackOverflowQuestions.java[]
 ----	
-			
 
 Define the REST API for Retrofit via the following interface.
 
@@ -65,7 +58,6 @@ Create a XML menu resource similar to the following called _main_menu.xml_.
 ----
 include::res/stackoverflow/main_menu.xml[]
 ----	
-		
 
 Change your activity code to allow querying for questions marked with the tag "android".
 
@@ -73,3 +65,4 @@ Change your activity code to allow querying for questions marked with the tag "a
 ----
 include::res/stackoverflow/MainActivity.java[]
 ----	
+

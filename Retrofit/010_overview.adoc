@@ -1,6 +1,5 @@
 == Retrofit
 (((Retrofit)))
-
 Retrofit is a REST Client for Android and Java by Square.
 It makes it relatively easy to retrieve and upload JSON (or other structured data) via a REST based webservice. 
 Retrofit can be configured with converter is used for its data serialization. 
@@ -25,3 +24,4 @@ Builder API which allows defining the URL end point for the HTTP operation.
 
 You can generate Java objects based on JSON via the following URL: http://www.jsonschema2pojo.org/
 This can be useful to create complex Java data structures from existing JSON.
+
