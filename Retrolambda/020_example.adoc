@@ -1,0 +1,40 @@
+[[exercise_retrolambda]]
+== Exercise: Using Retrolambda in your Android project
+
+[[exercise_retrolambda_project]]
+=== Create project
+		
+Create a new Android project with the top level project name
+`com.vogella.android.retrolambda`
+. Add a button to the existing layout with the
+`@+id/button"`
+ID.
+
+[[exercise_retrolambda_gradle]]
+=== Add Retrolambda to your Gradle build configuratoin
+		
+Add the `me.tatarka:gradle-retrolambda` plug-in as dependency to your `build.gradle` file.
+		
+[source,groovy]
+----
+include::res/appbuild.gradle[]
+----
+		
+Add the source and target compatibility to Java 8 and apply the new plug-in in your
+`app/build.gradle` file.
+		
+[source,groovy]
+----
+include::res/build.gradle[]
+----
+		
+[[exercise_retrolambda_use]]
+=== Validate setup by using a lambda expressions
+		
+Using the lambda configuration by using it with your button to show a Toast once the button is clicked.
+
+[source,java]
+----
+include::res/MainActivity.java[]
+----
+
