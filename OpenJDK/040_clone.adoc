@@ -1,23 +1,17 @@
-[[clone">
+[[clone]]
 == Clone the OpenJDK repositories
 
-	 Clone the OpenJDK7 respositories via the following command.
-	
+Clone the OpenJDK7 respositories via the following command.
 
-	
 [source,text]
 ----
 include::res/clone/openJDK7.txt[]
 ----
-	
 
-	Alternatively you can clone OpenJDK6 via the following command.
-	
+Alternatively you can clone OpenJDK6 via the following command.
 
-	
 [source,text]
 ----
 include::res/clone/openJDK6.txt[]
 ----
-	
 
