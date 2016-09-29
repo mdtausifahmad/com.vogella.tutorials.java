@@ -1,0 +1,7 @@
+[[lombokonline]]
+== Lombok online resources
+
+https://projectlombok.org/[Lombok project page]
+
+https://github.com/peichhorn/lombok-pg[Lombok pg extension]
+
