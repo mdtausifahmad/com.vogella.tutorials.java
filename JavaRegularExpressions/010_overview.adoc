@@ -62,8 +62,7 @@ single character; it would match, for example,
 or
 "1".
 
-The following tables lists several egular expressions and
-describes which pattern they would match.
+The following tables lists several regular expressions and describes which pattern they would match.
 
 .Table Regex example
 |===
