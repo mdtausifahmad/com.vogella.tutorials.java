@@ -26,9 +26,7 @@ and N is the
 number of processes, then
 the maximum
 performance
-gain is 1/
-(F+
-((1-F)/n)).
+gain is 1 / (F+ \((1-F)/n)).
 		
 === Concurrency issues
 
