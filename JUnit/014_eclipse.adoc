@@ -15,7 +15,7 @@ Alternatively you can also use the JUnit wizards available under menu:File[New >
 
 The Eclipse IDE also provides support for executing your tests interactively.
 
-To run a test, select the test class , right-click on it and select menu:Run-as[JUnit Test]. 
+To run a test, select the test class, right-click on it and select menu:Run-as[JUnit Test]. 
 
 This starts JUnit and executes all test methods in this class.
 

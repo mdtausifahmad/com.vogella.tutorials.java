@@ -54,7 +54,7 @@ Integer[] ints = new Integer[] {7, 5, 12, 16};
 . Ensure via tests with Hamcrest matchers that the `ints` array
 
 * has a size of 4
-* contains 7, 5 , 12 , 16 in the given order
+* contains 7, 5, 12, 16 in the given order
 
 
 ==== Solution - Array Exercises

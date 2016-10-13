@@ -24,8 +24,7 @@ from a local file.
 In the latest version
 `HttpURLConnection`
 supports the transparent response compression (via the header
-`Accept-Encoding: gzip`
-, Server Name Indication (extension of SSL and TLS) and a response
+`Accept-Encoding: gzip`, Server Name Indication (extension of SSL and TLS) and a response
 cache.
    
 The API is relatively straight forward. For example to retrieve the webpage www.vogella.com you can use the following example.

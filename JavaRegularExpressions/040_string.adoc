@@ -6,10 +6,8 @@
 in Java have built-in support for regular expressions.
 `Strings`
 have four built-in methods for regular expressions, i.e., the
-`matches()`
-,
-`split())`
-,
+`matches()`,
+`split())`,
 `replaceFirst()`
 and
 `replaceAll()`

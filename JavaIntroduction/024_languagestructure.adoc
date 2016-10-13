@@ -108,8 +108,7 @@ and the second programmer
 puts his class into package
 `xmlreader`
 you can distinguish between these classes by using the
-_fully qualified name_
-,
+_fully qualified name_,
 e.g,
 `xmlreader.Test`
 or

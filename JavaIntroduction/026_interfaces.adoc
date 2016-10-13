@@ -180,7 +180,7 @@ used such as:
 		
 * Consumer<T> - an action to be performed on an object
 		
-* Function<T , R> - a function transforming a T to a R
+* Function<T, R> - a function transforming a T to a R
 		
 * Supplier<T> - provides an instance of T (such as a factory)
 		

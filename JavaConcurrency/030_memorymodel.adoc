@@ -73,8 +73,7 @@ might have changed.
 Since Java 1.5 the java language provides atomic variables,
 e.g.
 AtomicInteger or AtomicLong which provide methods like
-`getAndDecrement()`
-,
+`getAndDecrement()`,
 `getAndIncrement()`
 and
 `getAndSet()`
