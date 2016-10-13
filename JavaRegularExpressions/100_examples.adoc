@@ -127,9 +127,9 @@ You can replace statements like the following:
 
 [source,console]
 ----
-        <programlisting language="java">
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/statements/MyClass.java" />
-            </programlisting>
+<programlisting language="java">
+	<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" parse="text" href="./examples/statements/MyClass.java" />
+</programlisting>
 ----            
 
 
@@ -140,9 +140,10 @@ Corresponding regex:
 ----
 
 
-Target could your example be:
+Target could be your example:
+
 [source,console]
-----
-`\R[source,java]\R----\Rinclude::res/$1[]\R----
-----
+....
+`\R[source,java]\R----\R include::res/$1[]\R----
+....
 
