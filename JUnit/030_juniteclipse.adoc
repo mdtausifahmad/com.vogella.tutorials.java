@@ -80,7 +80,7 @@ include::res/first/MyClassTest.java[]
 Right-click on your new test class and select
 menu:Run-As[JUnit Test].
 
-images::junit60.png[Run JUnit test in Eclipse]
+image::junit60.png[Run JUnit test in Eclipse]
 
 The result of the tests are displayed in the JUnit
 view. In
