@@ -62,13 +62,8 @@ include::res/list/ListExample.java[]
 [[javacollections_sorting]]
 === Sorting lists
 		
-You can sort lists using their natural order of via lambdas for
-defining the
-`Comparator.compare()`
-. Typically in Java 8 you use a lambda expression or a method
-reference for the definion of the
-`compare`
-method.
+You can sort lists using their natural order of via lambdas for defining the `Comparator.compare()`. 
+Typically in Java 8 you use a lambda expression or a method reference for the definion of the `compare` method.
 		
 [source,java]
 ----

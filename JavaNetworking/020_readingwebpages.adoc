@@ -1,12 +1,8 @@
 [[javanetwork_example_readpage]]
 == Example: Read web page via Java
 	
-Create a Java project called
-_de.vogella.web.html_
-. The following code
-will read an HTML page from a URL and write the
-result to
-the console.
+Create a Java project called _de.vogella.web.html_. 
+The following code will read an HTML page from a URL and write the result to the console.
 	
 [source,java]
 ----

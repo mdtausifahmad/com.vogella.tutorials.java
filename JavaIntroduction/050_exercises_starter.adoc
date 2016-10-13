@@ -3,12 +3,9 @@
 [[exercises_starter1]]
 === Create a Person class and instantiate it
 		
-Create a new Java project called
-`com.vogella.javastarter.exercises1`
-and a package with the same name.
+Create a new Java project called `com.vogella.javastarter.exercises1` and a package with the same name.
 		
-Create a class called
-_Person_.
+Create a class called _Person_.
 		
 Add three instance variables to it, one for storing the first
 name of the person, one for storing the last name

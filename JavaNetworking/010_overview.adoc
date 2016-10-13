@@ -35,12 +35,6 @@ The API is relatively straight forward. For example to retrieve the webpage www.
 include::res/http/get.txt[]
 ----
     
-The Javadoc of
-`HttpURLConnection`
-suggest to not reuse on
-`HttpURLConnection`
-. If you use it this way,
-`HttpURLConnection`
-has no threading issues, as it will not be shared between different
-`Threads`.
+The Javadoc of `HttpURLConnection` suggest to not reuse on `HttpURLConnection`. 
+If you use it this way, `HttpURLConnection` has no threading issues, as it will not be shared between different `Threads`.
     

@@ -45,7 +45,7 @@ or
 are only atomic if they
 declared with the
 `volatile`
-keyword. .
+keyword.
 
 Assume
 `i`

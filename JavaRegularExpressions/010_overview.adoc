@@ -9,7 +9,7 @@ The pattern defined by the regex may match one or several times or not at all fo
 		
 Regular expressions can be used to search, edit and manipulate text.
 
-The process of analyzing or modifying a text with a regex is called: _The regular expression is applied to the text/string_ .
+The process of analyzing or modifying a text with a regex is called: _The regular expression is applied to the text/string_.
 The pattern defined by the regex is applied on the text from left to right.
 Once a source character has been used in a match, it cannot be reused. 
 For example, the regex `aba` will match _ababababa_ only two times (aba_aba__).

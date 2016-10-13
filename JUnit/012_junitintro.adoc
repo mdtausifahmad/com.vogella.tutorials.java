@@ -61,7 +61,7 @@ The Maven build system (via its surfire plug-in) automatically includes such cla
 === JUnit test suites
 (((JUnit,Test suite)))
 		
-If you have several test classes, you can combine them into a _test suite_ . 
+If you have several test classes, you can combine them into a _test suite_. 
 Running a test suite executes all test classes in that suite in the specified order.
 A test suite can also contain other test suites. 
 		

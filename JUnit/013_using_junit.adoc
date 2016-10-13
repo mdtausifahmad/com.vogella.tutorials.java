@@ -62,7 +62,7 @@ description, why the test is disabled.
 (((JUnit,Assert statements)))
 		
 JUnit provides static methods to test for certain conditions via the `Assert`class. 
-These _assert statements_ typically start with `assert` .
+These _assert statements_ typically start with `assert`.
 They allow you to specify the error message, the expected and the actual result.
 An _assertion method_ compares the actual value returned by  a test to the expected value.
 It throws an `AssertionException` if the comparison fails.
