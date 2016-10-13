@@ -3,7 +3,6 @@
 [[eclipse_creatingjunittest]]
 === Creating JUnit tests
 (((JUnit,Creating tests in Eclipse)))
-
 You can write the JUnit tests manually, but Eclipse supports the creation of JUnit tests via wizards.
 		
 For example, to create a JUnit test or a test class for an existing class.
@@ -27,9 +26,7 @@ To run only the selected test, position the cursor on the test method name and u
 To see the result of a JUnit test, Eclipse uses the _JUnit_ view which shows the results of the tests. 
 You can also select individual unit tests in this view, right-click on them and select _Run_ to execute them again.
 		
-
-image::junitview10.png[JUnit view]]
-		
+image::junitview10.png[JUnit view]
 		
 By default, this view shows all tests.
 You can also configure, that it only shows failing tests.

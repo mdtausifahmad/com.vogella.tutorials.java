@@ -37,7 +37,6 @@ include::res/first/MyClass.java[]
 ----
 
 === Create a JUnit test
-=======
 		
 Right-click on your new class in the
 _Package Explorer_
@@ -51,8 +50,7 @@ _New JUnit 4 test_
 flag
 is selected
 and set the source folder to
-_test_
-,
+_test_,
 so
 that your test class gets created in this folder.
 
@@ -62,16 +60,13 @@ Press the btn:[Next] button and select the methods that you want to test.
 
 image::junit40.png[Selecting the methods to test]
 
-=======
-		
-		
 If the JUnit library is not part of the classpath of your
 project, Eclipse
 will
 prompt you to add it. Use this to add JUnit to
 your project.
 
-image::junit50.png[Eclipse prompt for adding JUnit to the project classpath
+image::junit50.png[Eclipse prompt for adding JUnit to the project classpath]
 
 Create a test with the following code.
 
@@ -83,8 +78,7 @@ include::res/first/MyClassTest.java[]
 === Run your test in Eclipse
 
 Right-click on your new test class and select
-menu:Run-As[JUnit Test]
-.
+menu:Run-As[JUnit Test].
 
 images::junit60.png[Run JUnit test in Eclipse]
 
@@ -108,3 +102,4 @@ bug
 and re-run the
 test to get
 a green bar.
+
