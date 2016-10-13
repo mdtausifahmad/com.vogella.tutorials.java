@@ -115,8 +115,8 @@ public class RuleTester {
 
 ----
 
-For more examples of existing rules see https://github.com/junit-team/junit4/wiki/Rules
-.
+For more examples of existing rules see https://github.com/junit-team/junit4/wiki/Rules.
+
 === Writing custom JUnit rules
 
 To write your custom rule, you need to implement the `TestRule` interface. 
