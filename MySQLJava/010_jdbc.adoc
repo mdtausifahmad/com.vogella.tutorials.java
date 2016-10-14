@@ -2,8 +2,7 @@
 == Connection to database with Java
 	
 The interface for accessing relational databases from Java is
-_Java Database Connectivity (JDBC)_
-. Via JDBC you create a connection to the database, issue database
+_Java Database Connectivity (JDBC)_. Via JDBC you create a connection to the database, issue database
 queries and update as well as receive the results.
 	
 JDBC provides an interface which allows you to perform SQL

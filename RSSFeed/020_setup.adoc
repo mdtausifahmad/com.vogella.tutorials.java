@@ -2,8 +2,7 @@
 == Project and Domain model
 	
 Create the Java project called
-_de.vogella.rss_
-. Create the following
+_de.vogella.rss_. Create the following
 Java classes, which is used as
 domain
 model.

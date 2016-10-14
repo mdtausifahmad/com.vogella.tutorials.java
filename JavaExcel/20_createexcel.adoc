@@ -2,8 +2,7 @@
 == Create an Excel Spreadsheet
 	
 Create a new Java project called
-_de.vogella.java.excel_
-.
+_de.vogella.java.excel_.
 Create the
 `de.vogella.java.excel.writer` package
 and the following
