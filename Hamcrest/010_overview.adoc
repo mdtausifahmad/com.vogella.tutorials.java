@@ -18,7 +18,7 @@ See http://en.wikipedia.org/wiki/Hamcrest[Wiki on Hamcrest] for more details.
 	
 
 Hamcrest has the target to make tests as readable as possible. 
-For example, the `is` method is a thin wrapper for `equalTo(value)` .
+For example, the `is` method is a thin wrapper for `equalTo(value)`.
 	
 [source,java]
 ----

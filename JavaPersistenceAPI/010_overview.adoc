@@ -90,8 +90,7 @@ metadata.
 A class which should be persisted in a database it must be
 annotated
 with
-`javax.persistence.Entity`
-. Such a class is called
+`javax.persistence.Entity`. Such a class is called
 `Entity`. 
 JPA will create a table for the entity in your database.
 Instances

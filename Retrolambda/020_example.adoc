@@ -5,8 +5,7 @@
 === Create project
 		
 Create a new Android project with the top level project name
-`com.vogella.android.retrolambda`
-. Add a button to the existing layout with the
+`com.vogella.android.retrolambda`. Add a button to the existing layout with the
 `@+id/button"`
 ID.
 
