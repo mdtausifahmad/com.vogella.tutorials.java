@@ -1,3 +1,4 @@
-== OkHttp resources
+=== OkHttp resources
 
-http://square.github.io/okhttp/[OkHTTP Homepage]
+http://square.github.io/okhttp - OkHTTP Homepage
+

@@ -1,22 +1,21 @@
-= Using the OkHttp library for HTTP requests - Tutorial
+= Using the OkHttp library for HTTP requests - Tutorial - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
 Lars Vogel (c) 2014, 2016 vogella GmbH
-Version 2.6, 02.11.2016
+Version 2.6, 25.06.2016
 :docinfodir: ../
 :vgwort: JavaLibrary-OkHttp
 
 [abstract]
 This tutorial explains the usage and purpose of the HTTP and HTTPS library OkHttp.
-  
+
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::020_installation.adoc[]
-include::030_example.adoc[]
+include::020_example.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
-include::../copyright.adoc[]	
+include::../copyright.adoc[]
 

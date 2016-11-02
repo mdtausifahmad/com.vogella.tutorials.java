@@ -1,0 +1,52 @@
+== Google Gson
+(((Gson)))
+
+=== What is Gson
+
+Gson is a Java library that can be used to convert Java Objects
+into their JSON representation. It can also be
+used to convert a JSON
+string to an equivalent Java object.
+
+Gson is an Open Source project, which can be found under https://github.com/google/gson
+The webpage provides a convenient download link.
+
+Gson can work with arbitrary Java
+objects including
+pre-existing objects that you do not have
+source-code of. For
+this purpose Gson provides several built in serializers and deserializers. A serializer allows to convert a Json
+string to corresponding Java type and a deserializers allows to convert from Java to a JSON representation. You
+can also configure Gson to use custom
+representations of your objects.
+
+Gson allows to serialize a
+`Collections`
+of objects of the same type. As the generics information is persisted in the JSON you need to specify the type to
+which you want to serialize too. For this you have different options.
+
+To use Gson in a Gradle build, add
+`compile 'com.google.code.gson:gson:2.6.2'`
+or a later version
+as dependency to your _build.gradl_
+e build file
+
+=== Excluding fields from serialization and deserialization
+(((Gson, Exclude fields)))
+
+By default, Gson tries to map all fields in the Java object to the JSON file it creates and vice versa. But Gson
+allows
+to exclude certain fields for serialization and deserialization. GSon can for example not serialize Java Beans,
+as the
+`IPropertyChangeSupport`
+field lead to an infinite loop. Therefore you must exclude such a field from the JSON conversion.
+
+To exclude fields you have four options:
+
+* Use the `transient` keyword on your field to indicate that this field not not be serialized.
+* Gson provides an the `@Expose` from the `com.google.gson.annotations` package which allows to define which fields should be deserialized. 
+You can configure Gson to consider this annotation.
+* You can register a custom exclusion strategy with the `GsonBuilder` and its `setExclusionStrategies` method. 
+For this you would implement the `ExclusionStrategy` and its `houldSkipField(FieldAttributes f)` and `shouldSkipClass(Class clazz)` methods.
+* You can define a custom annotation and tell GSon to ignore such fields.
+
