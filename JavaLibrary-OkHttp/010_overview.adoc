@@ -1,0 +1,11 @@
+[[okhttplibrary]]
+
+== OkHttp
+
+(((OkHttp)))
+http://square.github.io/okhttp/[OkHTTP]	is an Open Source project designed to be an efficient HTTP client. 
+It supports the SPDY protocol. 
+SPDY is the basis for HTTP 2.0 and allows multiple HTTP requests to be multiplexed over one socket connection.
+	
+	
+
