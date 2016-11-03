@@ -117,8 +117,6 @@ include::res/snippet/Example.java[]
 ----		
 
 <1> creates an instance of ArticleManager and injects the mocks into it
-		
-For more information see  http://docs.mockito.googlecode.com/hg/1.9.5/org/mockito/InjectMocks.html.
 
 === Capturing the arguments
 

@@ -1,7 +1,7 @@
 [[resources_rxjava]]
 == RxJava resources
 
-https://gist.github.com/staltz/868e7e9bc2a7b8c1f75[Introduction to RxJava]
+https://gist.github.com/staltz/868e7e9bc2a7b8c1f754[Introduction to RxJava]
 
 https://medium.com/@kurtisnusbaum/rxandroid-basics-part-1-c0d5edcf6850#.l74zr3mgh[RxJava for Android]
 
