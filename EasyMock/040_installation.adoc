@@ -11,7 +11,7 @@ to your classpath.
 	
 You also
 need to download the
-http://objenesis.googlecode.com/svn/docs/download.html[Objenesis]
+http://objenesis.org/download.html[Objenesis]
 and
 http://cglib.sourceforge.net/[Cglib]
 libraries

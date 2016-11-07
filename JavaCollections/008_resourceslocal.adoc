@@ -1,5 +1,5 @@
 [[resources]]
 == Links and Literature
 
-http://java.sun.com/docs/codeconv/index.html[Sun Coding Convention]
+Nothing listed.
 
