@@ -1,4 +1,0 @@
-== RxAndroid
-
-To be filled
-
