@@ -3,42 +3,24 @@
 [[javadef_interface]]
 === What is an interface in Java?
 		
-An
-_interfaces_
-is a type similar to a class and is defined via the
-`interface`
-keyword. Interfaces are used to define common behavior of implementing classes. If two classes implement the same
-interface, other code which work on the interface level, can use objects of both classes.
+An _interfaces_is a type similar to a class and is defined via the `interface` keyword.
+Interfaces are used to define common behavior of implementing classes. 
+If two classes implement the same interface, other code which work on the interface level, can use objects of both classes.
 		
-Like a class an
-interface defines
-methods. Classes can
-implement one or several interfaces. A class which
-implements an
-interface must provide
-implementation for
-all abstract methods defined in the interface.
+Like a class an interface defines methods.
+Classes can implement one or several interfaces.
+A class which implements an interface must provide an implementation for all abstract methods defined in the interface.
 
 [[javadef_interfacemethods]]
 === Abstract, default and static methods in Interfaces
 		
-An interface can have abstract methods and
-_default_
-methods. A default method is defined via the
-`default`
-keyword at the beginning of the method signature. All other methods
-defined in an interfaces are public
-and
-abstract –
-explicit
-declaration
-of these modifiers is optional.
+An interface can have abstract methods and _default_methods.
+A default method is defined via the `default` keyword at the beginning of the method signature. 
+All other methods defined in an interfaces are public and abstract – explicit declaration of these modifiers is optional.
 		
-Interfaces can have constants which are always implicitly
-public, static and final.
+Interfaces can have constants which are always implicitly public, static and final.
 		
-The following code shows an example implementation of an
-interface.
+The following code shows an example implementation of an interface.
 
 [source,java]
 ----
@@ -48,22 +30,12 @@ include::res/class/MyInterface.java[]
 [[javadef_interfaceimplementing]]
 === Implementing Interfaces
 		
-A class can implement an interface. In this case it must provide
-concrete implementations of the abstract interface
-methods.
-If you
-implement a method defined by an interface, you can use
-`@Override`
-annotation to indicate to the Java compiler that you actually want to
-implement a method defined by this interface.
-This way the compiler
-can give you an error in you mis-typed the name of the method or in
-the number of arguments. The
-following class implements the
-`MyInterface`
-interface, its must therefore
-implement the abstract method and can use the default
-methods.
+A class can implement an interface.
+In this case it must provide concrete implementations of the abstract interface methods.
+If you implement a method defined by an interface, you can use `@Override` annotation.
+This indicates to the Java compiler that you actually want to implement a method defined by this interface.
+This way the compiler can give you an error in you mis-typed the name of the method or in the number of arguments.
+The following class implements the `MyInterface` interface, its must therefore implement the abstract method and can use the default methods.
 
 [source,java]
 ----
@@ -73,54 +45,25 @@ include::res/class/MyClassImpl.java[]
 [[javadef_interfaceevolving]]
 === Evolving interfaces with default methods
 
-Before Java 8 evolving interfaces, e.g., adding new methods to
-an interface, was not possible because such a
-change would break
-existing implementations. Java 8 introduced default methods, now you
-can extend an interface without
-breaking clients by simply suppling a
-default implementation with it. Adding such a default method is a
-source an
-binary compatible change.
+Before Java 8 evolving interfaces, e.g., adding new methods to an interface, was not possible without breaking existing clients.
+Java 8 introduced default methods, now you can extend an interface without breaking clients by simply suppling a default implementation with it.
+Adding such a default method is a source and binary compatible change.
 		
-A class can always override a default method to supply a better
-behavior.
+A class can always override a default method to supply a better behavior.
 
 [[javadef_interface_multiple]]
 === Multiple inheritance of methods
 		
-If a class implements two interfaces and if these interfaces provide
-the same
-default
-method, Java resolves the correct
-method for the class
-by the
-following rules:
+If a class implements two interfaces and if these interfaces provide the same default method, Java resolves the correct method for the class by the following rules:
 
-* Superclass wins always against the superinterface - If a
-class can inherit a method from a superclass and a
-superinterface,
-the
-class inherts
-the superclass method. This is true for
-concrete
-and
-abstract
-superclass methods. This
-rule implies that default
-methods are
-not
-used if this method is also declared in the
-superclass chain.
+* Superclass wins always against the superinterface - 
+If a class can inherit a method from a superclass and a superinterface, the class inherits the superclass method. 
+This is true for concrete and abstract superclass methods. 
+This rule implies that default methods are not used if this method is also declared in the superclass chain.
 		
-* Subtypes win over Supertypes - If a class can inherit a
-method from two interfaces, and one is a subtype of
-the other,
-the
-class inherts the method from the subtype
+* Subtypes win over Supertypes - If a class can inherit a method from two interfaces, and one is a subtype of the other, the class inherts the method from the subtype
 		
-* In all other cases the class needs to implement the default
-method
+* In all other cases the class needs to implement the default method
 		
 The following listing demonstrates listing number 3.
 
@@ -129,8 +72,7 @@ The following listing demonstrates listing number 3.
 include::res/class/A.java[]
 ----
 		
-In your implementation you can also call the super method you
-prefer.
+In your implementation you can also call the super method you prefer.
 
 [source,java]
 ----
@@ -140,51 +82,29 @@ include::res/class/A2.java[]
 [[javadef_functionalinterfaces]]
 === Functional interfaces
 		
-All interfaces that have only one method are called
-_functional interfaces_.
-Functional interfaces have the advantage that they can be used
-together with
-_lambda expressions_. See
-<<lambdas_definition>>
-to learn more about lambdas, e.g., the type of lambdas is a
-functional interface.
+All interfaces that have only one method are called _functional interfaces_.
+Functional interfaces have the advantage that they can be used together with _lambda expressions_.
+See <<lambdas_definition>> to learn more about lambdas, e.g., the type of lambdas is a functional interface.
 		
-The Java compiler automatically identifies functional
-interfaces. The
-only requirement is that they have only one
-abstract method.
-However,
-is possible to capture the design
-intent with a
-`@FunctionalInterface`
+The Java compiler automatically identifies functional interfaces.
+The only requirement is that they have only one abstract method.
+However, is possible to capture the design intent with a `@FunctionalInterface`
 annotation.
 		
 Several default Java interfaces are functional interfaces:
 		
 * `java.lang.Runnable`
-		
 * `java.util.concurrent.Callable`
-		
 * `java.io.FileFilter`
-		
 * `java.util.Comparator`
-		
 * `java.beans.PropertyChangeListener`
 		
-Java also contains the
-`java.util.function`
-package which contains functional interfaces which are frequently
-used such as:
+Java also contains the `java.util.function` package which contains functional interfaces which are frequently used such as:
 
 * Predicate<T> - a boolean-valued property of an object
-		
 * Consumer<T> - an action to be performed on an object
-		
 * Function<T, R> - a function transforming a T to a R
-		
 * Supplier<T> - provides an instance of T (such as a factory)
-		
 * UnaryOperator<T> - a function from T to T
-		
 * BinaryOperator<T> - a function from (T, T) to T
 		
