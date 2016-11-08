@@ -11,8 +11,8 @@ Version 1.6, 29.08.2016
 
 [abstract]
 FindBugs.
-This tutorial describes the usage of the FindBugs plug-in
-for Eclipse. It is based on Eclipse 4.6.
+This tutorial describes the usage of the FindBugs plug-in for Eclipse. 
+It is based on Eclipse 4.6.
   
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_introduction.adoc[]
