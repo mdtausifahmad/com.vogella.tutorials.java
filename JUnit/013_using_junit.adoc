@@ -126,6 +126,6 @@ For example, the following disables a test on Linux:
 
 [source,java]
 ----
-`Assume.assumeFalse(System.getProperty("os.name").contains("Linux"));`
+Assume.assumeFalse(System.getProperty("os.name").contains("Linux"));
 ----
 	

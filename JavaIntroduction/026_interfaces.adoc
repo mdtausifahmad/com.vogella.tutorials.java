@@ -1,9 +1,10 @@
 [[java_interfaces]]
 == Java interfaces
+
 [[javadef_interface]]
 === What is an interface in Java?
 		
-An _interfaces_is a type similar to a class and is defined via the `interface` keyword.
+An _interfaces_ is a type similar to a class and is defined via the `interface` keyword.
 Interfaces are used to define common behavior of implementing classes. 
 If two classes implement the same interface, other code which work on the interface level, can use objects of both classes.
 		
@@ -16,7 +17,7 @@ A class which implements an interface must provide an implementation for all abs
 		
 An interface can have abstract methods and _default_methods.
 A default method is defined via the `default` keyword at the beginning of the method signature. 
-All other methods defined in an interfaces are public and abstract – explicit declaration of these modifiers is optional.
+All other methods defined in an interfaces are public and abstract; explicit declaration of these modifiers is optional.
 		
 Interfaces can have constants which are always implicitly public, static and final.
 		
