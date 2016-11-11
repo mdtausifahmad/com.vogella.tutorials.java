@@ -31,9 +31,11 @@ include::res/exercise06/Main.java[]
 
 [[exercises_starter3solution]]
 		
-The following is the expected result after <<exercises_starter3>>.
 		
 === Define getter and setter methods
+
+The following is the expected result after <<exercises_starter3>>.
+
 [source,java]
 ----
 include::res/exercise10/Person.java[]
