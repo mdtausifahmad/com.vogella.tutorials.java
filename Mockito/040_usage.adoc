@@ -25,7 +25,7 @@ The usage of the `@Mock` annotation and the `MockitoRule` rule is demonstrated b
 include::res/simple/TestSimple.txt[]
 ----   
 
-<1> Tells Mockito to most the databaseMock instance
+<1> Tells Mockito to mock the databaseMock instance
 <2> Tells Mockito to create the mocks based on the @Mock annotation
 <3> Instantiates the class under test using the created mock
 <4> Executes some code of the class under test

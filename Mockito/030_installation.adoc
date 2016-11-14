@@ -2,7 +2,7 @@
 == Adding Mockito as dependencies to a project
 
 [[mockito_installation_gradle]]
-=== Using Grade
+=== Using Gradle
 If you use Gradle, add the following dependency to the Gradle build file.
 
 [source, gradle]
