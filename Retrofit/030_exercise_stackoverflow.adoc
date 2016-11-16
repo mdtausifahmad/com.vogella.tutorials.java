@@ -1,4 +1,4 @@
-== Exercise: Using Retrofit to query Stackoverflow via an Android application
+== Exercise: Using Retrofit to query Stackoverflow in Android
 
 === Target
 
@@ -43,9 +43,15 @@ include::res/stackoverflow/Question.java[]
 [source,java]
 ----
 include::res/stackoverflow/StackOverflowQuestions.java[]
-----	
+----
 
 Define the REST API for Retrofit via the following interface.
+
+[TIP]
+====
+The list structure is needed as stackoverflow wraps its answer in an item object.
+====
+
 
 [source,java]
 ----

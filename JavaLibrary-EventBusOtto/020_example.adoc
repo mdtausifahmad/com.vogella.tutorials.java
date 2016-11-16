@@ -9,7 +9,7 @@ applications.
 Create a new Android project called
 `com.vogella.java.library.otto`
 based on the
-`Blank Activity with Fragment`
+`Empty Activity with Fragment`
 template.
 
 In case you are using the Eclipse IDE, download the Otto JAR and
