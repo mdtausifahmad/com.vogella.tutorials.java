@@ -9,3 +9,7 @@ http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1[Dan Lew’s Grokking wi
 
 https://github.com/tiwiz/RxAndroidCrunch[Crunching RxAndroid blog series from Roberto Orgiu]
 
+https://www.youtube.com/watch?v=htIXKI5gOQU[GOTO 2016 • Exploring RxJava 2 for Android • Jake Wharton]
+
+https://www.youtube.com/watch?v=hcxMtomE6fI&t=1934s[Droidcon NYC 2016 - Looking Ahead to RxJava 2]
+
