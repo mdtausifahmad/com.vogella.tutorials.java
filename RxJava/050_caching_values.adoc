@@ -1,0 +1,67 @@
+== Caching values of completed observables
+
+When working with observables doing async calls on every subscription on an observable is often not necessary.
+
+It likely happens that observables are passed around in the application, without the need to do an such an expensive call all the time a subscription is added.
+
+The following code does the expensive web query 4 times, even though doing this once would be fine, since the same `Todo` objects should be shown, but only in different ways.
+
+[source, java]
+----
+Single<List<Todo>> todosSingle = Single.create(emitter -> {
+	Thread thread = new Thread(() -> {
+		try {
+			List<Todo> todosFromWeb = // query a webservice
+
+			System.out.println("Called 4 times!");
+
+			emitter.onSuccess(todosFromWeb);
+		} catch (Exception e) {
+			emitter.onError(e);
+		}
+	});
+	thread.start();
+});
+
+todosSingle.subscribe(... " Show todos times in a bar chart " ...);
+
+showTodosInATable(todosSingle);
+
+todosSingle.subscribe(... " Show todos in gant diagram " ...);
+
+anotherMethodThatsSupposedToSubscribeTheSameSingle(todosSingle);
+
+----
+
+The next code snippet makes use of the `cache` method, so that the `Single` instance keeps its result, once it was successful for the first time.
+
+[source, java]
+----
+Single<List<Todo>> todosSingle = Single.create(emitter -> {
+	Thread thread = new Thread(() -> {
+		try {
+			List<Todo> todosFromWeb = // query a webservice
+
+			System.out.println("I am only called once!");
+
+			emitter.onSuccess(todosFromWeb);
+		} catch (Exception e) {
+			emitter.onError(e);
+		}
+	});
+	thread.start();
+});
+
+// cache the result of the single, so that the web query is only done once
+Single<List<Todo>> cachedSingle = todosSingle.cache();
+
+cachedSingle.subscribe(... " Show todos times in a bar chart " ...);
+
+showTodosInATable(cachedSingle);
+
+cachedSingle.subscribe(... " Show todos in gant diagram " ...);
+
+anotherMethodThatsSupposedToSubscribeTheSameSingle(cachedSingle);
+
+----
+
