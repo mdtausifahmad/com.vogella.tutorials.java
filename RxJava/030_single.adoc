@@ -6,6 +6,8 @@ Using promises for asynchronous calls has become really popular, especially when
 
 RxJava comes with a type called `Single`, which is pretty similar to a promise.
 
+Instances of  `Single` work similar to `Observable` but they have only two callbacks `onSuccess()` and `onError()`.
+
 [source, java]
 ----
 import io.reactivex.Single;
