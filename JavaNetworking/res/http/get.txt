@@ -1,3 +1,4 @@
+package com.vogella.java.introduction;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,8 +8,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class DownloadWebpageExample {
+	private static final String newLine  = System.getProperty("line.separator");
 	public static void main(String[] args) {
-		try {
+		try  {
 			URL url = new URL("http://www.vogella.com");
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			String readStream = readStream(con.getInputStream());
@@ -23,10 +25,9 @@ public class DownloadWebpageExample {
 	private static String readStream(InputStream in) {
 		StringBuilder sb = new StringBuilder();
 		try (BufferedReader reader = new BufferedReader(new InputStreamReader(in));) {
-			
 			String nextLine = "";
 			while ((nextLine = reader.readLine()) != null) {
-				sb.append(nextLine);
+				sb.append(nextLine + newLine);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

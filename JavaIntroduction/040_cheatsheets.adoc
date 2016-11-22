@@ -19,12 +19,7 @@ The following uses the package test.
 a|
 include::res/cheatsheets/MyNewClass1.java[]
 
-|Create a new attribute (instance variable) called
-_var1_
-of type `String`
-in the
-`MyNewClass`
-class
+|Create a new attribute (instance variable) called _var1_ of type `String` in the `MyNewClass` class
 
 a|
 include::res/cheatsheets/MyNewClass2.java[]

@@ -3,29 +3,16 @@
 
 The following example is contained in the project called _de.vogella.datastructures.list_.
 
-A _List_
-represents a data structure which allows to dynamically
-add, access and
-remove objects of the same type. Adding objects to the
-list is usually
-done via
-the
-`add()`
-method. The
-`get(int i)`
-method allows
-to retrieve the
-element
-at
-position i.
+A _List_ represents a data structure which allows to dynamically add, access and remove objects of the same type. 
+Adding objects to the list is usually done via the `add()` method. 
+The `get(int i)` method allows to retrieve the element at position i.
 
 [source,java]
 ----
 include::res/list/MyList.java[]
 ----
 
-The following show contains a small JUnit test for the data
-structure. I use in the
+The following show contains a small JUnit test for the data structure. I use in the
 first test the MyList implementation and in the
 second test the
 standard Java List implementation.

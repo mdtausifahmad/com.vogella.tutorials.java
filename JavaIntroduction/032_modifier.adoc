@@ -4,10 +4,9 @@
 === Access modifiers
 
 There are three access modifiers keywords available in Java:
-_public_,
-_protected_
-and
-_private_.
+* _public_
+* _protected_
+* _private_
 
 There are four access levels:
 _public_,
@@ -15,10 +14,8 @@ _protected_,
 _default_
 and
 _private_.
-They define how the corresponding
-element is visible to
-other
-components.
+
+They define how the corresponding element is visible to other components.
 
 If something is declared public, e.g., classes or methods can
 be freely created or called by other Java objects. If something is

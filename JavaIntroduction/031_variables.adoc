@@ -3,52 +3,35 @@
 [[javadef_variable]]
 === Variable
 
-_Variables_
-allow the Java program to store values during the
-runtime of the
-program.
+_Variables_ allow the Java program to store values during the runtime of the program.
 
-A variable can either be a
-_primitive variable_
-or a
-_reference variable_.
-A
-primitive variable contains the value while the
-reference variable
-contains a reference (pointer) to the object.
-Hence, if you compare
-two
-reference variables, you compare if both
-point to the same
-object. To
-compare objects, use the
-`object1.equals(object2)`
-method call.
+A variable can either be a:
+* _primitive variable_
+* _reference variable_
+
+A primitive variable contains the value.
+A reference variable contains a reference (pointer) to the object.
+Hence, if you compare two reference variables, you compare if both point to the same object. 
+To identify if objects contain the same data, use the `object1.equals(object2)` method call.
 
 [[javadef_instancevariable]]
 === Instance variable
 
-Instance variable is associated with an instance of
-the class
-(also called object). Access works over these objects.
+Instance variable is associated with an instance of the class (also called object).
+Access works over these objects.
 
-Instance variables can have any access control and can be
-marked `final` or `transient`.
-Instance variables marked as final cannot
-be changed after a value has been assigned to them.
+Instance variables can have any access control and can be marked `final` or `transient`.
+Instance variables marked as final cannot be changed after a value has been assigned to them.
 
 [[javadef_localvariable]]
 === Local variable
 
-Local (stack) variable declarations cannot have access
-modifiers.
+Local (stack) variable declarations cannot have access modifiers.
+Local variables do not get default values, so they must be initialized before they can be used.
 
-_final_
-is the only modifier available to local variables. This modifier
-defines that the variable cannot be changed after the first assignment.
+_final_ is the only modifier available to local variables. 
+This modifier defines that the variable cannot be changed after the first assignment.
 
-Local variables do not get default values, so they must be
-initialized before use.
 
 [[javadef_method]]
 === Methods
@@ -62,18 +45,8 @@ include::res/class/MyMethodExample.java[]
 ----
 
 Methods can be declared with var-args.
-In this case the method
-declares a
-parameter which
-accepts everything
-from zero to many arguments (syntax:
-type ... name;) A method
-can only
-have one var-args parameter and this
-must be the
-last parameter
-in the
-method.
+In this case the method declares a parameter which accepts everything from zero to many arguments (syntax: type ... name;) 
+A method can only have one var-args parameter and this must be the last parameter in the method.
 
 Overwrite of a superclass method: A method must be of the
 exact
@@ -101,62 +74,36 @@ include::res/class/main.java[]
 [[javadef_constructor]]
 === Constructor
 
-A class contains
-_constructors_
-that are invoked to create objects
-based on the class definition.
+A class contains _constructors_ that are invoked by the Java runtime to create objects based on the class definition.
 
-Constructor declarations look like method
-declarations except
-that
-they use the name of the class and have no
+Constructor declarations look like method declarations except that they use the name of the class and have no
 return type.
 
 A class can have several constructors with different parameters.
-Each
-class must define at least one constructor.
 
-In the following example the constructor of the class expects a
-parameter.
+In the following example the constructor of the class expects a parameter.
 
 [source,java]
 ----
 include::res/class/MyConstructorExample2.java[]
 ----
 
-If
-no
-explicit
-constructor is defined,
-the compiler implicitly adds
-a
-constructor. If
-the class is
-sub-classed, then the constructor of the
-super class is
-always
-called implicitly in this case.
+Each class must define at least one constructor.
+If no
+explicit constructor is defined in the Java source file, the compiler implicitly adds a constructor.
+If the class is sub-classed, then the constructor of the super class is always called implicitly in this case.
 
-In the following example the definition of the constructor without
-parameters (also known as the
-_empty constructor_)
-is unnecessary. If not specified, the compiler would create one.
+In the following example the definition of the constructor without parameters (also known as the _empty constructor_) is unnecessary.
+If not specified, the compiler would create one.
 
 [source,java]
 ----
 include::res/class/MyConstructorExample.java[]
 ----
 
-The naming
-convention for creating a constructor is
-the following:
-`classname
-(Parameter p1, ...) { }
-`.
+The naming convention for creating a constructor is the following:
+`classname (Parameter p1, ...) { }`.
 
-Every object is created based on a constructor. This
-constructor method is the first statement called before anything
-else
-can
-be done with the object.
+Every object is created based on a constructor.
+This constructor method is the first statement called before anything else can be done with the object.
 

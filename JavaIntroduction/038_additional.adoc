@@ -87,10 +87,7 @@ can not be instantiated. Sub-classes need then to define the
 methods
 except if they are also declared as abstract.
 
-If a class contains an abstract method, it also needs to get
-defined
-with the keyword
-`abstract`.
+If a class contains an abstract method, it also needs to get defined with the `abstract` keyword.
 
 The following example shows an abstract class.
 

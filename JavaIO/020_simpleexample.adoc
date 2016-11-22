@@ -9,12 +9,8 @@ Create the following `FilesUtil.java` class.
 include::res/file/FilesUtil.java[]
 ----
 	
-To test these methods, create a text file called
-`file.txt`
-with some
-content in your project folder. Create the following
-`Main`
-class and run it.
+To test these methods, create a text file called `file.txt` with some content in your project folder.
+Create the following `Main` class and run it.
 	
 [source,java]
 ----
