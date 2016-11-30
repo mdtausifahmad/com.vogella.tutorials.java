@@ -11,7 +11,8 @@ Version 0.1, 30.11.2016
 
 [abstract]
 This tutorial contains notes about GlazedLists.
-				
+
+include::../web/advertisement/afterTableOfContent.adoc[]					
 include::010_overview.adoc[]
 include::020_eventlist.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
