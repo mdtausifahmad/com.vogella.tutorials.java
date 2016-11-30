@@ -44,3 +44,5 @@ include 'OpenJDK'
 include 'Retrofit'
 include 'Retrolambda'
 include 'RSSFeed'
+include 'GlazedLists'
+

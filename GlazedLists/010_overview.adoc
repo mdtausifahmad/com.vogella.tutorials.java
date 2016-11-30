@@ -1,0 +1,12 @@
+== GlazedLists
+
+GlazedLists is an open source project, which is hosted on GitHub (https://github.com/glazedlists/glazedlists) and is distributed under http://creativecommons.org/licenses/LGPL/2.1/[LGPL] and http://www.mozilla.org/MPL/[MPL].
+
+Basically it provides list implementations, which propagate events to it's listeners once a list is changed and also provides the possibility to transform the list, without having an impact on the original list.
+
+Therefore it is mainly used as underlying data model for list UI widgets, like tables and trees.
+
+It provides extensions for the UI toolkits Swing and SWT out of the box.
+
+Also Nebula NatTable provides extensions for GlazedLists and makes use of their list implementation http://www.vogella.com/tutorials/NatTable/article.html[Nebula NatTable tutorial].
+

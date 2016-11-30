@@ -1,0 +1,6 @@
+== GlazedLists resources
+
+http://www.glazedlists.com/propaganda/features[GlazedLists features]
+
+https://publicobject.com/glazedlistsdeveloper/[GlazedLists video tutorials]
+
