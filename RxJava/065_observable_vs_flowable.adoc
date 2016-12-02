@@ -1,9 +1,0 @@
-== Observable<T> vs Flowable<T>
-
-RxJava 2.0 introduced a new type `Flowable<T>`, which is pretty much the same as an `Observable<T>` in regards of the API, but `Flowable<T>` supports backpressure and `Observable<T>` does not.
-
-Back in RxJava 1.0 the concept of backpressure came too late and was added to `Observable<T>` types, but some did throw a `MissingBackpressureException`, so distinguishing between `Flowable<T>` and `Observable<T>` is a good thing.
-
-
-
-
