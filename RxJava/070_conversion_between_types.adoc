@@ -1,0 +1,68 @@
+== Conversion between types
+
+It is easy to convert between different RxJava types.
+
+.Conversion between types
+[cols="^,^,^,^,^,^", options="header"]
+|===
+|From / To |Flowable |Observable |Maybe |Single |Completable
+
+|*Flowable* 
+| 
+|toObservable()
+|reduce() + 
+elementAt() + 
+firstElement() + 
+lastElement() + 
+singleElement()
+|scan() + 
+elementAt() + 
+first()/firstOrError() + 
+last()/lastOrError() + 
+single()/singleOrError() + 
+all()/any()/count() + 
+(and more...)
+|ignoreElements()
+
+|*Observable*
+|toFlowable()
+| 
+|reduce() + 
+elementAt() + 
+firstElement() + 
+lastElement() + 
+singleElement()
+|scan() + 
+elementAt() + 
+first()/firstOrError() + 
+last()/lastOrError() + 
+single()/singleOrError() + 
+all()/any()/count() + 
+(and more...)
+|ignoreElements()
+
+|*Maybe*
+|toFlowable()
+|toObservable()
+| 
+|toSingle() + 
+sequenceEqual()
+|toCompletable()
+
+|*Single*
+|toFlowable()
+|toObservable()
+|toMaybe()
+| 
+|toCompletable()
+
+|*Completable*
+|toFlowable()
+|toObservable()
+|toMaybe()
+|toSingle() + 
+toSingleDefault()
+| 
+|===
+
+
