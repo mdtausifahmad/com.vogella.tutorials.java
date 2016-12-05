@@ -1,10 +1,20 @@
-== Visualvm as profiler
+== Using VisualVM (jvisualvm)
 
-A profiler for Java is a program which allows you to trace a
-running java program and see the memory and CPU consumption for the
-Java application.
+=== What is VisualVM?
+jvisualvm is a tool to analyse the runtime behavior of your Java application.
+It allows you to trace a running Java program and see its the memory and CPU consumption.
+You can also use it to create a memory heap dump to analyze the objects in the heap.
 	
-	
-https://visualvm.dev.java.net/[Visualvm] is already part of the jdk distribution (as of Update 7 for jdk1.6).
-To start visualvm just click on jvisualvm.exe in the jdk bin  directory.
-	
+https://visualvm.github.io/ [Visualvm] is  part of the jdk distribution (as of Update 7 for jdk1.6).
+To start visualvm just click on `jvisualvm.exe` in the  `bin`  directory of your jdk installation.
+If this the `bin` directory is part of your patch, you can also start it with the `jvisualvm` command.
+
+=== Creating a heap dump with 
+
+You can use VisualVM to take a heap dump of a local running application.
+This creates a temporary file, until you explicitly save it. 
+If you do not save the file, the file is deleted when the application from which you took the heapdump terminates.
+
+
+
+
