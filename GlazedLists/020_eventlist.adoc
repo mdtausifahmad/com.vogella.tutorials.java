@@ -9,7 +9,8 @@ The `EventList` interface simply extends `java.util.List` and therefore can be u
 include::res/eventlist/EventList.java[]
 ----
 
-In addition of being a `List` it gives the opportunity to attach listeners to the `List` once the list is changed and also the `ListEventPublisher`, which propagates the changes can be obtained.
+It allows to attach listeners to the `List` once the list is changed.
+Also the `ListEventPublisher` can be obtained, which propagates the changes.
 
 For concurrency it provides a `getReadWriteLock()` and a `dispose()` method to ensure that the list can be garbage collected, e.g., when the list itself is attached as a listener.
 
