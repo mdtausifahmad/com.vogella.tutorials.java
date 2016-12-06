@@ -4,5 +4,5 @@ http://www.glazedlists.com/propaganda/features[GlazedLists features]
 
 https://publicobject.com/glazedlistsdeveloper/[GlazedLists video tutorials]
 
- http://www.vogella.com/tutorials/NatTable/article.html[Nebula NatTable tutorial using GlazedList].
+http://www.vogella.com/tutorials/NatTable/article.html[Nebula NatTable tutorial using GlazedList]
 
