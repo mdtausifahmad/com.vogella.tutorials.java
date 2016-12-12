@@ -5,60 +5,40 @@
 === Overview
 (((Java I/O,files)))
 Java provides a standard way of reading from and writing to files.
-Traditionally the
-`java.io`
-package was used, but in modern Java applications you use the
-`java.nio.file` API.
+Traditionally the `java.io` package was used, but in modern Java applications you use the `java.nio.file` API.
 
 Java will read all input as a stream of bytes.
-The
-`InputStream`
-class
-is the superclass of all classes representing an
-input stream of bytes.
+The `InputStream` class is the superclass of all classes representing an input stream of bytes.
 
 [[javaio_readfile]]
 === Reading a file in Java
 
-To read a text file you can use the
-`Files.readAllBytes`
-method. The usage of this method is demonstrated in the following listing.
+To read a text file you can use the `Files.readAllBytes` method. 
+The usage of this method is demonstrated in the following listing.
 
 [source,java]
 ----
 include::res/read/ReadFile.java[]
 ----
 
-To read a text file line by line into a
-`List`
-of type
-`String`
-structure you can use the
-`Files.readAllLines`
-method.
+To read a text file line by line into a `List` of type `String` structure you can use the `Files.readAllLines` method.
 
 [source,java]
 ----
 include::res/read/ReadFileList.java[]
 ----
 
-`Files.readAllLines`
-uses UTF-8 character encoding. It also ensures that file is closed after all bytes are read or in case an
-exception
-occurred.
+`Files.readAllLines` uses UTF-8 character encoding.
+It also ensures that file is closed after all bytes are read or in case an exception occurred.
 
 [[javaio_streams]]
 === Reading and filtering line by line
 
-The
-`Files.lines`
-method allows read a file line by line, offering a stream. This stream can be filtered and mapped.
-`Files.lines`
-does not close the file once its content is read, therefore it should be wrapped inside a try-with-resource
-statement.
+The `Files.lines` method allows read a file line by line, offering a stream.
+This stream can be filtered and mapped.
+`Files.lines` does not close the file once its content is read, therefore it should be wrapped inside a try-with-resource statement.
 
-In the following
-example unnecessary whitespace at the end of each line is removed and empty lines are filterer.
+In the following example unnecessary whitespace at the end of each line is removed and empty lines are filterer.
 
 [source,java]
 ----
@@ -66,10 +46,22 @@ include::res/read/Files.lines.java[]
 ----
 
 The next example demonstrates how to filter out lines based on a certain regular expression.
+
 [source,java]
 ----
 include::res/read/Files.linesRegex.java[]
 ----
+
+The next example extracts a line starting with "Bundle-Version:" from a file called "MANIFEST.MF" located in the "META-INF" folder.
+It removes the prefix and removes all leading and trailing whitespace.
+
+[source, java]
+----
+include::res/read/ReadMANIFESTFile.java[]
+----
+
+
+
 
 [[javaio_writefile]]
 === Writing a file in Java

@@ -1,0 +1,45 @@
+== Decorating EventLists to extend the functionality
+
+In GlazedLists the decorator design pattern is used a lot in order to add functionality to a given `EventList`.
+
+=== Concurrency
+
+Even though the `EventList` class provides a getter for `ReadWriteLock` it is not thread safe by default.
+
+[source, java]
+----
+List<String> listOfNames = getListOfNames();
+EventList<String> eventList = GlazedLists.eventList(listOfNames);
+EventList<String> threadSafeEventList = GlazedLists.threadSafeList(eventList);
+----
+
+=== Sorting an EventList
+
+To automatically sort an `EventList` it can be decorated into a `SortedList`.
+
+[source, java]
+----
+EventList<? extends Comparable> basicEventList = new BasicEventList<>();
+SortedList<? extends Comparable> sortedList = new SortedList<>(basicEventList);
+----
+
+[source, java]
+----
+List<String> listOfNames = getListOfNames();
+EventList<String> eventList = GlazedLists.eventList(listOfNames);
+// the second parameter is a java.util.Comparator<T>
+SortedList<String> sortedList = new SortedList<>(eventList, (name0, name1) -> name0.compareTo(name1));
+----
+
+
+[NOTE]
+====
+You can also pass `null` as `java.util.Comparator<T>` and apply it later.
+
+[source, java]
+----
+new SortedList<>(eventList, null);
+----
+====
+
+

@@ -1,4 +1,4 @@
-== RxJava
+== RxJava 2.0
 
 === What is RxJava and reactive programming
 
@@ -13,35 +13,76 @@ RxJava is published under the Apache 2.0 license.
 
 RxJava describes itself as an API for asynchronous programming with observable streams
 
-=== Define a dependency to RxJava
+=== Define a dependency to RxJava 2.0
 
-As of this writing the version 1.1.3 is currently the released one. 
-Replace x.y.z with 1.1.3 or a later version.
+As of this writing the version 2.0.1 is currently the released one. 
+Replace g.a.v with 2.0.1 or a later version.
 
 For Maven you can add a dependency with the following snippet
 
 [source,xml]
 ----
 <dependency>
-    <groupId>io.reactivex</groupId>
+    <groupId>io.reactivex.rxjava2</groupId>
     <artifactId>rxjava</artifactId>
-    <version>x.y.z</version>
+    <version>g.a.v</version>
 </dependency>
 ----
 
 For a Gradle build you can add RxJava via the following dependency statement.
 
-[source,xml]
+[source, groovy]
 ----
-<dependency org="io.reactivex" name="rxjava" rev="x.y.z" />
+compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: 'g.a.v'
 ----
+
+=== Async programming
+
+Nowadays programming in an imperative single threaded way usually leads to strange behaviors, blocking non responsive UIs and therefore a bad user experience.
+
+This can be avoided by handling unpredicted things asynchronously. For example actively waiting for a database query or a webservice call can cause an application freeze, if the network is not responsive.
+
+An example would be:
+
+[source, java]
+----
+public List<Todo> getTodos() {
+	
+	List<Todo> todosFromWeb = // query a webservice (with bad network latency)
+	
+	return todosFromDb;
+}
+----
+
+Calling the getTodos() method from the main thread or an UI thread will cause a non responsive application until the `todosFromWeb` arrive.
+
+icon:thumbs-o-down[]
+
+To improve this the query, which takes an unpredictable amount of time, should run in a different thread and inform the main thread when a result comes in.
+
+[source, java]
+----
+public void getTodos(Consumer<List<Todo>> todosConsumer) {
+
+	Thread thread = new Thread(()-> {
+		List<Todo> todosFromWeb = // query a webservice
+
+		todosConsumer.accept(todosFromWeb);
+	});
+	thread.start();
+}
+----
+
+Now after calling the `getTodos(Consumer<List<Todo>> todosConsumer)` the main thread can continue working, is not blocked and can react once the accept method of the given `Consumer` is called.
+
+icon:thumbs-o-up[]
 
 === Observables, Observers and Subscriptions
 
 RxJava provides _Observables_ and _Observers_.
 Observables can send out values. 
 Observers, watch Observables by subscribing to them.
-Observers are notified when an Observable emits a value, when the Observable says an error has occurred. 
+Observers are notUsingified when an Observable emits a value, when the Observable says an error has occurred. 
 They are also notified when the	Observable sends the information that it no longer has any values to emit. 
 The corresponding functions are `onNext`, `onError`, and `onCompleted()` from the `Observer` interface.
 A instance of `Subscription` represents the connection between an observer and an observable. 

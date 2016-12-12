@@ -73,11 +73,6 @@ public class RxJavaExample {
 }
 ----
 
-=== Single 
-
-Instances of  `Single` work similar to `Observable` but they have only two callbacks `onSuccess()` and `onError()`.
-To subscribe to a `Single` use the `SingleSubscriber` interface.
-
 === Subjects
 
 Subjects are objects that are both an Observable and an Observer. 

@@ -13,38 +13,38 @@ The following table gives an overview of the most important annotations in JUnit
 |===
 |Annotation |Description
 
-|@Test + 
-public void method()
+|`@Test` +
+`public void method()`
 |The `@Test` annotation identifies a method as a test method.
 
-|@Test (expected = Exception.class)
+|`@Test (expected = Exception.class)`
 |Fails if the method does not throw the named exception.
 
-|@Test(timeout=100)
+|`@Test(timeout=100)`
 |Fails if the method takes longer than 100 milliseconds.
 
-|@Before + 
-public void method()
+|`@Before` +
+`public void method()`
 |This method is executed before each test. It is used to
 prepare the test environment (e.g., read input
 data, initialize the class).
 
-|@After + 
-public void method()
+|`@After` + 
+`public void method()`
 |This method is executed after each test. It is used to cleanup the test environment (e.g., delete temporary data, restore defaults). It can also save memory by cleaning up expensive memory structures.
 
-|@BeforeClass + 
-public static void method()
+|`@BeforeClass` + 
+`public static void method()`
 |This method is executed once, before the start of all tests.
 It is used to perform time intensive activities, for example, to connect to a database. Methods marked with this annotation need to be defined as `static` to work with JUnit.
 
-|@AfterClass + 
-public static void method()
+|`@AfterClass` + 
+`public static void method()`
 
 |This method is executed once, after all tests have been finished.
 It is used to perform clean-up activities, for example, to disconnect from a database. Methods annotated with this annotation need to be defined as `static` to work with JUnit.
 
-|@Ignore or @Ignore("Why disabled")
+|`@Ignore` or `@Ignore("Why disabled")`
 |Ignores the test method. This is useful when the
 underlying code has been changed and the test case has not
 yet
@@ -126,6 +126,6 @@ For example, the following disables a test on Linux:
 
 [source,java]
 ----
-`Assume.assumeFalse(System.getProperty("os.name").contains("Linux"));`
+Assume.assumeFalse(System.getProperty("os.name").contains("Linux"));
 ----
 	

@@ -1,14 +1,14 @@
 [[cheatsheets]]
 == Cheat Sheets
 
-The following can be used as a reference for certain task which
-you have to do.
+During your Java development time, you will be asked to do certain things, like creating a local variable.
+The following can be used as a reference for such tasks, so that you how what you have to do.
 
 [[cheatsheets_class]]
 === Working with classes
 
-While programming Java you have to create several classes,
-methods, instance variables. The following uses the package test.
+While programming Java you have to create several classes, methods, instance variables. 
+The following uses the package test.
 
 .Table Title
 |===
@@ -16,22 +16,13 @@ methods, instance variables. The following uses the package test.
 |What to do |How to do it
 
 |Create a new class called _MyNewClass_.
-a|[source,java]
-----
+a|
 include::res/cheatsheets/MyNewClass1.java[]
-----
 
-|Create a new attribute (instance variable) called
-_var1_
-of type `String`
-in the
-`MyNewClass`
-class
+|Create a new attribute (instance variable) called _var1_ of type `String` in the `MyNewClass` class
 
-a|[source,java]
-----
+a|
 include::res/cheatsheets/MyNewClass2.java[]
-----
 
 |Create a Constructor for your
 `MyNewClass`
@@ -42,20 +33,16 @@ the
 `var1`
 instance
 variable.
-a|[source,java]
-----
+a|
 include::res/cheatsheets/MyNewClass3.java[]
-----
 
 |Create a new method called
 _doSomeThing_
 in your class which does not
 return a value and has no parameters.
 
-a|[source,java]
-----
+a|
 include::res/cheatsheets/MyNewClass3a.java[]
-----
 
 |Create a new method called
 _doSomeThing2_
@@ -65,10 +52,8 @@ return a value and has two parameters,
 an `int`
 and a `Person`
 
-a|[source,java]
-----
+a|
 include::res/cheatsheets/MyNewClass4.java[]
-----
 
 |Create a new method called
 _doSomeThing2_
@@ -76,10 +61,8 @@ in your class which
 returns an `int` value and has three parameters,
 two `Strings` and a `Person`.
 
-a|[source,java]
-----
+a|
 include::res/cheatsheets/MyNewClass5.java[]
-----
 
 |Create a class called _MyOtherClass_ with two instance
 variables.
@@ -87,10 +70,8 @@ One will store a `String`, the other will store a `Dog`.
 Create
 getter and setter for these variables.
 
-a|[source,java]
-----
+a|
 include::res/cheatsheets/MyOtherClass.java[]
-----
 
 |===
 
@@ -141,18 +122,16 @@ variable
 |Declare an `ArrayList` variable which can hold objects
 of type
 `Person`
-|_ArrayList<Person> persons;_>
+|`ArrayList<Person> persons`
 
 |Create a new `ArrayList`
 with objects of type `Person`
 and
 assign it to the existing variable `persons`.
-|<_persons = new ArrayList<Person>();_>
+|`persons = new ArrayList<Person>();`
 
-|Declare an `ArrayList` variable which can hold objects
-of type `Person`
-and create a new `Object` for it.
-|_ArrayList<Person> persons = new ArrayList<Person>();_>
+|Declare an `ArrayList` variable which can hold objects of type `Person` and create a new `Object` for it.
+|`ArrayList<Person> persons = new ArrayList<Person>();`
 
 |===
 

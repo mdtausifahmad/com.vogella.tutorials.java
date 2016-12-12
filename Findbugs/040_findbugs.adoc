@@ -2,41 +2,25 @@
 
 === Run FindBugs for a project
 		
-To run the error analysis of FindBugs on a project, right-click
-on it
-and select the
-menu:Find Bugs...[Find Bugs]
-menu entry.
+To run the error analysis of FindBugs on a project, right-click on it and select the menu:Find Bugs...[Find Bugs] menu entry.
 		
 image::runfindbugs10.png[Run FindBugs on a project]
 
 === View the errors reported by FindBugs
         
-FindBugs provides specialized views to see the reported error
-messages. Select
-menu:View[Zoom > Reset]
-menu:Window[Show View > Other...]
-to access the views.
+FindBugs provides specialized views to see the reported error messages. 
+Select menu:View[Zoom > Reset] menu:Window[Show View > Other...] to access the views.
         
 image::findbugs20.png[]
         
 image::findbugs30.png[]
         
-The FindBugs error messages are also displayed in the
-_Problems_
-view
-or as decorators in the
-_Package Explorer_
-view.
+The FindBugs error messages are also displayed in the _Problems_ view or as decorators in the _Package Explorer_ view.
         
 === Configure automatic FindBugs run
 		
-You can configure that FindBugs should run automatically for a
-selected project. For this right-click
-on a project and select
-_Properties_
-from the popup menu.
-via the project properties.
+You can configure that FindBugs should run automatically for a selected project. 
+For this right-click on a project and select _Properties_ from the popup menu.
 Select
 menu:FindBugs[Run automatically].
 		

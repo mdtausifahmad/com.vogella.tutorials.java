@@ -1,4 +1,3 @@
-
 package test;
 
 public class MyNewClass {
@@ -10,7 +9,6 @@ public class MyNewClass {
 	}
 
 	public void doSomeThing() {
-
 	}
 
 }

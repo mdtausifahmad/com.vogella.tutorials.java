@@ -1,0 +1,35 @@
+== EventList
+
+=== EventList overview
+
+The `EventList` interface simply extends `java.util.List` and therefore can be used like every other Java list implementation.
+
+[source, java]
+----
+include::res/eventlist/EventList.java[]
+----
+
+It allows to attach listeners to the `List` once the list is changed.
+Also the `ListEventPublisher` can be obtained, which propagates the changes.
+
+For concurrency it provides a `getReadWriteLock()` and a `dispose()` method to ensure that the list can be garbage collected, e.g., when the list itself is attached as a listener.
+
+=== Creating an EventList
+
+The easiest way to create an `EventList` is to use the `BasicEventList`.
+
+[source, java]
+----
+EventList<Object> basicEventList = new BasicEventList<>();
+----
+
+If a `Collection` instance is already created or obtained from somewhere else a convenience method on the `GlazedLists` class can be used:
+
+[source, java]
+----
+List<String> listOfNames = getListOfNames();
+EventList<String> eventList = GlazedLists.eventList(listOfNames);
+----
+
+
+
