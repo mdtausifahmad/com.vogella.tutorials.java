@@ -28,7 +28,7 @@ SortedList<? extends Comparable> sortedList = new SortedList<>(basicEventList);
 List<String> listOfNames = getListOfNames();
 EventList<String> eventList = GlazedLists.eventList(listOfNames);
 // the second parameter is a java.util.Comparator<T>
-SortedList<String> sortedList = new SortedList<>(eventList, (name0, name1) -> name0.compareTo(name1));
+SortedList<String> sortedList = new SortedList<>(eventList, (s, s2) -> s.compareTo(s2));
 ----
 
 
