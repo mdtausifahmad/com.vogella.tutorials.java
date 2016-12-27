@@ -42,4 +42,34 @@ new SortedList<>(eventList, null);
 ----
 ====
 
+=== Observing the properties of objects in an EventList
+
+The `EventList` is able to fire events upon a change to the list itself.
+So adding, removing and setting elements for the list instance can be tracked by using a plain `EventList`, but if also the properties of elements in the list should be tracked an `ObservableElementList` will be the right choice.
+
+The `ObservableElementList` takes an `EventList` and a `ObservableElementList.Connector` as parameters. By implementing the `Connector` interface a possibility to track the elements in the list can be provided. +  
+It has 3 methods:
+
+[source, java]
+----
+public interface Connector<E> {
+	public EventListener installListener(E element);
+
+	public void uninstallListener(E element, EventListener listener);
+
+	public void setObservableElementList(ObservableElementList<? extends E> list);
+}
+----
+
+The `GlazedLists` class provides some methods to create default `Connector` instances like `GlazedLists.beanConnector(Person.class)` or `GlazedLists.observableConnector()`.
+
+An `ObservableElementList` for `Person` objects could be created like this:
+
+[source, java]
+----
+EventList<Person> personEventList = GlazedLists.eventList(persons);
+ObservableElementList<Person> observableElementList =
+	new ObservableElementList<>(personEventList, GlazedLists.beanConnector(Person.class));
+----
+
 
