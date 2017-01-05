@@ -1,0 +1,52 @@
+== Exercise: Using Retrofit to query Stackoverflow in Java
+
+The following section describes how to create a minimal Java application which uses Retrofit to query the questions and their links from the StackOverflow API. 
+The questions and links will then be printed on the console.
+
+=== Project creation and setup
+
+Create a new Java application with the name _StackoverflowJava_. 
+Add a new (default) package to _src/main/java_ with the name _com.vogella.java.retrofitstackoverflow_.
+
+Add the following dependencies to your build.gradle file.
+
+[source,xml]
+
+----
+include::res/stackoverflow_java/build.gradle[]
+----
+
+=== Define the API and the Retrofit adapter
+
+In the JSON reply from StackOverflow we are only interested in the title and the link. Therefore create the following data classes in the previously added default package.
+
+[source,java]
+----
+include::res/stackoverflow_java/Question.java[]
+----
+
+[source,java]
+----
+include::res/stackoverflow_java/StackOverflowQuestions.java[]
+----
+
+Define the REST API for Retrofit via the following interface.
+
+[source,java]
+----
+include::res/stackoverflow_java/StackOverflowAPI.java[]
+----
+
+Create the following controller class. This class creates the Retrofit client, calls the StackOverflow API and handles the result (prints the result of the call on the console).
+
+[source,java]
+----
+include::res/stackoverflow_java/Controller.java[]
+----
+ 
+The last step is to create a class with a _main_-method to start the controller.
+
+[source,java]
+----
+include::res/stackoverflow_java/Main.java[]
+----
