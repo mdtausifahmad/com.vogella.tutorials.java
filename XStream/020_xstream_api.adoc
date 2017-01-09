@@ -1,0 +1,27 @@
+== XStream - API
+
+The easiest way to serialize java objects with XStream looks like this:
+
+[source, java]
+----
+YourJavaObject yourJavaObject = // ...
+
+XStream xstream = new XStream();
+String yourJavaObjectAsXMLString = xstream.toXML(yourJavaObject);
+----
+
+The easiest way to deserialize java objects with XStream looks like this:
+
+[source, java]
+----
+String xml = // ...
+
+XStream xstream = new XStream();
+YourJavaObject yourJavaObject = (YourJavaObject)xstream.fromXML(xml);
+----
+
+The `toXML` and `fromXML` methods are overloaded several times. For examples also a file object or a stream can be passed to these methods.
+
+By default the fully qualified name of the objects being serialized is used, which usually leads to a less readable XML output. In order to avoid this the usage of aliases is recommended. See http://x-stream.github.io/alias-tutorial.html[Alias Tutorial] for further information.
+
+On the http://x-stream.github.io/[official XStream website] you can find more advanced features, like annotations, converters and more.

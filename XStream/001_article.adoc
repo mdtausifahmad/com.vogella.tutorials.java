@@ -13,6 +13,7 @@ Version 0.1, 09.01.2017
 This tutorial contains notes about XStream.
 				
 include::010_overview.adoc[]
+include::020_xstream_api.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::080_exercise_osgi.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
