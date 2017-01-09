@@ -45,4 +45,5 @@ include 'Retrofit'
 include 'Retrolambda'
 include 'RSSFeed'
 include 'GlazedLists'
+include 'XStream'
 

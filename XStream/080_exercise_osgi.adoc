@@ -1,0 +1,26 @@
+== Using XStream in an OSGi environment
+
+Since version 1.4.5 XStream provides the OSGi manifest meta data for bundles automatically.
+
+=== XStream from the Orbit repository
+
+But it can also be obtained from the public http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/[orbit p2 repositories]:
+
+image::xstream-from-orbit.png[]
+
+
+[TIP]
+====
+Since the orbit p2 repository only provides XStream 1.3.1, but the current version is 1.4.9 a custom p2 update site for this third party dependency could be created. See http://www.vogella.com/tutorials/EclipseJarToPlugin/article.html[How to create Eclipse plug-ins from Java libraries (JAR files) - Tutorial] for further information.
+====
+
+=== Using XStream in an OSGi bundle
+
+In general the usage is similar as in the java examples, but due the the OSGi architecture that each an every bundle has it's own class loader the XStream instance should always get a proper class loader for the objects, which should be serialized.
+
+[source, java]
+----
+XStream xstream = new XStream();
+xstream.setClassLoader(getClass().getClassLoader());
+----
+
