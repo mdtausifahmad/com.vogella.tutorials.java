@@ -20,22 +20,13 @@ include::res/conversion/toStringConversion[]
 include::res/conversion/fromStringToNumber[]
 ----
 
-The conversion from string to number is independent from the
-locale settings, e.g., it is always using the English
-notification for
-number. In this notification a correct
-number format is "8.20". Thed
-German number "8,20" would
-result in an error.
+The conversion from string to number is independent from the local settings, e.g., it always uses the English notification for number. 
+In this notification a correct number format is "8.20". 
+The German number "8,20" would result in an error.
 
-To convert from a German number, you have to use the
-`NumberFormat`
-class. The challenge is that when the value is,
-for example, 98.00 then
-the `NumberFormat` class would create a
-`Long` which cannot be casted to
-Double. Hence the following
-complex conversion class.
+To convert from a German number, you have to use the `NumberFormat` class. 
+The challenge is that when the value is, for example, 98.00 then the `NumberFormat` class would create a `Long` which cannot be casted to Double. 
+Hence the following complex conversion class.
 
 [source,text]
 ----
