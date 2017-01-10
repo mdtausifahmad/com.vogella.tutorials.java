@@ -11,11 +11,11 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import retrofit.Call;
-import retrofit.Callback;
-import retrofit.GsonConverterFactory;
-import retrofit.Response;
-import retrofit.Retrofit;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends ListActivity implements Callback<StackOverflowQuestions> {
 
@@ -68,15 +68,15 @@ public class MainActivity extends ListActivity implements Callback<StackOverflow
     }
 
     @Override
-    public void onResponse(Response<StackOverflowQuestions> response, Retrofit retrofit) {
-        setProgressBarIndeterminateVisibility(false);
+    public void onResponse(Call<StackOverflowQuestions> call, Response<StackOverflowQuestions> response) {
+    	setProgressBarIndeterminateVisibility(false);
         ArrayAdapter<Question> adapter = (ArrayAdapter<Question>) getListAdapter();
         adapter.clear();
         adapter.addAll(response.body().items);
     }
 
     @Override
-    public void onFailure(Throwable t) {
+    public void onFailure(Call<StackOverflowQuestions> call, Throwable t) {
         Toast.makeText(MainActivity.this, t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
     }
 }

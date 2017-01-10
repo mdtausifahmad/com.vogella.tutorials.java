@@ -58,7 +58,7 @@ The list structure is needed as stackoverflow wraps its answer in an item object
 include::res/stackoverflow/StackOverflowAPI.java[]
 ----	
 			
-Create a XML menu resource similar to the following called _main_menu.xml_.
+Create a XML menu resource similar to the following called _main_menu.xml_ and put it into the _menu_ folder, which you should find in the _res_ folder (create the folder if you could not find it).
 
 [source,xml]
 ----
