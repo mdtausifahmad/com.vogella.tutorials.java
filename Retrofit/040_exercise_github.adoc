@@ -19,6 +19,13 @@ Add the permission to access the Internet to your manifest file.
 include::res/github/AndroidManifest.xml[]
 ----
 
+Add two buttons to your _activity_main.xml_ layout file.
+
+[source,xml]
+----
+include::res/github/activity_main.xml[]
+----
+
 Create the following interface and class for the  Retrofit API.
 
 
