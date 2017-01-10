@@ -1,0 +1,8 @@
+== XStream
+
+XStream is an easy to use Java library to serialize Java objects, e.g., to an XML file. But also JSON is supported in the latest versions.
+
+It is licensed under a BSD license. See http://x-stream.github.io/license.html
+
+It can be downloaded here: http://x-stream.github.io/download.html, but also be obtained via Maven or Gradle or from the orbit p2 update site for OSGi projects.
+

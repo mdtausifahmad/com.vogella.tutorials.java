@@ -15,8 +15,8 @@ RxJava describes itself as an API for asynchronous programming with observable s
 
 === Define a dependency to RxJava 2.0
 
-As of this writing the version 2.0.1 is currently the released one. 
-Replace g.a.v with 2.0.1 or a later version.
+As of this writing the version 2.0.4 is currently the released one. 
+Replace g.a.v with 2.0.4 or a later version.
 
 For Maven you can add a dependency with the following snippet
 
@@ -35,6 +35,10 @@ For a Gradle build you can add RxJava via the following dependency statement.
 ----
 compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: 'g.a.v'
 ----
+
+For OSGi environments, e.g., Eclipse RCP development, https://dl.bintray.com/simon-scholz/RxJava-OSGi/ can be used as p2 update site.
+
+image::rxjava-update-site.png[] 
 
 === Async programming
 
