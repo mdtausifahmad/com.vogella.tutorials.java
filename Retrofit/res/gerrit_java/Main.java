@@ -1,4 +1,4 @@
-package com.vogella.java.retrofitstackoverflow;
+package com.vogella.java.retrofitgerrit;
 
 public class Main {
 
