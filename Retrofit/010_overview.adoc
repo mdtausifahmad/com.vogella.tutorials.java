@@ -22,7 +22,7 @@ To work with Retrofit you need basically three classes.
 * Interfaces which defines the possible HTTP operations
 * Retrofit.Builder class - Instance which uses the interface and the Builder API which allows defining the URL end point for the HTTP operation.
 
-===== Define HTTP operations through interfaces
+==== Define HTTP operations through interfaces
 Every method of an interface represents one possible API call.
 It must have a HTTP annotation (`GET`, `POST`, etc.) to specify the request type and the relative URL. 
 The return value wraps the response in a _Call_ object with the type of the expected result.
