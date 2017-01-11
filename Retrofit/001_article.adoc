@@ -14,6 +14,7 @@ This tutorial explains the usage of the Retrofit library as REST client.
 
 include::../web/advertisement/afterTableOfContent.adoc[] 
 include::010_overview.adoc[]
+include::020_exercise_gerrit_java.adoc[]
 include::030_exercise_stackoverflow.adoc[]
 include::040_exercise_github.adoc[]
 include::../support.adoc[]
