@@ -11,7 +11,6 @@ Add a new (default) package to _src/main/java_ with the name _com.vogella.java.r
 Add the following dependencies to your build.gradle file.
 
 [source,xml]
-
 ----
 include::res/gerrit_java/build.gradle[]
 ----
