@@ -86,7 +86,7 @@ icon:thumbs-o-up[]
 RxJava provides _Observables_ and _Observers_.
 Observables can send out values. 
 Observers, watch Observables by subscribing to them.
-Observers are notUsingified when an Observable emits a value, when the Observable says an error has occurred. 
+Observers are notified when an Observable emits a value, when the Observable says an error has occurred. 
 They are also notified when the	Observable sends the information that it no longer has any values to emit. 
 The corresponding functions are `onNext`, `onError`, and `onCompleted()` from the `Observer` interface.
 A instance of `Subscription` represents the connection between an observer and an observable. 
