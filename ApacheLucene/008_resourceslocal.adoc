@@ -1,0 +1,4 @@
+== ApacheLucene resources
+
+https://www.javacodegeeks.com/2015/09/apache-lucene-fundamentals.html[Apache Lucene Fundamentals Tutorial]
+

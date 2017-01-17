@@ -46,4 +46,6 @@ include 'Retrolambda'
 include 'RSSFeed'
 include 'GlazedLists'
 include 'XStream'
+include 'ApacheLucene'
+
 

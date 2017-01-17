@@ -1,0 +1,18 @@
+== Apache Lucene Overview
+
+Apache Lucene is an open source Java library with full text search capabilities using an inverted index.
+Enhanced analysis and tokenization functionalities are also part of this library, but also things like spell checking.
+
+Apache Lucene is especially good at handling a large amount of different text sources with a lot of contents.
+
+Inverted index means that it does not store keywords or terms of each and every source, but stores certain keywords and point to the sources containing these keywords.
+
+So instead of doing this:
+
+image::sources-to-keywords.png[] 
+
+Apache Lucene does that:
+
+image::keywords-to-sources.png[] 
+
+
