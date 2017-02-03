@@ -1,0 +1,34 @@
+[[using-lombok]]
+== Using lombok in Java projects
+
+=== Using Gradle
+
+In order to add lombok to the classpath of a Java Project with Gradle the following dependency has to be added:
+
+[source, groovy]
+----
+dependencies {
+	compileOnly('org.projectlombok:lombok')
+}
+----
+
+=== Using Maven
+
+In order to add lombok to the classpath of a Java Project with Apache Maven the following dependency has to be added:
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.16.12</version>
+</dependency>
+----
+
+=== Doing it manually
+
+The lombok library can also be downloaded directly from here: https://projectlombok.org/download.html and be added to the classpath.
+
+image::lombok-manual-classpath.png[] 
+
+

@@ -4,8 +4,8 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Simon Scholz (c) 2015, 2016 vogella GmbH
-Version 0.2, 26.09.2016
+Simon Scholz (c) 2015, 2017 vogella GmbH
+Version 0.3, 03.02.2017
 :docinfodir: ../
 :vgwort: Lombok
 
@@ -15,7 +15,9 @@ This article describes how to use Lombok for the creation of data/model objects.
   
 include::../web/advertisement/afterTableOfContent.adoc[]  
 include::010_overview.adoc[]
-include::030_install-eclipse.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::020_get_lombok.adoc[]
+include::030_install_eclipse.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
