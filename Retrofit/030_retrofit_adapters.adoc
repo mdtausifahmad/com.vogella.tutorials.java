@@ -1,0 +1,43 @@
+== Retrofit Adapters
+
+Retrofit can also be extended by adapters to get involved with other libraries like RxJava 2.x, Java 8 and Guava.
+
+An overview for available adapters can be found on Github https://github.com/square/retrofit/tree/master/retrofit-adapters[square/retrofit/retrofit-adapters/].
+
+For example the RxJava 2.x adapter can be obtained by using Gradle:
+
+[source, groovy]
+----
+compile 'com.squareup.retrofit2:adapter-rxjava2:latest.version'
+----
+
+or using Apache Maven:
+
+[source, xml]
+----
+<dependency>
+  <groupId>com.squareup.retrofit2</groupId>
+  <artifactId>adapter-rxjava2</artifactId>
+  <version>latest.version</version>
+</dependency>
+----
+
+In order to add an adapter the `retrofit2.Retrofit.Builder.addCallAdapterFactory(Factory)` method has to be used.
+
+[source, java]
+----
+Retrofit retrofit = new Retrofit.Builder()
+    .baseUrl("https://api.example.com")
+    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+    .build();
+----
+
+With this adapter being applied the Retrofit interfaces are able to return RxJava 2.x types, e.g., Observable, Flowable or Single and so on.
+
+[source, java]
+----
+@GET("users")
+Observable<List<User>> getUsers();
+----
+
+
