@@ -5,3 +5,5 @@ https://github.com/codepath/android_guides/wiki/Consuming-APIs-with-Retrofit[Con
 	
 http://inthecheesefactory.com/blog/retrofit-2.0/en[In dept blog series about Retrofit]
 
+https://guides.codepath.com/android/Consuming-APIs-with-Retrofit[Consuming APIs with Retrofit]
+
