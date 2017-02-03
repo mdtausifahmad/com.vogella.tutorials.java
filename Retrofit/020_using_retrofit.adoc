@@ -1,0 +1,43 @@
+== Using Retrofit
+
+Every method of an interface represents one possible API call.
+It must have a HTTP annotation (`GET`, `POST`, etc.) to specify the request type and the relative URL. 
+The return value wraps the response in a _Call_ object with the type of the expected result.
+
+[source, java]
+----
+@GET("users")
+Call<List<User>> getUsers()
+----
+
+To dynamically change the URL Retrofit supports replacement blocks and query parameters.
+A replacement block is added to the relative URL with `{}`. 
+With the help of the `@Path` annotation on the method parameter, the value of that parameter is bound to the specific replacement block.
+
+[source, java]
+----
+@GET("users/{name}/commits")
+Call<List<Commit>> getCommitsByName(@Path("name") String name)
+----
+
+Query parameters are added with the `@Query` annotation on a method parameter. 
+They are automatically added at the end of the URL.
+
+[source, java]
+----
+@GET("users")
+Call<User> getUserById(@Query("id") Integer id)
+----
+
+
+The `@Body` annotation on a method parameter tells Retrofit to use the object as the request body for the call.
+
+[source, java]
+----
+@POST("users")
+Call<User> postUser(@Body User user)
+----
+
+You can generate Java objects based on JSON via the following URL: http://www.jsonschema2pojo.org/
+This can be useful to create complex Java data structures from existing JSON.
+
