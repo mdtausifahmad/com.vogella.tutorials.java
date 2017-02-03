@@ -1,6 +1,8 @@
 [[lombok]]
 == Introduction to lombok
 
+The offical lombok website can be found here: https://projectlombok.org/
+
 Lombok is used to reduce boilerplate code for model/data objects, e.g., it can generate
 getters and setters for those object automatically by using Lombok annotations.
 The easiest way is to use the `@Data` annotation.
