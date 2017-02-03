@@ -1,0 +1,33 @@
+[[lombok-eclipse]]
+== Enable lombok for Eclipse or Spring Tool Suite
+
+You can download the latest lombok version from https://projectlombok.org/download.html or by using Gradle, Maven or other tools.
+
+The _lombok.jar_ can be copied into the root Eclipse or Spring Tool Suite folder and run like this:
+
+[source, console]
+----
+java -jar lombok-1.16.12.jar
+----
+
+This will open a small UI, where the location of the Eclipse installation can be specified.
+Usually the Eclipse installation will be found automatically and lombok can be installed or updated.
+
+image::lombok-installer.png[] 
+
+Just press the btn:[Install / Update] button and restart the IDE.
+
+[NOTE]
+====
+Sometimes this error message is shown:
+
+image::cannot-find-IDE-error.png[] 
+
+Then the location of the installation has to be specified.
+Therefore press the btn:[Specify location...] button and select the _eclipse.ini_ or _STS.ini_ file.
+
+image::select-eclipse-installation.png[] 
+
+====
+
+
