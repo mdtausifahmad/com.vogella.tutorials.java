@@ -22,4 +22,10 @@ To work with Retrofit you need basically three classes.
 * Interfaces which defines the possible HTTP operations
 * Retrofit.Builder class - Instance which uses the interface and the Builder API which allows defining the URL end point for the HTTP operation.
 
+[TIP]
+====
+You can generate Java objects based on JSON via the following URL: http://www.jsonschema2pojo.org/
+This can be useful to create complex Java data structures from existing JSON.
+====
+
 

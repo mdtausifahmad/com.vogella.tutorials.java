@@ -38,6 +38,4 @@ The `@Body` annotation on a method parameter tells Retrofit to use the object as
 Call<User> postUser(@Body User user)
 ----
 
-You can generate Java objects based on JSON via the following URL: http://www.jsonschema2pojo.org/
-This can be useful to create complex Java data structures from existing JSON.
 
