@@ -1,4 +1,4 @@
-= Using Retrofit 2.0 as REST client - Tutorial
+= Using Retrofit 2.x as REST client - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
