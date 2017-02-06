@@ -7,15 +7,6 @@ Retrofit can be configured with converter is used for its data serialization.
 Typically for JSON you use GSon, but you can add custom converters to process XML or other protocols.
 Retrofit uses the OkHttp library for HTTP requests.
 
-Retrofit allows to use the following converters:
-
-* Gson: com.squareup.retrofit:converter-gson
-* Jackson: com.squareup.retrofit:converter-jackson
-* Moshi: com.squareup.retrofit:converter-moshi
-* Protobuf: com.squareup.retrofit:converter-protobuf
-* Wire: com.squareup.retrofit:converter-wire
-* Simple XML: com.squareup.retrofit:converter-simplexml
-
 To work with Retrofit you need basically three classes.
 
 * Model class which is used to map the JSON data to

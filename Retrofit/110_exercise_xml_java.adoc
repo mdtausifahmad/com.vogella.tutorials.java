@@ -1,0 +1,93 @@
+== Exercise: Using Retrofit to convert XML response from the Vogella RSS feed
+
+This section describes how to use Retrofit to convert a XML response with the help of the _Simple XML Converter_.
+
+A minimal Java application is created that requests the Vogella RSS feed (http://vogella.com/article.rss) and prints out the channel title and the titles and the links of the articles. 
+
+=== Project creation and setup
+
+This exercise assumes that you are familiar with http://www.vogella.com/tutorials/Gradle/article.html[Gradle] and http://www.vogella.com/tutorials/EclipseGradle/article.html[Buildship for Eclipse].
+
+Create a new Gradle project with the name _RetrofitXML_. 
+Add a new (default) package to _src/main/java_ with the name _com.vogella.java.retrofitxml_.
+
+Add the following dependencies to your build.gradle file.
+
+[source,xml]
+----
+include::res/xml_java/build.gradle[]
+----
+
+=== Define the XML mapping
+
+Assume the following XML response from the Vogella API when requesting the RSS feed.
+
+[source,xml]
+----
+include::res/xml_java/rss.xml[]
+----
+
+Besides the XML header this file consists of various XML elements.
+The rss-element contains a channel-element which again contains other elements (i.e. title, description, pubDate) and several item-elements (the articles). 
+
+Create the following two data classes named _VogellaRSSFeed_ and _Article_.
+
+[source,java]
+----
+include::res/xml_java/VogellaRSSFeed.java[]
+----
+
+[source,java]
+----
+include::res/xml_java/Article.java[]
+----
+
+The VogelleRSSFeed class represents the Vogella RSS feed. 
+As we are only interested in the title of the channel and the articles, the class only has two fields.
+The Article class represents one single article and only stores the title and the link of it.
+
+With the `@Root` annotation a class is marked to be (de)serialized.
+Optional, you can provide a name in the `@Root` annotation that represents the name of the XML element.
+If no name is provided, the class name is used as the XML element name. 
+Because the class name (VogellaRSSFeed) is different to the XML element name (rss), you have to provide a name.
+
+With _strict_ set to _false_, strict parsing is disabled. 
+This tells the parser to not fail and throw an exception, if a XML element or attribute is found for which no mapping is provided. 
+As the rss-element has the version attribute which is not bound to a field, the application would crash, if it is not set to false.
+
+With the help of the `@Element` annotation, a XML element is represented. 
+Optional, you can provide a name for the XML element that is represented by that field.
+If no name is provided, the fields name is used.
+
+The field _articleList_ is annotated with `@ElementList` .
+That indicates, that this field is used to store a _Collection_ (in our case: _List<Article>_) of XML elements with the same name. 
+With _inline_ set to _true_ it is determined that the elements of the Collection are inlined. 
+That means, that they have no enclosing element and are listed one after another within the XML response.
+
+With the `@Path` annotation you can provide a path to an XML element inside the XML tree.
+This is helpful, if you don't want to model the complete XML tree with Java objects.  
+For the title of the channel and the several item-elements, we can directly point to the specific elements within the channel-element.
+
+=== Define the API and the Retrofit adapter
+
+Define the REST API for Retrofit via the following interface.    
+
+[source,java]
+----
+include::res/xml_java/VogellaAPI.java[]
+----
+
+Create the following controller class. This class creates the Retrofit client, calls the Vogella API and handles the result.
+
+[source,java]
+----
+include::res/xml_java/Controller.java[]
+----
+ 
+The last step is to create a class with a _main_-method to start the controller.
+
+[source,java]
+----
+include::res/xml_java/Application.java[]
+----
+

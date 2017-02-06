@@ -1,0 +1,19 @@
+== Retrofit Converters
+
+This section provides an overview of the different converters Retrofit can be configured with to handle the data (de)serialization. 
+Square already provides converters for various serialization libraries to use with Retrofit.
+
+* To convert to and from JSON:
+** Gson: com.squareup.retrofit:converter-gson
+** Jackson: com.squareup.retrofit:converter-jackson
+** Moshi: com.squareup.retrofit:converter-moshi
+
+* To convert to and from Protocol Buffers:
+** Protobuf: com.squareup.retrofit:converter-protobuf
+** Wire: com.squareup.retrofit:converter-wire
+
+* To convert to and from XML:
+** Simple XML: com.squareup.retrofit:converter-simplexml
+
+Besides the listed converters, you can also create custom converters to process other protocols by subclassing the _Converter.Factory class_. 
+
