@@ -1,12 +1,14 @@
 == Exercise: Using Retrofit to query Gerrit in Java
 
 The following section describes how to create a minimal Java application which uses Retrofit to query the subjects of open changes from the Gerrit API. 
-The results will then be printed on the console.
+The results are printed on the console.
 
 === Project creation and setup
 
-Create a new Java application with the name _GerritJava_. 
-Add a new (default) package to _src/main/java_ with the name _com.vogella.java.retrofitgerrit_.
+This exercise assumes that you are familiar with http://www.vogella.com/tutorials/Gradle/article.html[Gradle] and http://www.vogella.com/tutorials/EclipseGradle/article.html[Buildship for Eclipse].
+
+Create a new Gradle project with the name _com.vogella.java.retrofitgerrit_.
+Add a new package to _src/main/java_ with the name _com.vogella.java.retrofitgerrit_.
 
 Add the following dependencies to your build.gradle file.
 
@@ -31,14 +33,15 @@ Define the REST API for Retrofit via the following interface.
 include::res/gerrit_java/GerritAPI.java[]
 ----
 
-Create the following controller class. This class creates the Retrofit client, calls the Gerrit API and handles the result (prints the result of the call on the console).
+Create the following controller class. 
+This class creates the Retrofit client, calls the Gerrit API and handles the result (prints the result of the call on the console).
 
 [source,java]
 ----
 include::res/gerrit_java/Controller.java[]
 ----
  
-The last step is to create a class with a _main_-method to start the controller.
+Create a class with a _main_-method to start the controller.
 
 [source,java]
 ----

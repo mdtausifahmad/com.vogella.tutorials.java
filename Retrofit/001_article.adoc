@@ -4,8 +4,8 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel, Simon Scholz (c) 2012, 2017 vogella GmbH
-Version 2.0, 03.01.2017
+Lars Vogel, Simon Scholz, David Weiser (c) 2012, 2017 vogella GmbH
+Version 2.1, 06.02.2017
 :docinfodir: ../
 :vgwort: Retrofit
 
@@ -14,9 +14,7 @@ This tutorial explains the usage of the Retrofit library as REST client.
 
 include::../web/advertisement/afterTableOfContent.adoc[] 
 include::010_overview.adoc[]
-include::020_using_retrofit.adoc[]
-include::030_retrofit_adapters.adoc[]
-include::040_retrofit_converters.adoc[]
+include::040_retrofit_converters_adapters.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::100_exercise_gerrit_java.adoc[]
 include::110_exercise_xml_java.adoc[]

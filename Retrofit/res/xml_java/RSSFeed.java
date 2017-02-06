@@ -8,7 +8,7 @@ import org.simpleframework.xml.Path;
 import org.simpleframework.xml.Root;
 
 @Root(name="rss", strict=false)
-public class VogellaRSSFeed {
+public class RSSFeed {
 
 	@Element(name="title")
 	@Path("channel")

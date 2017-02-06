@@ -6,7 +6,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
 
-public class Controller implements Callback<VogellaRSSFeed> {
+public class Controller implements Callback<RSSFeed> {
 
 	static final String BASE_URL = "http://vogella.com/";
 
@@ -16,14 +16,14 @@ public class Controller implements Callback<VogellaRSSFeed> {
 
 		VogellaAPI vogellaAPI = retrofit.create(VogellaAPI.class);
 
-		Call<VogellaRSSFeed> call = vogellaAPI.loadRSSFeed();
+		Call<RSSFeed> call = vogellaAPI.loadRSSFeed();
 		call.enqueue(this);
 	}
 
 	@Override
-	public void onResponse(Call<VogellaRSSFeed> call, Response<VogellaRSSFeed> response) {
+	public void onResponse(Call<RSSFeed> call, Response<RSSFeed> response) {
 		if (response.isSuccessful()) {
-			VogellaRSSFeed rss = response.body();
+			RSSFeed rss = response.body();
 			System.out.println("Channel title: " + rss.getChannelTitle());
 			rss.getArticleList().forEach(
 					article -> System.out.println("Title: " + article.getTitle() + " Link: " + article.getLink()));
@@ -33,7 +33,7 @@ public class Controller implements Callback<VogellaRSSFeed> {
 	}
 
 	@Override
-	public void onFailure(Call<VogellaRSSFeed> call, Throwable t) {
+	public void onFailure(Call<RSSFeed> call, Throwable t) {
 		t.printStackTrace();
 	}
 }

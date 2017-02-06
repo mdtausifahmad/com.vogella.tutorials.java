@@ -6,5 +6,5 @@ import retrofit2.http.GET;
 public interface VogellaAPI {
 
 	@GET("article.rss")
-	Call<VogellaRSSFeed> loadRSSFeed();
+	Call<RSSFeed> loadRSSFeed();
 }
