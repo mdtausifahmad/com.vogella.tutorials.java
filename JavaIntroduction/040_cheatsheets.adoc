@@ -17,12 +17,18 @@ The following uses the package test.
 
 |Create a new class called _MyNewClass_.
 a|
+[source, java]
+----
 include::res/cheatsheets/MyNewClass1.java[]
+----
 
 |Create a new attribute (instance variable) called _var1_ of type `String` in the `MyNewClass` class
 
 a|
+[source, java]
+----
 include::res/cheatsheets/MyNewClass2.java[]
+----
 
 |Create a Constructor for your
 `MyNewClass`
@@ -34,7 +40,10 @@ the
 instance
 variable.
 a|
+[source, java]
+----
 include::res/cheatsheets/MyNewClass3.java[]
+----
 
 |Create a new method called
 _doSomeThing_
@@ -42,7 +51,10 @@ in your class which does not
 return a value and has no parameters.
 
 a|
+[source, java]
+----
 include::res/cheatsheets/MyNewClass3a.java[]
+----
 
 |Create a new method called
 _doSomeThing2_
@@ -53,7 +65,10 @@ an `int`
 and a `Person`
 
 a|
+[source, java]
+----
 include::res/cheatsheets/MyNewClass4.java[]
+----
 
 |Create a new method called
 _doSomeThing3_
@@ -62,7 +77,10 @@ returns an `int` value and has three parameters,
 two `Strings` and a `Person`.
 
 a|
+[source, java]
+----
 include::res/cheatsheets/MyNewClass5.java[]
+----
 
 |Create a class called _MyOtherClass_ with two instance
 variables.
@@ -71,7 +89,10 @@ Create
 getter and setter for these variables.
 
 a|
+[source, java]
+----
 include::res/cheatsheets/MyOtherClass.java[]
+----
 
 |===
 
@@ -87,51 +108,95 @@ A local variable must always be declared in a method.
 |What to do |How to do it
 
 |Declare a (local) variable of type `String`.
-|`String variable1;`
+a|
+[source, java]
+----
+String variable1;
+----
 
 |Declare a (local) variable of type `String` and
 assign
 `"Test"`
 to it.
-|`String variable2 = "Test";`
+a|
+[source, java]
+----
+String variable2 = "Test";
+----
 
 |Declare a (local) variable of type `Person`
-|`Person person;`
+a|
+[source, java]
+----
+Person person;
+----
 
 |Declare a (local) variable of type `Person`,
 create a new Object and assign the variable to this object.
-|`Person person = new Person();`
+a|
+[source, java]
+----
+Person person = new Person();
+----
 
 |Declare an array of type `String`
-|`String array[];`
+a|
+[source, java]
+----
+String array[];
+----
 
 |Declare an array of type `Person` and create an array
 for this
 variable which can hold 5 persons.
-|`Person array[]= new Person[5];`
+a|
+[source, java]
+----
+Person array[]= new Person[5];
+----
 
 |Assign 5 to the `int` variable `var1`
 (which was already declared);
-|`var1 = 5;`
+a|
+[source, java]
+----
+var1 = 5;
+----
 
 |Assign the existing variable `pers2` to the existing
 variable
 `pers1`;
-|`pers1 = pers2;`
+a|
+[source, java]
+----
+pers1 = pers2;
+----
 
 |Declare an `ArrayList` variable which can hold objects
 of type
 `Person`
-|`ArrayList<Person> persons`
+a|
+[source, java]
+----
+ArrayList<Person> persons
+----
 
 |Create a new `ArrayList`
 with objects of type `Person`
 and
 assign it to the existing variable `persons`.
-|`persons = new ArrayList<Person>();`
+a|
+[source, java]
+----
+persons = new ArrayList<Person>();
+----
 
 |Declare an `ArrayList` variable which can hold objects of type `Person` and create a new `Object` for it.
-|`ArrayList<Person> persons = new ArrayList<Person>();`
+a|
+[source, java]
+----
+ArrayList<Person> persons = new ArrayList<Person>();
+----
 
 |===
 
