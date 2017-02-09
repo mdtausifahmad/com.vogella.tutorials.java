@@ -56,7 +56,7 @@ a|
 include::res/cheatsheets/MyNewClass4.java[]
 
 |Create a new method called
-_doSomeThing2_
+_doSomeThing3_
 in your class which
 returns an `int` value and has three parameters,
 two `Strings` and a `Person`.
