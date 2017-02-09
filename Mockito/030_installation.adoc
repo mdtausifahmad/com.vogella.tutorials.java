@@ -22,7 +22,7 @@ Search for g:"org.mockito", a:"mockito-core" via the http://search.maven.org web
 
 The Eclipse IDE supports Gradle as well as Maven.
 Mockito does not provide a "all" download in its latest version.
-Therefore you are advised to use either the Gradle or Maven tooling in Eclipes. 
+Therefore you are advised to use either the Gradle or Maven tooling in Eclipse. 
 
 [[mockito_installation_p2]]
 === OSGi or Eclipse plug-in development
