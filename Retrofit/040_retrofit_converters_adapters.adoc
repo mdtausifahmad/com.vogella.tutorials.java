@@ -1,6 +1,6 @@
 == Retrofit converters and adapters
 
-== Retrofit converters
+=== Retrofit Converters
 
 Retrofit can be configured to use a specific converter.
 This converter handles the data (de)serialization. 
@@ -20,7 +20,7 @@ Several converters are already available for various serialization formats.
 
 Besides the listed converters, you can also create custom converters to process other protocols by subclassing the _Converter.Factory class_. 
 
-=== Retrofit adapters
+=== Retrofit Adapters
 
 Retrofit can also be extended by adapters to get involved with other libraries like RxJava 2.x, Java 8 and Guava.
 
