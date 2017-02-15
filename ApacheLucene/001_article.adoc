@@ -20,3 +20,7 @@ include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
 
+++++
+<script type="text/javascript" src="//darshandsoni.com/asciidoctor-skins/switcher.js"></script>
+++++
+
