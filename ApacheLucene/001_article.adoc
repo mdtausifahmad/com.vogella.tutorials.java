@@ -4,6 +4,7 @@
 :experimental:
 :icons:
 :imagesdir: ./img
+:stylesheet: asciidoctor.css
 Simon Scholz (c) 2017 vogella GmbH
 Version 0.1, 17.01.2017
 :docinfodir: ../
@@ -18,8 +19,4 @@ include::../web/advertisement/inBetween02.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
-
-++++
-<script src="https://darshandsoni.com/asciidoctor-skins/switcher.js" type="text/javascript"></script>
-++++
 
