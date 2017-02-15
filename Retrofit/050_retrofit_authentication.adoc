@@ -1,0 +1,69 @@
+== Retrofit authentication
+
+Retrofit supports you with API calls that need authentication.
+Authentication can be done by using a username and a password (_Http Basic authentication_) or an API token.
+
+There are two ways, how you can handle the authentication.
+The first method would be to manipulate the header for the request with the help of annotations.
+Another possibility would be to use an OkHttp interceptor for that.
+
+=== Authentication with annotations
+
+Assume, that you want to request your user details, which requires you to authenticate.
+You can do this by adding a new parameter to your API definition, like the following:
+
+[source, java]
+----
+@GET("user")
+Call<UserDetails> getUserDetails(@Header("Authorization") String credentials)
+----
+
+With the help of the `@Header("Authorization")` annotation you tell Retrofit to add the _Authorization_ field to the request header with the value you provide for _credentials_.
+
+To generate Basic authentication credentials, you can use OkHttps _Credentials_ class with its _basic(String, String)_ method.
+The method takes the username and the password and returns the authentication credential for the Basic scheme.
+
+[source, java]
+----
+Credentials.basic("ausername","apassword");
+----
+
+If you want to use an API token and no Basic authentication, just call the `getUserDetails(String)` method with your token instead.
+
+=== Authentication with OkHttp interceptors
+
+The above method only adds the credentials, if you request your user details.
+If you have more calls that require you to authenticate, you can use an interceptor for this.
+An interceptor is used to modify each request before it is performed and alters the request header.
+The advantage is, that you don't have to add `@Header("Authorization")` to each API method definition.
+
+To add an interceptor, you have to use the `okhttp3.OkHttpClient.Builder.addInterceptor(Interceptor)` method on the OkHttp Builder.
+
+[source, java]
+----
+OkHttpClient okHttpClient = new OkHttpClient().newBuilder().addInterceptor(new Interceptor() {
+			@Override
+			public okhttp3.Response intercept(Chain chain) throws IOException {
+				Request originalRequest = chain.request();
+
+				Request.Builder builder = originalRequest.newBuilder().header("Authorization",
+						Credentials.basic("aUsername", "aPassword"));
+
+				Request newRequest = builder.build();
+				return chain.proceed(newRequest);
+			}
+		}).build();
+----
+
+The created OkHttp client has to be added to your Retrofit client with the `retrofit2.Retrofit.Builder.client(OkHttpClient)` method.
+
+[source, java]
+----
+Retrofit retrofit = new Retrofit.Builder()
+    .baseUrl("https://api.example.com")
+    .client(okHttpClient)
+    .build();
+----
+
+You may again noticed the usage of the Credentials class for Basic authentication. 
+Again, if you want to use a API token, just use the token instead.
