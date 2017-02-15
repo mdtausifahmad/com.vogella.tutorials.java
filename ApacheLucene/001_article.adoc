@@ -19,4 +19,3 @@ include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
 
-
