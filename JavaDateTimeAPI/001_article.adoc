@@ -4,6 +4,7 @@
 :experimental:
 :icons:
 :imagesdir: ./img
+:stylesheet: asciidoctor.css
 Lars Vogel (c) 2009, 2016 vogella GmbH
 Version 1.2, 29.08.2016
 :docinfodir: ../

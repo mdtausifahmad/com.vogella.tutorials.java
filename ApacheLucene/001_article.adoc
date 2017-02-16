@@ -13,14 +13,9 @@ Version 0.1, 17.01.2017
 [abstract]
 This tutorial contains notes about Apache Lucene.
 				
+include::../web/advertisement/afterTableOfContent.adoc[]	
 include::010_overview.adoc[]
-include::../web/advertisement/inBetween01.adoc[]
-include::../web/advertisement/inBetween02.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]	
-
-++++
-<script type="text/javascript" src="http://www.vogella.com/javascript/switcher.js"></script>
-++++
 

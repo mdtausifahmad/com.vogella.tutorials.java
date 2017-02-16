@@ -4,6 +4,7 @@
 :experimental:
 :icons:
 :imagesdir: ./img
+:stylesheet: asciidoctor.css
 Simon Scholz (c) 2016 vogella GmbH
 Version 0.1, 30.11.2016
 :docinfodir: ../
