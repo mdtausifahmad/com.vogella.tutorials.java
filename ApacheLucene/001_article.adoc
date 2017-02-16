@@ -1,5 +1,4 @@
 = Apache Lucene - Tutorial
-:linkcss:
 :sectnums:
 :experimental:
 :icons:
