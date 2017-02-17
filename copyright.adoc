@@ -13,7 +13,3 @@ See http://www.vogella.com/license.html[Licence].
 
 include::./web/vgwort/{vgwort}.adoc[]
 
-++++
-<script type="text/javascript" src="http://www.vogella.com/javascript/switcher.js"></script>
-++++
-
