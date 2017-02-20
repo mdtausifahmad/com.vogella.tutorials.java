@@ -1,0 +1,69 @@
+== Exercise: Using Retrofit to post comment on Github issue in Android
+
+This exercise describes how to list all issues that are assigned to an user in an Android application using Retrofit.
+You can select an issue from a drop down field and post a comment on it.
+Make sure, that you have a Github account, as this tutorial doesn't work if you don't have one.
+
+=== Project setup
+
+Create an Android application with the name _Retrofit Github Comment_.
+Use _com.vogella.android.retrofitgithubcomment_ as the top level package name.
+
+To use Retrofit, add the following lines to your build.gradle file
+
+[source,gradle]
+----
+include::res/github_comment/build.gradle[]
+----
+
+Add the permission to access the Internet to your manifest file.
+
+[source,xml]
+----
+include::res/github_comment/AndroidManifest.xml[]
+----
+
+=== Define the API
+
+Create the following data class called _GithubIssue_.
+
+[source,java]
+----
+include::res/github_comment/GithubIssue.java[]
+----
+
+We only show the id and the title of the issue in the drop down field, so we create a field for each of them.
+Furthermore, the response from Github contains the URL we have to post the comment to, which we store in the field _comments_url_.
+To later post a new comment to the Github API, we add a field called _comment_.
+The https://developer.github.com/v3/issues/comments/#create-a-comment[Github API] specifies that the contents of a comment has to be bound to a field named _body_ in the JSON request.  
+As Retrofit (de)serializes all fields based on their name and as we don't want to use _body_ as the field name in out GithubIssue class, we use the `@SerializedName` annotation.
+With the help of this annotation, we can change the name a field is (de)serialized to in the JSON.
+
+Define the REST API for Retrofit via the following interface:
+
+[source,java]
+----
+include::res/github_comment/GithubAPI.java[]
+----
+
+You might wonder about the `@Url` annotation.
+With the help of this annotation, we can provide the URL for this request.
+This allows us to change the URL for each request dynamically.
+We need this for the _comments_url_ field of the GithubIssue class.
+
+=== Create Activity
+
+Add two _Buttons_ (to load the issues and to send the comment), a _Spinner_ (the drop down field to list the issues) and an _EditText_ (to provide your comment) to your _activity_main.xml_ layout file. 
+
+[source,xml]
+----
+include::res/github_comment/activity_main.xml[]
+----
+
+Change your activity code to allow querying for issues assigned to an user and to post a comment on an issue.
+Make sure, that you replace _aUsername_ and _aPassword_ with your Github login credentials.
+
+[source,java]
+----
+include::res/github_comment/MainActivity.java[]
+----
