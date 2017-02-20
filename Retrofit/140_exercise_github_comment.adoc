@@ -36,7 +36,7 @@ We only show the id and the title of the issue in the drop down field, so we cre
 Furthermore, the response from Github contains the URL we have to post the comment to, which we store in the field _comments_url_.
 To later post a new comment to the Github API, we add a field called _comment_.
 The https://developer.github.com/v3/issues/comments/#create-a-comment[Github API] specifies that the contents of a comment has to be bound to a field named _body_ in the JSON request.  
-As Retrofit (de)serializes all fields based on their name and as we don't want to use _body_ as the field name in out GithubIssue class, we use the `@SerializedName` annotation.
+As Retrofit (de)serializes all fields based on their name and as we don't want to use _body_ as the field name in our GithubIssue class, we use the `@SerializedName` annotation.
 With the help of this annotation, we can change the name a field is (de)serialized to in the JSON.
 
 Define the REST API for Retrofit via the following interface:
