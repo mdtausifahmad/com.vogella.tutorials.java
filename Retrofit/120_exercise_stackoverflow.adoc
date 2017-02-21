@@ -40,11 +40,6 @@ Therefore create the following data classes.
 include::res/stackoverflow/Question.java[]
 ----
 
-[source,java]
-----
-include::res/stackoverflow/StackOverflowQuestions.java[]
-----
-
 Define the REST API for Retrofit via the following interface.
 
 [TIP]
