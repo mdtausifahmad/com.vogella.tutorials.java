@@ -17,7 +17,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends ListActivity implements Callback<StackOverflowQuestions> {
+public class MainActivity extends ListActivity implements Callback<List<Question>> {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +50,7 @@ public class MainActivity extends ListActivity implements Callback<StackOverflow
         // prepare call in Retrofit 2.0
         StackOverflowAPI stackOverflowAPI = retrofit.create(StackOverflowAPI.class);
 
-        Call<StackOverflowQuestions> call = stackOverflowAPI.loadQuestions("android");
+        Call<List<Question>> call = stackOverflowAPI.loadQuestions("android");
         //asynchronous call
         call.enqueue(this);
 
@@ -61,14 +61,14 @@ public class MainActivity extends ListActivity implements Callback<StackOverflow
         // to cancel a running request
         // call.cancel();
         // calls can only be used once but you can easily clone them
-        //Call<StackOverflowQuestions> c = call.clone();
+        //Call<> c = call.clone();
         //c.enqueue(this);
 
         return true;
     }
 
     @Override
-    public void onResponse(Call<StackOverflowQuestions> call, Response<StackOverflowQuestions> response) {
+    public void onResponse(Call<List<Question>> call, Response<List<Question>> response) {
     	setProgressBarIndeterminateVisibility(false);
         ArrayAdapter<Question> adapter = (ArrayAdapter<Question>) getListAdapter();
         adapter.clear();
@@ -76,7 +76,7 @@ public class MainActivity extends ListActivity implements Callback<StackOverflow
     }
 
     @Override
-    public void onFailure(Call<StackOverflowQuestions> call, Throwable t) {
+    public void onFailure(Call<List<Question>> call, Throwable t) {
         Toast.makeText(MainActivity.this, t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
     }
 }
