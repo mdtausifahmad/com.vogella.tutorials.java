@@ -1,0 +1,78 @@
+== Exercise: Using Retrofit with OAuth to request user details from Twitter in Android
+
+This exercise describes how to login into Twitter using Retrofit on Android.
+We write an application that can request and display user details for a provided user name.
+In this exercise, we use Twitters https://dev.twitter.com/oauth/application-only[application-only authentication] with OAuth 2 for authorization.  
+To make this tutorial working, you need to have a Twitter account.
+Furthermore, you need to head over to https://apps.twitter.com/[Twitter Apps] and create a new app to get your consumer key and the corresponding secret.
+We need this later to request our OAuth token. 
+
+=== Project setup
+
+Create an Android application with the name _Retrofit Twitter_.
+Use _com.vogella.android.retrofittwitter as the top level package name.
+
+To use Retrofit, add the following lines to your build.gradle file
+
+[source,gradle]
+----
+include::res/twitter/build.gradle[]
+----
+
+Add the permission to access the Internet to your manifest file.
+
+[source,xml]
+----
+include::res/twitter/AndroidManifest.xml[]
+----
+
+=== Define the API
+
+Create the following two data clases called _OAuthToken_ and _UserDetails_.
+
+[source,java]
+----
+include::res/twitter/OAuthToken.java[]
+----
+
+[source,java]
+----
+include::res/twitter/UserDetails.java[]
+----
+
+The OAuthToken class is used to store the bearer token we request from Twitter with our consumer key and secret.
+We use the `@SerializedName` annotation to set the name Retrofit (de)serializes the fields with.
+
+The UserDetails class simply stores a few fields from the response from Twitter when requesting the user details.
+We don't show all user details the response contains, but the name, location, url and description.
+
+Define the REST API for Retrofit via the following interface:
+
+[source,java]
+----
+include::res/twitter/TwitterApi.java[]
+----
+
+=== Create Activity
+
+Modify your _activity_main.xml_ layout file and the corresponding _MainActivity_ class like the following:
+
+[source,xml]
+----
+include::res/twitter/activity_main.xml[]
+----
+
+[source,java]
+----
+include::res/twitter/MainActivity.java[]
+----
+
+Make sure, that you replace _aConsumerKey_ and _aSecret_ with the consumer key and secret provided by Twitter.
+
+Also have a look at the interceptor we add to our Retrofit client.
+As we are using OAuth, our credentials are different for each call.
+The _postCredentials_ method needs to post credentials in the _Basic_ scheme to Twitter, which are composed from our consumer key and the secret.
+As a result, this call returns the bearer token Retrofit deserializes into our OAuthToken class, which we then store in the _token_ field.
+Any further request can (and have to) now use this token as its credentials for authorization.
+So does the request to get the user details.
+
