@@ -20,7 +20,7 @@ To use Gson in a Gradle build, add  the following  as dependency to your _build.
 
 [source, gradle]
 ----
-`compile 'com.google.code.gson:gson:2.6.2'`
+`compile 'com.google.code.gson:gson:2.8.0'`
 ----
 
 === Excluding fields from serialization and deserialization
