@@ -63,7 +63,7 @@ compositeDisposable.add(todosSingle.subscribeWith(new DisposableSingleObserver<L
 	}
 }));
 
-compositeDisposable.add(happiness.subscribeWith(new DisposableSingleObserver<List<Todo>>() {
+compositeDisposable.add(happiness.subscribeWith(new DisposableSingleObserver<Happiness>() {
 
 	@Override
 	public void onSuccess(Happiness happiness) {
