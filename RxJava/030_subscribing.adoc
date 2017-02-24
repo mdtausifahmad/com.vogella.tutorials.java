@@ -6,7 +6,7 @@ All observable types offer a large variety of subscribe methods.
 
 [source, java]
 ----
-Observable<Todo> todoObservable = Observable.create(emitter -> { });
+Observable<Todo> todoObservable = Observable.create(emitter -> { ... });
 
 // Simply subscribe with a io.reactivex.functions.Consumer<T>, which will be informed onNext()
 Disposable disposable = todoObservable.subscribe(t -> System.out.print(t));
