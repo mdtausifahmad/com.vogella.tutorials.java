@@ -8,15 +8,29 @@ Reactive programming allows to propagates event changes to registered observers.
 
 RxJava is a port from Netflix of the Reactive Extensions (Rx) to Java.
 RxJava was open sourced 2014 and is hosted at http://reactivex.io/.
+
+[quote, reactivex.io]
+____
+The Observer pattern done right.
+ReactiveX is a combination of the best ideas from the Observer pattern, the Iterator pattern, and functional programming.
+____
+
 The Java version of this concept is called RxJava and is hosted under https://github.com/ReactiveX/RxJava.
 RxJava is published under the Apache 2.0 license.
 
-RxJava describes itself as an API for asynchronous programming with observable streams
+RxJava describes itself as an API for asynchronous programming with observable streams.
 
 === Define a dependency to RxJava 2.0
 
 As of this writing the version 2.0.4 is currently the released one. 
-Replace g.a.v with 2.0.4 or a later version.
+Replace g.a.v with 2.0.6 or a later version.
+
+For a Gradle build you can add RxJava via the following dependency statement.
+
+[source, groovy]
+----
+compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: 'g.a.v'
+----
 
 For Maven you can add a dependency with the following snippet
 
@@ -29,22 +43,17 @@ For Maven you can add a dependency with the following snippet
 </dependency>
 ----
 
-For a Gradle build you can add RxJava via the following dependency statement.
-
-[source, groovy]
-----
-compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: 'g.a.v'
-----
-
 For OSGi environments, e.g., Eclipse RCP development, https://dl.bintray.com/simon-scholz/RxJava-OSGi/ can be used as p2 update site.
 
 image::rxjava-update-site.png[] 
 
 === Async programming
 
-Nowadays programming in an imperative single threaded way usually leads to strange behaviors, blocking non responsive UIs and therefore a bad user experience.
+Nowadays programming in an imperative single threaded way usually leads to strange behaviors, a blocking non responsive UIs and therefore a bad user experience.
 
-This can be avoided by handling unpredicted things asynchronously. For example actively waiting for a database query or a webservice call can cause an application freeze, if the network is not responsive.
+For example actively waiting for a database query or a webservice call can cause an application freeze, if the network is not responsive.
+
+This can be avoided by handling unpredicted things asynchronously. 
 
 An example would be:
 
@@ -60,18 +69,16 @@ public List<Todo> getTodos() {
 
 Calling the getTodos() method from the main thread or an UI thread will cause a non responsive application until the `todosFromWeb` arrive.
 
-icon:thumbs-o-down[]
-
-To improve this the query, which takes an unpredictable amount of time, should run in a different thread and inform the main thread when a result comes in.
+To improve this the query, which takes an unpredictable amount of time, this code should run in a different thread and inform the main thread when a result comes in.
 
 [source, java]
 ----
-public void getTodos(Consumer<List<Todo>> todosConsumer) {
+public void getTodos(Consumer<List<Todo>> todosCallback) {
 
 	Thread thread = new Thread(()-> {
 		List<Todo> todosFromWeb = // query a webservice
 
-		todosConsumer.accept(todosFromWeb);
+		todosCallback.accept(todosFromWeb);
 	});
 	thread.start();
 }
@@ -79,32 +86,90 @@ public void getTodos(Consumer<List<Todo>> todosConsumer) {
 
 Now after calling the `getTodos(Consumer<List<Todo>> todosConsumer)` the main thread can continue working, is not blocked and can react once the accept method of the given `Consumer` is called.
 
-icon:thumbs-o-up[]
+Now the code is really asynchronous. icon:thumbs-o-up[]
 
-=== Observables, Observers and Subscriptions
+But what if errors during the web service query do occur?
 
-RxJava provides _Observables_ and _Observers_.
-Observables can send out values. 
-Observers, watch Observables by subscribing to them.
-Observers are notified when an Observable emits a value, when the Observable says an error has occurred. 
-They are also notified when the	Observable sends the information that it no longer has any values to emit. 
-The corresponding functions are `onNext`, `onError`, and `onCompleted()` from the `Observer` interface.
-A instance of `Subscription` represents the connection between an observer and an observable. 
-In you call `unsubscribe()` on this instance to remove the connection. 
-This is for example useful to avoid updates to widgets after they have been disposed.
- 
-=== Defining the execution thread and the thread for observing
+[source, java]
+----
+public void getTodos(FailableCallback<List<Todo>> todosCallback) {
 
-You can specify the thread in with the observable is executed via the `subscribeOn()` method. 
-The thread in which the observers are executed can be defined via the `observeOn()` method.
+	Thread thread = new Thread(()-> {
+		try {
+			List<Todo> todosFromWeb = // query a web service
 
-== Operators
+			todosCallback.accept(todosFromWeb);
+		} catch(Exception ex) {
+			todosCallback.error(ex);
+		}
+	});
+	thread.start();
+}
+----
 
-You can register operations on your observers which allows you to manipulate the emission of an observable before passing it to the  observer. 
-For example the `map` method allows to register a `Func1` which translates the input.
+With the custom `FailableCallback` interface it works, but it also adds complexity.
+
+And there are even more issue that can occur:
+
+* Syncronization with the UI (Widgets in SWT and Android have to be updated from the UI thread)
+* What if the consumer of the `FailableCallback` is not present any more?
+* What if such a `FailableCallback` depends on another `FailableCallback`?
+
+[source, java]
+----
+
+public void getUserPermission(FailableCallback<UserPermission> permissionCallback) {
+	Thread thread = new Thread(()-> {
+		try {
+			UserPermission permission = // query a web service
+
+			permissionCallback.accept(permission);
+		} catch(Exception ex) {
+			permission.error(ex);
+		}
+	});
+	thread.start();
+}
+
+public void getTodos(FailableCallback<List<Todo>> todosCallback) {
+
+	Thread thread = new Thread(()-> {
+		getUserPermission(new FailableCallback() {
+
+			public void accept(UserPermission permission) {
+				if(permission.isValid()) {
+					try {
+						List<Todo> todosFromWeb = // query a web service
+
+						if(!todosCallbackInstance.isDisposed()) {
+							if(syncWithUIThread()) {
+								todosCallback.accept(todosFromWeb);
+							}
+						}
+					} catch(Exception ex) {
+						if(!todosCallbackInstance.isDisposed()) {
+							if(syncWithUIThread()) {
+								todosCallback.error(ex);
+							}
+						}
+					}
+				}
+			}
+			
+			public void error(Exception ex) {
+				// Oh no!
+			}
+		});
+	});
+	thread.start();
+}
+----
 
 
-== Using delays
+[quote, Async Devs]
+____
+Please help me out of this callback hell! The real intent of this smelly code is not clear any more!
+____
 
-Via the `debounce(delay, TimeUnit.MILLISECONDS)` method on the observer, you can instruct it to only emit the changes if the value has not changed for a predefined delay. 
+This is really bad coding and it could get worse and should only show one example what can be addressed with ReactiveX.
 

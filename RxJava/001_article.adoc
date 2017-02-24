@@ -5,7 +5,7 @@
 :icons:
 :imagesdir: ./img
 Lars Vogel, Simon Scholz (c) 2017 vogella GmbH
-Version 0.3, 10.01.2017
+Version 0.4, 24.02.2017
 :docinfodir: ../
 :vgwort: RxJava
 
@@ -14,8 +14,8 @@ This tutorial contains notes about RxJava 2.0.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::020_using.adoc[]
-include::030_single.adoc[]
+include::020_types.adoc[]
+include::030_subscribing.adoc[]
 include::040_compositedisposable.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::050_caching_values.adoc[]
