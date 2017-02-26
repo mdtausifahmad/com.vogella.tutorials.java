@@ -27,7 +27,7 @@ Some of the methods are pretty similar to the ones Java 8 provides with the `Str
 
 |===
 
-Types that can emit data infinite are `Flowable<T>` and `Obervable<T>`.
+Types that can emit data repeatedly or even infinite are `Flowable<T>` and `Obervable<T>`.
 
 [source, java]
 ----
@@ -72,7 +72,7 @@ Maybe<List<Todo>> todoMaybe = Maybe.create(emitter -> {
 
 `Single<T>` objects can also be considered as promises, which are also pretty popular in async frameworks and are similar to `Maybe<T>` objects, but only without the `onComplete()` method.
 
-`Completable` objects are pretty similar to `Single<T>` objects, but without return value and therefore also do not have a generic type `<T>` like the other types.
+`Completable` objects are pretty similar to `Single<T>` objects, but without return value and therefore also do not have a generic type `<T>` like the other types. `Completable` objects can also be seen as reactive `java.lang.Runnable` objects.
 
 Besides the most popular `create()` method of these observable type there are more convenience methods to create one of these types.
 
