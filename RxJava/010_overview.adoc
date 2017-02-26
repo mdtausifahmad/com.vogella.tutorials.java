@@ -166,10 +166,5 @@ public void getTodos(FailableCallback<List<Todo>> todosCallback) {
 ----
 
 
-[quote, Async Devs]
-____
-Please help me out of this callback hell! The real intent of this smelly code is not clear any more!
-____
-
-This is really bad coding and it could get worse and should only show one example what can be addressed with ReactiveX.
+This is really bad coding and it could get worse and should only show one example what can be addressed with ReactiveX. These problems are often considered as _callback hell_.
 
