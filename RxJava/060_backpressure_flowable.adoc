@@ -4,5 +4,5 @@ RxJava 2.0 introduced a new type `Flowable<T>`, which is pretty much the same as
 
 Back in RxJava 1.0 the concept of backpressure came too late and was added to `Observable<T>` types, but some did throw a `MissingBackpressureException`, so distinguishing between `Flowable<T>` and `Observable<T>` is a good thing.
 
-Besides `Observable<T>` also `Maybe<T>`, `Single<T>` and `Completable<T>` have *no* backpressure.
+Besides `Observable<T>` also `Maybe<T>`, `Single<T>` and `Completable` have *no* backpressure.
 
