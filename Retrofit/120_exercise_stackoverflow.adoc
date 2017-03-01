@@ -6,14 +6,15 @@ StackOverflow is a popular side for asking programming orientated questions.
 It also provides a REST API which is well documented.
 Queries can be build using this  API. 
 You find it documented via the following URL: https://api.stackexchange.com/docs/search
-In this exercise you query for open questions based on tags with the Retrofit REST library.
+In this exercise all open Android questions and their answers are queried with the Retrofit REST library.
+After authentication you have the possibility to upvote an answer.
+Please make sure, that you have a Stackoverflow account in order to get this tutorial working.
 	
 We use the following query URL in our example.
-The tags will be set via our code.
 
 [source]
 ----
-https://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=android&site=stackoverflow
+https://api.stackexchange.com/2.2/search?order=desc&sort=votes&tagged=android&site=stackoverflow
 ----
 
 === Project creation and setup
@@ -32,38 +33,84 @@ Add the permission to access the Internet to your manifest file.
 		
 === Define the API and the Retrofit adapter
 
-In the JSON reply from StackOverflow we are only interested in the title and the link. 
-Therefore create the following data classes.
+As we are interested in the questions and answers from Stackoverflow, we need a data class for each of them.
+Therefore, create the following two data classes named _Question_ and _Answer_ .
 
 [source,java]
 ----
 include::res/stackoverflow/Question.java[]
 ----
 
-Define the REST API for Retrofit via the following interface.
+[source,java]
+----
+include::res/stackoverflow/Answer.java[]
+----
+
+As you can see, we store the title, the link and the id of a question.
+For an answer, we store the id, the current score (the amount of upvotes) and if the answer was already accepted.
+
+If we query the Stackoverflow API for a list of all questions or answers, the reply from Stackoverflow additionally wraps this list in a JSON object with the name _items_ .
+To handle this, create the following two data classes named _QuestionsList_ and _AnswersList_ .
 
 [TIP]
 ====
-The list structure is needed as stackoverflow wraps its answer in an item object.
+The list structure is needed as Stackoverflow wraps its answer in an item object.
 ====
 
+[source,java]
+----
+include::res/stackoverflow/QuestionsList.java[]
+----
+
+[source,java]
+----
+include::res/stackoverflow/AnswersList.java[]
+----
+
+Define the REST API for Retrofit via the following interface.
 
 [source,java]
 ----
 include::res/stackoverflow/StackOverflowAPI.java[]
 ----	
-			
-Create a XML menu resource similar to the following called _main_menu.xml_ and put it into the _menu_ folder, which you should find in the _res_ folder (create the folder if you could not find it).
+
+=== Create Activity
+
+Create a XML layout resource similar to the following called _activity_main.xml_ and put it into the _layout_ folder, which you should find in the _res_ folder.
 
 [source,xml]
 ----
-include::res/stackoverflow/main_menu.xml[]
+include::res/stackoverflow/activity_main.xml[]
 ----	
 
-Change your activity code to allow querying for questions marked with the tag "android".
+Change your _MainActivity_ activity code to allow querying for questions, answers and to post an upvote on an answer.
 
 [source,java]
 ----
 include::res/stackoverflow/MainActivity.java[]
 ----	
+
+To handle authorization to upvote an answer, add the following activity named _WebViewActivity_ and don't forget to also add it to your manifest file.
+
+[source,java]
+----
+include::res/stackoverflow/WebViewActivity.java[]
+----	
+
+As suggested by Stackoverflow, we use the implicit OAuth 2.0 flow here because we develop a client side application.
+First, head over to http://stackapps.com/apps/oauth/register[Stackapps] and register a new application for your account.
+Now, you get a _Client Id_ and a _Key_ . 
+Paste the Key into the corresponding field named _key_ in the MainActivity.
+Paste the Client Id into the field named _clientId_ in the WebViewActivity.
+
+Basically, the WebViewActivity just starts a _WebView_ that lets you login into your Stackoverflow account to authorize this app.
+After you successfully granted permission, the Stackoverflow API returns your _access_token_ to use the API functions that need authorization (we just need that for the upvote). 
+
+One further step is required to get this tutorial working.
+You need to _publish_ your app at Stackapps.
+This is done by http://stackapps.com/questions/ask[asking a new question] at Stackapps with the tag _app_ .
+After you successfully posted your question, copy the link of it.
+Now, head back to the http://stackapps.com/apps/oauth[overview of your authorized apps], select your newly created app and paste the link of your question into the _Stack Apps Post_ field.
+
+ 
 
