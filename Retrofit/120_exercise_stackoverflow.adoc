@@ -1,14 +1,12 @@
 == Exercise: Using Retrofit to query Stackoverflow in Android
 
-=== Target
-
 StackOverflow is a popular side for asking programming orientated questions. 
 It also provides a REST API which is well documented.
-Queries can be build using this  API. 
+Queries can be build using this API. 
 You find it documented via the following URL: https://api.stackexchange.com/docs/search
-In this exercise all open Android questions and their answers are queried with the Retrofit REST library.
-After authentication you have the possibility to upvote an answer.
-Please make sure, that you have a Stackoverflow account in order to get this tutorial working.
+In this exercise you use the Retrofit REST library to query stackoverflow for tagged questions and their answers.
+After authentication, you have the possibility to upvote an answer.
+Please make sure, that you have a Stackoverflow account in order to get this exercise fully working.
 	
 We use the following query URL in our example.
 
@@ -20,7 +18,7 @@ https://api.stackexchange.com/2.2/search?order=desc&sort=votes&tagged=android&si
 === Project creation and setup
 
 Create an Android application called _com.vogella.android.retrofitstackoverflow_. 
-It should use the  _com.vogella.android.retrofitstackoverflow_ top level package name.
+Use _com.vogella.android.retrofitstackoverflow_ as top level package name.
 
 Add the following dependency to your build.gradle file.
 
@@ -30,11 +28,17 @@ include::res/stackoverflow/build.gradle[]
 ----
 
 Add the permission to access the Internet to your manifest file.
+
+[source,xml]
+----
+include::res/stackoverflow/AndroidManifest.xml[]
+----
 		
 === Define the API and the Retrofit adapter
 
-As we are interested in the questions and answers from Stackoverflow, we need a data class for each of them.
-Therefore, create the following two data classes named _Question_ and _Answer_ .
+As we are interested in the questions and answers from Stackoverflow.
+Therefore we need a data class for each of them.
+Create the following two data classes named _Question_ and _Answer_.
 
 [source,java]
 ----
@@ -49,12 +53,12 @@ include::res/stackoverflow/Answer.java[]
 As you can see, we store the title, the link and the id of a question.
 For an answer, we store the id, the current score (the amount of upvotes) and if the answer was already accepted.
 
-If we query the Stackoverflow API for a list of all questions or answers, the reply from Stackoverflow additionally wraps this list in a JSON object with the name _items_ .
+The Stackoverflow API wrap replies for questions or answers in a JSON object with the name _items_ .
 To handle this, create the following two data classes named _QuestionsList_ and _AnswersList_ .
 
 [TIP]
 ====
-The list structure is needed as Stackoverflow wraps its answer in an item object.
+The list structure is needed, as Stackoverflow wraps its answer in an item object.
 ====
 
 [source,java]
@@ -76,21 +80,22 @@ include::res/stackoverflow/StackOverflowAPI.java[]
 
 === Create Activity
 
-Create a XML layout resource similar to the following called _activity_main.xml_ and put it into the _layout_ folder, which you should find in the _res_ folder.
+Adjust the _activity_main.xml_ layout or your activity.
 
 [source,xml]
 ----
 include::res/stackoverflow/activity_main.xml[]
 ----	
 
-Change your _MainActivity_ activity code to allow querying for questions, answers and to post an upvote on an answer.
+Change your _MainActivity_ activity code to the following.
 
 [source,java]
 ----
 include::res/stackoverflow/MainActivity.java[]
 ----	
 
-To handle authorization to upvote an answer, add the following activity named _WebViewActivity_ and don't forget to also add it to your manifest file.
+To handle authorization to upvote an answer, add the following activity named _WebViewActivity_.
+Ensure that you also declare this activity in your manifest file.
 
 [source,java]
 ----

@@ -2,15 +2,7 @@ package com.vogella.android.retrofitstackoverflow;
 
 import java.util.List;
 
-public class AnswersList {
+public class Answers {
+    public List<Answer> items;
 
-    private List<Answer> items;
-
-    public List<Answer> getItems() {
-        return items;
-    }
-
-    public void setItems(List<Answer> items) {
-        this.items = items;
-    }
 }

@@ -1,8 +1,8 @@
 package com.vogella.android.retrofitstackoverflow;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,8 +14,6 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.io.IOException;
-
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -23,7 +21,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private StackOverflowAPI stackoverflowAPI;
     private String token;
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 Question question = (Question) parent.getAdapter().getItem(position);
-                stackoverflowAPI.getAnswersForQuestion(question.getQuestionId()).enqueue(answersCallback);
+                stackoverflowAPI.getAnswersForQuestion(question.questionId).enqueue(answersCallback);
             }
 
             @Override
@@ -90,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.upvote_button:
                 Answer selectedAnswer = (Answer) answersSpinner.getSelectedItem();
                 if (selectedAnswer != null) {
-                    stackoverflowAPI.postUpvoteOnAnswer(selectedAnswer.getAnswerId(), token, key, "stackoverflow.com", false, "default").enqueue(upvoteCallback);
+                    stackoverflowAPI.postUpvoteOnAnswer(selectedAnswer.answerId, token, key, "stackoverflow.com", false, "default").enqueue(upvoteCallback);
                 }
                 break;
         }
@@ -103,12 +101,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    Callback<QuestionsList> questionsCallback = new Callback<QuestionsList>() {
+    Callback<Questions> questionsCallback = new Callback<Questions>() {
         @Override
-        public void onResponse(Call<QuestionsList> call, Response<QuestionsList> response) {
+        public void onResponse(Call<Questions> call, Response<Questions> response) {
             if (response.isSuccessful()) {
-                QuestionsList questionList = response.body();
-                ArrayAdapter<Question> arrayAdapter = new ArrayAdapter<Question>(MainActivity.this, android.R.layout.simple_spinner_dropdown_item, questionList.getItems().toArray(new Question[questionList.getItems().size()]));
+                Questions questions = response.body();
+                ArrayAdapter<Question> arrayAdapter = new ArrayAdapter<Question>(MainActivity.this, android.R.layout.simple_spinner_dropdown_item, questions.items);
                 questionsSpinner.setAdapter(arrayAdapter);
             } else {
                 Log.d("QuestionsCallback", "Code: " + response.code() + " Message: " + response.message());
@@ -116,17 +114,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onFailure(Call<QuestionsList> call, Throwable t) {
+        public void onFailure(Call<Questions> call, Throwable t) {
             t.printStackTrace();
         }
     };
 
-    Callback<AnswersList> answersCallback = new Callback<AnswersList>() {
+    Callback<Answers> answersCallback = new Callback<Answers>() {
         @Override
-        public void onResponse(Call<AnswersList> call, Response<AnswersList> response) {
+        public void onResponse(Call<Answers> call, Response<Answers> response) {
             if (response.isSuccessful()) {
-                AnswersList answersList = response.body();
-                ArrayAdapter<Answer> arrayAdapter = new ArrayAdapter<Answer>(MainActivity.this, android.R.layout.simple_spinner_dropdown_item, answersList.getItems().toArray(new Answer[answersList.getItems().size()]));
+                Answers answersList = response.body();
+                ArrayAdapter<Answer> arrayAdapter = new ArrayAdapter<Answer>(MainActivity.this, android.R.layout.simple_spinner_dropdown_item, answersList.items);
                 answersSpinner.setAdapter(arrayAdapter);
             } else {
                 Log.d("QuestionsCallback", "Code: " + response.code() + " Message: " + response.message());
@@ -134,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onFailure(Call<AnswersList> call, Throwable t) {
+        public void onFailure(Call<Answers> call, Throwable t) {
             t.printStackTrace();
         }
     };
