@@ -53,8 +53,9 @@ include::res/stackoverflow/Answer.java[]
 As you can see, we store the title, the link and the id of a question.
 For an answer, we store the id, the current score (the amount of upvotes) and if the answer was already accepted.
 
-The Stackoverflow API wrap replies for questions or answers in a JSON object with the name _items_ .
-To handle this, create the following two data classes named _QuestionsList_ and _AnswersList_ .
+The Stackoverflow API wraps replies for questions or answers in a JSON object with the name _items_ .
+To handle this, create the following data class named _ListWrapper_.
+This class accepts a type parameter and simply wraps a list of objects of that type. 
 
 [TIP]
 ====
@@ -63,13 +64,9 @@ The list structure is needed, as Stackoverflow wraps its answer in an item objec
 
 [source,java]
 ----
-include::res/stackoverflow/QuestionsList.java[]
+include::res/stackoverflow/ListWrapper.java[]
 ----
 
-[source,java]
-----
-include::res/stackoverflow/AnswersList.java[]
-----
 
 Define the REST API for Retrofit via the following interface.
 
@@ -77,6 +74,38 @@ Define the REST API for Retrofit via the following interface.
 ----
 include::res/stackoverflow/StackOverflowAPI.java[]
 ----	
+
+=== Register Application
+
+As suggested by Stackoverflow, we use the implicit OAuth 2.0 flow here because we develop a client side application.
+First, head over to http://stackapps.com/apps/oauth/register[Stackapps] and register a new application for your account.
+Fill the mask like the following and make sure, that you check the _Enable Client Side OAuth Flow_ option. 
+
+image::stackoverflow_maskregister.png[]
+
+After you registered your application, you get a _Client Id_ and a _Key_ . 
+As we want to keep them out of a possible version control system, we import them into our project using gradle.
+To do so, go to your gradle home directory (_.gradle/_ in your users home directory) and paste the following lines into your _gradle.properties_ file (create one, if you can't find it). 
+Of course, replace _yourKey_ and _yourClientId_ with your corresponding values from Stackapps.
+
+[source,xml]
+----
+include::res/stackoverflow/gradle.properties[]
+----
+
+To later make these two values accessible in your project like normal String resources, add the following two lines to the _defaultConfig_ in your build.gradle.
+
+[source,xml]
+----
+include::res/stackoverflow/gradleDefaultConfig[]
+----
+
+One further step is required to get this tutorial working.
+You need to _publish_ your app at Stackapps.
+This is done by http://stackapps.com/questions/ask[asking a new question] at Stackapps with the tag _app_ .
+After you successfully posted your question, copy the link of it.
+Now, head back to the http://stackapps.com/apps/oauth[overview of your authorized apps], select your newly created app and paste the link of your question into the _Stack Apps Post_ field.
+
 
 === Create Activity
 
@@ -94,6 +123,13 @@ Change your _MainActivity_ activity code to the following.
 include::res/stackoverflow/MainActivity.java[]
 ----	
 
+To correctly create the views for your _RecyclerView_ , add the following _RecyclerViewAdapter_ to your project.
+
+[source,java]
+----
+include::res/stackoverflow/RecyclerViewAdapter.java[]
+----	
+
 To handle authorization to upvote an answer, add the following activity named _WebViewActivity_.
 Ensure that you also declare this activity in your manifest file.
 
@@ -102,20 +138,8 @@ Ensure that you also declare this activity in your manifest file.
 include::res/stackoverflow/WebViewActivity.java[]
 ----	
 
-As suggested by Stackoverflow, we use the implicit OAuth 2.0 flow here because we develop a client side application.
-First, head over to http://stackapps.com/apps/oauth/register[Stackapps] and register a new application for your account.
-Now, you get a _Client Id_ and a _Key_ . 
-Paste the Key into the corresponding field named _key_ in the MainActivity.
-Paste the Client Id into the field named _clientId_ in the WebViewActivity.
-
 Basically, the WebViewActivity just starts a _WebView_ that lets you login into your Stackoverflow account to authorize this app.
 After you successfully granted permission, the Stackoverflow API returns your _access_token_ to use the API functions that need authorization (we just need that for the upvote). 
-
-One further step is required to get this tutorial working.
-You need to _publish_ your app at Stackapps.
-This is done by http://stackapps.com/questions/ask[asking a new question] at Stackapps with the tag _app_ .
-After you successfully posted your question, copy the link of it.
-Now, head back to the http://stackapps.com/apps/oauth[overview of your authorized apps], select your newly created app and paste the link of your question into the _Stack Apps Post_ field.
 
  
 

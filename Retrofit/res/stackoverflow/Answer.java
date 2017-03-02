@@ -8,7 +8,7 @@ public class Answer {
     public int answerId;
 
     @SerializedName("is_accepted")
-    private boolean accepted;
+    public boolean accepted;
 
     public int score;
 

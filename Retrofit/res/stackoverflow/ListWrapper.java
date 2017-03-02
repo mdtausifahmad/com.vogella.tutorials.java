@@ -2,8 +2,6 @@ package com.vogella.android.retrofitstackoverflow;
 
 import java.util.List;
 
-public class Questions {
-
-    public List<Question> items;
-
+public class ListWrapper<T> {
+    List<T> items;
 }

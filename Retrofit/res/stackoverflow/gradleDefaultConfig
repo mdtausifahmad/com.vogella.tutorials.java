@@ -1,0 +1,2 @@
+resValue("string", "key", project.key)
+resValue("string", "client_id", project.client_id)
