@@ -137,8 +137,7 @@ Switch to any directory you want. Type:
 include::res/helloworld/run.sh[]
 ----
 		
-If you are not in the directory in which the compiled class is stored,
-then the system will show an error message:
+If you are not in the directory in which the compiled class is stored, then the system will show an error message:
 _Exception in thread "main" java.lang.NoClassDefFoundError: test/TestClass_
 		
 To use the class, type the following command. Replace

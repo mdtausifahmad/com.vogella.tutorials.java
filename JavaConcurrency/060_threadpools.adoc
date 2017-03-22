@@ -43,9 +43,5 @@ Now you run your runnables with the executor framework.
 include::res/threadpools/Main.java[]
 ----	
 	
-In case the threads should return some value (result-bearing
-threads)
-then you can use the
-`java.util.concurrent.Callable`
-class.
+In case the threads should return some value (result-bearing threads) then you can use the `java.util.concurrent.Callable` class.
 	

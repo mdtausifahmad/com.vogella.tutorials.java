@@ -33,18 +33,9 @@ databases to
 Java
 objects and vice versa.
 		
-JPA permits the developer to
-work directly
-with
-objects rather
-then
-with
-SQL
-statements. The JPA implementation is
-typically
-called
-persistence provider. JPA can be used in Java-EE and Java-SE
-applications.
+JPA permits the developer to work directly with objects rather than with SQL statements. 
+The JPA implementation is typically called persistence provider. 
+JPA can be used in Java-EE and Java-SE applications.
 		
 The mapping between Java objects and database tables is
 defined
@@ -201,14 +192,9 @@ to
 manage the entity manager
 yourself.
 		
-Entities which are managed by an Entity Manager will
-automatically propagate these changes to the database (if
-this
-happens within a commit statement). If the Entity Manager is closed
-(via close()) then the managed entities are in
-a detached state. If
-synchronize them again with the database a Entity Manager provides
-the merge() method.
+Entities which are managed by an Entity Manager will automatically propagate these changes to the database (if this happens within a commit statement). 
+If the Entity Manager is closed (via close()) then the managed entities are in a detached state. 
+If synchronize them again with the database a Entity Manager provides the merge() method.
 		
 The
 _persistence context_

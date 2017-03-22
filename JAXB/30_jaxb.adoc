@@ -15,7 +15,7 @@ JAXB uses annotations to indicate the central elements.
 
 |@XmlElement(name = "neuName")
 |Define the XML element which will be used. 
-Only need to be used if the neuNeu is different then the JavaBeans Name
+Only need to be used if the neuNeu is different than the JavaBeans Name
 
 |===
 

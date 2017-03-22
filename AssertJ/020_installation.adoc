@@ -34,8 +34,5 @@ org.assertj.core.api.Assertions.* in the list.
 
 === IntelliJ Idea configuration 
 
-No special configuration, just start
-typing
-`assertThat`
-and then invoke completion (Ctrl-Space) twice.
+No special configuration, just start typing `assertThat` and then invoke completion (Ctrl-Space) twice.
 

@@ -40,7 +40,7 @@ public class StringMatcher {
 	public boolean isIntersection(String s){
 		return s.matches("([\\w&&[^b]])*");
 	}
-	// returns true if the string contains a number less then 300
+	// returns true if the string contains a number less than 300
 	public boolean isLessThenThreeHundred(String s){
 		return s.matches("[^0-9]*[12]?[0-9]{1,2}[^0-9]*");
 	}

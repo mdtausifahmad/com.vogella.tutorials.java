@@ -18,15 +18,7 @@ calculated by the following rule
 which is referred to as
 _Amdahl's Law_.
 		
-If F is the
-percentage of the program
-which can not run in
-parallel
-and N is the
-number of processes, then
-the maximum
-performance
-gain is 1 / (F+ \((1-F)/n)).
+If F is the percentage of the program which can not run in parallel and N is the number of processes, then the maximum performance gain is 1 / (F+ \((1-F)/n)).
 		
 === Concurrency issues
 

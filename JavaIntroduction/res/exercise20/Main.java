@@ -11,7 +11,7 @@ public class Main {
 		// create a number between 0 and 100
 		int nextInt = random.nextInt(101);
 		ReadInput in = new ReadInput();
-		System.out.println("Do you think the number is larger then 50?");
+		System.out.println("Do you think the number is larger than 50?");
 		userInput = in.readLine();
 		if (userInput.equalsIgnoreCase("y") && nextInt > 50) {
 			System.out.println("Very well, you did it!");

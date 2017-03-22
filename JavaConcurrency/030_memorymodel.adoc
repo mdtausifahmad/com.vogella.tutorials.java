@@ -58,17 +58,8 @@ operation it not an atomic operation in Java. This also
 applies for the other numeric types, e.g. long.
 etc).
 
-The
-`i++`
-operation
-first reads the value which is
-currently stored
-in i (atomic
-operations) and then it adds one to it
-(atomic operation).
-But between
-the read and the write the value of i
-might have changed.
+The `i++` operation first reads the value which is currently stored in i (atomic operations) and then it adds one to it (atomic operation).
+But between the read and the write the value of i might have changed.
 
 Since Java 1.5 the java language provides atomic variables,
 e.g.

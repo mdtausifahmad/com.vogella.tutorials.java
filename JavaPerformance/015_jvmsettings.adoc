@@ -22,13 +22,13 @@ To turn performance you can use certain parameters in the JVM.
 
 |-Xmx1800m
 |Set the maximum available memory for the JVM to 1800 Megabyte. 
-The Java application cannot use more heap memory then defined via this parameter. 
+The Java application cannot use more heap memory than defined via this parameter. 
 
 |===
 
 TIP: Increase the values in these parameters to avoid the following
 error: "Exception in thread java.lang.OutOfMemoryError: Java heap
-space". Note that you cannot allocate more memory then you have
+space". Note that you cannot allocate more memory than you have
 physically available.
 
 If you start your Java program from the command line use for
