@@ -1,0 +1,10 @@
+[[systemproperties]]
+== System properties
+	
+The `System` class provides access to the configuratoin of the current working environment.
+You can access them, via `System.getProperty("property_name")`, for example `System.getProperty("path.separator");`
+The following lists describes the most important properties.
+
+* "line.separator" -  	Sequence used by operating system to separate lines in text files
+* "user.dir" -  	User working directory
+* "user.home" - User home directory
