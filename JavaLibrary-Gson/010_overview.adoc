@@ -3,14 +3,13 @@
 
 === What is Gson
 
-https://github.com/google/gson[Gson] is a Java library that can be used to convert Java Objects into their JSON representation. 
+https://github.com/google/gson[Gson] is a Java library that can be used to convert Java objects into their JSON representation. 
 It can also be used to convert a JSON string to an equivalent Java object.
 
-Gson is an Open Source project, which can be found under 
-
-Gson can work with arbitrary Java objects including pre-existing objects that you do not have source-code of. 
-For this purpose Gson provides several built in serializers and deserializers. 
-A serializer allows to convert a Json string to corresponding Java type and a deserializers allows to convert from Java to a JSON representation.
+Gson can work with arbitrary Java objects including objects for which you do not have the source.
+For this purpose, Gson provides several built in serializers and deserializers. 
+A serializer allows to convert a Json string to corresponding Java type. 
+A deserializers allows to convert from Java to a JSON representation.
 You can also configure Gson to use custom representations of your objects.
 
 Gson allows to serialize a `Collections` of objects of the same type. 
@@ -40,3 +39,10 @@ You can configure Gson to consider this annotation.
 For this you would implement the `ExclusionStrategy` and its `houldSkipField(FieldAttributes f)` and `shouldSkipClass(Class clazz)` methods.
 * You can define a custom annotation and tell GSon to ignore such fields.
 
+=== Missing fields in JSON
+
+Gson does not support the definition of a "required field". 
+It  sets the property to null in your deserialized object, if something is missing in the JSON.
+
+To fail the conversion is case an object is missing in the JSON, you could create and register a customer deserializer and annotation. 
+See http://stackoverflow.com/a/21634867/548637 for an example.
