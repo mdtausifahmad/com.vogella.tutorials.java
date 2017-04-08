@@ -3,54 +3,53 @@ import static org.junit.Assert.*;
 
 @Test
 public void test1()  {
-	//  create mock
-	MyClass test = Mockito.mock(MyClass.class);
-	
-	// define return value for method getUniqueId()
-	when(test.getUniqueId()).thenReturn(43);
-	
-	// use mock in test.... 
-	assertEquals(test.getUniqueId(), 43);
+        //  create mock
+        MyClass test = Mockito.mock(MyClass.class);
+
+        // define return value for method getUniqueId()
+        when(test.getUniqueId()).thenReturn(43);
+
+        // use mock in test....
+        assertEquals(test.getUniqueId(), 43);
 }
 
 
 // Demonstrates the return of multiple values
 @Test
 public void testMoreThanOneReturnValue()  {
-	Iterator i= mock(Iterator.class);
-	when(i.next()).thenReturn("Mockito").thenReturn("rocks");
-	String result=i.next()+" "+i.next();
-	//assert
-	assertEquals("Mockito rocks", result);
+        Iterator<String> i= mock(Iterator.class);
+        when(i.next()).thenReturn("Mockito").thenReturn("rocks");
+        String result= i.next()+" "+i.next();
+        //assert
+        assertEquals("Mockito rocks", result);
 }
 
 // this test demonstrates how to return values based on the input
 @Test
 public void testReturnValueDependentOnMethodParameter()  {
-	Comparable c= mock(Comparable.class);
-	when(c.compareTo("Mockito")).thenReturn(1);
-	when(c.compareTo("Eclipse")).thenReturn(2);
-	//assert
-	assertEquals(1,c.compareTo("Mockito"));
+        Comparable<String> c= mock(Comparable.class);
+        when(c.compareTo("Mockito")).thenReturn(1);
+        when(c.compareTo("Eclipse")).thenReturn(2);
+        //assert
+        assertEquals(1, c.compareTo("Mockito"));
 }
 
 // this test demonstrates how to return values independent of the input value
 
 @Test
 public void testReturnValueInDependentOnMethodParameter()  {
-	Comparable c= mock(Comparable.class);
-	when(c.compareTo(anyInt())).thenReturn(-1);
-	//assert
-	assertEquals(-1 ,c.compareTo(9));
+        Comparable<Integer> c= mock(Comparable.class);
+        when(c.compareTo(anyInt())).thenReturn(-1);
+        //assert
+        assertEquals(-1, c.compareTo(9));
 }
 
 // return a value based on the type of the provide parameter
 
 @Test
-public void testReturnValueInDependentOnMethodParameter()  {
-	Comparable c= mock(Comparable.class);
-	when(c.compareTo(isA(Todo.class))).thenReturn(0);
-	//assert
-	Todo todo = new Todo(5);
-	assertEquals(todo ,c.compareTo(new Todo(1)));
+public void testReturnValueInDependentOnMethodParameter2()  {
+        Comparable<Todo> c= mock(Comparable.class);
+        when(c.compareTo(isA(Todo.class))).thenReturn(0);
+        //assert
+        assertEquals(0, c.compareTo(new Todo(1)));
 }

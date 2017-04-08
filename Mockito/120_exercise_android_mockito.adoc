@@ -8,7 +8,7 @@ Create an Android application with the package name `com.vogella.android.testing
 Add a static method	which allows to create an intent with certain parameters as in the following example.
 		
 
-[source, gradle]
+[source, java]
 ----
 include::res/simple/Method.java[]
 ----	
@@ -28,7 +28,7 @@ Create a new unit test using Mockito to check that the intent is triggered with 
 
 For this you mock the `Context`	object with Mockito as in the following example.
 		
-[source, gradle]
+[source, java]
 ----
 include::res/simple/Test.txt[]
 ----		

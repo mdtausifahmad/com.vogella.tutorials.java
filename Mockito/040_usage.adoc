@@ -4,7 +4,7 @@
 === Static imports
 
 If you add a static import for `org.mockito.Mockito.*;`, you can access Mockitos methods like `mock()` directly. 
-Static imports allows you to call static members, i.e., methods and fields of a class directly without specifying the class.
+Static imports allow you to call static members, i.e., methods and fields of a class directly without specifying the class.
 		
 === Creating and configuring mock objects with Mockito
 
@@ -40,7 +40,7 @@ The `when(....).thenReturn(....)` method chain is be used to specify a condition
 If you specify more than one value,	they are returned in the order of specification until the last one is used. 
 Afterwards the last	specified value	is returned. 
 Mocks can also return different values depending on arguments passed into a method. 
-You also use methods like `anyString` or `anyInt` to define that independent of the input value a certain return value should be returned.
+You also can use methods like `anyString` or `anyInt` to define that dependent on the input type a certain value should be returned.
 
 [source,java]
 ----
@@ -65,7 +65,7 @@ include::res/api/doReturnWhen.java[]
 ===	Verify the calls on the mock objects
 		
 Mockito keeps track of all the method calls and their parameters to the mock object. 
-You can use the `verify()` method on the mock object to verify that the specified conditions are met
+You can use the `verify()` method on the mock object to verify that the specified conditions are met.
 For example, you can verify that a method has been called with certain parameters.
 This kind of testing is sometimes called _behavior testing_. 
 Behavior testing does not check the result of a method call, but it checks that a method is called with the right parameters.
@@ -74,7 +74,7 @@ Behavior testing does not check the result of a method call, but it checks that 
 ----
 include::res/api/Verify.java[]
 ----
-		
+
 
 [[mockito_spy]]
 === Wrapping Java objects with Spy
@@ -86,9 +86,8 @@ Every call, unless specified otherwise, is delegated to the object.
 ----
 include::res/simple/Spy.txt[]
 ----		
-		
-The `verifyNoMoreInteractions()` allows you to check that no other method was called.
-		
+
+
 [[mockito_dependencyinjection]]
 === Using @InjectMocks for dependency injection via Mockito
 		
@@ -100,28 +99,36 @@ For example, assume that you have the following class.
 public class ArticleManager {
     private User user;
     private ArticleDatabase database;
-    
-    ArticleManager(User user) {
-     this.user = user;
+
+    public ArticleManager(User user, ArticleDatabase database) {
+        super();
+        this.user = user;
+        this.database = database;
     }
 
-    void setDatabase(ArticleDatabase database) { }
+    public void initialize() {
+        database.addListener(new ArticleListener());
+    }
 }
-    
 ----		
 
-This class can be constructed via Mockito and its dependencies can be fulfullied with mock objects as demonstrated by the following code snippet.		
+This class can be constructed via Mockito and its dependencies can be fulfilled with mock objects as demonstrated by the following code snippet.		
 [source,java]
 ----
 include::res/snippet/Example.java[]
 ----		
 
-<1> creates an instance of ArticleManager and injects the mocks into it
+<1> creates an instance of `ArticleManager` and injects the mocks into it
+
+Mockito can inject mocks either via constructor injection, setter injection, or property injection and in this order.
+So if `ArticleManager` would have a constructor that would only take `User` and setters for both fields, only the mock for `User` would be injected.
 
 === Capturing the arguments
 
 The `ArgumentCaptor` class allows to access the arguments of method calls during the verification.
 This allows to capture these arguments of method calls and to use them for tests.
+
+To run this example you need to add https://mvnrepository.com/artifact/org.hamcrest/hamcrest-library[hamcrest-library] to your project.
 
 [source,java]
 ----
@@ -143,20 +150,21 @@ import org.mockito.junit.MockitoRule;
 
 public class MockitoTests {
     
-	@Rule public MockitoRule rule = MockitoJUnit.rule();
+    @Rule
+    public MockitoRule rule = MockitoJUnit.rule();
 
-	@Captor
+    @Captor
     private ArgumentCaptor<List<String>> captor;
 	
 			
-	@Test
+    @Test
     public final void shouldContainCertainListItem() {
-		List<String> asList = Arrays.asList("someElement_test", "someElement");
+        List<String> asList = Arrays.asList("someElement_test", "someElement");
         final List<String> mockedList = mock(List.class);
         mockedList.addAll(asList);
-        
+            
         verify(mockedList).addAll(captor.capture());
-        final List<String> capturedArgument = captor.<List<String>>getValue();
+        final List<String> capturedArgument = captor.getValue();
         assertThat(capturedArgument, hasItem("someElement"));
     }
 }

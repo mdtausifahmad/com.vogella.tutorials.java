@@ -1,15 +1,19 @@
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
 
-// this test demonstrates how use doThrow
+@Rule
+public final ExpectedException exceptionRule = ExpectedException.none();
 
-@Test(expected=IOException.class)
-public void testForIOException() {
-	// create an configure mock
-	OutputStream mockStream = mock(OutputStream.class);
-	doThrow(new IOException()).when(mockStream).close();
-	
-	// use mock
-	OutputStreamWriter streamWriter= new OutputStreamWriter(mockStream);
-	streamWriter.close();
+//this test demonstrates how use doThrow
+
+@Test
+public void testForIOException() throws IOException {
+        // create an configure mock
+        OutputStream mockStream = mock(OutputStream.class);
+        doThrow(new IOException()).when(mockStream).close();
+
+        // use mock
+        OutputStreamWriter streamWriter= new OutputStreamWriter(mockStream);
+        exceptionRule.expect(IOException.class);
+        streamWriter.close();
 }

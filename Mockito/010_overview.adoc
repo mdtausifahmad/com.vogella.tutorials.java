@@ -21,10 +21,12 @@ _Fake_ objects have working implementations, but are usually simplified.
 For example, they use an in memory database and not a real database.
 			
 A _stub_ class is an partial implementation for an interface or class with the purpose of using an instance of this stub class during testing. 
-Stubs usually do responding at all to anything outside what's programmed in for the test.
-Stubs may also record information about calls
+Stubs usually don't respond to anything outside what's programmed in for the test.
+Stubs may also record information about calls.
 		
 A _mock object_ is a dummy implementation for an interface or a class in which you define the output of certain method calls.
+Mock objects can be configured to expect a certain behavior during a test, eg., how often and with which values a certain method is expected to be called.
+While this can be a useful feature, it also introduces additional coupling between test and production code and should be used with caution.
 		
 Test doubles can be passed to other objects which are tested. 
 Your tests can validate that the class reacts correctly during tests.
