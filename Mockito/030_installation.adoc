@@ -5,7 +5,7 @@
 === Using Gradle
 If you use Gradle, add the following dependency to the Gradle build file.
 
-[source, gradle]
+[source, groovy]
 ----
 include::res/install/build.gradle[]
 ----

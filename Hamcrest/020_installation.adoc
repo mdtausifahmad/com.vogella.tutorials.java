@@ -6,7 +6,7 @@
 
 To use Hamcrest matchers for a project based on the Gradle build system, add the following dependencies to it.
 
-[source,gradle]
+[source, groovy]
 ----
 include::res/setup/build.gradle[]
 ----
@@ -16,7 +16,7 @@ include::res/setup/build.gradle[]
 
 To use the library for a Maven based project, the following dependency to your pom file.
 
-[source,gradle]
+[source, xml]
 ----
 include::res/setup/pom.xml[]
 ----	
