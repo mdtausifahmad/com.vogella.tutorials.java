@@ -77,7 +77,7 @@ Assume the following code:
 
 [source,java]
 ----
-class Todo {
+public class Todo {
         
     private final long id;
     private String summary;
@@ -97,23 +97,11 @@ class Todo {
 Write tests that ensure that:
 
 * Todo has a property called "summary"
-* If Todo is constructed with the summary "Learn Hamcrest" that the summary property has
-the correct value
+* If Todo is constructed with the summary "Learn Hamcrest" that the summary property was initialized with this value
 * Two objects created with the same values, have the same property values
 
 
 ==== Solution
-
-[source,java]
-----
-@Test
-public void objectHasSummaryProperty () {
-    
-    Todo todo = new Todo(1, "Learn Hamcrest", "Important");
-    
-    assertThat(todo, hasProperty("summary"));
-}  
-----
 
 [source,java]
 ----

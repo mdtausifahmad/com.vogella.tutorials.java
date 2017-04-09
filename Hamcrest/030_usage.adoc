@@ -3,12 +3,23 @@
 
 === Example
 
-The usage of Hamcrest matches is demonstrates by the following code snippet.
+The usage of Hamcrest matchers is demonstrates by the following code snippet.
 
 [source, java]
 ----
 include::res/matcher/MatcherUsage.java[]
 ----	
+
+=== Static import
+
+To make all matchers available in your file add an static import.
+This also makes it easier to find matchers through code completion.
+
+[source, java]
+----
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+----
 
 === Hamcrest matchers for lists
 The usage of the Hamcrest matchers for lists are demonstrated by the following example. 
