@@ -7,23 +7,26 @@ The target of this exercise is to write a custom matcher with Hamcrest.
 === Create Hamcrest Matchers
 
 Define a custom matcher for Hamcrest which provides the `length` matcher for a String.
+
+
 [source,java]
-====
+----
 public static Matcher<String> length(Matcher<? super Integer> matcher) {
-return new FeatureMatcher<String, Integer>(matcher, "a String of length that", "length") {
-@Override
-protected Integer featureValueOf(String actual) {
-return actual.length();
+    return new FeatureMatcher<String, Integer>(matcher, "a String of length that", "length") {
+        @Override
+        protected Integer featureValueOf(String actual) {
+            return actual.length();
+        }
+    };
 }
-};
-}
-====
+----
 
 === Validate
 
 Use your custom matcher to check that "Gandalf" has a lenght of 8.
+
 [source,java]
-====
+----
 @Test
 public void fellowShipOfTheRingShouldContainer7() {
 	assertThat("Gandalf", length(is(8)));
@@ -36,4 +39,5 @@ public static  Matcher<String> length(Matcher<? super Integer> matcher) {
 		}
 	};
 }
-====
+----
+
