@@ -1,19 +1,9 @@
-import static org.mockito.Mockito.*;
-import static org.junit.Assert.*;
+Properties properties = new Properties();
 
-@Rule
-public final ExpectedException exceptionRule = ExpectedException.none();
+Properties spyProperties = spy(properties);
 
-//this test demonstrates how use doThrow
+doReturn(“42”).when(spyProperties).get(”shoeSize”);
 
-@Test
-public void testForIOException() throws IOException {
-        // create an configure mock
-        OutputStream mockStream = mock(OutputStream.class);
-        doThrow(new IOException()).when(mockStream).close();
+String value = spyProperties.get(”shoeSize”);
 
-        // use mock
-        OutputStreamWriter streamWriter= new OutputStreamWriter(mockStream);
-        exceptionRule.expect(IOException.class);
-        streamWriter.close();
-}
+assertEquals(”42”, value);

@@ -1,19 +1,16 @@
 [[mockitousage]]
 == Using the Mockito API
 
-=== Static imports
 
-If you add a static import for `org.mockito.Mockito.*;`, you can access Mockitos methods like `mock()` directly. 
-Static imports allow you to call static members, i.e., methods and fields of a class directly without specifying the class.
-		
-=== Creating and configuring mock objects with Mockito
 
-Mockito supports the creation of mock objects. 
-For this you can use the static `mock()` method.
+=== Creating mock objects with Mockito
 
-Mockito also supports the creation of mock objects based on the `@Mock` annotation.
+Mockito provides several methods to create mock objects:
+
+* Using the static `mock()` method.
+* Using the `@Mock` annotation.
         
-If you use this annotation, you must initialize the mock objects. 
+If you use the `@Mock` annotation, you must trigger the creation of annotated objects. 
 The `MockitoRule` allows this. 
 It invokes the static method `MockitoAnnotations.initMocks(this)` to populate the annotated fields. 
 Alternatively you can use `@RunWith(MockitoJUnitRunner.class)`.
@@ -32,34 +29,85 @@ include::res/simple/TestSimple.txt[]
 <5> Asserts that the method call returned true
 <6> Verify that the query method was called on the `MyDatabase` mock
 
+.Static imports
+[NOTE]
+====
+By adding the `org.mockito.Mockito.*;` static import, you can use methods like `mock()` directly in your tests.
+Static imports allow you to call static members, i.e., methods and fields of a class directly without specifying the class.
+
+Using static imports greatly improves the readability of your test code, you should use it.
+====
+
 === Configuring mocks
 
-To configure which values are returned at a method call the Mockito framework defines a fluent API. 
-		
-The `when(....).thenReturn(....)` method chain is be used to specify a condition and a return value for this condition. 
-If you specify more than one value,	they are returned in the order of specification until the last one is used. 
-Afterwards the last	specified value	is returned. 
-Mocks can also return different values depending on arguments passed into a method. 
+Mockito allows to configure the return values of its mocks via a fluent API.
+Unspecified method calls return "empty" values:
+
+* null for objects
+* 0 for numbers
+* false for boolean
+* empty collections for collections
+* ...
+
+[NOTE]
+====
+The following assert statements are only for demonstration purposes, a real test would use the mocks to unit test another functionality.
+====
+
+==== "when thenReturn" and "when thenThrow
+Mocks can return different values depending on arguments passed into a method. 
+The `when(....).thenReturn(....)` method chain is used to specify a a return value for a method call with pre-defined parameters.
+
+image::whenThenReturn10.png[] 
+
 You also can use methods like `anyString` or `anyInt` to define that dependent on the input type a certain value should be returned.
+
+If you specify more than one value,	they are returned in the order of specification, until the last one is used. 
+Afterwards the last	specified value	is returned.
+
+
+The following demonstrates the usage of `when(....).thenReturn(....)`.
 
 [source,java]
 ----
 include::res/api/WhenThenReturn.java[]
 ----
 
-		
-The `doReturn(...).when(...).methodCall` call chain works similar but is useful for void methods. 
+The `when(....).thenReturn(....)` method chain can be used to throw an exception.
+
+[source,java]
+----
+include::res/api/WhenThenThrow.java[]
+----
+
+
+==== "doReturn when" and "doThrow when"
+The `doReturn(...).when(...).methodCall` call chain works similar to `when(....).thenReturn(....)`.
+It is useful for mocking methods which give an exception during a call, e.g., if you use use functionality like <<mockito_spy>>.
+
+[source,java]
+----
+doReturnWhen.java
+----
+ 
 The `doThrow` variant can be used for methods which return `void` to throw an exception. 
 This usage is demonstrated by the following code snippet.
 		
-
 [source,java]
 ----
 include::res/api/doReturnWhen.java[]
 ----		
 
-
-
+[[mockito_spy]]
+=== Wrapping Java objects with Spy
+		
+@Spy or the `spy()` 	method can be used to wrap a real object. 
+Every call, unless specified otherwise, is delegated to the object.
+		
+[source,java]
+----
+include::res/simple/Spy.java[]
+----		
 
 [[mockito_verify]]
 ===	Verify the calls on the mock objects
@@ -74,19 +122,6 @@ Behavior testing does not check the result of a method call, but it checks that 
 ----
 include::res/api/Verify.java[]
 ----
-
-
-[[mockito_spy]]
-=== Wrapping Java objects with Spy
-		
-@Spy or the `spy()` 	method can be used to wrap a real object. 
-Every call, unless specified otherwise, is delegated to the object.
-		
-[source,java]
-----
-include::res/simple/Spy.txt[]
-----		
-
 
 [[mockito_dependencyinjection]]
 === Using @InjectMocks for dependency injection via Mockito

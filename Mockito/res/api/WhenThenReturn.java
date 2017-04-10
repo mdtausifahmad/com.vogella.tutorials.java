@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 @Test
 public void test1()  {
         //  create mock
-        MyClass test = Mockito.mock(MyClass.class);
+        MyClass test = mock(MyClass.class);
 
         // define return value for method getUniqueId()
         when(test.getUniqueId()).thenReturn(43);
@@ -14,7 +14,7 @@ public void test1()  {
 }
 
 
-// Demonstrates the return of multiple values
+// demonstrates the return of multiple values
 @Test
 public void testMoreThanOneReturnValue()  {
         Iterator<String> i= mock(Iterator.class);

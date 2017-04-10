@@ -1,41 +1,41 @@
 == Testing with mock objects
 
 ===	Target and challenge of unit testing
-		
-A unit test should test a class in isolation. 
-Side effects from other classes or the system should be eliminated if possible.
-To eliminate these side effects you have to replace dependencies to other classes.
-This can be done via using replacements for the real dependencies.		
-		
-		
-=== Classifications of different test classes
+	
 (((Test doubles)))
 (((Mock objects)))
 (((Stub objects)))
 (((Fake objects)))
-(((Dummy objects)))
-A _dummy object_ is passed around but never used, i.e., its methods are never called.
+(((Dummy objects)))	
+A unit test should test functionality in isolation. 
+Side effects from other classes or the system should be eliminated for a unit test, if possible.
+
+This can be done via using test replacements (_test doubles_) for the real dependencies.		
+Test doubles can be classified like the following:
+		
+* A _dummy object_ is passed around but never used, i.e., its methods are never called.
 Such an object can for example be used to fill the parameter list of a method.
 		
-_Fake_ objects have working implementations, but are usually simplified.
+* _Fake_ objects have working implementations, but are usually simplified.
 For example, they use an in memory database and not a real database.
 			
-A _stub_ class is an partial implementation for an interface or class with the purpose of using an instance of this stub class during testing. 
+* A _stub_ class is an partial implementation for an interface or class with the purpose of using an instance of this stub class during testing. 
 Stubs usually don't respond to anything outside what's programmed in for the test.
 Stubs may also record information about calls.
 		
-A _mock object_ is a dummy implementation for an interface or a class in which you define the output of certain method calls.
-Mock objects can be configured to expect a certain behavior during a test, eg., how often and with which values a certain method is expected to be called.
-While this can be a useful feature, it also introduces additional coupling between test and production code and should be used with caution.
-		
+* A _mock object_ is a dummy implementation for an interface or a class in which you define the output of certain method calls.
+Mock objects are configured to perform a certain behavior during a test.
+They typical record the interaction with the system and test can validate that.
+
 Test doubles can be passed to other objects which are tested. 
 Your tests can validate that the class reacts correctly during tests.
 For example, you can validate if certain methods on the mock object were called. 
 This helps to ensure that you only test the class while running tests and that your tests are not affected by any side effects.
 		
-Mock objects are typically configured. 
+[NOTE]
+====
 Mock objects typically require less code to configure and should therefore be preferred.
-		
+====		
 
 === Mock object generation
 		
