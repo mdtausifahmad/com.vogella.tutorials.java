@@ -1,5 +1,5 @@
 [[hamcrest_extending]]
-==	Writing your custom Hamcrest matcher
+==	Exercise: Writing your custom Hamcrest matcher using TypeSafeMatcher
 
 It is possible to write your custom Hamcrest matcher by extending TypeSafeMatcher. 
 The following is an example for defining a matcher which allows testing if a String matches a regular expression.
