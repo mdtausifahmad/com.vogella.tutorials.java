@@ -4,6 +4,6 @@ assertEquals(expected, actual);
 assertThat(actual, is(equalTo(expected)));
 
 // JUnit 4 for not equals check
-assertFalse(expected.equals(actual));
+assertNotEquals(expected, actual)
 // Hamcrest for not equals check
 assertThat(actual, is(not(equalTo(expected))));
