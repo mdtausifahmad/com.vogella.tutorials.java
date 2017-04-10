@@ -2,6 +2,8 @@
 ==	Exercise: Writing your custom Hamcrest matcher using TypeSafeMatcher
 
 It is possible to write your custom Hamcrest matcher by extending TypeSafeMatcher. 
+In contrast to BaseMatcher the TypeSafeMatcher class automatically checks for `null` values, checks the type and casts appropriately before delegating to `matchesSafely()`.
+It provides type safety by default.
 The following is an example for defining a matcher which allows testing if a String matches a regular expression.
 	
 [source, java]
