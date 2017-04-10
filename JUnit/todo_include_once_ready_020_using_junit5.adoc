@@ -145,20 +145,7 @@ include::res/example/AllTests.java[]
 ----
 
 [[usingjunit_executionorder]]
-=== Test execution order
-(((JUnit,Test execution order)))
-JUnit assumes that all test methods can be executed in an arbitrary order. 
-Well-written test code should not assume any order, i.e., tests should not depend on other tests.
-		
-As of JUnit 4.11 the default is to use a deterministic, but not predictable, order for the execution of the tests.
-		
-		
-You can use an annotation to define that the test methods are sorted by method name, in lexicographic order.
-To activate this feature, annotate your test class with the `@FixMethodOrder(MethodSorters.NAME_ASCENDING)` annotation. 
-You can also explicitely set the default by using the `MethodSorters.DEFAULT` parameter in this annotation. 
-You can also use `MethodSorters.JVM` which uses the JVM defaults, which may vary from run to run.
-		
-[[junit_disablingtests]]
+
 === Disabling tests
 
 The @Ignore annotation allow to statically ignore a test.
