@@ -208,41 +208,54 @@ public class MockitoTests {
 ----        
 
 [[mockito_answers]]
-=== Using answers for complex mocks
+=== Using Answers for complex mocks
 
 It is possible to define a `Answer` object for complex results.
+While `thenReturn` returns a predefined value every time,
+with answers you can calculate a response based on the arguments given to your stubbed method.
+This can be useful if your stubbed method is supposed to call a function on one of the arguments
+or if your method is supposed to return the first argument to allow method chaining.
+There exists a static method for the latter:
 
 [source, java]
 ----
 @Test
 public final void answerTest() {
-    Incrementor incrementor = mock(Incrementor.class);
-    
-    when(incrementor.increment(anyInt())).thenAnswer(new Answer<Integer>() {
+    doAnswer(returnsFirstArg()).when(list).add(anyString());
+}
+----
 
-        @Override
-        public Integer answer(InvocationOnMock invocation) throws Throwable {
-            Object[] args = invocation.getArguments();
-            return ((Integer) args[0]) + 2;
-        }
+Or if you need to do a callback on your argument:
+
+[source, java]
+----
+@Test
+public final void callbackTest() {
+    ApiService service = mock(ApiService.class);
+    when(service.login(any(Callback.class))).thenAnswer(i -> {
+        Callback callback = i.getArgument(0);
+        callback.notify("Success");
+        return null;
     });
-    
-    assertNotEquals(Integer.valueOf(11), incrementor.increment(10));
 }
 ----
 
-This can be written more concisely with Java 8 and the `AdditionalAnswers` factory:
+It is even possible to mock a persistence service like an DAO,
+but you should consider creating a fake class instead of a mock if your Answers become too complex.
 
 [source, java]
 ----
-@Test
-public final void answerTest() {
-    Incrementor incrementor = mock(Incrementor.class);
-    
-    when(incrementor.increment(anyInt())).thenAnswer(AdditionalAnswers.answer((Integer integer) -> integer + 2));
-    
-    assertNotEquals(Integer.valueOf(11), incrementor.increment(10));
-}
+List<User> userMap = new ArrayList<>();
+UserDao dao = mock(UserDao.class);
+when(dao.save(any(User.class))).then(i -> {
+    User user = i.getArgument(0);
+    userMap.add(user.getId(), user);
+    return null;
+});
+when(dao.find(any(Integer.class))).then(i -> {
+    int id = i.getArgument(0);
+    return userMap.get(id);
+});
 ----
 
 
