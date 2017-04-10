@@ -1,19 +1,11 @@
 == Introduction to AssertJ
 
-The
-http://joel-costigliola.github.io/assertj/index.html[AssertJ]
-project provides fluent assertion statements for Java. These assert statements are typically used with Java JUnit
-tests. AssertJ is a fork of the Fest assert library, as the Fest is not actively
-maintained anymore.
+The http://joel-costigliola.github.io/assertj/index.html[AssertJ] project provides fluent assertion statements for Java.
+These assert statements are typically used with Java JUnit tests. 
+AssertJ is a fork of the Fest assert library, as the Fest is not actively maintained anymore.
 
-AssertJ is a library for simplifying the writing of assert statements in tests. It also improves the readability of
-asserts
-statements. It has a
-fluent interface for assertions.
-The
-base method for
-AssertJ assertions
-is the
-`assertThat`
-method followed by the assertion.
+AssertJ is a library for simplifying the writing of assert statements in tests. 
+It also improves the readability of asserts statements. 
+It has a fluent interface for assertions..
+The base method for AssertJ assertions is the `assertThat` method followed by the assertion.
 

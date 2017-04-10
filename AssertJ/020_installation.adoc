@@ -20,17 +20,10 @@ include::res/maven/dep.txt[]
 
 === Eclipse IDE configuration
 
-To use the AssertJ
-`assertThat`
-statement and not the one from Hamcrest go to
-menu:Window[Preferences>Java>Editor>Content assist>Favorites>New Type]
-and enter
-`org.assertj.core.api.Assertions`.
+To simplify the usage of the AssertJ `assertThat` statement in the Eclipse IDE go to menu:Window[Preferences>Java>Editor>Content assist>Favorites>New Type] and enter `org.assertj.core.api.Assertions`.
 
 
-You should
-see
-org.assertj.core.api.Assertions.* in the list.
+You should see org.assertj.core.api.Assertions.* in the list.
 
 === IntelliJ Idea configuration 
 
