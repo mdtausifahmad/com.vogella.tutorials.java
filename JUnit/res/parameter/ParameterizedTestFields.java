@@ -15,16 +15,18 @@ import static org.junit.runners.Parameterized.*;
 public class ParameterizedTestFields {
 
     // fields used together with @Parameter must be public
-    @Parameter
+    @Parameter(0)
     public int m1;
-    @Parameter (value = 1)
+    @Parameter(1)
     public int m2;
+    @Parameter(2)
+    public int result;
 
 
     // creates the test data
     @Parameters
     public static Collection<Object[]> data() {
-        Object[][] data = new Object[][] { { 1 , 2 }, { 5, 3 }, { 121, 4 } };
+        Object[][] data = new Object[][] { { 1 , 2, 2 }, { 5, 3, 15 }, { 121, 4, 484 } };
         return Arrays.asList(data);
     }
 
@@ -32,7 +34,7 @@ public class ParameterizedTestFields {
     @Test
     public void testMultiplyException() {
         MyClass tester = new MyClass();
-        assertEquals("Result", m1 * m2, tester.multiply(m1, m2));
+        assertEquals("Result", result, tester.multiply(m1, m2));
     }
 
 

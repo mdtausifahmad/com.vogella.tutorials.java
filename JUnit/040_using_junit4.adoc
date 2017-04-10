@@ -135,12 +135,12 @@ Assume.assumeFalse(System.getProperty("os.name").contains("Linux"));
 ----
 	
 [[junitadvanced]]
-== Advanced JUnit 4 options
 
 === Parameterized test
+
 (((JUnit,Parameterized test)))
 JUnit allows you to use parameters in a tests class. 
-This class can contain one test method and this method is executed with the different parameters provided.
+This class can contain *one* test method and this method is executed with the different parameters provided.
 		
 You mark a test class as a parameterized test with the `@RunWith(Parameterized.class)` annotation.
 		
