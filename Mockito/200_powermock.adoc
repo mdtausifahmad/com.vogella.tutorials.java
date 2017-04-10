@@ -1,0 +1,66 @@
+== Using PowerMock with Mockito
+
+=== Powermock for mocking static methods
+
+Mockito cannot mock static methods. For this you can use `Powermock`.
+PowerMock provides a class called "PowerMockito" for creating mock/object/class and initiating verification, and expectations, everything else you can still use Mockito to setup and verify expectation (e.g. times(), anyInt()).
+
+[source,java]
+----
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public final class NetworkReader {
+    public static String getLocalHostname() {
+        String hostname = "";
+        try {
+            InetAddress addr = InetAddress.getLocalHost();
+            // Get hostname
+            hostname = addr.getHostName();
+        } catch ( UnknownHostException e ) {
+        }
+        return hostname;
+    }
+}
+----
+
+To write a test which mocks away the NetworkReader as dependency you can use the following snippet.
+
+[source,java]
+----
+import org.junit.runner.RunWith;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+
+@RunWith( PowerMockRunner.class )
+@PrepareForTest( NetworkReader.class )
+public class MyTest {
+     
+// Find the tests here
+
+ @Test
+public void testSomething() {
+    mockStatic( NetworkUtil.class );
+    when( NetworkReader.getLocalHostname() ).andReturn( "localhost" );
+    
+    // now test the class which uses NetworkReader 
+}
+----
+
+== Using a wrapper instead of Powermock
+
+Sometimes you can also use a wrapper around a static method, which can be mocked with Mockito.
+
+[source,java]
+----
+class FooWraper {
+   void someMethod() {
+     Foo.someStaticMethod()
+   }
+}
+----
+
+=== Learn more about Powermock
+
+See https://github.com/jayway/powermock/wiki/MockitoUsage[Using PowerMock with Mockito] for more information
+
+
