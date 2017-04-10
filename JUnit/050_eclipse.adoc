@@ -1,4 +1,4 @@
-== Eclipse support for JUnit
+== Eclipse support for JUnit 4
 
 [[eclipse_creatingjunittest]]
 === Creating JUnit tests

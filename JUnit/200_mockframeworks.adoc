@@ -6,5 +6,4 @@ object is exchanged by a replacement which has a predefined behavior
 for the test.
 	
 There are several frameworks available for mocking. 
-To learn more about mock frameworks please see the Mockito tutorial under http://www.vogella.com/tutorials/Mockito/article.html
-or the EasyMock tutorial under http://www.vogella.com/tutorials/EasyMock/article.html.
+To learn more about mock frameworks please see the http://www.vogella.com/tutorials/Mockito/article.html[Mockito tutorial].

@@ -3,6 +3,7 @@
 
 http://www.junit.org/[JUnit Homepage]
 
+http://junit.org/junit5/docs/current/user-guide/[JUnit 5 user guide]
 
 http://testng.org[TestNG, alternative testing framework to JUnit]
 

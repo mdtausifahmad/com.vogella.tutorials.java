@@ -6,15 +6,15 @@
 
 (((JUnit framework)))
 (((JUnit,@Test)))
-_JUnit_ in version 4.x is a test framework which uses annotations to identify methods that specify a test.
-The main websites for JUnit are the JUnit homepage (http://junit.org/) and the Github project page (https://github.com/junit-team/junit).
+http://junit.org/[JUnit] is a test framework which uses annotations to identify methods that specify a test.
+JUnit is an open source project hosted at https://github.com/junit-team/junit[Github].
 
 [[unittesting_junit_test]]
 === How to define a test in JUnit?
 		
 A JUnit _test_ is a method contained in a class which is only used for testing. 
 This is called a _Test class_.
-To write a JUnit 4 test you annotate a method with the `@org.junit.Test` annotation.
+To defile that a certain method is a test method, annotate it with the `@Test` annotation.
 		
 This method executes the code under test.		
 You use an _assert_ method, provided by JUnit or another assert framework, to check an expected result versus the actual result. 
@@ -27,7 +27,7 @@ This is especially true if someone looks at the problem, who did not write the c
 [[unittesting_junitexample]]
 === Example JUnit test
 		
-The following code shows a JUnit test. 
+The following code shows a JUnit test using the JUnit 5 version.
 This test assumes that the `MyClass` class exists and has a `multiply(int, init)` method.
 		
 [source,java]
@@ -37,44 +37,27 @@ include::res/example/test.java[]
 
 [[junit_namingconventions]]
 === JUnit naming conventions
+
 (((Naming conventions for test methods)))
 There are several potential naming conventions for JUnit tests.
-A widely-used solution is to add the suffix "-test" to the names of the test classes and create them in a new package "test".
+A widely-used solution for classes is to use the "Test" suffix at the end of test classes names.
 
-        
 As a general rule, a test name should explain what the test does.
 If that is done correctly, reading the actual implementation can be avoided.
 	
-One possible convention is to use the word "should" in the test method name.
+One possible convention is to use the "should" in the test method name.
 For example, "ordersShouldBeCreated" or "menuShouldGetActive". 
 This gives a hint what should happen if the test method is executed.
+
+Another approach is to use "Given[ExplainYourInput]When[WhatIsDone]Then[ExpectedResult]" for the display name of the test method.
 
 [[junit_namingconventions_maven]]
 === JUnit naming conventions for Maven
 
-If you are using the Maven build system, you should prefer the "Test" suffix over "Tests".
+If you are using the Maven build system, you should use the "Test" suffix for test classes.
 The Maven build system (via its surfire plug-in) automatically includes such classes in its test scope.
-		
-[[juniteclipse_testsuite]]
-
-=== JUnit test suites
-(((JUnit,Test suite)))
-		
-If you have several test classes, you can combine them into a test suite.
-Running a test suite executes all test classes in that suite in the specified order.
-A test suite can also contain other test suites. 
-		
-The following example code demonstrates the usage of a test suite. 
-It  contains two test classes (MyClassTest and MySecondClassTest).
-If you want to add another test class, you can add it to the `@Suite.SuiteClasses` statement.
-		
-[source,java]
-----
-include::res/example/AllTests.java[]
-----
 
 [[juniteclipse_code]]
-
 === Run your test from the command line
 		
 You can also run your JUnit tests outside our IDE via standard Java code. 
