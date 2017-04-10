@@ -57,37 +57,5 @@ public class TestCustomMatcher {
     }
 
 }
-----	
-
-== Grouping your matchers for import
-
-If you define many custom matchers it might become tedious to import them one by one into your test files.
-By grouping them into a single class you can import them with one statement.
-You can also group them together with Hamcrest matchers.
-
-[source, java]
-----
-package com.vogella.hamcrest;
-import com.vogella.hamcrest.matchers.RegexMatcher;
-import org.hamcrest.Matcher;
-import org.hamcrest.Matchers;
-
-public class MyMatchers
-{
-    public static <T> Matcher<T> instanceOf(Class<T> target) {
-        return Matchers.instanceOf(target);
-    }
-   
-   public static Matcher<String> matchesRegex(String target) {
-          return RegexMatcher.matchesRegex(target);
-   }
-}
-----
-
-In your test file:
-
-[source, java]
-----
-import static com.vogella.hamcrest.MyMatchers.*;
 ----
 	
