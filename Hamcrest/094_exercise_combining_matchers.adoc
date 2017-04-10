@@ -1,0 +1,107 @@
+== Exercise: Combining matchers
+
+Combining matchers is supported by Hamcrest out of the box but it has the limitation that the error is hard to read:
+
+[source, java]
+----
+@Test
+public void () {
+    List<Integer> list = new ArrayList<>();
+    assertThat(list, both(hasSize(1)).and(contains(42)));
+}
+----
+
+[source, text]
+----
+Expected: (a collection with size <1> and iterable containing [<42>])
+     but: a collection with size <1> collection size was <0>.
+----
+
+This not very readable.
+
+=== Target
+
+We want to write our own MatcherCombiner that provides us with a readable error message, even when multiple matchers fail.
+
+=== Create MatchCombiner
+
+We do this by inheriting from  BaseMatch and by providing a starting method that let's us chain matchers together.
+The matchers get saved in a list that we iterate over during the matching phase.
+
+[source, java]
+----
+public class MatcherCombinator<T> extends BaseMatcher<T> {
+    private final List<Matcher<? super T>> matchers = new ArrayList<>();
+    private final List<Matcher<? super T>> failedMatchers = new ArrayList<>();
+
+    private MatcherCombinator(final Matcher<? super T> matcher) {
+        matchers.add(matcher);
+    }
+
+    public MatcherCombinator<T> and(final Matcher<? super T> matcher) {
+        matchers.add(matcher);
+        return this;
+    }
+
+    @Override
+    public boolean matches(final Object item) {
+        boolean matchesAllMatchers = true;
+        for (final Matcher<? super T> matcher : matchers) {
+            if (!matcher.matches(item)) {
+                failedMatchers.add(matcher);
+                matchesAllMatchers = false;
+            }
+        }
+        return matchesAllMatchers;
+    }
+
+    @Override
+    public void describeTo(final Description description) {
+        description.appendValueList("\n", " " + "and" + "\n", "", matchers);
+    }
+
+    @Override
+    public void describeMismatch(final Object item, final Description description) {
+        description.appendText("\n");
+        for (Iterator<Matcher<? super T>> iterator = failedMatchers.iterator(); iterator.hasNext();) {
+            final Matcher<? super T> matcher = iterator.next();
+            description.appendText("Expected: <");
+            description.appendDescriptionOf(matcher).appendText(" but ");
+            matcher.describeMismatch(item, description);
+            if (iterator.hasNext()) {
+                description.appendText(">\n");
+            }
+        }
+    }
+
+    public static <LHS> MatcherCombinator<LHS> matches(final Matcher<? super LHS> matcher) {
+        return new MatcherCombinator<LHS>(matcher);
+    }
+}
+----
+
+To validate the implementation we write a new test.
+
+[source, java]
+----
+@Test
+public void test() {
+    List<Integer> list = new ArrayList<>();
+    assertThat(list, matches(hasSize(1)).and(contains(42)));
+}
+----
+
+[source, text]
+----
+java.lang.AssertionError: 
+Expected: 
+<a collection with size <1>> and
+<iterable containing [<42>]>
+     but: 
+Expected: <a collection with size <1> but collection size was <0>>
+Expected: <iterable containing [<42>] but No item matched: <42>.
+
+----
+
+You can adjust this output in the `describeMismatch` method.
+
