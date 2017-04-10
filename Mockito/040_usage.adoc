@@ -207,9 +207,10 @@ public class MockitoTests {
 }
 ----        
 
-=== Process input in stubbed methods
+[[mockito_answers]]
+=== Using answers for complex mocks
 
-It is possible to process the arguments that where handed to your stubbed method.
+It is possible to define a `Answer` object for complex results.
 
 [source, java]
 ----

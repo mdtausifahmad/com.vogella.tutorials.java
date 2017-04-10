@@ -1,4 +1,5 @@
 dependencies {
+    // ... more entries
     testCompile 'junit:junit:4.12'
     
     // required if you want to use Mockito for unit tests
