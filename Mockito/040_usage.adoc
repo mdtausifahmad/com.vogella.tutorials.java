@@ -330,6 +330,9 @@ It can not test the following constructs:
 
 === Behavior testing vrs. state testing
 
+Mockito puts a focus on behavior testing, vrs. result testing.
+This is not always correct, for example, if you are testing a sort algorithm, you should test the result not the internal behavior.
+
 [source, java]
 ----
 // state testing
@@ -341,7 +344,8 @@ testSort() {
 }
 
 
-// incorrect would be behavior testing, with would be testing the implementation
+// incorrect would be behavior testing
+// the following tests internal of the implementation
 testSort() {
     testList = [1, 7, 3, 8, 2] 
     MySorter.sort(testList)
