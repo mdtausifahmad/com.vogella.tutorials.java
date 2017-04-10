@@ -1,9 +1,0 @@
-dependencies {
-    testCompile 'junit:junit:4.12'
-    // required if you want to use Mockito for unit tests
-    testCompile 'org.mockito:mockito-core:1.+'
-    // required if you want to use Mockito for Android instrumentation tests
-    androidTestCompile 'org.mockito:mockito-core:1.+'
-    androidTestCompile "com.google.dexmaker:dexmaker:1.2"
-    androidTestCompile "com.google.dexmaker:dexmaker-mockito:1.2"
-}

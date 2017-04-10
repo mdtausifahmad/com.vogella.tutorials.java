@@ -2,14 +2,23 @@
 == Adding Mockito as dependencies to a project
 
 [[mockito_installation_gradle]]
-=== Using Gradle
-If you use Gradle, add the following dependency to the Gradle build file.
+=== Using Gradle for a Java project
+If you use Gradle in a Java project, add the following dependency to the Gradle build file.
 
 [source, groovy]
 ----
 include::res/install/build.gradle[]
 ----
-		
+
+=== Using Gradle for an Android project
+Add the following dependency to the Gradle build file:
+
+[source, groovy]
+----
+include::res/install/build_android.gradle[]
+----
+
+
 			
 [[mockito_installation_maven]]
 === Using Maven

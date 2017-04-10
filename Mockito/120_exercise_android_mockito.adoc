@@ -5,8 +5,7 @@
 === Create Application under tests on Android
 		
 Create an Android application with the package name `com.vogella.android.testing.mockito.contextmock`. 
-Add a static method	which allows to create an intent with certain parameters as in the following example.
-		
+Add a `Util` class with a static method which allows to create an intent with certain parameters as in the following example.
 
 [source, java]
 ----
@@ -18,17 +17,23 @@ include::res/simple/Method.java[]
 	
 [source, gradle]
 ----
-include::res/simple/build.gradle[]
+include::res/install/build_android.gradle[]
 ----		
 			
 [[mockito_android_createtest]]
 === Create test
 
-Create a new unit test using Mockito to check that the intent is triggered with the correct extra data.
+Create a new unit test running on Android using Mockito in the `androidTest` folder.
+This test should check if the intent contains the correct extras.
+For this you mock the `Context` object with Mockito.
 
-For this you mock the `Context`	object with Mockito as in the following example.
-		
+ifdef::show_exercise_solution[]
 [source, java]
 ----
-include::res/simple/Test.txt[]
+include::res/simple/Test.java[]
 ----		
+endif::show_exercise_solution[]
+
+What would you need to do to run this test on the JVM?
+
+
