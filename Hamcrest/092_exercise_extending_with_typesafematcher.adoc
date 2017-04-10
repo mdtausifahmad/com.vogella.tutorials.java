@@ -57,7 +57,7 @@ public class TestCustomMatcher {
 }
 ----	
 
-==== Grouping your matchers for import
+== Grouping your matchers for import
 
 If you define many custom matchers it might become tedious to import them one by one into your test files.
 By grouping them into a single class you can import them with one statement.
