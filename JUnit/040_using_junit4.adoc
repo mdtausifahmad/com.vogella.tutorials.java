@@ -14,7 +14,7 @@ All these annotations can be used on methods.
 .Annotations
 [cols="2,4",options="header"]
 |===
-JUnit 4 |Description
+|JUnit 4 |Description
 
 |`import org.junit.*`
 | Import statement for using the following annotations.
