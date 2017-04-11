@@ -1,0 +1,21 @@
+== Converting JUnit assertions to AssrtJ with a script
+
+The AssertJ project provides scripts for all major operating systems to automatically convert tests with JUnit assertions to AssertJ.
+
+You can download them from their Github repository:
+link:https://github.com/joel-costigliola/assertj-core/blob/master/src/main/scripts/convert-junit-assertions-to-assertj.sh[Script for Unix/Windows] 
+link:https://github.com/joel-costigliola/assertj-core/blob/master/src/main/scripts/convert-junit-assertions-to-assertj-on-osx.sh[Script for OSX]
+
+Just copy the script into the folder of the tests you want to convert and execute it.
+
+[source, terminal]
+----
+# Unix/Windows
+convert-junit-assertions-to-assertj.sh
+# OSX
+convert-junit-assertions-to-assertj-on-osx.sh
+----
+
+While this script works pretty well it can still introduce compile errors that you have to fix manually.
+For more information on this topic please see the https://joel-costigliola.github.io/assertj/assertj-core-converting-junit-assertions-to-assertj.html[AssertJ project website].
+
