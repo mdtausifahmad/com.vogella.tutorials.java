@@ -93,3 +93,6 @@ Expecting User <admin> to have no posts
   <42> posts
 ----
 
+The AssertJ project provides generators that let you generate custom assertions from your existing Java classes in an automated way.
+You can learn more about this feature on their https://joel-costigliola.github.io/assertj/assertj-assertions-generator.html[website].
+
