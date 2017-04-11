@@ -1,0 +1,95 @@
+== Exercise: Creating a custom assertion for a class
+
+While it is nice to have the ability to define custom error messages in the test,
+if we want to use this in multiple tests this can be come tedious and leads to redundant code.
+In this case it is useful to created custom assertion classes that are reusable.
+For this exercise we want to take our custom message example:
+
+[source, java]
+----
+@Test
+public void newlyCreatedUserHasNoPosts() throws Exception {
+    User user = new User("admin");
+    assertThat(user.getPostCount()).as("User \"%s\" has no posts", user.getName()).isEqualTo(0);
+}
+----
+
+And transform it into this:
+
+[source, java]
+----
+@Test
+public void newlyCreatedUserHasNoPosts() throws Exception {
+    User user = new User("admin");
+    assertThat(user).hasNoPosts();
+}
+----
+
+=== Implementation
+
+First we have to define our entry point class that lets us start the assertion chain.
+We have to provide a static `assertThat` method that returns our assertion class.
+
+[source, java]
+----
+public class Assertions {
+
+  public static UserAssert assertThat(User actual) {
+    return new UserAssert(actual);
+  }
+}
+----
+
+Now we create the missing assertion class.
+
+[source, java]
+----
+public class UserAssert extends AbstractAssert<UserAssert, User> {
+
+    public UserAssert hasNoPosts() {
+          // check that actual User we want to make assertions on is not null.
+          isNotNull();
+
+          // overrides the default error message with a more explicit one
+          String assertjErrorMessage = "\nExpecting User <%s> to have no posts\n but was:\n  <%s> posts";
+          
+          // null safe check
+          int actualNumberOfPosts = actual.getPostCount();
+          if (!Objects.areEqual(actualNumberOfPosts, 0)) {
+            failWithMessage(assertjErrorMessage, actual.getName(), actualNumberOfPosts);
+          }
+
+          // return the current assertion for method chaining
+          return this;
+        }
+
+    public UserAssert(User actual) {
+        super(actual, UserAssert.class);
+    }
+
+    public static UserAssert assertThat(User actual) {
+        return new UserAssert(actual);
+    }
+
+}
+----
+
+=== Validating
+
+Now we can execute our test:
+
+
+[source, java]
+----
+@Test
+public void newlyCreatedUserHasNoPosts() throws Exception {
+    User user = new User("admin");
+    UserAssert.assertThat(user).hasNoPosts();
+}
+
+java.lang.AssertionError: 
+Expecting User <admin> to have no posts
+ but was:
+  <42> posts
+----
+
