@@ -1,8 +1,58 @@
-== Example for using AssertJ
+== Usage of AssertJ
+
+=== Writing assertions
+
+AssertJ assertions start with a call to assertThat followed by an assertion.
+
+[source, java]
+----
+assertThat("abc").isEqualTo(123);
+----
+
+=== Chaining of assertions
+
+AssertJ allows you to be concise by chaining multiple assertions.
+
+[source, java]
+----
+// JUnit style
+assertNotNull(list);
+assertTrue(list.isEmpty());
+
+// AssertJ
+assertThat(list).isNotNull().isNotEmpty();
+----
+
+=== Assertions for Java collections
+
+AssertJ comes with many built in matchers for core java classes.
+
+Here is an example that tests a Map:
+
+[source, java]
+----
+// check for multiple keys at once
+assertThat(map).containsKeys("a", "b", "c");
+// check if the value of a certain key satisfies a condition
+assertThat(map).hasEntrySatisfying(key, String::isEmpty);
+// check if all entries of an other map are contained in a map
+assertThat(map).containsAllEntriesOf(expectedSubset);
+----
+
+=== Assertions for Date
+
+AssertJ provides special assertions for the Java date class.
+
+[source, java]
+----
+assertThat(eclipseOxygen.getReleaseDate()).isBeforeYear(2020).isAfterYear(2016);
+assertThat(eclipseOxygen.getReleaseDate()).isBetween("2017-01-31", "2017-12-31");
+----
+
+=== Further examples
 
 The following example code is taken from the AssertJ homepage:
-	
-	
+
 [source,java]
 ----
 include::res/start/example.java[]
