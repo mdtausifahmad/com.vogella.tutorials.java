@@ -4,7 +4,7 @@ assertEquals(View.GONE, view.getVisibility());
 // AssertJ Androids version is much shorter
 assertThat(view).isGone();
 
-# AssertJ Android allows to combine checks
+// AssertJ Android allows to combine checks
 assertThat(layout).isVisible()
 	.isVertical()
 	.hasChildCount(4)
