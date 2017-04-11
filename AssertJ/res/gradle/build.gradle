@@ -1,1 +1,2 @@
-testCompile 'org.assertj:assertj-core:2.0.0'
+// use 2.6.0 for Java 7 projects
+testCompile 'org.assertj:assertj-core:3.6.2'
