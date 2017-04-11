@@ -1,0 +1,49 @@
+== Benefits of using AssertJ
+
+This will describe the motivation for using AssertJ instead of plain JUnit asserts.
+
+=== Readability
+
+While JUnit has continually added more assertions in the last years it is st
+
+While you may be familiar with JUnits assertions it is easy for a beginner to mix up `actual` and `expected`.
+
+[source, java]
+----
+assertEquals(actual, expected);
+assertThat(actual).isEqualTo(expected);
+// this look obviously wrong
+assertThat(expected).isEqualTo(actual);
+----
+
+It makes it easier to express your intent.
+
+[source, java]
+----
+Date today = new Date();
+assertTrue((birthday.getTime() > today.getTime()));
+assertThat(birthday).isBefore(today);
+----
+
+=== Better error messages
+
+The specific matcher function not only improve readability but also give the framework the ability to provide you with better error messages.
+
+[source, java]
+----
+List<String> list = new ArrayList<>();
+assertTrue(list.contains("abc"));
+->
+java.lang.AssertionError at ...
+
+assertThat(list).contains("abc");
+->
+java.lang.AssertionError: 
+    Expecting:
+         <[]>
+        to contain:
+         <["abc"]>
+        but could not find:
+         <["abc"]>
+----
+
