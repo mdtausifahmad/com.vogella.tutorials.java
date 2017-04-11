@@ -1,9 +1,10 @@
 [[hamcrest_installation]]
 == Using Hamcrest matchers
-(((Hamcrest installation)))
+
 [[hamcrest_gradle]]
 === Defining a Hamcrest dependency for Gradle
 
+(((Hamcrest installation)))
 To use Hamcrest matchers for a project based on the Gradle build system, add the following dependencies to it.
 
 [source, groovy]
