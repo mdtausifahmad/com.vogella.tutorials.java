@@ -16,6 +16,12 @@ convert-junit-assertions-to-assertj.sh
 convert-junit-assertions-to-assertj-on-osx.sh
 ----
 
+[source, terminal]
+----
+ 1 - Replacing : assertEquals(0, myList.size()) ................. by : assertThat(myList).isEmpty()
+ 2 - Replacing : assertEquals(expectedSize, myList.size()) ...... by : assertThat(myList).hasSize(expectedSize)
+----
+
 While this script works pretty well it can still introduce compile errors that you have to fix manually.
 For more information on this topic please see the https://joel-costigliola.github.io/assertj/assertj-core-converting-junit-assertions-to-assertj.html[AssertJ project website].
 

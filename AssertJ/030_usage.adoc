@@ -25,7 +25,15 @@ assertThat(list).isNotNull().isNotEmpty();
 
 === Assertions for Java collections
 
-AssertJ comes with many built in matchers for core java classes.
+AssertJ comes with many built in matchers for Java collection classes.
+
+For example the List class:
+
+[source, java]
+----
+assertThat(userList).contains(user, atIndex(0)).containsOnlyOnce(user, user2, user3);
+assertThat(userList).contains(user).isSortedAccordingTo(ageComparator);
+----
 
 Here is an example that tests a Map:
 
@@ -47,6 +55,48 @@ AssertJ provides special assertions for the Java date class.
 ----
 assertThat(eclipseOxygen.getReleaseDate()).isBeforeYear(2020).isAfterYear(2016);
 assertThat(eclipseOxygen.getReleaseDate()).isBetween("2017-01-31", "2017-12-31");
+----
+
+
+=== Assertions for File and Stream
+
+There are assertions to handle common file and stream checks.
+
+[source, java]
+----
+// file assertions:
+assertThat(manifestFile).exists();
+assertThat(contentOf(manifestFile)).startsWith("Manifest-Version:");
+
+// stream assertions:
+assertThat(streamFromFile).hasSameContentAs(streamFrom(streamFromFileCopy));
+----
+
+=== Adding a custom message to an assertion
+
+We can add a customized message to existing assertions to better explain what we are expecting.
+
+[source, java]
+----
+User user = new User("admin");
+assertThat(user.getPostCount()).as("User \"%s\" has no posts", user.getName()).isEqualTo(0);
+----
+
+=== Comparing objects field by field
+
+Sometimes you don't want to use the existing equals() method but just want to compare by certain fields.
+AssertJ provides multiple assertions to help you with that:
+
+[source, java]
+----
+assertThat(user).isEqualToComparingOnlyGivenFields(otherUser, "address", "age");
+----
+
+If you have to problem the classes of certain fields don't implement equals you can use `isEqualToComparingFieldByFieldRecursively`.
+
+[source, java]
+----
+assertThat(user).isEqualToComparingFieldByFieldRecursively(otherUser);
 ----
 
 === Further examples
