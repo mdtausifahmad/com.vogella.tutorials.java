@@ -15,7 +15,7 @@ include::res/simple/Method.java[]
 [[mockito_android2]]
 === Add the Mockito dependency to the app/build.gradle file
 	
-[source, gradle]
+[source, groovy]
 ----
 include::res/install/build_android.gradle[]
 ----		
