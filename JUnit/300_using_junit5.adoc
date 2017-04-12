@@ -1,0 +1,325 @@
+[[junit5]]
+== Overview of JUnit 5
+
+JUnit 5 is the next major release of JUnit and is still under development.
+JUnit 5 consists of a number of discrete components:
+
+* JUnit Platform - foundation layer which enables different testing frameworks to be launched on the JVM
+* Junit Jupiter - is the JUnit 5 test framework which is launched by JUnit Platform
+* JUnit Vintage - legacy TestEngine which runs older tests
+
+=== Usage of JUnit 5 with Gradle
+
+[source,groovy]
+----
+buildscript {
+    repositories {
+        mavenCentral()
+        // The following is only necessary if you want to use SNAPSHOT releases.
+        // maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+    dependencies {
+        classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.0-M4'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.junit.platform.gradle.plugin'
+
+dependencies {
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.0.0-M4")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.0.0-M4")
+    // to run JUnit 3/4 tests:
+    testCompile("junit:junit:4.12")
+    testRuntime("org.junit.vintage:junit-vintage-engine:4.12.0-M4")
+}
+----
+
+You can find the official gradle.build example here: https://github.com/junit-team/junit5-samples/blob/master/junit5-gradle-consumer/build.gradle
+
+After letting gradle set up your project can then execute your JUnit 5 tests through the terminal:
+
+[source, terminal]
+----
+gradle junitPlatformTest
+----
+
+If you are using Eclipse it is best to install the http://www.vogella.com/tutorials/EclipseGradle/article.html#install-eclipse-gradle-buildship-tooling[Buildship tooling].
+Then you can start your tests via menu:Run as[Gradle Test].
+The result of the test execution will be displayed in the `Console` view.
+
+image::run_as_gradle_test.png[Menu entry "Run as" > "Gradle Test"] 
+
+=== Usage of JUnit 5 with Maven
+
+This example shows how to import all components of JUnit 5 into your project.
+
+We need to register the individual components with Maven surefire:
+[source, xml]
+----
+<build>
+    <plugins>
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <source>${java.version}</source>
+                <target>${java.version}</target>
+            </configuration>
+        </plugin>
+        <plugin>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.19.1</version>
+            <configuration>
+                <includes>
+                    <include>**/Test*.java</include>
+                    <include>**/*Test.java</include>
+                    <include>**/*Tests.java</include>
+                    <include>**/*TestCase.java</include>
+                </includes>
+                <properties>
+                    <!-- <includeTags>fast</includeTags> -->
+                    <excludeTags>slow</excludeTags>
+                </properties>
+            </configuration>
+            <dependencies>
+                <dependency>
+                    <groupId>org.junit.platform</groupId>
+                    <artifactId>junit-platform-surefire-provider</artifactId>
+                    <version>${junit.platform.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter-engine</artifactId>
+                    <version>${junit.jupiter.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                    <version>${junit.vintage.version}</version>
+                </dependency>
+            </dependencies>
+        </plugin>
+    </plugins>
+</build>
+----
+
+And add the dependencies:
+
+[source, xml]
+----
+<dependencies>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>${junit.jupiter.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+----
+
+You can find a complete example of a working maven configuration here: https://github.com/junit-team/junit5-samples/blob/r5.0.0-M4/junit5-maven-consumer/pom.xml
+
+[NOTE]
+====
+The above works for Java projects but not yet for Android projects.
+====
+
+
+[[usingjunit_annotations]]
+=== Defining test methods
+
+(((JUnit,Annotations)))
+(((Test annotations from JUnit)))
+JUnit uses annotations to mark methods as test methods and to configure them.
+The following table gives an overview of the most important annotations in JUnit for the 4.x and 5.x versions.
+All these annotations can be used on methods.
+
+
+.Annotations
+[cols="2,4",options="header"]
+|===
+
+|`import org.junit.jupiter.api.*`
+| Import statement for using the following annotations.
+
+|`@Test`
+|Identifies a method as a test method.
+
+|`@RepeatedTest(<Number>)`
+|Repeats the test a <Number> of times
+
+|`@TestFactory`
+|Method is a Factory for dynamic tests
+
+|`@BeforeEach`
+|Executed before each test. It is used to
+prepare the test environment (e.g., read input
+data, initialize the class).
+
+|`@AfterEach`
+|Executed after each test. It is used to cleanup the test environment (e.g., delete temporary data, restore defaults). It can also save memory by cleaning up expensive memory structures.
+
+|`@BeforeAll`
+|Executed once, before the start of all tests.
+It is used to perform time intensive activities, for example, to connect to a database. Methods marked with this annotation need to be defined as `static` to work with JUnit.
+
+|`@AfterEach`
+|Executed once, after all tests have been finished.
+It is used to perform clean-up activities, for example, to disconnect from a database. Methods annotated with this annotation need to be defined as `static` to work with JUnit.
+
+|`@Nested`
+|Lets you nest inner test classes to force a certain execution order
+
+|`@Tag("<TagName>")`
+|Tests in JUnit 5 can be filtered by tag. Eg., run only tests tagged with "fast".
+
+|`@ExtendWith`
+|Lets you register an Extension class that integrates with one or more extension points
+
+|`@Disabled` or `@Disabled("Why disabled")`
+|Marks that the test should be disabled. This is useful when the
+underlying code has been changed and the test case has not
+yet
+been
+adapted. Or if the execution time of this test is too long
+to be
+included. It is best practice to provide
+the optional
+description, why the test is disabled.
+
+|`@DisplayName("<Name>")`
+|<Name> that will be displayed by the test runner. In contrast to method names the DisplayName can contain spaces.
+
+|===
+
+
+[[usingjunit_executionorder]]
+=== Disabling tests
+
+The @Disable annotation allow to statically ignore a test.
+
+Alternatively  you can use `Assume.assumeFalse` or `Assume.assumeTrue` to define a condition for the test.
+`Assume.assumeFalse` marks the test as invalid, if its condition evaluates to true.
+`Assume.assumeTrue` evaluates the test as invalid if its condition evaluates  to false. 
+For example, the following disables a test on Linux:
+
+[source,java]
+----
+Assume.assumeFalse(System.getProperty("os.name").contains("Linux"));
+----
+
+=== Test Suites
+
+To run multiple tests together, you can use test suites.
+They allow to aggregate multiple test classes. 
+JUnit 5 provides two annotations: 
+
+* `@SelectPackages` - used to specify the names of packages for the test suite
+* `@SelectClasses` - used to specify the classes for the test suite. They can be located in different packages.
+
+[source,java]
+----
+@RunWith(JUnitPlatform.class)
+@SelectPackages("com.vogella.junit5.examples")
+public class AllTests {}
+----
+
+[source,java]
+----	
+@RunWith(JUnitPlatform.class)
+@SelectClasses({AssertionTest.class, AssumptionTest.class, ExceptionTest.class})
+public class AllTests {}
+----
+
+=== Expecting Exceptions
+
+Exception is handling with `org.junit.jupiter.api.Assertions.expectThrows()`.
+You define the expected Exception class and provide code that should throw the exception.
+
+[source, java]
+----
+import static org.junit.jupiter.api.Assertions.expectThrows;
+
+@Test
+void exceptionTesting() {
+    // set up user
+    Throwable exception = expectThrows(IllegalArgumentException.class, () -> user.setAge("23"));
+    assertEquals("Age must be an Integer.", exception.getMessage());
+}
+----
+
+This lets you define which part of the test should throw the exception.
+The test will still fail if an exception is thrown outside of this scope.
+
+=== Grouped assertions
+
+[source, java]
+----
+@Test
+void groupedAssertions() {
+    Address address = new Address();
+    // In a grouped assertion all assertions are executed, even after a failure.
+    // The error messages get grouped together.
+    assertAll("address name",
+        () -> assertEquals("John", address.getFirstName()),
+        () -> assertEquals("User", address.getLastName())
+    );
+}
+    => org.opentest4j.MultipleFailuresError: address name (2 failures)
+    expected: <John> but was: <null>
+    expected: <User> but was: <null>
+----
+
+=== Timeout tests
+
+If you want to ensure that a test fails if it isn't done in a certain amount of time you can use the `assertTimeout()` method.
+This method will wait until 
+   
+[source, java]
+----
+import static org.junit.jupiter.api.Assertions.assertTimeout;
+import static java.time.Duration.ofSeconds;
+import static java.time.Duration.ofMinutes;
+
+@Test
+void timeoutNotExceeded() {
+    assertTimeout(ofMinutes(1), () -> service.doBackup());
+}
+
+// if you have to check a return value
+@Test
+void timeoutNotExceededWithResult() {
+    String actualResult = assertTimeout(ofSeconds(1), () -> {
+        return restService.request(request);
+    });
+    assertEquals(200, request.getStatus());
+}
+=> org.opentest4j.AssertionFailedError: execution exceeded timeout of 1000 ms by 212 ms
+----
+
+If you want your tests to cancel after the timeout period is passed you can use the `assertTimeoutPreemptively()` method.
+
+[source, java]
+----
+@Test
+void timeoutNotExceededWithResult() {
+    String actualResult = assertTimeoutPreemptively(ofSeconds(1), () -> {
+        return restService.request(request);
+    });
+    assertEquals(200, request.getStatus());
+}
+=> org.opentest4j.AssertionFailedError: execution timed out after 1000 ms
+----
+

@@ -47,11 +47,11 @@ included. It is best practice to provide
 the optional
 description, why the test is disabled.
 
-|Not available
+|Not available, is replaced by `org.junit.jupiter.api.Assertions.expectThrows()`
 |`@Test (expected = Exception.class)`
 |Fails if the method does not throw the named exception.
 
-|Not available
+|Not available, is replaced by `AssertTimeout.assertTimeout()` and `AssertTimeout.assertTimeoutPreemptively()`
 |`@Test(timeout=100)`
 |Fails if the method takes longer than 100 milliseconds.
 
