@@ -70,6 +70,7 @@ assertThat(contentOf(manifestFile)).startsWith("Manifest-Version:");
 
 // stream assertions:
 assertThat(streamFromFile).hasSameContentAs(streamFrom(streamFromFileCopy));
+----
 
 === Adding a custom message to an assertion
 
