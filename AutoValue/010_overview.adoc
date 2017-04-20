@@ -1,4 +1,85 @@
-== AutoValue
+== Auto
 
-See http://ryanharter.com/blog/2016/03/22/autovalue/.
+https://github.com/google/auto/[Auto] is collection of code generators that automate certain repetitive tasks, like creating value objects.
+The tools create the code you would have written, but without the bugs.
+
+=== AutoValue
+
+AutoValue allows the creation of immutable value objects.
+Value objects are classes which treat any two instances with suitably equal field values as interchangeable. 
+
+
+=== Using AutoValue on Android
+
+https://github.com/JakeWharton/AutoValueAnnotations allows to use AutoValue on Android.
+
+Add the following dependencies to your `build.gradle` file.
+
+[source,gradle]
+====
+dependencies {
+	annotationProcessor 'com.google.auto.value:auto-value:1.4'
+    provided 'com.jakewharton.auto.value:auto-value-annotations:1.4'
+}
+====
+
+
+
+
+
+=== How to use AutoValue
+
+In AutoValue you write an abstract class, and AutoValue implements it.
+You can provide a `create` method which allows you to  return the generated instance of the class.
+
+[source,java]
+====
+package com.vogella.android.autovalue;
+
+
+import com.google.auto.value.AutoValue;
+
+@AutoValue public abstract class Task {
+
+    public abstract long id();
+    public abstract String summary();
+    public abstract String description();
+
+    public static Task create(long id, String summary, String descriptoin) {
+        return new AutoValue_Task(id, summary, descriptoin);
+    }
+}
+====
+
+=== Using Builder 
+
+Autovalue allows allows to create a `Builder` API. 
+
+[source,java]
+====
+package com.vogella.android.butterknifeexample;
+
+
+import com.google.auto.value.AutoValue;
+
+@AutoValue public abstract class Task {
+
+    public abstract long id();
+    public abstract String summary();
+    public abstract String description();
+
+
+    static Builder builder() {
+        return new AutoValue_Task.Builder();
+    }
+
+    @AutoValue.Builder
+    abstract static class Builder {
+        abstract Builder setId(long value);
+        abstract Builder setSummary(String value);
+        abstract Builder setDescription(String value);
+        abstract Task build();
+    }
+}
+====
 

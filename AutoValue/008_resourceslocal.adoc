@@ -1,4 +1,6 @@
 == AutoValue resources
 
-Nothing listed.
+https://github.com/google/auto/[Auto homepage]
+http://ryanharter.com/blog/2016/03/22/autovalue/[Blog post about Auto Value extensions]
+
 
