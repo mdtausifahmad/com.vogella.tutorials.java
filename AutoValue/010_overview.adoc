@@ -16,16 +16,12 @@ https://github.com/JakeWharton/AutoValueAnnotations allows to use AutoValue on A
 Add the following dependencies to your `build.gradle` file.
 
 [source,gradle]
-====
+----
 dependencies {
 	annotationProcessor 'com.google.auto.value:auto-value:1.4'
     provided 'com.jakewharton.auto.value:auto-value-annotations:1.4'
 }
-====
-
-
-
-
+----
 
 === How to use AutoValue
 
@@ -33,7 +29,7 @@ In AutoValue you write an abstract class, and AutoValue implements it.
 You can provide a `create` method which allows you to  return the generated instance of the class.
 
 [source,java]
-====
+----
 package com.vogella.android.autovalue;
 
 
@@ -45,18 +41,19 @@ import com.google.auto.value.AutoValue;
     public abstract String summary();
     public abstract String description();
 
-    public static Task create(long id, String summary, String descriptoin) {
-        return new AutoValue_Task(id, summary, descriptoin);
+    public static Task create(long id, String summary, String description) {
+        return new AutoValue_Task(id, summary, description);
     }
 }
-====
+----
+
 
 === Using Builder 
 
 Autovalue allows allows to create a `Builder` API. 
 
 [source,java]
-====
+----
 package com.vogella.android.butterknifeexample;
 
 
@@ -81,5 +78,23 @@ import com.google.auto.value.AutoValue;
         abstract Task build();
     }
 }
-====
+----
+
+==== AutoValue extensions
+
+The AutoValue extensions allows to support things like:
+
+* Parcelable
+* Json
+* Moschi
+
+See http://search.maven.org/#search%7Cga%7C1%7Cauto-value[Auto Value libraries].
+
+For example, to make an object parceable you simple add the following dependency to your build file.
+
+[source,gradle]
+----
+annotationProcessor 'com.ryanharter.auto.value:auto-value-parcel:0.2.5'
+----
+
 

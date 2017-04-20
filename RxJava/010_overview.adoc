@@ -23,7 +23,7 @@ RxJava describes itself as an API for asynchronous programming with observable s
 === Define a dependency to RxJava 2.0
 
 As of this writing the version 2.0.4 is currently the released one. 
-Replace g.a.v with 2.0.6 or a later version.
+Replace g.a.v with 2.0.4 or a later version.
 
 For a Gradle build you can add RxJava via the following dependency statement.
 
@@ -49,9 +49,9 @@ image::rxjava-update-site.png[]
 
 === Async programming
 
-Nowadays programming in an imperative single threaded way usually leads to strange behaviors, a blocking non responsive UIs and therefore a bad user experience.
+Programming in an imperative single threaded way can lead to blocking user interfaces and therefore a bad user experience.
 
-For example actively waiting for a database query or a webservice call can cause an application freeze, if the network is not responsive.
+For example, waiting for a database query or a webservice call can cause an application freeze, if the network is not responsive.
 
 This can be avoided by handling unpredicted things asynchronously. 
 
@@ -67,9 +67,9 @@ public List<Todo> getTodos() {
 }
 ----
 
-Calling the getTodos() method from the main thread or an UI thread will cause a non responsive application until the `todosFromWeb` arrive.
+Calling the `getTodos()` method from the main thread or an UI thread cause the application logic to wait until the `todosFromWeb` arrive.
 
-To improve this the query, which takes an unpredictable amount of time, this code should run in a different thread and inform the main thread when a result comes in.
+To improve this long running code should run in a different thread and inform the main thread when a result comes in.
 
 [source, java]
 ----
@@ -111,7 +111,7 @@ With the custom `FailableCallback` interface it works, but it also adds complexi
 
 And there are even more issue that can occur:
 
-* Syncronization with the UI (Widgets in SWT and Android have to be updated from the UI thread)
+* Synchronization with the UI (Widgets in SWT and Android have to be updated from the UI thread)
 * What if the consumer of the `FailableCallback` is not present any more?
 * What if such a `FailableCallback` depends on another `FailableCallback`?
 
