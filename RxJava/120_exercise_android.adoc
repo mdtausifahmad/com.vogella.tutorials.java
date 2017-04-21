@@ -1,0 +1,86 @@
+== Exercise: First steps with RxJava and RxAndroid
+
+Create a new project with the `com.vogella.android.rxjava.simple` top level package name.
+
+Add the following dependencies to your app/build.gradle file.
+
+[source,gradle]
+----
+compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+compile 'io.reactivex.rxjava2:rxjava:2.0.8'
+----
+Also enable the usage of Java 8 in your app/build.gradle file.
+
+[source,gradle]
+----
+android {
+   // more stuff
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+----
+
+Create a layout with a `@+id/button` button and a `@+id/resultView` text view.
+
+[source,gradle]
+----
+Change your activity to the following.
+
+package com.vogella.android.rxjava.simple;
+
+import android.os.Bundle;
+import android.os.SystemClock;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.TextView;
+
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
+
+
+public class MainActivityRxJavaSimple extends AppCompatActivity {
+
+    RecyclerView colorListView;
+    SimpleStringAdapter simpleStringAdapter;
+
+    final Observable<Integer> serverDownloadObservable = Observable.create(emitter -> {
+        SystemClock.sleep(1000); // simulate delay
+        emitter.onNext(5);
+        emitter.onComplete();
+    });
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_mainrxjavasimple);
+        View view = findViewById(R.id.button);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View view) {
+                view.setEnabled(false); // disables the button until execution has finished
+                serverDownloadObservable.
+                        observeOn(AndroidSchedulers.mainThread()).
+                        subscribeOn(Schedulers.io()).
+                        subscribe(integer -> {
+                            updateTheUserInterface(integer); // this methods updates the ui
+                            view.setEnabled(true); // enables it again
+                        });
+            }
+        });
+
+    }
+
+    private void updateTheUserInterface(int integer) {
+        TextView view = (TextView) findViewById(R.id.resultView);
+        view.setText(String.valueOf(integer));
+    }
+}
+
+----
+
+
+ 

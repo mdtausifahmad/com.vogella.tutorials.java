@@ -1,0 +1,311 @@
+== Creating sources, subscribing to them and disposing them
+
+== Creating sources to observe 
+
+Observables are the sources for the data.
+Usually they start providing data once a subscriber starts listening.
+They can produce an empty, a single or multiple items.
+They can terminate with an error or success.
+Sources may never terminate, e.g., a observable for a button click can potentially produce an infinite stream of events.
+
+
+.Table Obervable types
+|===
+|Type| Description
+
+|`Flowable<T>` | Emits 0 or n items and terminates with complete or an error. Supports backpressure, which allows to control how fast a source emits items.
+
+|`Observable<T>` | Emits 0 or n items and terminates with complete or an error.
+
+|`Single<T>` | Emits either a single item or an error. The reactive version of a method call. You subscribe to a Single and you get either a return value or an error.
+
+|`Maybe<T>` | Succeeds with an item, or no item, or errors. The reactive version of an `Optional`.
+
+|`Completable` | Either completes or returns an error. It never return items. The reactive version of a `Runnable`.
+
+|===
+
+An example for the usage of backpressure is when you process touch events.
+You cannot control the user who is doing these touch events, but you can tell the source to emit the events on a slower rate in case you cannot processes them at the rate the user produces them.
+This has been designed for the support for reactive streams.
+Only Flowable supports backpressure.
+
+
+The following shows an example for the creation of an observable.
+
+[source, java]
+----
+ Observable<Todo> todoObservable = Observable.create(new ObservableOnSubscribe<Todo>() {
+            @Override
+            public void subscribe(ObservableEmitter<Todo> emitter) throws Exception {
+                try {
+                    List<Todo> todos = RxJavaUnitTest.this.getTodos();
+                    for (Todo todo : todos) {
+                        emitter.onNext(todo);
+                    }
+                    emitter.onComplete();
+                } catch (Exception e) {
+                    emitter.onError(e);
+                }
+            }
+        });
+----
+
+Using lambdas the same statement can be expressed as:
+
+[source, java]
+----
+Observable<Todo> todoObservable = Observable.create(emitter -> {
+	try {
+		List<Todo> todos = getTodos();
+		for (Todo todo : todos) {
+			emitter.onNext(todo);
+		}
+		emitter.onComplete();
+	} catch (Exception e) {
+		emitter.onError(e);
+	}
+});
+----
+
+Typical Observable that could emit an undefined amount of data are UI listener, like a click listener.
+For there events it depends how often a user interacts them them.
+
+Types that usually terminate either successfully or on failure are `Maybe<T>`, `Single<T>` and `Completable`.
+
+`Maybe<T>` objects are kind of an async `java.util.Optional` from Java 8.
+
+[source, java]
+----
+Maybe<List<Todo>> todoMaybe = Maybe.create(emitter -> {
+	try {
+		List<Todo> todos = getTodos();
+		if(todos != null && !todos.isEmpty()) {
+			emitter.onSuccess(todos); #<1>
+		}else {
+			emitter.onComplete(); #<2>
+		}
+	} catch (Exception e) {
+		emitter.onError(e); #<3>
+	}
+});
+----
+
+<1> `java.util.Optional` has a value
+<2> `java.util.Optional` contains no value -> null
+<3> An error occurred
+
+`Single<T>` objects can also be considered as promises, which are also pretty popular in async frameworks and are similar to `Maybe<T>` objects, but only without the `onComplete()` method.
+
+`Completable` objects are pretty similar to `Single<T>` objects, but without return value and therefore also do not have a generic type `<T>` like the other types. `Completable` objects can also be seen as reactive `java.lang.Runnable` objects.
+
+=== Convenience methods to create observables
+
+RxJava provides several convenience methods to create observables
+
+* Observable.just("Hello") - Allows to create an observable as wrapper around other data types
+* Observable.fromIterable() - takes an `java.lang.Iterable<T>` and emits their values in their order in the data structure
+* Observable.fromArray() - takes an array and emits their values in their order in the data structure
+* Observable.fromCallable() - Allows to create an observable for a `java.util.concurrent.Callable<V>`
+* Observable.fromFuture() - Allows to create an observable for a `java.util.concurrent.Future`
+* Observable.interval() - An observable that emits `Long` objects in a given interval
+
+Similar methods exists for the other data types, e.g., *`Flowable.just()`, `Maybe.just()` and `Single.just`.
+
+=== Subscribing in RxJava
+
+Once an observable instance is available, subscribers can be attached.
+
+All observable types offer a large variety of subscribe methods.
+
+[source, java]
+----
+Observable<Todo> todoObservable = Observable.create(emitter -> { ... });
+
+// Simply subscribe with a io.reactivex.functions.Consumer<T>, which will be informed onNext()
+Disposable disposable = todoObservable.subscribe(t -> System.out.print(t));
+
+// Dispose the subscription when not interest=== Subscribing in RxJava
+
+Once an observable instance is available, subscribers can be attached.
+
+All observable types offer a large variety of subscribe methods.
+----
+
+
+[source, java]
+----
+Observable<Todo> todoObservable = Observable.create(emitter -> { ... });
+
+// Simply subscribe with a io.reactivex.functions.Consumer<T>, which will be informed onNext()
+Disposable disposable = todoObservable.subscribe(t -> System.out.print(t));
+
+// Dispose the subscription when not interested in the emitted data any more
+disposable.dispose();
+
+// Also handle the error case with a second io.reactivex.functions.Consumer<T>
+Disposable subscribe = todoObservable.subscribe(t -> System.out.print(t), e -> e.printStackTrace());
+
+// ...
+
+----
+
+
+[IMPORTANT]
+====
+There can be even more `io.reactivex.functions.Consumer<T>` for onNext, onSuccess, onFailure, onComplete and so on according to the observable type.
+====
+
+
+
+[NOTE]
+====
+A `io.reactivex.functions.Consumer<T>` is almost equal to the `java.util.function.Consumer` from java 8, except of that its `accept` method can throw an `Exception`. Besides that RxJava also does not depend on Java 8, but is compatible with Java 6.
+====
+
+There is also a `subscribeWith` method on observable instances, which can be used like this:
+
+[source, java]
+----
+DisposableObserver<Todo> disposableObserver = todoObservable.subscribeWith(new 	DisposableObserver<Todo>() {
+
+	@Override
+	public void onNext(Todo t) {
+	}
+
+	@Override
+	public void onError(Throwable e) {
+	}
+
+	@Override
+	public void onComplete() {
+	}
+});
+----
+
+ed in the emitted data any more
+disposable.dispose();
+
+// Also handle the error case with a second io.reactivex.functions.Consumer<T>
+Disposable subscribe = todoObservable.subscribe(t -> System.out.print(t), e -> e.printStackTrace());
+
+// ...
+
+----
+
+
+[IMPORTANT]
+====
+There can be even more `io.reactivex.functions.Consumer<T>` for onNext, onSuccess, onFailure, onComplete and so on according to the observable type.
+====
+
+
+
+[NOTE]
+====
+A `io.reactivex.functions.Consumer<T>` is almost equal to the `java.util.function.Consumer` from java 8, except of that its `accept` method can throw an `Exception`. Besides that RxJava also does not depend on Java 8, but is compatible with Java 6.
+====
+
+There is also a `subscribeWith` method on observable instances, which can be used like this:
+
+[source, java]
+----
+DisposableObserver<Todo> disposableObserver = todoObservable.subscribeWith(new 	DisposableObserver<Todo>() {
+
+	@Override
+	public void onNext(Todo t) {
+	}
+
+	@Override
+	public void onError(Throwable e) {
+	}
+
+	@Override
+	public void onComplete() {
+	}
+});
+----
+
+=== Disposing subscriptions and using CompositeDisposable
+
+When listers or subscribers are attached they usually are not supposed to listen eternally.
+
+So it could happen that due to some state change the event being emitted by an observable might be not interesting any more.
+
+[source, java]
+----
+import io.reactivex.Single;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.observers.DisposableSingleObserver;
+
+Single<List<Todo>> todosSingle = getTodos();
+
+Disposable disposable = todosSingle.subscribeWith(new DisposableSingleObserver<List<Todo>>() {
+
+	@Override
+	public void onSuccess(List<Todo> todos) {
+		// work with the resulting todos
+	}
+
+	@Override
+	public void onError(Throwable e) {
+		// handle the error case
+	}
+});
+
+// continue working and dispose when value of the Single is not interesting any more
+disposable.dispose();
+----
+
+
+[NOTE]
+====
+The `Single` class and other observable classes offer different subscribe methods, which return a `Disposable` object.
+====
+
+When working with multiple subscriptions, which may become obsolete due to the same state change using a `CompositeDisposable` is pretty handy to dispose a collection of subscriptions.
+
+[source, java]
+----
+import io.reactivex.Single;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.observers.DisposableSingleObserver;
+import io.reactivex.disposables.CompositeDisposable;
+
+CompositeDisposable compositeDisposable = new CompositeDisposable();
+
+Single<List<Todo>> todosSingle = getTodos();
+
+Single<Happiness> happiness = getHappiness();
+
+compositeDisposable.add(todosSingle.subscribeWith(new DisposableSingleObserver<List<Todo>>() {
+
+	@Override
+	public void onSuccess(List<Todo> todos) {
+		// work with the resulting todos
+	}
+
+	@Override
+	public void onError(Throwable e) {
+		// handle the error case
+	}
+}));
+
+compositeDisposable.add(happiness.subscribeWith(new DisposableSingleObserver<Happiness>() {
+
+	@Override
+	public void onSuccess(Happiness happiness) {
+		// celebrate the happiness :-D
+	}
+
+	@Override
+	public void onError(Throwable e) {
+		System.err.println("Don't worry, be happy! :-P");
+	}
+}));
+
+// continue working and dispose all subscriptions when the values from the Single objects are not interesting any more
+compositeDisposable.dispose();
+----
+
+

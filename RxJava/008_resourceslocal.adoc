@@ -3,6 +3,8 @@
 
 https://gist.github.com/staltz/868e7e9bc2a7b8c1f754[Introduction to RxJava]
 
+http://blog.kaush.co/2014/12/24/implementing-an-event-bus-with-rxjava-rxbus/[Event bus with RxJava]
+
 https://medium.com/@kurtisnusbaum/rxandroid-basics-part-1-c0d5edcf6850#.l74zr3mgh[RxJava for Android]
 
 http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1[Dan Lew’s Grokking with RxJava series]

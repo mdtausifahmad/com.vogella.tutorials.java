@@ -1,4 +1,4 @@
-== RxJava 2.0
+== Using reactive programming with RxJava 2.0
 
 === What is RxJava and reactive programming
 
@@ -20,16 +20,58 @@ RxJava is published under the Apache 2.0 license.
 
 RxJava describes itself as an API for asynchronous programming with observable streams.
 
+
+The build blocks for RxJava code are the following:
+
+* *observables* representing sources of data
+* *subscribers (or observers)* listening to the observables
+* a set of methods for modifying and composing the data
+
+An observable emits items; a subscriber consumes those items. 
+An observable may emit any number of items (including zero items).
+It can terminate either successfully or with an error.
+
+A observable can have any number of subscribers.
+If a new item is emitted from the observable, the `onNext()` method is called on each subscriber.
+If the observable finishes its data flow either successful or with an error, the `onComplete()` or the `onError()` method is called on each subscriber.
+
+A very simple example written as JUnit4 test is the following:
+
+[source,java]
+----
+package com.vogella.android.rxjava.simple;
+
+import org.junit.Test;
+
+import io.reactivex.Observable;
+
+import static junit.framework.Assert.assertTrue;
+
+
+public class RxJavaUnitTest {
+    String result="";
+
+    // Simple subscription to a fix value
+    @Test
+    public void returnAValue(){
+        result = "";
+        Observable<String> observer = Observable.just("Hello"); // provides datea
+        observer.subscribe(s -> result=s); // Callable as subscriber
+        assertTrue(result.equals("Hello"));
+    }
+}
+----
+
 === Define a dependency to RxJava 2.0
 
 As of this writing the version 2.0.4 is currently the released one. 
-Replace g.a.v with 2.0.4 or a later version.
+Replace the version with your desired version.s
 
 For a Gradle build you can add RxJava via the following dependency statement.
 
 [source, groovy]
 ----
-compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: 'g.a.v'
+compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.0.4'
 ----
 
 For Maven you can add a dependency with the following snippet
@@ -39,7 +81,7 @@ For Maven you can add a dependency with the following snippet
 <dependency>
     <groupId>io.reactivex.rxjava2</groupId>
     <artifactId>rxjava</artifactId>
-    <version>g.a.v</version>
+    <version>2.0.4</version>
 </dependency>
 ----
 
@@ -47,29 +89,29 @@ For OSGi environments, e.g., Eclipse RCP development, https://dl.bintray.com/sim
 
 image::rxjava-update-site.png[] 
 
-=== Async programming
+=== Why doing asynchronous programming
 
-Programming in an imperative single threaded way can lead to blocking user interfaces and therefore a bad user experience.
+Programming in an imperative single threaded way can lead to blocking user interfaces.
+For example, waiting for a webservice call can cause an application freeze, if the network is not responsive.
+Such behavior results in a bad experience for the user.
 
-For example, waiting for a database query or a webservice call can cause an application freeze, if the network is not responsive.
 
-This can be avoided by handling unpredicted things asynchronously. 
+This can be avoided by handling potential long running operations asynchronously. 
 
 An example would be:
 
 [source, java]
 ----
 public List<Todo> getTodos() {
-	
 	List<Todo> todosFromWeb = // query a webservice (with bad network latency)
-	
-	return todosFromDb;
+	return todosFromWeb;
 }
 ----
 
-Calling the `getTodos()` method from the main thread or an UI thread cause the application logic to wait until the `todosFromWeb` arrive.
+Calling the `getTodos()` method from the main thread cause the application logic to wait until the `todosFromWeb` arrive.
 
-To improve this long running code should run in a different thread and inform the main thread when a result comes in.
+To improve this potential long running code should run in a different thread.
+It should post updates to the main thread when a result comes in.
 
 [source, java]
 ----
@@ -85,8 +127,7 @@ public void getTodos(Consumer<List<Todo>> todosCallback) {
 ----
 
 Now after calling the `getTodos(Consumer<List<Todo>> todosConsumer)` the main thread can continue working, is not blocked and can react once the accept method of the given `Consumer` is called.
-
-Now the code is really asynchronous. icon:thumbs-o-up[]
+This code runs now asynchronous. icon:thumbs-o-up[]
 
 But what if errors during the web service query do occur?
 
@@ -111,7 +152,7 @@ With the custom `FailableCallback` interface it works, but it also adds complexi
 
 And there are even more issue that can occur:
 
-* Synchronization with the UI (Widgets in SWT and Android have to be updated from the UI thread)
+* Synchronization with the main thread may be required (For example, widgets in SWT and Android have to be updated from the UI thread)
 * What if the consumer of the `FailableCallback` is not present any more?
 * What if such a `FailableCallback` depends on another `FailableCallback`?
 
@@ -166,5 +207,14 @@ public void getTodos(FailableCallback<List<Todo>> todosCallback) {
 ----
 
 
-This is really bad coding and it could get worse and should only show one example what can be addressed with ReactiveX. These problems are often considered as _callback hell_.
+This is really bad coding and hard to read code.
+Also having lots of callbacks can lead to what is known as the http://callbackhell.com/[callbackhell].
+This can be better addressed with RxJava.
 
+=== Advantages of RxJava 
+
+Some advantages of RxJava are the following:
+
+* You can chain async operations, e.g., if a API call depends on the call of another API
+* A defined way to handle errors
+* It reduces the need for state variables, which can be the source of errors

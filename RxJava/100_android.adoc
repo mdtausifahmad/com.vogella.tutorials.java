@@ -1,0 +1,96 @@
+== RxAndroid
+
+=== Using RxAndroid
+
+RxAndroid is an extension to RxJava.
+It providers a scheduler to run code in the main thread of Android.
+It also provides the  ability to create a scheduler that runs on a Android handler class. 
+With this schedulers, you can define an observable which does its work in a background thread, and post our results to the main thread.
+This allows for example to replace a `AsyncTask` implementations which RxJava.
+
+To use RxJava in Android add the following dependency to your build.gradle file.
+
+[source,gradle]
+----
+compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+compile 'io.reactivex.rxjava2:rxjava:2.0.8'
+----
+
+For example you can define a long running operation via the following observable.
+
+[source,java]
+----
+final Observable<Integer> serverDownloadObservable = Observable.create(emitter -> {
+        SystemClock.sleep(1000); // simulate delay
+        emitter.onNext(5);
+        emitter.onComplete();
+    });
+----
+
+You can now subscribe to this observable. 
+This triggers its execution and provide the subscribe with the required information.
+
+For example, lets assume you assign this to a button.
+
+[source,java]
+----
+serverDownloadObservable.
+                        observeOn(AndroidSchedulers.mainThread()).#<1>
+                        subscribeOn(Schedulers.io()).  #<2>
+                        subscribe(integer -> {
+                            updateTheUserInterface(integer); // this methods updates the ui
+                            view.setEnabled(true); // enables it again
+                        });
+            }
+.subscribeOn(Schedulers.io())   
+.observeOn(AndroidSchedulers.mainThread()); 
+----
+
+<1>  The subscriber observes in the main thread
+<2>  Observable is called outside the main thread
+
+As we are only interested in the final result, we could also use a `Single`.
+
+[source,java]
+----
+Subscription subscription = Single.create(new Single.OnSubscribe() {
+           @Override
+           public void call(SingleSubscriber singleSubscriber) {
+               String result = doSomeLongRunningStuff();
+               singleSubscriber.onSuccess(value);
+           }
+       })
+       .subscribeOn(Schedulers.io())
+       .observeOn(AndroidSchedulers.mainThread())
+       .subscribe(new Action1() {
+           @Override
+           public void call(String value) {
+               // onSuccess
+               updateTheUserInterface(); // this methods updates the ui
+           }
+       }, new Action1() {
+           @Override
+           public void call(Throwable throwable) {
+               // handle onError
+           }
+       });
+----
+
+
+=== Unsubscribe to avoid memory leaks
+
+`Observable.subscribe()` returns a `Subscription` (if you are using a Flowable) or a `Disposable` object.
+To prevent a possible (temporary) memory leak, unsubscribe from your observables in the`onStop()` method of the activity or fragment.
+For example, for a Disposable object you could do the following:
+[source,java]
+----
+@Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (bookSubscription != null && !bookSubscription.isDisposed()) {
+            bookSubscription.dispose();
+        }
+    }
+----
+
+
