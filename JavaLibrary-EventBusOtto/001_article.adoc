@@ -4,8 +4,8 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2014, 2016 vogella GmbH
-Version 2.7, 27.09.2016
+Lars Vogel (c) 2014, 2017 vogella GmbH
+Version 2.8, 21.04.2017
 :docinfodir: ../
 :vgwort: JavaLibrary-EventBusOtto
 
