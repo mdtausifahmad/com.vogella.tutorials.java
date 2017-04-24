@@ -1,7 +1,8 @@
 [[resources_rxjava]]
 == RxJava resources
 
-https://gist.github.com/staltz/868e7e9bc2a7b8c1f754[Introduction to RxJava]
+
+https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0[RxJava 2.0 to 1.x comparison]
 
 http://blog.kaush.co/2014/12/24/implementing-an-event-bus-with-rxjava-rxbus/[Event bus with RxJava]
 

@@ -2,22 +2,36 @@
 
 === Testing the observables
 
-You can test an observable via the `TestSubscriber` class provided by the RxJava library.
+`Flowable` can be tested with `io.reactivex.subscribers.TestSubscriber`.
+Non-backpressured Observable, Single, Maybe and Completable can be tested with `io.reactivex.observers.TestObserver`.
 
 [source,java]
 ----
-Observable<String> obs = ...// assume creation code here
-TestSubscriber<String> testSubscriber = new TestSubscriber<>();
-obs.subscribe(testSubscriber);
+@Test
+    public void anObservableStreamOfEventsAndDataShouldEmitsEachItemInOrder() {
 
-testSubscriber.assertNoErrors();
-List<String> chickens = testSubscriber.getOnNextEvents();
+        Observable<String> pipelineOfData = Observable.just("Foo", "Bar");
 
-// TODO assert your string integrity...
+        pipelineOfData.subscribe(testObserver);
+
+        List<Object> dataEmitted = testObserver.values();
+        assertThat(dataEmitted).hasSize(2);
+        assertThat(dataEmitted).containsOnlyOnce("Foo");
+        assertThat(dataEmitted).containsOnlyOnce("Bar");
+    }
 ----
+All base reactive types now have a  `test()` method.
+This is a huge convenience for returning TestSubscriber or TestObserver.
 
-=== Testing the observables
+[source,java]
+----
+TestSubscriber<Integer> ts = Flowable.range(1, 5).test();
 
-RxJava provides a way to override the schedulers exposed, so that observables are called synchronously. 
-See http://fedepaol.github.io/blog/2015/09/13/testing-rxjava-observables-subscriptions/ for an example.
+TestObserver<Integer> to = Observable.range(1, 5).test();
 
+TestObserver<Integer> tso = Single.just(1).test();
+
+TestObserver<Integer> tmo = Maybe.just(1).test();
+
+TestObserver<Integer> tco = Completable.complete().test();
+----
