@@ -1,0 +1,96 @@
+== Exercise: Use auto-value-parcel to create a Parceable
+
+In this exercise you learn how to use the auto-value library and its extensions to implement `Parceable`.
+Create a new project with the top-level package name _com.vogella.android.autovalueparceable_.
+
+Add the following dependencies to your `app/build.gradle` file.
+[source,gradle]
+----
+dependencies {
+    annotationProcessor 'com.google.auto.value:auto-value:1.4'
+    annotationProcessor 'com.ryanharter.auto.value:auto-value-parcel:0.2.5'
+    provided 'com.jakewharton.auto.value:auto-value-annotations:1.4'
+}
+----
+
+Create a value object using auto-value.
+
+[source,java]
+----
+package com.vogella.android.autovalue;
+
+
+import android.os.Parcelable;
+
+import com.google.auto.value.AutoValue;
+
+@AutoValue public abstract class Task implements Parcelable{
+
+    public abstract long id();
+    public abstract String summary();
+    public abstract String description();
+
+    public static Task create(long id, String summary, String description) {
+        return new AutoValue_Task(id, summary, description);
+    }
+}
+----
+
+Create a second activity and allow to start it from the first activity.
+
+[source,java]
+----
+Intent intent = new Intent(this, SecondActivity.class);
+Task task = Task.create(1,"hello","Testing");
+intent.putExtra("task", task);
+startActivity(intent);
+----
+
+=== Optional: Switch to a builder API
+
+Change your code to generate a builder API for your Task.
+Define a static abstract class called builder and define a builder API with the `@AutoValue.Builder` annotation.
+
+Change your code which passed the intent to the second activity.
+
+[source,java]
+----
+Intent intent = new Intent(this, SecondActivity.class);
+Task task = Task.builder().setId(1).setSummary("hello").setDescription("Testing").build();
+intent.putExtra("task", task);
+startActivity(intent);
+----    
+
+ifdef::show_exercise_solution[]
+
+The following shows a possible solution for your activity. 
+
+[source,java]
+----
+package com.vogella.android.autovalue;
+
+
+import android.os.Parcelable;
+
+import com.google.auto.value.AutoValue;
+
+@AutoValue public abstract class Task implements Parcelable{
+
+    public abstract long id();
+    public abstract String summary();
+    public abstract String description();
+
+    static Builder builder() {
+        return new AutoValue_Task.Builder();
+    }
+    @AutoValue.Builder
+    abstract static class Builder {
+        abstract Builder setId(long value);
+        abstract Builder setSummary(String value);
+        abstract Builder setDescription(String value);
+        abstract Task build();
+    }
+
+}
+----
+endif::show_exercise_solution[]

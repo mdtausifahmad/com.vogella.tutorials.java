@@ -1,4 +1,4 @@
-== Auto
+== Using AutoValue and its extension.
 
 https://github.com/google/auto/[Auto] is collection of code generators that automate certain repetitive tasks, like creating value objects.
 The tools create the code you would have written, but without the bugs.
@@ -18,7 +18,7 @@ Add the following dependencies to your `build.gradle` file.
 [source,gradle]
 ----
 dependencies {
-	annotationProcessor 'com.google.auto.value:auto-value:1.4'
+    annotationProcessor 'com.google.auto.value:auto-value:1.4'
     provided 'com.jakewharton.auto.value:auto-value-annotations:1.4'
 }
 ----
@@ -87,6 +87,7 @@ The AutoValue extensions allows to support things like:
 * Parcelable
 * Json
 * Moschi
+* Gson
 
 See http://search.maven.org/#search%7Cga%7C1%7Cauto-value[Auto Value libraries].
 
@@ -96,5 +97,3 @@ For example, to make an object parceable you simple add the following dependency
 ----
 annotationProcessor 'com.ryanharter.auto.value:auto-value-parcel:0.2.5'
 ----
-
-

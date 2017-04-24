@@ -1,6 +1,7 @@
 == AutoValue resources
 
 https://github.com/google/auto/[Auto homepage]
+
 http://ryanharter.com/blog/2016/03/22/autovalue/[Blog post about Auto Value extensions]
 
-
+https://medium.com/3xplore/autovalue-with-retrofit-2-0-61f9530787b1[AutoValue Gson Extension with Retrofit 2.0]
