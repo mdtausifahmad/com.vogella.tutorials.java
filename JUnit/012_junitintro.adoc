@@ -14,7 +14,7 @@ JUnit is an open source project hosted at https://github.com/junit-team/junit[Gi
 		
 A JUnit _test_ is a method contained in a class which is only used for testing. 
 This is called a _Test class_.
-To defile that a certain method is a test method, annotate it with the `@Test` annotation.
+To define that a certain method is a test method, annotate it with the `@Test` annotation.
 		
 This method executes the code under test.		
 You use an _assert_ method, provided by JUnit or another assert framework, to check an expected result versus the actual result. 
