@@ -26,7 +26,9 @@ Add two buttons to your _activity_main.xml_ layout file.
 include::res/github/activity_main.xml[]
 ----
 
-Create the following interface and class for the  Retrofit API.
+=== Implement Retrofit API
+
+Create the following interface and class for the Retrofit API.
 
 [source, java]
 ----
