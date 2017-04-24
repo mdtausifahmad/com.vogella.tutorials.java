@@ -147,11 +147,10 @@ disposable.dispose();
 Disposable subscribe = todoObservable.subscribe(t -> System.out.print(t), e -> e.printStackTrace());
 
 // ...
-
 ----
 
 
-[IMPORTANT]
+[NOTE]
 ====
 There can be even more `io.reactivex.functions.Consumer<T>` for onNext, onSuccess, onFailure, onComplete and so on according to the observable type.
 ====
@@ -181,10 +180,7 @@ DisposableObserver<Todo> disposableObserver = todoObservable.subscribeWith(new 	
 	public void onComplete() {
 	}
 });
-----
 
-ed in the emitted data any more
-disposable.dispose();
 
 // Also handle the error case with a second io.reactivex.functions.Consumer<T>
 Disposable subscribe = todoObservable.subscribe(t -> System.out.print(t), e -> e.printStackTrace());
