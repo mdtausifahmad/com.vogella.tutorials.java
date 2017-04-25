@@ -22,65 +22,80 @@ android {
 }
 ----
 
-Create a layout with a `@+id/button` button and a `@+id/resultView` text view.
+Change your main layout file to the following.
+
+[source,xml]
+----
+include::./res/android/activity_main.xml[]
+----
+
+Create three activities:
+
+* RxJavaSimpleActivity
+* BooksActivity
+* ColorsActivity
+
+Create the activity_rxjavasimple.xml layout file.
+
+[source,xml]
+----
+include::./res/android/activity_rxjavasimple.xml[]
+----
+
+activity_colors.xml
+
+
+In `RxJavaSimpleActivity` create a observable which simulates a long running operation (10 secs) and afterwards returns the number 5.
+Subscribe to it via a button click, disable the button
+
+[source,java]
+----
+include::./res/android/RxJavaSimpleActivity.java[]
+----
+
+
+Create an adapter for a recycler view.
+
+[source,java]
+----
+include::./res/android/SimpleStringAdapter.java[]
+----
+
+Implement  `ColorsActivity` which uses a observable to receive a list of colors.
+
+
+Create the activity_colors.xml layout file.
+
+[source,xml]
+----
+include::./res/android/activity_colors.xml[]
+----
+
 
 [source,gradle]
 ----
-Change your activity to the following.
-
-package com.vogella.android.rxjava.simple;
-
-import android.os.Bundle;
-import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.widget.TextView;
-
-import io.reactivex.Observable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
-
-
-public class MainActivityRxJavaSimple extends AppCompatActivity {
-
-    RecyclerView colorListView;
-    SimpleStringAdapter simpleStringAdapter;
-
-    final Observable<Integer> serverDownloadObservable = Observable.create(emitter -> {
-        SystemClock.sleep(1000); // simulate delay
-        emitter.onNext(5);
-        emitter.onComplete();
-    });
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mainrxjavasimple);
-        View view = findViewById(R.id.button);
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View view) {
-                view.setEnabled(false); // disables the button until execution has finished
-                serverDownloadObservable.
-                        observeOn(AndroidSchedulers.mainThread()).
-                        subscribeOn(Schedulers.io()).
-                        subscribe(integer -> {
-                            updateTheUserInterface(integer); // this methods updates the ui
-                            view.setEnabled(true); // enables it again
-                        });
-            }
-        });
-
-    }
-
-    private void updateTheUserInterface(int integer) {
-        TextView view = (TextView) findViewById(R.id.resultView);
-        view.setText(String.valueOf(integer));
-    }
-}
-
+include::./res/android/ColorsActivity.java[]
 ----
 
+Create the following (fake) server implementation.
+
+[source,gradle]
+----
+include::./res/android/RestClient.java[]
+----
+
+Create the activity_books.xml layout file.
+
+[source,xml]
+----
+include::./res/android/activity_books.xml[]
+----
+
+Also implement the `BooksActivity` activity.
+
+[source,gradle]
+----
+include::./res/android/BooksActivity.java[]
+----
 
  
