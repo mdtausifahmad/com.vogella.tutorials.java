@@ -72,14 +72,14 @@ include::./res/android/activity_colors.xml[]
 ----
 
 
-[source,gradle]
+[source,java]
 ----
 include::./res/android/ColorsActivity.java[]
 ----
 
 Create the following (fake) server implementation.
 
-[source,gradle]
+[source,java]
 ----
 include::./res/android/RestClient.java[]
 ----
@@ -93,7 +93,7 @@ include::./res/android/activity_books.xml[]
 
 Also implement the `BooksActivity` activity.
 
-[source,gradle]
+[source,java]
 ----
 include::./res/android/BooksActivity.java[]
 ----
