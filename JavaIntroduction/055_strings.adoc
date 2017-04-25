@@ -86,7 +86,6 @@ WARNING:Therefore, you should always use the `equals()` method when you compare 
 === Working with Strings
 The following lists the most common string operations.
 
-.Table Title
 |===
 |Command |Description
 

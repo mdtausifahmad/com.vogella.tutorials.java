@@ -10,7 +10,7 @@ The following can be used as a reference for such tasks, so that you how what yo
 While programming Java you have to create several classes, methods, instance variables. 
 The following uses the package test.
 
-.Table Title
+.Cheatsheet
 |===
 
 |What to do |How to do it
@@ -103,7 +103,7 @@ include::res/cheatsheets/MyOtherClass.java[]
 
 A local variable must always be declared in a method.
 
-.Table Title
+.Title
 |===
 |What to do |How to do it
 

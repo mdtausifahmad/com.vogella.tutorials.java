@@ -9,7 +9,7 @@ They can terminate with an error or success.
 Sources may never terminate, e.g., a observable for a button click can potentially produce an infinite stream of events.
 
 
-.Table Obervable types
+.Obervable types
 |===
 |Type| Description
 
