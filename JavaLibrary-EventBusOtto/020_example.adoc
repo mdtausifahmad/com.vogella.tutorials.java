@@ -38,5 +38,5 @@ include::res/MainActivity.java[]
 
 NOTE: The example is intentional simple. 
 In a real Android application you would created the `Bus` singleton in the  `Application` class.
-Also the fragment would most likely be in its own file.
+
 
