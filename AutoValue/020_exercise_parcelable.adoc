@@ -1,7 +1,7 @@
-== Exercise: Use auto-value-parcel to create a Parcelable
+== Exercise: Use auto-value-parcel to create a Parcelable for Android
 
 In this exercise you learn how to use the auto-value library and its extensions to implement `Parcelable`.
-Create or continue to use a project with the _com.vogella.android.usinglibs_ top-level package.
+Create or continue to use an Android project with the _com.vogella.android.usinglibs_ top-level package.
 
 === Create second activity
 
@@ -70,7 +70,7 @@ intent.putExtra("task", task);
 startActivity(intent);
 ----    
 
-The following shows a possible solution for your activity. 
+The following shows a possible solution. 
 
 [source,java]
 ----
