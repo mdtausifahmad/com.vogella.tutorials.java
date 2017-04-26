@@ -19,7 +19,7 @@ public class RxJavaSimpleActivity extends AppCompatActivity {
 
     RecyclerView colorListView;
     SimpleStringAdapter simpleStringAdapter;
-    CompositeDisposable disposable;
+    CompositeDisposable disposable = new CompositeDisposable();
     public int value =0;
 
     final Observable<Integer> serverDownloadObservable = Observable.create(emitter -> {
