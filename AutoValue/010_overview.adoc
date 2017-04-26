@@ -11,7 +11,7 @@ Value objects are classes which treat any two instances with suitably equal fiel
 
 === Using AutoValue on Android
 
-https://github.com/JakeWharton/AutoValueAnnotations allows to use AutoValue on Android.
+https://github.com/JakeWharton/AutoValueAnnotations[Auto-Value annotations] allows to use AutoValue on Android.
 
 Add the following dependencies to your `build.gradle` file.
 

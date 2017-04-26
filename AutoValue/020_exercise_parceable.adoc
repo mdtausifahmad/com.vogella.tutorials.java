@@ -1,8 +1,15 @@
 == Exercise: Use auto-value-parcel to create a Parceable
 
 In this exercise you learn how to use the auto-value library and its extensions to implement `Parceable`.
-Create a new project with the top-level package name _com.vogella.android.autovalueparceable_.
+Create or continue to use a project with the top-level package name _com.vogella.android.usinglibs_.
 
+=== Create second activity
+
+Create a second activity and allow to start it from the first activity via a button click.
+
+
+
+=== Using Auto-Value
 Add the following dependencies to your `app/build.gradle` file.
 [source,gradle]
 ----
@@ -17,7 +24,7 @@ Create a value object using auto-value.
 
 [source,java]
 ----
-package com.vogella.android.autovalue;
+package com.vogella.android.usinglibs;
 
 
 import android.os.Parcelable;
@@ -36,7 +43,7 @@ import com.google.auto.value.AutoValue;
 }
 ----
 
-Create a second activity and allow to start it from the first activity.
+Pass the `Task` object to the second activity, as intent parameter.
 
 [source,java]
 ----
@@ -45,6 +52,8 @@ Task task = Task.create(1,"hello","Testing");
 intent.putExtra("task", task);
 startActivity(intent);
 ----
+
+In the second activity, display the `Task` you received via the `Intent`.
 
 === Optional: Switch to a builder API
 
@@ -61,13 +70,11 @@ intent.putExtra("task", task);
 startActivity(intent);
 ----    
 
-ifdef::show_exercise_solution[]
-
 The following shows a possible solution for your activity. 
 
 [source,java]
 ----
-package com.vogella.android.autovalue;
+package com.vogella.android.usinglibs;
 
 
 import android.os.Parcelable;
@@ -93,4 +100,3 @@ import com.google.auto.value.AutoValue;
 
 }
 ----
-endif::show_exercise_solution[]

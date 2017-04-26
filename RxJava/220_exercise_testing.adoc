@@ -1,0 +1,20 @@
+== Exercise: Writing unit tests for RxJava
+
+=== Write small unit test
+
+Create a small test to use RxJava in a test.
+
+
+[source,java]
+----
+include::./res/unittests/RxJavaUnitTest.java[]
+----
+
+The following code demonstrates the usage of `Callable` together with OkHttp and RxJava.
+
+[source,java]
+----
+include::./res/unittests/RxJavaUnitTest.java[]
+----
+
+
