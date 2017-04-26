@@ -1,4 +1,4 @@
-== Using AutoValue and its extension.
+== Using AutoValue and its extensions
 
 https://github.com/google/auto/[Auto] is collection of code generators that automate certain repetitive tasks, like creating value objects.
 The tools create the code you would have written, but without the bugs.
