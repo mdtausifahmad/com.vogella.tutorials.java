@@ -62,4 +62,12 @@ public class BooksActivity extends AppCompatActivity {
         stringAdapter = new SimpleStringAdapter(this);
         booksRecyclerView.setAdapter(stringAdapter);
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (bookSubscription!=null && !bookSubscription.isDisposed()) {
+            bookSubscription.dispose();
+        }
+    }
 }
