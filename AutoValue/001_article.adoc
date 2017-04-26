@@ -12,11 +12,11 @@ Version 0.2, 24.04.2017
 
 [abstract]
 This tutorial describes the usage of the AutoValue library for creating value objects.
-It also overs AutoValue extensions, e.g, to convert to Parceable.
+It also overs AutoValue extensions, e.g, to convert to Parcelable.
 		
 include::../web/advertisement/afterTableOfContent.adoc[]					
 include::010_overview.adoc[]
-include::020_exercise_parceable.adoc[]
+include::020_exercise_Parcelable.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]

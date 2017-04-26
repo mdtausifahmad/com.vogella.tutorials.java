@@ -91,7 +91,7 @@ The AutoValue extensions allows to support things like:
 
 See http://search.maven.org/#search%7Cga%7C1%7Cauto-value[Auto Value libraries].
 
-For example, to make an object parceable you simple add the following dependency to your build file.
+For example, to make an object Parcelable you simple add the following dependency to your build file.
 
 [source,gradle]
 ----

@@ -1,7 +1,7 @@
-== Exercise: Use auto-value-parcel to create a Parceable
+== Exercise: Use auto-value-parcel to create a Parcelable
 
-In this exercise you learn how to use the auto-value library and its extensions to implement `Parceable`.
-Create or continue to use a project with the top-level package name _com.vogella.android.usinglibs_.
+In this exercise you learn how to use the auto-value library and its extensions to implement `Parcelable`.
+Create or continue to use a project with the _com.vogella.android.usinglibs_ top-level package.
 
 === Create second activity
 
