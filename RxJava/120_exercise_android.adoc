@@ -114,6 +114,13 @@ During the subscription a progressbar will be make visible and once the process 
 
 The long running operation will run in the background, the update of the UI will happen in the main thread.
 
+Here is the activity_scheduler.xml layout file:
+
+[[source, xml]
+----
+include::res/android/activity_scheduler.xml[]
+----
+
 [[source, java]
 ----
 include::res/android/SchedulerActivity.java[]

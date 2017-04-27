@@ -5,7 +5,7 @@ import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ProgressBar;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import java.util.concurrent.Callable;
 
@@ -24,6 +24,7 @@ public class SchedulerActivity extends AppCompatActivity {
 
     private Disposable subscription;
     private ProgressBar progressBar;
+    private TextView messagearea;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,7 @@ public class SchedulerActivity extends AppCompatActivity {
     private void configureLayout() {
         setContentView(R.layout.activity_scheduler);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        messagearea = (TextView) findViewById(R.id.messagearea);
         View view  = findViewById(R.id.scheduleLongRunningOperation);
         view.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -53,7 +55,12 @@ public class SchedulerActivity extends AppCompatActivity {
 //                progressBar.setVisibility(View.VISIBLE);
                 Observable.fromCallable(callable).
                         subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).
-                        doOnSubscribe(disposable -> progressBar.setVisibility(View.VISIBLE)).
+                        doOnSubscribe(disposable ->
+                                {
+                                    progressBar.setVisibility(View.VISIBLE);
+                                    messagearea.setText(messagearea.getText().toString() +"\n" +"Progressbar set visible" );
+                                }
+                        ).
                         subscribe(getDisposableObserver());
             }
         });
@@ -72,26 +79,29 @@ public class SchedulerActivity extends AppCompatActivity {
     }
 
     /**
-     * Observer that handles the result through the 3 important actions:
-     *
-     * <p>1. onCompleted 2. onError 3. onNext
+     * Observer
+     * Handles the stream of data:
      */
     private DisposableObserver<String> getDisposableObserver() {
         return new DisposableObserver<String>() {
 
             @Override
             public void onComplete() {
+                messagearea.setText(messagearea.getText().toString() +"\n" +"OnComplete" );
                 progressBar.setVisibility(View.INVISIBLE);
+                messagearea.setText(messagearea.getText().toString() +"\n" +"Hidding Progressbar" );
             }
 
             @Override
             public void onError(Throwable e) {
-                Toast.makeText(SchedulerActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                messagearea.setText(messagearea.getText().toString() +"\n" +"OnError" );
                 progressBar.setVisibility(View.INVISIBLE);
+                messagearea.setText(messagearea.getText().toString() +"\n" +"Hidding Progressbar" );
             }
 
             @Override
-            public void onNext(String bool) {
+            public void onNext(String message) {
+                messagearea.setText(messagearea.getText().toString() +"\n" +"onNext " + message );
             }
         };
     }
