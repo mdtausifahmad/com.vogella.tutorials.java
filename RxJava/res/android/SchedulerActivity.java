@@ -25,6 +25,7 @@ public class SchedulerActivity extends AppCompatActivity {
     private Disposable subscription;
     private ProgressBar progressBar;
     private TextView messagearea;
+    private View button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,8 +49,8 @@ public class SchedulerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_scheduler);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         messagearea = (TextView) findViewById(R.id.messagearea);
-        View view  = findViewById(R.id.scheduleLongRunningOperation);
-        view.setOnClickListener(new View.OnClickListener(){
+        button  = findViewById(R.id.scheduleLongRunningOperation);
+        button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
 //                progressBar.setVisibility(View.VISIBLE);
@@ -58,6 +59,7 @@ public class SchedulerActivity extends AppCompatActivity {
                         doOnSubscribe(disposable ->
                                 {
                                     progressBar.setVisibility(View.VISIBLE);
+                                    button.setEnabled(false);
                                     messagearea.setText(messagearea.getText().toString() +"\n" +"Progressbar set visible" );
                                 }
                         ).
@@ -89,6 +91,7 @@ public class SchedulerActivity extends AppCompatActivity {
             public void onComplete() {
                 messagearea.setText(messagearea.getText().toString() +"\n" +"OnComplete" );
                 progressBar.setVisibility(View.INVISIBLE);
+                button.setEnabled(true);
                 messagearea.setText(messagearea.getText().toString() +"\n" +"Hidding Progressbar" );
             }
 
@@ -96,6 +99,7 @@ public class SchedulerActivity extends AppCompatActivity {
             public void onError(Throwable e) {
                 messagearea.setText(messagearea.getText().toString() +"\n" +"OnError" );
                 progressBar.setVisibility(View.INVISIBLE);
+                button.setEnabled(true);
                 messagearea.setText(messagearea.getText().toString() +"\n" +"Hidding Progressbar" );
             }
 

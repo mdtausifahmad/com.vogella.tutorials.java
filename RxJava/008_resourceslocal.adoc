@@ -4,7 +4,7 @@
 
 https://github.com/ReactiveX/RxJava/wiki/What's-different-in-2.0[RxJava 2.0 to 1.x comparison]
 
-https://github.com/vogellacompany/RxJava-Android-Samples[Rx Java with Android Examples from Kaushik Gopal]
+https://github.com/kaushikgopal/RxJava-Android-Samples[Rx Java with Android Examples from Kaushik Gopal]
 
 https://medium.com/@kurtisnusbaum/rxandroid-basics-part-1-c0d5edcf6850#.l74zr3mgh[RxJava for Android]
 
