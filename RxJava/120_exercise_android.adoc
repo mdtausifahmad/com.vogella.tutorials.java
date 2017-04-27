@@ -105,6 +105,18 @@ Also implement the `BooksActivity` activity.
 include::./res/android/BooksActivity.java[]
 ----
 
+=== Implement a long running implementation via a `Callable`
 
+A `java.util.Callable` is like a runnable but it can throw an exception and return a value.
+
+The following activity implement a observable created based on a `Callable`.
+During the subscription a progressbar will be make visible and once the process finishes the progressbar is hidden again and a text view is updated.
+
+The long running operation will run in the background, the update of the UI will happen in the main thread.
+
+[[source, java]
+----
+include::res/android/SchedulerActivity.java[]
+----
 
 
